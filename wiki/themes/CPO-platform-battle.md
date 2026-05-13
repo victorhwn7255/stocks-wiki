@@ -1,0 +1,298 @@
+---
+type: theme
+tickers: [NVDA, TSM, AVGO, MRVL, ALAB, CSCO, LITE, COHR, AEHR, ONTO, AAOI, COHU, AXTI, VECO, CRDO, ANET]
+last_updated: 2026-04-28
+---
+
+# CPO Platform Battle
+
+## Thesis relevance
+
+This is thesis question 2: whose CPO (co-packaged optics) implementation gains ecosystem adoption? The answer determines where value accrues in the photonics layer of the AI supply chain as datacenter interconnects transition from pluggable optical transceivers toward co-packaged optics over 2026-2028.
+
+The central uncertainty: CPO is a platform-level competition with multiple contestants, and the winner is not yet determined. The wiki tracks design wins, partner announcements, hyperscaler commitments, and management commentary that resolve this question over time.
+
+`_thesis.md` identifies three disconfirming signals specific to this battle:
+1. "NVDA loses CPO ecosystem momentum to AVGO" — if Bailly design wins concentrate
+2. "Silicon photonics startups get acquired into hyperscalers rather than merchant platform players" — if the open CPO platform thesis breaks down
+3. "CPO adoption stalls or reverses" — if hyperscalers stick with pluggable transceivers into 2028+
+
+## The contestants
+
+Per frameworks.md, five platform contestants are building CPO implementations:
+
+| Contestant | Platform | Approach | TSMC dependency |
+|------------|----------|----------|-----------------|
+| [[NVDA]] | Spectrum-X / Quantum-X | Platform/software integrated, leveraging TSMC COUPE | Yes — packaging |
+| [[AVGO]] | Bailly CPO + Tomahawk | Copper DAC via SerDes for scale-up (200G/400G); CPO deferred ("bright, shiny objects"); also TSMC-dependent at packaging | Yes — packaging (95% of wafers) |
+| [[MRVL]] | Photonic Fabric (via Celestial AI acquisition, Feb 2026) | Scale-up XPU interconnect; CPO chiplets co-packaged into both XPUs and switches | Yes — packaging (CoWoS, InFo, EMIB named) |
+| [[ALAB]] | Scorpio X + aiXscale photonics (acquisition Nov 2025, $31.1M) | Phased coexistence — copper and optical coexisting, scale-up optical 2028; PCIe/UALink/NVLink Fusion heritage | Yes — sole IC fab partner |
+| [[CSCO]] | Silicon One + Acacia (silicon photonics) | Acknowledged deferral — "we have the technology to build it" but "not imminent"; LPO as bridge; customer-choice framing; no scale-up product announced | Not disclosed (no foundry named) |
+
+All five contestants depend on [[TSM]] for either leading-edge logic or advanced packaging or both. This is what makes TSMC a structural chokepoint that persists regardless of which CPO platform wins — the thesis's central insight.
+
+## Evidence baseline
+
+**Updated status (April 2026, after Session 17 NVDA GTC refresh):** The CPO silence documented in early ingests has been broken at five tiers: Layer 1 platform definer ([[NVDA]] — production disclosure at GTC March 16, 2026), Layer 4 component suppliers ([[LITE]], [[COHR]]), Layer 3 specialized designers ([[MRVL]], [[ALAB]], [[CSCO]]), Layer 6 substrate manufacturer ([[AXTI]]), and Layer 5 transceiver assembler ([[AAOI]] — reframing variant). At Layer 1, the prior silence-vs-dismissal divergence has sharpened into **adoption vs. dismissal**: [[NVDA]] disclosed CPO in production (Spectrum-X CPO switch, COUP/COUPE packaging with [[TSM]], Kyber CPO scale-up) while [[AVGO]] continues to actively dismiss CPO as "bright, shiny objects." This is a sharper divergence than silence vs. dismissal — it is adoption vs. dismissal at the platform-definer tier. Layer 3 exhibits three structurally distinct CPO variants: [[MRVL]]'s escalating disclosure, [[ALAB]]'s phased coexistence, and [[CSCO]]'s acknowledged deferral. The manufacturing layer ([[TSM]]) and MOCVD equipment layer ([[VECO]]) remain silent. The scale-up interconnect comparison is now a five-way executive comparison (Jensen, Murphy, Hock Tan, Mohan, Robbins) — the sharpest open question in the CPO platform battle, with all five CPO platform contestants now represented.
+
+### The CPO bifurcation: two battles, not one
+
+The most consequential CPO finding since the LITE/COHR cross-validation. [[MRVL]] CEO Matt Murphy explicitly bifurcates the CPO opportunity into two structurally different markets:
+
+**Scale-out CPO: pluggables win.** Murphy's "longstanding view, unchanged": "the deployment of CPO and scale-out would be, you know, relatively limited, relative to the amount of pluggable transceivers that were gonna get deployed. You can go back many, many OFCs ago, and that's been our view" (Murphy, MRVL Q4 FY2026 call). MRVL has done POCs integrating Celestial technology with Innovium Teralynx (scale-out switches) but it is "not our current plan today" — ready to react when the market demands it. If Murphy is correct, scale-out remains the domain of pluggable transceivers and the suppliers that make their components: [[LITE]] and [[COHR]] lasers, [[AAOI]] and other transceiver assemblers.
+
+**Scale-up CPO: the real CPO battle.** "On the scale up... that's a perfect use case where that is where we see that CPO technology inflecting in a pretty big way" (Murphy, MRVL Q4 FY2026 call). Scale-up interconnect — connecting XPUs within a cluster via UALink, Ethernet, or proprietary fabrics — is where CPO chiplets replace copper. MRVL's Photonic Fabric chiplets will be co-packaged into both custom XPUs and scale-up switches, on both sides of the link. Commercial deployment starting FY2028 (calendar 2027). Scale-up interconnect TAM: >$10B by 2030. Initial deployment at "1 large customer" — copper-based switching coexists "for some time."
+
+**Implications for the prior analysis.** This bifurcation reframes all prior CPO evidence in the vault:
+
+- [[COHR]]'s Anderson introduced scale-out vs. scale-up phasing in Session 5 (COHR Q2 FY2026 call), characterizing scale-up as "orders of magnitude larger" and "not years out." Murphy's bifurcation is structurally consistent: both executives agree scale-up is the larger opportunity. But Murphy goes further — he argues scale-out CPO is *structurally limited*, not merely later in deployment.
+- [[LITE]] and [[COHR]]'s current CPO purchase orders and laser shipments (documented in their respective calls) may serve primarily the initial scale-out phase — the smaller phase, per Murphy and Anderson. If correct, the much larger scale-up opportunity intensifies rather than resolves the [[datacenter-laser-supply]] chokepoint.
+- [[NVDA]]'s CPO silence takes on new meaning. NVDA's Quantum-X / Spectrum-X networking is scale-out infrastructure. If scale-out CPO is "relatively limited," NVDA's silence on CPO may reflect strategic judgment, not information control — pluggables may suffice for scale-out. NVDA's scale-up play (NVLink, NVSwitch) uses proprietary interconnect where CPO would threaten NVDA's control. This is speculative but consistent with the pattern.
+- The five-contestant framing narrows. If scale-out CPO is limited, the real CPO platform battle is scale-up — where [[MRVL]] (Photonic Fabric + UALink switches), [[NVDA]] (potential integration into NVLink/NVSwitch), and [[AVGO]] (Bailly + custom XPU switching) compete. [[ALAB]] (Scorpio) and [[CSCO]] (Silicon One + Acacia) may participate but their scale-up positioning is less clear from available evidence. CSCO's Q2 FY2026 call confirms the weaker positioning: Robbins explicitly states "we haven't made any announcements on scale-up" (CSCO Q2 FY2026 call) — the only CPO contestant with no disclosed scale-up product or timeline.
+
+**Calibration.** Murphy is the CEO of a company that just spent ~$3.25B (up to ~$5.5B) acquiring a CPO platform for scale-up. His incentive to frame scale-up CPO as the larger opportunity — and scale-out CPO as limited — is aligned with his capital allocation. Anderson ([[COHR]]) has the opposite incentive: COHR supplies lasers to both scale-out and scale-up CPO, making the total market size (not the bifurcation) the relevant metric. Anderson's framing — scale-out first, scale-up "orders of magnitude larger" — is directionally consistent with Murphy's but doesn't argue scale-out is *limited*. The bifurcation is analytically valuable regardless of Murphy's incentive because it is the first explicit executive framing of CPO use-case segmentation. But it should be tested against future evidence from competitors and customers.
+
+### Sources silent on CPO
+
+Specific falsifiable dated observations:
+
+- **February 25, 2026 — NVDA Q4 FY2026 earnings call:** Zero mentions of CPO, COUPE, co-packaged optics, silicon photonics, or optical interconnects across 19 pages. Zero of 13 sell-side analysts asked about CPO. Management did not reference NVDA's photonics roadmap, Quantum-X, or NVLink Fusion. (NVDA Q4 FY2026 call)
+
+- **April 16, 2026 — TSM Q1 2026 earnings call:** Zero mentions of COUPE or CPO. CoPoS referenced as a distinct future packaging technology (pilot line, production "a couple of years later"). Zero of 8 sell-side analysts asked about silicon photonics or CPO. (TSM Q1 2026 call)
+
+- **FY2025 (filed April 2026) — TSM 20-F:** Zero mentions of COUPE, CPO, co-packaged optics, or silicon photonics across 244 pages. COUPE conspicuously absent from formal technology listing where CoWoS and SoIC are named (TSM 20-F FY2025).
+
+- **FY2025 (filed August 2025) — LITE 10-K:** Exactly one generic mention — "co-packaged optics and integrated photonics assemblies" as a customized solution category. No strategic emphasis, no development timeline, no competitive positioning. Zero discussion of silicon photonics as a technology platform (LITE 10-K FY2025).
+
+- **Q2 FY2026 (filed February 3, 2026) — LITE 10-Q:** Zero mentions of CPO, co-packaged optics, silicon photonics, or photonic integration across the entire filing (LITE 10-Q Q2 FY2026).
+
+### Sources that break the silence
+
+- **February 3, 2026 — LITE Q2 FY2026 earnings call:** CPO named as one of three primary growth catalysts: "cloud transceivers, optical circuit switches, or OCS, and co-packaged optics, or CPO" — Hurlston. Substantive disclosures: multi-hundred-million-dollar purchase order for ultra-high-power lasers supporting CPO; material UHP chip shipment inflection H2 2026; first scale-up CPO deployments expected late calendar 2027; 400mW UHP laser competitive moat ("not something that many people can do"); ELS modules providing ~2-2.5x content gain; CPO reliability "gaining real customer confidence," "much more broad-based than people think" (LITE Q2 FY2026 call). Seven sell-side analysts asked substantive questions, with several focused on CPO/OCS pipeline.
+
+- **February 4, 2026 — COHR Q2 FY2026 earnings call:** CPO discussed even more extensively than LITE. "Exceptionally large purchase order from a market-leading AI data center customer for a CPO solution that includes our new high-power CW laser" — Anderson (COHR Q2 FY2026 call). Introduces scale-out vs. scale-up deployment phasing: scale-out CPO arriving first, but Anderson characterizes scale-up as "orders of magnitude larger" and "not years out" (COHR Q2 FY2026 call). Both InP-based and VCSEL-based CPO/MPO solutions disclosed — a wider technology portfolio than LITE's InP-only approach. "Very active engagement and design win progress on scale up, on CPO" (COHR Q2 FY2026 call). Multiple analysts asked CPO-related questions, paralleling LITE's analyst interest pattern.
+
+- **March 16, 2026 — NVDA GTC keynote:** The longest-running CPO silence in the vault broken definitively. Jensen disclosed: Spectrum-X CPO switch "in full production," COUP/COUPE packaging co-developed with [[TSM]] ("We invented the process technology with TSMC. We're the only one in production with it today" — Jensen, attributed per rhetorical claims convention), Spectrum-6 as "world's first co-packaged optical" switch, and Kyber CPO scale-up. Jensen framed copper and optical as parallel: "copper scale-up or optical scale-up? We're gonna do both" (NVDA GTC March 16, 2026). This is production-confirmed adoption, not a roadmap disclosure.
+
+### The tiered silence pattern
+
+**CPO is being discussed at the component layer before it surfaces at the platform or manufacturing layers.** This pattern, first identified in Session 4, is now confirmed by a second component-layer source:
+
+| Layer | Company | Source type | CPO discussed? |
+|-------|---------|-------------|----------------|
+| Layer 1 (platform) | [[NVDA]] | Tier 2 (call) | No |
+| Layer 1 (platform) | [[NVDA]] | Tier 2 (GTC) | **Yes — production disclosure** (COUP in production, Spectrum-X CPO, Kyber CPO scale-up, NVLink 576 optical) |
+| Layer 1 (platform) | [[AVGO]] | Tier 1 (10-K) | No |
+| Layer 1 (platform) | [[AVGO]] | Tier 1 (10-Q) | No |
+| Layer 1 (platform) | [[AVGO]] | Tier 2 (call) | **Active dismissal** — "bright, shiny objects"; claims leadership, defers timeline |
+| Layer 2 (manufacturing) | [[TSM]] | Tier 2 (call) | No |
+| Layer 2 (manufacturing) | [[TSM]] | Tier 1 (20-F) | No |
+| Layer 4 (components) | [[LITE]] | Tier 1 (10-K) | Near-zero (one generic mention) |
+| Layer 4 (components) | [[LITE]] | Tier 1 (10-Q) | No |
+| Layer 4 (components) | [[LITE]] | Tier 2 (call) | **Yes — extensively** |
+| Layer 4 (components) | [[COHR]] | Tier 1 (10-K) | Near-zero (three thin mentions) |
+| Layer 4 (components) | [[COHR]] | Tier 1 (10-Q) | No |
+| Layer 4 (components) | [[COHR]] | Tier 2 (call) | **Yes — most extensive of any source** |
+| Equipment (test) | [[AEHR]] | Tier 1 (10-K) | **Yes — silicon photonics as named market** |
+| Equipment (test) | [[AEHR]] | Tier 1 (10-Q) | No |
+| Equipment (test) | [[AEHR]] | Tier 2 (call) | **Yes — silicon photonics burn-in discussed** |
+| Equipment (metrology) | [[ONTO]] | Tier 1 (10-K) | No |
+| Equipment (metrology) | [[ONTO]] | Tier 1 (10-Q) | No |
+| Equipment (metrology) | [[ONTO]] | Tier 2 (call) | No |
+| Layer 5 (systems) | [[AAOI]] | Tier 1 (10-Q) | No |
+| Layer 5 (systems) | [[AAOI]] | Tier 1 (10-K) | No |
+| Layer 5 (systems) | [[AAOI]] | Tier 2 (call) | **Yes — one mention, reframed as laser opportunity** |
+| Layer 3 (designer) | [[MRVL]] | Tier 1 (10-Q) | No (zero CPO mentions; "electro-optics portfolio" once) |
+| Layer 3 (designer) | [[MRVL]] | Tier 1 (10-K) | **Product-description level** (CPO in ASIC platform, Photonic Fabric in Item 1; absent from MD&A) |
+| Layer 3 (designer) | [[MRVL]] | Tier 2 (call) | **Yes — most extensive in vault** ($500M/$1B targets, bifurcation, commercial framing) |
+| Equipment (handlers) | [[COHU]] | Tier 1 (10-K) | No |
+| Equipment (handlers) | [[COHU]] | Tier 1 (10-Q) | No |
+| Layer 6 (substrate) | [[AXTI]] | Tier 1 (10-K) | No |
+| Layer 6 (substrate) | [[AXTI]] | Tier 1 (10-Q) | No |
+| Layer 6 (substrate) | [[AXTI]] | Tier 2 (call) | **Yes — explicitly bullish** ("yet another inflection point") |
+| Equipment (MOCVD) | [[VECO]] | Tier 1 (10-K) | No |
+| Equipment (MOCVD) | [[VECO]] | Tier 1 (10-Q) | No |
+| Equipment (MOCVD) | [[VECO]] | Tier 2 (call) | No |
+| Layer 3 (designer) | [[ALAB]] | Tier 1 (10-K) | No (zero CPO/photonics mentions; aiXscale paragraph only photonics-adjacent content) |
+| Layer 3 (designer) | [[ALAB]] | Tier 1 (10-Q) | No |
+| Layer 3 (designer) | [[ALAB]] | Tier 2 (call) | **Yes — phased coexistence** (scale-up optical 2028, copper and optical coexisting) |
+| Layer 3 (designer) | [[CSCO]] | Tier 1 (10-K) | No (zero CPO/silicon photonics/coherent DSP; Acacia only in amortization and litigation) |
+| Layer 3 (designer) | [[CSCO]] | Tier 1 (10-Q) | No (zero CPO/silicon photonics/coherent DSP/pluggable mentions) |
+| Layer 3 (designer) | [[CSCO]] | Tier 2 (call) | **Yes — acknowledged deferral** ("not imminent," technology readiness claimed, customer-choice framing) |
+| Layer 3 (designer) | [[CRDO]] | Tier 1 (10-K) | No (zero CPO mentions; SerDes/DSP/AEC product discussion only) |
+| Layer 3 (designer) | [[CRDO]] | Tier 1 (10-Q) | No (zero CPO mentions) |
+| Layer 3 (designer) | [[CRDO]] | Tier 2 (call) | **Indirect — CPO displacement positioning via OmniConnect** ("near package optics with MicroLED that will address the reliability, serviceability, and availability pitfalls of current CPO solutions" — direct CPO displacement framing rather than CPO adoption) |
+| Layer 5 (systems integrator) | [[ANET]] | Tier 1 (10-K) | No (zero CPO/co-package/coherent mentions across full 10-K text) |
+| Layer 5 (systems integrator) | [[ANET]] | Tier 2 (call) | No (zero CPO mentions in Q4 2025 call sample) |
+
+The pattern is now a forty-four-data-point observation across sixteen companies (eight seed-set plus eight post-seed-set additions: [[MRVL]], [[AVGO]], [[AXTI]], [[VECO]], [[ALAB]], [[CSCO]], [[CRDO]], and [[ANET]]). Both Layer 4 suppliers show the identical break point: Tier 2 calls extensively discuss CPO while their own Tier 1 filings are silent or near-silent. The manufacturing layer remains silent across both tiers. At Layer 1, the divergence has sharpened from silence vs. dismissal to adoption vs. dismissal: [[NVDA]] disclosed CPO in production at GTC March 2026 (COUP packaging, Spectrum-X CPO, Kyber scale-up) while [[AVGO]] actively dismisses CPO as "bright, shiny objects" — structurally opposed positions at the platform-definer tier. Layer 3 now has four data points with structurally distinct CPO profiles: [[MRVL]] exhibits platform-contestant escalating disclosure (commercially aggressive, $500M/$1B targets), [[ALAB]] exhibits phased-coexistence framing (copper and optical coexisting, scale-up optical in 2028), [[CSCO]] exhibits acknowledged deferral (CPO "absolutely" coming but "not imminent," technology readiness claimed, non-adoption framed as customer-driven choice), and [[CRDO]] (Session 27) exhibits **CPO displacement positioning** — OmniConnect Weaver gearbox with future MicroLED-based "near package optics" framed as addressing "the reliability, serviceability, and availability pitfalls of current CPO solutions" (direct displacement framing rather than CPO adoption or deferral). The four Layer 3 variants correlate with CPO investment magnitude: MRVL (~$3.25-5.5B Celestial) is most aggressive; ALAB ($31.1M aiXscale) is measured; CSCO (zero disclosed CPO investment) is most deferral-oriented; CRDO positions on competing alternative architecture (MicroLED + ALCs). The equipment tier introduces a functional split: test equipment (AEHR) breaks the silence with silicon photonics discussion, while metrology equipment (ONTO) and test handlers (COHU) maintain it. **Layer 5 systems integrator now has two data points:** [[AAOI]] reframes as laser opportunity and [[ANET]] (Session 27) maintains tighter silence than CSCO acknowledged-deferral — ZERO CPO mentions in 10-K + Q4 2025 call sample. The Layer 5 silence pattern is structurally distinct from Layer 3 acknowledged-deferral: a switch hardware + EOS systems integrator with single merchant silicon vendor dependency (likely [[AVGO]] Tomahawk per ecosystem context) does not engage CPO publicly, possibly because CPO impact materializes via component supplier shifts (Tomahawk → Bailly) that ANET passes through to customers rather than via direct architectural commitment.
+
+This pattern is analytically consistent: CPO signal originates where CPO revenue is most imminent (component suppliers shipping lasers into CPO programs) and in the communication venue most amenable to forward-looking discussion (earnings calls rather than filings). It does not mean NVDA and TSM are not working on CPO — NVDA's $2B investment in [[LITE]] and [[COHR]] is strong evidence of photonics supply chain preparation. At Layer 1, the two platform definers now exhibit the sharpest CPO divergence in the vault: [[NVDA]] disclosed CPO in production at GTC (Spectrum-X CPO, COUP packaging, Kyber scale-up) while [[AVGO]] actively dismisses it. NVDA has incorporated CPO into its platform roadmap as a production-confirmed technology; AVGO has not. The Layer 1 divergence is explored in detail below.
+
+**Layer 1 divergence: adoption vs. active dismissal.** The two Layer 1 platform definers now exhibit the sharpest CPO divergence in the vault — no longer silence vs. dismissal, but production adoption vs. active dismissal:
+
+*[[NVDA]] — production disclosure (GTC March 16, 2026).* NVDA's CPO silence, the longest-running in the vault, was definitively broken at GTC. Jensen disclosed: Spectrum-X CPO switch "in full production," COUP/COUPE packaging technology co-developed with [[TSM]] ("We invented the process technology with TSMC. We're the only one in production with it today"), Spectrum-6 as "world's first co-packaged optical" switch, and Kyber CPO scale-up. Jensen framed copper and optical as parallel by platform design: "copper scale-up or optical scale-up? We're gonna do both" — NVLink 144 via copper (Kyber), NVLink 576 via optical (Oberon) (NVDA GTC March 16, 2026). This is not a roadmap disclosure — it is production-confirmed adoption.
+
+*Cross-venue disclosure pattern.* NVDA's Q4 FY2026 earnings call (February 25, 2026 — one month before GTC) contained zero CPO mentions across 19 pages. GTC (March 16, 2026) contains extensive CPO production disclosure. This confirms the venue-specific information control hypothesis documented in Session 2: NVDA reserves technology roadmaps for dedicated venues (GTC) rather than earnings calls. The prior "pure silence" variant was a function of the venue sampled, not of NVDA's CPO positioning.
+
+*[[AVGO]] — active dismissal (unchanged).* AVGO's three sources (10-K FY2025, 10-Q Q1 FY2026, Q1 FY2026 call) present the same pattern documented in Session 10. Tier 1 filings contain zero CPO mentions. The Q1 FY2026 earnings call dismisses CPO as "bright, shiny objects" while claiming AVGO "will likely lead that" when it materializes, deferring timeline in favor of copper DAC via 200G/400G SerDes (AVGO Q1 FY2026 call). This remains strategic deprioritization with claimed optionality.
+
+*Analytical significance — revised.* The Layer 1 divergence is now structurally sharper than in prior sessions. NVDA has CPO in production and has named the TSMC co-developed packaging technology. AVGO dismisses CPO and champions copper. If CPO wins scale-up, AVGO will need to reverse a public position that Jensen has already moved past — not just silence, but a production-confirmed alternative. The divergence now directly maps to the five-way executive comparison (see below): Jensen's "both by platform design" vs. Hock Tan's "copper wins" is the sharpest bilateral disagreement between the two Layer 1 platform definers in the vault.
+
+**Equipment-tier functional split.** The equipment tier shows a clear functional pattern: [[AEHR]] (test equipment) breaks the CPO silence while [[ONTO]] (metrology equipment) and [[COHU]] (test handlers) maintain it. AEHR's 10-K names "silicon photonics" as a specific served market for its FOX-NP burn-in systems, and its Q3 FY2026 call discusses silicon photonics burn-in as a growth catalyst (AEHR 10-K FY2025; AEHR Q3 FY2026 call). ONTO's three sources contain no substantive CPO, silicon photonics, or photonic packaging discussion — its metrology focus on advanced packaging substrates and overlay measurement does not intersect photonic device-level concerns (ONTO 10-K FY2025; ONTO 10-Q Q3 FY2025; ONTO Q4 FY2025 call). The asymmetry is structurally explainable by function: test equipment that touches photonic devices at the die level discusses photonics; metrology equipment that touches packaging substrates and handler equipment that routes packages physically do not. [[COHU]]'s two Tier 1 filings (10-K and 10-Q) contain zero mentions of CPO, silicon photonics, or any photonics-adjacent terminology — the most predictable silence in the seed set, as test handlers are mechanical/electrical routing equipment with no photonic function. With COHU's addition, the equipment-tier functional split is now a three-company observation: burn-in test (AEHR) discusses photonics; metrology (ONTO) and handling (COHU) do not. CPO discussion correlates with proximity to photonic devices, not with position in the value chain per se.
+
+**Layer 3 platform-contestant escalating disclosure — a new variant.** [[MRVL]]'s three-source CPO profile is structurally distinct from every other tier. At Layer 4 (LITE, COHR), the pattern is silence-then-extensive: filings contain zero or near-zero CPO, calls name CPO as a growth catalyst. At Layer 3 (MRVL), the pattern escalates across all three source types: the 10-Q (pre-Celestial baseline) is completely silent; the 10-K incorporates CPO at the product-description level (ASIC platform lists CPO as a component, Photonic Fabric described in Item 1, scale-up switches "enabling both CPC and CPO"); the earnings call is the most CPO-extensive source in the vault, with Murphy leading prepared remarks with Celestial/Photonic Fabric, quantifying $500M/$1B run rate targets, and bifurcating CPO into scale-out (limited) and scale-up (inflecting). The escalation tracks the Celestial AI acquisition timeline (announced Dec 2025, closed Feb 2026), but the framing is what distinguishes this variant: Murphy speaks as a *platform owner* deploying CPO commercially with quantified revenue projections, not as a component supplier (Layer 4) or displacement target (Layer 5). MRVL is the only vault company where management treats CPO as a revenue line. Only Christopher Rolland (Susquehanna), 1 of 12 analysts, asked directly about CPO — producing the deepest CPO Q&A in any vault session. No analyst asked about Ayar Labs or [[AVGO]]'s CPO efforts.
+
+**Layer 3 acknowledged deferral — CSCO's variant.** [[CSCO]]'s three-source CPO profile adds a third Layer 3 variant distinct from both MRVL's escalating disclosure and ALAB's phased coexistence. Filing-level silence is the most complete of any CPO contestant: zero mentions of CPO, silicon photonics, coherent DSP, or Acacia's product capabilities across both the 10-K and 10-Q. Acacia appears only in amortization context ("fully amortized") and as a patent litigation co-defendant. The earnings call breaks the silence through acknowledgment rather than either promotion (MRVL) or dismissal (AVGO): Robbins states "we absolutely believe it's going to happen. We don't believe it's actually imminent right now... we have the technology to build it, and we will as customers want it. But today, they want choice" (CSCO Q2 FY2026 call). The mechanism contrasts with AVGO's active dismissal: Hock Tan dismisses CPO's technology ("bright, shiny objects") while claiming leadership ("we are the lead in CPOs"); Robbins acknowledges CPO's inevitability while framing non-adoption as customer preference for multi-vendor optionality ("they don't get locked in"). Robbins does not claim CPO leadership and does not champion an alternative technology. LPO (800G, "built with Cisco silicon photonics technology") is positioned as the bridge. One of 11 analysts (Samik Chatterjee, JPMorgan) asked directly about CPO — producing a substantive but non-combative response. The acknowledged-deferral variant serves CSCO's current business (Acacia pluggables benefit from CPO delay) with less positional commitment than either MRVL's $5.5B investment or AVGO's copper-supremacy argument.
+
+**Layer 5 asymmetric reframing — a distinct pattern variant.** [[AAOI]]'s three-source CPO profile is structurally different from every other tier in the table. At Layer 4, the pattern is silence-then-extensive: filings contain zero or near-zero CPO mentions, while earnings calls name CPO as a primary growth catalyst with detailed program timelines, purchase orders, and deployment phasing. At Layer 5, the pattern is silence-then-reframing: filings are completely silent (zero mentions of CPO, co-packaged optics, silicon photonics, or LPO across both the 10-K and 10-Q), while the earnings call contains exactly one CPO mention — and that mention reframes CPO from a displacement threat into a demand opportunity. Stefan Murry (CFO): "We believe that in the future, CPO will continue to drive increased demand for high-power lasers and plan to continue to expand our laser manufacturing capacity in Texas in order to accommodate these future growth drivers" (AAOI Q4 FY2025 call). The reframing is strategically coherent — CPO does create demand for external laser sources, and AAOI manufactures InP lasers internally. But it is also selectively incomplete: CPO simultaneously threatens AAOI's pluggable transceiver business, which generates ~100% of current revenue. Management acknowledged the beneficiary dynamic while omitting the displacement dynamic. Five sell-side analysts participated in the call; zero asked about CPO displacement risk — the most conspicuous analyst silence in the vault on this topic, given that AAOI is arguably the company most structurally threatened by CPO among all seven vault companies. For comparison, seven analysts asked substantive CPO questions on the [[LITE]] call one month earlier. The analyst community covering Layer 5 transceiver assemblers does not appear to be pricing CPO displacement risk into its questioning framework, either because it views CPO as not near-term material for Layer 5, or because the Layer 5 coverage universe is less photonics-specialized than the Layer 4 analyst community. Either interpretation is itself analytically significant. The Layer 5 data points bring the tiered pattern to its fullest articulation: the company most threatened by CPO discusses it least substantively, while the companies most positioned to benefit discuss it most extensively. This is consistent with the broader pattern — CPO discussion correlates with where CPO revenue is imminent, not where CPO risk is greatest.
+
+**The same-day divergence — now a two-company pattern.** [[LITE]]'s 10-Q and earnings call are both dated February 3, 2026; [[COHR]]'s 10-Q and earnings call are both dated February 4, 2026. In both cases, the filing contains zero CPO mentions while the call names CPO as a major growth driver. Two competing companies, same quarter, same-day filing/call divergence, identical pattern. CPO has entered management's strategic messaging at both Layer 4 suppliers but not their regulatory disclosures — consistent with a technology that is commercially imminent but not yet revenue-generating in the reported period.
+
+**COHR adds analytical depth: scale-out vs. scale-up phasing.** Anderson's distinction — scale-out CPO arriving first, scale-up CPO "orders of magnitude larger" and "not years out" — introduces deployment phasing not present in LITE's commentary. If accurate, the current CPO purchase orders represent the smaller initial phase, with the much larger scale-up opportunity still ahead. This has implications for [[datacenter-laser-supply]]: the chokepoint's relevance may intensify rather than diminish as CPO moves from scale-out to scale-up deployment.
+
+### Substrate-tier CPO as demand amplifier
+
+[[AXTI]] introduces a structural inversion in the CPO dynamics tracked above: at the substrate level (Layer 6), CPO is a demand amplifier rather than a displacement threat or competitive battleground.
+
+The logic is straightforward. CPO architectures co-package more laser die per switch ASIC than pluggable transceivers, because each CPO-enabled switch integrates optical engines that would otherwise be distributed across multiple pluggable modules. More laser die per switch means more InP substrate consumption per unit deployed. AXTI CEO Morris Young framed CPO explicitly as "yet another inflection point for us beginning in late 2027 and beyond" and "a sizable additional revenue opportunity" (AXTI Q4 FY2025 call).
+
+This inverts the CPO dynamic observed at every other layer in the vault:
+
+| Layer | CPO dynamic | Effect |
+|-------|-------------|--------|
+| Layer 1 (NVDA, AVGO) | Platform battle — competitive positioning | CPO as contestable platform |
+| Layer 2 (TSM) | Manufacturing enabler — packaging technology | CPO as capacity demand driver |
+| Layer 3 (MRVL) | Platform deployment — Photonic Fabric | CPO as revenue opportunity |
+| Layer 4 (LITE, COHR) | Component supply — laser die production | CPO as demand catalyst (with ASP uplift via ELS) |
+| Layer 5 (AAOI) | Displacement threat — pluggable modules replaced | CPO as structural risk |
+| **Layer 6 (AXTI)** | **Demand amplifier — more InP per unit** | **CPO increases substrate consumption** |
+
+The substrate-tier amplification effect means the total CPO platform battle is not zero-sum at the supply chain level. Even if CPO displaces Layer 5 pluggable assemblers, the aggregate InP substrate demand increases. This structural finding — CPO amplifying demand at the bottom of the supply chain while potentially displacing products at higher layers — extends the bifurcation framework from scale-out vs. scale-up to include a vertical dimension: the CPO value chain impact differs by layer, with Layer 5 facing displacement and Layer 6 experiencing amplification.
+
+**Calibration.** Young's CPO bullishness should be evaluated in context: AXTI's Q4 FY2025 earnings call exhibited markedly promotional language (see [[AXTI]] Source audit notes), and the December 2025 equity offering ($95.2M) closed five weeks before the call. The structural logic of substrate-tier amplification is sound — more laser die per CPO package does mean more InP consumption — but AXTI management's enthusiasm for CPO specifically is colored by promotional incentive. Cross-validate against [[LITE]] and [[COHR]] commentary on per-socket InP content gain as CPO scales.
+
+### Revised interpretive framing
+
+The original three-data-point absence supported four interpretations. The LITE findings narrow these:
+
+1. **CPO is too early-stage for platform/manufacturing-layer earnings calls.** Partially falsified for the component layer (LITE discusses CPO extensively) but still valid for NVDA and TSM calls. Revised: CPO discussion appears first where revenue depends on it most directly.
+
+2. **The sell-side hasn't elevated photonics to earnings-call questioning at the platform/manufacturing layer.** Still valid for NVDA and TSM. Falsified for LITE — seven analysts asked substantive CPO/OCS questions, reflecting the photonics-specialist analyst community.
+
+3. **The frameworks.md COUPE timeline requires nuance rather than revision.** LITE's call provides the first primary-source CPO deployment timeline: UHP laser shipments H2 2026, scale-up CPO deployments late calendar 2027. This partially validates a 2026-2028 integration window, but from the component layer, not from TSMC's COUPE packaging technology specifically.
+
+4. **Deliberate information control at NVDA and TSM.** Remains plausible. Both companies may reserve photonics roadmaps for dedicated venues (GTC, technology symposia) while LITE — with a narrower product focus — discusses CPO more freely on earnings calls.
+
+The NVDA and COHR/LITE investments ($4B combined, March 2, 2026) remain the strongest evidence of CPO platform preparation at Layer 1. Actions rather than words. See [[datacenter-laser-supply]] for the chokepoint implications — now substantiated by cross-validation from both suppliers.
+
+## Five-way executive comparison: scale-up interconnect
+
+The sharpest open question in the CPO platform battle is now a direct executive-level disagreement on what technology wins scale-up interconnect. Both [[MRVL]] CEO Matt Murphy and [[AVGO]] CEO Hock Tan agree on the scale-out/scale-up bifurcation structure — scale-out uses pluggable transceivers, scale-up is the larger opportunity. They directly contradict each other on what wins scale-up.
+
+**Murphy (MRVL): CPO wins scale-up.** "On the scale up... that's a perfect use case where that is where we see that CPO technology inflecting in a pretty big way" (MRVL Q4 FY2026 call). MRVL's Photonic Fabric chiplets, acquired via Celestial AI (~$3.25B cash, up to ~$5.5B with earn-outs), will be co-packaged into both XPUs and scale-up switches. Commercial deployment starting FY2028 (calendar 2027). $500M annualized Q4 FY2028, $1B annualized Q4 FY2029 (MRVL Q4 FY2026 call).
+
+**Hock Tan (AVGO): Copper wins scale-up.** Tan characterized CPO as "bright, shiny objects" and positioned copper DAC via 200G/400G SerDes as AVGO's scale-up interconnect solution. "The reality is copper is cheaper, copper is lower-latency, and copper works" (AVGO Q1 FY2026 call — paraphrased directional claim per CLAUDE.md convention, not exact quote). Tan claimed AVGO "will likely lead" CPO when it materializes, explicitly deferring the timeline. AVGO's current scale-up advantage is SerDes technology leadership enabling progressively higher copper data rates.
+
+**Incentive alignment calibration.** Both positions are self-serving:
+
+- Murphy spent up to $5.5B acquiring a CPO platform (Celestial AI). His incentive to frame scale-up CPO as "inflecting in a pretty big way" is directly aligned with justifying that capital allocation. If scale-up CPO is limited (like Murphy claims scale-out CPO is), the Celestial acquisition's earn-out milestones become unreachable.
+- Hock Tan's current competitive advantage is SerDes (AVGO's 200G/400G lane rates lead the industry). His incentive to dismiss CPO as "bright, shiny objects" protects AVGO's current moat. If CPO wins scale-up, AVGO's copper-based interconnect business faces displacement by the very technology Tan is dismissing.
+
+Neither executive is a disinterested analyst. Murphy's position requires CPO to succeed at scale-up to justify $5.5B; Hock Tan's position requires copper to remain dominant to protect AVGO's existing franchise. The disagreement is structurally unresolvable from executive commentary alone.
+
+**What both agree on — and why it matters.** The agreement is as analytically significant as the disagreement. Both CEOs accept the scale-out/scale-up bifurcation framework. Both treat scale-out CPO as less consequential than scale-up. This convergence from competitors reinforces the bifurcation as a genuine structural observation rather than a single company's framing. The prior CPO analysis (LITE/COHR purchase orders, AEHR burn-in, AAOI displacement) primarily concerns scale-out deployment; the scale-up battle — where Murphy and Hock Tan disagree — is the larger economic prize by both executives' admission.
+
+### Jensen's platform-design perspective
+
+[[NVDA]] CEO Jensen Huang introduces the fifth perspective at GTC March 16, 2026 — production disclosure rather than positional argument. Unlike Murphy (CPO wins) and Hock Tan (copper wins), Jensen frames the question as a false binary: "copper scale-up or optical scale-up? We're gonna do both" (NVDA GTC March 16, 2026).
+
+**Both by platform design.** Jensen disclosed CPO products in production (Spectrum-X CPO switch, Spectrum-6 "world's first co-packaged optical" switch) alongside copper scale-up (NVLink 144 via Kyber). The roadmap is parallel, not sequential: NVLink 144 (copper) at the near-term rack scale, NVLink 576 (optical, via Oberon) at the larger cluster scale. COUP/COUPE packaging technology co-developed with [[TSM]] enables the optical path; 5th-generation NVLink enables the copper path. Both paths advance simultaneously within the same platform architecture.
+
+**Incentive calibration.** Jensen's "both" position is the least falsifiable of the five — it does not require either technology to win exclusively. It does require NVDA to execute two parallel interconnect architectures with different technology stacks, which is capital- and engineering-intensive. The position is consistent with NVDA's platform-definer strategy: absorb all viable technologies rather than bet on one (see [[NVDA-platform-integration]]). The risk is platform complexity rather than technology-choice error. Jensen's $4B combined investment in laser suppliers ([[LITE]], [[COHR]]) is revealed-preference evidence that the optical path is more than rhetorical.
+
+### Mohan's phased-coexistence perspective
+
+[[ALAB]] CEO Jitendra Mohan introduces a third perspective that sits between Murphy's aggressive CPO deployment and Hock Tan's copper-first dismissal. Mohan frames scale-up interconnect as a phased coexistence model rather than a binary technology choice:
+
+**Optical for scale-up in 2028, not sooner.** "The optical for scale-up, the timing should be somewhere in 2028. We do believe that the initial deployment for optical technology, CPO in particular, might happen with scale-out, and that might precede the deployment of scale-up" (Mohan, ALAB Q4 FY2025 call). This is directionally consistent with Murphy (scale-up CPO coming) but with a later timeline and less aggressive framing.
+
+**Copper and optical coexisting.** "We see copper and optical link coexisting from a system standpoint" (Mohan, ALAB Q4 FY2025 call). Unlike Murphy (CPO replacing copper at scale-up) or Hock Tan (copper extending via SerDes, CPO deferred), Mohan frames the outcome as structural coexistence — both technologies serving different functions within the same system architecture.
+
+**Optical as "a very large opportunity."** Mohan characterizes optical for scale-up as "a very large opportunity, probably larger than the signal conditioning opportunity" (ALAB Q4 FY2025 call) — framing optical as TAM-expanding rather than substitutive.
+
+**Incentive calibration.** Mohan's phased-coexistence framing serves ALAB's current competitive position: ALAB is a copper connectivity company (PCIe retimers, Ethernet cable modules, Scorpio fabric switches) with a nascent photonics capability ($31.1M aiXscale acquisition, zero optical revenue). The phased-coexistence frame protects the current copper business while positioning ALAB for the optical opportunity — a framing that requires neither technology to fail. Murphy, by contrast, needs CPO to succeed to justify $5.5B (Celestial); Hock Tan needs copper to persist to protect SerDes leadership. Mohan has the least concentrated bet of the three, which both reduces his framing bias and limits the conviction signal.
+
+### Robbins' acknowledged deferral
+
+[[CSCO]] CEO Chuck Robbins adds a fourth perspective — the weakest positional commitment of the four. Robbins acknowledges CPO's inevitability ("we absolutely believe it's going to happen") but claims it is not imminent, framing current non-adoption as customer-driven: "customers want the differentiation between optics and silicon so they have choice and they don't get locked in" (CSCO Q2 FY2026 call). On scale-up specifically: "we haven't made any announcements on scale-up... we expect in the future to have products and revenue from scale-up, but we haven't announced anything" (Robbins, CSCO Q2 FY2026 call). No technology commitment, no capital investment in CPO, no timeline.
+
+**Incentive calibration.** Robbins has neither Murphy's $5.5B CPO bet to justify nor Hock Tan's SerDes franchise to protect. CSCO's current business (Acacia pluggables with "triple-digit booking growth") benefits from the status quo — CPO deferral sustains pluggable demand. The customer-choice framing is the least self-serving of the four positions because it doesn't commit capital or technology, but it is also aligned with CSCO's current revenue stream. Robbins' position requires the least capital commitment to maintain, which both reduces his framing bias and limits the conviction signal — the mirror image of Mohan's dynamic.
+
+**Five-way comparison:**
+
+| Executive | Company | Scale-up technology | Timeline | Incentive alignment |
+|-----------|---------|-------------------|----------|-------------------|
+| Jensen | [[NVDA]] | Both — copper + optical parallel | NVLink 144 copper now; NVLink 576 optical (Oberon) | Platform-definer with $4B laser investments |
+| Murphy | [[MRVL]] | CPO wins | FY2028 (commercial) | $3.25-5.5B Celestial acquisition |
+| Hock Tan | [[AVGO]] | Copper wins (SerDes) | CPO deferred ("not this year, maybe not next year") | SerDes market leadership |
+| Mohan | [[ALAB]] | Coexistence | 2028 for optical | $31.1M aiXscale + copper product portfolio |
+| Robbins | [[CSCO]] | "Not imminent" (no commitment) | No timeline | Acacia pluggable business (status quo benefits) |
+
+**Pre-registered resolution signals.** This disagreement is not adjudicatable from executive commentary. It will be resolved by:
+
+1. **Hyperscaler 2027-2028 deployment decisions.** When Google, Meta, Anthropic, and other AVGO/MRVL XPU customers make scale-up interconnect technology selections, the choice between CPO and copper will become visible in supply chain orders, packaging specifications, and deployment architectures.
+2. **Customer CPO vs. copper adoption patterns.** If hyperscalers adopt CPO for scale-up in the 2027-2028 window (per Murphy's timeline), Murphy's position is validated. If hyperscalers extend copper via higher SerDes data rates (400G+), Hock Tan's position is validated. A mixed outcome — some customers choosing CPO, others copper — is also plausible and would validate the bifurcation framework without resolving the scale-up technology question.
+3. **MRVL Photonic Fabric revenue trajectory.** Murphy's quantified targets ($500M/$1B) are falsifiable by their stated timelines (Q4 FY2028 / Q4 FY2029). Significant shortfall would weaken the CPO-wins-scale-up thesis.
+4. **AVGO SerDes roadmap beyond 400G.** If copper data rates extend to 800G+ per lane, the reach/bandwidth limitations that motivate CPO adoption may be pushed further out, extending copper's relevance window.
+
+## Signals to track
+
+**Design wins and partner announcements:**
+- Hyperscaler CPO commitments (MSFT, META, GOOGL, AMZN)
+- NVDA Quantum-X / NVLink Fusion design-win disclosures
+- AVGO Bailly customer engagements
+- MRVL Photonic Fabric hyperscaler design wins
+- ALAB Scorpio X-Series volume production announcements and optical revenue disclosure
+- ALAB aiXscale product development milestones (18-24 month start-to-revenue per Tate)
+- CSCO scale-up product announcements (Robbins: "stay tuned" — no current product)
+
+**Technology milestones:**
+- TSMC COUPE production ramp (frameworks.md: COUPE + CoWoS integration starting 2026)
+- COHR/LITE laser component volume delivery to CPO programs
+- Packaging technology maturation (CoWoS → CoWoS+COUPE integration timeline)
+
+**Management commentary venues:**
+- **NVDA future GTC / analyst day:** Whether GTC CPO disclosure pattern persists or migrates to earnings calls
+- **TSMC technology symposium:** Typically provides advanced packaging roadmap updates
+- Future earnings calls: tracking when CPO first enters Q&A discussion
+
+**Competitive dynamics:**
+- Whether hyperscaler custom ASIC programs choose merchant CPO platforms or build captive
+- Ayar Labs and Lightmatter acquisition targets — to hyperscalers or to platform players?
+- MRVL and ALAB Layer 3 → Layer 2 transition progress (per frameworks.md Section 2.5)
+
+## Cross-references
+
+- [[datacenter-photonics-supply-chain]] — cross-cutting supply-chain map. Architecture overview cross-references this page rather than restating the five-way executive comparison or tiered silence pattern; Section 2.6 (Photonic foundries) addresses the COUPE vault-conflict reconciliation; Section 3 investability framing places CPO contestants across Buckets A and B.
+- [[chokepoint-investability-priorities]] — Tier 3-anchored vault-canonical reference for 13-chokepoint photonics framework (created Session 25, A2 first canonical application). Chokepoint 7 (Switch ASIC / platform architecture) covers control-point analytical thread including five-way executive comparison cross-reference; Chokepoints 9 and 10 cover photonic foundry vs OSAT-level CPO integration structural split.
+
+## Change log
+
+- **2026-04-19:** Created to track thesis question 2. Baseline established: zero CPO/photonics discussion in first two ingested sources (NVDA Q4 FY2026 call, TSM Q1 2026 call). Contestants and tracking framework from frameworks.md. This page exists to accumulate evidence on a thesis question that primary sources have not yet addressed.
+- **2026-04-19:** Updated from TSM 20-F FY2025 (Tier 1). Third absence observation added: COUPE absent from formal technology enumeration in 244-page Tier 1 filing. Three-data-point threshold crossed for frameworks.md timeline revision consideration.
+- **2026-04-19:** Major update from LITE 10-K FY2025 (Tier 1), LITE 10-Q Q2 FY2026 (Tier 1), LITE Q2 FY2026 earnings call (Tier 2). The CPO silence breaks: LITE call names CPO as one of three primary growth catalysts. Tiered silence pattern identified — CPO discussed at component layer (Layer 4) before platform (Layer 1) or manufacturing (Layer 2) layers. Five new observations added. Interpretive framing revised. Same-day 10-Q vs. call divergence documented.
+- **2026-04-19:** Updated from COHR 10-K FY2025 (Tier 1), COHR 10-Q Q2 FY2026 (Tier 1), COHR Q2 FY2026 earnings call (Tier 2). Second Layer 4 CPO break. COHR provides even more extensive CPO discussion than LITE: "exceptionally large purchase order," scale-out vs. scale-up phasing, "orders of magnitude" scale-up opportunity. Same-day divergence now a confirmed two-company pattern. Tiered silence evidence table expanded to nine data points across four companies.
+- **2026-04-20:** Updated from AEHR (10-K FY2025, 10-Q Q3 FY2026, Q3 FY2026 call) and ONTO (10-K FY2025, 10-Q Q3 FY2025, Q4 FY2025 call). Equipment-tier functional split: AEHR (test) breaks the silence with silicon photonics as a named market and burn-in discussion; ONTO (metrology) maintains silence. Four new data points added. Evidence table expanded to thirteen data points across six companies. Asymmetry explained by functional proximity to photonic devices.
+- **2026-04-20:** Updated from AAOI (10-Q Q3 FY2025, 10-K FY2025, Q4 FY2025 call). Layer 5 asymmetric reframing pattern identified — a distinct variant from all other tiers. Filings completely silent; call contains one mention reframing CPO as laser demand opportunity, omitting transceiver displacement risk. Analyst silence observation added (5 analysts, 0 CPO questions — most conspicuous in vault). Two missing ONTO rows added (10-Q, call — both silent), completing ONTO's three-source coverage. Evidence table expanded from thirteen to eighteen data points across seven companies. Pattern now spans all five supply chain tiers in the seed set.
+- **2026-04-20:** Updated from COHU (10-K FY2025, 10-Q Q3 FY2025). Two COHU rows added — both silent as expected. Equipment-tier functional split expanded to three-company observation: AEHR (burn-in) discusses photonics, ONTO (metrology) and COHU (handlers) maintain silence. Evidence table expanded from eighteen to twenty data points across all eight seed-set companies. Complete seed-set coverage achieved (20 data points, not 21, due to unavailable COHU earnings call).
+- **2026-04-22:** Major update from MRVL (10-Q Q3 FY2026, 10-K FY2026, Q4 FY2026 call). Three MRVL rows added to tiered silence table — Layer 3 platform-contestant escalating disclosure variant identified (10-Q silent, 10-K product-description level, call most CPO-extensive in vault). Murphy bifurcation section added: CPO as two battles (scale-out/pluggables vs. scale-up/CPO). Contestants table updated with MRVL packaging dependencies. Evidence table expanded from twenty to twenty-three data points across nine companies. `[[MRVL]]` forward wikilink resolved. First post-seed-set data points.
+- **2026-04-23:** Major update from AVGO (10-K FY2025, 10-Q Q1 FY2026, Q1 FY2026 call). Three AVGO rows added to tiered silence table — Layer 1 active dismissal variant identified (filings silent, call actively dismisses CPO as "bright, shiny objects" while claiming leadership optionality). "Layer 1 divergence: silence vs. active dismissal" subsection added, documenting NVDA pure silence vs. AVGO active dismissal as structurally distinct sub-patterns within Layer 1. "Murphy ↔ Hock Tan: the scale-up interconnect disagreement" added as new top-level section — direct executive contradiction on scale-up technology (CPO vs. copper DAC), with incentive calibration and pre-registered resolution signals. Contestants table updated with AVGO approach and TSMC dependency. Evidence table expanded from twenty-three to twenty-six data points across ten companies. `[[AVGO]]` forward wikilink resolved.
+- **2026-04-23:** Updated from AXTI (10-K FY2025, 10-Q Q3 FY2025, Q4 FY2025 call) and VECO (10-K FY2025, 10-Q Q3 FY2025, Q4 FY2025 call). Six new rows added to tiered silence table: [[AXTI]] (Layer 6 substrate — first explicitly bullish CPO source in vault; filing silent, call names CPO as "yet another inflection point") and [[VECO]] (Equipment/MOCVD — three-source silence). New "Substrate-tier CPO as demand amplifier" section added documenting the Layer 6 structural inversion where CPO amplifies InP substrate demand rather than displacing products. Evidence table expanded from twenty-six to thirty-two data points across twelve companies.
+- **2026-04-23:** Updated from ALAB (10-K FY2025, 10-Q Q3 FY2025, Q4 FY2025 call). Three ALAB rows added to tiered silence table — Layer 3 phased-coexistence variant (filings silent, call frames copper and optical coexisting with scale-up optical in 2028). New "Mohan's phased-coexistence perspective" subsection added under Murphy ↔ Hock Tan section, introducing a third executive perspective and three-way comparison table. Contestants table updated with ALAB approach details. Layer 3 now has two structurally distinct CPO profiles (MRVL escalating disclosure vs. ALAB phased coexistence). Evidence table expanded from thirty-two to thirty-five data points across thirteen companies. `[[ALAB]]` forward wikilink resolved.
+- **2026-04-26 (Session 17):** Major update from NVDA GTC March 16, 2026 keynote (Tier 2). NVDA GTC row added to tiered silence table — production disclosure variant (COUP in production, Spectrum-X CPO, Kyber CPO scale-up). Evidence baseline rewritten: silence → adoption vs. dismissal at Layer 1. "Layer 1 divergence" section rewritten from "silence vs. active dismissal" to "adoption vs. active dismissal" with cross-venue disclosure pattern. "Murphy ↔ Hock Tan" section renamed to "Five-way executive comparison" with Jensen added as fifth perspective ("both by platform design"). Five-way comparison table replaces four-way. NVDA GTC added to "Sources that break the silence." Pattern summary updated to thirty-nine data points. Signals to track updated.
+- **2026-04-26:** Updated from CSCO (10-K FY2025, 10-Q Q2 FY2026, Q2 FY2026 call). Three CSCO rows added to tiered silence table — Layer 3 acknowledged-deferral variant (filings silent, call acknowledges CPO inevitability but frames non-adoption as customer-driven). New "Robbins' acknowledged deferral" subsection added under Murphy ↔ Hock Tan section; three-way comparison table expanded to four-way. CSCO scale-up absence confirmed ("haven't made any announcements"). Layer 3 now has three structurally distinct CPO profiles (MRVL escalating disclosure, ALAB phased coexistence, CSCO acknowledged deferral). Evidence table expanded from thirty-five to thirty-eight data points across fourteen companies. `[[CSCO]]` forward wikilink resolved — last forward wikilink in vault.
+- **2026-04-27:** Session 19 cross-reference. Added Cross-references section linking [[datacenter-photonics-supply-chain]].
+- **2026-04-27 (Session 25):** Cross-referenced from new theme page [[chokepoint-investability-priorities]] Chokepoint 7 (Switch ASIC / platform architecture) per A2 first canonical application. No content edits.
+- **2026-04-28 (Session 27 paired ingest — [[CRDO]] + [[ANET]] tier-silence-pattern data points):** Five new tiered-silence-table rows added: 3 [[CRDO]] rows at Layer 3 designer (10-K silent + 10-Q silent + call indirect via OmniConnect CPO displacement positioning) + 2 [[ANET]] rows at Layer 5 systems integrator (10-K silent + Q4 2025 call silent). Pattern observation expanded from 39 data points across 14 companies to 44 data points across 16 companies. Layer 3 now has four structurally distinct CPO profiles: MRVL escalating disclosure, ALAB phased coexistence, CSCO acknowledged deferral, CRDO CPO displacement positioning (Session 27 fourth Layer 3 variant). Layer 5 systems integrator tier-silence-pattern observed: ANET maintains tighter silence than CSCO acknowledged-deferral — possibly because CPO impact materializes via component supplier shifts (likely AVGO Tomahawk → Bailly transition) that ANET passes through to customers rather than via direct architectural commitment. Tickers expanded from 14 to 16 (added [[CRDO]], [[ANET]]).
+- **2026-04-30 (Session 32 cross-reference — [[cpo-integration]] chokepoint page creation):** New chokepoint page [[cpo-integration]] created (fourth canonical multi-source-synthesis chokepoint page in vault history; closes Tier 3 framework Chokepoint 7 dedicated chokepoint page coverage gap). Per CLAUDE.md theme-page-vs-chokepoint-page differentiation discipline: this theme page (CPO-platform-battle.md) covers platform-strategy archetype framing breadth across 14-16 companies (Layer 1 adoption-vs-dismissal divergence; five-way executive comparison; tiered silence pattern; Layer 3 four-variant CPO profile; Layer 5 silence pattern; 44 data points across 16 companies). The [[cpo-integration]] chokepoint page covers complementary scope: CPO integration mechanics + value chain shift dynamics + Scale-up/Scale-out bifurcation handling per Murphy thesis + per-company integration positioning across 9 vault primary-source companies. Page-top theme-page-overlap differentiation boundary on chokepoint page explicitly states scope NOT covered there (platform-strategy archetype framing; tier-silence-pattern data point enumeration; five-way executive comparison) is covered HERE. No content edits to this theme page; cross-reference relationship now bidirectional via chokepoint page Cross-references section.

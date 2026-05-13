@@ -1,0 +1,20 @@
+# Bulk raw sources — re-fetchable via scripts/fetch_filings.py
+raw/filings/
+raw/transcripts/
+raw/news/
+
+# Python bytecode
+__pycache__/
+*.pyc
+*.pyo
+
+# macOS metadata
+.DS_Store
+
+# Editor / IDE noise
+.vscode/
+.idea/
+*.swp
+*.swo
+
+prompts/

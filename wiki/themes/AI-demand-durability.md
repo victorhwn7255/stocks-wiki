@@ -1,0 +1,298 @@
+---
+type: theme
+tickers: [TSM, NVDA, LITE, COHR, AEHR, ONTO, AAOI, MRVL, AVGO, AXTI, VECO, ALAB, GLW, FN, VRT]
+last_updated: 2026-04-27
+---
+
+# AI Demand Durability
+
+## Thesis relevance
+
+The chokepoint thesis depends on sustained AI demand. Chokepoints only create durable value when demand is strong enough to maintain constraint — if AI spending decelerates materially, capacity catches up and structural positions become less differentiated. This page tracks evidence for and against the durability of AI-driven semiconductor and infrastructure demand across the supply chain.
+
+The central question: Is current AI demand a multi-year structural shift that will sustain capacity constraints through the 2026-2028 thesis window, or is there cyclical overshoot risk that could collapse the demand-supply gap?
+
+## Multi-layer demand convergence
+
+Multi-layer demand convergence across the AI supply chain (currently 15 companies organized across Framework 2 Layers 1-6 plus equipment tier; chronological accumulation pattern documented per source below). All companies report demand exceeding supply or capacity in their respective segments for the 2026-2028 window. The convergence is the central analytical product of this page: when companies at every supply chain layer simultaneously report constraint, the demand durability thesis is structurally validated across vantage points rather than from any single perspective.
+
+| Layer | Companies | Latest demand signal |
+|---|---|---|
+| Layer 1 (platform definers) | [[NVDA]], [[AVGO]] | Combined platform-definer demand at scale; NVDA Q4 FY2026 $62B data center revenue, AVGO Q1 FY2026 $8.4B AI semi |
+| Layer 2 (manufacturing / infrastructure) | [[TSM]] | CoWoS capacity constraint through 2027+; HPC at 61% of Q1 2026 revenue |
+| Layer 3 (specialized designers) | [[MRVL]], [[ALAB]] | Custom ASIC + interconnect; MRVL FY2027/FY2028 guidance ~$11B/~$15B; ALAB FY2025 +115% YoY |
+| Layer 4 (components / fiber) | [[LITE]], [[COHR]], [[GLW]] | InP laser supply allocation through 2027; GLW Optical +35% FY2025 with Meta $6B agreement |
+| Layer 5 (integrated systems / datacenter infrastructure) | [[AAOI]], [[VRT]] | Modules + thermal/power infrastructure; AAOI Q4 FY2025 +69% DC revenue; VRT $15B backlog +108% YoY |
+| Layer 6 (manufacturing / materials) | [[AXTI]], [[FN]] | Substrate + contract manufacturing; AXTI $60M+ InP backlog; FN Q2 FY2026 $1.13B record (+35.9% YoY) |
+| Equipment tier (cross-layer) | [[AEHR]], [[ONTO]], [[VECO]] | Test/metrology/MOCVD; AEHR bookings 6x QoQ; ONTO $240M+ HBM VPA; VECO Compound Semi guided +33% FY2026 |
+
+> *Placement reflects current `frameworks.md` v7 Framework 2 (value capture layers) with straddling notes preserved per company page. Examples: [[AVGO]] Layer 1 with Layer 1/3 straddling tension (custom ASIC business with design-service economics); [[AAOI]] Layer 5 with Layer 4/5 straddling tension (in-house InP/GaAs MBE+MOCVD lasers alongside transceiver assembly); [[MRVL]] Layer 3 with Layer 3→2 trajectory in progress (Celestial AI acquisition; falsifiable upgrade triggers not yet met); [[ALAB]] Layer 3 with Layer 3→2 trajectory in progress (aiXscale photonics acquisition). See per-company pages for canonical placement reasoning and straddling treatment.*
+
+The chronological per-source narrative below documents how the convergence accumulated across Sessions 8-22 (seven-position canonical Sessions 8-19; expanded to eight Session 20 [[GLW]]; nine Session 21 [[FN]]; ten Session 22 [[VRT]]). The accumulation pattern itself is analytical signal — broad-based AI demand convergence has continued accumulating across new vault company ingests over time without any company contradicting the convergence narrative.
+
+## Demand signals by source
+
+### TSM Q1 2026 call (Tier 2, April 16 2026)
+
+**Quantitative signals:**
+
+- Full-year 2026 revenue growth guided at >30% YoY in USD, raised from prior guidance (TSM Q1 2026 call)
+- AI accelerator revenue CAGR: mid-to-high 50s through 2029 (TSM Q1 2026 call)
+- HPC at 61% of Q1 revenue, up 20% QoQ — the highest platform concentration in recent quarters (TSM Q1 2026 call)
+- Q2 guidance implies 32% YoY revenue growth at the midpoint (TSM Q1 2026 call)
+- Capex guided toward high end of $52-56B, raised from January guidance (TSM Q1 2026 call)
+
+**Qualitative signals:**
+
+- C.C. Wei: AI-related demand "continues to be extremely robust" (TSM Q1 2026 call)
+- The shift from generative AI to agentic AI is driving more tokens, more computation: "the query mode to agentic AI and the command and action mode is leading to another step up in the amount of tokens being consumed" (TSM Q1 2026 call)
+- Customers' customers (CSPs/hyperscalers) "continue to provide us with their very strong signal and positive outlook" (TSM Q1 2026 call)
+- Supply constrained through at least 2027 — demand exceeds supply with no balance in sight (TSM Q1 2026 call)
+- C.C. Wei on what gives confidence for capex raise: "A simple, a very simple answer is, the demand are very robust, especially from the HPC and AI applications... Still our supply is very tight. Demand continues to increase" (TSM Q1 2026 call)
+
+**The agentic AI transition as a demand driver:**
+
+Management specifically identified the shift from generative AI (query-based) to agentic AI (command-and-action) as a structural demand driver. This transition increases compute intensity per task because agentic workflows involve multi-step reasoning, tool use, and autonomous action — each consuming more tokens and more compute cycles than single-query interactions. If agentic AI adoption continues scaling, it represents a demand multiplier on top of the already-growing base of generative AI workloads.
+
+This is management commentary (Tier 2) colored by incentive to present demand favorably. Cross-reference against hyperscaler capex guidance and token consumption data from future sources.
+
+### NVDA Q4 FY2026 call (Tier 2, February 25 2026)
+
+**Quantitative signals:**
+
+- Q4 total revenue: $68B, up 73% YoY — accelerating sequentially (NVDA Q4 FY2026 call)
+- Q4 data center revenue: $62B, up 75% YoY, adding $11B sequentially (NVDA Q4 FY2026 call)
+- Full-year FY2026 data center: $194B, up 68% YoY — 13x since ChatGPT emergence in FY2023 (NVDA Q4 FY2026 call)
+- Full-year networking: $31B, up 10x since Mellanox acquisition FY2021 (NVDA Q4 FY2026 call)
+- Q1 FY2027 guidance: $78B ±2%, with sequential growth expected throughout calendar 2026 (NVDA Q4 FY2026 call)
+- Hyperscaler 2026 capex approaching $700B, up ~$120B since start of year (NVDA Q4 FY2026 call, Colette Kress citing analyst estimates)
+- Sovereign AI: >$30B in FY2026, tripled YoY (NVDA Q4 FY2026 call)
+- Purchase commitments extended into calendar 2027 — "further out in time than usual" (NVDA Q4 FY2026 call)
+
+**Qualitative signals:**
+
+- Jensen Huang declared agentic AI "inflection point" reached, naming Claude Code, Claude Cowork, and OpenAI Codex as specific evidence (NVDA Q4 FY2026 call)
+- Jensen's "tokenomics" framework: "compute is revenues. Without compute, there's no way to generate tokens. Without tokens, there's no way to grow revenues" (NVDA Q4 FY2026 call)
+- Token generation described as "gone completely exponential" driven by agentic systems running "minutes to hours" per task (NVDA Q4 FY2026 call)
+- $300-400B classical computing spend annually → AI demands "a lot more" (NVDA Q4 FY2026 call)
+- $3-4T cumulative datacenter capex by 2030 (Jensen's framing — not independently verified; NVDA Q4 FY2026 call)
+- Even six-year-old Ampere GPUs "completely consumed" in the cloud with pricing "going up" (NVDA Q4 FY2026 call)
+- Hyperscalers seeing strong evidence of ROI: Meta's GEM model drove 3.5x ad click increase on Facebook (NVDA Q4 FY2026 call)
+
+**Calibration note:** NVDA's demand narrative is notably more promotional than TSM's. Jensen Huang's framing ("industrial revolution," "compute equals revenues," "tokenomics") goes well beyond reporting demand signals — it constructs a philosophical framework arguing that AI infrastructure spending is structurally permanent. The hard financial numbers ($68B revenue, $194B annual data center) are verifiable; the interpretive overlay ($3-4T cumulative capex by 2030, AI as "the future of computing") is management narrative from the company with the strongest incentive to promote AI spending durability. Both are recorded here; the distinction matters.
+
+### TSM 20-F FY2025 (Tier 1, filed April 2026)
+
+The 20-F provides Tier 1 factual grounding for demand trends previously supported only by Tier 2 earnings call commentary:
+
+- FY2025 annual revenue: NT$3,809,054M, up 31.6% YoY (TSM 20-F FY2025). This cross-validates the Q1 2026 call's >30% full-year 2026 guidance — FY2025 already delivered comparable growth, making the forward target consistent with demonstrated trajectory.
+- HPC platform share: 58% of FY2025 revenue, up from 51% in 2024 and 43% in 2023 (TSM 20-F FY2025). The three-year trend (43% → 51% → 58%) confirms a structural shift in TSMC's revenue composition toward HPC/AI, not a single-quarter spike.
+- Advanced nodes (≤7nm): 74% of wafer revenue in FY2025, up from 69% in 2024 and 58% in 2023 (TSM 20-F FY2025). Accelerating concentration at leading-edge nodes is consistent with AI workloads driving demand for the most advanced process technologies.
+- Customer A trajectory: TSMC's largest customer grew from below 10% of revenue in 2023 to 19% in 2025, with revenue more than doubling in FY2025 alone (TSM 20-F FY2025, Note 38). The 20-F does not name customers, but the growth pattern is consistent with an AI-era platform customer scaling demand explosively. This single-customer growth dynamic is a Tier 1 data point supporting demand concentration in AI-driven applications.
+
+The directional consistency across Tier 1 annual data (31.6% revenue growth, HPC share gain, advanced node acceleration, customer concentration shift) and Tier 2 forward-looking commentary (>30% 2026 guidance, mid-to-high 50s AI CAGR) strengthens confidence that the demand signals are factually grounded, not merely promotional.
+
+### LITE Q2 FY2026 — cross-source (Tier 1 + Tier 2, quarter ended December 27, 2025)
+
+LITE provides the first Layer 4 component-supplier demand evidence, complementing the platform (NVDA) and manufacturing (TSM) signals above:
+
+- Revenue: $665.5M, +65.5% YoY — second consecutive company record (LITE 10-Q Q2 FY2026). H1 FY2026: $1,199.3M, +62.3% YoY.
+- Q3 FY2026 guidance: $780-830M midpoint, approximately +85% YoY (LITE Q2 FY2026 call). Sequential acceleration.
+- **Supply-constrained allocation:** "This demand is outpacing our current supply which has led to decisions on supply allocation" (LITE 10-Q Q2 FY2026). Lumentum is under-shipping customer demand by approximately 25-30% (LITE Q2 FY2026 call).
+- InP wafer fab fully allocated, 40% capacity expansion front-loaded (LITE Q2 FY2026 call). All EML capacity spoken for through calendar 2027 via long-term agreements.
+- OCS backlog >$400M across three customers, majority shipping H2 calendar 2026 (LITE Q2 FY2026 call).
+- Components growth driven ~75% by datacenter laser chip shipments (200G lane speed transition), confirming AI/datacenter as the primary demand driver at the component layer (LITE 10-Q Q2 FY2026).
+
+**Layer 4 demand observation:** The demand signal at the component layer is structurally consistent with the platform (NVDA) and manufacturing (TSM) signals: all three layers report demand exceeding supply. When the platform definer ([[NVDA]]) reports $68B quarterly revenue, the foundry ([[TSM]]) reports supply constraints through 2027, and the component supplier ([[LITE]]) reports 25-30% under-shipping with fully allocated capacity, the multi-layer demand convergence strengthens the durability thesis. NVDA's $2B investment in LITE (March 2026) further confirms the demand signal — a platform definer does not invest $2B in a component supplier unless it expects sustained demand for that component.
+
+### COHR Q2 FY2026 — cross-source (Tier 1 + Tier 2, quarter ended December 31, 2025)
+
+COHR provides the second Layer 4 demand cross-validation, confirming [[LITE]]'s signals from a larger, more diversified competitor:
+
+- Revenue: $1,686M, +17% YoY reported; pro forma (ex-A&D divestiture) +22% YoY (COHR 10-Q Q2 FY2026; COHR Q2 FY2026 call). D&C segment +34% YoY, now 72% of total (vs 63% prior year).
+- **Book-to-bill exceeded 4x in datacenter** — the most extreme demand signal from any source in the vault (COHR Q2 FY2026 call).
+- Bookings extending into calendar 2027, forecasts to calendar 2028 (COHR Q2 FY2026 call).
+- Supply-demand imbalance: Anderson projects it will not resolve in calendar 2026 or 2027, characterizing it as a "very sustained, long period of supply-demand imbalance on indium phosphide" (COHR Q2 FY2026 call).
+- Inventory build: +$410M (+29%) in six months, with WIP +33% — building ahead of expected demand (COHR 10-Q Q2 FY2026).
+- Networking capex tripled FY2024→FY2025 ($91M→$263M), reflecting datacenter buildout investment (COHR 10-K FY2025).
+
+**Two-supplier demand convergence.** With both [[LITE]] and [[COHR]] now ingested for the same quarter, the Layer 4 demand signal is cross-validated: both suppliers report demand exceeding supply, fully allocated capacity, customer investment negotiations, and bookings extending through 2027+. The demand signal is not company-specific — it is structural at the component layer. NVDA's $4B combined investment in both suppliers ($2B each, March 2026) is the platform definer's revealed-preference confirmation of this demand durability.
+
+### Equipment tier — AEHR Q3 FY2026 + ONTO Q4 FY2025 (Tier 1 + Tier 2, overlapping quarters ending Feb/Jan 2026)
+
+The equipment tier provides two additional demand vantage points on the advanced packaging buildout:
+
+**[[AEHR]] — test equipment demand inflection.** AEHR's bookings surged 6x QoQ to $50.9M in Q3 FY2026 (quarter ending February 2026), producing an effective book-to-bill >3.5x against $14.6M trailing revenue (AEHR Q3 FY2026 call). The surge represents AEHR's pivot from silicon carbide (EV/power) to AI: EV/power fell from 92% of FY2025 revenue to 41% in Q3 FY2026, while semiconductor — driven by advanced packaging burn-in — grew from 3% to 25% (AEHR 10-K FY2025; AEHR 10-Q Q3 FY2026). The bookings trajectory signals that advanced packaging test demand is accelerating ahead of wafer capacity expansion, consistent with the broader constraint thesis.
+
+**[[ONTO]] — metrology demand at the packaging foundry.** ONTO's advanced packaging and HBM revenue grew >30% YoY in Q4 FY2025 (ONTO Q4 FY2025 call), with $240M+ in agreed value purchase agreements (VPAs) concentrated in HBM metrology (ONTO Q4 FY2025 call). ONTO's Q4 FY2025 was a company record quarter at $268M revenue (ONTO 10-K FY2025). TSMC is ONTO's largest named customer at 21% of Q3 revenue (ONTO 10-Q Q3 FY2025), providing a direct demand signal from the advanced packaging chokepoint holder.
+
+**Equipment-tier demand observation.** The equipment tier confirms advanced packaging demand from a different position in the supply chain — upstream of both the foundry (TSM) and the component suppliers (LITE, COHR). AEHR's bookings surge and ONTO's record revenue and VPA pipeline are leading indicators: equipment orders precede capacity deployment. The multi-layer demand convergence now spans four supply chain positions — platform (NVDA), manufacturing (TSM), components (LITE, COHR), and equipment (AEHR, ONTO) — providing the broadest demand cross-validation in the vault.
+
+### AAOI Q4 FY2025 — cross-source (Tier 1 + Tier 2, quarter ended December 31, 2025)
+
+[[AAOI]] provides the first Layer 5 (integrated systems) demand evidence, extending the multi-layer convergence to a fifth supply chain position:
+
+- Revenue: $455.7M FY2025, +82.8% YoY. Q4 $134.3M, company record (AAOI 10-K FY2025; AAOI Q4 FY2025 call).
+- Q4 data center revenue: $74.9M, +69% YoY, +70% QoQ — the sharpest quarterly DC inflection in the vault (AAOI Q4 FY2025 call).
+- FY2026 guidance: >$1B revenue, >$120M non-GAAP operating profit (AAOI Q4 FY2025 call). If achieved, more than doubles FY2025.
+- 800G demand: expected to exceed capacity through mid-2027. 500,000 units/month (800G + 1.6T) target by end of 2026 (AAOI Q4 FY2025 call).
+- Q1 2026 guidance: $150-165M midpoint, implying continued sequential growth (AAOI Q4 FY2025 call).
+
+**Layer 5 demand calibration.** AAOI's demand signal is directionally consistent with the higher-layer signals but structurally different. Layer 4 suppliers ([[LITE]], [[COHR]]) report supply-demand imbalance in the components they sell. AAOI reports demand growth for the modules it assembles from those components. The demand is real — 70% QoQ DC growth, aggressive FY2026 guidance — but the economic capture is weaker: AAOI's 31% non-GAAP gross margin (Q4 FY2025) compares with LITE at ~42% and COHR at ~39%. Layer 5 demand growth does not automatically translate to Layer 5 value capture, particularly when the product is "minimally differentiated" (AAOI 10-K FY2025) and customer concentration is extreme (top 2 = 81.9% of revenue). The demand signal is genuine; the margin and structural position are not.
+
+**Five-layer demand convergence (updated to six — see MRVL section below).** With AAOI added, the multi-layer demand convergence spans five supply chain positions — platform ([[NVDA]]), manufacturing ([[TSM]]), components ([[LITE]], [[COHR]]), equipment ([[AEHR]], [[ONTO]]), and integrated systems ([[AAOI]]). All report demand exceeding supply or capacity in their respective segments for the 2026-2027 window. [[MRVL]] (Layer 3, specialized designer) extends this to six positions — see below.
+
+### MRVL FY2026 — cross-source (Tier 1 + Tier 2, fiscal year ended January 31, 2026)
+
+[[MRVL]] provides the first Layer 3 (specialized designer) demand evidence, extending the multi-layer convergence to a sixth supply chain position:
+
+- Revenue: $8,194.6M FY2026, +42% YoY (+45% excluding divested auto ethernet). Data center: $6,100.3M (+46% YoY), up from 40% to 74% of total in two years (MRVL 10-K FY2026).
+- Custom silicon: $1.5B FY2026, doubled YoY, with 20+ design wins in production or going to production (MRVL Q4 FY2026 call).
+- FY2027 guidance: ~$11B (+30%), DC +40%. FY2028 outlook: ~$15B (~40%), non-GAAP EPS "well over $5" (MRVL Q4 FY2026 call).
+- Supply binding constraints confirmed by COO Koopmans: "advanced wave fabrication, advanced packaging, large body substrates" — explicitly named, not obliquely referenced (MRVL Q4 FY2026 call).
+- WIP inventory surged from $709M to $1,106M (+56%) while finished goods declined — demand pulling through faster than production cycles complete (MRVL 10-K FY2026).
+- Murphy: "our goal is to make Marvell one of the big winners in this once in a lifetime episodic AI infrastructure build-out" (MRVL Q4 FY2026 call).
+
+**Layer 3 demand calibration.** MRVL's demand signal is the broadest single-company signal in the vault: data center revenue larger than any other vault company's total revenue, guidance extending to FY2028 at ~40% growth, and supply constraints named explicitly. But MRVL's GAAP gross margin (51.0%) is the lowest of any non-loss-making company in the vault, reflecting custom ASIC economics where high revenue growth does not automatically translate to proportional margin expansion. The demand is unambiguous; the value capture question (Layer 3 vs. Layer 2 economics) is what the margin trajectory will resolve.
+
+**Six-position demand convergence.** With MRVL added, the multi-layer demand convergence now spans six supply chain positions — platform ([[NVDA]]), manufacturing ([[TSM]]), specialized designer ([[MRVL]]), components ([[LITE]], [[COHR]]), equipment ([[AEHR]], [[ONTO]]), and integrated systems ([[AAOI]]). All report demand exceeding supply or capacity. The addition of Layer 3 fills the last gap in the vault's demand cross-validation across the thesis-relevant supply chain.
+
+### AVGO Q1 FY2026 — cross-source (Tier 1 + Tier 2, fiscal quarter ended February 1, 2026)
+
+[[AVGO]] provides the second Layer 1 (platform definer) demand source, complementing [[NVDA]]'s Q4 FY2026 signals from the same tier:
+
+- AI semiconductor revenue: $8.4B Q1 FY2026, +106% YoY; custom accelerators +140% YoY. Q2 guided to ~$10.7B (+140% YoY) — AI revenue growth accelerating (AVGO Q1 FY2026 call).
+- Hock Tan claimed "line of sight to achieve AI revenue from chips, just chips in excess of $100 billion in 2027," subsequently escalated to "significantly in excess of $100 billion" (AVGO Q1 FY2026 call). The most extreme single-company forward demand claim in the vault.
+- Six named/referenced custom AI accelerator customers (Google, Anthropic, Meta, OpenAI + two unnamed) with aggregate deployment approaching ~10 GW in 2027 (AVGO Q1 FY2026 call).
+- Supply chain "fully secured for 2026 through 2028" — leading-edge wafers, HBM, substrates, T-glass (AVGO Q1 FY2026 call).
+- Inventory +30% to $2,962M (WIP $1,544M) — production ramp signal consistent with demand acceleration (AVGO 10-Q Q1 FY2026).
+
+**Second Layer 1 demand calibration.** AVGO's demand signal complements NVDA's from the same tier but with structurally different specificity. NVDA provides aggregate demand narrative ("$3-4T cumulative capex by 2030," hyperscaler capex approaching $700B) without naming customers. AVGO names four customers with GW-scale figures and claims $100B+ chip revenue — more verifiable and more vulnerable if numbers don't materialize. Both are highly promotional on AI demand durability. AVGO's $100B+ claim is attributed to Hock Tan per CLAUDE.md rhetorical claims convention — this is a directional assertion, not a verified forecast. The six-position demand convergence remains at six positions (AVGO adds a second data point at Layer 1, not a new layer), but Layer 1 demand evidence is now cross-validated from both platform definers.
+
+### Substrate and MOCVD equipment tier — AXTI FY2025 + VECO FY2025 (Tier 1 + Tier 2)
+
+[[AXTI]] and [[VECO]] provide the first substrate and MOCVD equipment tier demand evidence, extending the demand signal below the component layer to the foundational input level:
+
+- InP backlog: $60M+ as of February 2026 — Fischer described this as "a new high" (AXTI Q4 FY2025 call). Against AXTI's ~$8M/quarter InP substrate revenue, this represents approximately 7+ quarters of backlog.
+- Capacity expansion: AXTI doubling InP capacity by end 2026 ($30M brownfield), with a potential second doubling ($100-150M greenfield) in 2027 (AXTI Q4 FY2025 call).
+- VECO Compound Semiconductor: guided $80M FY2026, +33% YoY, reflecting MOCVD equipment demand for photonics epitaxial growth (VECO Q4 FY2025 call). VECO advanced packaging revenue doubled $75M→$150M in FY2025 — a parallel AI demand signal from the equipment tier (VECO Q4 FY2025 call).
+
+**Substrate-tier demand calibration.** AXTI's demand signal is structurally significant as a leading indicator: substrate orders precede laser device fabrication (Layer 4) by months, which itself precedes transceiver assembly (Layer 5) and deployment. A $60M+ InP backlog at the substrate level is consistent with the sustained demand that [[LITE]] and [[COHR]] report at the device level. However, AXTI management's demand framing was markedly promotional (see [[AXTI]] Source audit notes), and the December 2025 equity offering ($95.2M) closing five weeks before the call creates incentive context for bullish demand characterization. The backlog figure is factual; the demand attribution to AI networking is management framing.
+
+**Seven-position demand convergence.** With AXTI and VECO added, the multi-layer demand convergence spans seven supply chain positions — platform ([[NVDA]], [[AVGO]]), manufacturing ([[TSM]]), specialized designer ([[MRVL]], [[ALAB]]), components ([[LITE]], [[COHR]]), equipment ([[AEHR]], [[ONTO]], [[VECO]]), integrated systems ([[AAOI]]), and substrate ([[AXTI]]). All report demand growth or backlog expansion in their respective segments. The substrate tier provides the deepest upstream demand signal yet — preceding all other layers in the supply chain. ALAB adds a second Layer 3 data point alongside MRVL: FY2025 revenue $852.5M (+115% YoY), Q4 $270.6M (+92% YoY), Q1 FY2026 guided at $286-297M — with 75.7% gross margin indicating stronger value capture than MRVL's custom ASIC-weighted 51% (ALAB 10-K FY2025; ALAB Q4 FY2025 call). The seven-position framing is maintained — ALAB deepens the Layer 3 data point rather than adding an eighth position.
+
+### NVDA GTC March 16, 2026 (Tier 2, keynote transcript)
+
+[[NVDA]] GTC provides a second Layer 1 demand data point from a different venue (product keynote vs. earnings call), with distinct disclosure character:
+
+- Jensen characterized "$500 billion of purchase orders" — closer to factual given NVDA's purchase commitment disclosures, though the exact scope and instrument of "purchase orders" is not SEC-defined (NVDA GTC March 16, 2026).
+- Jensen extrapolated "by the time this is all produced and built, it'll probably be close to $1 trillion" through 2027 — directional framing, not verified forecast (NVDA GTC March 16, 2026 — attributed per rhetorical claims convention).
+- Revenue concentration: "approximately 60% of our revenue comes from about 10 hyperscalers" (NVDA GTC March 16, 2026) — up from ~50% reported on the February earnings call one month earlier.
+- Microsoft Azure confirmed as first Vera Rubin rack customer (NVDA GTC March 16, 2026).
+
+**Calibration.** GTC demand claims are more promotional than earnings call claims — the venue is a product launch, not a financial reporting event. The $500B figure plausibly encompasses multi-year framework agreements rather than firm delivery commitments. The $1T extrapolation is Jensen's directional narrative. Both are recorded with attribution. The 60% hyperscaler concentration is analytically useful as a structural fact about customer base narrowing.
+
+**Seven-position demand convergence unchanged.** NVDA GTC adds a second NVDA venue data point at Layer 1, deepening the existing platform-definer position rather than adding an eighth position.
+
+### GLW FY2025 — cross-source (Tier 1 + Tier 2, fiscal year ended December 31, 2025)
+
+[[GLW]] adds Layer 4 specialized fiber supply as the eighth supply chain position in the demand convergence. Corning's Optical Communications segment provides direct primary-source AI demand attribution at the segment-MD&A level — distinct from generic forward-looking-statement language and distinct from analyst-driven framing.
+
+- **Optical Communications segment**: $6,274M FY2025 (+35% YoY); net income $1,048M (+71% YoY); 16.7% segment net income margin; 38% of total Corning segment revenue (GLW 10-K FY2025).
+- **Sub-segment growth-rate spread**: Enterprise +60-61% YoY (~$3B); hyperscale portion +120% YoY (~$2B, ~2/3 of enterprise); Carrier +15% YoY driven by data center interconnect (GLW Q4 2025 call).
+- **Capex acceleration**: Optical 9M 2025 capex +135% YoY ($133M → $313M); 2026 corporate capex $1.7B with "lot of that capital" to optical (vs $1.3B FY2025).
+- **Explicit AI demand attribution (10-K)**: "the rapid acceleration of artificial intelligence ('AI') is driving strong demand for fiber and connectivity products inside and between data centers"; "We invented new fibers, cables and connectors to capture the generative AI enterprise demand" (GLW 10-K FY2025).
+- **Meta $6B multi-year agreement** announced Q4 2025 call as anchor customer for North Carolina capacity expansion; "several" similar size-and-scale agreements concluding with other major customers (financial impact 2027-2028).
+- **Customer-prepayment + long-term-commitment model migration**: from Display Gen 10.5 + Apple Kentucky to Optical Communications via Meta. Wendell Weeks: "we're taking the proven approach in our glass businesses and applying it to optical communications" (GLW Q4 2025 call). Structural moat-deepening — converts hyperscaler demand into 5-10 year revenue assurance with capex offset.
+- **Springboard upgrade**: $11B incremental annualized sales by end-2028 (was $8B); 2026 internal $6.5B / high-confidence $5.75B; 20% operating-margin target achieved a full year early.
+
+**Layer 4 demand calibration.** GLW adds Layer 4 specialized fiber to the convergence. Corning's growth pattern is structurally distinct from prior Layer 4 data points ([[LITE]], [[COHR]]) — those are laser/optical-component suppliers facing InP-substrate-bounded supply constraints; Corning is fiber/connectivity, not laser. Margin profile (16.7% net income segment margin) is lower than [[COHR]] (39% non-GAAP GM Q2 FY2026) but higher than [[LITE]] (42.5% non-GAAP GM Q2 FY2026, lower at GAAP level). The customer-prepayment moat (Meta $6B + similar pending) is comparable in commercial intensity to NVDA $4B equity in COHR/LITE but originates from the supplier side with anchor-customer contracts rather than platform-definer-side equity.
+
+**Eight-position demand convergence.** With GLW added, the multi-layer demand convergence spans eight supply chain positions — platform ([[NVDA]], [[AVGO]]), manufacturing ([[TSM]]), specialized designer ([[MRVL]], [[ALAB]]), components ([[LITE]], [[COHR]]), specialized fiber ([[GLW]]), equipment ([[AEHR]], [[ONTO]], [[VECO]]), integrated systems ([[AAOI]]), and substrate ([[AXTI]]). The "seven-position" framing canonical across Sessions 8-19 expands to eight positions; framing recalibration may warrant codification at next CLAUDE.md codification session.
+
+### FN FY2025 + Q2 FY2026 — cross-source (Tier 1 + Tier 2, fiscal year ended June 27, 2025 + quarter ended December 26, 2025)
+
+[[FN]] adds Layer 6 optical contract manufacturing as the ninth supply chain position in the demand convergence. Fabrinet provides the contract-manufacturer-side vantage point on AI optical capacity scaling, with explicit hyperscaler customer relationships (NVIDIA, Cisco, AWS) confirming demand at the OEM-customer level.
+
+- **FY2025 revenue**: $3,419.4M (+18.6% YoY from $2,883.1M FY2024). Optical communications $2,619.4M (76.6% of revenue, +14.4% YoY); non-optical $800.0M (+34.7% YoY).
+- **Q2 FY2026 revenue**: **$1,132.9M record** (+35.9% YoY from $833.6M; +16% sequential). Fastest YoY growth since IPO 15 years ago. Q3 FY2026 guidance: $1.15-$1.20B (+35% YoY at midpoint).
+- **Sub-segment growth**: Telecom +59% YoY (record $554M Q2); DCI subset +42% (400ZR/800ZR coherent modules); Datacom -7% YoY (supply-constrained on EML laser, not demand-weak; second source approved Q2); HPC product line $86M Q2 FY2026 (vs $15M Q1 FY2026 — first quarter of breakout, +473% sequential). HPC defined as "massively parallel computing systems built from interconnected high-performance processors, accelerators, high-speed memory, and low-latency networking" (FN 10-Q).
+- **Customer concentration (FY2025 10-K Note 20)**: NVIDIA Corporation 27.6%, Cisco Systems 18.2%, Lumentum Operations 15.4% (FY2023 only), Infinera 12.4% (FY2023 only). Top-2 NVDA + Cisco = 45.8% of FY2025 revenue. Q2 FY2026 has three customers >10% (combined 48.9%).
+- **Amazon warrant** (March 12, 2025; up to 381,922 shares; $208.48 strike; $39.3M grant date fair value): commercial agreement underlying AWS HPC product line ramp.
+- **Capex**: FY2025 $130.7M (+165% YoY) for Building 10 Chonburi expansion ($132.5M total project cost; 2.0M sq ft; completion end of CY2026). Long-lived assets 89% Thailand-concentrated.
+- **EML laser supply constraint resolution**: Customer-approved second source during Q2 FY2026 — Datacom expected to resume sequential growth. Layer 6 contract-manufacturer vantage point on [[datacenter-laser-supply]] chokepoint.
+
+**Layer 6 demand calibration.** [[FN]] adds Layer 6 to the convergence. Margin profile is thin (12.4% non-GAAP gross margin Q2 FY2026; 10.9% operating margin) — Layer 6 contract-manufacturer scale-economics rather than IP/process-driven margins. The +35.9% Q2 YoY growth is the strongest in the convergence at this layer. The customer mix (NVDA + Cisco + emerging AWS HPC) provides direct hyperscaler-OEM demand visibility complementary to platform-definer ([[NVDA]] + [[AVGO]]) and component-supplier ([[LITE]] + [[COHR]]) signals already captured.
+
+**Nine-position demand convergence.** With [[FN]] added, the multi-layer demand convergence spans nine supply chain positions — platform ([[NVDA]], [[AVGO]]), manufacturing ([[TSM]]), specialized designer ([[MRVL]], [[ALAB]]), components ([[LITE]], [[COHR]]), specialized fiber ([[GLW]]), equipment ([[AEHR]], [[ONTO]], [[VECO]]), integrated systems ([[AAOI]]), substrate ([[AXTI]]), and contract manufacturing ([[FN]]). The "seven-position" framing canonical across Sessions 8-19 was expanded to eight in Session 20 ([[GLW]]) and now to nine in Session 21 ([[FN]]); framing recalibration urgency strengthened across two consecutive sessions adding positions. Codification candidate at next CLAUDE.md codification session.
+
+### VRT FY2025 + Q1 2026 — cross-source (Tier 1 + Tier 2, fiscal year ended December 31, 2025 + quarter ended March 31, 2026)
+
+[[VRT]] adds Layer 5 datacenter thermal/cooling and power infrastructure as the tenth supply chain position in the demand convergence. Vertiv provides the integrated-systems-supplier vantage point on AI datacenter scaling, with reciprocally confirmed NVIDIA partnership at Tier 1 level and explicit hyperscaler/colocation/neocloud customer-base framing.
+
+- **FY2025 net sales:** $10,229.9M (+27.7% YoY from $8,011.8M FY2024). Products $8,207.0M (80.2%); services & spares $2,022.9M (19.8%). Geographic segments: Americas $6,386.3M (+41.9% YoY, op margin 26.8%); Asia Pacific $2,019.2M (+17.5%, op margin 11.0%); EMEA $1,824.4M (+1.7%, op margin 20.7%).
+- **Q1 2026 net sales:** $2,649.5M (+30.1% YoY). GAAP operating profit $440.1M (+51.4%); adjusted operating profit $551M (+64% YoY); adjusted operating margin 20.8% (+430 bps); adjusted EPS $1.17 (+83% YoY); adjusted free cash flow $653M (+147%). Q1 2026 segment performance: Americas +44% organic; APAC +12% organic; EMEA -29% organic (temporary, "uncoiling spring," recovery in H2 2026).
+- **Backlog $15.0B at December 31, 2025 vs $7.2B at December 31, 2024 — +108% YoY, more than doubled.** Majority firm; expected to ship 12-18 months. Q1 2026 deferred revenue $2,461.8M (+35.7% from Dec 31, 2025) reflects continued customer prepayment dynamics.
+- **FY2026 raised guidance:** net sales $13.75B midpoint (34% organic growth); adjusted operating profit $3.2B (+53% YoY, $160M higher than prior); adjusted operating margin 23.3% (+290 bps); adjusted EPS $6.35 (+51%, +$0.33 to midpoint); adjusted free cash flow $2.2B (+17%).
+- **NVIDIA partnership reciprocally confirmed** at Tier 1 level — VRT 10-K FY2025 Item 7 Outlook and Trends Strategic Partnerships subsection: "Our partnership with NVIDIA supports the development of advanced power and thermal infrastructure aligned with next-generation AI and high-performance computing architectures." Q1 2026 call: EcoDataCenter Sweden Vera Rubin deployment with Vertiv OneCore selected for full DC solution.
+- **800V DC programs** confirmed by Albertazzi (VRT Q1 2026 call): H2 2026 portfolio launches, 2027 shipping, customer prototype validation activities ongoing; "we see it as a 2027 thing" for shipping.
+- **Capex doubling.** FY2025 capex $226.4M; Q1 2026 capex $114.0M (+212% YoY); FY2026 guidance $425-525M ($475M midpoint, ~110% increase).
+- **Investment-grade transition March 2026.** $2.1B Senior Unsecured Notes issued (4 tranches: 2036/2046/2056/2066), retired Term Loan due 2032, established $2.5B Senior Unsecured Revolver. Investment-grade credit ratings + S&P 500 inclusion. Net leverage 0.2x at Q1 2026 close.
+- **Five acquisitions in ~6 months** reflecting accelerated capability extension: Great Lakes ($203.5M August 2025, racks/cabinets for AI/HPC/edge/hyperscale), PurgeRite (December 2025, mechanical flushing/purging/filtration for liquid cooling), ThermoKey (announced Q1 2026, dry coolers/heat exchange/EMEA focus), BMarko Structures (announced Q1 2026, prefab/converged infrastructure).
+
+**Layer 5 datacenter infrastructure demand calibration.** [[VRT]] adds Layer 5 to the convergence at the integrated-systems-supplier vantage point. Margin profile (FY2025 GAAP operating margin 17.9%, Q1 2026 adjusted operating margin 20.8%, FY2026 guidance adjusted operating margin 23.3%) is materially above Layer 6 contract manufacturing thin-margin economics ([[FN]] ~10.9% Q2 FY2026 op margin) and consistent with finished-systems Layer 5 economics. Customer mix (hyperscale + colocation + neocloud "biggest driver" globally per Albertazzi) provides thermal/power demand visibility from a different supply-chain vantage point than platform-definer ([[NVDA]] + [[AVGO]]), component-supplier ([[LITE]] + [[COHR]]), specialized-fiber ([[GLW]]), and contract-manufacturer ([[FN]]) signals.
+
+**No customer concentration disclosed at >10% threshold** in VRT 10-K FY2025 — distinct from [[FN]] (NVIDIA 27.6% + Cisco 18.2%), [[AAOI]] (DigiComm 53.1%), [[ALAB]] (>70% single end-customer). Vertiv's diversified customer base across hyperscale/colocation/neocloud/enterprise/communication/commercial-industrial spans broader end-markets than other vault Layer 5/6 companies.
+
+**Manufacturing diversification across 40+ countries** is structurally distinct from [[AXTI]] (100% China) and [[FN]] (89% Thailand) single-jurisdiction concentration peers — material reduction in geographic concentration risk for AI datacenter scaling stress-test from the thermal/power infrastructure angle.
+
+**Ten-position demand convergence.** With [[VRT]] added, the multi-layer demand convergence spans ten supply chain positions — platform ([[NVDA]], [[AVGO]]), manufacturing ([[TSM]]), specialized designer ([[MRVL]], [[ALAB]]), components ([[LITE]], [[COHR]]), specialized fiber ([[GLW]]), equipment ([[AEHR]], [[ONTO]], [[VECO]]), integrated systems ([[AAOI]]), substrate ([[AXTI]]), contract manufacturing ([[FN]]), and **datacenter thermal/cooling and power infrastructure ([[VRT]])**. The "seven-position" framing canonical across Sessions 8-19 has now expanded across four consecutive sessions (8 in S20, 9 in S21, 10 in S22). **Framing recalibration urgency strengthened across three consecutive sessions adding positions** — re-flagged as backlog item with stronger urgency for Session 23 codification. Suggested recalibration: rename framing from count-bound (seven/eight/nine/ten-position) to layer-organized (multi-layer cross-validation across photonics-supply-chain layers and adjacent infrastructure layers) or to threshold-bound (broad-based AI demand convergence across N+ supply chain positions). Codification candidate at Session 23.
+
+## Structural demand drivers
+
+Based on evidence accumulated so far (will expand as more sources are ingested):
+
+1. **Agentic AI workloads** — more compute-intensive than generative AI; early-stage adoption with potential for significant scaling. Both TSM (Q1 2026 call) and NVDA (Q4 FY2026 call) identify this as a structural demand multiplier. NVDA provides specific product examples: Claude Code, Claude Cowork, OpenAI Codex generating tokens at exponentially higher rates than single-query interactions.
+2. **Training scale continues growing** — larger models require more accelerators, more HBM, more advanced packaging
+3. **Inference demand scaling** — NVDA's Q4 FY2026 call reframes inference as a revenue driver: "inference performance equals revenues for our customers" because agents generate massive token volumes (NVDA Q4 FY2026 call). Inference tokens per watt is becoming the critical performance metric.
+4. **Multi-year hyperscaler commitment signals** — CSPs providing "very strong signal and positive outlook" (TSM Q1 2026 call, Tier 2 — management claim about customer sentiment). NVDA adds specificity: hyperscaler 2026 capex approaching $700B, and NVDA has purchase commitments extending into calendar 2027 (NVDA Q4 FY2026 call).
+5. **Hyperscaler ROI evidence emerging** — Meta's GEM model drove 3.5x ad click increase on Facebook and 1%+ conversation gain on Instagram, "translating into meaningful revenue growth" (NVDA Q4 FY2026 call). This is the most concrete customer ROI evidence ingested so far, though it is management-cited and from a single hyperscaler.
+6. **Physical AI as an emerging demand layer** — robotaxis (Waymo, Tesla, Uber, WeRide, Zoox), robotics, and autonomous systems contributed >$6B in NVDA FY2026 revenue. Jensen frames physical AI as "the next inflection beyond agentic AI" (NVDA Q4 FY2026 call).
+
+## Disconfirming signals to watch
+
+Evidence that would weaken the demand durability thesis:
+
+1. **Hyperscaler capex deceleration** — if MSFT, AMZN, GOOGL, META reduce or plateau AI infrastructure spending
+2. **Token consumption growth slowing** — if agentic AI adoption stalls or efficiency gains reduce compute per task
+3. **Inventory build at system level** — if [[NVDA]] or system vendors report increasing channel inventory
+4. **Consumer AI monetization failure** — if enterprise and consumer AI applications fail to generate revenue sufficient to justify continued infrastructure spending
+5. **TSMC demand softening signals** — if future calls show HPC percentage declining, capex guidance being reduced, or supply-demand balance arriving earlier than expected
+
+**Current status of disconfirming signals (as of two ingested sources):** None observed. Both the TSM Q1 2026 call and the NVDA Q4 FY2026 call presented uniformly positive demand signals. This unanimity across the supplier side (TSM) and the platform definer side (NVDA) is consistent with genuinely strong demand but is also the expected output from two companies with aligned incentives to promote AI spending durability. Cross-reference against hyperscaler earnings commentary and independent analyst reports in future ingests.
+
+**Consumer weakness as a partial offset:** The call noted some softness in consumer and price-sensitive segments (smartphone, PC) due to memory price hikes. C.C. Wei: "we did see a little bit softer market" in price-sensitive segments (TSM Q1 2026 call). This is not an AI demand signal but is relevant to TSMC's overall revenue mix and suggests AI strength is partially masking weakness in other end markets.
+
+## Cross-references
+
+- [[datacenter-photonics-supply-chain]] — layer-organized supply-chain structure underpinning the seven-position demand convergence; investability framing translates demand-durability evidence into qualification-spend buckets.
+
+## Change log
+
+- **2026-04-19:** Created from TSM Q1 2026 earnings call (Tier 2). Initial demand signals: >30% revenue growth, mid-to-high 50s AI accelerator CAGR, agentic AI transition as structural driver, supply constraints through 2027+.
+- **2026-04-19:** Updated from NVDA Q4 FY2026 earnings call (Tier 2). Added NVDA demand signals ($68B quarterly, $194B annual data center, hyperscaler capex approaching $700B), agentic AI inflection evidence, hyperscaler ROI signal (Meta GEM model), physical AI as emerging demand layer. Calibration note on NVDA's promotional narrative vs TSM's empirical framing.
+- **2026-04-19:** Updated from TSM 20-F FY2025 (Tier 1). Added Tier 1 annual demand data: FY2025 revenue 31.6% growth, HPC three-year trend (43%→51%→58%), advanced node acceleration (58%→69%→74%), Customer A doubling trajectory. Cross-validates Tier 2 forward-looking demand signals with Tier 1 historical data.
+- **2026-04-19:** Updated from LITE 10-Q Q2 FY2026 (Tier 1) and LITE Q2 FY2026 call (Tier 2). Added Layer 4 component-supplier demand evidence: 65.5% YoY revenue growth, supply-constrained allocation (25-30% under-shipping), InP fab fully allocated, OCS backlog >$400M. Multi-layer demand convergence observation across platform, manufacturing, and component layers.
+- **2026-04-19:** Updated from COHR 10-Q Q2 FY2026 (Tier 1) and COHR Q2 FY2026 call (Tier 2). Second Layer 4 demand cross-validation: D&C +34% YoY, book-to-bill >4x in datacenter, supply-demand imbalance projected through 2027+, bookings extending to CY2027/forecasts to CY2028. Two-supplier demand convergence observation added.
+- **2026-04-20:** Updated from AEHR (10-K FY2025, 10-Q Q3 FY2026, Q3 FY2026 call) and ONTO (10-K FY2025, 10-Q Q3 FY2025, Q4 FY2025 call). Equipment-tier demand section added: AEHR bookings 6x QoQ ($50.9M, book-to-bill >3.5x), ONTO AP+HBM >30% YoY growth, $240M+ VPA pipeline, TSMC as 21% customer. Multi-layer demand convergence now spans four supply chain positions (platform, manufacturing, components, equipment).
+- **2026-04-20:** Updated from AAOI (10-K FY2025, Q4 FY2025 call). Layer 5 demand section added: FY2025 revenue +83% YoY, Q4 DC revenue +69% YoY (+70% QoQ), >$1B FY2026 guidance. Layer 5 demand calibration note: demand growth real but economic capture weaker (31% non-GAAP GM vs 42% LITE, 39% COHR). Multi-layer demand convergence now spans five supply chain positions.
+- **2026-04-22:** Updated from MRVL (10-K FY2026, 10-Q Q3 FY2026, Q4 FY2026 call). Layer 3 demand section added: FY2026 revenue $8.2B (+42% YoY), DC $6.1B (+46%), custom $1.5B doubled YoY, FY2027/FY2028 guidance at $11B/$15B. COO names supply constraints explicitly. Layer 3 demand calibration note: broadest single-company signal in vault but lowest non-loss margins (51% GAAP GM). Multi-layer demand convergence now spans six supply chain positions.
+- **2026-04-23:** Updated from AVGO (10-K FY2025, 10-Q Q1 FY2026, Q1 FY2026 call). Second Layer 1 demand source added: AI semi $8.4B Q1 (+106% YoY), $100B+ chip revenue claim attributed to Hock Tan, six custom XPU customers with ~10 GW aggregate 2027 deployment, supply secured through 2028, inventory +30% ramp signal. Layer 1 demand evidence now cross-validated from both platform definers (NVDA, AVGO). Six-position convergence unchanged (second data point at existing tier).
+- **2026-04-23:** Updated from AXTI (10-K FY2025, 10-Q Q3 FY2025, Q4 FY2025 call) and VECO (10-K FY2025, 10-Q Q3 FY2025, Q4 FY2025 call). Substrate and MOCVD equipment tier demand section added: AXTI InP backlog $60M+ (~7+ quarters), capacity doubling, VECO Compound Semi guided +33%. Seven-position demand convergence established (substrate tier added as seventh position).
+- **2026-04-23:** Updated from ALAB (10-K FY2025, 10-Q Q3 FY2025, Q4 FY2025 call). ALAB added as second Layer 3 data point alongside MRVL: FY2025 $852.5M (+115% YoY), 75.7% GM. Seven-position demand convergence maintained (second Layer 3 data point deepens existing position). ALAB added to frontmatter tickers.
+- **2026-04-26:** Updated from NVDA GTC March 16, 2026 keynote (Tier 2). NVDA GTC demand section added: $500B purchase orders (closer to factual), $1T Jensen extrapolation (attributed), 60% hyperscaler concentration, Microsoft Azure first Vera Rubin customer. Seven-position demand convergence unchanged (second NVDA venue at existing Layer 1 position).
+- **2026-04-27:** Session 19 cross-reference. Added Cross-references section linking [[datacenter-photonics-supply-chain]].
+- **2026-04-27 (Session 20):** Added [[GLW]] FY2025 demand section at Layer 4 specialized fiber. Eight-position demand convergence established (was seven): Optical Communications +35% FY2025, enterprise +60-61%, hyperscale +120%, Meta $6B agreement, customer-prepayment moat-deepening pattern. Seven-position framing canonical across Sessions 8-19 expanded to eight positions; framing recalibration flagged for next codification session. [[GLW]] added to tickers.
+- **2026-04-27 (Session 21):** Added [[FN]] FY2025 + Q2 FY2026 demand section at Layer 6 optical contract manufacturing. Nine-position demand convergence (was eight). FY2025 revenue $3.42B (+18.6% YoY); Q2 FY2026 record $1.13B (+35.9% YoY); HPC product line $86M Q2 (+473% sequential); NVDA + Cisco top-2 = 45.8% concentration; Amazon warrant March 12, 2025 ($39.3M FV); Building 10 Chonburi $132.5M expansion. Two consecutive sessions adding positions strengthens codification urgency for seven→eight→nine framing recalibration. [[FN]] added to tickers.
+- **2026-04-27 (Session 22):** Added [[VRT]] FY2025 + Q1 2026 demand section at Layer 5 datacenter thermal/cooling and power infrastructure. **Ten-position demand convergence (was nine).** FY2025 net sales $10,229.9M (+27.7% YoY); Q1 2026 record $2,649.5M (+30.1% YoY); FY2026 raised guidance $13.75B (+34% organic growth); backlog $15.0B vs $7.2B (+108% YoY); FY2026 capex guidance $425-525M (~doubling vs $226.4M FY2025); NVIDIA partnership reciprocally confirmed at Tier 1 level (10-K Item 7 Outlook and Trends Strategic Partnerships); EcoDataCenter Sweden Vera Rubin deployment; 800V DC programs H2 2026 portfolio launches and 2027 shipping; investment-grade ratings + S&P 500 inclusion; net leverage 0.2x; no customer >10% concentration; 40+ country manufacturing diversification. **Three consecutive sessions adding positions (seven → eight → nine → ten across S20-S21-S22) strengthens framing recalibration urgency for Session 23 codification.** [[VRT]] added to tickers.
+- **2026-04-27 (Session 23 codification — page architecture decision B2, option (b) softer layer-organized restructure):** Added "Multi-layer demand convergence" section between "Thesis relevance" and "Demand signals by source" sections with layer-organized summary table covering all 15 companies across Framework 2 Layers 1-6 plus equipment tier. Refinement 1A footnote added beneath table acknowledging straddling tensions per company page (AVGO Layer 1/3, AAOI Layer 4/5, MRVL Layer 3→2 trajectory, ALAB Layer 3→2 trajectory). Opening framing language updated from count-bound ("ten-position demand convergence") to layer-organized ("multi-layer demand convergence across the AI supply chain"). Existing chronological per-source narrative retained unchanged in structure; layer-organized summary table is supplementary not replacement. No frontmatter changes; no inbound wikilink updates required.

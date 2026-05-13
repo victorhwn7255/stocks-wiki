@@ -1,0 +1,1523 @@
+# Ingest Log
+
+Append-only record of vault activity. **Reverse chronological order: most recent at top.** Each entry records source ingested, pages created/updated, Phase 4 reflection essentials, and convention codification observations. Source audit notes + detailed analytical observations canonical in respective wiki pages (company / chokepoint / theme); per-instance empirical evidence base canonical in CLAUDE.md inline Appendix per Session 34 v8.1.
+
+## Session index
+
+| # | Date | Type | Companies/Subject |
+|---|---|---|---|
+| 60 | 2026-05-13 | **Standalone first canonical ingest (FIRST grid-scale BESS canonical at F7 placement; 6TH distinct F7 sub-domain; FIRST spin-off-origin canonical in vault; 3RD non-calendar fiscal year-end filer at new canonical creation scope post-ENS S45 + FCEL S47; 5-INSTANCE Section 2.11 combined precedent)** | [[FLNC]] (Fluence Energy, Inc.) FY2025 10-K + Q2 FY2026 10-Q + Q2 FY2026 earnings call ingest — **Layer 4 / energy_power_tier 3 / F5+F8+F9 Outside / F6 absent**; **Caveat #9 10th canonical Layer 4-5 straddling Layer 4 maintained per 5-trigger test** (integrated-systems <30% / service revenue <30% / NO BESS-as-a-service framing / NO named end-customer turnkey primary structure / multi-year service revenue NOT >50% YoY); first grid-scale BESS canonical analogous to [[GEV]] T3 utility-scale integration at different technology base (electrochemical lithium-ion vs combustion gas turbine). **Tier 1/Tier 2 framing gap NEW 7th instance (risk-framing sub-pattern)** — Tier 1 10-K + 10-Q frame data center/AI as macro demand driver without commercial structure; Q2 FY2026 call substantively discloses 2 hyperscaler MSAs signed since February + proprietary data center power-fluctuation solution + SmartStack density advantage + expected initial hyperscaler data center order Q3 FY2026; running count strengthens 6 → 7. **Counterparty-attribution-only A1 three-mode framing applies at hyperscaler scope** (zero Microsoft/Amazon/Google/Meta/Oracle naming across 10-K + 10-Q + call; industry-standard non-disclosure pattern). **FY2025 revenue declined -16.2% YoY** ($2.263B vs $2.699B; net swung to $(68)M loss from $30M FY2024 income; IRA + OBBBA uncertainty + Arizona ramp delay drivers); **Q2 FY2026 AES decoupling -76% YoY** ($167M → $40M related-party); non-AES +60.6% YoY; H1 FY2026 +52.0% YoY; top 3 customers H1 = 45% (broadening from top 2 = 48% prior year); backlog $5.3B → $5.6B Q2 close (+$300M); pipeline +35% YTD FY2026 to 128.8 GW + 65.1 GW BESS subset. **AES + Siemens 2017 JV spin-off legacy first canonical** (Qatar Holding LLC affiliate of QIA also Continuing Equity Owner; storage core frame purchase agreement runs to earlier of 2028 or AES <10% voting); **AESC → Fixx Energy (Longroad Energy subsidiary) Tennessee facility ownership change March 31, 2026** material supply-chain event; new supply agreement signed; OBBBA tax credit eligibility maintained. **Cross-vault [[BTM-grid-bypass-workaround]] 5-participant strengthening candidate FALSIFIED at primary** — zero BTM mentions across all 3 sources; grid-side utility-scale BESS scope structurally distinct from [[BE]]/[[FCEL]]/[[GEV]]/[[CAT]] BTM modalities; chokepoint refresh propagation NOT warranted. **Section 4.6 codified marketing-tier discipline application — Sunstack + Edgestack product family claims NOT corroborated at primary** (current product family is Gridstack Pro + Gridstack + Ultrastack + Smartstack + Fluence OS + Mosaic + Nispera); kickoff drafting correctly placed Sunstack + Edgestack under "Structural context per Tier 3/4 sources to verify at primary" — NOT under "Codified background" — Phase 1 non-corroboration IS expected Section 4.6 discipline outcome, NOT Section 4.5 (g') kickoff drafting factual variance. **A6 (g)/(g') UNCHANGED at 8+2=10**; **Section 4.6 ROI VALIDATED at 0 falsifications** (16-instance zero-falsification streak post-S46 codification baseline; S47=1; S48-S60 all 0). Cross-vault Aschenbrenner thesis pattern strengthens to **20th participant post-S60**. Cross-vault [[nvidia-supply-chain-commitments]] S53 4 T1 + 6 T2 UNCHANGED (FLNC NOT candidate per BESS-scope industry standard). Honest-verdict trigger discipline pattern UNCHANGED at 4-instance (S54 + S55 + S58 + S59); CEO Nebreda NOT combative (CEO combativeness pattern UNCHANGED at 2). **Tier 3 source coverage GAP** — FLNC NOT explicitly named in S39 `AI-power-energy-bottleneck-research-report.md` or `AI-datacenter-power-supply-chain-primer.md`; pattern-recognition-based canonical placement per S45 [[ENS]] precedent. Wikilink-clean streak: **43 sessions** post-S60. Files updated: 3 files (FLNC.md NEW + index.md + log.md; well under hard cap 7). Cross-reference updates to [[ENS]] / [[BTM-grid-bypass-workaround]] / [[AI-demand-durability]] / [[chokepoint-investability-priorities]] evaluated at Phase 2 and deferred per scope discipline. |
+| 59 | 2026-05-12 | **Paired refresh ingest (6th paired refresh; 8th 1-stop refresh; SECOND paired refresh of two pre-S46-codified canonical baselines; FIRST Section 2.2 source unavailability trigger fired + resolved within single session)** | [[GLW]] + [[FN]] Q1 calendar 2026 paired refresh — GLW Layer 4 / photonics_tier 3 stable; FN Layer 6 / photonics_tier 4 stable. 1-stop refresh; 0 falsifications post-source-resolution. **Section 2.2 source unavailability trigger fired at Phase 0** — FN-earnings-2026-05-07.pdf mislabeled (FNF Fidelity National Financial content); Vic-side file replacement with FN-earnings-2026-05-04.pdf (correct Fabrinet content; Seamus Grady + Csaba Sverha) resolved within session — first vault instance of in-session source unavailability resolution. A6 (h) source filename verification gap codification candidate (filename-correct + content-wrong sub-pattern; new sub-instance distinct from prior file-location-verification scope). **GLW Q1 2026 strong beat** — $4.35B revenue (+18%); $0.70 EPS (+30%); 20.2% OM (+220 bps); Optical Communications $1.8B (+36%); $387M Optical net income (+93%); **TWO ADDITIONAL Long-Term Agreements with hyperscale customers** (similar size + duration to Meta $6B; unnamed per Wendell Weeks customer-driven announcement philosophy; counterparty-attribution-only mode preserved); customer deposits Q1 recognized $186M vs $62M prior year; Lumen multi-year agreement EXTENDED February 2026; new segment reporting effective Q1 2026 (Solar standalone + Glass Innovations combined); Springboard plan upgrade event May 6, 2026 (NYSE 175th anniversary). **GLW Tier 3 over-claim mode at NVDA scope PRESERVED** per S20 + S53 Open question #11 (NVIDIA NOT explicitly named at GLW Q1 call; honest-framing per partial-non-naming pattern). **FN Q3 FY2026 record beat** — $1.214B revenue (+39%; +7% sequential); record non-GAAP EPS $3.72; record net income $135M; Optical Communications $889M (+35%) with telecom record $628M (+55%) + **DCI record $197M (+90% YoY; +38% sequential)**; Non-Optical $326M (+52%; HPC $107M). **Raytec Semiconductor minority investment $32M / 14% stake** (Taiwan wafer-level packaging; CPO ecosystem partner) — substantively elevates Layer 6 thesis to integrated-precision-optical-packaging participation. **TWO datacom transceiver programs shipping directly to a hyperscale customer** — substantive strategic shift from OEM-only to direct hyperscaler engagement. **Navanakorn 8-acre facility acquisition $11M**; capacity expansion trajectory $4.8B → $8.5B revenue footprint. Datacom supply constraints (lasers + memory + ASICs); HPC $150M target delayed one quarter. Q4 FY2026 guidance $1.25-1.29B (~+40% midpoint); $3.72-3.87 EPS. Customer concentration Q3 10-Q: 3 customers >10% combined ~48.9% (vs 50.5% prior); NVIDIA + Cisco + unnamed 3rd (Amazon HPC consistent per S21 baseline). **Cross-vault [[nvidia-supply-chain-commitments]] S53 NVIDIA partnership pattern UNCHANGED post-S59** (4 T1 + 6 T2; GLW Tier 3 over-claim PRESERVED; FN T2 cross-vault context PRESERVED — architect-customer commitment threshold NOT met at Q3 FY2026 call). Cross-vault [[advanced-optical-packaging]] chokepoint refresh propagation candidate flagged (FN Raytec investment substantively shifts S31 baseline Layer 6 enabler-tier framing). **Section 2.11 non-calendar fiscal year-end filer protocol** — second refresh-scope application (FN post-S58 VIAV). **Section 4.6 ROI VALIDATED at 0 falsifications (15-instance zero-falsification streak post-S46 codification baseline; S47=1; S48-S59 all 0).** A6 (g)/(g') UNCHANGED at 8+2=10. A6 (h) sub-pattern source filename-content mismatch new sub-instance flagged. Cross-vault Aschenbrenner thesis pattern strengthens to **19+ participants post-S59**. Wikilink-clean streak: **42 sessions** post-S59. Files updated: 4 files (GLW.md + FN.md + index.md + log.md; under hard cap 6). |
+| 58 | 2026-05-12 | **Paired refresh ingest (5th paired refresh; 7th 1-stop refresh; FIRST photonics_tier 4 semicap-adjacent paired refresh; FIRST pre-S46-codified canonical normalization at refresh scope; FIRST Section 2.11 non-calendar fiscal year-end filer protocol at refresh scope)** | [[VECO]] + [[VIAV]] Q1 calendar 2026 paired refresh — VECO Layer normalized from dual-Layer 3-4 (pre-S46) to single-Layer 3 per Section 3.2 current convention; VIAV Layer 4 / photonics_tier 4 stable. 1-stop refresh; 0 falsifications. **VECO $250M+ multi-customer indium phosphide laser orders** (Lumina MOCVD + WaferStorm wet processing + Spector IBD; delivery 2026-2027 acceleration; Spector IBD capacity expansion 10X from base; InP laser SAM $700M by 2030; $2B growth opportunity framing); **first explicit NVIDIA reference at VECO primary** (counterparty-attribution-only A1 mode at downstream-ecosystem-reference scope); Compound Semi FY2026 guidance raised to ~50% growth (vs prior +33% baseline); Tier 1 logic LSA + HBM supplier production tool of record substantiation; Axcelis merger close H2 2026 (China antitrust pending — all other approvals received + shareholders of both companies approved); $8M Q1 China BIS license headwind. **VIAV strong Q3 FY2026 beat across all metrics** ($406.8M revenue above $386-400M / $0.27 EPS above $0.22-0.24 / 21.0% OM above 19.2-20.2% high end / NSE $321.5M above $304-316M / OSP $85.3M above $82-84M); Spirent first full 13-week quarter $54.2M (in line); CPO momentum substantively framed at primary (Khaykin: "perfectly aligned to our portfolio"); 1.6T ramping + 3.2T trajectory; field instruments data center mix 40-50% (trending 50%); multi-quarter visibility extension "through calendar 2026"; Inertial Labs U.S. tier 1 player wins; annualized Q4 EPS $1.20 midpoint exceeds prior FY2022 peak. Cross-vault [[InP-supply]] S33 chokepoint refresh propagation candidate flagged (VECO $250M+ multi-customer InP order substantively rerates Chokepoint 4 equipment-tier vantage). Cross-vault [[GLW]] bilateral verification opportunity preserved (VIAV Corning + Meta reference NOT repeated at Q3 call). Cross-vault Aschenbrenner thesis pattern strengthens to 17+ participants post-S58. **Section 4.6 ROI VALIDATED at 0 falsifications (14-instance zero-falsification streak post-S46 codification baseline; S47=1; S48-S58 all 0).** A6 (g)/(g') count UNCHANGED at 8+2=10. Wikilink-clean streak: **41 sessions** post-S58. Files updated: 4 files (VECO.md + VIAV.md + index.md + log.md; under hard cap 7). |
+| 57 | 2026-05-12 | **Chokepoint page creation (SECOND canonical-from-first-creation chokepoint page in vault history; FIRST competing-technology-base chokepoint scope; FIRST 1-stop chokepoint creation protocol — distinct from S51 1-stop chokepoint refresh)** | [[BTM-grid-bypass-workaround]] — first competing-technology-base chokepoint synthesis post-[[HALEU-fuel-chokepoint]] S44 sequential-dependency-chain precedent; Section 3.15 Pathway 2 canonical-from-first-creation pathway extended to chokepoint scope at competing-technology-base structure. **4-participant cross-vault BTM grid-bypass workaround thesis pattern formalized at canonical analytical product scope** ([[BE]] S40 SOFC + [[FCEL]] S47 MCFC + [[GEV]] S37 utility-scale gas turbine + [[CAT]] S56 reciprocating engine + Solar Turbines aero-derivative gas turbine BTM). Synthesis from existing canonical sources; no primary-source ingest per [[nvidia-supply-chain-commitments]] S53 precedent. **Competing-technology-base modality framework** synthesized (4 distinct technology bases addressing same hyperscaler on-site generation problem; deployment profile asymmetry: BE ~90 days / CAT recips 12-24 months / FCEL variable / GEV utility-scale 4-7 years; which technology base wins at which urgency tier). **Multi-product BTM advantage methodology** (CAT turbines + recips vs single-product specialists) substantiated at cross-vault scope. **Cross-vault Aschenbrenner thesis pattern formalization at chokepoint scope** — BTM chokepoint as cross-vault locus where Aschenbrenner thesis substantiation is most concentrated (4 of 15+ participants explicit Aschenbrenner-bracket per Tier 3 source). **Cross-vault customer concentration archetype contributions** strengthen Framework 11.1 typology — 4 archetypes within single chokepoint scope ([[BE]] 43% related-party + [[FCEL]] concentrated long-term-PPA + [[GEV]] diversified-broad utility + [[CAT]] diversified-broad industrial-conglomerate). **NVIDIA partnership pattern absence** at BTM chokepoint scope honestly framed — BE/FCEL/GEV/CAT all N/A at S53 nvidia-supply-chain-commitments per industry-standard non-disclosure pattern (BTM upstream of hyperscaler↔chip platform vendor architect-customer commercial commitment scope). **Source-freshness asymmetry honestly framed at creation** — mixed codification eras (GEV S37 + BE S40 pre-S46 codified; FCEL S47 + CAT S56 post-S46 codified). **On-site generation as grid-bypass thesis partial falsification per S37 GEV baseline honestly preserved** at chokepoint synthesis (CEO Strazik direct disclosure "gas turbines are really not the gating item — EPC/permitting/fuel is"; 20% datacenter attribution ambiguous; primary-source evidence leans toward grid-feed dominance). Living document scaffolding per S53 precedent — 13 future refresh propagation candidates pre-registered in Open questions; refresh propagation cadence per S51 [[HALEU-fuel-chokepoint]] precedent (highest priority [[GEV]] Q1 2026 refresh per S37 baseline 20-session staleness). Files updated: 6 files (BTM-grid-bypass-workaround.md NEW + 4 canonical page light cross-refs at BE/FCEL/GEV/CAT + index.md + log.md = 7 files; theme cross-refs evaluated at Phase 2 and deferred — AI-demand-durability + chokepoint-investability-priorities low-medium probability, scope discipline preserved). Section 4.6 ROI VALIDATED at 0 falsifications (13-instance zero-falsification streak post-S46 codification baseline). A6 (g)/(g') count UNCHANGED at 8+2=10. Wikilink-clean streak: **40 sessions** post-S57. |
+| 56 | 2026-05-12 | **Standalone first canonical ingest (FIRST diversified industrial conglomerate canonical placement; FIRST on-site generation + backup power genset technology base canonical anchor; FIRST 4-source ingest variant for new canonical creation; FIRST standalone 2-stop protocol new canonical post-S47 FCEL — 9-session refresh-heavy stretch ends)** | [[CAT]] (Caterpillar Inc.) FY2025 + Q3 FY2025 + Q1 FY2026 + Q1 FY2026 earnings call ingest — **Layer 4 / energy_power_tier 4 with structural elevation framing**; Caveat #9 9th canonical Layer 4-5 straddling Layer 4 maintained per discipline (Triggers #1-5 all not met); Outside Framework 5/8/9; no memory_tier. Multi-segment AI datacenter exposure honest-verdict: Power Generation sub-application ~14% consolidated FY2025 / ~16% Q1 FY2026; +41% YoY external Q1 FY2026 / +48% sales-to-users — "structurally rerating" per `_thesis.md` framing + Tier 3 source variant view. **ProPower 2.1 GW agreement** (April 29, 2026; 6th ≥1 GW Caterpillar prime power agreement); **large reciprocating engine backlog +3.5x since January 2024**; capacity expansion 2x → ~3x 2024 levels primarily 2027-2029; 2030 power generation sales target raised to >3x 2024 baseline; consolidated 2024-2030 CAGR raised to 6-9% (vs prior 5-8%). Record consolidated backlog $62B firm at Q1 FY2026 end (+79% YoY). Multi-product BTM advantage at primary (reciprocating engine + Solar Turbines aero-derivative gas turbine); BTM grid-bypass workaround thesis intersection explicit at primary. **4-participant cross-vault BTM grid-bypass workaround thesis pattern established** ([[BE]] + [[FCEL]] + [[GEV]] + [[CAT]]); Section 3.15 Pathway 2 chokepoint page synthesis threshold met; future `BTM-grid-bypass-workaround.md` deferred to S57+. Customer concentration diversified-broad archetype confirmed at primary ("No single customer or dealer represented a significant concentration of credit risk"). Counterparty-attribution-only A1 mode at hyperscaler scope per industry-standard non-disclosure pattern (ProPower named at data-center-developer-tier; underlying hyperscaler chain not disclosed). **CFO transition Andrew Bonfield → Kyle Epley effective April 30, 2026** documented at first-canonical placement. **Tier 3 source coverage refined SUBSTANTIVE (not light)** per Phase 0 verification — 8+ references in S39 `AI-power-energy-bottleneck-research-report.md` including "underappreciated AI-power play" variant view + Aschenbrenner thesis bracket; "Solar Turbines world's largest industrial gas turbine manufacturer" claim NOT corroborated at 10-K Item 1 — recharacterized per honest-verdict discipline as substantive participant without superlative claim. Cross-vault Aschenbrenner thesis pattern strengthens to 15+ participants post-S56. Section 4.6 ROI VALIDATED at 0 falsifications (12-instance zero-falsification streak post-codification baseline); 2 kickoff hypothesis refinements (Tier 3 substantive coverage + zero forward [[CAT]] wikilinks) — both refinements, not falsifications. |
+| 55 | 2026-05-11 | **Paired refresh ingest (4th paired refresh; 6th 1-stop refresh; FIRST networking/connectivity paired refresh; LIVING DOCUMENT scaffolding first downstream propagation test)** | [[ALAB]] + [[ANET]] Q1 FY2026 / Q1 2026 paired refresh — Layer 3 / photonics_tier 4 (ALAB) + Layer 5 / photonics_tier 5 (ANET) stable; ALAB A1 mode strengthening at counterparty-attribution-only (multi-customer NVLink Fusion engagement + NVIDIA-collaboration design win revenue 2027+ + Microsoft Azure named at Leo CXL); **A1 mode upgrade trigger to 5th Tier 1 reciprocal-confirmation participant NOT met** per honest-verdict discipline (Gajendra framing positions NVIDIA-as-ecosystem-architect; NVDA-side bilateral verification deferred); **Microsoft + Meta NAMED at primary at ANET** (first explicit Customer A + B naming; closes S27 inferable-only attribution); **XPO Extended Pluggable Optics at Optical Fiber Conference** (12.8 TB/module + 204.8 TB/OCP rack unit + 400W cooling + >100 vendors endorsement + 10-year run; ANET-architected pluggable optics form factor; Caveat #9 vertical integration trigger NOT met); **ANET multi-year supply constraint** ("one or two year phenomena" per Ullal; 52-week lead times + $8.9B purchase commitments + cross-vault Aschenbrenner thesis pattern strengthening at Layer 5 first canonical instance); ANET CPO tiered silence pattern partially closes (Layer 5 tiered-silence data point evolves to acknowledged-and-explicitly-dismissed framing); ANET FY2026 RAISED guidance second consecutive quarter ($11.25B → $11.5B; AI center $3.25B → $3.5B); ALAB Customer A billing-address consolidation 20% → 29% + 5 customers >10%; ALAB optical roadmap commercial revenue 2027 via high-density detachable reusable fiber connectors (pre-NPO + pre-CPO); first earnings call with new ALAB CFO Desmond Lynch; competing protocol stack pattern at primary cross-vault (ALAB NPO/CPO + NVLink Fusion scale-up vs ANET XPO + Ethernet/UEC scale-out + scale-across); cross-vault NVIDIA partnership pattern 4 Tier 1 substantiating sources UNCHANGED; S53 relationship page first downstream propagation cycle test (light cross-reference update per refresh discipline; no substantive cross-vault subsection added); Section 4.6 ROI VALIDATED at 0 falsifications (10-instance zero-falsification streak post-codification baseline) |
+| 54 | 2026-05-11 | **Paired refresh ingest (3rd paired refresh; 5th 1-stop refresh; FIRST semicap equipment_tier paired refresh)** | [[COHU]] + [[ONTO]] Q1 FY2026 / Q1 2026 paired refresh — Layer 3 / photonics_tier outside (COHU) + Layer 3-4 / photonics_tier 4 (ONTO) stable; **COHU honest-verdict reframing trigger DOES NOT FIRE** (substantive evolution within baseline framing; not foundational reframing); COHU first Tier 2 verification at canonical (HPC pipeline $750M + 12 customer engagements + $80-100M FY2026 outlook + Eclipse "platform of record" + silicon photonics beachhead); ONTO Rigaku 27% strategic stake $710M H2 2026 + Dragonfly G5 ramp + Atlas G6 wins; Tier 1/Tier 2 divergence (Open question #1) reconciliation BOTH operative; cross-vault M&A pattern (ETN Boyd Thermal + ONTO Rigaku); 3 vault canonical Q1 2026 silicon photonics product engagements (ETN+COHU+ONTO); Section 4.6 ROI VALIDATED at 0 falsifications |
+| 53 | 2026-05-10 | **Relationship page creation (FIRST relationship page in vault history; FIRST 1-stop protocol at creation scope)** | [[nvidia-supply-chain-commitments]] — first relationship page in vault history; canonical-from-first-creation pathway extended to relationship scope per Section 3.15 spirit; **4 Tier 1 reciprocal-confirmation substantiating sources** (LITE + COHR + ETN + VRT); 6 Tier 2 cross-vault context (FN/ALAB/CSCO/ANET/TSM/AVGO with distinct modality classifications); cross-domain Vera Rubin platform absorption pattern (photonics + power infrastructure simultaneously); 5 escalation triggers all negative; living document scaffolding (13 future refresh propagation candidates); Section 4.6 ROI VALIDATED at 0 falsifications |
+| 52 | 2026-05-10 | **Standalone refresh ingest (FIRST standalone+1-stop refresh protocol application)** | [[ETN]] Q1 2026 standalone refresh — Layer 4 / energy_power_tier 1 stability verified; Caveat #9 4th canonical baseline refresh (Layer 4 maintained; Trigger #4 partial via NVIDIA Beam Rubin DSX); **NVIDIA Beam Rubin DSX platform substantive subsection** = first reciprocal-confirmation A1 mode shift at ETN primary post-S37 counterparty-attribution-only baseline; **SST pilots substantive subsection** (~8 pilots; hyperscaler customers; orders 2H 2026; shipments late 2027/early 2028); **Boyd Thermal acquisition substantive subsection** (closed March 2026 ahead of schedule; +100% YoY Q1; $1.7B+ FY2026 track); cross-vault NVIDIA partnership pattern strengthens to 3 reciprocal-confirmation participants (LITE+COHR+ETN); cross-vault Aschenbrenner thesis pattern 11+ participants; new CFO Dave Foster; FY2026 RAISED guidance; Section 4.6 ROI VALIDATED at 0 falsifications |
+| 51 | 2026-05-10 | **Chokepoint refresh ingest (FIRST chokepoint page refresh + FIRST 1-stop refresh at chokepoint scope)** | [[HALEU-fuel-chokepoint]] refresh propagation from S49 [[LEU]] + [[BWXT]] Q1 FY2026 canonical refreshes — six-layer fuel chain severity scoring STABLE (5/5 HALEU enrichment + 4/5 deconversion + 3/5 fabrication); cumulative HALEU production >1 MTU → >1.6 MTU (+60% incremental); LEU-Oklo deconversion JV vertical integration substantive subsection (NEW); BWXT Kairos→Google end-customer chain VERIFIED (resolves S42 Tier 3 unverified); cross-vault Aschenbrenner thesis pattern 8 participants; chokepoint-specific 5 escalation triggers all negative; A6 (f) session-positioning instance flagged (kickoff "Session 50" → actual S51 post-S50 LITE+COHR); Section 4.6 ROI VALIDATED at 0 falsifications |
+| 50 | 2026-05-10 | **Paired refresh ingest (2nd paired + 2nd 1-stop refresh protocol application)** | [[LITE]] + [[COHR]] Q3 FY2026 paired refresh — Layer 4 / photonics_tier 3 (LITE) + tier 2 (COHR) stability verified; **NVIDIA $2B equity-plus-multiyear-CPO-supply materialization at primary** (LITE: $2.02B cash injection; COHR: $2B equity + multibillion-dollar multiyear CPO supply agreement to end of decade); Greensboro NC 5th InP fab + Google explicit named at LITE; 6-inch InP Zürich 3rd site + first 6-inch transceiver shipments + Multi-Rail + Thermadite XPU cooling NEW segments at COHR; CPO supercycle thesis substantive validation; cross-vault Aschenbrenner thesis pattern strengthens to 10 participants; Section 4.6 ROI VALIDATED at 0 falsifications (S48/S49/S50 zero-falsification durability); 1-stop refresh protocol durability validated at 2nd application |
+| 49 | 2026-05-10 | **Paired refresh ingest (FIRST paired refresh + FIRST 1-stop refresh protocol application)** | [[BWXT]] + [[LEU]] Q1 2026 paired refresh — Layer 4 / materials_tier 1 stability verified for both; Caveat #9 6th canonical baseline refresh (Layer 4 maintained; Triggers #4 + #5 partial; Mount Vernon greenfield announced + Kairos Hermes 2 Google chain at Tier 2); LEU Oklo HALEU deconversion JV partial resolution of S42 reactor developer naming gap; cross-vault Aschenbrenner thesis pattern strengthens to 8 participants; Section 4.6 ROI VALIDATED at paired refresh scope (0 falsifications); 1-stop refresh protocol precedent established |
+| 48 | 2026-05-10 | **Refresh ingest (FIRST formal refresh in vault history)** | [[AAOI]] Q1 FY2026 refresh — Layer 5 / photonics_tier 5 stability verified; Caveat #9 5-trigger test (0/5 met); FY2026 guidance RAISED >$1.0B → >$1.1B + >$120M → >$140M; CPO silence pattern persists; refresh ingest protocol precedent established |
+| 47 | 2026-05-10 | Standalone ingest | [[FCEL]] (second canonical Energy/Power Tier 4 post-ENS S45; second non-calendar-fiscal-year filer; first canonical applying Section 46 codified conventions; primer S39 narrative-outrunning-proof framing applied; BE comparison subsection 7 dimensions; Section 4.6 ROI validated 1 vs 6 falsifications) |
+| 46 | 2026-05-03 | Codification (Tranche 1) | First codification session; 12 candidates committed across CLAUDE.md (8 edits) + frameworks.md (6 edits); default ownership convention waived for this session only; backlog reduced ~38-40 → ~26-28 (Tranche 2 deferred to S47) |
+| 45 | 2026-05-03 | Standalone ingest | [[ENS]] (first canonical Framework 7 Tier 4; closes last unpopulated F7 tier; F7 complete-tier-coverage post-S45; first non-calendar-fiscal-year US-domiciled filer; first canonical placement under-covered in Tier 3 anchors; six material kickoff hypothesis falsifications) |
+| 44 | 2026-05-02 | Chokepoint page creation | [[HALEU-fuel-chokepoint]] (first canonical-from-first-creation per Section 3.15; first F9 Materials chokepoint page; first chokepoint page anchored by Tier 3 + 3 primary-source company pages; first three-domain Aschenbrenner thesis cross-vault synthesis at chokepoint scope) |
+| 43 | 2026-05-02 | Standalone ingest (foreign-issuer) | [[CCJ]] (first canonical Framework 9 Materials Tier 2; first MJDS Canadian foreign-issuer; Caveat #7 Layer 2 generalization first canonical post-TSM; HALEU trio Aschenbrenner thesis cross-vault completion) |
+| 42 | 2026-05-02 | Substantive paired ingest | [[LEU]] + [[BWXT]] (first canonical Framework 9 Materials Tier 1 placements; HALEU fuel chain Tier 1 conviction trio anchor; first Section 3.14 substantive paired post-codification) |
+| 41 | 2026-05-02 | Source-add (Tier 3) | `raw/research/` Nuclear HALEU Tier 3 source-add (single Vic-curated report; HALEU enrichment 5/5 Acute and Binding chokepoint anchor) |
+| 40 | 2026-05-02 | Standalone ingest | [[BE]] (Layer 4 / energy_power_tier 2; first canonical F7 Tier 2 ingest; BTM grid-bypass workaround thesis; Caveat #9 second canonical test) |
+| 39 | 2026-05-02 | Source-add (Tier 3) | `raw/research/` Energy/Power Tier 3 source-add (paired ingest of 2 Vic-curated reports) |
+| 38 | 2026-05-02 | Structural rework | `index.md` multi-domain schema alignment to CLAUDE.md v9 Section 3.2 frontmatter convention |
+| 37 | 2026-05-01 | Paired ingest (cross-tier variant) | [[ETN]] + [[GEV]] (first Framework 7 Tier 1 + Tier 3 ingest; Caveat #9 first canonical test) |
+| 36 | 2026-05-01 | Standalone ingest | [[FLEX]] (Layer 6 EMS; first multi-domain frontmatter; first Framework 7 Tier 5 cross-domain placement) |
+| 35 | 2026-04-30 | Structural rework | log.md aggressive reduction + descending reorder |
+| 34 | 2026-04-30 | Structural rework | CLAUDE.md v8 → v8.1 |
+| 33 | 2026-04-30 | Multi-source chokepoint synthesis | [[InP-supply]] provisional → canonical (Option C bifurcation) |
+| 32 | 2026-04-30 | Multi-vantage-point synthesis | [[cpo-integration]] (9 vault companies; closes S27-S32 arc) |
+| 31 | 2026-04-30 | Multi-source synthesis | [[advanced-optical-packaging]] (FN+LITE+COHR+AAOI) |
+| 30 | 2026-04-28 | Multi-source synthesis | [[optical-dsp-phy-supply]] (MRVL+AVGO+CRDO) |
+| 29 | 2026-04-28 | Codification | CLAUDE.md v7 → v8 |
+| 28 | 2026-04-28 | Paired ingest (parallel-but-independent) | [[VIAV]] + [[PLAB]] |
+| 27 | 2026-04-28 | Paired ingest (parallel-but-independent) | [[CRDO]] + [[ANET]] |
+| 26+addendum | 2026-04-28 | Refresh redirect + factual correction | [[AEHR]] Q3 FY2026 (Option C redirect) |
+| 25 | 2026-04-27 | Dual-page creation | [[chokepoint-investability-priorities]] + [[wafer-level-siph-test]] |
+| 24 | 2026-04-27 | Selective integration | Chokepoint research framework integration |
+| 23 | 2026-04-27 | Codification | CLAUDE.md v6 → v7 |
+| 22 | 2026-04-27 | Standalone ingest | [[VRT]] (reciprocal-confirmation mode) |
+| 21 | 2026-04-27 | Standalone ingest | [[FN]] (Layer 6; inversion mode) |
+| 20 | 2026-04-27 | Standalone ingest | [[GLW]] (over-claim mode) |
+| 19 | 2026-04-27 | Theme page build | [[datacenter-photonics-supply-chain]] (Tier 3-anchored) |
+| 18 | 2026-04-26 | Codification | frameworks.md v6 → v7 |
+| 17 | 2026-04-26 | Refresh ingest | NVDA GTC March 2026 keynote |
+| 16 | 2026-04-26 | Standalone ingest | [[CSCO]] |
+| 15 | 2026-04-23 | Codification | frameworks.md v4 → v5 |
+| 14 | 2026-04-23 | Standalone ingest | [[ALAB]] (+ hyperscaler-custom-ASIC theme) |
+| 13 | 2026-04-23 | Paired ingest | [[AXTI]] + [[VECO]] (substrate + epi InP) |
+| 12 | 2026-04-23 | Audit execution + codification | CLAUDE.md v5 → v6 |
+| 11 | 2026-04-23 | Discovery audit | Promotion candidates / convention candidates |
+| 10 | 2026-04-23 | Standalone ingest | [[AVGO]] |
+| 9 | 2026-04-22 | Standalone ingest | [[MRVL]] |
+| 8 | 2026-04-20 | Standalone ingest | [[COHU]] (Outside Framework 5) |
+| Mini-3 | 2026-04-20 | Tier 3 research | ASML EUV foundry dependency |
+| Mini-2 | 2026-04-20 | Tier 3 research | Silicon photonics primer |
+| Mini-1 | 2026-04-20 | Tier 3 research | NVDA absorb-and-extend pattern |
+| 7 | 2026-04-20 | Standalone ingest | [[AAOI]] (Layer 5; CPO displacement analysis) |
+| 6 | 2026-04-20 | Paired ingest | [[AEHR]] + [[ONTO]] (equipment-tier functional split) |
+| 5 | 2026-04-19 | Standalone ingest | [[COHR]] (six-inch InP; chokepoint substantiation) |
+| 4 | 2026-04-19 | Standalone ingest | [[LITE]] (first Layer 4; CPO silence broken) |
+| 3 | 2026-04-19 | Update | TSM 20-F FY2025 (first Tier 1 source) |
+| 2 | 2026-04-19 | Standalone ingest | [[NVDA]] Q4 FY2026 earnings call |
+| 1 | 2026-04-19 | Initial ingest | [[TSM]] Q1 2026 earnings call |
+
+---
+
+## Session 54 — [[COHU]] + [[ONTO]] paired refresh ingest (2026-05-11)
+
+**Type.** **3rd paired refresh ingest + 5th 1-stop refresh protocol application + FIRST semicap equipment_tier paired refresh.** Single-session execution. 5 escalation triggers all NEGATIVE; **COHU honest-verdict reframing trigger DOES NOT FIRE** (substantive evolution within baseline framing per Section 2.1 honest-verdict discipline — quantified HPC sub-segment ~17-22% of FY2025 revenue + silicon photonics beachhead; broad-cycle equipment company core preserved; Layer 3 / photonics_tier outside placement stable).
+
+**Sources ingested (4 files).** COHU Q1 FY2026 10-Q (period ended March 28, 2026) + COHU Q1 FY2026 earnings call (April 30, 2026; **first Tier 2 verification at COHU canonical** — closes 2026-04-20 baseline analytical gap); ONTO Q1 2026 10-Q (period ended March 31, 2026) + ONTO Q1 2026 earnings call (May 5, 2026). Full transcripts verified at primary search; Section 2.2 source unavailability N/A.
+
+**Pages updated (2).** [[COHU]] (~60 lines: Q1 FY2026 financial snapshot + Q2 + FY2026 RAISED guidance + Eclipse HPC substantive subsection ~30 lines + Open question #5 partial evolution + 1 NEW source audit notes entry + change log entry); [[ONTO]] (~75 lines: Q1 2026 financial snapshot + Q2 + FY2026 RAISED guidance + Rigaku 27% strategic stake substantive subsection ~25 lines + Dragonfly G5 ramp documentation + Atlas G6 wins + Tier 1/Tier 2 divergence reconciliation BOTH operative + silicon photonics emerging Q1 NEW + 1 NEW source audit notes entry + change log entry).
+
+**Infra updates.** `index.md` COHU + ONTO rows last_updated 2026-04-20 → 2026-05-11. `log.md` Session index row + this detailed entry top-appended.
+
+**Cross-references propagated.** No edits to other canonical pages (Boyd Thermal cross-vault VRT thermal management terrain overlap mention preserved as standard cross-reference; [[nvidia-supply-chain-commitments]] S53 NEW relationship page candidate cross-references noted within COHU + ONTO source audit notes per refresh discipline).
+
+### Phase 4 reflection essentials
+
+**(a) Framework placement stability.** **STABLE for both filers.** COHU Layer 3 / photonics_tier outside maintained per honest-verdict reframing test; ONTO Layer 3-4 / photonics_tier 4 clean maintained.
+
+**(b) COHU honest-verdict reframing assessment.** **Substantive evolution within baseline framing — NOT foundational reframing.** Baseline "structurally weakest thesis fit with aspirational not quantified AI exposure" → Q1 FY2026 "substantive but bounded HPC sub-segment exposure + silicon photonics beachhead." Layer 3 / photonics_tier outside preserved; broad-cycle equipment company core preserved. Vault canonical text adopts trajectory evolution without overclaiming structural AI positioning. **Reframing trigger DOES NOT FIRE.**
+
+**(c) COHU Eclipse HPC substantive subsection + first Tier 2 verification.** ~30 line subsection delivered. $750M HPC SAM + 12 customer engagements + $80-100M FY2026 outlook + 2 major Eclipse + T CORE orders + "platform of record" framing per Section 3.3 rhetorical-vs-factual flagged + first silicon photonics product engagement (beachhead). **First Tier 2 earnings call verification at COHU canonical** — baseline analytical gap closed.
+
+**(d) ONTO Rigaku acquisition substantive subsection + cross-vault M&A pattern.** ~25 line subsection delivered. $710M for 27% Rigaku stake H2 2026 close; 3 financial benefit streams (AI Diffract licensing ~100% margin + Atlas G6 cross-sell + Rigaku dividends $7M+/yr); fair value option accounting; hybrid metrology roadmap. **Cross-vault M&A pattern observation:** ETN Boyd Thermal (S52) + ONTO Rigaku (S54) = 2 substantive Q1 2026 M&A instances at vault canonical equipment-tier-adjacent / power-infrastructure participants (Tranche 2 codification candidate).
+
+**(e) ONTO Tier 1/Tier 2 divergence (Open question #1) reconciliation.** **BOTH operative per honest-verdict discipline.** Reconciliation #1 (metrology mix shift via Atlas G6 +25% advanced nodes growth FY2026) AND Reconciliation #2 (inspection cycle trough recovery via Dragonfly G5 commercial ramp Q1 handful → Q2/Q3/Q4 doubling) simultaneously supported. Open question #1 PARTIAL RESOLUTION status marker.
+
+**(f) Customer concentration archetype refresh.** COHU most-diffuse-in-vault archetype STABLE (no customer >10% Q1; consistent with diffuse annual baseline). ONTO TSMC + Samsung + SK Hynix Tier 1 XBRL convention expected to continue at FY2026 10-K; TSMC NOT explicitly named at Q1 2026 call (industry-standard non-disclosure preserved at Tier 2).
+
+**(g) Cross-vault Aschenbrenner thesis pattern strengthening.** Pattern strengthens to **13+ participants post-S54** ([[BE]] + [[LEU]] refresh + [[BWXT]] refresh + [[CCJ]] + [[ENS]] + [[FCEL]] + [[AAOI]] + [[LITE]] + [[COHR]] + [[BWXT]] Q1 + [[ETN]] Q1 + **[[COHU]] HPC pipeline $750M + +57% orders YoY** + **[[ONTO]] +30%+ FY2026 revenue growth + advanced packaging +50%**). COHU + ONTO Q1 2026 contribution: substantive semicap-tier Aschenbrenner thesis substantiation.
+
+**(h) Cross-vault NVIDIA partnership pattern verification at semicap equipment_tier.** **Industry-standard non-disclosure preserved at both filers** — COHU "major US fabless customers" framing (counterparty-attribution-only / NVIDIA implicit candidate); ONTO TSMC named at Tier 1 = downstream NVDA CoWoS exposure via TSM foundry-customer relationship. No direct NVIDIA reciprocal-confirmation at either filer (consistent with kickoff expectation). [[nvidia-supply-chain-commitments]] (S53 NEW) Tier 3 / industry-standard non-disclosure candidates flagged in source audit notes per refresh discipline; bilateral verification deferred to future NVDA refresh ingest.
+
+**(i) 3 vault canonical Q1 2026 silicon photonics product engagements** post-S54: ETN (Beam Rubin DSX platform; S52) + COHU (silicon photonics beachhead; S54) + ONTO (silicon photonics emerging volumes; S54). Cross-vault silicon photonics product engagement pattern strengthening — codification candidate per Phase 4 reflection.
+
+**(j) Section 4.6 codified discipline ROI durability at 3rd paired refresh.** **0 falsifications at S54** (S45=6 pre-codification; S47=1; S48=0; S49=0; S50=0; S51=0; S52=0; S53=0; **S54=0**). **9-instance zero-falsification streak** post-codification baseline. Codification ROI durability VALIDATED across all 6 ingest type combinations + 5-instance 1-stop refresh precedent.
+
+**(k) Honest-verdict discipline assessment.** **PRESERVED.** COHU baseline framing tested rigorously against Q1 evidence; reframing trigger calibrated correctly (substantive evolution NOT foundational reframing); ONTO Tier 1/Tier 2 divergence both reconciliations honestly supported without forced unification; cross-vault M&A pattern observation honestly framed; marketing language flagged per Section 3.3 (COHU "platform of record"; ONTO Rigaku partnership rhetorical framing).
+
+**(l) Proposed `frameworks.md` additions or refinements + Readiness assessment for S55+:**
+- Refresh ingest sub-protocol formalization (Tranche 2; **6-instance precedent post-S54**)
+- 1-stop refresh sub-protocol formalization (Tranche 2; **5-instance precedent post-S54**)
+- Cross-vault M&A pattern at vault canonical participants (ETN Boyd Thermal + ONTO Rigaku) — Tranche 2 codification candidate
+- 3 vault canonical Q1 2026 silicon photonics product engagement pattern — Tranche 2 codification candidate
+- Customer concentration 6th archetype candidate (concentrated-HPC-fabless trajectory at COHU if Eclipse pipeline materializes)
+- **S55 candidate: Codification Tranche 2** (~31-35 candidates pre-existing + S48-S54 anticipated additions)
+- Alternative S55: NVDA Q1 fiscal 2027 refresh (post-May 20, 2026 release; architect-side bilateral verification; S53 relationship page propagation)
+- Alternative S55: TSM 20-F FY2025 refresh
+- Alternative S55: VRT refresh (Boyd Thermal terrain overlap)
+- Alternative S55: BE Q1 2026 refresh
+- Alternative S55: ETN+GEV matched-pair refresh
+- Alternative S55: AVGO refresh
+- Alternative S55: CCJ 6-K refresh
+- Alternative S55: ALAB + ANET paired refresh
+
+### Convention counts (post-S54)
+
+- Tier 1/Tier 2 framing gap: **6 + 1 obs** (unchanged)
+- CEO combativeness: **2** (unchanged; Müller + Plisinski both NOT combative)
+- Cross-venue disclosure gap: **2 obs** (unchanged)
+- A6 (g)/(g') subtype: **8 + 2 = 10 combined** (unchanged)
+- Amazon warrant pattern: **4 + Oracle emerging at BE** (unchanged)
+- Wikilink-clean streak: **38 sessions** post-S54
+- Customer concentration archetypes: **5 archetypes; 6 vault entries** (unchanged; potential 6th archetype candidate "concentrated-HPC-fabless" trajectory at COHU)
+- Refresh ingest precedent: **6 instances** (S48 standard + S49 paired+1-stop + S50 paired+1-stop + S51 chokepoint+1-stop + S52 standalone+1-stop + **S54 paired+1-stop**)
+- 1-stop refresh protocol: **5 instances** (S49 + S50 + S51 + S52 + **S54**; full ingest-type coverage)
+- Relationship page creations: **1 instance** (S53; unchanged at S54)
+- Cross-vault Aschenbrenner thesis pattern: **13+ participants** post-S54
+- Cross-vault NVIDIA partnership pattern: **4 Tier 1 reciprocal-confirmation participants** (LITE + COHR + ETN + VRT; unchanged at S54 — both COHU + ONTO Q1 industry-standard non-disclosure preserved)
+- **Cross-vault Q1 2026 silicon photonics product engagement pattern: 3 instances** post-S54 (ETN Beam Rubin DSX + COHU silicon photonics beachhead + ONTO silicon photonics emerging) — Tranche 2 codification candidate
+- **Cross-vault Q1 2026 M&A pattern: 2 instances** post-S54 (ETN Boyd Thermal closed March 2026 + ONTO Rigaku 27% strategic stake announced April 20, 2026; H2 2026 close) — Tranche 2 codification candidate
+
+---
+
+## Session 53 — [[nvidia-supply-chain-commitments]] relationship page creation (2026-05-10)
+
+**Type.** **First relationship page creation in vault history** + **first 1-stop protocol application at relationship page creation scope**. `wiki/relationships/` directory existed but empty pre-S53. Canonical-from-first-creation pathway per `CLAUDE.md` v9 Section 3.15 spirit extended to relationship scope (4 Tier 1 substantiating sources at first creation; provisional stage skipped). 5 escalation triggers all NEGATIVE. Synthesis from existing vault canonical content; no new primary-source ingest.
+
+**Sources verified at Phase 0 comprehensive vault sweep.** 30 vault canonical company pages enumerated; NVIDIA / NVDA mention counts classified per A1 three-mode framing:
+- **Tier 1 reciprocal-confirmation (4):** [[LITE]] S50 ($2B equity); [[COHR]] S50 ($2B equity + multiyear CPO supply); [[ETN]] S52 (Beam Rubin DSX platform); [[VRT]] S22 (Strategic Partnerships + EcoDataCenter Sweden Vera Rubin)
+- **Tier 2 substantive (6):** [[FN]] (27.6% customer concentration); [[ALAB]] (NVLink Fusion); [[CSCO]] (enterprise networking partnership); [[ANET]] (interoperate framing); [[TSM]] (CoWoS / COUPE foundry); [[AVGO]] (peer-competitor)
+- **Tier 3 / over-claim (3):** [[FLEX]] (NVIDIA partnership not bilaterally confirmed at NVDA-side); [[GLW]] (Tier 3 narrative not bilaterally confirmed); [[GEV]] (cross-vault contextual only)
+- **Generic / industry-standard non-disclosure (5):** [[MRVL]] / [[AAOI]] / [[CRDO]] / [[BE]] / others
+- **Zero NVIDIA mentions (6):** [[VECO]] / [[LEU]] / [[FCEL]] / [[ENS]] / [[CCJ]] / [[BWXT]] / [[AXTI]] (HALEU trio + adjacent)
+
+**Pages created (1; CREATED in-place).** [[nvidia-supply-chain-commitments]] (~220 lines: frontmatter + Pattern identification + Multi-source verification table + Modality distinction subsections [equity / multiyear supply / platform / architect-customer / foundry / peer-competitor] + Cross-domain Vera Rubin platform absorption pattern + Cross-vault thesis pattern context + Investable companies + Cross-references + 13-question Open questions + Source attribution + Source audit notes + Change log).
+
+**Infra updates.** `index.md` Relationships section populated with new row. `log.md` Session index row + ~30-line detailed entry top-appended.
+
+**Cross-references propagated (low-probability per refresh discipline analog; default no updates applied).** No edits to LITE/COHR/ETN/VRT/FN/ALAB/CSCO/ANET/TSM/AVGO (cross-references to new relationship page deferred to next respective company-page refresh per scope discipline).
+
+### Phase 4 reflection essentials
+
+**(a) Multi-source verification scope.** **4 Tier 1 reciprocal-confirmation participants** at first creation (LITE + COHR + ETN + VRT); 6 Tier 2 cross-vault context participants with distinct modality classifications; 3 Tier 3 / over-claim mode candidates documented in Open questions; comprehensive vault sweep across 30 canonical pages. Multi-source threshold satisfied per Section 3.15 spirit.
+
+**(b) A1 mode framing per participant — distribution across vault sweep.** 4 reciprocal-confirmation (LITE/COHR/ETN/VRT) + 4 counterparty-attribution-only (ALAB/CSCO/ANET/TSM) + 1 SEC-compelled customer concentration (FN at Tier 1; counterparty-attribution-only at Tier 2 calls) + 1 peer-competitor (AVGO) + 3 over-claim / not-bilaterally-confirmed (FLEX/GLW/GEV) + generic / industry-standard non-disclosure remainder. Cross-vault NVIDIA partnership pattern strengthens to **4 Tier 1 reciprocal-confirmation** post-S53.
+
+**(c) Modality distinction analytical product.** 6 distinct modalities documented: (1) **Equity injection** (LITE + COHR ~$4B aggregate); (2) **Multi-year supply agreement** (COHR multibillion-dollar through end of decade; others TBD); (3) **Platform partnership** (ETN Beam Rubin DSX; potentially VRT extension); (4) **Architect-customer / ecosystem partner** (ALAB NVLink Fusion + CSCO enterprise networking + ANET interoperation); (5) **Foundry / customer concentration** (FN 27.6% + TSM CoWoS); (6) **Peer-competitor** (AVGO Layer 1 platform). Honest-verdict scope discipline preserved.
+
+**(d) Cross-domain Vera Rubin platform absorption pattern.** First vault-canonical-confirmed instance of NVIDIA simultaneously formalizing structural commercial commitments across **photonics (LITE+COHR+FN) + power infrastructure (ETN+VRT) + connectivity (ALAB+CSCO+ANET) + foundry (TSM)** in same chip generation cycle. Codification candidate per Tranche 2.
+
+**(e) Cross-vault Aschenbrenner thesis pattern context.** NVIDIA partnership pattern as architect-customer commercial-commitment sub-pattern downstream of capacity-binding-constraint dynamics. Pattern strength evolution: S22 (VRT first reciprocal-confirmation) → S37 (ETN architectural-compatibility baseline) → S50 (LITE+COHR $2B equity) → S52 (ETN Beam Rubin DSX A1 mode shift) → **S53 (4 Tier 1 substantiating sources at canonical analytical product scope)**.
+
+**(f) Living document scaffolding scope.** Open questions section delivers 13 future refresh propagation candidates: NVDA Q1 fiscal 2027 refresh (architect-side bilateral verification post-May 20, 2026); cross-domain pattern formalization; TSM 20-F refresh; AVGO/MRVL/CRDO/VRT/FLEX/GLW/ALAB refreshes; hyperscaler-NVIDIA bilateral verification; customer concentration 6th archetype candidate. Page structurally designed for additive growth at future refresh cycles.
+
+**(g) Section 4.6 codified discipline ROI durability at relationship creation scope.** **0 falsifications at S53** (S45 ENS = 6 [pre-codification]; S47 FCEL = 1; S48 AAOI = 0; S49 BWXT+LEU = 0; S50 LITE+COHR = 0; S51 HALEU-fuel-chokepoint = 0; S52 ETN = 0; **S53 nvidia-supply-chain-commitments = 0**). **8-instance zero-falsification streak** at S53 post-codification baseline. **Codification ROI durability VALIDATED across all 6 post-codification ingest type combinations** (standalone first-canonical + standalone refresh + paired refresh + chokepoint refresh + standalone+1-stop refresh + relationship creation).
+
+**(h) Relationship page creation precedent establishment.** First relationship page in vault history; canonical-from-first-creation pathway extended to relationship scope per Section 3.15 spirit; multi-source threshold (4 Tier 1) at first creation. **1-instance precedent** for relationship page creation sub-protocol; Tranche 2 codification candidate.
+
+**(i) 1-stop protocol precedent durability at creation scope.** **Convention durability VALIDATED at first creation-scope application.** Escalation trigger check at end of Phase 0: 5 triggers all NEGATIVE (multi-source threshold met; pattern matches expected; new wiki directory creation within scope; 0 kickoff hypothesis falsifications; full vault canonical pages accessible). Mid-execution clarification escape valve NOT used. **5-instance 1-stop protocol precedent** (S49 paired + S50 paired + S51 chokepoint + S52 standalone + S53 creation = full ingest-type coverage including creation scope).
+
+**(j) Honest-verdict discipline assessment.** **PRESERVED.** Pattern strength honestly framed (4 Tier 1 substantiating sources at first creation; not overclaimed); A1 mode classification per primary verification; modality distinctions preserved without forced unification; living document scaffolding without overstating current pattern strength; Tier 3 over-claim mode candidates flagged for future bilateral verification (FLEX + GLW); peer-competitor mode (AVGO) explicitly distinguished from architect-customer relationship modes.
+
+**(k) Proposed `frameworks.md` additions or refinements (Vic-side curation):**
+- **Relationship page creation sub-protocol formalization** (Tranche 2 candidate; 1-instance precedent post-S53; canonical-from-first-creation pathway extension to relationship scope per Section 3.15 spirit)
+- **1-stop protocol formalization at creation scope** (Tranche 2; full ingest-type coverage now includes creation: paired refresh + chokepoint refresh + standalone refresh + relationship creation)
+- **Cross-vault NVIDIA partnership pattern formalization** (Tranche 2; substantive analytical product at relationship page canonical scope)
+- **Cross-domain Vera Rubin platform absorption pattern framework candidate** (Tranche 2; first vault-canonical-confirmed instance of multi-domain platform absorption in same chip cycle)
+- **Customer concentration archetype 6th variant candidate** ("concentrated-NVIDIA-architect-partnership"; LITE + COHR + ETN structural commercial commitment; pattern strength verification at additional Layer 4 participants)
+
+**(l) Readiness assessment for Session 54+.**
+- **S54 candidate: NVDA Q1 fiscal 2027 refresh** (post-May 20, 2026 release; architect-side bilateral verification of Beam Rubin DSX + LITE/COHR equity scope + VRT EcoDataCenter Sweden + multiyear CPO supply commitment per COHR; **strengthening 4 Tier 1 substantiating source baseline at relationship page subsequent refresh**)
+- Alternative S54: Codification Tranche 2 (~31-35 candidates pre-existing + S48-S53 anticipated additions including relationship page creation sub-protocol; cross-domain platform absorption pattern)
+- Alternative S54: BE Q1 2026 refresh
+- Alternative S54: TSM 20-F FY2025 refresh
+- Alternative S54: VRT refresh (Boyd Thermal terrain overlap verification post-S52 ETN refresh + 26-session baseline staleness)
+- Alternative S54: AVGO refresh (peer-competitor → potential reciprocal-confirmation evolution if Bailly CPO scope surfaces)
+- Alternative S54: Chokepoint refresh propagations from S50 LITE+COHR (cpo-integration / InP-supply / advanced-optical-packaging)
+
+### Convention counts (post-S53)
+
+- Tier 1/Tier 2 framing gap: **6 + 1 obs** (unchanged)
+- CEO combativeness: **2** (unchanged)
+- Cross-venue disclosure gap: **2 obs** (unchanged)
+- A6 (g)/(g') subtype: **8 + 2 = 10 combined** (unchanged)
+- Amazon warrant pattern: **4 + Oracle emerging at BE** (unchanged)
+- Wikilink-clean streak: **37 sessions** post-S53
+- Customer concentration archetypes: **5 archetypes; 6 vault entries** (unchanged at S53; potential 6th variant "concentrated-NVIDIA-architect-partnership" Tranche 2 candidate)
+- Refresh ingest precedent: **5 instances** (unchanged)
+- 1-stop protocol: **5 instances** (S49 paired + S50 paired + S51 chokepoint + S52 standalone + **S53 creation** = full ingest-type coverage including creation scope)
+- Relationship page creations: **1 instance** (S53 first; Tranche 2 codification candidate)
+- Cross-vault Aschenbrenner thesis pattern: **11+ participants** post-S52 (S53 doesn't add participant count; formalizes NVIDIA sub-pattern at canonical scope)
+- Cross-vault NVIDIA partnership pattern: **4 Tier 1 reciprocal-confirmation participants** post-S53 (LITE + COHR + ETN + **VRT** added at S53 vault sweep; up from 3 reciprocal-confirmation post-S52)
+
+---
+
+## Session 52 — [[ETN]] standalone refresh ingest (2026-05-10)
+
+**Type.** **First standalone+1-stop refresh protocol application** post-S48 standard / S49+S50 paired+1-stop / S51 chokepoint+1-stop = 5th refresh ingest instance overall + 4th 1-stop refresh. Single-session execution covering Phase 0 + Phase 1 + Phase 2 + Stop 2 + Phase 4. 5 escalation triggers checked at end of Phase 0 — ALL NEGATIVE.
+
+**Sources ingested (2 files; standalone refresh).** ETN Q1 2026 10-Q (Tier 1, period ended March 31, 2026); ETN Q1 2026 earnings call (Tier 2, May 5, 2026; full transcript verified — 27 pages; CEO Paulo Ruiz + new CFO Dave Foster first Q1 as CFO).
+
+**Pages updated (1; UPDATED in-place).** [[ETN]] (~140 lines added: Q1 2026 financial snapshot section + Q1 backlog dynamics + FY2026 raised guidance + Caveat #9 4th canonical baseline refresh assessment subsection + **NVIDIA Beam Rubin DSX substantive subsection** ~25 lines + **Solid-state transformer pilots substantive subsection** ~12 lines + **Boyd Thermal acquisition substantive subsection** ~15 lines + Open questions Q2/Q5/Q6/Q8/Q9 partial resolution / resolution status markers + 2 NEW source audit notes entries + Change log entry).
+
+**Infra updates.** `index.md` ETN row last_updated 2026-05-01 → 2026-05-10. `log.md` Session index row + ~50-line detailed entry top-appended.
+
+**Cross-references propagated (low-probability per kickoff; default no updates applied).** No edits to [[VRT]] / [[GEV]] / [[FLEX]] / [[BE]] / [[NVDA]] (Boyd Thermal cross-vault VRT thermal management terrain overlap = standard cross-reference per refresh discipline; substantive bilateral subsection deferred to future VRT refresh ingest given 26-session VRT baseline staleness post-S22).
+
+### Phase 4 reflection essentials
+
+**(a) Framework placement stability assessment (ETN Layer 4 / energy_power_tier 1).** **STABLE at Q1 2026.** Layer 4 maintained per Caveat #9 4th canonical baseline refresh (5 triggers all NOT cleanly met; Trigger #4 partial via NVIDIA Beam Rubin DSX). energy_power_tier 1 maintained per Section 3.10 four-criterion test inverse application — data center named end market; 240% YoY data center orders growth; 228 GW data center backlog; 32 GW U.S. data center under construction (70% AI-related); customer concentration includes named NVIDIA platform partnership.
+
+**(b) Caveat #9 4th canonical baseline refresh assessment (5 triggers tested).** **Layer 4 MAINTAINED.** Trigger #1 NOT MET (no segment-level integrated solutions disclosure); #2 NOT MET (no service mix); #3 NOT MET (Beam Rubin DSX is platform but not service framing); **#4 PARTIAL** (NVIDIA Beam Rubin DSX named integrated platform engagement = first named integrated platform partnership post-S37 baseline; SST hyperscaler customers generic); #5 NOT MET (no service revenue trajectory). Honest-verdict reinforcement: Q1 2026 brings substantive integrated-platform engagement evidence but revenue-mix evidence for Layer 5 promotion remains explicitly absent per canonical precedent.
+
+**(c) NVIDIA Beam Rubin DSX subsection scope assessment + reciprocal-confirmation A1 mode strengthening.** ~25 line subsection delivered (extended from ~10-15 line projection given substantive content). **First explicit reciprocal-confirmation A1 mode shift at ETN primary post-S37 counterparty-attribution-only baseline.** Cross-vault NVIDIA partnership pattern post-S52: **3 explicit reciprocal-confirmation participants** ([[LITE]] $2B equity / [[COHR]] $2B equity + multiyear CPO supply / **ETN Beam Rubin DSX**) — Tranche 2 codification candidate.
+
+**(d) SST pilots subsection scope + pre-revenue commercial structure honest-verdict.** ~12 line subsection delivered (within projected ~10-15 line scope). Honest-verdict scope: PILOTS not firm orders; 2027-2028 revenue contribution; pre-revenue commercial structure per primer S39 narrative-outrunning-proof framing. SST chokepoint candidate within Energy/Power domain (Tranche 2 codification candidate).
+
+**(e) Boyd Thermal acquisition subsection + cross-vault VRT terrain overlap assessment.** ~15 line subsection delivered (within projected ~10-15 line scope). Boyd CLOSED March 2026 ahead of schedule; +100% YoY Q1 revenue; backlog doubled in 6 months; $1.7B+ FY2026 revenue track; "core design partner to leading hyperscalers and silicon providers"; cold plates strategic-asset framing; cross-vault [[VRT]] thermal management terrain overlap = standard cross-reference (no substantive bilateral subsection per refresh discipline).
+
+**(f) Cross-vault Aschenbrenner thesis pattern strengthening (ETN 8th canonical at substantive Q1 2026 evidence).** **Cross-vault pattern strengthens to 11+ participants post-S52** ([[BE]] + [[LEU]] refresh + [[BWXT]] refresh + [[CCJ]] + [[ENS]] + [[FCEL]] + [[AAOI]] + [[LITE]] + [[COHR]] + [[BWXT]] Q1 + **ETN Q1 +17% revenue / +240% data center orders / 228 GW backlog**). ETN Q1 2026 contribution: most empirically substantive single-quarter Aschenbrenner thesis evidence at Layer 4 / Energy/Power Tier 1 incumbent.
+
+**(g) Cross-vault NVIDIA partnership pattern (3 explicit reciprocal-confirmation participants).** **Pattern formalization candidate post-S52** — 3 explicit reciprocal-confirmation NVIDIA platform partnerships at primary across photonics + power infrastructure layers ([[LITE]] photonics_tier 3 / [[COHR]] photonics_tier 2 / [[ETN]] energy_power_tier 1). NVIDIA platform integration absorbs both layers simultaneously at Layer 4 chokepoint scope. **Tranche 2 codification candidate.**
+
+**(h) New CFO Dave Foster leadership transition documentation.** Announced March 2, 2026; April 1 effective; 29-year Eaton career; first Q1 as CFO; replacing Olivier Leonetti. Foster Q1 first impression *"never seen this level of organic growth across the company in my career"*. CEO Paulo Ruiz continuity confirmed. Tone calibration: Foster collaborative CFO debut.
+
+**(i) Section 4.6 codified discipline ROI durability at standalone+1-stop refresh scope.** **0 falsifications at S52** (S45 ENS = 6 [pre-codification]; S47 FCEL = 1; S48 AAOI = 0; S49 BWXT+LEU = 0; S50 LITE+COHR = 0; S51 HALEU-fuel-chokepoint = 0; **S52 ETN = 0**). **7-instance zero-falsification streak** at S52 (excluding S45 pre-codification baseline). **Codification ROI durability VALIDATED across all 5 post-codification ingest type combinations** (standalone first-canonical + standalone refresh + paired refresh + chokepoint refresh + standalone+1-stop refresh). A6 (g)/(g') count cumulative UNCHANGED at 8 (g) + 2 (g') = **10 combined**.
+
+**(j) 1-stop refresh protocol precedent durability assessment at 5th refresh instance overall + 4th 1-stop refresh.** **Convention durability VALIDATED at 4th 1-stop application + first standalone scope.** Escalation trigger check at end of Phase 0: 5 triggers all NEGATIVE. Mid-execution clarification escape valve NOT used. **Tranche 2 codification candidate strengthened: 1-stop refresh sub-protocol formalization with full ingest-type coverage** (paired refresh + chokepoint refresh + standalone refresh = 3 application scopes; 4-instance precedent: S49 + S50 + S51 + S52).
+
+**(k) Honest-verdict discipline assessment.** **PRESERVED.** Layer 4 placement maintained per honest-verdict-correctness; Caveat #9 5-trigger test cleanly assessed (Trigger #4 PARTIAL not overclaimed); NVIDIA Beam Rubin DSX evolution honestly framed (platform-level vs component-level distinction); SST pilots honestly framed (pilots vs firm orders distinction; revenue timing 2027-2028 vs current); Boyd Thermal cross-vault VRT terrain overlap honestly framed (extension vs displacement; standard cross-reference per refresh discipline); marketing language at primary flagged per Section 3.3 (rhetorical claims attributed to speaker without adjudication).
+
+**(l) Proposed `frameworks.md` additions or refinements + Readiness assessment for Session 53+:**
+- **Refresh ingest sub-protocol formalization broader** (Tranche 2 candidate; 5-instance precedent post-S52: S48 standard + S49 paired+1-stop + S50 paired+1-stop + S51 chokepoint+1-stop + S52 standalone+1-stop)
+- **1-stop refresh sub-protocol formalization with full ingest-type coverage** (Tranche 2 candidate; 4-instance precedent: S49 + S50 + S51 + S52; paired + chokepoint + standalone scopes)
+- **Standalone+1-stop refresh sub-protocol** (Tranche 2 candidate; 1-instance precedent: S52)
+- **Cross-vault NVIDIA partnership pattern formalization** (Tranche 2 candidate; 3 explicit reciprocal-confirmation participants: LITE + COHR + ETN; cross-domain photonics + power infrastructure absorption pattern)
+- **SST chokepoint candidate within Energy/Power domain** (Tranche 2 candidate; new chokepoint scope post-ETN refresh; potential scope: solid-state transformer technology supply chain)
+- **Cross-vault Aschenbrenner thesis pattern formalization** (Tranche 2 candidate; 11+ participants post-S52)
+- **S53 candidate: Codification Tranche 2** (~31-35 candidates pre-existing + S48-S52 anticipated additions)
+- Alternative S53: ETN+GEV matched-pair refresh (when GEV Q1 2026 available; deferred S37 paired ingest carryover)
+- Alternative S53: BE Q1 2026 refresh (FCEL-BE bilateral mutual non-naming verification + future BTM-grid-bypass-workaround chokepoint page synthesis)
+- Alternative S53: TSM 20-F FY2025 refresh (24-session-old baseline; Layer 2 multi-domain anchor)
+- Alternative S53: NVDA refresh (NVDA $2B + Beam Rubin DSX cross-vault verification from architect side; bilateral confirmation candidate for 3-participant pattern)
+- Alternative S53: VRT refresh (26-session baseline; thermal management terrain post-Boyd verification)
+- Alternative S53: Chokepoint refresh propagations from S50 LITE+COHR (cpo-integration / InP-supply / advanced-optical-packaging)
+- Alternative S53: CEG/VST/TLN nuclear fleet utility cluster paired or trio first canonical
+- Alternative S53: CLS standalone first canonical
+
+### Convention counts (post-S52)
+
+- Tier 1/Tier 2 framing gap: **6 + 1 obs** (note: tracked as 6 counted + 1 cross-venue observation per S37 baseline; assessment lower than recent log entries' "7" — verify cumulative reconciliation at next codification)
+- CEO combativeness: **2** (unchanged; Ruiz NOT combative; Foster collaborative CFO debut)
+- Cross-venue disclosure gap: **2 obs** (unchanged)
+- A6 (g)/(g') subtype: **8 + 2 = 10 combined** (unchanged)
+- Amazon warrant pattern: **4 + Oracle emerging at BE** (unchanged)
+- Wikilink-clean streak: **36 sessions** post-S52
+- Customer concentration archetypes: **5 archetypes; 6 vault entries** (unchanged)
+- Refresh ingest precedent: **5 instances** (S48 standard + S49 paired+1-stop + S50 paired+1-stop + S51 chokepoint+1-stop + S52 standalone+1-stop; Tranche 2 codification candidate)
+- 1-stop refresh protocol: **4 instances** (S49 paired + S50 paired + S51 chokepoint + S52 standalone; full ingest-type coverage)
+- Chokepoint page refreshes: **1 instance** (S51 first; Tranche 2 codification candidate)
+- Cross-vault Aschenbrenner thesis pattern: **11+ participants** post-S52 (Tranche 2 codification candidate)
+- Cross-vault NVIDIA partnership pattern: **3 explicit reciprocal-confirmation participants** post-S52 (LITE + COHR + ETN; Tranche 2 codification candidate)
+
+---
+
+## Session 51 — [[HALEU-fuel-chokepoint]] refresh ingest (2026-05-10)
+
+**Type.** **First chokepoint page refresh ingest in vault history** + **first 1-stop refresh protocol application at chokepoint scope**. Refresh propagation from S49 [[LEU]] + [[BWXT]] Q1 FY2026 canonical company-page refreshes (NOT new primary-source ingest). Single-session execution covering Phase 0 + Phase 1 + Phase 2 + Stop 2 + Phase 4. Chokepoint-specific 5 escalation triggers checked at end of Phase 0 — ALL NEGATIVE. **A6 (f) session-positioning instance flagged:** kickoff prompt filename `session50_haleu_fuel_chokepoint_refresh_kickoff.md` references "Session 50" but actual session sequencing = **Session 51** post-S50 LITE+COHR paired refresh; flagged at Phase 0; body content uses Session 51 throughout for consistency.
+
+**Sources ingested (refresh propagation from S49 canonical content; no new primary-source files).** S49 [[LEU]] Q1 FY2026 refresh content (Q1 financial snapshot + Oklo HALEU deconversion JV substantive subsection + cumulative HALEU production +60% + FY2026 raised guidance); S49 [[BWXT]] Q1 FY2026 refresh content (Q1 financial snapshot + Kairos Power TRISO partnership verified + Mount Vernon greenfield + PCG acquisition + Caveat #9 6th canonical baseline refresh); [[CCJ]] S43 baseline preserved; [[BE]] S40 baseline preserved; [[GEV]] S37 baseline preserved.
+
+**Pages updated (1; UPDATED in-place).** [[HALEU-fuel-chokepoint]] (~50 lines added: chokepoint identification cumulative production update; six-layer fuel chain canonical synthesis table updated [HALEU enrichment + deconversion + fabrication rows reference Q1 2026 trajectory]; supply position trajectory commentary updated; **NEW substantive subsection: LEU-Oklo HALEU deconversion JV vertical integration** [~12 lines; coopetition framing within sequential model; mutual non-naming preserved; honest-verdict EXPLORATORY scope]; HALEU trio Aschenbrenner thesis cross-vault application section extended to 5-column format with Q1 2026 trajectory updates per filer + Geveden framing evolution flagged; cross-vault thesis pattern strengthens to 8 participants; Open questions Q1 + Q5 partial resolution status markers; Source audit notes updated with S49 refresh references; Change log entry).
+
+**Infra updates.** `index.md` HALEU-fuel-chokepoint row last_updated 2026-05-02 → 2026-05-10. `log.md` Session index row + ~50 line detailed entry top-appended.
+
+**Cross-references propagated (low-probability per kickoff; default no updates applied).** No edits to [[LEU]] / [[BWXT]] / [[CCJ]] / [[BE]] / [[GEV]] (S49 refresh already captures Oklo + Kairos updates with chokepoint cross-references intact; cross-references stable from S43/S44 baselines).
+
+### Phase 4 reflection essentials
+
+**(a) Chokepoint severity score stability assessment (six-layer fuel chain synthesis).** **STABLE at Q1 2026.** All severity scores preserved per Q1 2026 evidence: mining 3/5; conversion 4/5; LEU enrichment 4/5; HALEU enrichment 5/5 Acute and Binding; deconversion 4/5; fabrication 3/5. Cross-cutting geopolitical risk severity 4/5 stable. **No severity score changes warranted at chokepoint refresh scope.**
+
+**(b) LEU-Oklo deconversion JV vertical integration subsection scope assessment.** ~12-line substantive subsection delivered (within projected ~10-15 line scope). Vexler vertical integration framing + coopetition angle within sequential fuel chain dependency model (LEU exploring deconversion entry intersects [[BWXT]] existing $2.7B DOE program); mutual non-naming pattern PRESERVED at Q1 2026 despite increased structural overlap (industry-standard upstream/downstream supplier-customer non-disclosure persists); honest-verdict scope EXPLORATORY (partial resolution of S42 reactor developer naming gap; not foundational shift). **Vertical integration angle WITHIN sequential model — NOT a new sub-layer.**
+
+**(c) BWXT Kairos→Google end-customer chain documentation assessment.** S42 Tier 3 "Kairos Power TRISO partnership September 2025" unverified-not-contradicted RESOLVED at Q1 2026 primary (Geveden explicit collaboration agreement + Hermes 2 reactor for Google in Oak Ridge TN under construction). **First explicit BWXT→hyperscaler end-customer chain at HALEU trio.** A6 (g) count remains 8 (Kairos Q1 resolution = unverified-not-contradicted → VERIFIED reduces unverified pool by 1; does NOT increment variance count).
+
+**(d) Cross-vault Aschenbrenner thesis pattern strengthening (8 participants post-S49).** [[BE]] + [[LEU]] refresh + [[BWXT]] refresh + [[CCJ]] + [[ENS]] + [[FCEL]] + [[AAOI]] + BWXT Q1 dimensional addition. HALEU trio cross-vault contribution: 3-domain substantiation continues at Q1 2026 with intensifying evidence (+60% cumulative HALEU; backlog +77% YoY; Kairos+Google end-customer chain; Oklo named reactor developer). **Most empirically substantive cross-vault evidence in vault.**
+
+**(e) Open questions partial resolution status markers.** Q1 (Centrus Phase III timeline) — partial update Q1 2026 (cumulative production +60% incremental; FY2026 raised guidance $450-500M; $560M Oak Ridge expansion; Palantir + Geiger Brothers added). Q5 (Reactor developer downstream demand) — partial resolution Q1 2026 (Oklo named at LEU + Kairos+Google named at BWXT). Q9 (Westinghouse Layer 2 hybrid) — stable per S43 baseline. Q10 (Equity conversion IPO clause verification status) — stable per S44 baseline (ambiguous, not pending).
+
+**(f) HALEU report Tier 3 figure verification cumulative pattern update (Kairos resolution; A6 (g) count maintenance).** S44 baseline: 13/18 verified at LEU + 1 material variance at BWXT (backlog +50% Tier 3 vs +15% primary; A6 (g) count 7 → 8) + 4 unverified-not-contradicted at BWXT side + 0 variances at CCJ. **Q1 2026 update:** Kairos Power TRISO partnership Tier 3 framing now VERIFIED at primary; reduces unverified-not-contradicted pool from 4 → 3 at BWXT side. A6 (g) count remains 8 (variance count unchanged; verification status improvement).
+
+**(g) Section 4.6 codified discipline ROI durability at chokepoint refresh scope.** **0 falsifications at S51** (S45 ENS = 6 [pre-codification]; S47 FCEL = 1; S48 AAOI = 0; S49 BWXT+LEU = 0; S50 LITE+COHR = 0; **S51 HALEU-fuel-chokepoint = 0**). **Codification ROI durability VALIDATED across all post-codification ingest types** (standalone first-canonical + standalone refresh + paired refresh + chokepoint refresh). 6-instance zero-falsification streak at S51 (excluding S45 pre-codification baseline). A6 (g)/(g') count cumulative UNCHANGED at 8 (g) + 2 (g') = **10 combined**.
+
+**(h) Chokepoint refresh ingest sub-protocol precedent establishment.** **First chokepoint page refresh in vault history.** Refresh propagation from canonical company-page refreshes (NOT new primary-source ingest) — operational template for future chokepoint refresh propagations (BTM-grid-bypass-workaround post-BE refresh; advanced-optical-packaging post-LITE+COHR+AAOI refreshes; InP-supply post-LITE+COHR refreshes; cpo-integration post-LITE+COHR refreshes). 1-instance precedent post-S51; **Tranche 2 codification candidate** for chokepoint refresh ingest sub-protocol formalization.
+
+**(i) 1-stop refresh protocol with chokepoint-specific 5 escalation triggers — convention durability assessment.** **Convention durability VALIDATED at first chokepoint-scope application.** Escalation trigger check at end of Phase 0: 5 chokepoint-specific triggers all NEGATIVE (1. severity stable; 2. no new layer [LEU-Oklo JV is vertical integration WITHIN sequential model]; 3. Aschenbrenner thesis substantiated; 4. 0 falsifications [Q1 STRENGTHENS S44 baseline]; 5. full transcripts verified at S49). Mid-execution clarification escape valve NOT used. **Tranche 2 codification candidate strengthened: 1-stop refresh sub-protocol formalization with dual specification — company-page 5 triggers (S49 + S50 precedent) + chokepoint-page 5 triggers (S51 precedent).**
+
+**(j) Honest-verdict discipline assessment.** **PRESERVED.** Severity scoring stability honestly framed per Q1 2026 evidence; LEU-Oklo deconversion JV scope honestly assessed (EXPLORATORY; partial resolution; not foundational shift); cross-vault thesis pattern strengthening honestly framed (participant count vs pattern strength evolution); Geveden Q1 framing evolution from S42 disclaimer to Q1 bullish flagged without adjudication; mutual non-naming pattern preserved despite increased structural overlap.
+
+**(k) Proposed `frameworks.md` additions or refinements (Vic-side curation):**
+- **Chokepoint refresh ingest sub-protocol formalization** (Tranche 2 candidate; 1-instance precedent post-S51)
+- **1-stop refresh protocol formalization with dual escalation trigger specification** (Tranche 2 candidate; 3-instance precedent: S49 company-paired + S50 company-paired + S51 chokepoint)
+- **Refresh ingest sub-protocol formalization broader** (Tranche 2 candidate; 4-instance precedent post-S51: S48 standard company + S49 paired+1-stop company + S50 paired+1-stop company + S51 chokepoint+1-stop)
+- **LEU-Oklo deconversion JV vertical integration framing within sequential fuel chain dependency model** (Phase 4 framework refinement candidate; potential Caveat #10 codification candidate at Tranche 2 — coopetition within sequential dependency model)
+- **Cross-vault Aschenbrenner thesis pattern formalization** (8 participants pattern strength; codification candidate)
+- **A6 (f) session-positioning instance** (kickoff prompt filename "Session 50" vs actual session sequence S51; flagging convention reinforced)
+
+**(l) Readiness assessment for Session 52+.**
+- **S52 candidate: Codification Tranche 2** (~31-35 candidates pre-existing + S48/S49/S50/S51 anticipated additions)
+- Alternative S52: ETN + GEV Q1 2026 paired refresh
+- Alternative S52: BE Q1 2026 refresh + BTM-grid-bypass-workaround chokepoint page synthesis (BE + FCEL + ENS multi-source pattern)
+- Alternative S52: TSM 20-F FY2025 refresh
+- Alternative S52: NVDA refresh (NVDA $2B commitments cross-vault verification from architect side)
+- Alternative S52: AAOI Q1 FY2026 refresh propagation to InP-supply / cpo-integration / advanced-optical-packaging chokepoint pages
+- Alternative S52: CEG/VST/TLN nuclear fleet utility cluster paired or trio first canonical
+- Alternative S52: CLS standalone first canonical
+
+### Convention counts (post-S51)
+
+- Tier 1/Tier 2 framing gap: **7** (unchanged)
+- CEO combativeness: **2** (unchanged)
+- Cross-venue disclosure gap: **2 obs** (unchanged)
+- A6 (g)/(g') subtype: **8 + 2 = 10 combined** (unchanged; Kairos Q1 resolution = unverified → VERIFIED reduces unverified pool by 1 but does NOT increment variance count)
+- Amazon warrant pattern: **4 + Oracle emerging at BE** (unchanged)
+- Wikilink-clean streak: **35 sessions** post-S51
+- Customer concentration archetypes: **5 archetypes; 6 vault entries** (unchanged)
+- Refresh ingest precedent: **4 instances** (S48 standard company + S49 paired+1-stop company + S50 paired+1-stop company + S51 chokepoint+1-stop = 4-instance refresh ingest baseline; Tranche 2 codification candidate)
+- 1-stop refresh protocol: **3 instances** (S49 company-paired + S50 company-paired + S51 chokepoint; Tranche 2 codification candidate)
+- Chokepoint page refreshes: **1 instance** (S51 first; Tranche 2 codification candidate)
+- Cross-vault Aschenbrenner thesis pattern: **8-10 participants** post-S50 (10 if LITE+COHR Q3 included; Tranche 2 codification candidate)
+- A6 (f) session-positioning instances: **3 cumulative** (per Section 4.5 A6 (f); S26 + S27' + **S51**)
+
+---
+
+## Session 50 — [[LITE]] + [[COHR]] paired refresh ingest (2026-05-10)
+
+**Type.** **Second paired refresh ingest** + **second 1-stop refresh protocol application** post-S49 precedent. Single-session execution covering Phase 0 + Phase 1 + Phase 2 + Stop 2 + Phase 4 (no Stop 1 plan delivery; no Vic approval gate). 5 escalation triggers checked at end of Phase 0 — ALL NEGATIVE. 1-stop protocol durability validated at 2nd application.
+
+**Sources ingested (4 files; 2 per filer).** LITE 10-Q Q3 FY2026 (Tier 1, period ended March 28, 2026); LITE Q3 FY2026 earnings call (Tier 2, May 5, 2026; full transcript verified — 27 pages); COHR 10-Q Q3 FY2026 (Tier 1, period ended March 31, 2026); COHR Q3 FY2026 earnings call (Tier 2, May 6, 2026; full transcript verified — 27 pages). All 4 files verified at `raw/filings/` + `raw/transcripts/` root locations. **June fiscal year-end = 3rd distinct non-calendar fiscal calendar in vault** post ENS March + FCEL October.
+
+**Pages updated (2; UPDATED in-place).** [[LITE]] (~80 lines added: Q3 FY2026 financial snapshot + Q4 FY2026 raised guidance + NVIDIA $2B substantive subsection + Greensboro NC 5th InP fab subsection + Open question #1 resolution + #2 partial resolution via Google named explicitly + 2 NEW source audit notes entries + Change log entry); [[COHR]] (~95 lines added: Q3 FY2026 financial snapshot + Q4 FY2026 raised guidance + NVIDIA $2B + multiyear CPO supply substantive subsection + 6-inch InP Q3 ramp acceleration subsection (Zürich 3rd site; first 6-inch transceiver shipments; quadrupling capacity over 2 years) + Multi-Rail + Thermadite/thermoelectric NEW growth segments subsection + Open question #1 resolution + 2 NEW source audit notes entries + Change log entry).
+
+**Infra updates.** `index.md` LITE + COHR last_updated 2026-04-27/2026-04-23 → 2026-05-10. `log.md` Session 50 entry top-appended.
+
+**Cross-references propagated (low-probability per kickoff; default no updates applied).** No AAOI.md / InP-supply.md / cpo-integration.md / advanced-optical-packaging.md edits at S50 (cross-vault evolution at LITE+COHR Q3 FY2026 absorbs into respective company-page bodies; chokepoint pages remain canonical from S31-S33 multi-source-synthesis baseline). Cross-references to [[NVDA-platform-integration]] + [[InP-supply]] + [[datacenter-laser-supply]] + [[cpo-integration]] preserved within respective company-page bodies.
+
+### Phase 4 reflection essentials
+
+**(a) Framework placement stability assessment.** **STABLE for both filers.** LITE Layer 4 / photonics_tier 3 maintained (component supplier; three-inch InP industry-standard scope); COHR Layer 4 / photonics_tier 2 maintained (broadest vertical integration; six-inch InP device-fabrication advantage; now first 6-inch transceiver shipments + Zürich 3rd site at Q3). Q3 FY2026 substantive trajectory does not shift placement.
+
+**(b) Caveat #9 Layer 4-5 straddling refresh assessment.** **N/A for both filers** — neither LITE nor COHR carries Caveat #9 designation per canonical baselines (Caveat #9 introduced post-S37 ETN; LITE/COHR pages predate). Pure Layer 4 component supplier placement preserved at Q3. Note: COHR broadening into Multi-Rail systems + Thermadite thermal materials are component/system additions not Layer 5 platform integration.
+
+**(c) NVIDIA $2B substantive subsection scope assessment (LITE + COHR).** **First in-period primary-source materialization at both filers** post-S46 frameworks-only baseline. **LITE side:** equity-only confirmation (CFO Ali explicit $2.02B cash injection); capital-offset-for-supply-assurance S46 framing materialized at cash level; ~25-line subsection. **COHR side:** dual-leg structure — $2B equity + multibillion-dollar multiyear CPO supply agreement extending through end of decade (Anderson explicit); multi-CPO product scope (high-power CW laser + ELS module + Fiber Array Unit + polarization-maintaining fiber + isolators + thermoelectric coolers); ~25-line subsection. **Differential structural commitment** — COHR has multiyear CPO supply agreement (commercial demand commitment beyond capital injection); LITE's analogous commercial commitment at multi-100M UHP purchase order + LTAs structure level. Within ~15-20 line projection per kickoff (slight extension warranted for substantive content).
+
+**(d) CPO supercycle thesis substantiation evolution at primary.** **Substantive validation Q3 FY2026:** LITE +90% YoY (record); COHR +27% YoY pro forma (record); backlog visibility extends into calendar 2028; LTAs to end of decade; supply-demand imbalance ">30%" (LITE; greater than S46 25-30% baseline); CPO total addressable market sized at >$15B (COHR); scale-up CPO incremental revenue >$5B (LITE Greensboro fab); 800G + 1.6T transceiver ramp accelerating; 6-inch InP capacity quadrupling 2-year trajectory at COHR (one quarter ahead of plan). Most empirically substantive CPO supercycle evidence in vault primary-source ingest history.
+
+**(e) InP supply chokepoint constraint reinforcement.** **Industry-wide constraint persists** at Q3 FY2026 per both supplier-side disclosures. LITE: ">30% supply-demand imbalance"; "we continue to lag demand"; Greensboro NC 5th InP fab acquisition; substrate LTAs secured. COHR: 6-inch InP capacity ramp doubling end calendar 2026 (one quarter early) + quadrupling end calendar 2027; Sherman TX + Sweden + Zürich (3rd site Q3 NEW). Cross-vault parallel: AAOI S48 InP vertical integration + tripling InP laser by mid-2027. **InP supply chokepoint structurally tightened at Q3 FY2026** post-S33 [[InP-supply]] canonical baseline.
+
+**(f) Cross-vault Aschenbrenner thesis pattern strengthening (10 participants post-S50).** Pattern: BE 130% + LEU raised guidance + BWXT +26% revenue +77% backlog + CCJ + ENS +66% segment + FCEL +61% + AAOI +154% DC + LITE +90% + COHR +27% pro forma + (BWXT Q1 refresh dimensional addition). **Most empirically substantive cross-vault evidence in vault.** Codification candidate per Phase 4.
+
+**(g) Bilateral cross-vault verification with AAOI S48 baseline.** Standard cross-references applied; AAOI S48 surfaced laser supplier dependency from customer side ("huge issue of laser shortage; suppliers told us we need to wait at least one year or even longer" per Thompson Lin Q4 FY2025); LITE + COHR Q3 FY2026 surface from supplier side: ">30% supply-demand imbalance" + "industry-wide constraint" + "exceptionally strong demand environment with no signs of attenuation." **Customer-supplier dependency pattern verified at primary across vault canonical photonics chokepoint participants.** No substantive AAOI.md edits required (within standard refresh discipline scope).
+
+**(h) LITE-COHR bilateral verification.** **Mutual non-naming pattern STABLE** at Q3 FY2026 — industry-standard non-disclosure preserved. Cross-validation pattern continues — Q3 calls reference industry-wide supply-demand dynamics without naming each other (continuing Q2 FY2026 Thomas O'Malley/Barclays cross-validation pattern). Multi-Rail = first joint LITE+COHR explicit growth vector emphasis at primary post-S46 baseline; both filers emphasize Multi-Rail as significant new growth driver simultaneously.
+
+**(i) Section 4.6 codified discipline ROI durability at 3rd post-codification ingest type.** **0 material falsifications at S50** (S45 ENS = 6 [pre-codification]; S47 FCEL = 1; S48 AAOI = 0; S49 BWXT+LEU = 0; **S50 LITE+COHR = 0**). **Codification ROI durability VALIDATED across all post-codification ingest types** (standalone first-canonical post-codification + standalone refresh + paired refresh + 1-stop refresh + 2nd 1-stop refresh). 5-instance zero-falsification streak at S50 (excluding S45 pre-codification baseline). A6 (g)/(g') count cumulative UNCHANGED at 8 (g) + 2 (g') = **10 combined**. Note: LITE Q4 FY2026 guidance kickoff stated "$960M" — actual range $960M-$1.01B (midpoint $985M); kickoff used low-end as midpoint, partial imprecision but not material falsification.
+
+**(j) 1-stop refresh protocol precedent durability assessment (2nd application).** **Convention durability VALIDATED at 2nd application.** Escalation trigger check at end of Phase 0: 5 triggers all NEGATIVE (1. no framework placement shift; 2. Caveat #9 N/A for both; 3. NVIDIA $2B materialization is in-period at primary, doesn't require substantive bilateral verification scope decision beyond standard refresh; 4. 0 kickoff hypothesis falsifications; 5. full transcripts verified). Mid-execution clarification escape valve NOT used (no substantive judgment call surfaced beyond escalation triggers). 1-stop refresh protocol simplification continues to produce clean execution at refresh scope without reducing analytical product fidelity. **Tranche 2 codification candidate strengthened: 1-stop refresh sub-protocol formalization with 2-instance precedent (S49 + S50).**
+
+**(k) Honest-verdict discipline assessment.** **PRESERVED.** Layer 4 placement maintained for both filers per honest-verdict-correctness; NVIDIA $2B subsection scope honestly framed (cash injection vs commercial commitment distinction); COHR multiyear CPO supply agreement scope honestly assessed (multibillion-dollar multiyear scope but specific volume / pricing terms not disclosed); CPO supercycle thesis substantiation honestly framed (Q3 FY2026 evidence vs forward trajectory; scale-out CPO ramping 2H 2026 vs scale-up CPO ramping 2H 2027); LITE-COHR bilateral non-naming preserved despite increased analyst cross-validation question patterns.
+
+**(l) Proposed `frameworks.md` additions or refinements + Readiness assessment for Session 51+:**
+- **Refresh ingest sub-protocol formalization** (Tranche 2 candidate; 3-instance precedent post-S50: S48 standard + S49 paired+1-stop + S50 paired+1-stop)
+- **1-stop refresh sub-protocol formalization with 5 conditional escalation triggers** (Tranche 2 candidate; 2-instance precedent post-S50: S49 + S50)
+- **Paired refresh ingest sub-protocol formalization** (Tranche 2 candidate; 2-instance precedent post-S50: S49 + S50)
+- **Non-calendar-fiscal-year filer Section 4.1 sub-protocol formalization** (Tranche 2 candidate; 3-instance precedent post-S50: ENS March + FCEL October + LITE/COHR June)
+- **Cross-vault Aschenbrenner thesis pattern formalization** (Tranche 2 candidate; 10 participants pattern strength)
+- **NVIDIA $2B equity-plus-purchase commitment cross-vault thesis formalization** (Tranche 2 candidate; first multi-vendor multi-domain in-period materialization post-Mar 2 announcement)
+- **CPO supercycle thesis substantive validation framework** (Tranche 2 candidate)
+- **S51 candidate: Codification Tranche 2** (~31-35 candidates pre-existing + S48/S49/S50 anticipated additions)
+- Alternative S51: ETN + GEV Q1 2026 paired refresh (matched-pair carryover per S37)
+- Alternative S51: BE Q1 2026 refresh
+- Alternative S51: TSM 20-F FY2025 refresh (24-session-old baseline)
+- Alternative S51: NVDA refresh (NVDA $2B commitments cross-vault verification from architect side)
+- Alternative S51: CEG/VST/TLN nuclear fleet utility cluster paired or trio first canonical
+- Alternative S51: CLS standalone first canonical
+
+### Convention counts (post-S50)
+
+- Tier 1/Tier 2 framing gap: **7** (unchanged)
+- CEO combativeness: **2** (unchanged; Hurlston + Anderson both NOT combative at Q3)
+- Cross-venue disclosure gap: **2 obs** (unchanged)
+- A6 (g)/(g') subtype: **8 + 2 = 10 combined** (unchanged)
+- Amazon warrant pattern: **4 + Oracle emerging at BE** (unchanged)
+- Wikilink-clean streak: **34 sessions** post-S50
+- Customer concentration archetypes: **5 archetypes; 6 vault entries** (unchanged at S50)
+- Refresh ingest precedent: **3 instances** (S48 standard + S49 paired+1-stop + S50 paired+1-stop = 3-instance refresh ingest baseline; Tranche 2 codification candidate)
+- 1-stop refresh protocol: **2 instances** (S49 + S50; Tranche 2 codification candidate)
+- Cross-vault Aschenbrenner thesis pattern: **10 participants** post-S50 (BE + LEU + BWXT + CCJ + ENS + FCEL + AAOI + LITE + COHR + BWXT Q1 refresh; Tranche 2 codification candidate)
+- Non-calendar-fiscal-year filers: **3-instance precedent** post-S50 (ENS March + FCEL October + LITE/COHR June)
+
+---
+
+## Session 49 — [[BWXT]] + [[LEU]] paired refresh ingest (2026-05-10)
+
+**Type.** **First paired refresh ingest in vault history** + **first vault-canonical 1-stop refresh protocol application**. Single-session execution covering Phase 0 + Phase 1 + Phase 2 + Stop 2 + Phase 4 (no Stop 1 plan delivery; no Vic approval gate). 5 escalation triggers checked at end of Phase 0 — ALL NEGATIVE. Resumed in fresh-context session per S48 precedent + S49 proactive pause via `chat_session_handoff.md`.
+
+**Sources ingested (4 files; 2 per filer).** BWXT 10-Q Q1 2026 (Tier 1, period ended March 31, 2026); BWXT Q1 2026 earnings call (Tier 2, May 4, 2026; full transcript verified); LEU 10-Q Q1 2026 (Tier 1, period ended March 31, 2026); LEU Q1 2026 earnings call (Tier 2, May 6, 2026; full transcript verified). All 4 files verified at `raw/filings/` + `raw/transcripts/` root locations.
+
+**Pages updated (2; UPDATED in-place).** [[BWXT]] (~70 lines added: Q1 2026 financial snapshot + Caveat #9 6th canonical baseline refresh assessment subsection + PCG acquisition row + Mount Vernon greenfield row + A1 mode framing table updates incl. Kairos reciprocal-confirmation + Google counterparty-attribution-only; 2 NEW source audit notes entries; Open question #1 Mount Vernon partial update + Open question #12 Kairos resolution); [[LEU]] (~85 lines added: Q1 2026 financial snapshot + Oklo HALEU deconversion JV substantive subsection + A1 mode framing table updates incl. Oklo reciprocal-confirmation + Palantir + Geiger Brothers; 2 NEW source audit notes entries; Open question #1 reactor developer naming gap partial resolution).
+
+**Infra updates.** `index.md` BWXT + LEU last_updated 2026-05-02 → 2026-05-10. `log.md` Session 49 entry top-appended.
+
+**Cross-references propagated (low-probability per kickoff; default no updates applied).** No HALEU-fuel-chokepoint.md edits at S49 (Oklo deconversion JV does NOT materially shift chokepoint-page analytical product); cross-references to [[BWXT]] companion + [[LEU]] companion preserved within respective company-page bodies.
+
+### Phase 4 reflection essentials
+
+**(a) Framework placement stability assessment.** **STABLE for both filers.** BWXT Layer 4 / materials_tier 1 maintained (Q1 2026 substantive trajectory does not shift placement); LEU Layer 4 / materials_tier 1 maintained (Q1 2026 Oklo JV announcement is incremental customer naming, not framework placement shift).
+
+**(b) Caveat #9 BWXT Project Pele 6th canonical baseline refresh.** **Layer 4 MAINTAINED at Q1 2026.** None of 5 pre-registered triggers cleanly met. **Trigger #4 PARTIAL** (Antares + Kairos Hermes 2 for Google = 2 named end-customers; +1 from S42 baseline Antares-only); **Trigger #5 PARTIAL** (Mount Vernon greenfield commercial nuclear plant ANNOUNCED at Q1 2026 — was "under consideration" at S42 baseline; FID not yet sanctioned). Trigger #3 (commercial revenue >25%) Q1 commercial revenue ~36% but commercial = component supply (Pickering steam generators / reactor pressure vessels / heat exchangers / Kinectrics services / medical), NOT integrated systems. Geveden explicit *"betting on the race, not on the horse"* supplier-model framing reinforces Layer 4 placement. Caveat #9 watch continues.
+
+**(c) LEU Oklo HALEU deconversion partial resolution scope assessment.** **PARTIAL RESOLUTION of S42 reactor developer naming gap.** S42 baseline = ZERO named reactor developers. Q1 2026: Oklo named explicitly via JV partner + large off-taker + customer triple-role. Substantive subsection (~25 lines) delivered. Other reactor developers (TerraPower / X-energy / Kairos / NuScale / Westinghouse / TRISO-X) remain unnamed at LEU primary. **Honest-verdict surface preserved:** F9 Tier 1 placement methodology continues to rely on DOE intermediary-customer + Western HALEU monopoly rather than direct named-hyperscaler disclosure.
+
+**(d) BWXT Q1 2026 extended refresh scope rationale.** ~70 line addition justified by substantive Q1 content: Kairos+Hermes 2+Google chain (Tier 2; resolves S42 Tier 3 unverified); PCG acquisition $200M April 2026; Mount Vernon greenfield commercial nuclear plant announcement; CEO AI thesis framing material evolution; Caveat #9 6th canonical baseline refresh assessment; backlog +77% YoY. Within kickoff projection (~50-70 lines).
+
+**(e) Cross-vault Aschenbrenner thesis pattern strengthening to 8 participants post-S49.** **BE 130% + ENS 66% segment + FCEL 61% + AAOI 154% DC + BWXT 26% / +77% backlog + LEU raised guidance + Oklo named reactor developer** = most empirically substantive cross-vault evidence in vault. **Codification candidate per Tranche 2** (S50+).
+
+**(f) BWXT-LEU bilateral verification at Q1 2026.** **Mutual non-naming pattern STABLE.** BWXT Q1 does NOT name LEU/Centrus; LEU Q1 does NOT name BWXT. **NEW Q1 2026 dimension:** LEU exploring deconversion entry via Oklo JV (March 2026 announcement) intersects BWXT's existing HALEU deconversion business (DOE October 2024 $2.7B program; $1.6B HPDU contract; Centrifuge Manufacturing Development Facility) — coopetition / vertical integration angle at downstream end of fuel chain. Bilateral non-naming preserved despite increased structural overlap. Industry-standard upstream/downstream supplier-customer non-disclosure pattern persists.
+
+**(g) Section 4.6 codified discipline ROI durability at paired refresh scope.** **0 falsifications at S49** (S45 ENS = 6 [pre-codification]; S47 FCEL = 1; S48 AAOI = 0; **S49 BWXT+LEU = 0**). **Codification ROI durability VALIDATED across ingest types** (standalone first-canonical post-codification; standalone refresh; **paired refresh**). A6 (g)/(g') count cumulative UNCHANGED at 8 (g) + 2 (g') = **10 combined**. Kickoff "Codified background from existing vault context" content matches Q1 2026 primary verification cleanly for both filers.
+
+**(h) Paired refresh ingest sub-protocol precedent establishment.** Two-precedent foundation: S48 standard refresh (1 instance) + S49 paired refresh (1 instance) = 2-instance refresh ingest sub-protocol baseline. Distinguishing scope discipline: standard refresh = 2-source set / 1-page UPDATE / ~25-30 line log entry; paired refresh = 4-source set / 2-page UPDATE / ~30-40 line log entry. **Tranche 2 codification candidate.**
+
+**(i) 1-stop refresh protocol precedent assessment.** **First vault-canonical 1-stop refresh protocol application.** Escalation trigger check at end of Phase 0: 5 triggers all NEGATIVE (1. no framework placement shift evidence; 2. Caveat #9 Layer 5 upgrade triggers not cleanly met; 3. no material cross-vault relationship change requiring substantive bilateral verification scope decision; 4. 0 kickoff hypothesis falsifications; 5. full transcripts verified). Mid-execution clarification escape valve NOT used (no substantive judgment call surfaced beyond escalation triggers). Convention durability VALIDATED at first 1-stop application — 1-stop refresh protocol simplification produces clean execution at refresh scope without reducing analytical product fidelity. **Tranche 2 codification candidate** with conditional escalation triggers.
+
+**(j) Honest-verdict discipline assessment.** **PRESERVED.** Layer 4 / materials_tier 1 maintained for both filers per honest-verdict-correctness; Caveat #9 5-trigger test honestly assessed (no overclaim of trigger satisfaction); LEU Oklo deconversion JV scope honestly framed (exploratory JV; partial resolution of S42 gap; not foundational customer concentration archetype shift); BWXT CEO AI thesis framing evolution honestly surfaced (S42 disclaimer → Q1 bullish; material framing evolution flagged without adjudicating direction).
+
+**(k) Proposed `frameworks.md` additions or refinements (Vic-side curation):**
+- **Refresh ingest sub-protocol formalization** (Tranche 2 candidate; 2-instance precedent post-S49: S48 standard + S49 paired)
+- **1-stop refresh sub-protocol formalization with 5 conditional escalation triggers** (Tranche 2 candidate; 1-instance precedent post-S49)
+- **Paired refresh ingest sub-protocol** (Tranche 2 candidate; 1-instance precedent post-S49)
+- **Reactor developer naming gap evolution convention** (LEU Oklo first instance post-S42 baseline; cross-vault tracking candidate)
+- **Cross-vault Aschenbrenner thesis pattern formalization** (8 participants pattern strength — codification candidate)
+
+**(l) Readiness assessment for Session 50+.**
+- **S50 candidate: Codification Tranche 2** (~31-35 candidates + S48/S49 anticipated additions: refresh ingest sub-protocol formalization with 2-instance precedent; 1-stop refresh protocol formalization with 1-instance precedent; paired refresh sub-protocol with 1-instance precedent; reactor developer naming gap convention; cross-vault Aschenbrenner thesis pattern formalization)
+- Alternative S50: ETN Q1 2026 refresh (1-stop precedent applied)
+- Alternative S50: GEV Q1 2026 refresh
+- Alternative S50: BE Q1 2026 refresh
+- Alternative S50: TSM 20-F FY2025 refresh
+- Alternative S50: LITE + COHR Q1 2026 paired refresh (CPO supercycle thesis-central)
+- Alternative S50: CEG/VST/TLN nuclear fleet utility cluster
+- Alternative S50: CLS standalone first canonical
+
+### Convention counts (post-S49)
+
+- Tier 1/Tier 2 framing gap: **7** (unchanged)
+- CEO combativeness: **2** (unchanged; Geveden + Vexler both NOT combative at Q1 2026)
+- Cross-venue disclosure gap: **2 obs** (unchanged; BWXT Geveden AI thesis framing evolution noted as intra-Tier-2 across two earnings calls — does NOT trigger Section 3.6 cross-venue convention)
+- A6 (g)/(g') subtype: **8 + 2 = 10 combined** (unchanged; Kairos Tier 3 unverified retroactively resolved at primary)
+- Amazon warrant pattern: **4 + Oracle emerging at BE** (unchanged)
+- Wikilink-clean streak: **33 sessions** post-S49
+- Customer concentration archetypes: **5 archetypes; 6 vault entries** (unchanged at S49; LEU Oklo named relationship is incremental partial resolution, not new archetype variant)
+- Refresh ingest precedent: **2 instances** (S48 standard refresh + S49 paired refresh = 2-instance baseline; Tranche 2 codification candidate)
+- 1-stop refresh protocol: **1 instance** (S49; Tranche 2 codification candidate)
+- Cross-vault Aschenbrenner thesis pattern: **8 participants** post-S49 (BE + LEU refresh + BWXT refresh + CCJ + ENS + FCEL + AAOI; Tranche 2 codification candidate)
+
+---
+
+## Session 48 — [[AAOI]] Q1 FY2026 refresh ingest (2026-05-10)
+
+**Type.** **First formal refresh ingest in vault history** — establishes refresh ingest protocol precedent. Two-stop protocol; Phase 0 paused mid-session for context exhaustion (handoff via `chat_session_handoff.md`); resumed Phase 1 + Phase 2 + Stop 2 in fresh session.
+
+**Sources (2 — refresh-specific 2-source set vs first-canonical 3-source set).** AAOI 10-Q Q1 FY2026 (Tier 1; period-end March 31, 2026; in `raw/filings/`) + AAOI Q1 FY2026 earnings call (Tier 2; May 7, 2026; full transcript verified — distinct from S45 ENS source unavailability per Section 2.2).
+
+**Files affected (3 — refresh-specific scope).** Updated 3: `wiki/companies/AAOI.md` (Q1 FY2026 quarterly section + Caveat #9 refresh assessment subsection + Open questions partial resolution + 2 NEW Source audit notes entries + Change log entry; ~80 lines added; in-place updates not page creation); `index.md` (AAOI row last_updated cell 2026-04-23 → 2026-05-10); `log.md` (this entry).
+
+**Key findings:**
+
+1. **Framework placement STABLE.** Layer 5 / photonics_tier 5 maintained per revenue-mix-required upgrade discipline. Caveat #9 Layer 4-5 straddling 2nd canonical baseline refresh: 0 of 5 pre-registered Layer 5 upgrade triggers met (per S45 ENS-codified Caveat #9 reinforcement).
+
+2. **Q1 FY2026 substantive refresh content.** Revenue $151.1M (+51% YoY; +13% sequential; 4th consecutive record quarter); DC $81.4M (53.9%; +154% YoY) — DC majority sustained 2nd consecutive quarter post-Q4 inflection; CATV $66.8M (44.2%; +3.6% YoY) decelerating from FY2025 +180%; non-GAAP loss per share $(0.07) on guided Q2 2026 inflection trajectory.
+
+3. **Q1 FY2026 commercial milestones materialized.** 800G first volume shipment Q1 to one large hyperscaler (S14 baseline projection materialized); 1.6T first volume order Q1 from another long-term major hyperscaler (ahead of S14 H2 2026 trajectory); 2 new 800G volume orders from same Q1 hyperscale customer.
+
+4. **FY2026 guidance RAISED at Q1 call.** Revenue >$1.0B → **>$1.1B**; non-GAAP operating income >$120M → **>$140M** — first upward revision since S14 baseline; validates AI-driven demand thesis substantiation evolution. Thompson Lin: "Demand continue to outpace our production capacity throughout mid-2027"; "significantly larger ramp expected starting in Q3."
+
+5. **Cross-vault thesis pattern alignment.** AAOI Q1 2026 +154% DC YoY parallels BE Q1 2026 130% growth + LEU Phase II + ENS Q3 FY2026 +66% segment income + FCEL Q1 FY2026 +61% — AI datacenter binding-constraint demand materializing across vault canonical photonics + Energy/Power + Materials participants.
+
+6. **Section 4.6 codified kickoff drafting source discipline ROI durability VALIDATED at refresh scope.** Zero kickoff hypothesis falsifications surfaced at S48 (vs S47 FCEL = 1 falsification; vs S45 ENS = 6 falsifications pre-codification). Codification ROI validated across ingest types (first-canonical S47 + refresh S48). A6 sub-pattern (g') count remains **2 instances** post-S48.
+
+7. **DigiComm AR concentration improved 86.5% → 74.5%** (12pp reduction; still extreme but trending). Customer concentration archetype stability vs S14 baseline preliminary; deeper verification pending future refresh.
+
+8. **CPO silence pattern persists at primary.** Q1 FY2026 10-Q zero CPO/SiPh/LPO/co-packaged optics mentions verified; pattern stable post-S14 baseline. Per primer S39 narrative-outrunning-proof framing for transceiver assemblers facing CPO transition.
+
+9. **Refresh ingest protocol precedent established.** Refresh-specific scope discipline: 2-source set (vs first-canonical 3-source); 2-3 files affected (vs first-canonical 3-5); page UPDATES not creation; ~25-line log.md entry per Section 3.8 brevity (vs ~30-40 line first-canonical entries). Tranche 2 codification candidate flagged.
+
+10. **Open questions partially resolved + 3 NEW.** Q1 partially resolved (>$1.1B raised); Q2 RESOLVED (800G first volume); Q3 partially resolved (DC majority sustained); Q4 OPEN; Q5 trajectory unfavorable (+5.3% QoQ dilution); Q6 unchanged silence; Q7 stable; **3 NEW** (Q8 hyperscaler naming evolution; Q9 DigiComm AR trajectory; Q10 CPO silence persistence).
+
+**Active monitoring counts post-S48:** Tier 1/Tier 2 framing gap remains 7; CEO combativeness remains 2 (Thompson Lin measured-strategic NOT combative); Cross-venue disclosure gap remains 2 obs; A6 (g)/(g') subtype remains 8 + 2 = 10 combined; Amazon warrant pattern remains 4 + Oracle emerging at BE; reciprocal non-namers remain 3 explicit. **Wikilink-clean streak: 32 sessions** post-Session 48 (extended from 31; no new wikilinks added at refresh scope).
+
+---
+
+## Session 47 — [[FCEL]] standalone first canonical ingest (2026-05-10)
+
+**Type.** Second canonical Energy/Power Tier 4 placement post-[[ENS]] Session 45 (codified Session 46 methodology). Second non-calendar-fiscal-year US-domiciled filer canonical placement (October 31 fiscal year-end; ENS S45 March 31 first instance). **First canonical ingest applying Session 46 codified conventions** — Section 4.6 kickoff drafting source discipline; A6 sub-pattern (g)/(g') sub-categorization; descriptive language convention. Two-stop protocol; Stop 1 + 5 Vic decisions approved.
+
+**Sources (3).** FCEL 10-K FY2025 (Tier 1; period-end Oct 31, 2025; filed Dec 18, 2025) + FCEL 10-Q Q1 FY2026 (Tier 1; period-end Jan 31, 2026; filed Mar 9, 2026) + FCEL Q1 FY2026 earnings call (Tier 2; March 9, 2026; full transcript verified — distinct from S45 ENS source unavailability).
+
+**Files affected (4).** Created 1: `wiki/companies/FCEL.md` (~430 lines; 26 sections including Caveat #9 Layer 4-5 straddling subsection + multi-segment honest-verdict + dedicated narrative-outrunning-proof framing subsection + Vic-requested BE comparison subsection 7 dimensions + Section 4.6 ROI assessment). Updated 3: `wiki/companies/BE.md` (light cross-reference for FCEL as MCFC alternative competitor); `index.md` (FCEL row added); `log.md` (this entry).
+
+**Key findings:**
+
+1. **Energy/Power Tier 4 second canonical methodology durability validated** — substantiation at ~65-70% medium-high confidence (slightly below ENS S45 ~70% due to primer S39 narrative-outrunning-proof framing caveat). 3-of-4 inverse criterion test met; criterion 4 (named hyperscaler concentration) falsification at primary — Korea MOUs (Inuverse 100 MW) are MOUs not firm hyperscaler agreements; SDCL "up to 450 MW" is framework not firm capacity.
+
+2. **CRITICAL kickoff hypothesis falsification per Section 4.4 + A6 sub-pattern (g')** — Section 45X production tax credit hypothesis FALSIFIED at primary. FCEL applicable: Section 45Q ($85/ton carbon capture) + 30% ITC (OBBBA reinstated through 2032). NOT Section 45X advanced manufacturing battery cell credit. **FCEL is NOT 6th cross-vault Section 45X participant** (vs LEU/BWXT/CCJ-Westinghouse/BE/ENS = 5).
+
+3. **Section 4.6 codified kickoff drafting source discipline ROI VALIDATED** — S47 falsification rate (1) substantively LOWER than S45 ENS (6); ~83% reduction in kickoff drafting factual variance. Section 4.6 codification effectively distinguished primary-source-verified from marketing/IR claims at kickoff drafting time.
+
+4. **Caveat #9 Layer 4-5 straddling 8th canonical application** — Layer 4 maintained per revenue-mix-required upgrade discipline (4-segment structure: Product Sales / Generation / Service Agreements / Advanced Technology); future Layer 5 upgrade triggers pre-registered.
+
+5. **Narrative-outrunning-proof framing per primer S39 applied honestly** — pre-scale commercial inflection positioning. Q1 FY2026 $30.5M revenue ≈ 13% of BE Q1 2026 $751M (cross-vault scale ratio 1:25). Pipeline 1.5 GW = PROPOSALS not firm orders. Cumulative workforce reductions ~33% over 7 months. 5 falsification triggers pre-registered; NONE met at primary.
+
+6. **Vic-requested BE comparison subsection (7 dimensions)** delivered as substantive cross-vault analytical product — technology stack (MCFC vs SOFC); commercial scale (1:25 favoring BE); customer concentration archetype; hyperscaler customer disclosure (BE substantiated vs FCEL pending); Aschenbrenner thesis fit (BE substantiated vs FCEL pending); financial structure (BE post-inflection vs FCEL pre-inflection); Layer 5 upgrade triggers.
+
+7. **Korea momentum verified at primary** — GGE 58.8 MW (largest fuel cell plant in world) + KOSPO 20 MW + Noeul 20 MW + Inuverse 100 MW data center MOU + CGN initial deliveries + POSCO legacy + ExxonMobil Esso refinery Rotterdam carbon capture deployment.
+
+8. **CEO Jason Few "proof over promise" measured-strategic framing** — NOT combative per Section 3.7. Convention count remains 2 (Murphy MRVL + Hock Tan AVGO). Kickoff hypothesis falsified — Jason Few + Michael Bishop NOT combative.
+
+9. **October fiscal year-end second instance** — two-instance precedent (ENS March + FCEL October) supports Tranche 2 codification of non-calendar-fiscal-year filer Section 4.1 sub-protocol.
+
+10. **Tier 3 source coverage gap third instance** (after BE S40 + ENS S45) — three-instance precedent reinforces Tranche 2 codification candidate. Primer S39 explicitly flags hydrogen/distributed-power stories category framing at FCEL.
+
+**Active monitoring counts post-S47:** Tier 1/Tier 2 framing gap remains 7 (detailed Q&A read pending); CEO combativeness remains 2 (Jason Few NOT combative); Cross-venue disclosure gap remains 2 observations; A6 (g)/(g') subtype 9 (8 + 1) → **(g) remains 8 + (g') 1 → 2 = 10 combined post-S47** (S47 Section 45X falsification = 2nd (g') instance); Amazon warrant pattern remains 4 + Oracle warrant emerging at BE; reciprocal non-namers remain 3 explicit (AVGO/MRVL/TSM); FCEL joins industry-standard non-namer category. **Wikilink-clean streak: 31 sessions clean post-Session 47** (extended from 30 post-S46; zero forward [[FCEL]] wikilinks pre-existing — clean creation; new [[FCEL]] cross-reference in [[BE]] competitor section).
+
+---
+
+## Session 46 — Codification Tranche 1 (2026-05-03)
+
+**Type.** First codification session in vault history. Tranche 1 of 2 (Tranche 2 deferred to Session 47). Substantial backlog ~38-40 candidates accumulated through Sessions 32-45 codified at this session as 12 candidates (14 → 12 reduced at Stop 1 — Candidates 13 + 14 deferred to Tranche 2 per single-instance convention durability concern). Default ownership convention waived for this session only at Vic explicit authorization; resumes for all subsequent sessions.
+
+**Sources.** No primary sources read; codification operates on existing vault canonical content. Phase 0 read CLAUDE.md (v9 + descriptive language preamble) + frameworks.md v10.1 + log.md sessions 1-45 + ENS.md (S45) + CCJ.md (S43) + LEU.md / BWXT.md (S42) + HALEU-fuel-chokepoint.md (S44).
+
+**Files affected (3).** CLAUDE.md (8 edits: Section 3.2 frontmatter conventions consolidation; Section 3.15 canonical-from-first-creation pathway; Section 4.2 MJDS Canadian sub-protocol; Section 4.5 A6 sub-pattern (g) sub-categorization; Section 4.6 NEW kickoff drafting source discipline). frameworks.md (6 edits: Caveat #3 hybrid layer notation extension; Caveat #7 Layer 2 designated-IP moat generalization; Caveat #9 Layer 4-5 straddling reinforcement; Framework 7 Energy/Power Tier 4 methodology row; Framework 9 Materials Tier 1 + Tier 2 methodology rows). log.md (this entry). No index.md update needed (no version stamp scheme; companies + chokepoints tables current at S45).
+
+**Twelve candidates codified:**
+
+1. Section 4.6 NEW kickoff drafting source discipline (Sessions 44+45 systemic factual variance pattern; 4 source tiers + 2 placement scopes)
+2. Section 3.15 update — canonical-from-first-creation pathway formalization (Session 44 HALEU-fuel-chokepoint precedent)
+3. Section 4.2 update — MJDS Canadian foreign-issuer sub-protocol (Session 43 CCJ 6-file pattern)
+4. Section 3.2 update — frontmatter conventions consolidation (foreign_issuer + tickers + per-domain tier application)
+5. Section 4.5 update — A6 sub-pattern (g)/(g') sub-categorization (Session 45 ENS first g' instance)
+6. Caveat #9 reinforcement — 7 canonical Layer 4-5 straddling applications + 5 future upgrade triggers
+7. Framework 7 Energy/Power Tier 4 first canonical methodology (Session 45 ENS precedent; ~70% confidence with diversified-broad-customer-base archetype compatibility)
+8. Framework 9 Materials Tier 1 first canonical methodology (Session 42 LEU + BWXT paired precedent; Western monopoly + DOE intermediary-customer + sequential fuel chain + defense industrial cross-cut)
+9. Framework 9 Materials Tier 2 first canonical methodology (Session 43 CCJ precedent; upstream materials chain + Layer 4 + Layer 2 hybrid + MJDS foreign-issuer + distributed long-term contract)
+10. Caveat #7 generalization — Layer 2 designated-IP moat scope from HBM oligopoly origin to broader designated-IP moat (Session 43 CCJ-Westinghouse precedent extends TSM)
+11. Caveat #3 hybrid layer notation extension — comma-separated hybrid notation alongside hyphenated dual-layer (Session 43 CCJ Layer 4 + Layer 2 hybrid precedent)
+12. Descriptive language convention — preamble placement confirmed at CLAUDE.md (already committed pre-Session 46 chat-side; takes effect Session 46 onward; Sessions 1-45 not retroactively updated)
+
+**Deferred to Tranche 2 (Session 47):** Stop 4 cleanup pass discipline (Candidate 13) + chat-side canonical text review discipline (Candidate 14) — both single-instance candidates; convention durability typically requires 2+ instances. Tranche 2 will include other single-instance candidates collectively for Vic codify-vs-defer decision (~15-18 candidates total at Tranche 2).
+
+**Default ownership convention waiver.** Vic explicitly authorized waiver for this session only — Claude Code applied all 12 codification edits directly to CLAUDE.md and frameworks.md at Stop 2 rather than drafting for Vic-side commit. Default ownership convention resumes for all subsequent sessions per Section 1.1 ownership convention. Phase 4 codification candidate: waiver criteria for future codification sessions if pattern recurs (e.g., comprehensive edit text exceeds reasonable Vic-side commit scope).
+
+**Active monitoring counts post-Session 46:** Tier 1/Tier 2 framing gap remains 7; CEO combativeness remains 2; Cross-venue disclosure gap remains 2 observations; A6 (g)/(g') subtype now sub-categorized — 8 (g) Tier 3 source figure variance + 1 (g') kickoff drafting factual variance = 9 combined; Amazon warrant pattern remains 4 + Oracle warrant emerging at BE; reciprocal non-namers remain 3 explicit (AVGO/MRVL/TSM). **Wikilink-clean streak: 30 sessions clean post-Session 46** (extended from 29 post-S45; no new wikilinks at codification).
+
+**Backlog reduction.** Pre-Session 46: ~38-40 candidates accumulated through Sessions 32-45. Post-Session 46: ~26-28 candidates remaining for Tranche 2 (Session 47). Reduction ~12 candidates per Tranche 1 scope.
+
+---
+
+## Session 45 — [[ENS]] standalone first canonical ingest (2026-05-03)
+
+**Type.** First canonical Framework 7 Tier 4 placement (closes last unpopulated F7 tier; F7 complete-tier-coverage post-S45 vault accomplishment). First canonical non-calendar-fiscal-year US-domiciled filer (March 31 fiscal year-end). First canonical placement substantively under-covered in Tier 3 anchor reports. Caveat #9 seventh canonical Layer 4-5 straddling test. Two-stop protocol; Stop 1 plan + 5 Vic decisions approved (F7 T4 ~70% medium-high confidence; Section 2.2 Option A source unavailability handling; Section 4.4 Option A 6 falsifications documented; VRT.md Option A relationship type cross-reference; A6 (g)/(g)' count 8→9 with sub-categorization).
+
+**Sources (3).** ENS 10-K FY2025 (Tier 1; Mar 31, 2025; filed May 21, 2025) + ENS 10-Q Q3 FY2026 (Tier 1; Dec 28, 2025) + ENS Q3 FY2026 earnings disclosure (Tier 2; Feb 6, 2026 — **GuruFocus summary article, NOT full transcript per Section 2.2 source unavailability**).
+
+**Files affected (4).** Created 1: `wiki/companies/ENS.md` (Layer 4 / `photonics_tier: outside` / `energy_power_tier: 4` / `equipment_tier: outside` / `materials_tier: outside`). Updated 3: `wiki/companies/VRT.md` (ENS as Energy Systems segment competitor; relationship type clarification per Section 4.4 falsification 5); `index.md` (ENS row); `log.md` (this entry).
+
+**Key findings:**
+
+1. **F7 Tier 4 first canonical methodology established at medium-high confidence (~70%).** 3-of-4 inverse criterion test met; criterion 4 (named hyperscaler concentration) structurally absent due to ENS diversified-broad-customer-base archetype (10-K Item 1 *"no single customer accounts for more than 10% of our revenues"*). Honest-verdict surface per Section 2.1 — T4 holds because criteria 1-3 substantiate AI datacenter structural exposure even with diversified customer base. Methodology precedent for future F7 T4 ingests (CAT/CMI BTM workaround alternatives).
+
+2. **Energy Systems segment AI datacenter operating leverage materializing at Q3 FY2026.** Segment income $42.1M Q3 FY2026 vs $25.3M Q3 FY2025 = +66% YoY; operating margin 8.3% vs 4.9% = +340bps. 9-month Energy Systems +8.2% YoY ($1,225.6M / 44.4% consolidated). 10-Q Item 2 explicit *"the data center market is in the midst of a growth cycle driven by AI and increasing digitization"* — strongest AI-explicit framing surfaced at primary. **NEW analytical product not anticipated in kickoff.**
+
+3. **Layer 4 maintained per Caveat #9 seventh canonical test outcome.** Multi-segment revenue mix (Energy Systems 44.4% / Motive Power 38.4% / Specialty 17.1% / New Ventures <1%) keeps component-supplier scope dominant; Layer 5 promotion NOT warranted absent integrated-systems sub-segment >30% consolidated. Future tier-revisit triggers pre-registered.
+
+4. **Six material kickoff hypothesis falsifications documented per Section 4.4.** Tijuana → Monterrey Mexico (different city); Springfield MO → Richmond KY + separately Greenville SC (different states; new lithium plant location wrong); "TPPL scaled for data center" → Motive Power forklift transition rationale; DataSafe HX/EnVision Connect/AI rack engineered features → not in regulatory filings; ENS→VRT supplier-customer → competitor relationship per ENS 10-K Item 1; TPPL primary AI datacenter positioning → primary applications Specialty AGM aerospace/defense + Motive Power maintenance-free.
+
+5. **A6 (g)/(g)' subtype count 8 → 9 with sub-categorization candidate.** Existing g (Tier 3 source figure variance; 8 instances) + new g' (kickoff drafting factual variance; S45 first instance with 6 material falsifications). Sub-categorization candidate for next codification session per analytical clarity.
+
+6. **First non-calendar-fiscal-year US-domiciled filer canonical placement.** ENS March 31 fiscal year-end. Cross-vault period-parity caveat: Q3 FY2026 (Dec 28, 2025) ≈ vault calendar peers' Q3 2025 / FY2025 (analytically equivalent recency); FY2025 baseline 12 months stale relative to calendar peers. Codification candidate: non-calendar-fiscal-year filer Section 4.1 sub-protocol formalization.
+
+7. **First vault canonical placement substantively under-covered in Tier 3 anchor reports.** Reports 39 (S39) zero ENS-specific framing. Pattern-recognition-based canonical placement substantiated through primary-source weight. Codification candidate: Tier 3-coverage gap ≠ thesis weakness convention.
+
+8. **Customer concentration honest-verdict cross-vault Framework 11.1 contribution.** ENS joins **diversified-broad-customer-base archetype** alongside [[ETN]] / [[VRT]] / [[GEV]] / [[FLEX]] (no >10% single customer). Archetype count remains 5; vault entries reach 6 post-S45.
+
+9. **Section 45X production tax credits $184.6M FY2025 = material consolidated earnings driver** (39.7% of operating earnings; FY2025 ETR 10.5%). NEW finding not anticipated in kickoff. Honest-verdict policy continuity risk surfaced (Trump admin "Unleashing American Energy Executive Order" regulatory shift; Greenville SC $199M DOE lithium plant subject to executive order policy environment).
+
+10. **Section 2.2 source unavailability constrains multiple monitoring conventions.** Q3 FY2026 earnings PDF is GuruFocus summary article (not full transcript). A1 / CEO combativeness / Tier 1/Tier 2 framing gap / analyst silence assessments all materially constrained at S45. Convention counts unchanged: Tier 1/Tier 2 framing gap remains 7; CEO combativeness remains 2 (Murphy / Hock Tan; Shaffer/O'Connell/Funk hypothesis untested); Cross-venue disclosure gap remains 2 observations; Amazon warrant pattern remains 4 + Oracle warrant emerging at BE.
+
+**Active monitoring counts post-S45:** Tier 1/Tier 2 framing gap 7; CEO combativeness 2 (S45 untested per source unavailability); Cross-venue disclosure gap 2 observations; **A6 (g)/(g)' subtype 8 → 9 with sub-categorization candidate (g existing Tier 3 source figure variance + g' NEW kickoff drafting factual variance)**; Amazon warrant pattern 4 + Oracle warrant emerging at BE; reciprocal non-naming pattern 3 explicit non-namers (AVGO/MRVL/TSM); ENS joins industry-standard non-namer category. **Wikilink-clean streak: 29 sessions clean post-Session 45** (extended from 28 post-S44; zero forward [[ENS]] wikilinks pre-existing — clean creation; new [[ENS]] cross-reference added to [[VRT]] competitor list).
+
+---
+
+## Session 44 — [[HALEU-fuel-chokepoint]] canonical chokepoint page creation (2026-05-02)
+
+**Type.** First **canonical-from-first-creation chokepoint page** per `CLAUDE.md` v9 Section 3.15 multi-source threshold (4 substantiating sources at first-creation; provisional stage skipped entirely). First chokepoint page in F9 Materials domain (post-7 photonics-domain canonical chokepoint page precedents). First chokepoint page anchored by Tier 3 source + 3 primary-source company pages (new convention pattern). First three-domain Aschenbrenner thesis cross-vault synthesis at chokepoint page scope. Two-stop protocol; Stop 1 plan + 4 Vic decisions approved (tickers vs related_tickers naming; tickers list scope LEU+BWXT+CCJ+BE+GEV; provisional+anchor_sources NEW fields REJECTED in favor of existing chokepoint frontmatter convention; Section 3.15 canonical-from-first-creation interpretation).
+
+**Sources (4 substantiating).** `raw/research/nuclear-HALEU-bottleneck.md` (Tier 3; Session 41 anchor) + [[LEU]] Session 42 canonical primary + [[BWXT]] Session 42 canonical primary + [[CCJ]] Session 43 canonical primary. Cross-vault context: [[BE]] Session 40 + [[GEV]] Session 37.
+
+**Files affected (3).** Created 1: `wiki/chokepoints/HALEU-fuel-chokepoint.md` (~225 lines; 14 sections; canonical structure — Open questions + Source audit notes + Change log; NO provisional disclaimer; NO "What would confirm or weaken" section). Updated 2: `wiki/companies/BE.md` (light cross-reference to [[HALEU-fuel-chokepoint]] in Aschenbrenner thesis section + Change log entry); `index.md` (HALEU-fuel-chokepoint row added to Chokepoints table); `log.md` (this entry).
+
+**Key findings:**
+
+1. **Canonical-from-first-creation discipline first canonical application.** Section 3.15 multi-source threshold satisfied at first-creation via Tier 3 anchor + 3 primary-source company pages = 4 substantiating sources. Provisional stage skipped entirely. Standard canonical chokepoint page section structure applied. Codification candidate: Section 3.15 explicit codification of "canonical-from-first-creation" pathway alongside provisional → canonical promotion pathway.
+
+2. **First F9 Materials chokepoint page.** Post-7 photonics-domain canonical chokepoint page precedents (TSMC-CoWoS / InP-supply / datacenter-laser-supply / wafer-level-siph-test / optical-dsp-phy-supply / advanced-optical-packaging / cpo-integration). HALEU enrichment 5/5 Acute and Binding methodology canonical at chokepoint page scope.
+
+3. **First chokepoint page anchored by Tier 3 source + 3 primary-source company pages** — new convention pattern (Tier 3 source as primary analytical anchor; primary-source company pages providing verification + quantitative depth). Distinct from prior single-source provisional + multi-source canonical promotion path. Codification candidate.
+
+4. **First six-layer fuel chain canonical synthesis at chokepoint page level.** Primary structural backbone (mining 3/5 + conversion 4/5 + LEU enrichment 4/5 + HALEU enrichment 5/5 + deconversion 4/5 + fabrication 3/5) + cross-cutting geopolitical risk severity 4/5. F9 sub-tier severity-scoring framework expansion candidate substantiated at chokepoint page scope (S41 + S42 + S43 carryover; reinforced at S44).
+
+5. **First three-domain Aschenbrenner thesis cross-vault synthesis at chokepoint page scope** — [[BE]] BTM grid-bypass + [[LEU]] / [[BWXT]] HALEU fuel chain + [[CCJ]] uranium upstream + Westinghouse Layer 2 hybrid = "buy the workaround upstream of the binding constraint" thesis substantiated across THREE domains. Cross-vault thesis pattern fully established post-S44; codification candidate strengthening.
+
+6. **HALEU report variant view "trade" framing discipline maintenance third sequential application** post-LEU/BWXT/CCJ company-page level. Section 2.1 honest-verdict + non-portfolio-tracker scope discipline; analytical framework adopted; recommendation language excluded with explicit Tier 3 attribution where referenced ("Tier 1 conviction trio"; "binary outcome priced for excellence"; "substitute upstream fuel chain for developer book").
+
+7. **Convention strictness discipline reinforced at S44.** Kickoff proposed 3 frontmatter divergences (`provisional: false` + `anchor_sources` + `related_tickers`); Vic Stop 1 revision rejected all three in favor of existing canonical chokepoint convention (`type: chokepoint` + `tickers: [LEU, BWXT, CCJ, BE, GEV]` + `last_updated`). Rationale: `provisional: false` redundant — Section 3.15 differentiates via page-top italic disclaimer presence/absence in body, NOT frontmatter; `anchor_sources` redundant — Source audit notes section documents sources per existing convention; `related_tickers` adds naming inconsistency vs existing `tickers` field. All three deferred as Phase 4 codification candidates.
+
+8. **Forward `[[HALEU-fuel-chokepoint]]` wikilink resolution at S44 page creation.** Three pre-existing forward references resolve (`raw/research/AI-datacenter-power-supply-chain-primer.md` Session 39 + `raw/research/AI-power-energy-bottleneck-research-report.md` Session 39 + `raw/research/nuclear-HALEU-bottleneck.md` Session 41 frontmatter `related_themes` fields). Validates S39 + S41 forward-pointer discipline that anticipated chokepoint page well in advance.
+
+9. **Caveat #7 Layer 2 generalization cross-reference at chokepoint page scope.** [[CCJ]] Session 43 first canonical post-TSM precedent (Westinghouse reactor design house structurally analogous to TSM HBM oligopoly); CCJ 49% Westinghouse equity → AP1000 reactor design house downstream demand pull-through driver for HALEU fuel chain. Caveat #7 generalization now substantiated at both company-page (CCJ S43) and chokepoint-page (HALEU S44) scope.
+
+10. **Convention candidates surfaced (3 NEW S44):** kickoff-proposed `provisional: false` field; kickoff-proposed `anchor_sources` field; kickoff-proposed `related_tickers` rename — all deferred per convention strictness discipline. Plus carryover candidates from S39-S43: 6-layer sequential F9 sub-tier severity-scoring; cross-cutting risk severity scoring as separate methodological dimension D1; Russia uranium ban as binding-constraint forcing function D2; Section 3.15 explicit codification of canonical-from-first-creation pathway; multi-source-anchor (Tier 3 + 3 primary) convention pattern; concentration-source typology refinement (5 archetypes); bilateral reciprocal-confirmation threshold for supplier-customer non-disclosure (3 paired/standalone instances); asymmetric disclosure as fourth A1 mode candidate (BWXT-GEV BWRX-300); Aschenbrenner thesis cross-vault codification; Reports 39 verification-status annotation. Convention candidate count reaches ~36-37 total accumulated through Sessions 32-44; substantial backlog for codification session at S45+ per Vic-confirmed sequence.
+
+**Active monitoring counts unchanged (chokepoint page creation; no new company-source ingest):** Tier 1/Tier 2 framing gap remains 7; CEO combativeness remains 2; Cross-venue disclosure gap remains 2 observations; A6 (g)/(g)' subtype remains 8 (no new variances at chokepoint page synthesis; primary-source verification complete via S42 + S43); Amazon warrant pattern remains 4 + Oracle warrant emerging at BE; reciprocal non-naming pattern: 3 active explicit non-namers (AVGO/MRVL/TSM); LEU + BWXT + CCJ industry-standard non-namers. **Wikilink-clean streak: 28 sessions clean post-Session 44** (extended from 27 post-S43; 3 forward [[HALEU-fuel-chokepoint]] wikilinks resolved at S44 page creation).
+
+---
+
+## Session 43 — [[CCJ]] standalone first canonical ingest (2026-05-02)
+
+**Type.** First canonical Framework 9 Materials Tier 2 placement (third F9 ingest; closes HALEU trio with [[LEU]] + [[BWXT]] S42). **First MJDS Canadian foreign-issuer ingest** under CLAUDE.md v9 Section 4.2 protocol. **First Caveat #7 Layer 2 generalization post-TSM precedent** (Westinghouse reactor design house). **First vault application of `foreign_issuer: true` frontmatter field.**
+
+**Sources (6).** CCJ-40F-2025-12-31 (Tier 1; 609 KB; MJDS Canadian analog to US 10-K) + 6-K cover (Tier 1 metadata wrapper) + Ex 99.1 press release (Tier 1; 245 KB) + Ex 99.2 financials (Tier 1; 1.25 MB) + Ex 99.3 MD&A (Tier 1; 1.51 MB) + earnings call (Tier 2; February 13, 2026). 6-file MJDS Canadian foreign-issuer canonical pattern established.
+
+**Files affected (5).** Created 1: `wiki/companies/CCJ.md` (Layer 4 + Westinghouse Layer 2 hybrid subsection; `materials_tier: 2`; `foreign_issuer: true`). Updated 4: `wiki/companies/LEU.md` (CCJ upstream uranium feedstock cross-reference + HALEU trio completion); `wiki/companies/BWXT.md` (CCJ-Westinghouse equity cross-reference); `wiki/companies/BE.md` (HALEU trio Aschenbrenner thesis three-domain completion); `index.md` (CCJ row added); `log.md` (this entry).
+
+**Key findings:**
+
+1. **F9 Tier 2 first canonical placement methodology established** — substantiation at high confidence (~80%) per honest-verdict 4-criterion test (3 met + 1 partial uranium customer enumeration gap analogous to LEU reactor developer naming gap). Methodology precedent for future Cleveland-Cliffs / GOES steel F9 Tier 2 ingests.
+
+2. **Caveat #7 Layer 2 generalization first canonical post-TSM** — Westinghouse reactor design house structurally analogous to TSM HBM oligopoly (AP1000 + AP300 + 80-100 year reactor lifecycle + NRC licensing + 70+ year operating history). Codification deferred to next codification session per default ownership.
+
+3. **October 28, 2025 $80B U.S. Government strategic partnership Participation Interest VERIFIED EXACTLY** at primary (MD&A direct quote: 20% threshold + $17.5B base). **Equity conversion option IPO $30B+ by 2029 — UNVERIFIED at primary** (HALEU Tier 3 source claim; possibly term sheet detail not publicly disclosed). A6 (g) count remains 8 (no overstatement/contradiction threshold met).
+
+4. **Westinghouse FY2025 cash distributions to CCJ: US$220M total** (NEW finding from primary) — Feb 49 + Oct 171.5 (Dukovany Czech Republic) + early 2026 49. Substantive Westinghouse equity carrying value validation reinforcing Caveat #7 generalization decision.
+
+5. **HALEU trio Aschenbrenner thesis cross-vault completion (THREE-DOMAIN SUBSTANTIATION):** BE Session 40 BTM grid-bypass workaround + LEU Session 42 HALEU enrichment fuel chain workaround + BWXT Session 42 partial (explicit AI disclaimer) + CCJ Session 43 uranium upstream + Westinghouse Layer 2 hybrid (~85% measured framing). Three domains: BTM power generation + HALEU fuel chain + uranium upstream/reactor design house. Cross-vault thesis pattern fully established post-S43.
+
+6. **Hyperscaler PPA framing most explicit at CCJ in HALEU trio at primary** (counterintuitive given CCJ most-upstream position) — 5 named hyperscaler-utility PPAs at MD&A: Microsoft-Constellation TMI 20-year PPA; Meta-Constellation Clinton 1.1 GWe; Amazon-Talen Susquehanna 1.9 GWe expansion; Google-NextEra Duane Arnold 615 MWe BWR restart; **Meta-Vistra/TerraPower/Oklo Prometheus 6.6 GWe Ohio supercluster (January 2026 NEW finding)**.
+
+7. **CCJ-LEU + CCJ-BWXT mutual non-naming pattern continues** per S37 ETN-GEV + S42 LEU-BWXT precedent. Industry-standard upstream/downstream supplier-customer non-disclosure now vault-confirmed across **three paired/standalone ingests**. Codification candidate: bilateral reciprocal-confirmation threshold for supplier-customer relationships at industry-standard non-disclosure dynamics.
+
+8. **Customer concentration FIFTH archetype identified** across vault Layer 4-5 power infrastructure cluster: **distributed-long-term-contract archetype** (CCJ — 230 Mlb committed; segment-diversified) — alongside diversified-broad-customer-base (ETN/VRT/GEV/FLEX) + concentrated-related-party (BE 43%) + concentrated-government-counterparty (BWXT 68%) + diversified-government-intermediary (LEU). Codification candidate: concentration-source typology refinement.
+
+9. **Aschenbrenner thesis tone calibration across HALEU trio** — three CEOs occupy three distinct positions: Vexler absolutist (LEU) + Gitzel/Isaac measured middle-ground (CCJ) + Geveden explicit disclaimer (BWXT). Vault canonical text adopts each company's primary-source framing voice per Section 2.1 honest-verdict discipline.
+
+10. **Cumulative HALEU report Tier 3 verification pattern post-S43:** LEU clean (S42); BWXT 1 material variance (backlog +50% Tier 3 vs +15% primary); CCJ clean. **Pattern observation: HALEU report quality HIGH but inconsistent — per-company variance pattern variable, NOT systematic.** Tier 3 source verification discipline reinforced across three sequential ingests.
+
+**Active monitoring counts:** Tier 1/Tier 2 framing gap remains 7; CEO combativeness remains 2 (Gitzel + Isaac NOT combative); Cross-venue disclosure gap remains 2 observations; A6 (g)/(g)' subtype remains 8 (no material variance at CCJ side); Amazon warrant pattern remains 4 + Oracle warrant emerging at BE; CCJ-Westinghouse equity structurally distinct from warrant pattern. Forward-wikilink discipline preserved: 27-session vault wikilink-clean streak post-Session 43 (5 forward [[CCJ]] wikilinks pre-existing in LEU + BWXT S42 anticipated forward refs now resolved at S43 creation).
+
+---
+
+## Session 42 — [[LEU]] + [[BWXT]] substantive paired ingest (2026-05-02)
+
+**Type.** First canonical Framework 9 Materials Tier 1 paired placement. **First substantive paired ingest under Section 3.14 post-codification** (cross-tier paired variant Session 37 + parallel-but-independent variants Sessions 27/28; Session 42 = first explicit Section 3.14 substantive paired). 4-criterion paired test cleanly satisfied (adjacent positions in HALEU fuel chain LEU enrichment → BWXT deconversion → BWXT TRISO; structurally similar Tier 1 conviction trio thesis roles; cross-company analytical product not available from either source alone; clean source period alignment FY2025 + Q3 2025 across both). First multi-company Tier 3 anchor application from Session 41 HALEU report.
+
+**Sources (6).** LEU 10-Q Q3 2025 + 10-K FY2025 (Tier 1) + LEU FY2025 earnings call Feb 11, 2026 (Tier 2). BWXT 10-Q Q3 2025 + 10-K FY2025 (Tier 1) + BWXT FY2025 earnings call Feb 23, 2026 (Tier 2). Period coverage matches across both companies; no period offset (cleaner than S37 ETN+GEV which had 1-quarter offset).
+
+**Files affected (6).** Created 2: `wiki/companies/LEU.md` (Layer 4 / `materials_tier: 1`; F9 Tier 1 substantiation via DOE intermediary-customer + Western HALEU monopoly methodology); `wiki/companies/BWXT.md` (Layer 4 / `materials_tier: 1` multi-domain; HALEU deconversion + TRISO + naval defense ballast triple-stack moat; cross-company synthesis section per Section 3.14 paired ingest convention). Updated 4: `wiki/companies/GEV.md` (BWRX-300 component supplier asymmetric disclosure mode cross-reference); `wiki/companies/BE.md` (Aschenbrenner thesis cross-vault application cross-reference); `index.md` (LEU + BWXT rows added); `log.md` (this entry).
+
+**Key findings:**
+
+1. **F9 Materials Tier 1 first canonical methodology established** — LEU substantiation via **DOE intermediary-customer + Western monopoly position** pattern (vs Section 3.10 four-criterion test direct named-hyperscaler-customer pattern; reactor developer naming gap honestly surfaced); BWXT substantiation via multi-domain triple-stack moat. Methodology precedent for [[CCJ]] (S43 candidate) + future F9 ingests.
+
+2. **Caveat #9 sixth canonical Layer 4-5 straddling test outcome (BWXT): Layer 4 maintained.** Q4/FY2025 backlog mix 77% government / 23% commercial; FY2025 revenue mix 68% U.S. Government; Project Pele Layer 5 upside flagged with future tier-revisit triggers (Pele + microreactor revenue >20% consolidated; Janus follow-on; Mount Vernon expansion FID).
+
+3. **A6 (g)/(g)' subtype convention count 7 → 8.** BWXT year-end 2025 backlog Tier 3 framing of "+50% YoY" CONTRADICTED at primary "+15% YoY" per CEO Geveden — Tier 3 overstatement of growth rate by ~3.3x. Plus 4 unverified-not-contradicted (Project Pele $300M; specialized TRISO furnace; Kairos Power TRISO partnership Sept 2025 NOT verified; Rolls-Royce SMR specifics). LEU side of HALEU report verification clean (0 overstatements; 13/18 verified + 1 verified-with-extension + 2 unverified-not-contradicted + 1 inferred). Tier 3 verification discipline reinforced.
+
+4. **First vault-detected asymmetric disclosure mode (BWXT-GEV BWRX-300 partnership).** Distinct from mutual non-naming (ETN+GEV S37) and counterparty-attribution-only patterns. A1 framework refinement candidate: classify "asymmetric disclosure" as fourth A1 mode. BWXT primary confirms "reactor pressure vessel for GE" + BWRX-300 expectation but explicit Darlington steam generator partnership scope NOT bilaterally confirmed.
+
+5. **Sequential fuel chain dependency PARTIALLY FALSIFIED at bilateral primary-source confirmation.** Mutual non-naming despite structural relationship (LEU enrichment → BWXT deconversion → BWXT TRISO) — analogous to ETN+GEV S37 finding. Industry-standard upstream/downstream supplier-customer non-disclosure now vault-confirmed pattern across two paired ingests.
+
+6. **Customer concentration cross-vault contribution: BWXT 68% U.S. Government + [[BE]] 43% related-party = two confirmed instances** of Layer 4-5 power infrastructure with structural single-counterparty exposure breaking diversification pattern of [[ETN]] / [[VRT]] / [[GEV]] / [[FLEX]]. Codification candidate: hyperscaler customer concentration theme should differentiate diversified vs concentrated archetypes per concentration-source typology (related-party / government / hyperscaler / private-counterparty).
+
+7. **Aschenbrenner thesis cross-vault application substantiated across two domains.** [[BE]] Session 40 BTM grid-bypass workaround (~85%) + LEU Session 42 HALEU fuel chain workaround (~90% core thesis) + BWXT Session 42 partial verification (CEO Geveden explicit AI disclaimer). "Buy the workaround upstream of the binding constraint" thesis variant now vault-canonical cross-vault thesis pattern. Codification candidate.
+
+8. **CEO Geveden explicit AI disclaimer** (*"outside story...nuclear power will power the data centers of the future...that's all in the windshield for us. Certainly, that's not part of the current business mix"*) — honest-verdict-correct framing precedent. Vault discipline reinforcement. CEO combativeness count remains 2 (both Vexler + Geveden NOT combative).
+
+9. **Cross-company synthesis section** (placed in BWXT.md per Section 3.14 paired ingest convention; 6 sub-sections): sequential fuel chain partial falsification; shared customer base 0 overlap; DOE allocation rationing partial coverage; HALEU report variant view "trade" framing discipline maintained; Aschenbrenner thesis cross-vault; customer concentration honest-verdict cross-company contrast.
+
+10. **NEW finding at primary: Antares TRISO manufacturing for July 2026 reactor criticality** (BWXT) — first vault-detected named reactor developer customer for BWXT TRISO commercial-scale production.
+
+**Active monitoring counts updated:** Tier 1/Tier 2 framing gap remains 7 (no new instance); CEO combativeness remains 2 (Vexler + Geveden NOT combative); Cross-venue disclosure gap remains 2 observations; **A6 (g)/(g)' subtype 7 → 8** (BWXT backlog growth rate Tier 3 overstatement); Amazon warrant pattern remains 4 ([[ALAB]] / [[AAOI]] / [[FN]] / [[FLEX]]) + Oracle warrant emerging at [[BE]]; active non-namers count remains 3 explicit (AVGO/MRVL/TSM); LEU + BWXT join non-namer category as standard industry practice. Forward-wikilink discipline preserved: 26-session vault wikilink-clean streak.
+
+---
+
+## Session 41 (2026-05-02): raw/research/ Nuclear HALEU Tier 3 source-add
+
+Source-add session. Vic-curated nuclear HALEU fuel chain Tier 3 research report
+ingested to raw/research/ extending energy/power + materials domain coverage per
+CLAUDE.md Section 3.13 multi-domain expansion. Three-stop protocol per S39
+precedent: plan + Phase 0 verification (Stop 1); frontmatter prepend (Stop 2);
+cross-validation + provenance verification + log.md (Stop 3).
+
+File added (provenance frontmatter prepended; body content preserved verbatim):
+- raw/research/nuclear-HALEU-bottleneck.md (549→590 lines; buy-side analyst
+  variant-view methodology with dual-dimension severity scoring; ai_assisted: unknown)
+
+Cross-validation outcomes: 1 aligned (binding-constraint workaround thesis); 5
+aligned-with-extension (Tier 1 conviction trio Centrus+BWXT+Cameco; GEV BWRX-300
+LEU-fueled barbell complement; Layer 2 utility/IPP CEG/VST/TLN explicit; OKLO/SMR
+decisive skepticism; Aschenbrenner case study parallel); 1 quantitative extension
+(_thesis.md HALEU Severe-severity quantitative anchoring 900 kg/yr → 12 MTU/yr → 40-50
+MTU/yr 2030-2035 demand); 5 framework expansion candidates (A 6-layer sequential
+severity scoring; B multi-domain BWXT triple-stack; C Cameco-Westinghouse Layer 2
+hybrid via Caveat #7 generalization; D1 cross-cutting risk severity as separate
+methodological dimension; D2 Russia uranium ban as binding-constraint forcing function);
+3 anchor-for-future-ingest sources (Centrus/BWXT/Cameco company-page first canonicals);
+1 tension reconciled via Section 2.1 honest-verdict + non-portfolio-tracker scope
+(variant view "trade" framing).
+
+Tier 1 conviction trio per report: Centrus (LEU) + BWXT + Cameco (CCJ); Tier 2
+GEV / nuclear fleet utilities (CEG / VST / TLN); Tier 3 with skepticism OKLO /
+NuScale (SMR). Six-layer fuel chain severity scoring: HALEU enrichment 5/5 (Acute
+and Binding) anchors S42 provisional HALEU-fuel-chokepoint.md page.
+
+raw/research/ now houses 7 Tier 3 sources (post-S39: 6 → 7; only photonics-chokepoint-
+table.md has explicit canonical designation in CLAUDE.md Section 3.13; 3 prior sources
+(silicon-photonics-primer.md, NVDA-absorb-extend-history.md, ASML-EUV-foundry-dependency.md)
++ 2 S39 sources (Reports 39 R1+R2) + nuclear-HALEU-bottleneck.md = 6 Tier 3 without
+explicit canonical-status flag; codification candidate). Provenance frontmatter schema
+applied per S39 convention (cross_validation_session: 41; ai_assisted: unknown;
+dual-dimension severity scoring methodology framing in provenance_notes per Vic Stop 1
+refinement).
+
+No theme/company/chokepoint pages created. No CLAUDE.md / _thesis.md / frameworks.md
+edits. Phase 4 reflection: codification candidates surfaced (6-layer sequential F9
+sub-tier severity-scoring; cross-cutting risk severity scoring as separate methodological
+dimension D1; multi-domain BWXT triple-stack; Cameco-Westinghouse Layer 2 hybrid via
+Caveat #7 generalization; Russia uranium ban as _thesis.md geopolitical-policy
+binding-constraint forcing function D2; HALEU-fuel-chokepoint vs HALEU-enrichment
+scope distinction for chokepoint page hierarchy; Section 3.8 brevity discipline target
+refinement for Tier 3 source-add session type — pattern observed S39 log entry 26 lines,
+S41 log entry ~30 lines; cross-validation outcome density grows with framework expansion
+candidate count; differentiate brevity targets by session type — ingest ~15-25 lines vs
+Tier 3 source-add ~25-35 lines).
+
+Active monitoring counts unchanged (no company-source ingest): Tier 1/Tier 2 framing
+gap 7; CEO combativeness 2; Cross-venue disclosure gap 2; A6 (g)/(g)' subtype 7;
+Amazon warrant pattern 4 (Oracle warrant emerging cross-vault hyperscaler-warrant
+pattern candidate per S40).
+
+---
+
+## Session 40 — [[BE]] standalone ingest (2026-05-02)
+
+**Type.** First canonical Framework 7 Tier 2 ingest. First canonical BTM (behind-the-meter) grid-bypass ingest. First vault company page citing `raw/research/` Tier 3 anchor (Reports 39) per Section 3.13 multi-domain expansion. Second canonical Caveat #9 test (post-[[ETN]] Session 37). Two-stop protocol; Stop 1 plan + 3 Vic decisions approved (Layer 4 with straddling subsection; honest-verdict customer concentration reframing; BTM bifurcation Candidate B).
+
+**Sources (3).** BE 10-K FY2025 (Tier 1; period-end Dec 31, 2025). BE 10-Q Q1 2026 (Tier 1; period-end Mar 31, 2026). BE Q1 2026 earnings call (Tier 2; April 28, 2026). Period coverage matches [[GEV]] Session 37 baseline — clean cross-vault comparison without period offset.
+
+**Files affected (4).** Created 1: `wiki/companies/BE.md` (Layer 4 / `photonics_tier: outside` / `energy_power_tier: 2` / `equipment_tier: outside`). Updated 3: `wiki/companies/GEV.md` (BTM bifurcation contrast cross-reference); `wiki/companies/ETN.md` (BTM workaround vs distribution chokepoint informational cross-reference); `index.md` (BE row added); `log.md` (this entry).
+
+**Key findings:**
+
+1. **F7 Tier 2 substantiated high confidence (~90%)** — 4-criterion test inverse application: Oracle Project Jupiter 2.45 GW + Brookfield AI Fund framework + AEP up-to-1 GW + ">50% data center backlog from other hyperscalers"; AI structural exposure via Q1 2026 130.4% revenue growth ($751.1M; first quarter >100% YoY in BE history) + raised FY2026 guidance midpoint 60% → 80% YoY ($3.4-3.8B); 5 GW/year manufacturing capacity target.
+
+2. **Layer 4 maintained per Caveat #9 second canonical test** — Q1 2026 revenue mix 87.0% product / 12.3% non-product (Service 8.2% + Installation 3.4% + Electricity 0.7%); per AAOI/MRVL/ALAB/[[ETN]] precedent, revenue-mix-required upgrade discipline maintained; future tier-revisit triggers pre-registered (service >30%; service growth >50% YoY; power-as-a-service framing shift; PPA >10%; turnkey hyperscaler customers).
+
+3. **Customer concentration HONEST-VERDICT CORRECTION** per Section 2.1 — Tier 3 sources framed Oracle as concentration risk; primary-source 10-K shows Oracle <12% FY2025 revenue (absent from top-3); **PRIMARY concentration story is 43% related-party (likely SK ecoplant)**; Oracle is emerging hyperscaler exposure (diversification away from related-party concentration toward AI datacenter base). First vault company breaking diversification pattern at top concentration tier among Layer 4-5 power infrastructure participants ([[ETN]] / [[VRT]] / [[GEV]] / [[FLEX]] all show no >10%; BE 43% materially higher).
+
+4. **F7 Tier 2 BTM bifurcation Candidate B framework decision** — Tier 2 placement WITH BTM bifurcation flagged for next codification session. BTM workaround supply chain (solid-oxide fuel cells; ~one-order-of-magnitude reduction in field deployment time per KR; 5 GW/year manufacturing target) structurally distinct from heavy-duty utility-scale Tier 2 candidates. Caveat #6 refinement OR new Caveat #10 codification candidate documented; Vic-side ownership per default convention.
+
+5. **Tier 3 source factual variance (A6 (g) NEW INSTANCE; count 6 → 7)** — 4 Reports 39 figure variances: Oracle 2.8 → 2.45 GW overstatement (~14%); AEP $2.65B unverified at primary; $20B backlog unverified (KR explicitly de-emphasizes backlog as KPI); manufacturing 2 GW/year understated vs primary 5 GW/year target. Pattern: imprecision both directions, not systematic bias. Reinforces Tier 3 verification discipline. Reports 39 curation flag for Vic-side review post-session.
+
+6. **Tier 1/Tier 2 framing gap 7th counted instance** with 3 sub-patterns (customer concentration; BTM thesis; manufacturing scale) per Section 3.4 multi-sub-pattern annotation discipline; convention count 6 → 7; codification trigger reached at 6 reinforced.
+
+7. **CEO combativeness kickoff hypothesis falsified** per Section 4.4 — KR Sridhar tone visionary/founder-evangelistic ("Superman ain't coming"; "bridge to a bridge"); confident with mild sarcasm; NOT defensive; convention count remains 2 (Murphy MRVL, Hock Tan AVGO).
+
+8. **BTM grid-bypass thesis SUBSTANTIATED** (~85% confidence) per Section 4.4 — KR explicit "time to power as existential necessity" + "100% Bloom islanded microgrid" + "bridge to a bridge" rejection of grid-tied alternatives + "one order of magnitude reduction in field time" deployment claim.
+
+9. **Cross-vault Energy/Power tier map post-Session 40:** T1 [[ETN]] + [[VRT]] / **T2 [[BE]]** / T3 [[GEV]] / T5 [[FLEX]] — five-tier coverage; Tier 4 (CAT / CMI candidate) last unpopulated F7 tier.
+
+10. **Forward-wikilink discipline preserved: 24-session vault wikilink-clean streak post-Session 40** (extended from 23 post-Session 39).
+
+**Active monitoring counts updated:** Tier 1/Tier 2 framing gap **6 → 7** (3 sub-patterns); A6 (g)/(g)' subtype **6 → 7** (Tier 3 source factual variance); CEO combativeness remains 2; Cross-venue disclosure gap remains 2; Amazon warrant pattern remains 4 (Oracle warrant emerges as cross-vault hyperscaler-warrant pattern candidate).
+
+---
+
+## Session 39 (2026-05-02): raw/research/ Energy/Power Tier 3 source-add
+
+Source-add session. Two Vic-curated Tier 3 research reports ingested to raw/research/
+extending energy/power domain coverage per CLAUDE.md Section 3.13 multi-domain expansion.
+Three-stop protocol: plan + Phase 0 verification (Stop 1); frontmatter prepend (Stop 2);
+cross-validation + provenance verification + log.md (Stop 3).
+
+Files added (provenance frontmatter prepended; body content preserved verbatim):
+- raw/research/AI-datacenter-power-supply-chain-primer.md (66→94 lines; broader-coverage
+  primer; ai_assisted: likely per 24 citeturn artifacts)
+- raw/research/AI-power-energy-bottleneck-research-report.md (339→373 lines; buy-side
+  bottleneck-severity analysis; ai_assisted: unknown)
+
+Cross-validation outcomes: 1 aligned; 5 aligned-with-extension; 1 aligned-with-period-offset;
+1 tension (gas turbine framing — h2 confirmed: heavy-duty utility-scale chokepoint vs BTM
+aero-derivative/reciprocating workaround = different supply chains; both true simultaneously;
+not vault revision); 5 framework expansion candidates ranked by thesis-criticality (HALEU
+F9 Materials Tier 1; BTM grid-bypass theme; Layer 2 utility/IPP coverage; EPC/labor
+chokepoint; MV switchgear chokepoint).
+
+Downstream registration: 8+ company ingest candidates surfaced (Bloom / Centrus / CEG / VST
+/ TLN / PSEG / NEE / D / DUK / SO / CAT / CMI / GNRC / PWR / MTZ / MYRG / PRIM / EME / FIX
+/ POWL / HUBB); 2 new theme page candidates (BTM grid-bypass; layer-2-utility-IPP coverage);
+3 new chokepoint page candidates (HALEU-fuel-chokepoint; mv-switchgear-supply; transformer-
+supply-chain). Provenance frontmatter schema applied with cross_validation_session: 39 +
+ai_assisted 4-state convention (true | likely | unknown | false). raw/research/ now houses
+6 Tier 3 sources (only photonics-chokepoint-table.md has explicit canonical designation in
+CLAUDE.md Section 3.13; 3 prior Mini-1/2/3 sources + 2 Session 39 sources are Tier 3 without
+explicit canonical-status flag — codification candidate).
+
+No theme/company/chokepoint pages created. No CLAUDE.md / _thesis.md / frameworks.md edits.
+Phase 4 reflection: codification candidates surfaced (provenance frontmatter convention;
+Tier 3 source-add session pattern; raw/research/ retro-application backlog — 4 prior
+sources lack provenance frontmatter + CLAUDE.md Section 3.13 references only photonics-
+chokepoint-table.md; gas turbine bifurcation as frameworks.md Caveat #6 refinement or new
+Caveat #10; AI-assisted source provenance discipline). Two additional Phase 4 findings noted
+for downstream sequencing (Vic-side curation): (A) Memory Tier 3 source-add gap — Reports 39
+do NOT cover memory; MU first-canonical ingest (previously Session 41) needs memory Tier 3
+source-add session BEFORE ingest, OR proceed on Tier 1/Tier 2 only; (B) First-canonical
+concentration risk — 8 ingest candidates concentrated in zero-coverage domains (Layer 2
+utilities; HALEU F9 Materials Tier 1; BTM grid-bypass theme); structurally heavier than
+refresh ingests; sequencing discipline (interleave vs batch) Vic-decision.
+
+Active monitoring counts unchanged: Tier 1/Tier 2 framing gap 6; CEO combativeness 2;
+Cross-venue disclosure gap 2; A6 (g)/(g)' subtype 6.
+
+---
+
+## Session 38 — `index.md` multi-domain schema rework (2026-05-02)
+
+**Type.** Structural rework. Pattern: Sessions 34-35 precedent (alignment to codified conventions). Not ingest, not codification.
+
+**Trigger.** `index.md` companies table displayed only `Photonics Tier` column — pre-rework artifact. Multi-domain frontmatter convention codified at CLAUDE.md v9 Section 3.2 (five per-domain `*_tier` fields) was invisible at catalog level; cross-domain participants (ETN energy_power_tier 1, FLEX energy_power_tier 5, GEV energy_power_tier 3) under-displayed.
+
+**Stop protocol.** One-stop with exception-based guard. All 5 stop-and-ask triggers passed at Phase 0 (no custom fields; no malformed frontmatter; 0 reverse-check pages missing; 8 frontmatter divergences at threshold not exceeding; 0 broken wikilinks). Default execution path applied.
+
+**Files modified (2).** `index.md` (companies table schema rewrite — 5 → 9 columns: Page / Ticker / Layer / Photonics / Memory / Energy/Power / Equipment / Materials / Last Updated; 24 rows populated per frontmatter as-written; chronological-by-ingest row ordering preserved; chokepoint + theme tables unchanged); `log.md` (this entry).
+
+**Key finding.** **8 pages have frontmatter divergent from `frameworks.md` v10.1 positioning judgments table canonical placements** — pre-rework retro-application backlog: TSM (memory_tier 1 + equipment_tier 2 missing); VRT (energy_power_tier 1 missing); AEHR / ONTO / VECO / VIAV (equipment_tier missing); COHU / PLAB (equipment_tier outside missing). Index.md populated per frontmatter as-written per kickoff Stop 2 source-of-truth rule; canonical retro-application deferred to separate-session disposition.
+
+**A6 Phase 0 PASS.** Pattern types (b) vault page existence — 24/7/8 reverse-check clean. (d) Frontmatter convention systematic extraction — 24 pages parsed; 3 multi-domain (ETN/FLEX/GEV); 21 single-domain photonics-only; 8 divergent from canonical text. (e) Wikilink integrity — 39 markdown links resolve. (f) Session-positioning — Session 38 confirmed per log.md top entry. Patterns (a)/(c)/(g)/(h) N/A — no source ingest, no new framework structures, no source filenames.
+
+**Convention codification candidate.** Catalog-page discipline as new sub-section in CLAUDE.md Section 3 — when frontmatter convention bumps add new fields, catalog pages (`index.md`) require schema alignment in same codification cycle. Current pattern: pre-rework `index.md` lagged Section 3.2 multi-domain codification by 1 session; Session 38 closes the gap. Codification candidate flagged for next codification session.
+
+**Active monitoring counts unchanged** (no source ingest): Tier 1/Tier 2 framing gap 6; CEO combativeness 2; Cross-venue disclosure gap 2; A6 (g)/(g)' subtype 6.
+
+---
+
+## Session 37 — ETN + GEV paired ingest (2026-05-01)
+
+**Scope:** First vault cross-tier paired ingest variant (Tier 1 + Tier 3 within Framework 7). Two new company pages: ETN.md (Layer 4 / energy_power_tier 1; canonical first Framework 7 Tier 1 ingest) + GEV.md (Layer 4 / energy_power_tier 3; canonical first Framework 7 Tier 3 ingest). 6 sources total: ETN-10Q-2025-09-30 + ETN-10K-2025-12-31 + ETN-earnings-2026-02-03 + GEV-10K-2025-12-31 + GEV-10Q-2026-03-31 + GEV-earnings-2026-04-22. Period offset accepted per Vic Option A (1-quarter offset between companies).
+
+**Stop protocol:** Two-stop. Stop 1 plan-only delivered; Vic approved with one modification (ETN Layer 4 instead of Layer 5 per canonical precedent — positioning evidence + M&A momentum insufficient for tier upgrade absent revenue-mix evidence) plus 2 mandatory Stop 2 flags (Flag 1: distribution-vs-generation Framework 7/11.5 refinement candidate; Flag 2: increment Tier 1/Tier 2 framing gap to 6th counted instance).
+
+**Key findings:**
+
+1. **Distribution-side primary 2026 constraint location** — Cross-company paired analytical product. ETN distribution-side substantiated as binding-supply constraint ($19.6B backlog +29% YoY; $1.5B capex + 24-project capacity expansion; book-to-bill 1.2). GEV generation-side gas turbines NOT framed as supply-binding (CEO Strazik: "gas turbines are really not the gating item" — EPC/permitting/fuel is). **Distribution-side / transformer + electrical equipment layer is the primary 2026 power constraint location per primary-source evidence.** Framework 7 + Framework 11.5 refinement candidate for Vic-side curation.
+
+2. **Layer 4-5 straddling tension Caveat #9 first canonical test outcome: Layer 4 maintained for ETN.** M&A trajectory (Fibrebond + Resilient Power + Boyd Thermal) and CEO "grid to chip" positioning language are positioning evidence, NOT revenue-mix evidence. Per canonical precedent (AAOI Session 14 / MRVL Session 9 / ALAB Session 14 layer transitions), revenue-mix evidence is required for tier promotion and is explicitly absent at Session 37 primary sources. Future tier-revisit triggers pre-registered.
+
+3. **GEV Tier 2 promotion NOT warranted.** Both Section 3.10 promotion criteria fail: zero named hyperscaler customers (criterion 1); ~9-13% datacenter-attributable revenue (criterion 2 threshold 15%). Tier 3 baseline maintained per honest-verdict.
+
+4. **Tier 1/Tier 2 framing gap 6th counted instance (risk-framing sub-pattern)** — ETN 10-K Item 1A Risk Factors does NOT elevate AI datacenter cyclicality / hyperscaler concentration / power constraint as top-5 material risk while Q4 2025 call frames data center as 54% of megaproject growth, "very bullish." Convention count: 6 counted + 1 cross-venue observation.
+
+5. **On-site generation as grid-bypass thesis partial falsification (Section 4.4).** GEV primary sources do NOT substantiate aggressive on-site generation framing. Gas turbine 20% datacenter attribution ambiguous; primary-source evidence leans toward grid-feed dominance. Documented with epistemic humility framing.
+
+6. **Cross-vault Energy/Power tier map post-Session 37:**
+   - Tier 1: [[ETN]] (Layer 4); [[VRT]] (Layer 5)
+   - Tier 3: [[GEV]] (Layer 4)
+   - Tier 5: [[FLEX]] (Layer 6)
+   - Coverage gaps remaining: Tier 2 (HD Hyundai, Hyosung); Tier 4 (Prysmian, CAT, CMI, GNRC)
+
+7. **Q1 2026 GEV results verified against external reporting with ZERO factual divergence** per A6 (g) factual error scope discipline (12 metrics independently confirmed at primary sources).
+
+8. **CEO combativeness convention count remains at 2** (Paulo Ruiz ETN + Scott Strazik GEV both confident, transparent, NOT defensive).
+
+9. **Cross-venue disclosure gap convention count remains at 2 observations** (no third instance from ETN or GEV sources).
+
+10. **Forward-wikilink discipline preserved: 22-session vault wikilink-clean streak post-Session 37.**
+
+**Files affected:** Created ETN.md + GEV.md in initial Stop 2 execution; VRT.md + FLEX.md + index.md + log.md updated in Session 37 finalization (post-EPERM-resolution).
+
+---
+
+## Session 36 — 2026-05-01 — [[FLEX]] standalone ingest (first canonical AI-datacenter-scope ingest under multi-domain frontmatter convention)
+
+**Type.** First canonical AI-datacenter-scope ingest post-rework arc (`_thesis.md` 2026-04-30; `frameworks.md` v10.1 2026-05-01; `CLAUDE.md` v9 2026-05-01). **First vault company applying multi-domain frontmatter convention** per CLAUDE.md v9 Section 3.2. **First Framework 5 + Framework 8 dual-Outside placement WITH Framework 7 Tier 5 cross-domain participant placement** — structurally distinct from [[COHU]] + [[PLAB]] dual-Outside-without-cross-domain pattern. **First vault Tier 5 cross-domain participant placement under Framework 7** per `frameworks.md` v10.1 codification. Two-stop protocol; 10 Stop 1 decisions approved; Vic Stop 2 Flag 1 (mandatory NVIDIA partnership future-falsification annotation) + Flag 2 (discretionary web search) applied.
+
+**Sources (3).** FLEX 10-K FY2025 (Tier 1; period-end March 31, 2025). FLEX 10-Q Q3 FY2026 (Tier 1; period-end December 31, 2025). FLEX Q3 FY2026 earnings call summary (Tier 2; February 4, 2026; **incomplete — GuruFocus + Motley Fool aggregation, not full transcript per Section 2.2 source unavailability observation**).
+
+**Files affected (5).** Created 1: FLEX.md (256 lines; Layer 6 / `photonics_tier: outside` / `equipment_tier: outside` / `energy_power_tier: 5` cross-domain participant). Updated 4: FN.md (Layer 6 EMS positioning models comparison Change log entry); datacenter-photonics-supply-chain.md (Section 2.7 honest-signaling text + Flex plain-text removed from non-vault list; tickers extended FN/VIAV/PLAB → +FLEX = 22 tickers); index.md (FLEX row added); log.md (this entry).
+
+**Multi-domain framework placement.** Layer 6 (Scale Manufacturing). Framework 5 (Photonics) Outside — all 4 criteria met. Framework 7 (Energy/Power) **Tier 5 cross-domain participant** — substantiated by JetCool acquisition primary-source disclosure ($53M Nov 14, 2024; "tailored for the data center market"; CEC reporting unit / FAS) + Crown Technical Systems ($170M goodwill Nov 19, 2024; "data centers, utilities, and power generation") + Anord Mardix existing data center critical power capability + FRS Industrial high-teen Q3 FY2026 YoY growth "primarily in power due to data center growth and business acquisitions". NOT Tier 4 (JetCool <1% net sales materiality per auditor). NOT Outside Framework 7 (data-center-named exposure stronger than COHU/PLAB precedent). Framework 8 (Equipment) Outside. No `memory_tier` / `materials_tier` per Section 3.2 application discipline. Framework 2.6 pure bottleneck participant. Framework 4 Mixed structural-cyclical.
+
+**A6 v9 Phase 0 PASS.** Multi-domain framework placement verification across Frameworks 5/6/7/8/9 + Framework 2 + Framework 2.6 + Framework 4 — all per `frameworks.md` v10.1. JetCool acquisition naming verified (Tier 1 primary source vs Tier 4 reporting). Customer concentration data verified (no >10% customer FY2023-FY2026; Top 10 = 44-46%). Geographic concentration verified (Mexico 27%, China 17%, US 16%). **Zero (g)/(g)' subtype falsifications.** A6 (g)/(g)' subtype instance count unchanged at 6 accumulated through Session 32.
+
+**Key analytical findings.**
+
+*Liquid cooling AI datacenter exposure thesis (kickoff hypothesis per `_thesis.md` line 170): SUBSTANTIATED IN FRAMING; DILUTED IN MATERIALITY.* JetCool primary-source-disclosed as "provider of liquid cooling solutions tailored for the data center market"; microconvective cooling >3,000W; included in CEC reporting unit / FAS. CEC 9M FY2026 mid-teen % growth "most notably from increased demand in data center cloud." BUT auditor materiality assessment: Crown + JetCool + Husqvarna combined "less than 2% of total assets and less than 1% of net sales" for FY2025. NOT a Section 4.4 falsification — hypothesis confirmed in framing; Tier 5 placement honestly captures dilution.
+
+*Customer concentration structural divergence from FN.* FLEX broad customer concentration (no >10%; Top 10 = 44-46%) is **fundamentally different from FN's NVIDIA 27.6% + Cisco 18.2% top-2 = 45.8% concentration**. Same Layer 6 placement carries structurally different positioning models — FN narrow-vertical optical contract manufacturer with concentrated customer base; FLEX broad-horizontal EMS with diversified customer base. Cross-vault analytical product surfaced: contract manufacturing customer concentration patterns differ by EMS specialization (narrow-vertical vs broad-horizontal). Layer 6 is NOT structurally homogeneous on customer concentration.
+
+*Amazon warrant — 4th vault Amazon warrant instance.* FLEX issued warrant to Amazon.com NV Investment Holdings LLC on August 15, 2025; 3,859,851 shares; $51.29 strike (preceding 30-day VWAP); ~$198M notional; cashless exercise; expires 2030; 2-year renewal provision; vesting on qualifying payments; revenue contra mechanism; $5M 9M FY2026 expense. Cross-vault Amazon warrant pattern reaches 4 instances (after [[ALAB]] $6.5B custom-ASIC; [[AAOI]] $4B transceiver; [[FN]] $39.3M optical CM). Amazon vertical securing modality across multiple value-capture layers (Layer 3 / Layer 5 / Layer 6 ×2). **Codification candidate for Session 38** — Amazon-anchored vertical securing as structural pattern paralleling NVDA platform integration six modalities per Framework 11.2 expansion.
+
+*NVIDIA + LG partnerships announced (Q3 FY2026 call) — A1 over-claim mode.* FLEX-side announcement only; not bilaterally confirmed in NVDA primary sources at Session 36 ingest. Stop 2 Phase 0 web search (Flag 2) verified: NVDA-side public partnership disclosure NOT surfaced; over-claim mode preserved. **Future-falsification-trigger annotation per Vic Stop 2 Flag 1** explicitly added to FLEX.md NVIDIA partnerships section — at next NVDA refresh ingest, verify reciprocal disclosure; if confirmed, FLEX becomes 7th canonical NVDA platform integration modality candidate per Framework 11.2 expansion.
+
+*NEW finding — Broadcom-JetCool liquid cooling collaboration (March 11, 2026).* Surfaced via Stop 2 Phase 0 web search (Flag 2). Disclosure venue: Flex IR + JetCool press release. Technical detail: single-phase direct-to-chip cooling for next-generation AI XPUs; integration with Broadcom mechanical and thermal reference architecture; sustained multi-kilowatt ASIC operation at 4 W/mm² heat flux per device; backed by Flex global mass production capabilities. **A1 reciprocal-confirmation mode candidate** pending AVGO-side reciprocal verification at next AVGO refresh ingest. Cross-vault structural significance: **AVGO platform integration thermal modality candidate** parallel to NVDA-platform-integration framework. Codification candidate for Session 38 — multi-platform integration framework (NVDA platform + AVGO platform parallel structures) per Framework 11.2 cross-domain extension.
+
+**A4 framing gap monitoring.** Insufficient transcript depth to confidently test (incomplete GuruFocus summary). No new instance documented; count canonical in MEMORY.md unchanged. **A4-bis cross-venue monitoring.** Not applicable. **CEO combativeness monitoring.** Cannot verify from incomplete transcript; count remains 2 (Murphy MRVL, Hock Tan AVGO).
+
+**Phase 4 reflection.**
+
+*(a) First canonical AI-datacenter-scope ingest assessment.* Multi-domain frontmatter convention (CLAUDE.md v9 Section 3.2) held cleanly under live application. Per-domain `*_tier` field application discipline operationally durable — `memory_tier` + `materials_tier` correctly omitted (no substantive domain exposure); `photonics_tier` + `equipment_tier` Outside placement per four-criterion test; `energy_power_tier 5` cross-domain participant per substantive primary-source evidence. v9 frontmatter convention durable; no convention drift.
+
+*(b) Multi-domain Outside placement convention assessment.* FLEX surfaced **first canonical Framework 5 + Framework 8 dual-Outside WITH Framework 7 Tier 5 cross-domain participant placement** — structurally distinct from [[COHU]] + [[PLAB]] dual-Outside pattern. Documents v9 Section 3.10 generalization first canonical application with cross-domain placement combination. Convention candidate for Session 38: explicit codification of "dual-Outside-with-cross-domain-Tier-N" pattern as recognized structural placement type.
+
+*(c) Liquid cooling thesis verification outcome.* Hypothesis substantiated in framing (JetCool data-center-tailored microconvective cooling); diluted in materiality (<1% net sales). Honest-verdict Tier 5 placement (not Tier 4 promotion) preserves analytical integrity. **NOT a Section 4.4 falsification.** Documents `_thesis.md` line 170 prediction outcome — hypothesis-confirmation with materiality-qualification framing.
+
+*(d) Cross-vault customer concentration pattern contribution.* FLEX added counterpoint to Framework 11.1 hyperscaler customer concentration theme — diversified customer base (no >10%) at Layer 6 EMS contrasts with concentrated FN pattern. Two structurally distinct Layer 6 EMS positioning models now in vault. Cross-vault analytical product strengthens Framework 11.1 framing — concentration is not universal across Layer 6.
+
+*(e) CLAUDE.md v9 conventions performance.* Multi-domain frontmatter v9 Section 3.2 first application clean; Outside Framework generalization v9 Section 3.10 first canonical Framework 5 + Framework 8 dual-Outside with cross-domain placement; A6 multi-domain pattern (a) verification clean. Codification refinement candidates for Session 38: (1) Amazon warrant pattern codification (4 instances); (2) AVGO platform integration thermal modality candidate (Broadcom-JetCool reciprocal-confirmation pending AVGO ingest); (3) "dual-Outside-with-cross-domain-Tier-N" structural placement type codification; (4) source unavailability observation pattern when earnings call transcripts are aggregated summaries.
+
+*(f) Honest-verdict discipline assessment.* FLEX exhibits broad-cycle EMS with AI data center as structurally relevant subsegment — honest-verdict-correctness held cleanly. Multi-domain Outside placement (Framework 5 + Framework 8) acknowledges non-fit; Framework 7 Tier 5 cross-domain placement honestly captures AI datacenter Energy/Power exposure without overstating <1% materiality; <1% JetCool revenue contribution stated plainly; customer concentration diversification flagged as fundamentally different from FN concentrated pattern; Amazon warrant exposure documented but at consolidated-level (not segment-attributed) preserving counterpoint role. No thesis-relevance softening.
+
+*(g) Proposed `frameworks.md` additions or refinements (Vic-side curation).* (i) Positioning judgments table FLEX row finalization with multi-domain `*_tier` placements (post-Session-36 canonical: Layer 6 / Outside Framework 5 / energy_power_tier 5 / Outside Framework 8); (ii) Framework 7 Tier 5 first canonical application as cross-domain participant placement precedent; (iii) Amazon warrant pattern at 4 instances codification candidate (parallel to NVDA-platform-integration six-modality framework); (iv) AVGO platform integration thermal modality candidate (Broadcom-JetCool partnership); (v) Layer 6 EMS positioning models structural divergence (FN concentrated vs FLEX diversified) as Framework 11.1 sub-pattern.
+
+*(h) Readiness assessment for Session 37+.* Per latest Vic sequence: **Session 37 = ETN standalone ingest** (Layer 4-5 power infrastructure; first canonical Framework 7 Tier 1 ingest; cleanest US-listed transformer chokepoint exposure under binding 2026 power constraint observation; Layer 4-5 straddling tension flagged in `frameworks.md` v10.1 Framework 2 Caveat #9). Session 38 = v9 codification with accumulated convention candidates (per Phase 4 (e) above; A6 (g)/(g)' subtype refinement; theme-page-overlap discipline; Option C bifurcation handling; high-level prompt approach; log.md descending-order convention; pure-structural-rework session type distinction; Amazon warrant pattern codification; AVGO platform integration thermal modality; dual-Outside-with-cross-domain placement type; source unavailability for aggregated summaries). Session 28.5 = TSEM foreign-issuer ingest awaits FY2025 20-F filing. Future NVDA refresh ingest will verify Flag 1 NVIDIA partnership reciprocal-confirmation candidate.
+
+**Vault wikilink-clean status preservation.** **21-session vault wikilink-clean streak preserved post-Session 36** (extended from 20 post-Session 35). No `[[Brackets]]` for non-existent pages introduced.
+
+**Backlog status post-Session 36.** Pre-Session-36 ~10-12 items (post-Session-35). Session 36 additions:
+- Amazon warrant pattern codification candidate (4 instances accumulated; codification trigger met) — Session 38
+- AVGO platform integration thermal modality candidate (Broadcom-JetCool) — pending AVGO refresh reciprocal verification
+- "Dual-Outside-with-cross-domain-Tier-N" structural placement type codification candidate — Session 38
+- Source unavailability convention pattern when earnings call transcripts are aggregated summaries (Session 36 first canonical occurrence) — Session 38 codification candidate
+- NVIDIA partnership future-falsification trigger annotated on FLEX.md per Vic Stop 2 Flag 1 — pending NVDA refresh
+
+Total post-Session-36 backlog: ~13-15 items. Codification cadence trigger preserved at 5+ accumulated items OR every ~5 ingests. **Codification trigger met for Session 38** (multiple canonical candidates from Sessions 32-36 plus Session 36 specifics).
+
+**Session statistics:** 5 files affected (1 created + 4 updated). Two-stop protocol per Vic direction with 10 Stop 1 decisions approved + Vic Stop 2 Flag 1 (mandatory) + Flag 2 (discretionary; web search executed). **First canonical AI-datacenter-scope ingest in vault history.** **First multi-domain frontmatter application** per CLAUDE.md v9 Section 3.2. **First Framework 7 Tier 5 cross-domain participant placement** per `frameworks.md` v10.1 codification. **First Framework 5 + Framework 8 dual-Outside WITH Framework 7 Tier 5 cross-domain placement** — structurally distinct from [[COHU]] + [[PLAB]] dual-Outside pattern. **4th vault Amazon warrant instance** documented — cross-vault pattern reaches codification trigger. **AVGO platform integration thermal modality candidate** surfaced via Broadcom-JetCool collaboration (March 11, 2026 — Tier 4 + Flex IR primary). FLEX.md came in at 256 lines vs Stop 1 ~225 estimate (within projection band). 21-session vault wikilink-clean streak preserved. 10 Vic-side Stop 1 decisions executed; Stop 2 Flag 1 + Flag 2 both applied; 0 deferred beyond approved plan.
+
+---
+
+## Session 35 — 2026-04-30 — log.md structural rework (second pure structural rework session in vault history)
+
+**Type.** Pure structural rework — reorder ascending → descending chronological + per-entry aggressive compression + session index addition. Two-stop protocol with 11 Stop 1 decisions approved per recommendations. Configuration edits only — no wiki/CLAUDE.md/frameworks.md/_thesis.md modifications.
+
+**Files affected (1).** log.md complete rewrite. Pre-rework 2,807 lines / ~35 entries / ~80 lines avg → post-rework target ~600-800 lines / ~37 entries / ~17-20 lines avg. **CLAUDE.md preserved verbatim** from Session 34 v8.1 output (verified per kickoff absolute prohibition).
+
+**Three structural actions executed:** (1) Reorder ascending → descending chronological (most recent at top; convention update flagged for Session 38 v9 codification per Mod-adjusted forward sequence — append-only convention text update from "bottom-append" to "top-append"); (2) per-entry compression preserving header + type + source + pages + convention codification observations + Phase 4 essentials + cross-references; dropping detailed Source audit notes (canonical in company pages) + multi-paragraph analytical synthesis (canonical in chokepoint/theme pages) + per-instance empirical evidence detail (canonical in CLAUDE.md Appendix per Session 34) + convention text quotations + Stop 1 deliverables enumeration + detailed Phase 4 sub-items; (3) session index added at top with 38-entry table (35 sessions + 3 Mini-Sessions).
+
+**A6 v8.1 verification.** Phase 0 PASS — 8 pattern types verified; (f) session-positioning gap surfaced at Decision item 0 (kickoff line 67 numbering "34 = log.md rework" inconsistent with vault canonical Mod-2 sequence — resolved per Decision 0 approval: this = Session 35; FLEX = Session 37 per Vic latest sequence update). A6 (g)/(g)' subtype instance count unchanged at 6 accumulated through Session 32.
+
+**Phase 4.** *(a) Second pure-structural-rework session in vault history.* After Session 34 CLAUDE.md v8 → v8.1 rework. Convention preservation discipline operationally durable across both rework session types. *(b) Line count delivered vs ~600-800 target.* Per-entry compression discipline consistent across simple ingest / paired ingest / multi-source synthesis entry types — average reduction ~73% per Phase 2 sample (Session 1 28→12; Session 27 113→22; Session 32 113→24). *(c) Per-entry compression discipline assessment.* Verification before drop principle preserved canonical content via spot-check across 3-5 entries during Stop 2; no canonical content loss. Default preservation scope held cleanly across heterogeneous entry types. *(d) Descending order convention application.* Most recent at top improves operational reading load for session-positioning verification (A6 (f) discipline) + cross-session learning context. Convention text update for "top-append" deferred to Session 38 v9 codification. *(e) Session index navigability.* 38-entry index at top of file enables rapid cross-session navigation; complements per-entry compression (index for breadth + entries for depth). *(f) Canonical content preservation discipline assessment.* Source audit notes drops verified against company page Source audit notes preservation; detailed analytical observations drops verified against chokepoint/theme page canonical content; per-instance empirical evidence detail drops verified against CLAUDE.md inline Appendix per Session 34. No canonical content loss. *(g) Session 36+ readiness assessment per latest Vic sequencing.* Session 36 = vault scope rescope codification (CLAUDE.md v8.1 → v9; single-action codification scope); Session 37 = FLEX standalone ingest (liquid cooling thesis verification); Session 38 = v9 codification with accumulated convention candidates (A6 (g)/(g)' subtype refinement; theme-page-overlap discipline; Option C bifurcation handling; high-level prompt approach refined observation; **NEW: log.md descending-order convention codification** — append-only convention direction change from bottom-append to top-append per Session 35 origination).
+
+**Vault wikilink-clean status preservation.** **20-session streak preserved post-Session 35** (extended from 19 post-Session 34). No `[[Brackets]]` modifications during structural rework.
+
+**Backlog post-Session 35.** ~10-12 items: A6 (g)/(g)' subtype refinement (6 instances; Session 38 codification candidate); theme-page-overlap discipline canonicalization (Session 32 first canonical); Scale-up + Scale-out bifurcation handling Option C canonicalization (Sessions 32+33 two canonical applications); high-level prompt approach refined observation; vault scope rescope to AI datacenter supply chain (Session 36 dedicated codification); **NEW: log.md descending-order convention codification (Session 35 origination); structural rework session type vs codification session type explicit distinction (Session 34 precedent)**; CEO combativeness convention monitoring (2 instances unchanged); A4-bis cross-venue disclosure gap convention monitoring (2 observations unchanged); Vic-side `_thesis.md` Portfolio Watchlist + conviction levels integration (carryover); kickoff-drafting refined observation (Sessions 31+32+33 evidence base).
+
+---
+
+## Session 34 — 2026-04-30 — CLAUDE.md v8 → v8.1 structural rework (first pure structural rework session in vault history)
+
+**Type.** CLAUDE.md structural rework — pure structural rework; no canonical content changes. Two-stop protocol with three modifications applied at Stop 1: Mod 1 (revision log preserved verbatim per Vic manual deletion plan); Mod 2 (Session numbering — this = Session 34); Mod 3 (aggressive trim: Citations compression + Tier 1 financial statement notes drop + Layer 4 differentiation + Layer straddling tension to Appendix A.5).
+
+**Files affected (2).** CLAUDE.md v8 → v8.1 (416 → 418 lines pre-Vic-manual-deletion; ~385 lines post-deletion). log.md Session 34 entry. **No wiki content modifications**, **no frameworks.md edits**, **no _thesis.md edits**.
+
+**6-section hierarchy delivered.** v8 12 top-level sections consolidated: Foundation (anchor + scope + structure) / Discipline (four disciplines + source hierarchy) / Page conventions (15 subsections) / Source ingest (5 subsections) / Operational guidance (3 subsections) / Appendix (9 subsections A.1-A.9). Each body section convention text closes with `*See Appendix A.X*` cross-reference markers.
+
+**Pedagogical content appendix.** A.1 Vault scope expansion preparation evidence • A.2 Path discrepancy verification evidence • A.3 Tier 1/Tier 2 framing gap multi-session origination • A.4 Counterparty-attribution-only canonical examples per mode • A.5 Layer differentiation + Outside Framework 5 canonical text • A.6 Tier 3-anchored theme page canonical example • A.7 Parallel-but-independent variant canonical examples • A.8 Foreign-issuer ingests TSM precedent + TSEM forward reference • A.9 A6 8 pattern types per-instance evidence.
+
+**A6 v8 verification PASS.** All canonical content preserved verbatim per Phase 6 sanity check: 8 A6 pattern types + Outside Framework 5 (4 criteria + counterpoint + cross-ref + promotion) + parallel-but-independent variant + foreign-issuer ingest + vault scope statement + A1/A2/A4/A4-bis/A7 + honest-verdict / forward-wikilink / frameworks.md ownership / _thesis.md ownership. No new conventions; no convention text modified. A6 (g)/(g)' subtype instance count unchanged at 6 accumulated through Session 32.
+
+**Phase 4.** *(a) First pure-structural-rework session in vault history.* Distinct from codification sessions (S12, S23, S29) which add canonical content; structural rework reorganizes existing canonical content without modification. Pattern observation: pure structural rework as canonical-content-preservation-only operation; codification candidate at Session 38 v9. *(b) Line count delivered vs ~280-300 target.* Aspirational target NOT met at full-file scope (416 → 418 net +2 lines; 30% reduction unachievable under Mod 1 revision log preservation + canonical content preservation requirements + appendix relocation overhead). Body content reduction ~16% (383 → 322 pre-appendix); appendix relocation added 63 lines. Post-Vic-manual-deletion file = ~385 lines. Honest assessment: 280-300 target was constrained; realistic ~385-420 lines under preservation requirements. *(c) 6-section hierarchy reorganization.* Clearer logical flow + body convention / pedagogical evidence base separation via cross-reference markers. Reorganization value substantial despite line count parity. *(d) Pedagogical content appendix scope delivered (9 subsections; ~63 lines).* All 9 per Stop 1 plan. *(e) Canonical content preservation discipline assessment.* Phase 6 sanity check confirmed all v8 conventions preserved verbatim. *(f) Session 35+ readiness.* Session 35 log.md rework; Session 36 vault scope rescope codification; Session 37 FLEX ingest (per latest Vic sequence update); Session 38 v9 codification.
+
+**Vault wikilink-clean status preservation.** 19-session streak preserved post-Session 34 (extended from 18 post-Session 33).
+
+**Backlog post-Session 34 (~8-10 items).** Pattern observation: structural rework session type vs codification session type explicit distinction (Session 34 first canonical example) — codification candidate; 30% reduction target calibration observation; Mod 1 revision log handling pattern (preserve verbatim for Vic-side manual deletion post-session) — pattern observation.
+
+---
+
+## Session 33 — 2026-04-30 — [[InP-supply]] provisional → canonical promotion (Option C bifurcation handling)
+
+**Type.** Multi-source chokepoint page expansion + provisional → canonical promotion. Option C bifurcation handling — single page covers Tier 3 framework Chokepoint 3 (InP substrate supply) + Chokepoint 4 (InP epitaxial capacity) with internal subsection structure. **Fifth canonical multi-source-synthesis chokepoint page in vault history** (after [[InP-supply]] originating Session 13 provisional, [[optical-dsp-phy-supply]] Session 30, [[advanced-optical-packaging]] Session 31, [[cpo-integration]] Session 32). **Second chokepoint page applying Option C bifurcation handling** (after Session 32 Scale-up + Scale-out CPO precedent). Direct-execution per Vic instruction; no two-stop protocol (pre-aligned via prior conversation).
+
+**Sources (5 vault primary-source vantages).** AXTI (Session 13 baseline; substrate-tier core preserved) + VECO (Session 13; equipment-tier; Lumina+ MOCVD + Aixtron primary competitor) + COHR (Session 5 + Session 31; six-inch InP at Sherman/Järfälla/Zürich + ">4x chips at <50% cost" Anderson) + LITE (Session 4 + Session 5 + Session 31; three-inch InP industry-standard + 40% capacity expansion) + AAOI (Session 7 + Session 15 + Session 31; Sugar Land MBE+MOCVD dual-process; Layer 4/5 straddling preserved).
+
+**Files affected (12).** Expanded: InP-supply.md (92 → 266 lines; provisional disclaimer replaced with substrate-tier vs epitaxial-tier scope discipline boundary statement; filename preserved per Vic Stop 1 decision avoiding wikilink-cascade across 6+ vault pages; page title "InP substrate supply" → "InP supply (substrate + epitaxial capacity)"). 5 company pages updated (AXTI + VECO + COHR + LITE + AAOI Change log entries). 2 theme pages updated (chokepoint-investability-priorities.md Chokepoint 3+4 + datacenter-photonics-supply-chain.md Section 2.9). 4 adjacent chokepoint pages updated (datacenter-laser-supply.md + advanced-optical-packaging.md + cpo-integration.md + optical-dsp-phy-supply.md light cross-references). index.md last_updated.
+
+**A6 v8 Phase 0 PASS.** Zero falsifications; vault canonical Tier 3 Rank numbering preserved (Chokepoint 3 + Chokepoint 4); A6 (g)/(g)' subtype instance count unchanged at 6 accumulated through Session 32.
+
+**Phase 4.** *Direct-execution discipline.* Pre-execution alignment via prior conversation substituted for Stop 1 deliverable; pattern: when prior conversation has aligned on substantive decisions, two-stop adds overhead without value. Codification candidate. *Provisional → canonical promotion via cross-tier vantage addition.* First canonical example post-Session 5 [[datacenter-laser-supply]] cross-validation precedent; Option C bifurcation handling can serve as promotion mechanism where adjacent ranks are substantiable separately and structurally interlocked. *Three Layer 4 InP wafer-size positions preserved without forced winner attribution* (COHR six-inch / LITE three-inch / AAOI dual-process); Tier 1/Tier 2 framing gap (2 vs 3 suppliers dispute at AXTI) preserved without silent adjudication. *Page-renaming-decision impact.* Filename preservation (InP-supply.md retained) avoided wikilink-cascade across 6+ vault pages; A6 (e) wikilink-integrity scope contained.
+
+**Vault wikilink-clean status preservation.** 19-session streak preserved post-Session 33. Vault now holds dedicated chokepoint pages for **7 of 13 Tier 3 framework chokepoints** (Chokepoints 1 + 2 + 3 + 4 + 5 + 8 provisional + 10).
+
+---
+
+## Session 32 — 2026-04-30 — [[cpo-integration]] multi-vantage-point synthesis (closes S27-S32 photonics chokepoint completion arc)
+
+**Type.** Fourth canonical multi-source-synthesis chokepoint page (after [[InP-supply]] S13, [[optical-dsp-phy-supply]] S30, [[advanced-optical-packaging]] S31). Tier 3 framework Chokepoint 10 (post-v2 bifurcation 10a Scale-up + 10b Scale-out per Murphy bifurcation thesis). **Largest multi-vantage-point synthesis at chokepoint scope yet** — 9 vault primary-source companies vs S30 (3) + S31 (4). Two-stop protocol with 10 Stop 1 decisions approved.
+
+**Sources (9 vault companies).** [[NVDA]] + [[MRVL]] + [[AVGO]] + [[CRDO]] (Tier A ~65-70 lines each) + [[LITE]] + [[COHR]] + [[AAOI]] (Tier B ~35-40 each) + [[TSM]] + [[FN]] (Tier C ~25-30 each).
+
+**Files affected (19).** Created 1: cpo-integration.md (325 lines vs ~600-700 estimate). Updated 18: 9 company pages + 4 theme pages + 4 adjacent chokepoint pages + index.md. **Largest cross-reference fan-out in vault history.**
+
+**A6 verification.** Phase 0 PASS on product/program names (NVDA Spectrum-X/COUPE/Kyber; AVGO Bailly/Tomahawk; MRVL Photonic Fabric/Celestial; CRDO ZeroFlap/OmniConnect/Hyperlume; etc.). **Phase 6 (g)' subtype falsification corrected**: kickoff "Chokepoint 7" pre-v2 row index → vault canonical "Chokepoint 10" Tier 3 Rank (13 occurrences corrected: 4 in cpo-integration.md + 9 in company page Change log entries). A6 instance count: **6 accumulated through Session 32** (5 prior + 1 numbering-convention divergence).
+
+**Theme-page-overlap discipline.** **First chokepoint page with explicit page-top boundary statement** (cpo-integration.md vs cpo-platform-battle.md theme page). Strong performance under maximum-overlap risk. Codification candidate.
+
+**Option C bifurcation handling.** Single page with Scale-up + Scale-out subsections preserves Murphy bifurcation thesis as analytical structure; avoids two-page fragmentation. Codification candidate.
+
+**Phase 4.** **S27-S32 photonics chokepoint completion arc closed** — most ambitious arc in vault history (6 sessions; 4 paired ingests + 3 chokepoint pages + 1 codification + 1 framework synthesis). Vault now holds dedicated chokepoint pages for **6 of 13 Tier 3 framework chokepoints** (5 substantiated + 1 provisional). Refined kickoff-drafting discipline observation: failure mode is fabrication (g) AND numbering-convention divergence (g'); canonical anchoring is success mode regardless of detail level. Codification trigger met (6 A6 instances + theme-page-overlap discipline + Option C bifurcation handling + kickoff-drafting refined pattern).
+
+**Vault wikilink-clean status preservation.** 18-session streak preserved post-Session 32.
+
+---
+
+## Session 31 — 2026-04-30 — [[advanced-optical-packaging]] multi-source synthesis (Tier 3 framework Chokepoint 5)
+
+**Type.** Third canonical multi-source-synthesis chokepoint page (after [[InP-supply]] S13, [[optical-dsp-phy-supply]] S30). **First chokepoint page operating under canonical CLAUDE.md v8 + frameworks.md v9 + chokepoint-table v2** post-Session-30 framework synthesis refinement. **A2 fourth canonical application**. Two-stop protocol.
+
+**Sources (4 vault companies).** [[FN]] Session 21 (Layer 6 contract manufacturing) + [[LITE]] Session 4+5 (Layer 4 / photonics_tier 3 component supplier with internal packaging; three-inch InP industry-standard) + [[COHR]] Session 5 (Layer 4 / photonics_tier 2 broadest vertical integration; six-inch InP device-fabrication) + [[AAOI]] Session 7 + Session 15 codification (Layer 5 transceiver assembler with Layer 4/5 straddling).
+
+**Files affected (8).** Created 1: advanced-optical-packaging.md (332 lines). Updated 7: 4 company page Change log entries + chokepoint-investability-priorities.md (Chokepoint 5) + datacenter-photonics-supply-chain.md (Section 2.7) + index.md.
+
+**A6 v8 Phase 0 PASS.** Zero falsifications. A6 (g)/(g)' subtype instance count unchanged at 5 accumulated through Session 30.
+
+**Phase 4.** *High-level prompt approach assessment.* Session 31 kickoff was structurally less prescriptive than Session 30 — no specific product/acquisition naming pre-committed; agent directed to "explore the vault on its own" at Phase 0. Result: zero A6 (g) kickoff hypothesis falsifications surfaced vs Session 30's three falsifications. Validates kickoff-drafting-discipline observation: detailed prompts that pre-commit product/acquisition names produce A6 (g) subtype instances; high-level prompts that defer naming to Phase 0 verification produce zero (g) instances. *Honest-verdict discipline performance under 4-pattern synthesis.* Strong performance — four distinct vertical integration patterns preserved without forced winner attribution. Six-inch vs three-inch InP asymmetry preserved with refined "monopoly" framing per Session 5 codification.
+
+**Vault wikilink-clean status preservation.** 17-session streak preserved post-Session 31.
+
+---
+
+## Session 30 — 2026-04-28 — [[optical-dsp-phy-supply]] multi-source synthesis (closes S27-S30 photonics completion arc)
+
+**Type.** Second canonical multi-source-synthesis chokepoint page (after [[InP-supply]] S13). **First dedicated chokepoint page operating under canonical CLAUDE.md v8** including A6 v8 (8 pattern types) + A2 second canonical application. Two-stop protocol.
+
+**Sources (3 vault companies).** [[MRVL]] Session 9 + Session 19 Celestial codification + Session 24 Framework 2.6 codification + [[AVGO]] Session 10 + Session 24 + [[CRDO]] Session 27 paired ingest.
+
+**Files affected (7).** Created 1: optical-dsp-phy-supply.md (334 lines vs ~615 estimate; disciplined cross-reference avoidance per Sessions 28 precedent). Updated 6: 3 company page Change log entries + chokepoint-investability-priorities.md + datacenter-photonics-supply-chain.md + index.md + log.md.
+
+**A6 v8 Phase 0 verification — 3 kickoff hypothesis falsifications + 1 frontmatter discrepancy.** AVGO "Sian3 3nm DSP" → canonical "Taurus" product naming; MRVL "Spica" → canonical "Ara"; MRVL coherent DSPs "Acacia acquisition" attribution → canonical "Inphi inheritance" (Acacia was CSCO acquisition, not MRVL); AVGO "Layer 1+3 / photonics_tier 2" frontmatter discrepancy → canonical Layer 1 / photonics_tier 3. **A6 (g)/(g)' subtype instance count: 5 accumulated through Session 30** (Session 26 addendum + Session 27 Hyperlume + Session 30 Sian3/Spica/Acacia three instances). Synthesis uses canonical vault content per A6 application discipline.
+
+**Phase 4.** Per-company depth allocation: MRVL ~115 + AVGO ~95 + CRDO ~115 lines. **S27-S30 photonics completion arc closed** — Sessions 27 (CRDO+ANET) + 28 (VIAV+PLAB) + 29 (CLAUDE.md v8 codification) + 30 (this chokepoint page).
+
+**Vault wikilink-clean status preservation.** 16-session streak preserved post-Session 30.
+
+---
+
+## Session 29 — 2026-04-28 — CLAUDE.md v7 → v8 codification (third codification session in vault history)
+
+**Type.** Configuration codification. After Session 12 (audit-execution-with-codification) + Session 23 (v6 → v7 codification). Two-stop protocol. Configuration edits only — no wiki modifications. Five accumulated codification candidates from Sessions 24-28 addressed in single pass.
+
+**Files modified (2).** CLAUDE.md v7 → v8 (280 → 416 lines / +48.6%). log.md.
+
+**Five codification actions.** Action 1 (A6 v8 refinement) — single pattern type (a) → 8 pattern types (a-h) + application discipline + instance documentation discipline + codification cadence + expansion mechanism. Action 2 (Outside Framework 5 codification) — 4 placement decision criteria + counterpoint role framing + cross-reference discipline + promotion mechanism; canonical examples [[COHU]] + [[PLAB]]. Action 3 (Parallel-but-independent paired-ingest variant) — variant selection criteria (2+/1/0 explicit) + variant execution discipline + thematic adjacency framing; canonical examples Sessions 27 + 28. Action 4 (Foreign-issuer ingests subsection) — 20-F + 6-K + earnings call source-set composition + 6-K content variability + fiscal calendar variability + currency translation considerations + script extension scope. Action 5 (Vault scope section codification) — explicit scope statement "AI compute supply chain — photonics primary; adjacent infrastructure as warranted" + phased single-domain expansion mechanism (Energy/Power → memory → CPU).
+
+**A6 v8 Phase 0 PASS.** Cross-action consistency confirmed (5 cross-action interactions reviewed).
+
+**Phase 4.** Sessions 24-28 v7 conventions performance review: A1 + A2 + A4 + A4-bis + A6 (pre-refinement) + A7 + honest-verdict discipline + forward-wikilink discipline + paired-ingest convention all performing as designed. frameworks.md v8 → v9 backlog deferred to Vic-side execution. _thesis.md updates remain deferred (Vic-side action). Codification cadence reset; backlog reduced from ~13-14 items pre-Session 29 to ~3-5 residual items.
+
+**Vault wikilink-clean status preservation.** 15-session streak preserved post-Session 29.
+
+---
+
+## Session 28 — 2026-04-28 — [[VIAV]] + [[PLAB]] paired ingest at Layer 4 specialized semi infrastructure
+
+**Type.** Fourth paired-ingest session in vault history (after Sessions 6, 13, 27). **Second consecutive parallel-but-independent paired-ingest execution structure** under looser thematic adjacency. Two-stop protocol. Operates against canonical CLAUDE.md v7 + frameworks.md v8. **First vault Chokepoint 6 (Finished-module optical test) primary-source baseline** via [[VIAV]]. **Second canonical Outside Framework 5 placement after [[COHU]]** via [[PLAB]] — codifies pattern of vault inclusion for counterpoint role rather than thesis centrality per honest-verdict discipline.
+
+**Sources.** VIAV 10-K FY2025 + 10-Q Q2 FY2026 + Q2 FY2026 call (Tier 1+2). PLAB 10-K FY2025 + 10-Q Q1 FY2026 + Q1 FY2026 call (Tier 1+2).
+
+**Files affected (7).** Created 2: VIAV.md (211 lines; Layer 4 / photonics_tier 4 / Framework 2.6 pure bottleneck participant; Spirent acquisition $425M from Keysight Oct 2025 + Inertial Labs $121.7M Jan 2025); PLAB.md (209 lines; Layer 4 / Outside Framework 5 / Framework 2.6 pure bottleneck participant; ZERO photonic foundry customer disclosure). Updated 5: wafer-level-siph-test.md (VIAV wikilink) + chokepoint-investability-priorities.md (VIAV Chokepoint 6 in-vault baseline; PLAB excluded) + datacenter-photonics-supply-chain.md (Section 2.7 VIAV) + index.md + log.md.
+
+**A6 v8 verification PASS (8 of 8 dimensions).** A6 8 pattern instances unchanged from Session 27.
+
+**Cross-company analytical product structure — parallel-but-independent confirmed.** 0 explicit candidates / 2 structural co-locations / 2 divergent / 1 untested. Different from Sessions 6/13 substantive paired analytical product. Session 28 confirms variant durable across thematic-adjacency variations (networking-component → semi-infrastructure).
+
+**Outside Framework 5 placement codification.** PLAB second canonical case after [[COHU]] (Session 8). Pattern empirically validated: ZERO photonic foundry customer disclosure + generic semi customer concentration + broad-cycle exposure with AI as sub-segment driver + photonics minority within broader semi infrastructure. Codification candidate for Session 29 honest-verdict-discipline canonical examples.
+
+**A4 framing gap monitoring.** No new instance (5 unchanged: Sessions 9/11/13/18/20). **A4-bis cross-venue monitoring.** No new instance (2 unchanged: Sessions 17/19).
+
+**Phase 4.** *Photonics_tier 4 vs Outside Framework 5 decision precedent.* COHU + PLAB two-instance pattern supports honest-verdict discipline canonical example codification at Session 29. *Visibility profile divergence.* VIAV 3-quarter visibility vs PLAB 1-3 weeks structurally interesting but parallel-but-independent execution preserved analytical clarity.
+
+**Vault wikilink-clean status preservation.** 14-session streak preserved post-Session 28.
+
+---
+
+## Session 27 — 2026-04-28 — [[CRDO]] + [[ANET]] paired ingest (parallel-but-independent variant)
+
+**Type.** Third paired-ingest session in vault history (after Sessions 6, 13). **First parallel-but-independent variant execution** per Stop 1 cross-company analytical product assessment (0 explicit candidates / 2 structural co-locations). **First Framework 2.6 five-member completion** via [[ANET]] in-vault conversion (NVDA + AVGO + MRVL + CSCO + ANET in-vault complete). Two-stop protocol. Operates against CLAUDE.md v7 + frameworks.md v8.
+
+**Sources.** CRDO 10-K FY2025 + 10-Q Q3 FY2026 + Q3 FY2026 call (Tier 1+2). ANET 10-K FY2025 + Q4 2025 call (Tier 1+2; 10-Q dropped per Vic direction).
+
+**Files affected (11).** Created 2: CRDO.md (Layer 3 / photonics_tier 3 / Framework 2.6 bottleneck-tier with control-point aspirations alongside MRVL); ANET.md (Layer 5 / photonics_tier 5 / Framework 2.6 bottleneck participant with platform-tier ambition alongside CSCO; dedicated CPO positioning analysis section with ZERO 10-K + Q4 2025 call mentions documented). Updated 9: NVDA + AVGO + MRVL + CSCO Change log entries (control-point thread wikilink completion); chokepoint-investability-priorities.md (Chokepoint 2 + Chokepoint 7); datacenter-photonics-supply-chain.md (Section 2.3); CPO-platform-battle.md (5 tier-silence rows added; pattern → 44 data points × 16 companies); NVDA-platform-integration.md (ANET cross-reference); index.md.
+
+**A6 verification — 7 of 8 PASS; 1 FAIL.** Kickoff "Comira acquisition" → primary source "Hyperlume acquisition" for MicroLED tech; A6 (g) factual error scope sub-pattern instance #1. Documented at CRDO.md per kickoff hypothesis falsification convention. **A6 instance count: 8 pattern types accumulated through Session 27** — codification refinement overdue per CLAUDE.md cadence trigger.
+
+**Layer 3 four-variant CPO profile codified.** MRVL escalating disclosure / ALAB phased coexistence / CSCO acknowledged-deferral / **CRDO CPO displacement positioning** (OmniConnect MicroLED + ZeroFlap optics framed as addressing "pitfalls of current CPO solutions" per Brennan Q3 FY2026 call).
+
+**A4 framing gap monitoring.** No new instance (5 unchanged). **A4-bis cross-venue monitoring.** No new instance (2 unchanged).
+
+**Phase 4.** *Parallel-but-independent execution structure.* Preserved analytical clarity without forced cross-company synthesis where source evidence absent. Stop 1 5-candidate evaluation framework operated cleanly. *Framework 2.6 fifth-member completion.* Five-company control-point thread now in-vault complete; tier robustness demonstrated under multi-company application. *ANET CPO tiered silence pattern.* Three candidate interpretations preserved per honest-verdict discipline (strategic deflection / genuine non-engagement / Layer-5-positioning consequence) without adjudication.
+
+**Vault wikilink-clean status preservation.** 13-session streak preserved post-Session 27.
+
+---
+
+## Session 26 — 2026-04-28 — [[AEHR]] Q3 FY2026 refresh attempt: Option C redirect (kickoff hypothesis falsified at Phase 0)
+
+**Type.** **First Option C redirect in vault history** (kickoff hypothesis falsification at Phase 0 → Vic-approved scope reduction to Phase 3 + log.md only). Single-stop. Operates against canonical CLAUDE.md v7 + frameworks.md v8. **First provisional → canonical promotion test in vault history**.
+
+**Files updated (1).** log.md (this entry). No wiki page edits per Option C scope.
+
+**Phase 0 finding — kickoff hypothesis falsification (A6 6th pattern instance).** Kickoff premised Session 26 as refresh against "Session 4 ingested AEHR FY2025 baseline" using "two new sources." Vault verification falsified: AEHR ingested at Session 6 (paired with [[ONTO]]), not Session 4; the "two new sources" listed are same files already ingested at Session 6 (Q3 FY2026 10-Q + Q3 FY2026 call); existing AEHR.md already canonical from Session 6. **A6 (f) session-positioning verification** — 6th pattern type accumulated.
+
+**Phase 3 — Provisional → canonical promotion test.** [[wafer-level-siph-test]] evaluated against three expansion triggers + strengthen/weaken signals. **Recommendation: maintain provisional.** Q3 FY2026 sources (already ingested at Session 6) do not satisfy any of three triggers as drafted; strengthen signal partially observed (FOX order acceleration with customer base broadening) but does not cross multi-company concentration threshold; weaken signals are predominantly opposite to weaken-direction. Provisional chokepoint page model holds; AEHR remains the only public pure-play wafer-level SiPh reliability test exposure.
+
+**Propagated factual error discovered.** wafer-level-siph-test.md + chokepoint-investability-priorities.md Chokepoint 8 reference "Session 4 ingest" / "Q4 FY2025 call" — same factual error originating at Session 25 dual-page creation. Surfaced for Vic decision; not corrected at Session 26 per Option C scope.
+
+**Phase 4.** A6 codification refinement overdue (6 pattern instances). Provisional chokepoint page model held under first canonical promotion test.
+
+**Vault wikilink-clean status preservation.** 12-session streak preserved post-Session 26.
+
+### Session 26 addendum — propagated factual error correction (2026-04-28)
+
+**Trigger.** Vic-approved follow-on. Mechanical text replacement; no analytical content changes. **Scope expansion at execution:** 5 stated → **16 actual** occurrences (3.2x underestimate). Comprehensive grep verification preserved correctness.
+
+**Files updated (3).** wafer-level-siph-test.md (replace_all "Session 4" → "Session 6" 10 instances; replace_all "Q4 FY2025" → "Q3 FY2026" 3 instances). chokepoint-investability-priorities.md (replace_all "Session 4" → "Session 6" 2 instances; replace_all "Q4 FY2025" → "Q3 FY2026" 1 instance). log.md addendum entry.
+
+**A6 codification refinement progress.** Sub-pattern observation: scope underestimate (5 stated vs 16 actual). 7 pattern types accumulated through Session 26 addendum.
+
+---
+
+## Session 25 — 2026-04-27 — Dual-page creation: [[chokepoint-investability-priorities]] + [[wafer-level-siph-test]]
+
+**Type.** **First dual-page-creation session in vault history.** **First canonical application of A2 (Tier 3-anchored theme pages) codified at Session 23.** **First single-company-exposure provisional chokepoint page** (Option A confirmation). Two-stop protocol. Operates against canonical CLAUDE.md v7 + frameworks.md v8.
+
+**Files created (2).** chokepoint-investability-priorities.md (~530 lines; 9 sections including 13 per-chokepoint sections ordered by Tier 3 Ranking Summary Rank 1-13; Tier 3-anchored theme page). wafer-level-siph-test.md (~210 lines; 10 sections including Option A single-company-exposure disclaimer + 3 expansion triggers).
+
+**Files updated (13).** 4 theme/chokepoint pages with Cross-references additions (cpo-platform-battle.md, NVDA-platform-integration.md, InP-supply.md, datacenter-laser-supply.md); 1 theme page with Change log only (datacenter-photonics-supply-chain.md); 6 company pages with Change log entries (NVDA + AVGO + MRVL + CSCO + AEHR + AXTI); index.md; log.md.
+
+**Tier 3 source.** raw/research/photonics-chokepoint-table.md (Vic-team-authored; canonical living document).
+
+**Phase 0 finding handled at Stop 1.** Kickoff proposed `tier3_source:` + `related:` frontmatter fields not in current vault convention. Stop 1 recommended preserving body-text Cross-references convention; A2 structural requirement 1 satisfied via page-top disclaimer + Source attribution body section without frontmatter changes. **A6 4th pattern instance** (frontmatter convention adherence).
+
+**A6 5th pattern instance.** Wikilink casing integrity (`cpo-platform-battle` lowercase vs canonical `CPO-platform-battle`).
+
+**Phase 4.** *A2 first canonical application discipline.* Operationally durable at full theme page scale (~530 lines, 13 per-chokepoint sections). Per-chokepoint section template scaled across 13 sections with depth weighted by Tier 3 Ranking Summary rank. *Provisional chokepoint page model.* First single-company-exposure chokepoint page; page-top disclaimer + three expansion triggers + portfolio tracking framing per Option A produces operational analytical clarity. *A6 codification refinement candidate progress.* Fourth + fifth pattern instances accumulated; codification priority increased.
+
+**Vault wikilink-clean status preservation.** 11-session streak preserved post-Session 25.
+
+---
+
+## Session 24 — 2026-04-27 — Chokepoint research framework selective integration
+
+**Type.** Tier 3 source selective integration session. **First selective integration session in vault history.** **First post-Session-23 codification ingest session** — operates against canonical CLAUDE.md v7. **First ingest using `raw/research/` directory.** Two-stop protocol.
+
+**Tier 3 source.** raw/research/photonics-chokepoint-table.md — Vic-team-authored; 13-chokepoint structure with Why-it-matters / Best-listed-exposure / My-assessment columns + Ranking Summary + Portfolio Watchlist Grouping.
+
+**Files affected (7).** Updated: NVDA.md + AVGO.md + MRVL.md + CSCO.md (control-point distinction across 4 vault company pages — ANET skipped per Stop 1 finding ANET.md does not exist; plain-text reference applied). AXTI.md (InP substrate two-claim Open question). datacenter-photonics-supply-chain.md (Sections 2.6 + 2.7 + Section 2.9 + Future ingest candidates refinement). log.md.
+
+**Three substantive integrations.** *Integration 1 — Control-point distinction across 4 vault company pages.* A6 framework-placement verification confirmed for all 4 vault companies BEFORE pre-committing. NVDA full control point; AVGO control point with bottleneck participation; MRVL bottleneck-tier with control-point aspirations (honest-verdict framing applied); CSCO bottleneck participant with platform-tier ambition. *Integration 2 — InP substrate concentration two-layer reconciliation.* A1 three-mode framing applied at construction time: BOTH 78% JX Advanced Metals (canonical Session 19) AND framework's 60-70% AXTI claim treated as over-claim mode pending future primary-source verification. Reconciled via two-layer distinction (indium feedstock upstream vs InP wafer production downstream). *Integration 3 — CPO chokepoint structural split (CORRECTED section numbering).* Stop 1 finding: kickoff specified Sections 2.5/2.6; actual vault structure has Section 2.7 = assembly/packaging. Targets corrected per A6 falsification finding. **A6 2nd + 3rd pattern instances** (vault page existence + section numbering).
+
+**Phase 4.** *Two kickoff drafting verification gaps surfaced and handled at Stop 1.* ANET vault-presence (page-existence verification gap) + section numbering error (analogous to Session 21 FN Layer 5/6 falsification). A6 codification refinement candidate scope expansion identified.
+
+**Vault wikilink-clean status preservation.** 10-session streak preserved post-Session 24.
+
+---
+
+## Session 23 — 2026-04-27 — CLAUDE.md v6 → v7 codification + page architecture decisions
+
+**Type.** Non-ingest codification session. **Most substantial CLAUDE.md update since v3 → v4 transition.** Third codification-only session in vault history (after Session 12, Session 18). Two-stop sequential protocol.
+
+**Files affected (6).** CLAUDE.md v6 → v7 (~75 line additions). datacenter-photonics-supply-chain.md (B3 open-questions section internal reorganization). hyperscaler-custom-ASIC.md (B1 factual corrections + stronger subsection-header reframing). AI-demand-durability.md (B2 layer-organized restructure with Refinement 1A footnote). index.md (verified unchanged). log.md.
+
+**Item A — Convention codification (CLAUDE.md v6 → v7).** Six conventions codified: A7 path discrepancy verification (Session 21 origination); A4 Tier 1/Tier 2 framing gap sub-pattern annotation (3 core sub-patterns: risk-framing, customer-concentration, geographic-concentration); A1 counterparty-attribution-only annotation discipline (three-mode framing: over-claim + inversion + reciprocal-confirmation; canonical text migrated from Session 19 page); A4-bis cross-venue disclosure gap convention (verbatim threshold language preserved per Refinement 2A); A2+A3 combined Tier 3-anchored theme pages (single-convention preference per Stop 1); A6 kickoff drafting framework-placement verification (Session 21 origination). Deferred (1): A5 customer-consolidation risk theme (one-session-one-company evidence base below codification threshold).
+
+**Item B — Page architecture decisions.** B1 hyperscaler-custom-ASIC.md (option (c) maintain with stronger subsection-header reframing + factual corrections); B2 AI-demand-durability.md (option (b) softer layer-organized restructure preserving chronological accumulation; Refinement 1A footnote acknowledging straddling tensions); B3 datacenter-photonics-supply-chain.md open-questions section architecture review (option (b) section-internal reorganization).
+
+**Phase 4.** *Convention text fidelity migration.* Three-mode framing canonical text on Session 19 page already at peak text freshness — codification migrated rather than reconstructed. *A3 absorption into A2 as structural requirements.* Single coherent convention rather than two coupled conventions. *Codification cadence reset.* Backlog reduced from ~21 items to ~11 residual.
+
+---
+
+## Session 22 — 2026-04-27 — [[VRT]] (Vertiv) standalone ingest
+
+**Type.** Single-company ingest. Two-stop protocol with Option B scope expansion (three-cycle convention candidate maturation upgrade applied to Session 19 page Open questions section). **First thermal/liquid cooling and power infrastructure layer vault coverage** — closes Section 2.8 zero-vault-coverage gap. **First photonics-adjacent ingest.** Third post-Session-19 cross-validation cycle.
+
+**Sources.** VRT 10-K FY2025 (Tier 1) + Q1 2026 10-Q (Tier 1) + Q1 2026 earnings call (Tier 2). Strongest source-freshness window of any post-seed-set ingest (~5 days).
+
+**Files affected (6).** Created 1: VRT.md (~390 lines; Layer 5 / photonics_tier 4; placement verified per kickoff drafting framework-placement verification discipline BEFORE pre-committing). Updated 5: datacenter-photonics-supply-chain.md (Section 2.8 + Future ingest candidates Tier A; **three-cycle convention candidate maturation upgrade**) + NVDA-platform-integration.md (sixth integration modality — reciprocal-confirmation) + AI-demand-durability.md (ten-position demand convergence) + index.md + log.md.
+
+**Key findings.** *NVIDIA partnership reciprocally confirmed at Tier 1 level* — first instance in vault for NVIDIA-named ecosystem partner across three Tier 3 cross-validation cycles. 10-K Item 7 Outlook Strategic Partnerships subsection. *EcoDataCenter Sweden Vera Rubin specific deployment* — first vault primary-source confirmation of NVIDIA Vera Rubin commercial deployment timing. *800V DC programs on time* (H2 2026 launches; 2027 shipping). Backlog $15.0B (+108% YoY). FY2026 capex $425-525M. Investment-grade transition + S&P 500 inclusion March 2026.
+
+**Phase 4.** *Three-mode framing canonical state.* Over-claim (S20 GLW) + inversion (S21 FN) + reciprocal-confirmation (S22 VRT). Refined codification candidate text canonical on Session 19 page. **Ready for Session 23 codification.** Backlog at ~21 items post-Session 22; codification cadence trigger substantially exceeded. *Sixth integration modality* — reciprocal-confirmation, technology development collaboration without equity (structurally distinct from four absorption modalities + GLW counterparty-attribution-only).
+
+---
+
+## Session 21 — 2026-04-27 — [[FN]] (Fabrinet) standalone ingest
+
+**Type.** Single-company ingest. Two-stop protocol. **Second Layer 6 vault page** (after [[AXTI]]). Second post-Session-19 cross-validation cycle.
+
+**Sources.** FN 10-K FY2025 (Tier 1) + Q2 FY2026 10-Q (Tier 1) + Q2 FY2026 earnings call (Tier 2).
+
+**Files affected (8).** Created 1: FN.md (~280 lines). Updated 7: datacenter-photonics-supply-chain.md (Section 2.7) + hyperscaler-custom-ASIC.md (Amazon warrant table extension) + LITE.md (FN partnership status note) + AI-demand-durability.md (nine-position demand convergence) + datacenter-laser-supply.md (FN sources section — fourth vantage point on chokepoint validation) + index.md + log.md.
+
+**Key findings.** *Layer 6 placement per frameworks.md v7* — kickoff "first dedicated Layer 5" framing falsified per kickoff hypothesis falsification protocol. **A6 1st pattern instance (framework placement).** *Customer concentration shows NVDA + Cisco as top customers, not LITE/COHR.* FY2025 10-K Note 20: NVIDIA 27.6%, Cisco 18.2%, Lumentum 15.4% (FY2023 only). Session 19 Tier 3 "central LITE and COHR partner" framing materially refined. *Amazon warrant 3rd instance* (March 12, 2025; $39.3M FV) — pattern observation candidate threshold met. *Three CPO customer programs disclosed* (names not given; "far ahead of competitors"). *EML laser supply constraint resolution path* — fourth vantage point on [[datacenter-laser-supply]] chokepoint.
+
+**Phase 4.** *Two-cycle convention candidate maturation.* Over-claim mode (Session 20 GLW) + inversion mode (Session 21 FN). Refined codification candidate text. *Customer-consolidation risk theme* (FN 10-K Item 1A) — new analytical angle from contract-manufacturer-side.
+
+---
+
+## Session 20 — 2026-04-27 — [[GLW]] (Corning) standalone ingest
+
+**Type.** Single-company ingest. Two-stop protocol. **First fiber-attach / connectors layer vault coverage.** First post-Session-19 ingest with operational use of agent-onboarding skill. First Session-19 cross-validation ingest — primary-source verification of Tier 3-derived claims about a non-vault company.
+
+**Sources.** GLW 10-Q Q3 2025 (Tier 1) + 10-K FY2025 (Tier 1) + Q4 2025 earnings call (Tier 2).
+
+**Files affected (6).** Created 1: GLW.md (~280 lines; Layer 4 with carrier-business straddling note + photonics_tier 3). Updated 5: datacenter-photonics-supply-chain.md (Section 2.4 + Bucket C + Future ingest candidates Tier A annotation + Vault coverage asymmetries + Open questions Session 20 cross-validation entry); NVDA-platform-integration.md (GLW counterparty-attribution-only ecosystem-partner status); AI-demand-durability.md (eight-position demand convergence); index.md; log.md.
+
+**Key findings.** *Optical Communications segment economics.* $6,274M FY2025 (+35% YoY); 16.7% segment net income margin. Sub-segment growth-rate spread: enterprise +60-61%; hyperscale portion +120%; carrier +15%. *Meta $6B multi-year agreement* anchor customer for North Carolina capacity expansion. *Customer-prepayment + long-term-commitment model migration* from Display Gen 10.5 + Apple Kentucky to Optical Communications. *Wendell Weeks enabler-tier scale-up CPO perspective* (sixth CPO scale-up perspective documented).
+
+**Phase 4.** *5 Tier 3-derived claims cross-validated.* NVDA Spectrum-X / Quantum-X ecosystem partner: not confirmed. CPO detachable fiber-to-chip with GlobalFoundries: not confirmed. Multicore fiber 4x optical-path density: materially refined (Contour single-core, not multicore). *Counterparty-attribution-only annotation discipline (Session 20 origination).* Convention codification candidate text proposed. *GLW partial-non-naming pattern (new observation type).* Names hyperscaler end-customers (Meta, Lumen, AT&T) but declines technology partners (NVDA, GlobalFoundries, etc.).
+
+---
+
+## Session 19 — 2026-04-27 — [[datacenter-photonics-supply-chain]] theme page build
+
+**Type.** **First Tier 3-anchored theme page in vault history.** Two-stop protocol. Three coordinated source reports (taxonomy / architecture primer / narrative) as anchors.
+
+**Files affected (10).** Created 1: datacenter-photonics-supply-chain.md. Updated 7: CPO-platform-battle.md, datacenter-laser-supply.md, TSMC-CoWoS.md, InP-supply.md, hyperscaler-custom-ASIC.md, AI-demand-durability.md, NVDA-platform-integration.md (all link-only with brief Cross-references sections added). index.md + log.md.
+
+**Page structure.** Architecture overview (pluggables + CPO) → Ten supporting infrastructure layers (lasers, modulators, DSP/SerDes, fiber attach, OCS, photonic foundries, assembly/packaging/testing, thermal/cooling, upstream materials, specialized electronics) → Investability framing (three buckets per architecture primer) → Future ingest candidates (25 candidates in three tiers; Tier A: 4 — JX Advanced Metals, Corning, Fabrinet, Vertiv) → Open questions and limitations → Source audit notes.
+
+**Key findings.** *Vault-conflict reconciliation applied — TSMC COUPE production claim.* Footnote spot-check revealed claim is industry reporting (Commercial Times → bits-chips → taxonomy report derivative chain), not TSMC primary-source disclosure. Wiki frames with industry-reporting attribution; vault primary-source silence preserved. *TSMC venue-specific disclosure pattern observation — second instance of cross-venue gap* (after Session 17 NVDA GTC vs Q4 FY2026 earnings call). 2 observations; third instance triggers convention upgrade. *Vault coverage asymmetry surfaced.* Zero-coverage layers: fiber attach/connectors, thermal/cooling, test equipment subset.
+
+**Phase 4.** *Convention codification candidate (Tier 3-anchored theme page convention).* Proposed text for future codification. *No-verification convention with deviation-based refinement* — Stop 1 footnote spot-check budget calibration validated.
+
+---
+
+## Session 18 — 2026-04-26 — frameworks.md v6 → v7 codification
+
+**Type.** Configuration codification. Three-stop protocol (first in vault history). Third codification session (after Session 12 + Session 15).
+
+**Scope.** 14 backlog items accumulated across Sessions 7-17. Of 14: 5 executed as substantive frameworks.md edits; 1 convention decision resolved (Item B Tier 1/Tier 2 framing gap sub-categorization); 7 closed without execution (already complete from Sessions 15+17); 1 flagged as Vic-side action.
+
+**Files modified (2).** frameworks.md v5 → v7 (465 → 480 lines). log.md.
+
+**frameworks.md v7 edits.** COUP/COUPE naming footnote at COUPE definition; Framework 1 COUPE status updated to "NVDA in production; TSMC silent"; Framework 2 NVDA box "COUPE confirmed — GTC Mar 2026"; Framework 5 expansion (VECO + CSCO at Tier 4 — all 14 vault companies covered); Framework 1 ALAB description revised per honest-verdict discipline; Framework 3 AXTI node added; Positioning judgments table expanded from 8 to 14 rows.
+
+**Convention decision (Item B).** B2 approved — unified single convention with sub-pattern observation. Classification matrix: 5 counted instances + 1 observation distributed across risk-framing (3 instances) + technology-content (2) + cross-venue (1 observation). Sub-pattern annotations are observational and do not fragment running tally.
+
+**Phase 4.** *Backlog calibration finding.* Actual execution scope (5 substantive edits) was lighter than projected (14-15 items) because 7 items were already complete from prior sessions. Backlog returns to near-zero.
+
+---
+
+## Session 17 — 2026-04-26 — NVDA GTC March 2026 keynote refresh ingest
+
+**Type.** **First refresh session in vault history.** Single-source two-stop refresh ingest. NVDA GTC March 16, 2026 keynote transcript (56 pages; Tier 2).
+
+**Files affected (10).** Updated: NVDA.md (new "CPO and scale-up interconnect roadmap (GTC March 2026)" section with 6 subsections); CPO-platform-battle.md (Layer 1 divergence rewritten silence → adoption vs dismissal; five-way executive comparison with Jensen as fifth perspective); NVDA-platform-integration.md (Groq LP30 + COUP/TSMC co-development mechanism); TSMC-CoWoS.md (COUP/COUPE Evolution section); AI-demand-durability.md ($500B/$1T GTC demand signals); datacenter-laser-supply.md (Jensen "lot more capacity for CPO"); hyperscaler-custom-ASIC.md (Platform-integrative absorption section — Groq LP30); TSM.md (reciprocal non-naming pattern broken at GTC); index.md; log.md.
+
+**Key findings.** **SUBSTANTIVE BREAK — HIGH CONFIDENCE.** NVDA's primary-source CPO silence definitively broken at GTC. Jensen disclosed CPO products in production (Spectrum-X CPO switch), COUP/COUPE packaging co-developed with TSMC, Kyber CPO scale-up, NVLink 576 optical architecture. Production-confirmed adoption. *Layer 1 divergence sharpened.* Adoption vs dismissal — NVDA has CPO in production; AVGO dismisses CPO as "bright shiny objects." *Five-way executive comparison.* Jensen ("both by platform design"), Murphy (CPO wins), Hock Tan (copper wins), Mohan (coexistence), Robbins (acknowledged deferral). *Reciprocal non-naming pattern broken.* Jensen named TSMC explicitly at GTC. Pattern narrows to 3 active non-namers (AVGO, MRVL, TSM). *Cross-venue Tier 2 disclosure divergence.* NVDA Q4 FY2026 call (February 25) zero CPO mentions vs GTC (March 16) extensive CPO production disclosure. **First instance of cross-venue gap pattern.**
+
+---
+
+## Session 16 — 2026-04-26 — [[CSCO]] standalone ingest
+
+**Type.** Standalone company ingest. Third solo company ingest after MRVL S9 and AVGO S10. Two-stop protocol. Three-source coverage from inception.
+
+**Sources.** CSCO 10-K FY2025 (Tier 1) + 10-Q Q2 FY2026 (Tier 1) + Q2 FY2026 call (Tier 2).
+
+**Files affected (5).** Created 1: CSCO.md (Layer 3 with Layer 3/5 straddling tension; photonics_tier 4; Silicon One platform with $7.6B→$10.1B purchase commitments; dedicated NVIDIA-as-partner subsection; Acacia optical strategy with 5th Tier 1/Tier 2 framing gap instance; CPO "acknowledged deferral" variant). Updated 4: CPO-platform-battle.md (3 CSCO rows; pattern → 38 data points × 14 companies; "Robbins' acknowledged deferral" subsection with four-way executive comparison); MRVL.md ([[CSCO]] wikilink resolution); index.md; log.md.
+
+**Key findings.** *Layer 3/5 straddling tension* — designs silicon (Layer 3) but sells complete networking systems (Layer 5 revenue model). *"Acknowledged deferral" — fourth CPO variant.* Robbins acknowledges CPO inevitability ("we absolutely believe it's going to happen") but frames non-adoption as customer-driven. *5th Tier 1/Tier 2 framing gap instance.* Filings treat Acacia as fully amortized historical acquisition; call treats Acacia + Silicon One as AI networking strategy centerpieces. *NVIDIA-as-partner.* Only vault company framing NVDA as partner; Jensen at Cisco AI Summit. *CSCO last forward wikilink resolved* — vault wikilink-clean (zero pending forward links).
+
+---
+
+## Session 15 — 2026-04-23 — frameworks.md v4 → v5 codification
+
+**Type.** Non-ingest codification (second non-ingest session type after Session 11-12 audit). **First dedicated configuration codification session.** Two-stop protocol.
+
+**File modified (1).** frameworks.md v4 → v5 (448 → 465 lines).
+
+**Seven items applied.** Layer 6 expansion (combined "Scale Manufacturing & Materials" description; AXTI added); ALAB photonics_tier revision (Tier 3 → Tier 4 per aiXscale $31.1M tuck-in evidence); Prysm falsification (no edit needed; Prysm not in frameworks.md); AAOI Layer 4/5 straddling (new paragraph; Layer 5 maintained with upgrade criteria); COUPE/CPO distinction (5A: COUPE disambiguated; 5B: Layer 1 NVDA box updated); MRVL Layer 3→2 triggers (Framework 2.5 with three falsifiable upgrade triggers — none met FY2026); AVGO Layer 1 straddling (Important Caveats #2; Layer 1 maintained).
+
+---
+
+## Session 14 — 2026-04-23 — [[ALAB]] standalone ingest (+ hyperscaler-custom-ASIC theme)
+
+**Type.** Single-company ingest + first new theme page since Session 2. Two-stop protocol. Third post-seed-set ingest. Resolves [[ALAB]] forward wikilink.
+
+**Sources.** ALAB 10-K FY2025 (Tier 1) + 10-Q Q3 FY2025 (Tier 1) + Q4 FY2025 earnings call (Tier 2).
+
+**Files affected (8).** Created 2: ALAB.md (second Layer 3 specialized designer; photonics_tier 4 — revised from frameworks.md Tier 3 per aiXscale $31.1M technology-tuck-in evidence); hyperscaler-custom-ASIC.md (dynamics theme page with cross-company warrant structures; Amazon warrant table). Updated 6: CPO-platform-battle.md (3 ALAB rows; Layer 3 phased-coexistence variant; Mohan's phased-coexistence subsection; pattern → 35 data points × 13 companies); AI-demand-durability.md (ALAB second Layer 3 data point); MRVL.md + AVGO.md (ALAB cross-references); index.md; log.md.
+
+**Key findings.** *photonics_tier 4 revision (most consequential classification finding).* aiXscale at $31.1M is technology tuck-in, not platform acquisition (cf. MRVL ~$3.25-5.5B Celestial). Zero photonics revenue. Flagged for frameworks.md cleanup. *Mohan's phased-coexistence CPO perspective* — third executive perspective on scale-up interconnect (between Murphy aggressive and Hock Tan dismissal); copper and optical coexisting; scale-up optical 2028. *>70% single end-customer concentration* — highest in vault. *Amazon $6.5B warrant* (3.3M shares; February 2026; revenue milestone vesting; 7-year life). *NVLink Fusion* — first NVDA ecosystem connectivity partner in vault.
+
+---
+
+## Session 13 — 2026-04-23 — [[AXTI]] + [[VECO]] paired ingest (substrate + epi InP coverage)
+
+**Type.** Three-source paired ingest with provisional InP-supply chokepoint page creation. **Second paired-ingest session** (after Session 6 AEHR+ONTO). Two-stop protocol.
+
+**Sources.** AXTI 10-K FY2025 + 10-Q Q3 FY2025 + Q4 FY2025 call (Tier 1+2). VECO 10-K FY2025 + 10-Q Q3 FY2025 + Q4 FY2025 call (Tier 1+2).
+
+**Files affected (12).** Created 3: AXTI.md (Layer 6 — first in vault; photonics_tier 3); VECO.md (Layer 3-4; photonics_tier 4; honest-verdict framing weak photonics fit); InP-supply.md (provisional chokepoint page; geopolitical mirror structure). Updated 9: LITE/COHR/AAOI/AVGO ([[InP-supply]] cross-references); datacenter-laser-supply.md (substrate-level dynamics tracked separately); CPO-platform-battle.md (6 new tiered silence rows + new "Substrate-tier CPO as demand amplifier" section; pattern → 32 data points × 12 companies); AI-demand-durability.md (substrate-tier demand section; seven-position demand convergence); index.md; log.md.
+
+**Key findings.** *Tier 1/Tier 2 framing gap (4th vault instance).* AXTI 10-K "three primary suppliers" vs Q4 call "two, and we're one of them." *CPO as substrate-tier demand amplifier (first explicit CPO bullishness).* AXTI Q4 call: CPO "yet another inflection point" for substrate demand "late 2027 and beyond." Structural inversion of Layer 5 CPO dynamic. *Geopolitical mirror.* AXTI (China substrate exports controlled) + VECO (US equipment exports controlled) — same supply chain fracture from opposite sides. *Promotional tone caveat.* AXTI Q4 call exhibited markedly promotional language; December 2025 equity offering ($95.2M) closed 5 weeks before call. All bullish demand claims attributed to specific speakers. *Three kickoff hypothesis falsifications.* InP yield advantage (15-20% unverified); customer identities (unverified); Lumentum 85% market share (not corroborated).
+
+---
+
+## Session 12 — 2026-04-23 — Audit execution + CLAUDE.md v5 → v6 codification
+
+**Type.** Non-ingest execution session implementing Session 11 audit findings. Single-stop execution.
+
+**Files affected (7).** Updated: TSMC-CoWoS.md (MRVL added to tickers); TSM.md (Reciprocal non-naming pattern subsection; [[AI-demand-durability]] cross-reference); AVGO.md ([[AI-demand-durability]] cross-reference); MRVL.md ([[AI-demand-durability]] cross-reference); CLAUDE.md v5 → v6 (Tier 1/Tier 2 framing gap convention + CEO combativeness monitoring convention; revision log entry); index.md; log.md.
+
+**Backlog items deferred.** frameworks.md cleanup (human-side); Hyperscaler custom ASIC theme page (deferred to ALAB ingest natural trigger); CEO combativeness convention upgrade (awaiting third instance).
+
+---
+
+## Session 11 — 2026-04-23 — Discovery / promotion audit (zero promotions)
+
+**Type.** Non-ingest audit session. Systematic cross-source pattern analysis across all 17 content pages. Single-stop. Five audit dimensions evaluated.
+
+**Files affected (0).** Audit-only session; no file writes.
+
+**Key findings.** *Zero promotions across five dimensions.* Vault is well-calibrated. *Three cross-reference corrections identified* (executed at Session 12). *Three CLAUDE.md v6 proposals.* Tier 1/Tier 2 framing gap convention (approved with refinement at Session 12); CEO combativeness monitoring convention (approved as monitoring at Session 12); forward wikilink tracking in log.md (rejected by human — process overhead without proportional value). *Both chokepoints confirmed substantiated.*
+
+---
+
+## Session 10 — 2026-04-23 — [[AVGO]] standalone ingest
+
+**Type.** Single-company ingest. Two-stop protocol. **Second Layer 1 page** (template-setting for custom ASIC platform definer). Resolves [[AVGO]] forward wikilink.
+
+**Sources.** AVGO 10-K FY2025 + 10-Q Q1 FY2026 + Q1 FY2026 call (Tier 1+2). November fiscal year end.
+
+**Files affected (5).** Created 1: AVGO.md (Layer 1; photonics_tier 3; Layer 1 maintained with straddling tension flagged). Updated 4: CPO-platform-battle.md (3 AVGO rows; Layer 1 active dismissal variant; "Layer 1 divergence: silence vs active dismissal" subsection; "Murphy ↔ Hock Tan: scale-up interconnect disagreement" section with incentive alignment + pre-registered resolution signals; pattern → 26 data points × 10 companies); AI-demand-durability.md (second Layer 1 demand source); TSMC-CoWoS.md (custom ASIC designer demand pressure section — 95% TSMC wafer dependency); index.md.
+
+**Key findings.** *Layer 1 active dismissal — new CPO tiered silence variant.* First company to actively dismiss CPO on earnings call ("bright shiny objects") while maintaining filing-level silence. Structurally distinct from NVDA pure silence. *Murphy ↔ Hock Tan scale-up interconnect disagreement (sharpest open question in CPO battle).* Murphy CPO "inflecting" vs Hock Tan copper DAC + CPO "bright shiny objects." *$100B+ three escalating formulations* — most extreme single-company forward revenue claim in vault. *Anthropic "TPU compute"* — architectural derivation observation. *95% TSMC wafer dependency* — most explicit foundry dependency disclosure. *Two Tier 1/Tier 2 framing gaps* (COT risk + rack leasing margin compression). *CEO combativeness meta-pattern* (Hock Tan "you must be a bit hallucinating" + Murphy "Do you see me blinking?"). *Six custom XPU customers* (Google, Anthropic, Meta, OpenAI named; two unnamed; ~10 GW deployment 2027).
+
+---
+
+## Session 9 — 2026-04-22 — [[MRVL]] standalone ingest
+
+**Type.** Single-company ingest. Two-stop protocol. **First Layer 3 page** (template-setting). **First post-seed-set ingest.** First test of CLAUDE.md v5 conventions on a novel company type.
+
+**Sources.** MRVL 10-Q Q3 FY2026 + 10-K FY2026 + Q4 FY2026 call (Tier 1+2). January 31 fiscal year end.
+
+**Files affected (5).** Created 1: MRVL.md (Layer 3; photonics_tier 3; Layer 3 → Layer 2 trajectory noted as in-progress per Layer straddling tension convention). Updated 4: CPO-platform-battle.md (Murphy bifurcation section added: "CPO bifurcation — two battles, not one"; 3 MRVL rows; Layer 3 platform-contestant escalating disclosure variant; pattern → 23 data points × 9 companies); AI-demand-durability.md (Layer 3 demand section; six-position demand convergence); index.md; log.md.
+
+**Key findings.** *Murphy CPO bifurcation (most consequential).* CPO for scale-out "relatively limited" vs pluggables; CPO for scale-up "inflecting in a pretty big way." Restructures CPO-platform-battle.md analysis: real CPO battle is scale-up. *Tier 1/Tier 2 framing gap — widest in vault.* 10-K: "not practicable to disclose" Celestial purchase price allocation. Call: $500M/$1B run rate targets as operating forecasts. *Layer 3 platform-contestant escalating disclosure* — new CPO tiered silence variant. *Taiwan ship-to surge (3% → 20%, 10x in two years)* — strongest geographic proxy for TSMC dependency. *Named CPO competitors (first in any vault filing).* 10-K lists Ayar Labs, Lightmatter, Ranovus. *Murphy defensive on competitive noise.* "Do you see me blinking? You don't..." — most combative management passage in vault.
+
+---
+
+## Session 8 — 2026-04-20 — [[COHU]] standalone ingest (Outside Framework 5)
+
+**Type.** Single-company ingest. Two-stop protocol. **Eighth and final seed-set ingest session** — completes Manufacturing Equipment tier alongside [[AEHR]] (test/burn-in) and [[ONTO]] (metrology).
+
+**Sources.** COHU 10-Q Q3 FY2025 (Tier 1) + 10-K FY2025 (Tier 1). Two-source ingest — Q4 FY2025 earnings call unavailable (paywalled wrong-quarter file). **Only seed-set company documented solely from Tier 1 filings.**
+
+**Files affected (4).** Created 1: COHU.md (Layer 3; photonics_tier "outside" — first vault Outside Framework 5 placement; honest verdict: broad-cycle semiconductor test and inspection equipment with aspirational AI language but zero quantified AI-specific exposure). Updated 1: CPO-platform-battle.md (2 COHU rows; pattern → 20 data points × 8 companies — equipment-tier functional split now three-company observation: AEHR discusses photonics, ONTO and COHU maintain silence). index.md + log.md.
+
+**Key findings.** *Honest verdict: broad-cycle, not AI-specific.* Aspirational AI language without quantified AI-specific revenue. No customer above 10% annually. *Photonics_tier "outside" — cleanest classification.* Zero photonics-adjacent terminology. *Equipment-tier analytical product.* AEHR + ONTO (structural AI, photonics_tier 4) vs COHU (broad-cycle, "outside") demonstrates equipment tier is not monolithic. *Tier-1-only coverage as analytical observation.* Tier 2/Tier 1 divergence pattern cannot be tested.
+
+**Seed-set completion.** All 8 seed-set companies have wiki pages. Vault transitions from initial buildout phase to monitoring/refresh phase.
+
+---
+
+## Mini-Session 3 — 2026-04-20 — ASML EUV foundry dependency research
+
+**Type.** Tier 3 research enrichment session. Single-stop. Source: raw/research/ASML-EUV-foundry-dependency.md.
+
+**Files updated (2).** foundry-competition.md (tiered EUV dependency chain section: TSMC ~56% installed base, Samsung Taylor fab delay, Intel High-NA strategy, SMIC outside EUV chain; EUV temporal nuance; two-speed geopolitical framing); TSM.md (ASML upstream chokepoint framing; Zeiss SMT second-order chokepoint; compound bottleneck framing).
+
+**Key findings.** *Tiered EUV dependency chain.* TSMC's advantage partly derivative of EUV process learning from largest installed base. *EUV constraint cyclical, not monotonic.* 2024 transition year; 2025-2026 AI-led tightening. *Compound bottleneck framing.* TSMC at junction of leadership-node wafer supply AND advanced packaging. *Zeiss SMT second-order chokepoint.* Three levels deep (TSMC → ASML → Zeiss SMT).
+
+---
+
+## Mini-Session 2 — 2026-04-20 — Silicon photonics primer
+
+**Type.** Tier 3 research enrichment session. Single-stop. Source: raw/research/silicon-photonics-primer.md.
+
+**Files updated (3).** datacenter-laser-supply.md (decomposed chokepoint layers: InP substrate/epi → CW laser device → ELS packaging/qualification → CPO package integration; OIF-grounded scale-up bandwidth multiplier; substrate-level competition). COHR.md (six-inch InP "monopoly" reframed: Sumitomo, AXT, IQE have six-inch substrate or epitaxial capability; defensible claim is multi-site device-fabrication position; Zürich added as third qualified fab site). LITE.md (three-inch InP industry-baseline context: industry standard, not inferior).
+
+**Key findings.** *Decomposed chokepoint map (most consequential addition).* "Laser supply chokepoint" decomposes into four sequential bottlenecks. *Scale-up bandwidth multiplier.* OIF modeling supports Anderson's "orders of magnitude larger" claim directionally (~9x in some architectures). *Six-inch "monopoly" correction.* Anderson's framing not accurate at substrate level; defensible claim is device-fabrication position. *400mW is system budget, not magic number.*
+
+---
+
+## Mini-Session 1 — 2026-04-20 — NVDA absorb-and-extend research
+
+**Type.** Tier 3 research enrichment session. Single-stop. Source: raw/research/NVDA-absorb-extend-history.md.
+
+**Files updated (1).** NVDA-platform-integration.md (pattern decomposition: control-driven absorption vs coordination-driven financing taxonomy with five examples each; Mellanox integration timeline precision; Arm as structurally central exception; Expected trajectory for Lumentum and Coherent with falsification criteria).
+
+**Key findings.** *Pattern decomposition.* Five control-driven absorptions (Mellanox, Cumulus, Bright, Run:ai, OmniML) vs six coordination-driven financings (CoreWeave, Applied Digital, Nebius, Recursion, SoundHound, Ayar Labs); Arm as exception. *Mellanox timeline gap* — four years between operational integration (2020) and public financial narration (Q1 FY2025, $3.2B). *Forward-looking LITE/COHR prediction* — default expectation is continued collaboration, not near-term absorption (12-18 month acquisition test).
+
+---
+
+## Session 7 — 2026-04-20 — [[AAOI]] standalone ingest (first Layer 5 coverage)
+
+**Type.** Two-stop protocol. **First Layer 5 (integrated systems/subsystems) page** (template-setting). Three-source coverage from inception.
+
+**Sources.** AAOI 10-Q Q3 FY2025 (Tier 1) + 10-K FY2025 (Tier 1) + Q4 FY2025 call (Tier 2).
+
+**Files affected (5).** Created 1: AAOI.md (Layer 5; photonics_tier 5 with Layer 4/5 straddling tension; central section: CPO displacement analysis). Updated 4: CPO-platform-battle.md (Layer 5 asymmetric reframing pattern + 3 AAOI rows + 2 missing ONTO rows; pattern → 18 data points × 7 companies — spans all five seed-set tiers); datacenter-laser-supply.md (integrator-side evidence section; Thompson Lin "huge issue of laser shortage"; three-sided chokepoint validation now complete: supplier + platform + integrator); AI-demand-durability.md (Layer 5 demand section; five-position demand convergence); index.md.
+
+**Key findings.** *CPO displacement analysis — asymmetric tiered silence pattern (most thesis-significant).* AAOI three-source CPO profile: filings completely silent (ZERO mentions), call contains one mention reframing CPO from displacement threat to laser demand opportunity. Five sell-side analysts; **zero asked about CPO displacement** — most conspicuous analyst silence in vault. Layer 5 data points complete tiered silence pattern across all five tiers. *"Minimally differentiated" admission (10-K).* "Our products are only minimally differentiated from those of our competitors" — most candid commoditization acknowledgment in vault. *Extreme customer concentration.* Top 2 = 81.9% (DigiComm 53.1% + Microsoft 28.8%); Top 10 = 96.6%. *Prysm silicon photonics hypothesis falsified.* Zero mentions of Prysm. *Layer 4/5 straddling tension.* In-house InP laser manufacturing (Sugar Land TX, MBE + MOCVD) is Layer 4 capability; current revenue ~100% assembled transceivers. *Laser shortage cross-validates datacenter-laser-supply chokepoint.* Thompson Lin: "huge issue of laser shortage... wait at least one year or even longer." Three-sided validation complete.
+
+---
+
+## Session 6 — 2026-04-20 — [[AEHR]] + [[ONTO]] paired ingest (first paired ingest, equipment-tier coverage)
+
+**Type.** **First paired ingest in vault history.** **First two-stop protocol.** **First Manufacturing Equipment tier company pages** (template-setting). Six-source session.
+
+**Sources.** AEHR 10-K FY2025 + 10-Q Q3 FY2026 + Q3 FY2026 call (Tier 1+2; April 7, 2026 call). ONTO 10-Q Q3 FY2025 + 10-K FY2025 + Q4 FY2025 call (Tier 1+2).
+
+**Files affected (7).** Created 2: AEHR.md (Layer 3-4; photonics_tier 4 with tension — silicon photonics as named market); ONTO.md (Layer 3-4; photonics_tier 4 clean). Updated 5: TSM.md (Equipment-tier supplier relationships subsection — ONTO first equipment-tier company to explicitly name TSMC as customer 21% revenue); CPO-platform-battle.md (4 new data points; equipment-tier functional split — AEHR breaks silence, ONTO maintains; pattern → 13 data points × 6 companies); AI-demand-durability.md (equipment-tier demand section); TSMC-CoWoS.md (equipment-tier demand signals subsection); index.md.
+
+**Key findings.** *CPO tiered silence pattern extended — equipment-tier functional split.* AEHR breaks CPO silence (10-K names silicon photonics; call discusses photonic burn-in); ONTO maintains it (three sources, zero photonics discussion). Asymmetry structurally explainable: test equipment touching photonic devices discusses photonics; metrology equipment touching packaging substrates does not. *AEHR market transition: SiC → AI.* EV/power 92% → 41%; semiconductor 3% → 25%. Bookings 6x QoQ to $50.9M. *ONTO TSMC named exposure.* First equipment-tier company to explicitly name TSMC (21% Q3 FY2025 revenue). *ONTO AI inspection tension.* 10-K declined vs FY2024; call guides >30% AP growth. Open question preserved without adjudication. *No new chokepoint page.* Both companies are demand-side beneficiaries of existing chokepoints, not chokepoints themselves.
+
+---
+
+## Session 5 — 2026-04-19 — [[COHR]] three-source ingest (six-inch InP; chokepoint substantiation)
+
+**Type.** Single-stop. Three-source ingest. Second Layer 4 company page.
+
+**Sources.** COHR 10-K FY2025 + 10-Q Q2 FY2026 + Q2 FY2026 call (Tier 1+2). Six-month gap between 10-K and 10-Q/call coverage periods.
+
+**Files affected (8).** Created 1: COHR.md (Layer 4; photonics_tier 2 — six-inch InP monopoly claim, broader vertical integration than LITE). Updated 7: datacenter-laser-supply.md (**MAJOR RESTRUCTURING** — promoted from provisional to substantiated; provisional disclaimer removed; COHR evidence section; cross-validation analysis); CPO-platform-battle.md (second Layer 4 CPO break; most extensive CPO disclosure in vault; pattern → 9 data points × 4 companies); NVDA-platform-integration.md (COHR-side perspective: Anderson's "20-year relationship expansion"; three-way perspectival comparison NVDA/LITE/COHR); AI-demand-durability.md (COHR second Layer 4 demand cross-validation; two-supplier demand convergence); LITE.md (competitive landscape expanded with COHR six-inch InP asymmetry; Open question #6 resolved); index.md; log.md.
+
+**Key findings.** *Datacenter laser supply chokepoint substantiated (most consequential).* COHR independently confirms industry-wide InP supply-demand imbalance. Anderson: "very sustained, long period of supply-demand imbalance on indium phosphide." Book-to-bill >4x. Cross-validation resolves provisional status. *CPO silence pattern strengthened — second Layer 4 break.* COHR more extensive CPO discussion than LITE. "Exceptionally large purchase order" for CPO. Scale-out vs scale-up phasing: scale-up "orders of magnitude larger," "not years out." *Six-inch InP monopoly claim.* COHR "world's only producer of six-inch indium phosphide" — >4x chips at <50% cost. *NVDA investment precursor confirmed.* Anderson's "financial commitment from customers, like investment for CapEx" parallels LITE precursor.
+
+---
+
+## Session 4 — 2026-04-19 — [[LITE]] three-source ingest (first Layer 4; CPO silence broken)
+
+**Type.** Single-stop. Three-source ingest. **First Layer 4 company page** (template-setting). Three-source coverage from inception.
+
+**Sources.** LITE 10-K FY2025 + 10-Q Q2 FY2026 + Q2 FY2026 call (Tier 1+2). Six-month gap between 10-K and 10-Q/call.
+
+**Files affected (7).** Created 2: LITE.md (Layer 4; photonics_tier 3); datacenter-laser-supply.md (provisional single-source chokepoint page documenting laser supply dynamics for CPO). Updated 5: CPO-platform-battle.md (**MAJOR UPDATE** — CPO silence broken; tiered silence pattern analysis; CPO discussed at component layer before platform/manufacturing layers); NVDA-platform-integration.md (LITE-side perspective on NVDA investment: "capital offset in exchange for supply assurance"); AI-demand-durability.md (LITE Layer 4 component-supplier demand evidence); index.md; log.md.
+
+**Key findings.** *CPO silence broken (most thesis-significant).* LITE Q2 FY2026 call is first primary source to discuss CPO substantively. Tiered silence pattern: CPO discussed at component layer (LITE Layer 4) before platform (NVDA Layer 1) or manufacturing (TSM Layer 2). First primary-source CPO deployment timeline: UHP laser shipments H2 2026, scale-up CPO deployments late calendar 2027. *Customer concentration trajectory.* Customer A 16% (FY2025 annual) → 24% (Q2 FY2026 quarterly) — 50% share increase in six months. Both filings predate March 2026 NVDA investment. *Revenue inflection.* $665.5M (+65.5% YoY); Q3 guidance $805M (~+85% YoY). *Supply-constrained capacity.* InP fab fully allocated; 25-30% under-shipping demand; all EML capacity spoken for through 2027. *NVDA investment precursor.* "Active negotiations with leading customers to offset capital requirements in exchange for long-term supply assurances" — one month before March 2 announcement.
+
+---
+
+## Session 3 — 2026-04-19 — TSM 20-F FY2025 (first Tier 1 source)
+
+**Type.** Update session. **First Tier 1 source ingested into vault.** Single-stop.
+
+**Source.** TSM 20-F FY2025 (Tier 1; fiscal year ended December 31, 2025).
+
+**Files affected (6).** Updated: TSM.md (substantial update — FY2025 annual financials 59.9% gross margin / NT$3.8T revenue / 31.6% YoY; Customer concentration section with disclosed Note 38 data — Customer A 19% / Customer B 17% / three-layer disclosed/inferable/unknown structure; node-level revenue table; advanced packaging quantification — 14% non-wafer revenue / 7 backend fabs; FY2025 capex; substantially expanded geopolitical risks; JV ownership structures); TSMC-CoWoS.md (Tier 1 capacity quantification subsection); foundry-competition.md (Tier 1 vs Tier 2 competitive disclosure observation); overseas-fab-expansion.md (JV ownership structures; CHIPS Act funding; revenue-vs-production geography divergence); AI-demand-durability.md (Tier 1 annual demand data); CPO-platform-battle.md (third absence observation; baseline → three sources).
+
+**Key findings.** *Customer concentration shift (most thesis-significant).* Customer A grew below 10% → 19% in two years; surpassing Customer B (25% → 17%). Customer A revenue more than doubled FY2025 alone. 20-F does not name customers; identity attribution is inference, not disclosure. *FY2025 annual gross margin 59.9%* — full-year context for Q1 2026 quarterly 66.2%. *Non-wafer revenue 14% of total = NT$536.5B* — first quantification from any source. *COUPE/CPO/silicon photonics absent from 244-page Tier 1 filing* — COUPE missing from formal technology enumeration where CoWoS and SoIC are named. *ITRI 35% capacity agreement* — standing government call right since 1987.
+
+**Tier 1 calibration.** For factual data, 20-F provides authoritative ground truth. For competitive assessment, Tier 2 calls more analytically informative.
+
+---
+
+## Session 2 — 2026-04-19 — [[NVDA]] Q4 FY2026 earnings call
+
+**Type.** Single-stop. NVDA Q4 FY2026 earnings call (Tier 2).
+
+**Files affected (8).** Created 3: NVDA.md (Layer 1 platform definer template); CPO-platform-battle.md (thesis question 2 tracking page); NVDA-platform-integration.md (NVDA's absorb-and-extend platform pattern). Updated 5: AI-demand-durability.md (NVDA demand signals; agentic AI inflection); foundry-competition.md (LPU terminology update; Groq licensing); TSMC-CoWoS.md (customer-side demand pressure section); TSM.md (reciprocal non-naming pattern); index.md.
+
+**Key findings.** Q4 revenue $68B (+73% YoY), data center $62B (+75% YoY), full-year DC $194B. Non-GAAP gross margin 75.2% — Layer 1 platform definer economics. Networking $11B quarterly / $31B annual — 10x since Mellanox acquisition. Agentic AI inflection declared by Jensen. Groq licensing — Mellanox analog. Vera Rubin platform: 6 new chips, samples shipped, production H2 2026. COHR/LITE $2B investments (March 2, post-call) noted with explicit provenance. **CPO/photonics roadmap conspicuously absent** — zero discussion across 19 pages, zero analyst questions. **Single most thesis-significant observation: thesis question 2 remains unaddressed after two ingests of the two most central companies.** TSMC never named despite clear dependency; reciprocal non-naming pattern with TSM call.
+
+**Forward wikilinks created.** [[COHR]], [[LITE]], [[AVGO]], [[MRVL]], [[ALAB]], [[CSCO]] (pages to be created in future ingests).
+
+---
+
+## Session 1 — 2026-04-19 — [[TSM]] Q1 2026 earnings call (initial vault ingest)
+
+**Type.** First vault ingest. TSM Q1 2026 earnings call (Tier 2).
+
+**Files created (5).** TSM.md (core company page); TSMC-CoWoS.md (CoWoS advanced packaging chokepoint); AI-demand-durability.md (cross-cutting AI demand theme); foundry-competition.md (Intel, Samsung, EMIB competitive dynamics); overseas-fab-expansion.md (Arizona, Japan, Germany expansion).
+
+**Key findings.** CoWoS capacity "very tight," supply constrained through at least 2027. AI demand "extremely robust" — agentic AI transition driving more compute. Full-year 2026 revenue >30% YoY; AI accelerator CAGR mid-to-high 50s through 2029. Capex toward high end of $52-56B. Gross margin 66.2% — exceeds Layer 2 framework range, suggesting Layer 1-like value capture. Samsung winning NVDA LPU manufacturing — first true AI inroads. COUPE not mentioned in call; CoPoS referenced as distinct future packaging technology.
+
+**Thesis impact.** Strengthens. Chokepoint durability confirmed. CPO platform battle (Q2) not informed by this source.
+
+**Forward wikilinks created.** [[NVDA]] (page to be created in future ingest).
