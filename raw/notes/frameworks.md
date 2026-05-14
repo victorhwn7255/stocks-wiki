@@ -1153,6 +1153,18 @@ Single-jurisdiction chokepoint concentration risk across multiple critical suppl
 
 Diversification challenge: alternative geographies often have parallel concentration risks rather than diversification benefits. Portfolio construction should account for correlated geopolitical risk across photonics (Taiwan TSM), memory (Korea Samsung/SK Hynix), and power infrastructure (China transformers/rare earths) exposures simultaneously.
 
+### 11.11 Section 4.6 source discipline ROI methodology (codified Session 61)
+
+Kickoff drafting four-tier source discipline (Primary-source-verified / Tier 3 / Marketing-IR / Third-party-summary) per CLAUDE.md Section 4.6 produces empirically validated zero-falsification ingest methodology across full vault ingest-type variety. **16-instance zero-falsification streak post-S46 codification baseline** spans: 9 refresh ingests (6 paired: S49/S50/S54/S55/S58/S59; 3 standalone: S48/S51/S52); 1 relationship page creation (S53); 1 chokepoint page creation (S57); 2 new canonical creations (S56 + S60); 1 codification session (S61 preserves streak at 16).
+
+**Pre-codification baseline:** S45 ENS produced 6 material factual falsifications (Tijuana → Monterrey city; Springfield MO → Richmond KY + Greenville SC state; TPPL data center positioning; DataSafe HX/EnVision Connect features; ENS-VRT relationship type; TPPL AI datacenter positioning).
+
+**Post-codification baseline:** S47 FCEL = 1 falsification (Section 45X claim); S48-S60 all 0 falsifications across 13 consecutive sessions; S61 codification scope preserves streak at 16.
+
+**Cross-vault analytical product:** each ingest session that respects the four-tier boundary preserves the streak; non-corroboration of Tier 3/4 claims at primary is EXPECTED discipline outcome (NOT Section 4.5 (g') factual variance per CLAUDE.md Section 4.5 discipline boundary). Codification ROI compounds: each session validates methodology applicability across ingest-type variety; cumulative streak validates empirical durability.
+
+**LLM application:** at every ingest kickoff drafting + Stop 1 Phase 0 verification, distinguish primary-source-verified content from Tier 3/4 industry-summary content. Default uncertain claims to "Structural context per Tier 3/4 sources to verify at primary" NOT "Codified background." Track streak at log.md Phase 4 reflection "Section 4.6 ROI VALIDATED at N falsifications" annotation per session. See CLAUDE.md Section 4.6 codified methodology + per-instance evidence at log.md S47-S60 entries.
+
 ### LLM application: cross-chokepoint theme prioritization
 
 When reasoning about portfolio construction or position sizing implications across the wiki, apply Framework 11 themes as analytical lens beyond single-chokepoint placement. Multiple Framework 11 themes may apply simultaneously to any holding — e.g., NVDA carries themes 11.2 (platform integration), 11.5 (binding constraint exposure), 11.7 (custom silicon disruption), 11.10 (Taiwan TSM dependency); ETN carries themes 11.5 (binding constraint participant), 11.10 (geopolitical risk via Chinese transformer competition). Cross-chokepoint themes capture analytical patterns that per-chokepoint frameworks cannot.

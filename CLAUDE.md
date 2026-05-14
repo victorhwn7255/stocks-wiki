@@ -67,6 +67,8 @@ The `raw/notes/` folder contains human's prior conversations and framework notes
 
 **Honest-verdict discipline.** When a company's thesis fit is weak, the page states the weak fit plainly rather than constructing thesis-relevance narratives from generic positioning. Weak-fit pages may be shorter and more verdict-like. Inclusion may be for trajectory or counterpoint rather than thesis centrality. Surface clearly in Thesis role.
 
+**Honest-verdict trigger discipline (codified Session 61).** When refresh ingest surfaces evidence suggesting a baseline-reframing trigger may fire (Caveat #9 Layer 4-5 straddling upgrade; Outside Framework reframing; framework placement; A1 mode upgrade to reciprocal-confirmation), the trigger fires ONLY when evidence substantively meets the trigger's pre-registered criteria. **Substantive evidence honestly assessed against upgrade threshold; trigger NOT fired despite suggestive evidence** is the canonical methodology — not firing based on directional momentum without threshold satisfaction. 4-instance precedent post-S59: S54 [[COHU]] (HPC pipeline + silicon photonics beachhead substantive; Layer 3 / photonics_tier outside preserved); S55 [[ALAB]] (NVLink Fusion multi-customer + NVIDIA design wins; A1 5th Tier 1 reciprocal-confirmation NOT met per Gajendra ecosystem-architect framing); S58 [[VIAV]] (CPO momentum substantively framed; Layer 4 / photonics_tier 4 preserved); S59 [[GLW]] (TWO additional hyperscale Long-Term Agreements; Tier 3 over-claim mode at NVDA scope preserved per partial-non-naming pattern). Cross-reference Section 3.5 A1 three-mode framing for related discipline.
+
 ### 2.2 Source hierarchy
 
 When sources disagree on facts, higher tier wins. On interpretation, triangulate and flag the disagreement on the relevant page.
@@ -84,6 +86,30 @@ Skip promotional content and aligned commercial incentive.
 *Analyst silence as signal.* When a structural risk or opportunity is disclosed in some venue but unaddressed in others (analyst Q&A), the asymmetry is meta-signal about investor community processing. Document in Source audit notes; elevate if thesis-central.
 
 *Source unavailability as observation.* When an expected source is unavailable (call PDF missing, wrong-period file, paywalled), document explicitly with analytical implications. Inability to test patterns requiring that source is itself a finding.
+
+### 2.11 Non-calendar fiscal year-end filer protocol (codified Session 61)
+
+Vault canonical participants with non-calendar fiscal year-end dates require period-parity discipline at calendar terms. Forward-reference convention applied in session work S58/S59/S60 formalized at S61 codification per 5-instance combined precedent.
+
+**Period-parity at calendar terms (primary discipline).** Cross-vault period comparison uses calendar-quarter equivalence regardless of fiscal-year designation. For example, FLNC Q2 FY2026 (fiscal Oct 2025 - Sep 2026; Q2 = Jan-Mar 2026) = calendar Q1 2026; analytically equivalent recency to vault calendar-Dec-31 peers' Q1 2026 disclosures. Apply at Phase 0 source-set verification; document calendar-equivalence in page Source audit notes per-source entry.
+
+**Fiscal-year-designation honest framing (secondary discipline).** Fiscal-year designation preserved at source filename + financial table headers per filer canonical convention (FLNC FY2025 ending September 30, 2025; VIAV Q3 FY2026 period-end March 31, 2026; FN Q3 FY2026 ending late-June 2026). Honest framing in Thesis role: "Q2 FY2026 = calendar Q1 2026" annotation at first cross-vault comparison.
+
+**5-instance combined precedent post-S60:**
+
+| Filer | Fiscal year-end | Vault scope |
+|---|---|---|
+| [[ENS]] (S45) | March 31 | New canonical creation |
+| [[FCEL]] (S47) | October 31 | New canonical creation |
+| [[VIAV]] (S58) | late June | Refresh ingest |
+| [[FN]] (S59) | late June | Refresh ingest |
+| [[FLNC]] (S60) | September 30 | New canonical creation |
+
+Sub-protocol: 3-instance new canonical creation + 2-instance refresh = 5-instance combined; methodology durability validated across both ingest type variants.
+
+**Distinct fiscal calendars in vault post-S60:** 5 distinct calendars — December 31 (most vault canonical; calendar fiscal year); March 31 (ENS); September 30 (FLNC); October 31 (FCEL); late-June (VIAV + FN). Each new-canonical first-ingest establishes fiscal calendar; subsequent refresh-ingests apply period-parity-at-calendar-terms discipline without re-establishing.
+
+**LLM application:** at kickoff drafting + Phase 0 source-set verification + Source audit notes per-source entry drafting, apply both disciplines per filer fiscal calendar. Reference frameworks.md F7 Energy/Power sub-domain canonical text for cross-vault analog cases. Per-instance evidence at log.md S45 + S47 + S58 + S59 + S60 entries.
 
 ## 3. Page conventions
 
@@ -146,12 +172,15 @@ Distinct from Disclosure lifecycle awareness. Covers cases where Tier 1 filing a
 
 Document prominently in Source audit notes with "Tier 1/Tier 2 framing gap" label. Pattern instances compound; three or more becomes analytically significant beyond any individual disclosure.
 
-**Sub-pattern annotation (3 core sub-patterns):**
-- **Risk-framing gap:** Risk in 10-K Risk Factors but dismissed/minimized in call.
-- **Customer-concentration gap:** Customer concentration in 10-K Notes but not addressed on call.
-- **Geographic-concentration gap:** Geographic concentration in 10-K MD&A or Item 1 but not addressed in call.
+**Sub-pattern annotation (4 sub-patterns; formalized Session 61):**
+- **Risk-framing gap:** Risk in 10-K Risk Factors but dismissed/minimized in call. **Empirically dominant sub-pattern (4 instances post-S60; codification threshold met at sub-pattern scope):** AVGO COT (S10) + AVGO rack leasing margin (S10) + AXTI competitor risk (S13) + FLNC AI datacenter commercial structure (S60).
+- **Customer-concentration gap:** Customer concentration in 10-K Notes but not addressed on call. **1 instance post-S60:** MRVL Celestial acquisition disclosure (S9).
+- **Technology-content gap:** Technology details disclosed in 10-K Item 1 but not addressed on call. **1 instance post-S60:** CSCO Acacia disclosure gap (S22). Sub-pattern formally enumerated at S61 codification per Sample #2 reconciliation; historical attribution preserved.
+- **Geographic-concentration gap:** Geographic concentration in 10-K MD&A or Item 1 but not addressed in call. **0 instances post-S60;** monitoring continues pending first observation.
 
-Sub-pattern annotation supplements running count threshold. Current count canonical in `MEMORY.md` and recent log entries. *See A.3 for empirical evidence.*
+**Cumulative running count post-S60: 7 instances combined** (4 risk-framing + 1 customer-concentration + 1 technology-content + 1 multi-sub-pattern historical attribution — BE S40 with 3 sub-pattern labels: customer-concentration + BTM thesis + manufacturing scale). **S52 reconciliation gap acknowledged** — pre-S46 tracking inconsistency between "6 + 1 obs" framing and "7 counted" framing reconciled at S61 codification to authoritative post-S60 count of 7. Sub-pattern enumeration formalized at S61; cross-venue sub-pattern separately codified per Section 3.6 (A4-bis; distinct convention).
+
+Sub-pattern annotation supplements running count threshold; codification threshold per sub-pattern is 3+ instances (risk-framing met; customer-concentration + technology-content + geographic-concentration continue monitoring). Current count canonical in `MEMORY.md` post-S61 refresh + log.md Phase 4 reflection "Convention counts" block per Section 3.8 brevity discipline. *See A.3 for empirical evidence.*
 
 ### 3.5 Counterparty-attribution-only annotation (A1 three-mode framing)
 
@@ -320,8 +349,14 @@ When drafting an ingest kickoff prompt that pre-commits any vault-content refere
 
 - **(g') Kickoff drafting factual variance (codified Session 46)** — verify kickoff "Codified background from existing vault context" claims against primary sources at Stop 1 Phase 0; document material falsifications per Section 4.4. Cumulative count through Session 45: 1 instance (Session 45 ENS — 6 material falsifications: Tijuana → Monterrey city; Springfield MO → Richmond KY + Greenville SC state; TPPL data center positioning rationale; DataSafe HX/EnVision Connect/AI rack engineered features absent from regulatory filings; ENS-VRT supplier-customer → competitor relationship; TPPL primary AI datacenter positioning over-attribution).
 
-Combined (g)/(g') count post-Session 45: 9. Sub-categorization preserves analytical clarity — Tier 3 source variance is independent quality assessment of Vic-curated analytical research; kickoff drafting variance is quality assessment of kickoff drafting source discipline (Section 4.6) application.
-(h) **Source filename verification** — verify period-end dates in filing headers match source filenames.
+Combined (g)/(g') count post-Session 45: 9. **Updated cumulative count post-S60: 10 combined (8 (g) + 2 (g'))** per S46 + post-S46 monitoring (S47 FCEL = 1 (g') Section 45X falsification; S48-S60 all 0 (g')). Sub-categorization preserves analytical clarity:
+
+- **(g) Tier 3 source figure variance** — independent quality assessment of Vic-curated analytical research; explicit Tier 3 quantitative-claim variance scope; per-instance evidence at log.md S40 BE + S42 BWXT + S52 + other accumulated entries.
+- **(g') Kickoff drafting factual variance** — quality assessment of kickoff drafting Section 4.6 source discipline application; explicit kickoff "Codified background" claim variance scope; per-instance evidence at S45 ENS (1 instance pre-codification) + S47 FCEL (1 instance post-codification baseline).
+
+**Discipline boundary (codified Session 61):** Section 4.6 marketing-tier discipline application at primary verification (Tier 3/4 marketing-source content placed under "Structural context to verify at primary" in kickoff) is the EXPECTED Section 4.6 discipline outcome when claims do NOT corroborate at primary — NOT a Section 4.5 (g') factual variance. (g') increments ONLY when Tier 3/4 content was placed under "Codified background" in kickoff AND material variance surfaces at Phase 0 verification. Empirical canonical: S60 FLNC Sunstack + Edgestack product family claims placed under "Structural context to verify at primary" — non-corroboration at primary IS expected Section 4.6 discipline outcome, NOT (g') factual variance.
+
+(h) **Source filename verification** — verify period-end dates in filing headers match source filenames; verify ticker-content match per S59 FN-FNF mislabel precedent. Cumulative count post-S60: 2 instances (PLAB S28 file-location verification + FN S59 filename-correct-content-wrong sub-pattern); 1 more instance triggers formal codification.
 
 **Application discipline.** Every Phase 0 verification block runs all applicable pattern type checks. (b)-(h) apply universally; (a) only when kickoff pre-commits framework placement. Verification result documented at Stop 1 Phase 0 output. When verification gap surfaces, document on relevant page (or Session log entry) as kickoff hypothesis falsification per Section 4.4.
 
@@ -339,6 +374,12 @@ When drafting an ingest kickoff, distinguish four source tiers and place each in
 **Empirical motivation.** Sessions 44 and 45 surfaced systemic kickoff drafting factual variance from marketing-tier and third-party-summary content treated as primary-source-verified — Session 44 caught 3 frontmatter convention divergences; Session 45 caught 6 material factual falsifications (Tijuana → Monterrey; Springfield MO → Richmond KY + Greenville SC; TPPL data center positioning over-attribution; DataSafe HX/EnVision Connect features absent from regulatory filings; ENS-VRT supplier-customer → competitor relationship type; TPPL primary AI datacenter positioning → primary applications Specialty AGM + Motive Power maintenance-free).
 
 **Application discipline.** Treat the boundary as binding: when a kickoff drafter is uncertain whether a claim is primary-source-verified, default to "Structural context per Tier 3/4 sources to verify at primary" placement. Stop 1 Phase 0 verification per Section 4.5 A6 sub-pattern (g') tests primary-source content against kickoff "Codified background" placements; falsifications documented per Section 4.4.
+
+**Empirical ROI durability (codified Session 61).** Section 4.6 four-tier source discipline produced a **16-instance zero-falsification streak post-S46 codification baseline** (S47 = 1 falsification at FCEL; S48-S60 all 0 falsifications across 13 consecutive sessions). Streak spans full ingest-type variety: **9 refresh ingests** (6 paired refreshes: S49 [[LEU]]+[[BWXT]] / S50 [[LITE]]+[[COHR]] / S54 [[COHU]]+[[ONTO]] / S55 [[ALAB]]+[[ANET]] / S58 [[VECO]]+[[VIAV]] / S59 [[GLW]]+[[FN]]; 3 standalone refreshes: S48 [[AAOI]] + S51 [[HALEU-fuel-chokepoint]] chokepoint refresh + S52 [[ETN]] standalone refresh); 1 relationship page creation (S53 [[nvidia-supply-chain-commitments]]); 1 chokepoint page creation (S57 [[BTM-grid-bypass-workaround]]); 2 new canonical creations (S56 [[CAT]] + S60 [[FLNC]]); 1 codification session (S61 itself; preserves streak at 16). **Section 4.6 four-tier framework empirically validated as canonical kickoff drafting source discipline methodology.**
+
+**Cross-vault ROI signal.** Pre-codification baseline = S45 ENS produced 6 material factual falsifications; post-codification baseline = 0 falsifications per session at full ingest-type variety. Codification ROI compounds: each session that respects Section 4.6 four-tier discipline preserves streak; each ingest type validated extends methodology applicability. Section 4.6 marketing-tier discipline application at primary verification (Tier 3/4 marketing-source content placed under "Structural context to verify at primary" — non-corroboration is EXPECTED discipline outcome, NOT Section 4.5 (g') factual variance per discipline boundary above).
+
+See frameworks.md Section 11.11 for cross-chokepoint theme framework application.
 
 ## 5. Operational guidance
 

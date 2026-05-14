@@ -64,6 +64,7 @@ COMPANIES = {
     "ENS":  {"cik": "0001289308", "forms": ["10-K", "10-Q"]},
     "FCEL": {"cik": "0000886128", "forms": ["10-K", "10-Q"]},
     "FLNC": {"cik": "0001868941", "forms": ["10-K", "10-Q"]},
+    "TSEM": {"cik": "0000928876", "forms": ["20-F"]},
 }
 
 HEADERS = {"User-Agent": USER_AGENT, "Accept": "application/json"}

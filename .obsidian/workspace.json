@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "836e628768c2b97c",
+        "id": "957eb917523a33e3",
         "type": "tabs",
         "children": [
           {
-            "id": "3223e9231cd6f779",
+            "id": "0eaf9ddfd11c109b",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -176,8 +176,12 @@
       "bases:Create new base": false
     }
   },
-  "active": "3223e9231cd6f779",
+  "active": "0eaf9ddfd11c109b",
   "lastOpenFiles": [
+    "raw/filings/TSEM-20F-2025-12-31.htm",
+    "raw/transcripts/TSEM-earnings-2026-05-13.pdf",
+    "prompts/session61_codification_tranche2_kickoff.md",
+    "README.md",
     "wiki/chokepoints/InP-supply.md",
     "Untitled.canvas",
     "wiki/companies/AXTI.md",
@@ -192,7 +196,6 @@
     "scripts/find_connections.py",
     "scripts/__pycache__/vault_parsers.cpython-313.pyc",
     "scripts/vault_parsers.py",
-    "raw/transcripts/FN-earnings-2026-05-04.pdf",
     "prompts/session59_glw_fn_paired_refresh_kickoff.md",
     "wiki/companies/NVDA.md",
     "prompts/session58_veco_viav_paired_refresh_kickoff.md",
@@ -212,9 +215,6 @@
     "prompts/session49_bwxt_leu_paired_refresh_kickoff.md",
     "prompts/session49_bwxt_leu_paired_refresh_kickoff (1).md",
     "chat_session_handoff.md",
-    "prompts/session48_aaoi_refresh_kickoff.md",
-    "wiki/companies/FCEL.md",
-    "prompts/session47_fcel_ingest_kickoff.md",
     "raw/transcripts/COHR-earnings-2026-02-04_files/1.png"
   ]
 }
