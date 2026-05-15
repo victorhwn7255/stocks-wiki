@@ -1,7 +1,7 @@
 ---
 type: chokepoint
 tickers: [TSM, NVDA, AEHR, ONTO, AVGO, MRVL]
-last_updated: 2026-04-27
+last_updated: 2026-05-15
 ---
 
 # TSMC CoWoS — Advanced Packaging Chokepoint
@@ -18,6 +18,8 @@ Advanced packaging capacity is "very tight" as of Q1 2026 (TSM Q1 2026 call). TS
 
 Supply constraints in advanced packaging are expected to persist through at least 2027, paralleling front-end wafer capacity tightness (TSM Q1 2026 call). C.C. Wei confirmed that demand continues to increase and supply remains insufficient, with TSMC working to "speed it up" by pulling forward construction and equipment schedules.
 
+**AVGO 2026-2028 HBM+CoWoS dual-chokepoint securing (Q1 FY2026):** Per Hock Tan + Charlie Kawwas Q1 FY2026 call, AVGO has secured both leading-edge wafers AND HBM through 2028 — *"We're probably the first one to secure that up to 2028 or beyond"* (Kawwas) — establishing AVGO 95% TSMC wafer + HBM dependency as the **single most concentrated cross-chokepoint dependency in vault** (per [[HBM-oligopoly]] S64 paired chokepoint analysis). [[TSEM]] S62 Q1 2026 call CEO Ellwanger separately disclosed TSMC purchases TSEM PIC content for CoWoS — see TSEM SiPh PDK foundry reference-design supplier complementarity section below.
+
 ### Quantification from Tier 1 filing
 
 The TSM 20-F FY2025 provides the first quantitative context for advanced packaging, though no CoWoS-specific breakout exists:
@@ -27,6 +29,18 @@ The TSM 20-F FY2025 provides the first quantitative context for advanced packagi
 - **Capex allocation:** FY2025 capex was allocated in part to "expanding capacity for specialty technologies and advanced packaging, including building/facility expansion for Fab 23 and Fab 24" (TSM 20-F FY2025, p.33). This confirms advanced packaging has its own identified capex category, not merely embedded in front-end wafer spending.
 - **No material contracts:** "TSMC is not currently a party to any material contract, other than contracts entered into in the ordinary course of business" (TSM 20-F FY2025, p.61). Even the largest advanced packaging customer relationships are classified as ordinary course — no single customer supply agreement rises to SEC materiality.
 - **Temporary receipts from customers:** NT$189,858M as of December 2025, down 35% from NT$291,102M in December 2024 (TSM 20-F FY2025, Note 22c). These are advance capacity reservation payments. The decline could reflect increased capacity availability, changing reservation terms, or balance sheet reclassification — flagged as an open question in [[TSM]].
+
+## TSEM SiPh PDK foundry reference-design supplier complementarity (S62 NEW analytical product)
+
+**First explicit primary-source documentation of cross-vault Layer 2 foundry-tier reference-design supplier complementarity pattern at CoWoS scope** per [[TSEM]] S62 canonical placement (2026-05-14). CEO Russell Ellwanger Q1 2026 call response to Krish Sankar (TD Cowen) on TSMC COUPE competitive positioning — exact CEO wording preserved per Section 3.3 rhetorical claims convention:
+
+> *"I think there's nobody that can compete with TSMC with what they're doing on the extreme deep digital content...TSMC wouldn't be buying our PIC for their CoWoS if our PIC was much superior to everything else"* — followed by clarification: *"we become the reference design for the major integrators, and that would be part of what they'd be using with TSMC."*
+
+**Cross-vault analytical implication.** TSEM occupies wafer-tier SiPh PDK foundry position (Layer 2 / photonics_tier 2 per S62; PH18 200mm + PH45 300mm SiPho platforms; 1.6Tb/s + 3.2Tb/s development; CPO investment scope); provides PIC content into TSMC CoWoS at advanced packaging integration scope. **Complementarity, not pure competition.** Refines cross-vault chokepoint analysis at [[advanced-optical-packaging]] S31 + [[cpo-integration]] S32 baseline framing — TSEM is reference-design supplier across "major integrators" including TSMC at wafer-tier SiPh PDK scope. **First explicit primary-source documentation of cross-vault Layer 2 foundry-tier reference-design supplier complementarity pattern in vault history.**
+
+**Bilateral verification candidate at TSM-side pending Q2 2026 refresh.** Does TSM 20-F FY2026 (expected ~April 2027) or Q2 FY2026 earnings call (mid-July 2026 reporting timeline expected) reference TSEM PIC content at CoWoS scope? Pre-registered in Open questions section below.
+
+**Methodology codification candidate (Tranche 2C):** Cross-vault Layer 2 foundry-tier reference-design supplier complementarity methodology formalization at frameworks.md.
 
 ## Demand drivers
 
@@ -51,6 +65,10 @@ The [[NVDA]] Q4 FY2026 call provides customer-side evidence that directly reinfo
 
 The combination of NVDA's architecture choices (reticle-limited dies → larger CoWoS packages) and deployment scale (9 GW and growing) means CoWoS demand pressure is structural and intensifying, not merely a near-term supply-demand imbalance.
 
+**NVDA GTC March 16, 2026 expanded context — Spectrum-X CPO production + Kyber CPO scale-up.** Jensen disclosed at GTC: Spectrum-X CPO switch *"in full production"*; COUP/COUPE packaging co-developed with TSMC (*"We invented the process technology with TSMC. We're the only one in production with it today"* — Jensen, attributed per rhetorical claims convention); Spectrum-6 as *"world's first co-packaged optical"* switch; Kyber CPO scale-up. NVDA platform integration absorbs photonics + power infrastructure layers simultaneously through Vera Rubin chip generation — see [[nvidia-supply-chain-commitments]] S53. **CPO production status broke previous tier-silence pattern at NVDA primary** per [[CPO-platform-battle]] theme observation; production-confirmed adoption shifts CPO chokepoint analysis from forward-looking to current-bottleneck-adjacent.
+
+**NVDA $2B equity-plus-purchase materialization at LITE+COHR (S50 Q3 FY2026; 2026-05-10 refresh).** Per [[LITE]] + [[COHR]] paired refresh — NVDA $2.02B cash injection at LITE (CFO Wajid Ali Q3 call) + NVDA $2B equity stake + **multibillion-dollar multi-year CPO supply agreement extending through end of decade** at COHR (CEO Anderson Q3 call). **Sherman TX 6-inch InP CW laser production explicitly tied to NVDA partnership** per S50. Capital-offset-for-supply-assurance modality — NVDA pre-funding photonics laser supplier capacity expansion alignment with CoWoS demand trajectory. Cross-vault [[datacenter-laser-supply]] chokepoint refresh propagation candidate post-S50. **First reciprocal-confirmation A1 mode materialization at NVDA architect-customer commitment scope** per [[nvidia-supply-chain-commitments]] S53.
+
 ### Equipment-tier demand signals
 
 Two equipment-tier companies provide upstream confirmation of CoWoS demand intensity:
@@ -58,6 +76,8 @@ Two equipment-tier companies provide upstream confirmation of CoWoS demand inten
 **[[AEHR]]** explicitly names "CoWoS" as an application for its FOX-NP burn-in systems, positioning Known-Good Die (KGD) testing as economically critical for multi-die advanced packaging — a defective die in a CoWoS package wastes the entire package (AEHR Q3 FY2026 call). AEHR's bookings surged 6x QoQ to $50.9M in Q3 FY2026, with advanced packaging test driving the semiconductor segment's growth from 3% to 25% of revenue (AEHR 10-K FY2025; AEHR 10-Q Q3 FY2026).
 
 **[[ONTO]]** derives substantial revenue from TSMC — its largest named customer at 21% of Q3 FY2025 revenue (ONTO 10-Q Q3 FY2025). ONTO's advanced packaging and HBM metrology revenue grew >30% YoY (ONTO Q4 FY2025 call), and its $240M+ VPA pipeline is concentrated in HBM measurement. As the metrology supplier to the CoWoS chokepoint holder, ONTO's demand trajectory is a leading indicator: metrology tool orders precede wafer starts.
+
+**ONTO S54 Q1 2026 refresh propagation (2026-05-11):** Record $292M revenue (+9.6% sequential); FY2026 RAISED outlook >30% revenue growth / >$1.3B; **advanced packaging +50% growth** (raised from prior >30%); **advanced nodes +25% growth** (ahead of WFE low-20%s). **Dragonfly G5 commercial ramp at HBM 2D + 3D metrology wins** — Q1 handful → Q2/Q3/Q4 doubling each quarter; qualified at leading 2.5D logic customer; 15-application pipeline across 10 customers. **Atlas G6 OCD metrology head-to-head competitive wins at multiple key accounts for next-gen logic nodes** + GAA transistor + HBM DRAM scope. **Rigaku 27% strategic stake $710M H2 2026 close from Carlyle Group** — 75-year X-ray technology partnership; hybrid metrology solutions roadmap; X-ray adds penetration + precision for exotic materials + 3D structures at transistor + chiplet scale relevant to HBM 16-die stack metrology requirements. **TSMC + Samsung + SK Hynix all named customers via XBRL** (anonymous Customer A/B/C in body) — first explicit named-customer disclosure of TSMC AND HBM oligopoly suppliers at vault Tier 1 filing scope. ONTO is the **strongest cross-vault leading-indicator** for CoWoS + HBM dual-chokepoint capacity trajectory.
 
 Equipment orders are a structural leading indicator for packaging capacity deployment. Both companies' demand signals are consistent with the CoWoS constraint intensifying rather than easing.
 
@@ -70,6 +90,30 @@ Two custom ASIC designers provide demand-side corroboration for the CoWoS chokep
 **[[MRVL]] — Taiwan surge as geographic proxy.** Taiwan ship-to revenue surged from $161.9M (3%) in FY2024 to $1,657.3M (20%) in FY2026 — 10x in two years — strongly suggesting TSMC advanced packaging dependency as custom ASICs ship to Taiwan for CoWoS/InFo integration (MRVL 10-K FY2026). COO Koopmans named supply binding constraints explicitly: "advanced wave fabrication, advanced packaging, large body substrates" (MRVL Q4 FY2026 call).
 
 Both companies corroborate the CoWoS chokepoint from the demand side: AVGO explicitly, MRVL through geographic and supply language. Together with the NVDA customer-side evidence (dielet avoidance driving larger CoWoS packages) and the equipment-tier signals ([[AEHR]], [[ONTO]]), the demand case for CoWoS constraint intensification is now supported from four distinct vantage points in the supply chain.
+
+**HBM-CoWoS dual-chokepoint securing pattern post-S64 [[HBM-oligopoly]] canonical creation.** AVGO 95% TSMC + HBM secured through 2028 = **single most concentrated cross-chokepoint dependency in vault** (HBM oligopoly supplier-tier per [[HBM-oligopoly]] S64 + CoWoS integration-tier this chokepoint). AVGO Bailly CPO + Tomahawk custom ASIC product line HBM bandwidth integration dynamics drive simultaneous demand on both upstream HBM oligopoly capacity AND CoWoS advanced packaging integration capacity. Six AVGO custom XPU customers approaching ~10 GW aggregate deployment 2027 = substantial dual-chokepoint allocation footprint.
+
+## HBM integration tier paired chokepoint (S64 NEW analytical product)
+
+**HBM-CoWoS upstream-vs-integration tier pair formalized per [[HBM-oligopoly]] S64 canonical creation.** Sequential chokepoint pairing — **HBM oligopoly chokepoint = upstream supplier-tier (SK Hynix 50-62% + Samsung 17-35% + Micron 11-21%; all non-vault); TSMC CoWoS chokepoint (this page) = integration-tier for HBM base die stacking** at AI accelerator packaging.
+
+**New chokepoint pair structural type — upstream-vs-integration tier pair** — distinct from [[transformer-supply]] + [[BTM-grid-bypass-workaround]] constraint-source-vs-workaround pair (S63 paired-chokepoint methodology). Tranche 2C methodology codification candidate.
+
+**Sequential causation pattern at primary-source verification:**
+
+```
+HBM oligopoly chokepoint (upstream supplier-tier)
+  → 3-supplier global concentration (SK Hynix 50-62% + Samsung 17-35% + Micron 11-21%)
+    → HBM3E → HBM4 generation transition (12 → 16 dies-per-stack; 33% more DRAM per AI accelerator)
+      → SK Hynix ~90% NVDA HBM primary supplier concentration (consumer-side)
+        → TSMC CoWoS integration-tier (this chokepoint) = HBM base die stacking advanced packaging
+          → AVGO 95% TSMC + HBM secured 2026-2028 (dual-chokepoint securing pattern)
+            → NVDA Vera Rubin HBM4 16-die stack requirements drive CoWoS allocation tension
+```
+
+**Cross-domain 4-framework bridge substantiated.** HBM-CoWoS paired chokepoint dynamics span F2 Layer (cross-Layer 1-4 vault canonical substantiation) + F5 Photonics adjacent (at HBM optical I/O future integration scope) + **F6 Memory PRIMARY** (HBM oligopoly) + F8 Equipment adjacent (metrology/inspection/burn-in subscale at ONTO + COHU + AEHR). First explicit 4-framework cross-domain bridge in vault canonical scope.
+
+**HBM4 ramp dynamics + "3-to-1 rule" capacity displacement at CoWoS scope.** Per `_thesis.md` Rank 1 Memory: HBM consumed 23% DRAM wafers Q4 2025; HBM3E ~$300/stack → HBM4 ~$500/stack pricing; 16-Hi HBM stacks requested by NVDA Q4 2026 — *"formidable"* technical challenge. Higher HBM density → higher thermal load at CoWoS package + tighter base die stacking precision requirements; reinforces TSMC mechanical stress + warpage + thermal limitation challenges per Technical challenges section above.
 
 ## Expansion plans
 
@@ -106,6 +150,16 @@ C.C. Wei's response acknowledged the competition: "we understand that our compet
 
 See [[foundry-competition]] for broader competitive dynamics.
 
+## Cross-vault NVIDIA partnership pattern at CoWoS scope
+
+**NVDA-TSM A1 counterparty-attribution-only foundry-customer modality per [[nvidia-supply-chain-commitments]] S53.** NVDA is implicitly TSMC's most significant HPC/AI customer per [[TSM]] customer concentration disclosure (Customer A 19% FY2025 per 20-F Note 38 — anonymized per SEC convention). Reciprocal non-naming pattern preserved at earnings call scope but **broken at GTC venue** — NVDA named TSMC explicitly at GTC March 16, 2026 per COUP/COUPE co-development disclosure (*"We invented the process technology with TSMC"* — Jensen).
+
+**Cross-vault NVIDIA partnership pattern post-S64 = 4 Tier 1 + 7 Tier 2 substantiating sources** per [[nvidia-supply-chain-commitments]] S53 living document scaffolding:
+- **Tier 1 reciprocal-confirmation:** [[LITE]] $2B equity + [[COHR]] $2B equity + multibillion-dollar multiyear CPO supply + [[ETN]] Beam Rubin DSX platform + [[VRT]] Strategic Partnership + EcoDataCenter Sweden Vera Rubin deployment
+- **Tier 2 cross-vault context:** [[FN]] NVIDIA 27.6% top customer + [[ALAB]] NVLink Fusion ecosystem partner + [[CSCO]] enterprise networking partnership + [[ANET]] networking interoperation + **[[TSM]] foundry-customer (this chokepoint)** + [[AVGO]] peer-competitor framing + [[TSEM]] reciprocal-confirmation-LIMITED at NVIDIA development partner scope
+
+**TSM-side bilateral verification deferred per TSM Q2 2026 release pending** (mid-July 2026 reporting timeline expected). Future TSM refresh would surface: Vera Rubin deployment trajectory at TSM customer concentration scope; COUP/COUPE commercialization timeline + capacity allocation; HBM-CoWoS dual-chokepoint customer allocation patterns. Pre-registered in Open questions section below.
+
 ## Thesis implications
 
 CoWoS capacity tightness directly supports the thesis that value concentrates at structural chokepoints. Evidence from this call:
@@ -120,12 +174,48 @@ CoWoS capacity tightness directly supports the thesis that value concentrates at
 
 5. **CoWoS pricing remains opaque.** No advanced packaging pricing was discussed. All pricing questions focused on wafer pricing. Whether TSMC is capturing chokepoint-appropriate pricing on CoWoS remains an open question for future sources.
 
+6. **HBM-CoWoS paired chokepoint completion strengthens cross-domain bridge thesis.** Post-S64 [[HBM-oligopoly]] canonical creation, the HBM-CoWoS upstream-vs-integration tier pair operationalizes Memory framework F6 → Foundry-Packaging tier dependency chain. AVGO 95% TSMC + HBM secured 2026-2028 = single most concentrated cross-chokepoint dependency in vault. Investment positioning at single-chokepoint exposure misses dependency-chain dynamics; dual-chokepoint exposure (HBM via [[HBM-oligopoly]] + CoWoS via this page) captures structural pricing power that single-chokepoint exposure cannot.
+
+7. **TSEM reference-design supplier complementarity strengthens Layer 2 foundry-tier moat framing.** TSMC purchases TSEM PIC content for CoWoS at integrator scope (S62 CEO Ellwanger disclosure). Complementarity, not pure competition. **Refines TSMC's chokepoint position from sole-foundry-integration toward integrator-of-specialty-foundry-reference-designs at SiPh PDK foundry scope** — TSMC's moat extends beyond own advanced packaging to integration of best-in-class specialty foundry inputs. Strengthens rather than narrows the chokepoint thesis per `_thesis.md` "TSMC's packaging advantage narrows" disconfirming signal test.
+
+## Open questions
+
+1. **TSM Q2 2026 refresh propagation (highest priority).** TSM S3 baseline ~60 sessions stale at S65 refresh; **Q2 FY2026 release expected mid-July 2026 reporting timeline**. TSM refresh would substantively close cumulative refresh debt accumulated since S3 (S17 + S18 + S19 + S20 + S22 cross-validation cycles) + propagate accumulated cross-vault analytical product (TSEM reference-design complementarity + HBM-CoWoS paired chokepoint + NVDA $2B equity + GTC March 2026 + ONTO S54 metrology refresh). **Substantive strengthening trigger for this chokepoint page.**
+
+2. **TSEM reference-design supplier complementarity bilateral verification at TSM-side.** Does TSM Q2 FY2026 call or future 20-F reference TSEM PIC content at CoWoS scope? S62 [[TSEM]] CEO Ellwanger disclosure establishes TSEM-side; TSM-side bilateral verification deferred per non-vault supplier-side mode + TSM Q2 2026 release pending.
+
+3. **COUP/COUPE naming variant resolution.** Jensen used "COUP" at GTC March 2026; `frameworks.md` uses "COUPE"; TSEM Q1 2026 call references TSMC COUPE indirectly. Whether COUP and COUPE are the same technology or naming variants is unresolved. Resolution pending future cross-vault verification at TSM Q2 2026 + future NVDA refresh.
+
+4. **TSMC CoWoS capacity allocation by customer split.** AVGO 95% TSMC + HBM secured 2026-2028 + NVDA dielet-avoidance reticle-limited dies + MRVL Taiwan ship-to 3% → 20% surge = three substantial customer demand vantages but customer-specific CoWoS allocation split NOT disclosed at TSM primary. NVDA Customer A 19% concentration (TSM 20-F FY2025 Note 38; anonymized per SEC convention) is closest proxy. Future TSM refresh propagation candidate.
+
+5. **CoWoS pricing power realization.** Whether TSMC captures chokepoint-appropriate pricing on CoWoS remains opaque. Tier 3 source `raw/research/AI-power-energy-bottleneck-research-report.md` analogy from transformer-OEM scope ("backlog quality is underestimated... 15-25% multi-year price/cost expansion") raises whether CoWoS backlog quality is similarly underestimated. TSM Q1 2026 66.2% gross margin context (exceeds Layer 2 framework 40-60% range) suggests CoWoS pricing may be chokepoint-appropriate; explicit CoWoS-specific margin disclosure absent.
+
+6. **COUP/CoPoS commercial ramp trajectory.** CoPoS pilot line under construction; production expected "a couple of years later" per Q1 2026 call. COUP/COUPE production status per NVDA GTC March 2026; commercial scale trajectory pending. Future TSM refresh + NVDA Q1 fiscal 2027 refresh propagation candidate.
+
+7. **HBM-CoWoS dual-chokepoint dynamics.** Per S64 [[HBM-oligopoly]] paired chokepoint formalization: how does HBM4 16-die stack qualification trajectory interact with CoWoS allocation? AVGO 2026-2028 dual securing pattern suggests architect-customer side perceives dual-chokepoint risk; whether single-chokepoint vs dual-chokepoint allocation logic dominates at TSMC capacity planning side opaque. Future TSM refresh propagation candidate.
+
+8. **Intel EMIB competitive evolution.** TSMC acknowledged EMIB as real alternative (Morgan Stanley Q1 2026 question) — not dismissive framing. EMIB substrate-based "more suitable for circular larger size chip design." Intel Foundry execution trajectory + EMIB customer adoption + AVGO/NVDA/MRVL dual-sourcing dynamics pre-registered for cross-vault [[foundry-competition]] theme refresh. TSMC's packaging advantage narrows disconfirming signal test candidate.
+
+9. **OSAT capacity scaling impact on chokepoint moderation.** TSMC working with OSAT partners (ASE Technology + Amkor Technology) to expand advanced packaging capacity. ASE + Amkor non-vault per [[advanced-optical-packaging]] S31 Tier C candidate framing. OSAT-tier capacity scaling could gradually moderate chokepoint severity if expansion materializes; alternatively could perpetuate chokepoint via qualification cycle dynamics. Future cross-vault refresh propagation candidate at OSAT primary-source ingest (ASE Taiwanese ADR or Amkor US-listed canonical creation).
+
+10. **Adjacent chokepoint refresh propagation trigger.** [[cpo-integration]] S32 baseline ~17 sessions stale + [[datacenter-laser-supply]] S27 baseline ~18 sessions stale + [[advanced-optical-packaging]] S31 baseline ~17 sessions stale — all candidates for refresh propagation post-S65 TSMC-CoWoS refresh + S62 [[TSEM]] + S64 [[HBM-oligopoly]] accumulated cross-vault analytical product. Sequential refresh propagation per S51 [[HALEU-fuel-chokepoint]] precedent cadence.
+
 ## Cross-references
 
-- [[datacenter-photonics-supply-chain]] — Section 2.6 (Photonic foundries) for the COUPE vault-conflict reconciliation; Section 2.7 (Assembly / packaging / testing) for cross-layer context; Bucket C in the investability framing covers the foundry-packaging-connectivity layer.
+- **[[HBM-oligopoly]]** (S64) — **Paired chokepoint upstream-vs-integration tier pair.** HBM oligopoly = upstream supplier-tier (SK Hynix + Samsung + Micron); TSMC-CoWoS (this page) = integration-tier for HBM base die stacking. First explicit upstream-vs-integration tier paired chokepoint structural type. See HBM integration tier paired chokepoint section above.
+- **[[TSEM]]** (S62) — SiPh PDK foundry reference-design supplier complementarity at CoWoS scope; PH18 + PH45 SiPh PDK foundry; PIC content reference designs into TSMC CoWoS at major integrator scope per CEO Ellwanger Q1 2026 call.
+- **[[nvidia-supply-chain-commitments]]** (S53) — Cross-vault NVIDIA partnership pattern relationship page; TSM Tier 2 cross-vault context entry (foundry-customer modality counterparty-attribution-only).
+- **[[cpo-integration]]** (S32) — CPO integration mechanics chokepoint; COUP/COUPE foundry-tier integration cross-references this page; 9 vault company integration positioning.
+- **[[advanced-optical-packaging]]** (S31) — Advanced optical packaging chokepoint at OSAT + finished-module scope; structurally distinct from CoWoS foundry-tier; ASE + Amkor OSAT-tier participants overlapping.
+- **[[InP-supply]]** (S33) — InP substrate + epitaxial supply chokepoint upstream of HBM ↔ CoWoS integration scope.
+- **[[transformer-supply]]** (S63) — Energy/Power chokepoint pair complement; distinct domain at distribution-side power infrastructure constraint.
+- **[[datacenter-photonics-supply-chain]]** (S19) — Section 2.6 (Photonic foundries) for the COUPE vault-conflict reconciliation; Section 2.7 (Assembly / packaging / testing) for cross-layer context; Bucket C in the investability framing covers the foundry-packaging-connectivity layer.
+- **[[CPO-platform-battle]]** (S22) — CPO platform-strategy archetype theme; NVDA Spectrum-X CPO production + Bailly platform competitive dynamics + Murphy bifurcation thesis.
+- **[[foundry-competition]]** (S15) — Broader foundry competitive dynamics including Intel EMIB + Samsung Foundry + Intel Foundry.
 
 ## Change log
 
+- **2026-05-15 (Session 65 1-stop chokepoint refresh — second 1-stop chokepoint refresh post-S51 [[HALEU-fuel-chokepoint]] precedent):** **First major-chokepoint full refresh in vault history.** 5 escalation triggers all NEGATIVE (no new primary-source ingest; vault participants stable; no new structural type; no new chokepoint creation; cross-vault analytical product established at S62 + S64 — propagation only). Substantive refresh additions ~120 lines (137 baseline → 257 final; expansion within Section 3.8 brevity discipline per S52 ETN precedent). **THREE NEW substantive sections delivered: (1) TSEM SiPh PDK foundry reference-design supplier complementarity (S62 NEW analytical product** — CEO Ellwanger explicit "TSMC wouldn't be buying our PIC for their CoWoS... we become the reference design for the major integrators"; first explicit primary-source documentation of cross-vault Layer 2 foundry-tier reference-design supplier complementarity pattern in vault history; methodology codification candidate Tranche 2C); **(2) HBM integration tier paired chokepoint (S64 NEW analytical product** — HBM upstream-vs-CoWoS integration tier pair formalization; new chokepoint pair structural type; sequential causation pattern documented; cross-domain 4-framework bridge); **(3) Cross-vault NVIDIA partnership pattern at CoWoS scope** — TSM Tier 2 cross-vault context entry per [[nvidia-supply-chain-commitments]] S53; 4 T1 + 7 T2 cross-vault pattern. **EXPANSIONS to existing sections:** Current capacity status (AVGO 2026-2028 HBM+CoWoS dual-chokepoint securing); Customer-side demand pressure NVDA perspective (NVDA $2B equity-plus-purchase materialization at LITE+COHR per S50 + NVDA GTC Spectrum-X CPO production); Equipment-tier demand signals (ONTO S54 refresh propagation — Atlas G6 head-to-head wins + Dragonfly G5 commercial ramp at HBM 2D+3D + Rigaku 27% strategic stake; TSMC + Samsung + SK Hynix all named via XBRL); Custom ASIC designer demand pressure (HBM-CoWoS dual-chokepoint securing context); Thesis implications (added 6th implication paired chokepoint completion + 7th implication TSEM reference-design supplier complementarity strengthens Layer 2 foundry-tier moat framing). **NEW Open questions section** (closes structural gap — only chokepoint canonical other than provisional wafer-level-siph-test previously without Open questions section); 10 items pre-registered including highest-priority TSM Q2 2026 refresh propagation candidate. **NEW Cross-references expansion** with [[HBM-oligopoly]] + [[TSEM]] + [[nvidia-supply-chain-commitments]] + [[cpo-integration]] + [[advanced-optical-packaging]] + [[InP-supply]] + [[transformer-supply]] + [[CPO-platform-battle]] + [[foundry-competition]] cross-references (vs prior single [[datacenter-photonics-supply-chain]] reference). **Section 4.6 ROI VALIDATED at 0 falsifications (20-instance zero-falsification streak post-S46 codification baseline; refresh propagation only; no kickoff hypothesis falsification candidates per Section 4.4).** A6 (g)/(g') count UNCHANGED at 8+2=10. Cross-vault NVIDIA partnership pattern UNCHANGED at 4 T1 + 7 T2 (no new NVIDIA verification at S65 refresh scope). Wikilink-clean streak: **48 sessions** post-S65. Files updated: 5 files (TSMC-CoWoS.md substantive refresh + TSEM.md cross-reference + HBM-oligopoly.md cross-reference + index.md + log.md; under hard cap 7). nvidia-supply-chain-commitments.md TSM Tier 2 entry refresh deferred per scope discipline (light cross-reference at S64 baseline preserved; substantive TSM-side update deferred to TSM Q2 2026 refresh post-mid-July 2026 reporting). **TSMC-CoWoS chokepoint refresh propagation cadence per S51 [[HALEU-fuel-chokepoint]] precedent durability VALIDATED at major-chokepoint-page scope** — 1-stop refresh protocol applicable at substantial-content-addition scope (~120 lines additions) when 5 escalation triggers all negative.
 - **2026-05-15 (Session 64 cross-reference update — HBM oligopoly chokepoint canonical creation):** Added [[HBM-oligopoly]] cross-reference per Session 64 fourth canonical-from-first-creation chokepoint page synthesis (4th chokepoint structural type — "upstream oligopoly with vault-adjacent-scope substantiation"; Memory framework F6 vault coverage gap CLOSED). **Paired chokepoint pattern: HBM upstream-vs-CoWoS integration formalized** — HBM chokepoint = upstream supplier-tier (SK Hynix + Samsung + Micron); TSMC-CoWoS chokepoint (this page) = integration-tier for HBM base die stacking. Sequential chokepoint pairing distinct from [[transformer-supply]] + [[BTM-grid-bypass-workaround]] constraint-source-vs-workaround pair (S63 paired-chokepoint methodology); HBM-CoWoS pair = **upstream-vs-integration tier pair** — new chokepoint pair structural type (Tranche 2C methodology codification candidate). AVGO 95% TSMC wafer + HBM dependency at Q1 FY2026 = single most concentrated cross-chokepoint dependency in vault (HBM oligopoly supplier-tier + CoWoS integration-tier dual-chokepoint securing 2026-2028). MRVL Taiwan surge 3% → 20% as HBM-adjacent advanced packaging proxy preserved per S25 baseline. Cross-domain 4-framework bridge substantiated (F2 Layer + F5 Photonics adjacent + F6 Memory primary + F8 Equipment). No content edits beyond cross-reference resolution per scope discipline.
 - **2026-04-19:** Created from TSM Q1 2026 earnings call (Tier 2). Covers capacity status (very tight, constrained through 2027+), technical challenges (warpage, mechanical stress, thermal), expansion plans (internal + OSAT), competitive alternatives (EMIB), and forward technology roadmap (CoPoS, SoIC).
 - **2026-04-19:** Updated from NVDA Q4 FY2026 earnings call (Tier 2). Added customer-side demand pressure evidence: NVDA's dielet avoidance philosophy driving larger CoWoS packages, supply tightness confirmed from customer side, Blackwell deployment scale (9 GW). Structural demand intensification thesis strengthened by two-source triangulation.

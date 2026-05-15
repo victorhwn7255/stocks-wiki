@@ -46,13 +46,13 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` v9 Sectio
 
 | Page | Related Tickers | Last Updated |
 |------|-----------------|--------------|
-| [TSMC-CoWoS](wiki/chokepoints/TSMC-CoWoS.md) | TSM, NVDA, AEHR, ONTO, AVGO, MRVL | 2026-04-27 |
+| [TSMC-CoWoS](wiki/chokepoints/TSMC-CoWoS.md) | TSM, NVDA, AEHR, ONTO, AVGO, MRVL | 2026-05-15 |
 | [InP-supply](wiki/chokepoints/InP-supply.md) | AXTI, LITE, COHR, AAOI, AVGO, VECO | 2026-04-30 |
-| [datacenter-laser-supply](wiki/chokepoints/datacenter-laser-supply.md) | LITE, COHR, NVDA, AAOI, FN | 2026-04-27 |
+| [datacenter-laser-supply](wiki/chokepoints/datacenter-laser-supply.md) | LITE, COHR, NVDA, AAOI, FN | 2026-05-15 |
 | [wafer-level-siph-test](wiki/chokepoints/wafer-level-siph-test.md) | AEHR | 2026-04-28 |
 | [optical-dsp-phy-supply](wiki/chokepoints/optical-dsp-phy-supply.md) | MRVL, AVGO, CRDO | 2026-04-28 |
-| [advanced-optical-packaging](wiki/chokepoints/advanced-optical-packaging.md) | FN, LITE, COHR, AAOI | 2026-04-30 |
-| [cpo-integration](wiki/chokepoints/cpo-integration.md) | NVDA, AVGO, MRVL, CRDO, LITE, COHR, AAOI, TSM, FN | 2026-04-30 |
+| [advanced-optical-packaging](wiki/chokepoints/advanced-optical-packaging.md) | FN, LITE, COHR, AAOI, TSEM, ANET | 2026-05-15 |
+| [cpo-integration](wiki/chokepoints/cpo-integration.md) | NVDA, AVGO, MRVL, CRDO, LITE, COHR, AAOI, TSM, FN, ALAB, ANET, TSEM | 2026-05-15 |
 | [HALEU-fuel-chokepoint](wiki/chokepoints/HALEU-fuel-chokepoint.md) | LEU, BWXT, CCJ, BE, GEV | 2026-05-10 |
 | [BTM-grid-bypass-workaround](wiki/chokepoints/BTM-grid-bypass-workaround.md) | BE, FCEL, GEV, CAT | 2026-05-12 |
 | [transformer-supply](wiki/chokepoints/transformer-supply.md) | ETN, GEV | 2026-05-15 |

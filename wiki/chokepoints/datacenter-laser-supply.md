@@ -1,7 +1,7 @@
 ---
 type: chokepoint
 tickers: [LITE, COHR, NVDA, AAOI, FN]
-last_updated: 2026-04-27
+last_updated: 2026-05-15
 ---
 
 # Datacenter Laser Supply
@@ -32,7 +32,7 @@ Thomas O'Malley (Barclays) directly cross-validated on the COHR call: "Your comp
 - COHR: bookings extending into calendar 2027, forecasts to calendar 2028 (COHR Q2 FY2026 call)
 - Both companies disclosed customer investment/capital commitment negotiations one month before the March 2, 2026 NVDA $2B investments were announced
 
-**Strategic investment as chokepoint signal.** [[NVDA]]'s $2B equity investment in each of LITE and COHR ($4B total, March 2, 2026) is the strongest evidence that the Layer 1 platform definer perceives laser supply as constrained enough to warrant vertical securing. When the platform definer invests $4B across two suppliers to secure access to a component, the component is functioning as a chokepoint.
+**Strategic investment as chokepoint signal.** [[NVDA]]'s $2B equity investment in each of LITE and COHR ($4B total, March 2, 2026) is the strongest evidence that the Layer 1 platform definer perceives laser supply as constrained enough to warrant vertical securing. When the platform definer invests $4B across two suppliers to secure access to a component, the component is functioning as a chokepoint. **Materialization at primary substantiated post-S50 Q3 FY2026 paired refresh (2026-05-10)** — see NVDA $2B equity-plus-purchase materialization at LITE+COHR section below for $2.02B cash injection at LITE + COHR $2B equity + multibillion-dollar multi-year CPO supply through end of decade per CEO Anderson Q3 call.
 
 **Platform-side demand confirmation (GTC March 16, 2026).** Jensen disclosed CPO products in production — Spectrum-X CPO switch, Spectrum-6 "world's first co-packaged optical" switch — and stated NVDA needs "a lot more capacity for CPO" (NVDA GTC March 16, 2026). This is the first platform-definer production confirmation of CPO demand, advancing the demand signal from investment inference ($4B equity) to disclosed production status. The chokepoint's relevance is reinforced: if the Layer 1 platform definer has CPO products in production and describes capacity as insufficient, the laser supply constraint is not theoretical.
 
@@ -126,6 +126,94 @@ Three observations from the contract-manufacturer vantage point:
 
 The four-vantage-point chokepoint validation now spans: supplier ([[LITE]], [[COHR]] supply-side narrative), platform ([[NVDA]] $4B equity investment), integrator ([[AAOI]] customer-side shortage + vertical integration workaround), and contract manufacturer ([[FN]] component-availability binding constraint with second-source resolution path). Strongest cross-vantage chokepoint validation in vault.
 
+## NVDA $2B equity-plus-purchase materialization at LITE+COHR (S50 NEW analytical product propagation)
+
+**Single most material change driver since chokepoint creation.** Per [[LITE]] + [[COHR]] paired refresh S50 (2026-05-10) — NVDA $2B equity investment announcements (March 2, 2026) materialized at primary at Q3 FY2026 reporting cycle. Capital-offset-for-supply-assurance modality fully substantiated; investee uses capital to fund capacity expansion that customer requires; investor secures supply access ahead of capacity-binding-constraint dynamics. **First reciprocal-confirmation A1 mode materialization at NVDA architect-customer commitment scope** per [[nvidia-supply-chain-commitments]] S53 cross-vault relationship page.
+
+### LITE — $2.02B cash injection materialization
+
+CFO Wajid Ali Q3 call disclosure: *"cash and short-term investments increased by $2.02 billion to $3.17 billion, with the increase primarily driven by NVIDIA's direct investment in Lumentum."* H1 FY2026 free cash flow ~$24.8M against ~$320M annualized capex pre-injection — **investment effectively pre-funds ~6 years of standalone capex at H1 run-rate**. Capital-binding-constraint relief substantiated at supplier-side.
+
+**Capacity expansion materialization at LITE post-S50:**
+- **Greensboro NC 5th InP fab** announced; capacity expansion alignment with NVDA partnership
+- **Google explicit named at LITE** at S50 primary — broadens customer-naming pattern beyond NVDA
+- LITE three-inch InP industry-standard manufacturing baseline preserved per S5 cross-validation; 40% capacity expansion target front-loaded
+
+### COHR — $2B equity + multibillion-dollar multi-year CPO supply through end of decade
+
+CEO Anderson Q3 call disclosure: *"$2 billion equity investment in Coherent and a multi-year supply agreement extending through the end of the decade"* + *"a multibillion-dollar agreement that extends out through the end of the decade. Importantly, it's multiple different CPO solutions"* — covers high-power CW laser + ELS module + Fiber Array Unit + polarization-maintaining fiber + isolators + thermoelectric coolers; **Sherman TX 6-inch InP CW laser production explicitly tied to NVDA partnership**. Cash $1.5B → $3.0B sequential (+$1.5B net of $290M Q3 CapEx + $162M debt repayment). Anderson framing: *"an expansion of a more than 20-year relationship."*
+
+**Capacity expansion materialization at COHR post-S50:**
+- **6-inch InP Zürich 3rd site** added (beyond Sherman TX + Järfälla Sweden baseline per S5)
+- **First 6-inch transceiver shipments** at S50 primary baseline
+- **Multi-Rail + Thermadite XPU cooling NEW segments** at COHR adjacent-scope
+- COHR claims "world's only producer of six-inch indium phosphide" preserved per S5 cross-validation
+
+### Differential structural commitment substantiation per Section 3.3 rhetorical-vs-factual
+
+**Equity-only confirmation at LITE; dual-leg equity + supply commitment at COHR.** Differential structural commitment between the two photonics laser suppliers despite identical $2B equity headline. COHR commercial commitment scope (multibillion-dollar multi-year CPO supply through end of decade) extends beyond LITE equity-only scope per S50 primary verification. Cross-vault [[NVDA-platform-integration]] six-modality framework: equity-plus-purchase modality at LITE; equity + multi-year supply agreement modality at COHR — distinct sub-modality classification.
+
+### Chokepoint validation reinforcement post-S50
+
+The chokepoint dynamic strengthens post-S50: NVDA's investment is no longer announcement-only but materialized at primary with capital deployment + commercial commitment scope quantified. **CPO supercycle thesis substantive validation** at supplier-tier vault canonical. Capacity expansion alignment (LITE Greensboro + COHR Zürich + Sherman TX 6-inch tied to NVDA partnership) demonstrates the platform definer is actively pre-funding chokepoint capacity expansion rather than merely securing equity stake passively. **The chokepoint is functioning as architected dependency** — NVDA recognizes supply constraint, materializes capital to relieve constraint, secures supply access via commercial commitment.
+
+## VECO equipment-tier substrate rerating (S58 NEW analytical product propagation)
+
+**Equipment-tier leading-indicator for InP substrate capacity expansion trajectory** per [[VECO]] S58 refresh (2026-05-12) — adjacent to Layer 1 + Layer 2 of decomposed chokepoint layers (substrate + epitaxial process equipment feeds laser device fabrication).
+
+### Substantive S58 refresh content
+
+- **$250M+ multi-customer indium phosphide laser orders** at VECO primary — Lumina MOCVD + WaferStorm wet processing + Spector IBD; delivery 2026-2027 acceleration
+- **Spector IBD capacity expansion 10X from base** per S58 baseline
+- **InP laser SAM $700M by 2030 + $2B growth opportunity framing** per S58 baseline
+- **Tier 1 logic LSA + HBM supplier production tool of record substantiation** per S58 baseline
+- **First explicit NVIDIA reference at VECO primary** at S58 — counterparty-attribution-only A1 mode at **downstream-ecosystem-reference scope** (distinct from architect-customer modality at LITE/COHR S50)
+- **Compound Semi FY2026 RAISED to ~50% growth** (vs prior +33% baseline)
+- **Axcelis merger close H2 2026 pending** (China antitrust approval; all other approvals received + shareholders of both companies approved)
+
+### Implication for laser supply chokepoint
+
+VECO MOCVD equipment + WaferStorm wet processing + Spector IBD = upstream equipment for InP substrate epitaxial process → laser device fabrication. **Equipment-tier substrate rerating substantiates upstream Layer 1 of decomposed chokepoint** — InP substrate capacity expansion trajectory at supplier-side (LITE + COHR) is downstream of VECO equipment delivery cycle. $250M+ multi-customer orders + 10X Spector IBD expansion = **leading indicator for 2026-2027 InP substrate capacity expansion materialization**.
+
+**Cross-vault [[InP-supply]] S33 chokepoint refresh propagation candidate** flagged per Open questions section below. VECO equipment-tier substrate rerating is more substantively elevated at [[InP-supply]] scope (substrate-tier + epitaxial-tier unified Option C bifurcation) than at this chokepoint (laser device-tier scope); cross-reference framing preserved.
+
+## TSEM SiPh PDK foundry InP modulator integration adjacency (S62 NEW analytical product propagation)
+
+**SiPh PDK foundry adjacency at laser-device-tier scope** per [[TSEM]] S62 canonical placement (2026-05-14). TSEM PH18DA (200mm) silicon photonics platform enables heterogeneous integration of InP modulators + InP lasers into SiPho chips at wafer-tier foundry scope.
+
+### Substantive TSEM-side InP integration disclosures (Q1 2026 call prepared remarks)
+
+- **Coherent 400 Gb per lane all-silicon Mach-Zehnder modulator long-term contract** at TSEM PH18DA — Ellwanger: *"one of our customers having signed a high volume long-term contract"* — **bilateral verification candidate at COHR-side** per next COHR refresh (Q4 FY2026 + FY2026 full-year release); pre-registered in Open questions section
+- **OpenLight 400G InP electro-absorption modulator (EAM)** heterogeneously integrated on PH18DA platform
+- **Scintil Photonics heterogeneous DWDM laser sources** designed for near package optics + CPO-based AI infrastructures
+- **Salience Labs + Oriole Networks** silicon photonics optical circuit switches on PH18DA + heterogeneous InP optical amplifiers for AI data center scaling
+- **TSEM 20-F FY2025 explicit:** "wafer-to-wafer bonding, lasers (including DWDM lasers), III-V modulators and TSVs, all embedded in the SiPho chip"; "a platform that embeds InP lasers in the SiPho chip"
+
+### Implication for laser supply chokepoint
+
+TSEM SiPh PDK foundry InP modulator integration adjacency is **distinct from supplier-tier laser device fabrication** (LITE + COHR scope) — TSEM operates at wafer-tier SiPh PDK foundry scope per S62 photonics_tier 2 placement; InP modulator + heterogeneously-integrated InP laser scope is downstream of InP substrate but **adjacent to standalone InP CW laser device fabrication** at chokepoint scope. Cross-reference for foundry-tier integration pathway; TSEM-side reference-design supplier complementarity into TSMC CoWoS per [[TSEM]] S62 + [[TSMC-CoWoS]] S65 refresh.
+
+**Coherent partnership bilateral verification candidate** at COHR-side is most material new finding per S62 propagation — TSEM-side discloses Coherent as long-term contract partner at PH18DA all-silicon MZ modulator scope; COHR-side baseline (S5 + S50) does not explicitly cross-reference TSEM partnership. Pre-registered for next COHR refresh.
+
+## Cross-vault NVIDIA partnership pattern at laser supply scope
+
+**LITE + COHR are 2 of 4 Tier 1 reciprocal-confirmation participants** per [[nvidia-supply-chain-commitments]] S53 cross-vault relationship page (first relationship page in vault history). Cross-vault NVIDIA partnership pattern post-S64 = **4 Tier 1 + 7 Tier 2 substantiating sources**:
+
+**Tier 1 reciprocal-confirmation at laser supply scope:**
+- **[[LITE]]** — Equity injection modality ($2.02B cash; capital-offset-for-supply-assurance per CFO Wajid Ali Q3 call)
+- **[[COHR]]** — Equity + multiyear CPO supply modality ($2B equity + multibillion-dollar multi-year supply through end of decade per CEO Anderson Q3 call)
+
+**Tier 1 reciprocal-confirmation at adjacent scope (power infrastructure + thermal):**
+- **[[ETN]]** — Beam Rubin DSX platform partnership (Energy/Power Tier 1)
+- **[[VRT]]** — Strategic Partnership + EcoDataCenter Sweden Vera Rubin deployment (Energy/Power Tier 1)
+
+**Modality distinction at laser supply scope vs broader pattern.** LITE + COHR equity-plus-purchase modality (NVDA capital deployment) is **structurally distinct** from:
+- [[TSMC-CoWoS]] Tier 2 counterparty-attribution-only foundry-customer modality (per [[TSM]] S3 + S65 refresh)
+- [[ALAB]] / [[CSCO]] / [[ANET]] Tier 2 ecosystem-partner counterparty-attribution-only modality
+- [[FN]] Tier 2 contract-manufacturer customer-concentration modality (NVIDIA 27.6% top customer)
+
+The laser supply chokepoint is **the strongest Tier 1 reciprocal-confirmation scope in vault** — both LITE + COHR vault canonical participants directly substantiate NVDA architect-customer commercial commitment at supplier-tier. First downstream propagation cycle test of [[nvidia-supply-chain-commitments]] S53 living document scaffolding at chokepoint scope.
+
 ## Remaining uncertainties
 
 The cross-validation substantiates the chokepoint but does not eliminate all uncertainty:
@@ -134,6 +222,35 @@ The cross-validation substantiates the chokepoint but does not eliminate all unc
 - **Hyperscaler in-housing remains a structural threat.** "We may fail to accurately estimate our competitors' or our customers' willingness and capability to backward integrate" (COHR 10-K FY2025). Neither LITE nor COHR can rule out hyperscalers developing internal laser capability.
 - **CPO timeline slippage could defer the chokepoint's peak relevance.** If CPO deployment stalls beyond 2028, the UHP laser demand driver weakens. LITE targets late 2027 scale-up; COHR says "not years out" — both are management projections, not confirmed deployments.
 - **New entrants or technology disruptions.** On-chip light sources that eliminate external laser supply are technically distant but theoretically possible. New InP wafer fab entrants could dilute structural scarcity, though the capital requirements and multi-year ramp timelines provide a moat.
+- **VECO MOCVD equipment-tier rerating timeline durability.** S58 $250M+ multi-customer InP laser orders + InP laser SAM $700M by 2030 framing is forward-looking; equipment-tier capacity expansion translation to substrate-tier output materialization spans 2026-2027 cycle; rerating durability pending future VECO refresh + downstream InP-supply chokepoint refresh propagation.
+- **TSEM SiPh PDK foundry capacity expansion trajectory.** S62 $1.3B 2027 contracted SiPh-only revenue + 5x SiPh capacity growth target by end-2026 is forward-looking; capacity materialization at TSEM PH18DA platform + InP modulator heterogeneous integration commercial scale dynamics pending future TSEM refresh.
+- **Cross-vault [[nvidia-supply-chain-commitments]] living document scaffolding refresh propagation cadence.** S53 relationship page first downstream propagation cycle test at S66 chokepoint refresh; cadence durability + relationship-page-vs-chokepoint-page refresh propagation sequencing methodology pending future cross-vault refresh cycles.
+
+## Open questions
+
+1. **[[LITE]] Q4 FY2026 + FY2026 full-year refresh propagation (highest priority).** S50 Q3 FY2026 baseline (May 5, 2026 call) is ~10 sessions stale at S66 refresh. LITE Q4 FY2026 + FY2026 full-year release would: (a) verify Greensboro NC 5th InP fab capacity ramp trajectory; (b) verify NVDA $2.02B capital deployment trajectory; (c) verify 400mW UHP commercial scale ramp; (d) potentially surface additional hyperscaler engagement disclosures beyond NVDA + Google; (e) cross-vault refresh propagation trigger to this chokepoint per S51 [[HALEU-fuel-chokepoint]] precedent cadence.
+
+2. **[[COHR]] Q4 FY2026 + FY2026 full-year refresh propagation.** S50 Q3 FY2026 baseline (May 6, 2026 call) is ~10 sessions stale. COHR refresh would: (a) verify Sherman TX 6-inch InP CW laser production capacity ramp tied to NVDA partnership; (b) **bilateral verification candidate at COHR-side for TSEM PH18DA Mach-Zehnder modulator long-term contract** per S62 [[TSEM]] disclosure; (c) verify Zürich 3rd 6-inch InP site capacity ramp trajectory; (d) verify multi-rail + Thermadite XPU cooling segment commercial scale.
+
+3. **[[NVDA]] Q1 fiscal 2027 refresh bilateral verification.** Post-May 20, 2026 release. NVDA-side bilateral verification candidates accumulated: (a) LITE + COHR Tier 1 reciprocal-confirmation at NVDA architect-side primary; (b) Spectrum-X CPO production + Kyber CPO scale-up commercial scale trajectory; (c) Vera Rubin HBM4 16-die stack deployment trajectory; (d) potentially first explicit Google/Microsoft/Anthropic naming at NVDA primary scope.
+
+4. **VECO Compound Semi FY2026 +50% growth trajectory validation.** S58 raised guidance to ~50% growth (vs prior +33% baseline); Spector IBD capacity expansion 10X from base materialization; Axcelis merger close H2 2026 pending China antitrust approval. Future VECO refresh cycle propagation to [[InP-supply]] S33 chokepoint primary; secondary propagation to this chokepoint at substrate-tier upstream scope.
+
+5. **Sherman TX 6-inch InP capacity ramp trajectory + Greensboro NC 5th InP fab capacity ramp.** COHR Sherman TX 6-inch InP CW laser production explicitly tied to NVDA $2B partnership; LITE Greensboro NC 5th InP fab capacity expansion alignment with NVDA $2.02B capital deployment. Materialization trajectory at supplier-side capacity expansion cycle is single most important leading indicator for chokepoint moderation candidate; future LITE + COHR refresh propagation candidates.
+
+6. **TSEM-COHR Mach-Zehnder modulator bilateral verification at COHR-side.** S62 TSEM PH18DA Ellwanger disclosure: Coherent 400 Gb per lane all-silicon Mach-Zehnder modulator long-term contract. COHR-side baseline (S5 + S50) does NOT explicitly cross-reference TSEM partnership at primary. Bilateral verification candidate at next COHR refresh.
+
+7. **Hyperscaler in-housing risk monitoring per `_thesis.md` disconfirming signal.** Per current "Remaining uncertainties" section: "Silicon photonics startups get acquired into hyperscalers rather than merchant platform players." NVDA $2B equity-plus-purchase at LITE + COHR is **counter-evidence to vertical integration disconfirming signal** (NVDA secures merchant supplier access via capital injection rather than acquisition); future hyperscaler (Microsoft / Google / Amazon / Meta) potential vertical integration of laser supplier as falsification candidate. Track at next major NVDA refresh + hyperscaler 10-K filings.
+
+8. **CPO timeline slippage candidates per cross-vault [[cpo-integration]] S32 refresh propagation.** [[cpo-integration]] S32 baseline ~17 sessions stale at S66; refresh propagation candidate per S51 + S65 cadence. NVDA GTC March 2026 Spectrum-X CPO production status + Murphy bifurcation thesis (scale-up real, scale-out limited per [[MRVL]] Q4 FY2026) validation candidates at next [[cpo-integration]] refresh.
+
+9. **Adjacent chokepoint refresh propagation triggers** post-S65 [[TSMC-CoWoS]] + S66 this chokepoint refresh. [[InP-supply]] S33 (substrate-tier upstream; VECO equipment-tier rerating cross-reference) + [[cpo-integration]] S32 (CPO integration mechanics; LITE/COHR ELS architecture cross-reference) + [[advanced-optical-packaging]] S31 (packaging-tier; FN Raytec + TSEM SiPh PDK foundry adjacency) — all candidates for refresh propagation per S51 sequential cadence.
+
+10. **Second-source EML qualification path expansion per FN Q2 FY2026 + future ingest validation.** Current page Section "Evidence from FN sources" documents customer-approved second EML source during Q2 FY2026 (resolution path materializing). Future FN refresh + cross-vault second-source qualification expansion would test whether supplier diversification beyond LITE + COHR is materializing at commercial scale.
+
+11. **On-chip light source technology disruption monitoring.** Per current "Remaining uncertainties" section: on-chip light sources that eliminate external laser supply are technically distant but theoretically possible. New entrants (e.g., Lightmatter / Ayar Labs heterogeneous integration approaches) at SiPh PDK foundry scope (TSEM PH18DA platform per S62) could shift competitive landscape; monitor at future TSEM + cross-vault [[CPO-platform-battle]] refresh propagation.
+
+12. **Cross-vault [[HBM-oligopoly]] paired chokepoint adjacency.** S64 [[HBM-oligopoly]] canonical creation + S65 [[TSMC-CoWoS]] paired chokepoint formalization (upstream-vs-integration tier pair). InP laser supply at this chokepoint feeds CPO integration → optical interconnect for AI accelerator packaging; HBM-CoWoS paired chokepoint serves same AI accelerator packaging dependency at distinct memory-tier scope. Cross-domain dependency chain monitoring per future cross-vault refresh cycles.
 
 ## Cross-references
 
@@ -146,9 +263,16 @@ The cross-validation substantiates the chokepoint but does not eliminate all unc
 - [[CPO-platform-battle]] — the chokepoint's relevance depends on CPO adoption trajectory
 - [[datacenter-photonics-supply-chain]] — Section 2.1 places the laser layer within the cross-cutting supply-chain map; Bucket B in the investability framing covers the optical device stack
 - [[chokepoint-investability-priorities]] — Tier 3-anchored vault-canonical reference for 13-chokepoint photonics framework (created Session 25, A2 first canonical application). Chokepoint 1 (Lasers / EMLs / III-V devices) cross-references this page for cross-validated supplier-side scarcity dynamics (LITE + COHR same-quarter testimony; NVDA $4B equity confirmation).
+- **[[nvidia-supply-chain-commitments]]** (S53) — First relationship page in vault history; LITE + COHR are 2 of 4 Tier 1 reciprocal-confirmation participants; cross-vault NVIDIA partnership pattern 4 T1 + 7 T2 post-S64; first downstream propagation cycle test of living document scaffolding at chokepoint scope per S66 refresh.
+- **[[TSMC-CoWoS]]** (S65 refresh) — Integration-tier chokepoint for advanced packaging; HBM-CoWoS paired chokepoint formalization at S65 refresh; TSEM SiPh PDK foundry reference-design supplier complementarity finding cross-reference; NVDA $2B equity-plus-purchase at LITE+COHR documented per S50 propagation at integration-tier scope.
+- **[[HBM-oligopoly]]** (S64) — Memory framework F6 chokepoint; HBM-CoWoS paired chokepoint with TSMC-CoWoS at upstream-vs-integration tier scope; cross-domain dependency chain (laser supply at this page ↔ memory at HBM-oligopoly via CPO integration ↔ advanced packaging at TSMC-CoWoS).
+- **[[VECO]]** (S58 refresh) — Equipment-tier substrate rerating substantive substantiating source per S66 refresh propagation; $250M+ multi-customer InP laser orders + Spector IBD 10X capacity expansion + InP laser SAM $700M by 2030 framing; upstream of laser device fabrication at Layer 1 + Layer 2 of decomposed chokepoint layers.
+- **[[TSEM]]** (S62) — SiPh PDK foundry InP modulator heterogeneous integration adjacency per S66 refresh propagation; PH18DA platform; Coherent Mach-Zehnder modulator long-term contract bilateral verification candidate at COHR-side; reference-design supplier complementarity into TSMC CoWoS.
+- **[[transformer-supply]]** (S63) — Energy/Power chokepoint pair complement; distinct domain at distribution-side power infrastructure constraint; cross-vault Energy/Power chokepoint pair (constraint-source-vs-workaround) precedent for cross-domain analytical product methodology.
 
 ## Change log
 
+- **2026-05-15 (Session 66 1-stop chokepoint refresh — third 1-stop chokepoint refresh in vault history post-S51 [[HALEU-fuel-chokepoint]] + S65 [[TSMC-CoWoS]] precedents; second consecutive major-chokepoint full refresh; largest single-session refresh additions in vault history):** 5 escalation triggers per S51 + S65 1-stop refresh protocol all NEGATIVE (no new primary-source ingest; vault participants stable; no new structural type; no new chokepoint creation; cross-vault analytical product established at S50 + S53 + S58 + S62 + S65 — propagation only). Substantive refresh additions ~135 lines (162 baseline → 297 final; largest single-session refresh additions in vault history vs S65 TSMC-CoWoS ~90 lines + S52 ETN refresh ~50 lines). **FOUR NEW substantive sections delivered:** (1) **NVDA $2B equity-plus-purchase materialization at LITE+COHR (S50 NEW analytical product propagation)** — **single most material change driver since chokepoint creation**; LITE $2.02B cash injection per CFO Wajid Ali Q3 call + COHR $2B equity + multibillion-dollar multi-year CPO supply through end of decade per CEO Anderson Q3 call; Sherman TX 6-inch InP CW laser production explicitly tied to NVDA partnership; Greensboro NC 5th InP fab + Google explicit named at LITE; 6-inch InP Zürich 3rd site + multi-rail + Thermadite XPU cooling NEW segments at COHR; **first reciprocal-confirmation A1 mode materialization at NVDA architect-customer commitment scope**; differential structural commitment substantiation (equity-only at LITE; dual-leg equity + supply commitment at COHR); (2) **VECO equipment-tier substrate rerating (S58 NEW analytical product propagation)** — $250M+ multi-customer InP laser orders + Spector IBD 10X capacity expansion + InP laser SAM $700M by 2030 + first explicit NVIDIA reference at VECO primary (counterparty-attribution-only at downstream-ecosystem-reference scope); Compound Semi FY2026 RAISED to ~50% growth; equipment-tier leading-indicator for InP substrate capacity expansion trajectory; cross-vault [[InP-supply]] S33 refresh propagation candidate flagged; (3) **TSEM SiPh PDK foundry InP modulator integration adjacency (S62 NEW analytical product propagation)** — PH18DA InP modulator heterogeneous integration; **Coherent 400 Gb per lane all-silicon Mach-Zehnder modulator long-term contract bilateral verification candidate at COHR-side**; OpenLight 400G InP EAM + Scintil Photonics DWDM laser + Salience Labs + Oriole Networks heterogeneous integration; adjacency at laser-device-tier scope vs distinct from supplier-tier vault canonical; (4) **Cross-vault NVIDIA partnership pattern at laser supply scope** — LITE + COHR are 2 of 4 Tier 1 reciprocal-confirmation participants per [[nvidia-supply-chain-commitments]] S53; 4 T1 + 7 T2 cross-vault pattern post-S64; modality distinction (equity-plus-purchase at LITE; equity + multiyear CPO supply at COHR); first downstream propagation cycle test of relationship page living document scaffolding at chokepoint scope. **EXPANSIONS to existing sections:** "Strategic investment as chokepoint signal" subsection (forward-reference to NEW NVDA $2B materialization section); "Decomposed chokepoint layers" Layer 1 InP substrate (VECO MOCVD equipment-tier feed cross-reference); "Remaining uncertainties" (added 3 uncertainties: VECO equipment-tier rerating timeline durability; TSEM SiPh PDK foundry capacity expansion trajectory; cross-vault relationship page living document scaffolding refresh propagation cadence). **NEW Open questions section** (12 items pre-registered; closes structural gap — only provisional [[wafer-level-siph-test]] remains without Open questions section per single-company exposure provisional convention; 11 of 11 canonical chokepoint pages now with Open questions section). Highest-priority Open questions: LITE Q4 FY2026 + FY2026 full-year refresh propagation; COHR Q4 FY2026 + FY2026 full-year refresh propagation with TSEM-COHR Mach-Zehnder modulator bilateral verification candidate; NVDA Q1 fiscal 2027 refresh; Sherman TX 6-inch InP capacity ramp trajectory; VECO Compound Semi FY2026 +50% growth trajectory validation. **NEW Cross-references expansion** with [[nvidia-supply-chain-commitments]] + [[TSMC-CoWoS]] + [[HBM-oligopoly]] + [[VECO]] + [[TSEM]] + [[transformer-supply]] (6 new cross-references; total 14 cross-references vs prior 8). VECO + TSEM NOT added to tickers field per Section 3.2(b) provenance discipline (tickers preserve laser-device-tier substantiating sources only: LITE + COHR + NVDA + AAOI + FN). **Section 4.6 ROI VALIDATED at 0 falsifications (21-instance zero-falsification streak post-S46 codification baseline; refresh propagation only; no kickoff hypothesis falsification candidates per Section 4.4).** A6 (g)/(g') count UNCHANGED at 8+2=10. Cross-vault NVIDIA partnership pattern UNCHANGED at 4 T1 + 7 T2 (no new NVIDIA verification at S66 refresh scope; LITE + COHR Tier 1 reciprocal-confirmation reinforced via S50 materialization documented). Cross-vault Aschenbrenner thesis pattern UNCHANGED at 22+ participants (refresh propagation only). **1-stop refresh protocol durability VALIDATED at 3-instance threshold + largest-single-session-refresh-additions scope** — S51 HALEU smaller scope + S65 TSMC-CoWoS ~90 lines + S66 datacenter-laser-supply ~135 lines = 3-instance protocol durability + scaling validation; Tranche 2C codification candidate methodology formalization. Wikilink-clean streak: **49 sessions** post-S66. Files updated: 7 files (datacenter-laser-supply.md substantive refresh + LITE.md cross-reference + COHR.md cross-reference + nvidia-supply-chain-commitments.md cross-reference + VECO.md cross-reference + index.md + log.md; at hard cap 7 per S57 BTM precedent). TSEM.md cross-reference deferred per scope discipline (TSEM SiPh PDK foundry InP modulator content INCLUDED in this chokepoint page substantive section; TSEM-side cross-reference addressed at next TSEM refresh propagation). **Adjacent chokepoint refresh propagation triggers strengthened:** [[cpo-integration]] S32 + [[advanced-optical-packaging]] S31 + [[InP-supply]] S33 all flagged for refresh propagation per S51 sequential cadence + S65 + S66 accumulated cross-vault analytical product additions; per Vic sequencing direction "CPO-integration and packaging later."
 - **2026-04-19:** Created from LITE sources (10-K FY2025, 10-Q Q2 FY2026, Q2 FY2026 call). Provisional single-source chokepoint page.
 - **2026-04-19:** Promoted from provisional to substantiated. COHR sources (10-K FY2025, 10-Q Q2 FY2026, Q2 FY2026 call) independently confirm industry-wide supply-demand imbalance through at least 2027. Provisional disclaimer removed. COHR evidence section added. Cross-validation analysis section added. "Confirm/weaken" section replaced with "Remaining uncertainties" reflecting substantiated status.
 - **2026-04-20:** Updated from Tier 3 research (/raw/research/silicon-photonics-primer.md). Added decomposed chokepoint layers section (four sequential bottlenecks: InP substrate/epi → CW laser device → ELS packaging → CPO integration). Added OIF-grounded scale-up bandwidth multiplier (~9x scale-out in some architectures). Substrate layer competition (Sumitomo, AXT, IQE, JX Advanced Metals) noted — bottleneck narrows at each layer.
