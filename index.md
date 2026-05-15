@@ -40,6 +40,7 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` v9 Sectio
 | [FCEL](wiki/companies/FCEL.md) | FCEL   | 4     | outside   | —      | 4            | outside   | outside   | 2026-05-10   |
 | [CAT](wiki/companies/CAT.md)   | CAT    | 4     | outside   | —      | 4            | outside   | outside   | 2026-05-12   |
 | [FLNC](wiki/companies/FLNC.md) | FLNC   | 4     | outside   | —      | 3            | outside   | outside   | 2026-05-13   |
+| [TSEM](wiki/companies/TSEM.md) | TSEM   | 2     | 2         | —      | —            | outside   | outside   | 2026-05-14   |
 
 ## Chokepoints
 
@@ -54,6 +55,8 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` v9 Sectio
 | [cpo-integration](wiki/chokepoints/cpo-integration.md) | NVDA, AVGO, MRVL, CRDO, LITE, COHR, AAOI, TSM, FN | 2026-04-30 |
 | [HALEU-fuel-chokepoint](wiki/chokepoints/HALEU-fuel-chokepoint.md) | LEU, BWXT, CCJ, BE, GEV | 2026-05-10 |
 | [BTM-grid-bypass-workaround](wiki/chokepoints/BTM-grid-bypass-workaround.md) | BE, FCEL, GEV, CAT | 2026-05-12 |
+| [transformer-supply](wiki/chokepoints/transformer-supply.md) | ETN, GEV | 2026-05-15 |
+| [HBM-oligopoly](wiki/chokepoints/HBM-oligopoly.md) | ONTO, COHU, AEHR, TSM | 2026-05-15 |
 
 ## Themes
 

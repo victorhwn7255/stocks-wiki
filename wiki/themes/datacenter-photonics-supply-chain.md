@@ -275,7 +275,7 @@ Companies with structural relevance but lower chokepoint criticality or where ex
 12. **HUBER+SUHNER POLATIS** — 384x384 hyperscale OCS. Complements vault [[COHR]], [[LITE]] OCS coverage.
 13. **HyperLight (private)** — TFLN modulators. Likely future acquisition target; the architecture primer attributes 400G/lane chiplet platform.
 14. **Lightmatter (private)** — Silicon photonics. Backed independently rather than acquired; key disconfirming-signal candidate per `_thesis.md` (hyperscaler vs. merchant capture).
-15. **Tower Semiconductor (TSEM)** — Photonic foundry. PH18 SiPh, NVIDIA networking partnership for 1.6T modules.
+15. **[[TSEM]]** — Photonic foundry. *Ingested in Session 62.* PH18 + PH45 SiPh PDK foundry; Layer 2 / photonics_tier 2 (first specialty foundry canonical at Layer 2). NVIDIA partnership bilaterally confirmed at Tier 2 per Session 62 (A1 reciprocal-confirmation-LIMITED); "1.6T modules" specific framing analyst-introduced not management-confirmed at primary. $1.3B 2027 SiPh-only contracted revenue; reference-design supplier into TSMC CoWoS complementarity per Q1 2026 call.
 16. **STMicroelectronics (STM)** — PIC100 platform, 300mm production, plans to quadruple capacity by 2027.
 17. **Foxconn / FIT Hon Teng (6088.HK)** — CPO sockets, ELS cages, 102.4T CPO external-laser platform validation. NVDA ecosystem partner.
 18. **Sumitomo Electric (5802.T)** — InP substrates, multicore fiber, EML.

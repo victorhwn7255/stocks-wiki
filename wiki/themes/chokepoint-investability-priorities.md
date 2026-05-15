@@ -333,15 +333,15 @@ If the industry shifts from pluggable discrete optics toward integrated PIC-base
 
 - **[[TSM]]** — vault company. Per `frameworks.md` v7 Layer 2 (irreplaceable infrastructure), photonics_tier 1. Strongest if silicon photonics becomes tightly integrated with advanced packaging. COUPE silicon photonics packaging position documented per Session 17 NVDA GTC reciprocal-confirmation (vault Session 17 findings remain canonical: NVDA named technology as "COUP" with TSMC co-development attribution; TSMC primary sources silent on COUPE).
 - **GFS / GlobalFoundries** — non-vault. Tier B-leading future-ingest candidate per Session 24 Integration 4 reordering. Verified largest pure-play silicon photonics foundry by revenue post-AMF acquisition (November 17, 2025). Complements [[TSM]] COUPE position with merchant SiPh foundry alternative.
-- **TSEM / Tower Semiconductor** — non-vault. Tier C future-ingest candidate. PH18 SiPh platform; NVIDIA networking partnership for 1.6T modules. Over-claim mode annotation pending primary-source verification.
+- **[[TSEM]] / Tower Semiconductor** — *Ingested in Session 62 (first specialty foundry canonical at Layer 2 placement; photonics_tier 2).* PH18 + PH45 SiPh PDK foundry platform. NVIDIA partnership bilaterally confirmed at Tier 2 per Session 62 (A1 reciprocal-confirmation-LIMITED); "1.6T modules" specific framing analyst-introduced not management-confirmed at primary. Preserves both partial substantiation (NVIDIA partnership EXISTS at CEO acknowledgment scope) + Tier 3 source over-claim (1.6T specific framing).
 
 ### Editorial assessment (per Tier 3 source)
 
-**Future bottleneck; not the tightest current one.** *(honest-verdict hedge preserved)* [[TSM]] is the high-quality platform bet; GFS/TSEM are more direct merchant foundry optionality plays.
+**Future bottleneck; not the tightest current one.** *(honest-verdict hedge preserved)* [[TSM]] is the high-quality platform bet; GFS/[[TSEM]] are more direct merchant foundry optionality plays.
 
 Per Session 24 Integration 3: Chokepoint 9 (foundry layer) is structurally distinct from Chokepoint 10 (photonic advanced packaging / CPO integration) per [[datacenter-photonics-supply-chain]] Section 2.6 vs Section 2.7 organization. Framework grouping conflates the layers; vault structural organization preserves the distinction.
 
-*(Investment idea per Tier 3 source: TSM is the high-quality platform bet; GFS/TSEM are more direct merchant foundry optionality plays. Vic-side `_thesis.md` integration deferred per Session 24 Phase 4 recommendation.)*
+*(Investment idea per Tier 3 source: TSM is the high-quality platform bet; GFS/[[TSEM]] are more direct merchant foundry optionality plays. Vic-side `_thesis.md` integration deferred per Session 24 Phase 4 recommendation.)*
 
 ### Key flags (per Tier 3 source)
 
@@ -512,7 +512,7 @@ Mirror of Tier 3 source Ranking Summary table, with vault status annotations per
 | 6 | Finished-module optical test | Medium-high | [[VIAV]], KEYS (Tier C), Anritsu (Tier C) | Speed transition creates equipment refresh cycle; first vault baseline via [[VIAV]] post-Session 28 |
 | 7 | Switch ASIC / platform architecture | Very high strategic importance | [[NVDA]], [[AVGO]], [[ANET]], [[CSCO]], [[MRVL]] | Determines architecture adoption and value-chain allocation; control point per `frameworks.md` v8 Framework 2.6; five-company in-vault complete post-Session 27 |
 | 8 | Wafer-level SiPh reliability test | Medium-high, narrow | [[AEHR]] | Clean niche exposure to SiPh / optical I/O reliability screening; see [[wafer-level-siph-test]] |
-| 9 | Silicon photonics foundry / PIC capacity | Medium today; high later | [[TSM]], GFS (Tier B-leading), TSEM (Tier C) | Future bottleneck if CPO and optical I/O move to volume |
+| 9 | Silicon photonics foundry / PIC capacity | Medium today; high later | [[TSM]], GFS (Tier B-leading), [[TSEM]] (in-vault post-Session 62) | Future bottleneck if CPO and optical I/O move to volume |
 | 10 | Photonic advanced packaging / CPO integration | Medium-high, timing uncertain | [[TSM]], [[AVGO]], [[NVDA]], ASE (Tier C), AMKR (Tier C) | Strategic transition, but adoption path remains uncertain |
 | 11 | Fiber / connectors / high-density attach | Medium | [[GLW]], APH (Tier C), TEL (Tier C) | Real physical-layer constraint but less pure equity exposure |
 | 12 | Thermal infrastructure | High for AI infrastructure; adjacent to photonics | [[VRT]], MOD (Tier C), Schneider (Tier C) | Critical AI datacenter constraint but not pure photonics |
