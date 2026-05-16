@@ -178,6 +178,7 @@
   },
   "active": "af6f05f84988d172",
   "lastOpenFiles": [
+    "wiki/themes/AIDC-cooling-architecture-transition.md",
     "wiki/chokepoints/liquid-cooling.md",
     "prompts/session71_liquid_cooling_chokepoint_kickoff.md",
     "wiki/companies/MOD.md",
@@ -210,7 +211,6 @@
     "prompts/samples/[pair_ingest]/session59_glw_fn_paired_refresh_kickoff.md",
     "prompts/samples/[pair_ingest]/leu_bwxt_paired_ingest_kickoff.md",
     "prompts/samples/[pair_ingest]/session42_leu_bwxt_paired_ingest_kickoff.md",
-    "prompts/samples/[single_ingest]/flnc_ingest_kickoff.md",
     "prompts/samples/[single_ingest]",
     "prompts/samples/[pair_ingest]",
     "prompts/samples",

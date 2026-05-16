@@ -73,6 +73,7 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` v9 Sectio
 | [NVDA-platform-integration](wiki/themes/NVDA-platform-integration.md) | NVDA, COHR, LITE, GLW, VRT | 2026-04-28 |
 | [overseas-fab-expansion](wiki/themes/overseas-fab-expansion.md) | TSM | 2026-04-19 |
 | [chokepoint-investability-priorities](wiki/themes/chokepoint-investability-priorities.md) | NVDA, AVGO, MRVL, CSCO, AEHR, AXTI, COHR, LITE, AAOI, ALAB, FN, GLW, VRT, ONTO, VECO, TSM, COHU | 2026-04-28 |
+| [AIDC-cooling-architecture-transition](wiki/themes/AIDC-cooling-architecture-transition.md) | VRT, ETN, NVT, MOD, FLEX, COHR, ANET | 2026-05-16 |
 
 ## Layers
 

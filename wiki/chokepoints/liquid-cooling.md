@@ -3,7 +3,7 @@ type: chokepoint
 pathway: 2
 structural_type: competing-technology-base
 tickers: [VRT, ETN, NVT, MOD, FLEX, COHR, ANET]
-related_themes: [AI-demand-durability, AIDC-cooling-architect-transition]
+related_themes: [AI-demand-durability, AIDC-cooling-architecture-transition]
 related_chokepoints: [transformer-supply, BTM-grid-bypass-workaround, HBM-oligopoly]
 last_updated: 2026-05-16
 ---
