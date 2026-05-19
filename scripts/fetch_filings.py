@@ -67,6 +67,7 @@ COMPANIES = {
     "TSEM": {"cik": "0000928876", "forms": ["20-F"]},
     "NVT":  {"cik": "0001720635", "forms": ["10-K", "10-Q"]},
     "MOD":  {"cik": "0000067347", "forms": ["10-K", "10-Q"]},
+    "NOK":  {"cik": "0000924613", "forms": ["20-F"]},
 }
 
 HEADERS = {"User-Agent": USER_AGENT, "Accept": "application/json"}

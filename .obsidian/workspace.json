@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "4e877bb9b1e7233c",
+        "id": "7b6063e0d301d5fc",
         "type": "tabs",
         "children": [
           {
-            "id": "af57661a59fc680e",
+            "id": "b432a07e661c2f93",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -176,7 +176,7 @@
       "bases:Create new base": false
     }
   },
-  "active": "af6f05f84988d172",
+  "active": "b432a07e661c2f93",
   "lastOpenFiles": [
     "wiki/themes/AIDC-cooling-architecture-transition.md",
     "wiki/chokepoints/liquid-cooling.md",
