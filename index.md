@@ -44,6 +44,7 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` v9 Sectio
 | [NVT](wiki/companies/NVT.md)   | NVT    | 4     | outside   | —      | 3            | outside   | outside   | 2026-05-16   |
 | [MOD](wiki/companies/MOD.md)   | MOD    | 4     | outside   | —      | 3            | outside   | outside   | 2026-05-16   |
 | [NOK](wiki/companies/NOK.md)   | NOK    | 4     | 2         | —      | outside      | outside   | outside   | 2026-05-19   |
+| [AAON](wiki/companies/AAON.md) | AAON   | 4     | outside   | —      | 3            | outside   | outside   | 2026-05-19   |
 
 ## Chokepoints
 
