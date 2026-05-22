@@ -1,8 +1,8 @@
 ---
 type: chokepoint
-tickers: [ONTO, COHU, AEHR, TSM]
+tickers: [ONTO, COHU, AEHR, TSM, MKSI]
 related_themes: [AI-demand-durability, chokepoint-investability-priorities]
-last_updated: 2026-05-15
+last_updated: 2026-05-21
 ---
 
 # HBM oligopoly chokepoint
@@ -335,7 +335,39 @@ Per `CLAUDE.md` v9 Section 3.3 citation discipline + Section 3.15 spirit (Pathwa
 
 ---
 
+## MKSI remote plasma + microwave for advanced DRAM applications equipment-tier participant (S75 NEW analytical product propagation)
+
+**[[MKSI]] enters HBM-oligopoly chokepoint scope at S75 first canonical creation per [[MKSI]] standalone ingest (2026-05-21).** 5th canonical participant at chokepoint scope post-S64 4-canonical baseline + S65 TSMC-CoWoS paired chokepoint cross-reference. **First-vault-scope-decision candidate** per Section 1.2 ongoing scope expansion mechanism (zero pre-existing forward [[MKSI]] wikilinks + zero Tier 3 source coverage at S75 Phase 0 verified). FIRST multi-domain F5 + F8 + F9 simultaneous placement vault canonical (Layer 4 + photonics_tier 3 + equipment_tier 2 + materials_tier 3) — equipment-tier participant scope at this chokepoint via VSD Vacuum Solutions Division (40.2% FY2025 / 39.4% Q1 2026 consolidated revenue).
+
+**Equipment-tier substantive participation evidence at HBM oligopoly chokepoint:**
+
+Lee Q1 2026 earnings call (May 7, 2026) explicit (verified at primary): *"Looking into Q2, we continue to see strong order activity, especially in **remote plasma and microwave for advanced DRAM applications**, dissolved gas for logic applications, and lasers for back-end applications. As a result, we expect semiconductor revenue to accelerate, growing high teens sequentially and over 25% year-over-year."*
+
+MKSI 10-K Item 1 Business explicit: VSD **"Plasma and Reactive Gas Products, which consist of remote plasma and ozone generators that create reactive species"** — equipment-tier subsystem inputs to HBM/DRAM manufacturer fabrication processes. Sub-tier-1 OEM scope (subsystem supplier to Applied Materials + Lam Research + KLA + ASML inferable per industry-standard non-disclosure at OEM customer scope); equipment-tier enabler downstream of named OEMs which sell directly to HBM/DRAM manufacturers (SK Hynix + Samsung + Micron).
+
+**Cross-vault equipment-tier scope distinction post-S75:**
+
+| Vault entity | F8 placement | Equipment scope at HBM oligopoly chokepoint |
+|---|---|---|
+| [[ONTO]] | T2 (Tier 1 OEM direct fab supplier) | Metrology + inspection at HBM packaging substrate (TSMC + Samsung + SK Hynix XBRL named); $240M+ HBM VPA |
+| [[COHU]] | outside F5 (aspirational HBM framing) | Tignis $34.9M software acquisition for DI-Core HBM inspection (revenue immaterial per S54) |
+| [[AEHR]] | T4 (forward-looking) | KGD burn-in for advanced packaging FY2027 forward orders |
+| [[TSM]] | foundry-tier integrator | CoWoS HBM base die stacking (integration-tier; cross-vault sequential causation) |
+| **[[MKSI]] S75** | **T2 (sub-tier-1 OEM scope; NEW sub-variant)** | **Remote plasma + microwave equipment subsystems for advanced DRAM applications; sub-tier-1 OEM to AMAT/LRCX/KLA; Q1 2026 +13% YoY Semi; substantive cross-product-layer scope across vacuum + pressure + flow + gas delivery + plasma + reactive gas** |
+
+**Honest framing:** MKSI is sub-tier-1 OEM scope (one layer downstream of [[ONTO]] / [[AEHR]] Tier 1 OEM scope). Equipment-tier subsystem supplier scope broader than ONTO/AEHR single-product-line scope but indirect at HBM/DRAM manufacturer scope (through OEM customer relationships). Substantive participant scope at remote plasma + microwave subsystem level; complement to ONTO + AEHR Tier 1 OEM scope at HBM equipment-tier enabler complete coverage.
+
+**5-tier scope discipline extended at HBM oligopoly chokepoint post-S75:**
+
+- Supplier-tier (SK Hynix + Samsung + Micron entirely non-vault)
+- Integration-tier ([[TSM]] CoWoS HBM base die stacking)
+- Equipment-tier Tier 1 OEM ([[ONTO]] + [[AEHR]] direct fab supplier scope)
+- **Equipment-tier sub-tier-1 OEM ([[MKSI]] NEW post-S75; subsystem supplier to OEMs)**
+- Equipment-tier aspirational ([[COHU]] software acquisition immaterial revenue)
+- Consumer-tier downstream (NVDA / hyperscalers; non-vault NVDA Q1 fiscal 2027 refresh candidate)
+
 ## Change log
 
+- **2026-05-21 (Session 75 minimal cross-reference — [[MKSI]] standalone first canonical ingest propagation):** Frontmatter tickers expansion 4 → 5 ([ONTO, COHU, AEHR, TSM, **MKSI**]) per Section 3.2 (b) multi-ticker provenance discipline. NEW substantive subsection "MKSI remote plasma + microwave for advanced DRAM applications equipment-tier participant (S75 NEW analytical product propagation)" added per S55/S59/S68 propagation pattern + S75 reserve scope. MKSI 5th canonical at HBM oligopoly chokepoint scope; sub-tier-1 OEM scope (equipment_tier 2 NEW sub-variant distinct from ONTO + AEHR Tier 1 OEM scope); FIRST multi-domain F5 + F8 + F9 simultaneous placement vault canonical; 5-tier scope discipline extended at HBM equipment-tier sub-tier-1 OEM layer; Lee Q1 2026 call explicit "remote plasma and microwave for advanced DRAM applications" verified at primary. last_updated 2026-05-15 → 2026-05-21. No other content edits per scope discipline.
 - **2026-05-15 (Session 65 cross-reference update — TSMC-CoWoS chokepoint refresh):** Reciprocal verification at S65 [[TSMC-CoWoS]] refresh substantive propagation of HBM integration tier paired chokepoint finding. S65 TSMC-CoWoS refresh delivered NEW substantive section "HBM integration tier paired chokepoint (S64 NEW analytical product)" — HBM upstream-vs-CoWoS integration tier pair formalization with sequential causation pattern documented + cross-domain 4-framework bridge substantiation. Paired chokepoint pattern (this page = upstream supplier-tier; [[TSMC-CoWoS]] S65 = integration-tier) reciprocally documented at both chokepoint pages per S57 [[BTM-grid-bypass-workaround]] + [[transformer-supply]] S63 paired-chokepoint methodology precedent. No content edits beyond cross-reference reciprocal verification per scope discipline.
 - **2026-05-15 (Session 64):** **Fourth canonical-from-first-creation chokepoint page creation in vault history** — Pathway 2 canonical-from-first-creation pathway per CLAUDE.md v9 Section 3.15 extended to **4th chokepoint structural type — "upstream oligopoly with vault-adjacent-scope substantiation"** (first chokepoint without vault-direct supplier-tier participants post-[[HALEU-fuel-chokepoint]] S44 + [[BTM-grid-bypass-workaround]] S57 + [[transformer-supply]] S63 vault-direct precedents). **Closes Memory framework F6 vault coverage gap** — first canonical Memory chokepoint despite F6 explicit in CLAUDE.md Section 1.2 vault scope since 2026-04-30 rework. Synthesis from 4 vault canonical adjacent-scope substantiating sources ([[ONTO]] S6 + S54 strongest substantiation with $240M+ HBM VPA + named TSMC/Samsung/SK Hynix customers via XBRL; [[COHU]] S8 + S54 aspirational framing; [[AEHR]] S6 + S26 forward-looking FY2027 orders; [[TSM]] S3 integration tier via CoWoS HBM base die stacking) + Vic-anchor `_thesis.md` Rank 1 Memory framing. No new primary-source ingest per [[nvidia-supply-chain-commitments]] S53 + [[HALEU-fuel-chokepoint]] S44 + [[BTM-grid-bypass-workaround]] S57 + [[transformer-supply]] S63 precedent. **Tier 3 source absence at HBM-specific scope honestly framed** — Vic-anchor `_thesis.md` carries synthesis weight; future Tier 3 source curation by Vic candidate. **First Pathway 2 chokepoint without vault-direct supplier-tier participants** — supplier-tier (SK Hynix 50-62% + Samsung 17-35% + Micron 11-21%) entirely non-vault; substantiation via equipment-tier enablers + foundry-tier integrator + Vic-anchor framing. Multi-tier scope discipline per [[InP-supply]] S33 Option C **extended to 4-tier scope** (supplier-tier + integration-tier + equipment-tier enabler + consumer-tier dynamics) — methodology innovation candidate. **Paired chokepoint pattern: HBM upstream-vs-CoWoS integration** — new chokepoint pair structural type (upstream-vs-integration tier pair distinct from S63 constraint-source-vs-workaround pair); Tranche 2C methodology codification candidate. **Cross-domain 4-framework bridge** (F2 Layer + F5 Photonics adjacent + F6 Memory primary + F8 Equipment) substantiated. SK Hynix ~90% NVDA HBM concentration = highest single-customer concentration ratio in vault adjacent-scope. Living document scaffolding per S53 precedent — 14 future refresh propagation candidates pre-registered in Open questions; **HIGHEST PRIORITY future canonical ingest [[MU]] (Micron Technology)** — US-domiciled HBM oligopoly participant; canonical creation would shift structural type from vault-adjacent-scope toward standard Pathway 2 type. Cross-vault Aschenbrenner thesis pattern 22+ participants substantiated at HBM scope. **Section 4.6 ROI VALIDATED at 0 falsifications (19-instance zero-falsification streak post-S46 codification baseline).** A6 (g)/(g') count UNCHANGED at 8+2=10. Wikilink-clean streak: **47 sessions** post-S64. Files updated: 7 files (HBM-oligopoly.md NEW + ONTO.md cross-ref + COHU.md cross-ref + AEHR.md cross-ref + TSMC-CoWoS.md cross-ref + index.md + log.md; at hard cap 7 per S57 BTM precedent). Cross-reference updates to NVDA.md / AVGO.md / MRVL.md / VECO.md deferred per scope discipline (consumer-side single-mention only; not chokepoint-content-substantive); _thesis.md + frameworks.md Vic-side ownership preserved.
