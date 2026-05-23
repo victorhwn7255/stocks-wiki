@@ -70,6 +70,8 @@ COMPANIES = {
     "NOK":  {"cik": "0000924613", "forms": ["20-F"]},
     "AAON": {"cik": "0000824142", "forms": ["10-K", "10-Q"]},
     "MKSI": {"cik": "0001049502", "forms": ["10-K", "10-Q"]},
+    "ARM":  {"cik": "0001973239", "forms": ["20-F", "6-K"]},
+    "AMD":  {"cik": "0000002488", "forms": ["10-K", "10-Q"]},
 }
 
 HEADERS = {"User-Agent": USER_AGENT, "Accept": "application/json"}
