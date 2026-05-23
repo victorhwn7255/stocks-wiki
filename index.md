@@ -47,6 +47,7 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` v9 Sectio
 | [AAON](wiki/companies/AAON.md) | AAON   | 4     | outside   | —      | 3            | outside   | outside   | 2026-05-19   |
 | [MKSI](wiki/companies/MKSI.md) | MKSI   | 4     | 3         | —      | outside      | 2         | 3         | 2026-05-21   |
 | [ARM](wiki/companies/ARM.md)   | ARM    | 1     | outside   | —      | outside      | outside   | outside   | 2026-05-23   |
+| [AMD](wiki/companies/AMD.md)   | AMD    | 1     | outside   | —      | outside      | outside   | outside   | 2026-05-23   |
 
 ## Chokepoints
 
