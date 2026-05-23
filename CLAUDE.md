@@ -1,6 +1,8 @@
-# CLAUDE.md — stocks-wiki
+# CLAUDE.md — stocks-wiki (v9.1)
 
 A personal research vault for AI datacenter supply chain and chokepoint analysis. You maintain the wiki; the human curates sources and asks questions.
+
+*Version: v9.1 (Codification Tranche 2C-i; Session 79; 2026-05-23). Prior: v9 post-Tranche 2A Session 61.*
 
 ## Descriptive language convention
 
@@ -59,6 +61,8 @@ The `raw/notes/` folder contains human's prior conversations and framework notes
 
 **Honest-verdict trigger discipline (codified Session 61).** When refresh ingest surfaces evidence suggesting a baseline-reframing trigger may fire (Caveat #9 Layer 4-5 straddling upgrade; Outside Framework reframing; framework placement; A1 mode upgrade to reciprocal-confirmation), the trigger fires ONLY when evidence substantively meets the trigger's pre-registered criteria. **Substantive evidence honestly assessed against upgrade threshold; trigger NOT fired despite suggestive evidence** is the canonical methodology — not firing based on directional momentum without threshold satisfaction. Discipline applies bidirectionally: UPWARD reframing (kickoff hypothesis lower than primary evidence supports) follows same threshold satisfaction rigor as non-firing. *See A.10 for per-instance precedent pattern; current count in MEMORY.md.* Cross-reference Section 3.5 A1 three-mode framing for related discipline.
 
+**Mid-fiscal-year disclosure methodology shift pattern (codified Session 79; 4-instance precedent).** When a company restructures segments/divisions mid-fiscal-year OR retrospectively adjusts prior-period segment data, the canonical page must explicitly document the shift, apply restated comparatives at financial snapshot tables, and flag analytical-product complexity at cross-period comparison scope. 4-instance precedent: [[NVT]] S69 (Q1 2026 vertical disaggregation within continuing-segment scope) + [[MOD]] S70 (Q3 FY2026 Climate Solutions product-group disaggregation) + [[NOK]] S73 (strategic reorganization OLD 5-segment → NEW 2-segment company-wide effective January 1, 2026) + [[AMD]] S77 (Q1 FY2025 4-segment → 3-segment consolidation; "All prior period segment data were retrospectively adjusted"). Honest framing per Section 2.1: do not paper over the shift with blended-period framing; preserve segment-tier comparability boundaries at the shift date.
+
 ### 2.2 Source hierarchy
 
 When sources disagree on facts, higher tier wins. On interpretation, triangulate and flag the disagreement on the relevant page.
@@ -73,7 +77,7 @@ Skip promotional content and aligned commercial incentive.
 
 *Tier 1/Tier 2 calibration.* Factual data (financials, concentration, capacity, legal, geographic) — Tier 1 authoritative. Competitive assessment, strategic intent, management signaling — Tier 2 often more analytically informative than Tier 1's legal-conservative framing. *Analyst silence as signal* — asymmetry between venues (risk in 10-K but unaddressed in analyst Q&A) is meta-signal about investor community processing; document in Source audit notes. *Source unavailability as observation* — when an expected source is unavailable, document explicitly with analytical implications; inability to test patterns requiring that source is itself a finding.
 
-### 2.11 Non-calendar fiscal year-end filer protocol (codified Session 61)
+### 2.11 Non-calendar fiscal year-end filer protocol (codified Session 61; refined Session 79)
 
 Vault canonical participants with non-calendar fiscal year-end dates require period-parity discipline at calendar terms.
 
@@ -81,7 +85,28 @@ Vault canonical participants with non-calendar fiscal year-end dates require per
 
 **Fiscal-year-designation honest framing (secondary discipline).** Fiscal-year designation preserved at source filename + financial table headers per filer canonical convention. Honest framing in Thesis role: "Q2 FY2026 = calendar Q1 2026" annotation at first cross-vault comparison.
 
-**LLM application:** at kickoff drafting + Phase 0 source-set verification + Source audit notes per-source entry drafting, apply both disciplines per filer fiscal calendar. *See A.11 for 5-instance combined precedent + distinct fiscal calendars in vault.*
+**7-instance applicability precedent (codified Session 79).** Section 2.11 applies at month+ fiscal-year-end offset scope: [[ENS]] (March 31) + [[FCEL]] (October 31) + [[VIAV]] (late June) + [[FN]] (late June) + [[FLNC]] (September 30) + [[MOD]] (March 31) + [[ARM]] (March 31). 5 distinct fiscal calendars in vault: Dec 31 (most canonical; Section 2.11 N/A) + Mar 31 (ENS + MOD + ARM) + late-June (VIAV + FN) + Sep 30 (FLNC) + Oct 31 (FCEL).
+
+**LLM application:** at kickoff drafting + Phase 0 source-set verification + Source audit notes per-source entry drafting, apply both disciplines per filer fiscal calendar. *See A.11 for 7-instance + 3-instance week-scope baseline combined precedent.*
+
+#### 2.11.1 Substantive-offset threshold methodology (codified Session 79; 3-instance week-scope precedent)
+
+Not every non-calendar fiscal year-end filer warrants Section 2.11 application. Threshold per fiscal-year-end offset from calendar Dec 31:
+
+| Offset scope | Section 2.11 status | Precedent |
+|---|---|---|
+| **Week-scope (~3 days to ~1 month)** | **N/A** — treat as substantively-calendar fiscal year | 3-instance: [[NVDA]] (last-Sunday-of-January; ~1-month offset) + [[AMD]] S77 (last-Saturday-of-December; ~4-day offset) + [[INTC]] S78 (last-Saturday-of-December; ~4-day offset) |
+| **Month+ scope (≥1 month)** | **Applied** — non-calendar fiscal year filer protocol per Section 2.11 primary + secondary discipline | 7-instance: see Section 2.11 applicability precedent above |
+
+**Honest framing.** Week-scope offset substantively edge case — NVDA last-Sunday-of-January ~1-month offset is substantively LARGER than AMD + INTC ~4-day offset but substantively SMALLER than month+ scope baseline; honest interpretation captures NVDA at week-scope baseline per substantively-calendar fiscal year treatment vault precedent. Period-parity scope at week-scope offset = ~3-4 day to ~1-month drift; substantively CLEAN cross-canonical comparative analytical product enabled at substantive scope.
+
+#### 2.11.2 Cross-canonical EXACT-period-parity comparative analytical product methodology (codified Session 79; FIRST INSTANCE)
+
+When two vault canonicals share EXACT-match fiscal calendar structure (identical period-end dates), substantive cross-canonical comparative analytical product enabled at identical-period-end scope.
+
+**FIRST INSTANCE precedent:** [[AMD]] S77 + [[INTC]] S78 both 52/53-week last-Saturday-of-December fiscal year (FY2025 = Dec 27, 2025; Q1 2026 = Mar 28, 2026 — EXACT match). Methodology codified at S79 substantively-distinct from cross-canonical week-scope offset comparative scope; EXACT-period-parity enables direct cross-canonical analytical product at identical period-end scope without offset reconciliation.
+
+**LLM application:** when EXACT-period-parity surfaces between vault canonicals, honest framing in Thesis role + cross-vault adjacency section documents EXACT match; cross-canonical comparative analytical product opportunity flagged at substantive scope.
 
 ## 3. Page conventions
 
@@ -222,7 +247,19 @@ A chokepoint page may be created via two pathways:
 
 **Pathway 1 — Provisional → canonical promotion.** Provisional chokepoint page created from a single company's primary sources when structural constraint evidence is strong but designation is provisional. Requirements: (1) page-top italic disclaimer naming sources + provisional scope; (2) "What would confirm or weaken this framing" section pre-registering cross-validation tests; (3) no Open questions or Source audit notes sections (those belong on company pages). When substantiated by a second source, provisional disclaimer removed.
 
-**Pathway 2 — Canonical-from-first-creation (codified Session 46).** Canonical chokepoint page created at first-creation when multi-source threshold met: Tier 3 anchor source + 3+ primary-source company pages, OR equivalent substantive multi-source coverage. Provisional stage skipped entirely. Standard canonical chokepoint page section structure applied (Open questions + Source audit notes + Change log; NO provisional disclaimer or "confirm/weaken" section). Empirical motivation: S44 HALEU-fuel-chokepoint (4 substantiating sources at first-creation).
+**Pathway 2 — Canonical-from-first-creation (codified Session 46; 5-instance precedent codified Session 79).** Canonical chokepoint page created at first-creation when multi-source threshold met: Tier 3 anchor source + 3+ primary-source company pages, OR equivalent substantive multi-source coverage. Provisional stage skipped entirely. Standard canonical chokepoint page section structure applied (Open questions + Source audit notes + Change log; NO provisional disclaimer or "confirm/weaken" section).
+
+**5-instance Pathway 2 precedent post-S71 + 4 structural type taxonomy:**
+
+| Instance | Session | Chokepoint | Structural type |
+|---|---|---|---|
+| 1 | S44 | [[HALEU-fuel-chokepoint]] | Sequential-dependency-chain |
+| 2 | S57 | [[BTM-grid-bypass-workaround]] | Competing-technology-base (1st) |
+| 3 | S63 | [[transformer-supply]] | Oligopoly + substrate-bound |
+| 4 | S64 | [[HBM-oligopoly]] | Upstream-oligopoly with vault-adjacent scope |
+| 5 | S71 | [[liquid-cooling]] | Competing-technology-base (2nd; structural-type durability validated) |
+
+**Canonicalization-criteria substantive scope.** Pathway 2 substantiation threshold: (a) Tier 3 anchor source explicitly establishing chokepoint structural framing OR (b) 3+ vault primary-source canonical pages substantively documenting the constraint scope OR (c) equivalent multi-source coverage (e.g., S71 [[liquid-cooling]] = 6-canonical vault participant scope at chokepoint synthesis methodology). Honest framing per Section 2.1: substantive primary-source substantiation drives Pathway 2 application — not directional momentum toward canonical placement without threshold met.
 
 **Pathway selection.** Default to Pathway 1 when source coverage is single-company; Pathway 2 when multi-source threshold met at session start. Verification at Stop 1 Phase 0 per Section 4.5 A6 sub-pattern (b).
 
@@ -233,6 +270,16 @@ A chokepoint page may be created via two pathways:
 When ingesting multiple sources for the same company in single session, maintain separate financial tables per reporting period rather than blending. Cross-period deltas are analytically valuable and only visible when periods are kept distinct.
 
 For three-source ingests (10-K + 10-Q + earnings call covering two fiscal periods): read sequentially older filing → current-period filing → current-period call. Source audit notes: one per-source entry, ordered by recency and tier.
+
+**Chokepoint refresh protocol — 1-stop vs 2-stop (codified Session 79; 5-instance precedent).** Chokepoint page refreshes default to 1-stop protocol (single Stop; plan + execute combined) when scope is contained; 2-stop protocol required when scope creep risk substantive.
+
+**1-stop chokepoint refresh applicability conditions** (all must hold): (a) single-source-driven update scope (single new canonical ingest propagation OR single Tier 3 analytical product propagation); (b) no NEW chokepoint structural type introduced; (c) vault canonical participant scope stable (no NEW canonical added to chokepoint scope); (d) 5-trigger escalation test all NEGATIVE (no new primary-source ingest at chokepoint scope; no new structural type; no new chokepoint creation; cross-vault analytical product already established; minor cross-vault propagation only).
+
+**2-stop chokepoint refresh required when**: (a) substantive multi-source scope OR (b) NEW chokepoint structural type emerging OR (c) substantive canonical participant scope expansion OR (d) any escalation trigger POSITIVE OR (e) major analytical product addition scope.
+
+**Scope creep prevention discipline.** 1-stop refresh limited to substantive-update scope per source; hard cap ~3-5 files; expansion within Section 3.8 brevity discipline (~12-25 lines per new subsection).
+
+**5-instance Pathway precedent:** S51 [[HALEU-fuel-chokepoint]] (FIRST 1-stop refresh; minor update scope) + S65 [[TSMC-CoWoS]] (SECOND; substantial-content-addition scope ~120 lines; protocol durability at substantial-content scope validated) + S66 [[datacenter-laser-supply]] + S67 [[cpo-integration]] + S68 [[advanced-optical-packaging]]. S65-S68 = 4-chokepoint paired-cluster refresh demonstrating cross-vault propagation cycle methodology at 1-stop refresh scope.
 
 ### 4.2 Foreign-issuer ingests
 
@@ -391,7 +438,9 @@ Combined post-S75: 10 instances (8 (g) + 2 (g')). Current count in MEMORY.md.
 
 4-non-firing baseline (S54-S59): [[COHU]] + [[ALAB]] + [[VIAV]] + [[GLW]]; 4-UPWARD reframing extensions (S62-S75): [[TSEM]] + [[NOK]] + [[AAON]] + [[MKSI]]. Combined post-S75: 4-UPWARD + 4-non-firing precedent pattern. Per-instance evidence + current count in MEMORY.md.
 
-### A.11 Non-calendar fiscal year-end filer protocol — 5-instance precedent *(cross-ref Section 2.11)*
+### A.11 Non-calendar fiscal year-end filer protocol — 7-instance month+ + 3-instance week-scope precedent *(cross-ref Sections 2.11 + 2.11.1 + 2.11.2)*
+
+**Month+ scope baseline (Section 2.11 applied; 7-instance precedent post-S79):**
 
 | Filer | Fiscal year-end | Vault scope |
 |---|---|---|
@@ -400,8 +449,20 @@ Combined post-S75: 10 instances (8 (g) + 2 (g')). Current count in MEMORY.md.
 | [[VIAV]] (S58) | late June | Refresh |
 | [[FN]] (S59) | late June | Refresh |
 | [[FLNC]] (S60) | September 30 | New canonical |
+| [[MOD]] (S70) | March 31 | New canonical |
+| [[ARM]] (S76) | March 31 | New canonical (foreign-issuer; DUAL Section 4.2 + 2.11 application FIRST INSTANCE) |
 
-3-instance new canonical + 2-instance refresh = 5-instance combined; methodology validated across both ingest type variants. 5 distinct fiscal calendars in vault post-S60: Dec 31 (most canonical) + Mar 31 (ENS) + Sep 30 (FLNC) + Oct 31 (FCEL) + late-June (VIAV + FN). Per-instance evidence at log.md S45/S47/S58/S59/S60.
+5 new canonical + 2 refresh = 7-instance combined; methodology validated across both ingest type variants. 5 distinct fiscal calendars at month+ scope: Mar 31 (ENS + MOD + ARM) + Sep 30 (FLNC) + Oct 31 (FCEL) + late-June (VIAV + FN). Per-instance evidence at log.md S45/S47/S58/S59/S60/S70/S76.
+
+**Week-scope baseline (Section 2.11 N/A; 3-instance precedent codified Session 79):**
+
+| Filer | Fiscal year-end | Offset |
+|---|---|---|
+| [[NVDA]] (pre-S62 vault treatment) | Last-Sunday-of-January | ~1 month |
+| [[AMD]] (S77) | Last-Saturday-of-December | ~4 days |
+| [[INTC]] (S78) | Last-Saturday-of-December | ~4 days (EXACT match with AMD) |
+
+3-instance week-scope precedent at Section 2.11 N/A baseline (substantively-calendar fiscal year treatment). **Cross-canonical EXACT-period-parity FIRST INSTANCE methodology** per Section 2.11.2: AMD + INTC Dec 27, 2025 + Mar 28, 2026 EXACT match enables direct cross-canonical comparative analytical product without offset reconciliation.
 
 ### A.12 Section 4.6 source discipline ROI streak *(cross-ref Section 4.6)*
 
