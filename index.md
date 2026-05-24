@@ -8,7 +8,7 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` v9 Sectio
 
 | Page                           | Ticker | Layer | Photonics | Memory | Energy/Power | Equipment | Materials | Last Updated |
 | ------------------------------ | ------ | ----- | --------- | ------ | ------------ | --------- | --------- | ------------ |
-| [NVDA](wiki/companies/NVDA.md) | NVDA   | 1     | 1         | —      | —            | —         | —         | 2026-04-27   |
+| [NVDA](wiki/companies/NVDA.md) | NVDA   | 1     | 1         | —      | —            | —         | —         | 2026-05-24   |
 | [TSM](wiki/companies/TSM.md)   | TSM    | 2     | 1         | —      | —            | —         | —         | 2026-04-26   |
 | [LITE](wiki/companies/LITE.md) | LITE   | 4     | 3         | —      | —            | —         | —         | 2026-05-10   |
 | [COHR](wiki/companies/COHR.md) | COHR   | 4     | 2         | —      | —            | —         | —         | 2026-05-10   |
@@ -80,6 +80,7 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` v9 Sectio
 | [overseas-fab-expansion](wiki/themes/overseas-fab-expansion.md) | TSM | 2026-04-19 |
 | [chokepoint-investability-priorities](wiki/themes/chokepoint-investability-priorities.md) | NVDA, AVGO, MRVL, CSCO, AEHR, AXTI, COHR, LITE, AAOI, ALAB, FN, GLW, VRT, ONTO, VECO, TSM, COHU | 2026-04-28 |
 | [AIDC-cooling-architecture-transition](wiki/themes/AIDC-cooling-architecture-transition.md) | VRT, ETN, NVT, MOD, FLEX, COHR, ANET | 2026-05-16 |
+| [AI-agentic-CPU-orchestration-reemergence](wiki/themes/AI-agentic-CPU-orchestration-reemergence.md) | ARM, AMD, INTC | 2026-05-23 |
 
 ## Layers
 
