@@ -1,7 +1,7 @@
 ---
 type: theme
 tickers: [ALAB, AAOI, MRVL, AVGO, NVDA, FN]
-last_updated: 2026-04-27
+last_updated: 2026-05-24
 ---
 
 
@@ -95,6 +95,49 @@ The AI-driven design tool risk vector is new (flagged in both AVGO and MRVL FY20
 
 **Implications for the custom ASIC thesis.** If NVDA can absorb the performance advantages of specialized architectures (low-latency decode, disaggregated inference) into the platform, the economic case for hyperscaler custom ASICs weakens. Custom programs offer workload-specific optimization; platform-integrative absorption provides similar optimization without the multi-year design cycle, thousand-person teams, or single-customer economics. This does not eliminate the custom ASIC business — hyperscalers with sufficient scale (Google TPU, Amazon Trainium) may still prefer captive silicon — but it narrows the performance gap that justifies the investment. Monitor whether Dynamo's disaggregated inference architecture gains hyperscaler adoption as a test case. See [[NVDA-platform-integration]] for the broader pattern.
 
+## Hyperscaler bilateral relationship multi-modal expansion + Vera CPU competitive entry (S84 cross-vault propagation post-S81 NVDA refresh + S82 NVDA-platform-integration expansion)
+
+### Hyperscaler-side bilateral naming pattern broken at NVDA Q1 FY2027
+
+NVDA Q1 FY2027 substantially expanded hyperscaler customer naming scope vs prior earnings call patterns. Single-customer GPU count milestones disclosed at scale not previously substantiated at primary:
+
+- **Microsoft Fairwater** — "world's most powerful AI data center, now live, ahead of schedule, powered by hundreds of thousands of Blackwell GPUs" (Colette Kress Q1 FY2027)
+- **AWS** — "Starting this year, AWS will add over 1 million Blackwell and Rubin GPUs, and are collaborating on Spectrum networking" (Colette)
+- **Google A5X bare-metal instances** — "can support up to 960,000 Rubin GPUs across multiple sites" (Colette)
+- **Anthropic** — strategic partner across AWS + Azure + CoreWeave + SpaceXAI (Q1 FY2027 expansion vs Q4 FY2026 $10B investment baseline)
+- **11 named frontier labs** — OpenAI + Anthropic + xAI + Meta + MSL + Microsoft AI + TML + Reflection + Perplexity + Cursor + Gemini (vs Q4 FY2026 baseline ~4 named)
+
+**Reciprocal naming asymmetry observation.** The hyperscaler-side naming break at Q1 FY2027 is selective — NVDA names customers explicitly while preserving non-naming for supply chain partners (TSM + COHR + LITE) and CPU competitors (ARM + AMD + INTC). See [[NVDA-platform-integration]] S82 for the dedicated documentation of this pattern across NVDA's relationships. For hyperscaler custom ASIC implications: NVDA's framing positions the customer relationship as the relationship that defines platform reach.
+
+### Vera CPU competitive entry vs Arm hyperscaler custom silicon
+
+NVDA Q1 FY2027 introduced Vera CPU as a new product line with standalone economics:
+
+- "$200 billion TAM... a market we have never addressed before" (Jensen closing remarks)
+- "$20 billion in total CPU revenue this year" — standalone Vera CPU (excludes Vera-as-part-of-Rubin pairing per Jensen Q&A response to Vivek Arya)
+- "Built on custom Arm cores" (Colette prepared remarks)
+- "Setting us up to become the world-leading CPU supplier" (Colette)
+- 1.5x faster perf/core + 2x perf/watt + 4x density/rack vs x86-based alternatives (Colette)
+
+**Vera classification — both framings preserved per Section 2.1 heterogeneous-framing discipline (Vic Decision #9).** Vera is simultaneously:
+- **NVIDIA's custom silicon for the AI host CPU role** — fits within the broader custom silicon trend (NVDA designs its own host CPU using Arm IP rather than buying Intel/AMD x86 host CPU). Platform-integrative absorption pattern extended to the host CPU layer.
+- **NVIDIA competitive entry vs hyperscaler custom silicon** — Vera competes within the same Arm architectural family as the hyperscaler-internal Arm CPU silicon. AWS Graviton ($20B+ annual per ARM Q4 FY2026 letter) + Google Axion + Microsoft Cobalt all use Arm IP; Vera does too. Hyperscalers can now choose NVIDIA's Arm CPU rack-scale integrated with Rubin GPUs OR build their own Arm CPU in-house OR mix.
+
+Both framings are honest; neither is wrong. Reader can hold both rather than collapse to one.
+
+### Implications for the custom ASIC thesis (refined post-S84)
+
+The existing baseline framing — hyperscalers may eventually build their own NVIDIA-replacement silicon (COT risk) — is refined by Q1 FY2027 primary substantiation. The empirical pattern is multi-modal rather than zero-sum substitution:
+
+- **Hyperscalers ARE building their own Arm CPU silicon at scale** (Graviton $20B+ annual; Axion + Cobalt at production deployment)
+- **Hyperscalers ARE deploying NVIDIA at massive scale concurrently** (Microsoft hundreds of thousands Blackwell + AWS 1M+ Blackwell+Rubin + Google A5X 960k Rubin = the largest single-customer GPU count milestones in NVDA primary substantiation history)
+- **Hyperscalers ARE collaborating on networking** (AWS + Spectrum networking)
+- **NVDA is entering the CPU layer competitively** (Vera $200B TAM + $20B standalone) — competing both with x86 (AMD EPYC + INTC Xeon) AND with hyperscaler internal Arm silicon (Graviton + Axion + Cobalt)
+
+The multi-modal relationship structure is more complex than the COT risk framing alone captures. Custom ASIC programs are real and growing AT THE SAME TIME as NVIDIA infrastructure scales. The competitive dynamic is not "either NVDA wins or hyperscaler custom silicon wins" — it is "both grow concurrently with overlapping architectural choices at each layer."
+
+**Cross-canonical CPU sub-domain trajectory.** Vera CPU joins the 3-canonical S80 [[AI-agentic-CPU-orchestration-reemergence]] coverage trajectory (ARM + AMD + INTC) as 4th canonical participant per S83 propagation. NVDA Vera bilateral mode complexity vs the other three canonicals documented at [[NVDA-platform-integration]] S82 + [[AI-agentic-CPU-orchestration-reemergence]] S83.
+
 ## Signals to track
 
 1. **Hyperscaler in-house silicon announcements.** Google already designs TPUs internally; watch for Meta, Amazon, or Microsoft announcements of fully in-house ASIC programs that bypass AVGO/MRVL.
@@ -115,3 +158,4 @@ The AI-driven design tool risk vector is new (flagged in both AVGO and MRVL FY20
 - **2026-04-27:** Session 19 cross-reference. Added Cross-references section linking [[datacenter-photonics-supply-chain]].
 - **2026-04-27 (Session 21):** Amazon warrant table extended with subsection-header reframing. Custom-ASIC warrants ([[ALAB]] + [[MRVL]]) and non-custom-ASIC warrants ([[AAOI]] + [[FN]]) separated. Added [[FN]] Amazon warrant entry: March 12, 2025; 381,922 shares; $208.48 strike; $39.3M grant date fair value; vesting on commercial agreement payments; AWS named as HPC customer. Three-instance Amazon warrant pattern observation candidate met ([[ALAB]] + [[AAOI]] + [[FN]]). Page-level reframing candidate flagged for next codification session — current page scope (custom-ASIC focus) does not naturally accommodate non-custom-ASIC warrant patterns. [[FN]] added to tickers.
 - **2026-04-27 (Session 23 codification — page architecture decision B1, option (c)):** Maintain current structure with stronger subsection-header reframing + factual corrections per Session 23 codification kickoff. Two factual corrections: (i) FN warrant date conflation removed — FN warrant date (March 12, 2025) stands without parenthetical reference to ALAB February 2026 warrant context (dates were 11 months apart; "same date" framing was incorrect). (ii) Pattern observation section refactored to distinguish three discrete elements: (a) Amazon warrant pattern as cross-category observation (3 instances spanning custom-ASIC and non-custom-ASIC categories); (b) custom-ASIC warrant pattern as page primary scope ([[ALAB]] + [[MRVL]] only); (c) trigger conditions for future page reframing decisions (4th Amazon warrant OR first non-Amazon warrant emergence). Thesis relevance section strengthened with explicit page-primary-scope framing (custom-ASIC strategic positioning) and Amazon warrant pattern characterized as cross-thread observation documented within page. No frontmatter changes; no inbound wikilink updates required (architecture-preserving option).
+- **2026-05-24 (Session 84 cross-vault propagation post-S81 NVDA + S82 NVDA-platform-integration):** Added new section "Hyperscaler bilateral relationship multi-modal expansion + Vera CPU competitive entry" covering hyperscaler-side bilateral naming break at NVDA Q1 FY2027 (Microsoft Fairwater + AWS 1M+ + Google A5X 960k + Anthropic + 11 frontier labs); Vera CPU competitive entry vs Arm hyperscaler custom silicon (Graviton + Axion + Cobalt) at $200B TAM + $20B standalone; custom ASIC thesis refinement (multi-modal hyperscaler relationship — custom silicon + NVIDIA deployment + networking collaboration concurrent rather than zero-sum). Vera classification both framings preserved per Section 2.1 (NVIDIA custom silicon for host CPU role AND competitive entry vs hyperscaler internal Arm silicon). Reciprocal naming asymmetry observation brief; cross-reference [[NVDA-platform-integration]] S82 for dedicated documentation.

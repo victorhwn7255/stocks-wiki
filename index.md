@@ -4,7 +4,7 @@ Catalog of all wiki pages. Updated with each ingest.
 
 ## Companies
 
-Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` v9 Section 3.2 multi-domain frontmatter convention. Empty cell `—` = no exposure assessed (frontmatter field absent); `outside` = explicit Outside Framework placement per Section 3.10. Frontmatter divergences from canonical text in `frameworks.md` v10.1 positioning judgments table are pre-rework artifacts pending separate retro-application session.
+Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` v9.2 Section 3.2 multi-domain frontmatter convention. Empty cell `—` = no exposure assessed (frontmatter field absent); `outside` = explicit Outside Framework placement per Section 3.10. Frontmatter divergences from canonical text in `frameworks.md` v10.1 positioning judgments table are pre-rework artifacts pending separate retro-application session.
 
 | Page                           | Ticker | Layer | Photonics | Memory | Energy/Power | Equipment | Materials | Last Updated |
 | ------------------------------ | ------ | ----- | --------- | ------ | ------------ | --------- | --------- | ------------ |
@@ -54,33 +54,33 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` v9 Sectio
 
 | Page | Related Tickers | Last Updated |
 |------|-----------------|--------------|
-| [TSMC-CoWoS](wiki/chokepoints/TSMC-CoWoS.md) | TSM, NVDA, AEHR, ONTO, AVGO, MRVL | 2026-05-15 |
+| [TSMC-CoWoS](wiki/chokepoints/TSMC-CoWoS.md) | TSM, NVDA, AEHR, ONTO, AVGO, MRVL | 2026-05-24 |
 | [InP-supply](wiki/chokepoints/InP-supply.md) | AXTI, LITE, COHR, AAOI, AVGO, VECO | 2026-04-30 |
 | [datacenter-laser-supply](wiki/chokepoints/datacenter-laser-supply.md) | LITE, COHR, NVDA, AAOI, FN | 2026-05-15 |
 | [wafer-level-siph-test](wiki/chokepoints/wafer-level-siph-test.md) | AEHR | 2026-04-28 |
 | [optical-dsp-phy-supply](wiki/chokepoints/optical-dsp-phy-supply.md) | MRVL, AVGO, CRDO | 2026-04-28 |
-| [advanced-optical-packaging](wiki/chokepoints/advanced-optical-packaging.md) | FN, LITE, COHR, AAOI, TSEM, ANET | 2026-05-15 |
-| [cpo-integration](wiki/chokepoints/cpo-integration.md) | NVDA, AVGO, MRVL, CRDO, LITE, COHR, AAOI, TSM, FN, ALAB, ANET, TSEM | 2026-05-15 |
+| [advanced-optical-packaging](wiki/chokepoints/advanced-optical-packaging.md) | FN, LITE, COHR, AAOI, TSEM, ANET, NOK, MKSI, NVDA | 2026-05-24 |
+| [cpo-integration](wiki/chokepoints/cpo-integration.md) | NVDA, AVGO, MRVL, CRDO, LITE, COHR, AAOI, TSM, FN, ALAB, ANET, TSEM | 2026-05-24 |
 | [HALEU-fuel-chokepoint](wiki/chokepoints/HALEU-fuel-chokepoint.md) | LEU, BWXT, CCJ, BE, GEV | 2026-05-10 |
 | [BTM-grid-bypass-workaround](wiki/chokepoints/BTM-grid-bypass-workaround.md) | BE, FCEL, GEV, CAT | 2026-05-12 |
-| [transformer-supply](wiki/chokepoints/transformer-supply.md) | ETN, GEV | 2026-05-15 |
+| [transformer-supply](wiki/chokepoints/transformer-supply.md) | ETN, GEV, NVDA | 2026-05-24 |
 | [HBM-oligopoly](wiki/chokepoints/HBM-oligopoly.md) | ONTO, COHU, AEHR, TSM | 2026-05-15 |
-| [liquid-cooling](wiki/chokepoints/liquid-cooling.md) | VRT, ETN, NVT, MOD, FLEX, COHR, ANET | 2026-05-16 |
+| [liquid-cooling](wiki/chokepoints/liquid-cooling.md) | VRT, ETN, NVT, MOD, FLEX, COHR, ANET, NVDA | 2026-05-24 |
 
 ## Themes
 
 | Page | Related Tickers | Last Updated |
 |------|-----------------|--------------|
-| [AI-demand-durability](wiki/themes/AI-demand-durability.md) | TSM, NVDA, LITE, COHR, AEHR, ONTO, AAOI, MRVL, AVGO, AXTI, VECO, ALAB, GLW, FN, VRT | 2026-04-27 |
-| [CPO-platform-battle](wiki/themes/CPO-platform-battle.md) | NVDA, TSM, AVGO, MRVL, ALAB, CSCO, LITE, COHR, AEHR, ONTO, AAOI, COHU, AXTI, VECO | 2026-04-28 |
-| [datacenter-photonics-supply-chain](wiki/themes/datacenter-photonics-supply-chain.md) | NVDA, TSM, AVGO, MRVL, ALAB, CSCO, COHR, LITE, AAOI, AEHR, ONTO, COHU, AXTI, VECO, GLW, FN, VRT | 2026-05-01 |
-| [hyperscaler-custom-ASIC](wiki/themes/hyperscaler-custom-ASIC.md) | ALAB, AAOI, MRVL, AVGO, NVDA, FN | 2026-04-27 |
+| [AI-demand-durability](wiki/themes/AI-demand-durability.md) | TSM, NVDA, LITE, COHR, AEHR, ONTO, AAOI, MRVL, AVGO, AXTI, VECO, ALAB, GLW, FN, VRT | 2026-05-24 |
+| [CPO-platform-battle](wiki/themes/CPO-platform-battle.md) | NVDA, TSM, AVGO, MRVL, ALAB, CSCO, LITE, COHR, AEHR, ONTO, AAOI, COHU, AXTI, VECO | 2026-05-24 |
+| [datacenter-photonics-supply-chain](wiki/themes/datacenter-photonics-supply-chain.md) | NVDA, TSM, AVGO, MRVL, ALAB, CSCO, COHR, LITE, AAOI, AEHR, ONTO, COHU, AXTI, VECO, GLW, FN, VRT | 2026-05-24 |
+| [hyperscaler-custom-ASIC](wiki/themes/hyperscaler-custom-ASIC.md) | ALAB, AAOI, MRVL, AVGO, NVDA, FN | 2026-05-24 |
 | [foundry-competition](wiki/themes/foundry-competition.md) | TSM, NVDA | 2026-04-20 |
-| [NVDA-platform-integration](wiki/themes/NVDA-platform-integration.md) | NVDA, COHR, LITE, GLW, VRT | 2026-04-28 |
+| [NVDA-platform-integration](wiki/themes/NVDA-platform-integration.md) | NVDA, COHR, LITE, GLW, VRT, ANET, ARM, AMD, INTC | 2026-05-24 |
 | [overseas-fab-expansion](wiki/themes/overseas-fab-expansion.md) | TSM | 2026-04-19 |
 | [chokepoint-investability-priorities](wiki/themes/chokepoint-investability-priorities.md) | NVDA, AVGO, MRVL, CSCO, AEHR, AXTI, COHR, LITE, AAOI, ALAB, FN, GLW, VRT, ONTO, VECO, TSM, COHU | 2026-04-28 |
 | [AIDC-cooling-architecture-transition](wiki/themes/AIDC-cooling-architecture-transition.md) | VRT, ETN, NVT, MOD, FLEX, COHR, ANET | 2026-05-16 |
-| [AI-agentic-CPU-orchestration-reemergence](wiki/themes/AI-agentic-CPU-orchestration-reemergence.md) | ARM, AMD, INTC | 2026-05-23 |
+| [AI-agentic-CPU-orchestration-reemergence](wiki/themes/AI-agentic-CPU-orchestration-reemergence.md) | ARM, AMD, INTC, NVDA | 2026-05-24 |
 
 ## Layers
 

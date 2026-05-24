@@ -1,7 +1,7 @@
 ---
 type: theme
 tickers: [TSM, NVDA, LITE, COHR, AEHR, ONTO, AAOI, MRVL, AVGO, AXTI, VECO, ALAB, GLW, FN, VRT]
-last_updated: 2026-04-27
+last_updated: 2026-05-24
 ---
 
 # AI Demand Durability
@@ -194,6 +194,59 @@ The equipment tier provides two additional demand vantage points on the advanced
 
 **Seven-position demand convergence unchanged.** NVDA GTC adds a second NVDA venue data point at Layer 1, deepening the existing platform-definer position rather than adding an eighth position.
 
+### NVDA Q1 FY2027 (Tier 1 + Tier 2, period ending April 26, 2026; reported May 20, 2026)
+
+NVDA Q1 FY2027 substantially expands the Layer 1 platform-definer demand signal, with new disclosure categories (single-customer GPU count milestones; agentic CPU demand layer; aftermarket rental pricing trajectory) that did not appear at Q4 FY2026 or GTC March 2026 baselines.
+
+**Quantitative signals (Q1 FY2027 earnings call + 10-Q):**
+
+- Total revenue: $82B, up 85% YoY, up 20% sequentially (3rd consecutive quarter of YoY acceleration; 14th straight sequential growth quarter per Colette Kress)
+- Sequential revenue increase: $13.5B (record)
+- Data Center revenue: $75B, up 92% YoY (Data Center computing $60B +77% YoY; networking $15B nearly tripled YoY)
+- Edge Computing platform: $6.4B, up 29% YoY (PCs + gaming + workstations + AI-RAN + robotics + automotive)
+- Free cash flow: $49B (record vs $35B Q4 FY2026)
+- Total supply (inventory + purchase commitments + prepaids): $145B (Colette prepared remarks)
+- Multi-year cloud service agreement commitments: $30B (Q1 FY2027 10-Q Note) — NVDA-as-cloud-service-buyer scope used for R&D; structurally novel disclosure
+- Q2 FY2027 guidance: $91B ±2% (+11% sequential midpoint)
+- Customer concentration: 3 direct customers = 21% + 17% + 16% = 54% of total revenue (vs Q1 FY2026 baseline 2 customers at 30%)
+
+**Forward demand framing:**
+
+- "$1 trillion in Blackwell and Rubin revenue we foresee from 2025 through calendar 2027" (Colette prepared remarks) — excludes LPX, Rubin CPX, Vera CPU standalone racks per Jensen Q&A response to Jim Schneider (upside scope)
+- "Hyperscale CapEx to exceed $1 trillion in 2027" per analyst forecasts (Colette) — substantially escalated from $700B 2026 baseline per Q4 FY2026 call
+- AI infrastructure spending "on track to reach $3 trillion to $4 trillion annually by the end of this decade" (Colette; consistent with Q4 FY2026 Jensen framing)
+- Data Center ex-China grew ~120% in Q1 FY2027 (Jensen Q&A response to Ben Reitzes)
+- Jensen closing: "Demand has gone parabolic. The reason is simple. Agentic AI has arrived."
+
+**Single-customer GPU count milestones (NEW disclosure category Q1 FY2027):**
+
+First NVDA primary substantiation of single-customer GPU counts at this scale — material expansion of disclosure category beyond prior earnings call patterns:
+
+- **Microsoft Fairwater:** "world's most powerful AI data center, now live, ahead of schedule, powered by hundreds of thousands of Blackwell GPUs" (Colette prepared remarks)
+- **AWS:** "Starting this year, AWS will add over 1 million Blackwell and Rubin GPUs, and are collaborating on Spectrum networking" (Colette)
+- **Google A5X bare-metal instances:** "can support up to 960,000 Rubin GPUs across multiple sites" (Colette)
+
+**Hyperscaler bilateral naming expansion.** 11 named frontier labs (OpenAI + Anthropic + xAI + Meta + MSL + Microsoft AI + TML + Reflection + Perplexity + Cursor + Gemini) per Colette prepared remarks — vs Q4 FY2026 baseline ~4 named explicitly. Anthropic specifically expanded from Q4 $10B investment baseline to Q1 FY2027 multi-cloud strategic partner scope (AWS + Azure + CoreWeave + SpaceXAI orchestration).
+
+**Aftermarket rental pricing signal (NEW disclosure at Q1 FY2027):**
+
+- H100 cloud rental pricing rose ~20% YTD (Colette prepared remarks)
+- A100 cloud pricing up ~15%
+
+Supports depreciable-asset-life thesis at GPU rentable infrastructure scope — even 4-6 year-old GPU generations command rising rental pricing, suggesting demand exceeds supply at the entire installed-base scope, not just frontier generation. This complements the prior NVDA Q4 FY2026 observation that "even six-year-old Ampere GPUs completely consumed in the cloud with pricing going up."
+
+**Agentic CPU demand layer ($200B Vera CPU TAM):**
+
+NVDA Q1 FY2027 introduces a structurally new demand layer separate from accelerator demand:
+- "Vera, the world's first CPU purpose built for agentic AI. Vera opens a brand new $200 billion TAM for NVIDIA, a market we have never addressed before" (Jensen closing remarks)
+- "$20 billion in total CPU revenue this year" — standalone Vera CPU (excludes Vera-as-part-of-Rubin pairing)
+
+This is additive to the existing accelerator demand evidence base, not substitution. Cross-reference [[AI-agentic-CPU-orchestration-reemergence]] theme for the 4-canonical CPU sub-domain coverage trajectory (NVDA Vera joins ARM + AMD + INTC per S83 propagation).
+
+**Multi-layer demand convergence — refreshed.** The 10-position framing from Session 22 baseline ([[NVDA]] + [[AVGO]] + [[TSM]] + [[MRVL]] + [[ALAB]] + [[LITE]] + [[COHR]] + [[GLW]] + [[AEHR]] + [[ONTO]] + [[VECO]] + [[AAOI]] + [[AXTI]] + [[FN]] + [[VRT]]) holds at the structural level. NVDA Q1 FY2027 reinforces position #1 (Layer 1 platform-definer) at materially higher revenue scale (+85% YoY) + materially expanded forward visibility (Blackwell+Rubin $1T 2025-2027 + hyperscale CapEx $1T 2027 forecast). The new disclosure categories (single-customer GPU milestones + agentic CPU demand layer + aftermarket rental pricing trajectory) expand the evidence base depth at Layer 1 rather than adding a new layer position.
+
+**Aschenbrenner thesis pattern reinforcement.** $1T 2027 hyperscale CapEx + $3-4T 2030 AI infrastructure spending trajectory + single-customer GPU milestones at million-GPU scale (AWS) are the kind of demand visibility that supports the 29-participant Aschenbrenner thesis pattern documented in MEMORY.md. Substantive (in the load-bearing sense) reinforcement at substantial primary-source scale.
+
 ### GLW FY2025 — cross-source (Tier 1 + Tier 2, fiscal year ended December 31, 2025)
 
 [[GLW]] adds Layer 4 specialized fiber supply as the eighth supply chain position in the demand convergence. Corning's Optical Communications segment provides direct primary-source AI demand attribution at the segment-MD&A level — distinct from generic forward-looking-statement language and distinct from analyst-driven framing.
@@ -296,3 +349,4 @@ Evidence that would weaken the demand durability thesis:
 - **2026-04-27 (Session 21):** Added [[FN]] FY2025 + Q2 FY2026 demand section at Layer 6 optical contract manufacturing. Nine-position demand convergence (was eight). FY2025 revenue $3.42B (+18.6% YoY); Q2 FY2026 record $1.13B (+35.9% YoY); HPC product line $86M Q2 (+473% sequential); NVDA + Cisco top-2 = 45.8% concentration; Amazon warrant March 12, 2025 ($39.3M FV); Building 10 Chonburi $132.5M expansion. Two consecutive sessions adding positions strengthens codification urgency for seven→eight→nine framing recalibration. [[FN]] added to tickers.
 - **2026-04-27 (Session 22):** Added [[VRT]] FY2025 + Q1 2026 demand section at Layer 5 datacenter thermal/cooling and power infrastructure. **Ten-position demand convergence (was nine).** FY2025 net sales $10,229.9M (+27.7% YoY); Q1 2026 record $2,649.5M (+30.1% YoY); FY2026 raised guidance $13.75B (+34% organic growth); backlog $15.0B vs $7.2B (+108% YoY); FY2026 capex guidance $425-525M (~doubling vs $226.4M FY2025); NVIDIA partnership reciprocally confirmed at Tier 1 level (10-K Item 7 Outlook and Trends Strategic Partnerships); EcoDataCenter Sweden Vera Rubin deployment; 800V DC programs H2 2026 portfolio launches and 2027 shipping; investment-grade ratings + S&P 500 inclusion; net leverage 0.2x; no customer >10% concentration; 40+ country manufacturing diversification. **Three consecutive sessions adding positions (seven → eight → nine → ten across S20-S21-S22) strengthens framing recalibration urgency for Session 23 codification.** [[VRT]] added to tickers.
 - **2026-04-27 (Session 23 codification — page architecture decision B2, option (b) softer layer-organized restructure):** Added "Multi-layer demand convergence" section between "Thesis relevance" and "Demand signals by source" sections with layer-organized summary table covering all 15 companies across Framework 2 Layers 1-6 plus equipment tier. Refinement 1A footnote added beneath table acknowledging straddling tensions per company page (AVGO Layer 1/3, AAOI Layer 4/5, MRVL Layer 3→2 trajectory, ALAB Layer 3→2 trajectory). Opening framing language updated from count-bound ("ten-position demand convergence") to layer-organized ("multi-layer demand convergence across the AI supply chain"). Existing chronological per-source narrative retained unchanged in structure; layer-organized summary table is supplementary not replacement. No frontmatter changes; no inbound wikilink updates required.
+- **2026-05-24 (Session 83 cross-vault propagation — theme refresh post-S81 NVDA Q1 FY2027):** Added new NVDA Q1 FY2027 subsection under "Demand signals by source" (placed after NVDA GTC March 2026 subsection). Covers Q1 FY2027 revenue trajectory ($82B +85% YoY; Data Center $75B +92%); $1T Blackwell+Rubin 2025-2027 visibility + $1T 2027 hyperscale CapEx forecast (escalated from $700B 2026 baseline) + $3-4T 2030 AI infrastructure spending; NEW single-customer GPU count milestones disclosure category (Microsoft Fairwater hundreds of thousands Blackwell + AWS 1M+ Blackwell+Rubin + Google A5X 960k Rubin); 11 named frontier labs + Anthropic multi-cloud strategic partner expansion; aftermarket rental pricing signals (H100 +20% YTD + A100 +15%); $200B Vera CPU TAM as agentic CPU demand layer addition (cross-reference [[AI-agentic-CPU-orchestration-reemergence]]). 10-position multi-layer demand convergence framing unchanged at structural level; NVDA Q1 FY2027 reinforces position #1 at higher revenue scale + expanded forward visibility. No frontmatter ticker changes (NVDA already included). Files updated: 4 across this session (this page + AI-agentic-CPU-orchestration-reemergence + index.md + log.md S83 entry).

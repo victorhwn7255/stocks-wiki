@@ -73,6 +73,7 @@ COMPANIES = {
     "ARM":  {"cik": "0001973239", "forms": ["20-F", "6-K"]},
     "AMD":  {"cik": "0000002488", "forms": ["10-K", "10-Q"]},
     "INTC": {"cik": "0000050863", "forms": ["10-K", "10-Q"]},
+    "MU":   {"cik": "0000723125", "forms": ["10-K", "10-Q"]},
 }
 
 HEADERS = {"User-Agent": USER_AGENT, "Accept": "application/json"}

@@ -1,7 +1,7 @@
 ---
 type: theme
-tickers: [NVDA, COHR, LITE, GLW, VRT, ANET]
-last_updated: 2026-04-28
+tickers: [NVDA, COHR, LITE, GLW, VRT, ANET, ARM, AMD, INTC]
+last_updated: 2026-05-24
 ---
 
 # NVDA Platform Integration Pattern
@@ -36,6 +36,8 @@ The term "platform integration" is deliberate. NVDA is not vertically integratin
 
 C.J. Muse (Cantor Fitzgerald) asked directly whether NVDA should be "thinking about customized silicon either by workload or customer, as an increasing focus by NVIDIA" (NVDA Q4 FY2026 call). Jensen's response emphasized CUDA versatility and the "dielet tax" on competitors, but did not directly reject workload-specific silicon — leaving the strategic direction open.
 
+**Tier 1 dollar scale clarified at Q1 FY2027 (S81 refresh).** NVDA Q1 FY2027 10-Q Note 7 discloses $3,957M accrued purchase consideration "Related to the Groq, Inc. non-exclusive license agreement" — first Tier 1 quantification of the Groq deal magnitude. Prior framings characterized the licensing qualitatively; the 10-Q footnote anchors it at ~$4B scale, comparable in magnitude to the COHR and LITE equity investments ($2B each) and large enough to position Groq licensing as a material absorption rather than a small bolt-on. The accrued balance grew $36M sequentially vs the $3,921M January 25, 2026 baseline — minor incremental change quarter-over-quarter.
+
 ### COHR and LITE (equity investments, March 2, 2026)
 
 **What was absorbed:** $2B equity stake in each, plus multi-year strategic agreements, multi-billion dollar purchase commitments, and future capacity access rights for advanced laser components (per frameworks.md, announced March 2, 2026 — not from NVDA Q4 FY2026 call, which preceded the announcement by one week).
@@ -54,11 +56,31 @@ C.J. Muse (Cantor Fitzgerald) asked directly whether NVDA should be "thinking ab
 
 Both framings are factually consistent: the same capital flow enables capacity expansion (supplier need) and secures supply access (NVDA's need). The perspectival gap reflects structural differences: LITE is capital-constrained and needed the investment; COHR has stronger cash generation and framed it as relationship formalization. See [[LITE]], [[COHR]], and [[datacenter-laser-supply]] for the full analyses.
 
+**Q1 FY2027 reciprocal non-naming preserved (S81 refresh).** NVDA Q1 FY2027 call did not mention COHR or LITE — neither by name nor by description — despite the $2B equity investments three months prior being material capital deployments and the largest supply-assurance events in NVDA's photonics history. The GTC March 2026 venue-specific break (where Jensen named TSMC for COUP packaging) did not propagate to the earnings call venue. Supply chain reciprocal non-naming holds: NVDA names its hyperscaler customers explicitly at earnings calls but keeps its suppliers anonymous. The pattern is structural — the platform-definer role frames the customer side as the relationship that defines reach, while the supplier side is treated as ecosystem infrastructure not requiring public attribution.
+
 ### Ayar Labs (equity backing)
 
 **What was absorbed:** Equity investment in silicon photonics startup. Ayar Labs is also backed by AMD (per frameworks.md).
 
 **Pattern significance:** Ayar Labs is a silicon photonics design company — a potential component of future CPO platforms. NVDA's backing positions it to access Ayar's technology if the silicon photonics startup landscape consolidates. `_thesis.md` identifies a disconfirming signal here: if Ayar Labs or Lightmatter gets acquired by hyperscalers rather than merchant platform players, the open CPO platform thesis weakens.
+
+### Vera CPU (first-party silicon, 7th modality — substitute-away dependency variant)
+
+**What was built:** NVDA-designed datacenter CPU using ARM-licensed IP. Vera arrived as the CPU half of the Vera Rubin platform but Q1 FY2027 framed it as a standalone product line with its own TAM and revenue trajectory.
+
+**What it represents (per NVDA Q1 FY2027 call, May 20, 2026):**
+- "Vera, the world's first CPU purpose built for agentic AI. Vera opens a brand new $200 billion TAM for NVIDIA, a market we have never addressed before" (Jensen closing remarks)
+- "$20 billion in total CPU revenue this year" — standalone Vera CPU revenue, excluding Vera-as-part-of-Rubin pairing (per Jensen Q&A response to Vivek Arya)
+- "Setting us up to become the world-leading CPU supplier" (Colette Kress prepared remarks)
+- Built on custom Arm cores, co-designed end-to-end with Rubin GPUs and NVLink; 1.5x perf/core + 2x perf/watt + 4x density/rack vs x86-based alternatives
+- Four use modes: Vera Rubin pairing (1 Vera per 2 Rubin GPUs) + standalone CPU + Vera+CX9 storage stack + Vera+CX9 confidential computing
+- "Supply constrained throughout the entire life of Vera Rubin" (Jensen Q&A)
+
+**Pattern significance — substitute-away variant.** Prior six modalities are all extend-or-acquire patterns: NVDA either pulls a capability into the platform (Mellanox, Groq, Ayar Labs) or wraps a supplier in commercial/equity ties (COHR/LITE) or rides bilateral ecosystem partnerships (VRT, GLW). Vera CPU is structurally different — NVDA is building its own first-party silicon to **substitute away** a third-party dependency (x86 host CPU from Intel or AMD), not to absorb a target company. The closest prior analog is Mellanox at the modality level (internal build for control-layer extension), but Vera is designed in-house from day one rather than acquired and integrated. Worth a separate category because the supplier being displaced (Intel/AMD x86 host CPU) is not being absorbed, financed, or partnered with — it is being routed around.
+
+**Cross-canonical parallel to [[ARM]] AGI CPU first-party silicon dual-vector pattern.** ARM Q4 FY2026 letter documents AGI CPU as ARM's first Arm-designed datacenter chip, $1B+ committed demand, "lead partner and co-developer" Meta. The structural pattern matches: an IP-licensor/owner extending into first-party produced silicon while continuing to license IP to others. NVDA Vera = NVDA designs first-party silicon using ARM-licensed IP; ARM AGI CPU = ARM designs first-party silicon while continuing to license IP (including the IP Vera uses). The parallel is structural, not competitive in the same direction — Vera competes with x86 hyperscaler hosts AND with ARM hyperscaler custom silicon (Graviton + Axion + Cobalt); ARM AGI CPU competes primarily with x86 hyperscaler hosts. Both pages document the parallel for cross-vault traceability. See [[AI-agentic-CPU-orchestration-reemergence]] for the 4-canonical CPU sub-domain coverage trajectory implications.
+
+**Arm-side relationship per the 3-mode bilateral taxonomy below.** Vera "built on custom Arm cores" substantiates ARM IP usage at NVDA primary, but ARM as entity is not named in the Q1 FY2027 call — reciprocal non-naming preserved at competitor-product scope despite the IP licensing relationship being commercially active. See Cross-canonical NVIDIA bilateral mode taxonomy section.
 
 ### [[GLW]] (named ecosystem partner — counterparty-attribution-only)
 
@@ -94,8 +116,9 @@ This is the **first vault primary-source confirmation of NVIDIA Vera Rubin comme
 | 4. Ayar Labs-style equity backing | Yes (minority) | Yes (with caveats) | Investment-level (equity, no acquisition) |
 | 5. GLW counterparty-attribution-only | No | **No (asymmetric)** | Disclosed only on counterparty side |
 | **6. VRT reciprocal-confirmation, technology development** | **No** | **Yes** | **Technology development collaboration; no equity, no purchase commitment, but bilaterally documented** |
+| **7. Vera CPU first-party silicon (substitute-away variant)** | **N/A (internal build)** | **N/A (no external party)** | **Internal design + production; routes around third-party dependency rather than absorbing or partnering** |
 
-The sixth modality fills a category that the original four absorption modalities did not anticipate: bilateral partnership without equity or commercial transaction commitment, documented as joint technology development. Whether this category becomes more populated as additional Tier 3 ecosystem-partner claims are cross-validated against target-company primary sources is open. Per the architecture primer's broader observation that "denser optical I/O and CPO do not live in isolation; they only scale when cooling, power delivery, and test workflows scale with them," Vertiv's reciprocal-confirmation modality is structurally consistent with NVIDIA needing thermal/power infrastructure ecosystem participation without absorbing the supplier into the equity stack.
+The sixth modality fills a category that the original four absorption modalities did not anticipate: bilateral partnership without equity or commercial transaction commitment, documented as joint technology development. The seventh modality (added S82 per S81 NVDA Q1 FY2027 Vera CPU substantiation) is a substitute-away variant — internal build for a layer historically supplied by third parties, with the third-party supplier neither absorbed nor partnered with but simply displaced. Whether either non-absorption category (GLW asymmetric, VRT bilateral) or the substitute-away category (Vera) becomes more populated as additional ingests surface is open. Per the architecture primer's broader observation that "denser optical I/O and CPO do not live in isolation; they only scale when cooling, power delivery, and test workflows scale with them," Vertiv's reciprocal-confirmation modality is structurally consistent with NVIDIA needing thermal/power infrastructure ecosystem participation without absorbing the supplier into the equity stack.
 
 ### Model builder ecosystem investments
 
@@ -106,6 +129,16 @@ The Q4 FY2026 call referenced multiple model builder partnerships (NVDA Q4 FY202
 - xAI: partnership referenced
 
 These are a different category from the technology absorptions above — they are ecosystem investments that deepen platform lock-in at the customer layer rather than the technology layer. They ensure that the leading AI model builders are trained on and optimized for NVIDIA infrastructure, making platform switching increasingly costly.
+
+**Q1 FY2027 expansion (S81 refresh).** The model builder + hyperscaler ecosystem disclosure scope expanded materially at NVDA Q1 FY2027:
+
+- **Anthropic — multi-cloud strategic partner.** Q4 FY2026 baseline $10B investment evolved to Q1 FY2027 multi-cloud orchestration scope. Colette: "Our share of frontier AI compute is increasing. We have deepened our collaboration with Anthropic and are delighted to be a strategic partner to expand their compute capacity. We will support the company's growth trajectory through AWS, Azure, CoreWeave, SpaceXAI, and more" (NVDA Q1 FY2027 call). The relationship shifted from a single-investment-event frame to NVDA-as-compute-orchestrator-across-hyperscalers — NVDA is now positioned as the cross-cloud capacity allocator for one of two leading frontier model builders. This is a different integration mode than the Q4 baseline implied: NVDA is not just funding Anthropic, it is provisioning Anthropic across the hyperscaler stack on Anthropic's behalf.
+
+- **11 named frontier labs.** Q1 FY2027 enumeration expanded to: OpenAI + Anthropic + xAI + Meta + MSL + Microsoft AI + TML + Reflection + Perplexity + Cursor + Gemini (Colette prepared remarks). Q4 baseline named ~4 explicitly; Q1 FY2027 nearly tripled the named scope. The breadth signal matters for platform lock-in — Jensen: "NVIDIA is the only platform that runs every frontier AI model" (closing remarks).
+
+- **Hyperscaler-side naming pattern broken at Q1 FY2027.** Microsoft Fairwater (hundreds of thousands of Blackwell GPUs, live ahead of schedule) + AWS (over 1 million Blackwell + Rubin GPUs starting this year, Spectrum networking collaboration) + Google A5X bare-metal instances (up to 960,000 Rubin GPUs across multiple sites) were named explicitly with single-customer GPU count milestones — disclosure granularity not present in prior earnings calls. The hyperscaler-side naming asymmetry is itself a platform integration observation: NVDA frames the customer side as the relationship that defines platform reach (named explicitly with quantified deployment scale), while the supplier side (TSM, COHR, LITE) and CPU competitor side (ARM, AMD, INTC) remain anonymous. Reciprocal non-naming is preserved selectively — broken where it serves the platform narrative; preserved where it would acknowledge dependency or competition.
+
+- **Meta dual co-developer 3rd instance not confirmed at NVDA primary.** [[AI-agentic-CPU-orchestration-reemergence]] (S80) documents a 2-instance Meta dual co-developer precedent: ARM AGI CPU ("lead partner and co-developer" per ARM Q4 FY2026 letter) + AMD MI450 + Helios ("co-designed to support Meta's next-generation AI workloads" per AMD Q1 2026 call). Q1 FY2027 NVDA primary substantiation: Meta listed in the 11-named frontier lab enumeration at customer deployment scope, not at co-developer scope. The 2-instance Meta precedent holds; NVDA does not extend the pattern. This is analytically meaningful — Meta's relationship to NVDA is structurally distinct from Meta's relationships to ARM + AMD. ARM + AMD frame Meta as architectural co-designer; NVDA frames Meta as deployer of NVIDIA infrastructure. The same hyperscaler can occupy different roles at different vendors.
 
 ## Pattern decomposition: control-driven vs. coordination-driven
 
@@ -130,6 +163,40 @@ On the historical record, the [[LITE]] and [[COHR]] investments structurally res
 **Falsification criteria:** If NVDA announces intent to acquire either [[LITE]] or [[COHR]] within 12–18 months of the March 2026 investments, this pattern analysis is falsified — the investments were acquisition precursors, not ecosystem financing. If the relationships continue deepening commercially without control transactions through mid-2027, the pattern holds.
 
 **Caveat from the Arm precedent:** The pattern analysis does not rule out later escalation. If optics were to become as central to NVDA's platform differentiation as high-performance fabric became by 2019, and if one of these suppliers became both strategically indispensable and practically acquirable, the Arm/Mellanox side of the pattern says NVDA has the organizational disposition to seek deeper control. The current documentation does not support that reading — but the Arm case demonstrates that the boundary between coordination and control is structural, not permanent (per /raw/research/NVDA-absorb-extend-history.md).
+
+## Cross-canonical NVIDIA bilateral mode taxonomy
+
+A distinct analytical product emerged from the S76 [[ARM]] + S77 [[AMD]] + S78 [[INTC]] + S80 [[AI-agentic-CPU-orchestration-reemergence]] theme + S81 [[NVDA]] refresh trajectory: the 3-canonical CPU sub-domain canonicals each relate to NVDA via a structurally distinct bilateral mode. The 3-mode taxonomy carries per-mode reciprocal naming patterns as part of the analytical product rather than as a separate observation — the asymmetry is intrinsic to the modes.
+
+### Mode 1 — Reciprocal-confirmation candidate (partial; ARM)
+
+ARM Q4 FY2026 shareholder letter substantiates the relationship explicitly: NVIDIA Vera is named as "next-generation Arm-based CPU purpose-built for agentic AI" with "Vera Rubin standalone rack integrating 256 Vera CPUs" — ARM-side bilateral confirmation at primary. NVDA Q1 FY2027 substantiation references "custom Arm cores" for Vera but does not name ARM as a corporate entity at any point in the 16-page call. The IP licensing relationship is commercially active and architecturally central, but reciprocal naming is partial: ARM names NVDA explicitly; NVDA names the technology layer (Arm cores) but not the licensor.
+
+**Confidence level: partial.** The mode is real (Vera = Arm IP is uncontested); the bilateral reciprocal naming is asymmetric. Partial-confirmation framing rather than full reciprocal-confirmation per the Section 2.1 honest-verdict discipline carried from S80 + S81.
+
+### Mode 2 — Mutual reciprocal non-naming as competitive equilibrium (AMD)
+
+AMD MI300/MI325/MI350/MI355X/MI450 product series + the Helios rack-scale architecture (EPYC Venice + MI450) compete directly with NVIDIA H/B/Vera Rubin/Feynman series. The competitive relationship is structurally unambiguous from primary substantiation on both sides (AMD.md S77 + NVDA.md S81). Neither company names the other in earnings call commentary — AMD does not call out NVIDIA by name when describing competitive positioning; NVDA does not call out AMD when describing the CPU competitive landscape (Vera CPU framing uses "x86-based alternatives" as the generic competitor reference).
+
+**The silence is purposeful, not absence.** Both companies maintain reciprocal non-naming as a competitive equilibrium — public acknowledgment of the head-to-head matchup would constrain narrative flexibility on both sides. The mode is bilateral at the competitive structural level; the reciprocal non-naming is the durable equilibrium framing on top.
+
+**Confidence level: medium.** The mode is real and stable; the reciprocal naming pattern is the equilibrium itself, not a partial-confirmation artifact.
+
+### Mode 3 — Strategic partnership co-development with bilateral asymmetry (INTC; FIRST INSTANCE)
+
+INTC.md S78 documents the partnership explicitly via Tier 1 (INTC 10-K Item 1): "We also announced a strategic partnership with NVIDIA to co-develop custom client and data center products combining our x86 CPU technologies with NVIDIA's AI and accelerated computing capabilities. The collaboration is intended to jointly develop multiple generations of products for hyperscale, enterprise and consumer markets based on the x86 architecture." Tier 2 confirms operational scope: Zinsner Q1 2026 INTC call: "Xeon 6 was selected as the host CPU for NVIDIA's DGX Rubin NVL8 systems, and Xeon remains the most deployed host CPU due to its industry-leading memory, security, and networking orchestration."
+
+NVDA Q1 FY2027 substantiation: INTC is not named at any point in the 16-page call. The reciprocal-confirmation asymmetry is stark — INTC discloses the partnership at both Tier 1 (10-K) and Tier 2 (earnings call) levels with specific product detail (Xeon 6 = DGX Rubin NVL8 host CPU); NVDA preserves complete non-naming at competitor-product scope. This is FIRST INSTANCE in the vault of a strategic-partnership-with-bilateral-asymmetry mode: real cooperation on the engineering side, asymmetric disclosure on the public reporting side.
+
+**Confidence level: high (one-sided).** The partnership is real and operational per INTC primary substantiation; the bilateral asymmetry is intrinsic to the mode and worth tracking forward — whether NVDA reciprocally confirms at any future venue (next 10-K, next GTC, next earnings call) is a falsifiable observation. If reciprocal confirmation never arrives, the mode is durable bilateral-asymmetric strategic partnership. If reciprocal confirmation does arrive, the mode collapses into the more familiar "named ecosystem partner" category.
+
+### Why this taxonomy belongs in the NVDA platform integration framework
+
+The 7 modalities documented in "The pattern" section describe how NVDA absorbs, partners with, finances, or substitutes away technology providers and ecosystem participants. The 3-mode bilateral taxonomy adds the **competitor-architecture-vendor axis**: how NVDA relates to vendors that are simultaneously (a) suppliers of architecture or technology NVDA uses, (b) competitors in adjacent or overlapping product markets, and (c) ecosystem actors whose public framing affects NVDA's narrative space.
+
+The CPU sub-domain canonicals are the cleanest case where all three apply — ARM provides IP NVDA uses (Vera) while competing for hyperscaler custom silicon share; AMD competes directly on accelerators and EPYC server CPUs; INTC competes on Xeon while strategically partnering on DGX host CPU integration. The taxonomy captures a relationship axis the 7 modalities do not, because the 7 modalities frame relationships through commercial structure (equity / licensing / acquisition / build / partnership) while the 3 modes frame them through bilateral disclosure equilibrium.
+
+Methodology codification candidate at Tranche 2C-iii — the 3-mode taxonomy is the primary cross-canonical analytical product of the S76-S81 trajectory and warrants formal codification once additional instances accumulate (currently 1 vault occurrence at S80; this expansion adds the first dedicated documentation home).
 
 ## What this means for the thesis
 
@@ -159,3 +226,4 @@ On the historical record, the [[LITE]] and [[COHR]] investments structurally res
 - **2026-04-27 (Session 22 ingest):** Added [[VRT]] subsection documenting **sixth integration modality — reciprocal-confirmation, technology development collaboration without equity**. NVIDIA partnership reciprocally confirmed at Tier 1 level (VRT 10-K FY2025 Item 7 Outlook and Trends Strategic Partnerships) plus Tier 2 deployment specificity (Q1 2026 call EcoDataCenter Sweden Vera Rubin + Vertiv OneCore selected for full DC solution). Sixth modality is the second non-absorption category, structurally distinct from both the four absorption modalities and from [[GLW]] counterparty-attribution-only — bilateral confirmation without equity, purchase commitment, or acquisition commercialization. Three-mode counterparty-attribution-only annotation discipline framing introduced (over-claim + inversion + reciprocal-confirmation), with VRT as first reciprocal-confirmation mode instance. Structural taxonomy table added to position the six modalities along equity / bilateral confirmation / commercial integration axes. First vault primary-source confirmation of NVIDIA Vera Rubin commercial deployment timing (EcoDataCenter Sweden). [[VRT]] added to tickers.
 - **2026-04-28 (Session 27 paired ingest — [[ANET]] cross-reference addition):** Cross-references section updated to add [[ANET]] entry. ANET-side framing of NVIDIA as "the recognized worldwide market leader in GPUs" documented (Jayshree Ullal Q4 2025 call) — counterparty-attribution-only mode pending bilateral cross-validation. ANET represents an ecosystem-partner-without-equity relationship at Layer 5 systems integrator tier; structurally distinct from the six integration modalities (acquisition, licensing, equity-plus-purchase, equity-backing, counterparty-attribution-only, reciprocal-confirmation). No new modality introduced; ANET noted as in-vault control-point thread fifth-member completion via Framework 2.6 placement (bottleneck participant with platform-tier ambition). [[ANET]] added to tickers.
 - **2026-04-30 (Session 32 cross-reference — [[cpo-integration]] chokepoint page creation):** New chokepoint page [[cpo-integration]] cross-references this theme page in its NVDA per-company integration positioning section + COUPE platform integration subsection. Six-modality framework operationalized at CPO chokepoint: NVDA + TSM joint co-development modality (COUPE) + NVDA + LITE/COHR equity-plus-purchase modality ($2B March 2026 capital-offset-for-supply-assurance) + counterparty-attribution-only + reciprocal-confirmation modes annotated throughout chokepoint page per A1 three-mode framing. ELS architecture preservation of Layer 4 component-tier value through CPO transition documented as chokepoint mechanism — operationalizes equity-plus-purchase modality at scale-up CPO timing. No content edits to this theme page; cross-reference relationship now bidirectional via chokepoint page Cross-references section.
+- **2026-05-24 (Session 82 mechanism theme expansion — first dedicated expansion in vault history):** Added new Vera CPU modality (7th, substitute-away variant per S81 substantiation) within "The pattern" section; structural taxonomy table extended 6 → 7 rows. Added new Cross-canonical NVIDIA bilateral mode taxonomy section (3 modes: ARM partial reciprocal-confirmation + AMD mutual reciprocal non-naming as competitive equilibrium + INTC strategic partnership co-development bilateral asymmetry FIRST INSTANCE) — formal home for the cross-canonical analytical product from S76-S81 trajectory. Refreshed Groq subsection with Tier 1 $3,957M dollar scale per Q1 FY2027 10-Q Note 7. Refreshed Model builder ecosystem investments with Anthropic multi-cloud strategic partner expansion + 11 named frontier labs + hyperscaler-side naming asymmetry observation + Meta dual co-developer 3rd instance NOT confirmed at NVDA primary. Refreshed COHR/LITE with Q1 FY2027 supply chain non-naming preserved observation. Frontmatter tickers expanded 6 → 9 ([NVDA, COHR, LITE, GLW, VRT, ANET, ARM, AMD, INTC]) per Section 3.2(b) provenance scope. Page line scope 162 → ~282 lines. Files updated: 3 (this page + index.md + log.md).

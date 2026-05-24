@@ -1,8 +1,8 @@
-# CLAUDE.md — stocks-wiki (v9.1)
+# CLAUDE.md — stocks-wiki (v9.2)
 
 A personal research vault for AI datacenter supply chain and chokepoint analysis. You maintain the wiki; the human curates sources and asks questions.
 
-*Version: v9.1 (Codification Tranche 2C-i; Session 79; 2026-05-23). Prior: v9 post-Tranche 2A Session 61.*
+*Version: v9.2 (Codification Tranche 2C-ii; Session 86; 2026-05-24). Prior: v9.1 post-Tranche 2C-i Session 79.*
 
 ## Descriptive language convention
 
@@ -61,7 +61,9 @@ The `raw/notes/` folder contains human's prior conversations and framework notes
 
 **Honest-verdict trigger discipline (codified Session 61).** When refresh ingest surfaces evidence suggesting a baseline-reframing trigger may fire (Caveat #9 Layer 4-5 straddling upgrade; Outside Framework reframing; framework placement; A1 mode upgrade to reciprocal-confirmation), the trigger fires ONLY when evidence substantively meets the trigger's pre-registered criteria. **Substantive evidence honestly assessed against upgrade threshold; trigger NOT fired despite suggestive evidence** is the canonical methodology — not firing based on directional momentum without threshold satisfaction. Discipline applies bidirectionally: UPWARD reframing (kickoff hypothesis lower than primary evidence supports) follows same threshold satisfaction rigor as non-firing. *See A.10 for per-instance precedent pattern; current count in MEMORY.md.* Cross-reference Section 3.5 A1 three-mode framing for related discipline.
 
-**Mid-fiscal-year disclosure methodology shift pattern (codified Session 79; 4-instance precedent).** When a company restructures segments/divisions mid-fiscal-year OR retrospectively adjusts prior-period segment data, the canonical page must explicitly document the shift, apply restated comparatives at financial snapshot tables, and flag analytical-product complexity at cross-period comparison scope. 4-instance precedent: [[NVT]] S69 (Q1 2026 vertical disaggregation within continuing-segment scope) + [[MOD]] S70 (Q3 FY2026 Climate Solutions product-group disaggregation) + [[NOK]] S73 (strategic reorganization OLD 5-segment → NEW 2-segment company-wide effective January 1, 2026) + [[AMD]] S77 (Q1 FY2025 4-segment → 3-segment consolidation; "All prior period segment data were retrospectively adjusted"). Honest framing per Section 2.1: do not paper over the shift with blended-period framing; preserve segment-tier comparability boundaries at the shift date.
+**Mid-fiscal-year disclosure methodology shift pattern (codified Session 79; refined Session 86; 5-instance precedent).** When a company restructures segments/divisions mid-fiscal-year OR retrospectively adjusts prior-period segment data, the canonical page must explicitly document the shift, apply restated comparatives at financial snapshot tables, and flag analytical-product complexity at cross-period comparison scope. 5-instance precedent: [[NVT]] S69 (Q1 2026 vertical disaggregation within continuing-segment scope) + [[MOD]] S70 (Q3 FY2026 Climate Solutions product-group disaggregation) + [[NOK]] S73 (strategic reorganization OLD 5-segment → NEW 2-segment company-wide effective January 1, 2026) + [[AMD]] S77 (Q1 FY2025 4-segment → 3-segment consolidation; "All prior period segment data were retrospectively adjusted") + [[NVDA]] S81 (Q1 FY2027 NEW Hyperscale + ACIE + Edge Computing framework at earnings-call-presentation + investor website with restated comparatives "for the past nine quarters"; SEC 10-Q preserves Compute & Networking + Graphics framework). Honest framing per Section 2.1: do not paper over the shift with blended-period framing; preserve segment-tier comparability boundaries at the shift date.
+
+**Venue-asymmetric sub-pattern (codified Session 86; FIRST INSTANCE).** A shift may appear at one venue (earnings-call-presentation + investor website) while another venue preserves the prior framework (SEC 10-Q segment reporting). NVDA S81 FIRST INSTANCE: NEW Hyperscale + ACIE + Edge Computing framework at earnings-call-presentation + investor website; SEC 10-Q preserves Compute & Networking + Graphics framework. LLM application: document venue-asymmetry at canonical page Source audit notes; cross-reference Section 3.6 cross-venue disclosure gap convention when the shift constitutes a cross-venue gap pattern beyond mere reporting-venue lag.
 
 ### 2.2 Source hierarchy
 
@@ -173,9 +175,21 @@ When Tier 3 sources cite counterparty-side announcements about ecosystem partner
 
 Apply at first instance during Tier 3-anchored theme page construction; refine at primary-source ingest cross-validation. *See A.4 for canonical examples.*
 
-### 3.6 Cross-venue disclosure gap convention (A4-bis)
+### 3.6 Cross-venue disclosure gap convention (A4-bis; codified Session 86)
 
-Distinct from Tier 1/Tier 2 framing gap. Addresses divergence between two non-filing venues — typically conference vs near-concurrent earnings call. Pattern: information selectively disclosed at one venue (industry conference, GTC keynote, technology day) but not addressed at adjacent earnings calls. Currently 2 observations; third instance triggers convention codification refinement.
+Distinct from Tier 1/Tier 2 framing gap (Section 3.4). Addresses divergence between two non-filing venues — typically conference vs near-concurrent earnings call. Pattern: information selectively disclosed at one venue (industry conference, GTC keynote, technology day, investor day) but not addressed at adjacent earnings calls or 10-Q filings.
+
+**Detection trigger.** When a company discloses material information at one venue (e.g., GTC) but preserves silence at adjacent venues (e.g., next earnings call), the gap is information, not absence. The venue-specific pattern is durable and meaningful — silence at one venue does not indicate retreat if the disclosure venue is itself durable.
+
+**Documentation requirement.** Source audit notes flag venue-specific gaps with "cross-venue gap" label and per-venue disclosure scope.
+
+**Honest framing discipline ("silence ≠ retreat").** Do not interpret venue-specific silence as architectural shift or strategic retreat. If the disclosure venue (GTC, technology day) preserves the topic across cycles, the venue-specific pattern is the canonical framing — not a quarter-over-quarter erosion signal.
+
+**Falsification condition.** Venue-specific pattern preserved IF the durable disclosure venue continues to carry the topic across cycles. IF the durable venue itself stops carrying the topic (e.g., GTC March 2027 zero CPO mentions after GTC March 2026 + GTC March 2025 substantiation), the pattern transitions from venue-specific silence to genuine retreat. Distinct interpretations; the codification reading depends on the durable venue's continued disclosure.
+
+**5-reference precedent (codification threshold over-met):** [[NVDA]] S81 Open Question #3 (venue-specific CPO disclosure persistence verdict; GTC March 2026 carries advanced packaging detail + COUP; Q1 FY2027 earnings call zero CPO mentions across 16 pages) + [[NVDA-platform-integration]] S82 (asymmetric reciprocal naming observation) + [[cpo-integration]] S84 (venue-specific CPO disclosure verdict integrated) + [[CPO-platform-battle]] S84 (Jensen "silence ≠ retreat" framing canonical) + [[advanced-optical-packaging]] S85b (venue-specific pattern reinforcement at advanced packaging chokepoint scope).
+
+**Cross-reference scope.** Ties to Section 2.1 honest-verdict discipline + Section 3.4 Tier 1/Tier 2 framing gap (distinct pattern; cross-venue is venue-asymmetric, framing gap is tier-asymmetric) + Section 2.1 mid-fiscal-year venue-asymmetric sub-pattern (codified Session 86).
 
 ### 3.7 CEO combativeness as Tier 2 meta-observation (monitoring)
 
@@ -262,6 +276,18 @@ A chokepoint page may be created via two pathways:
 **Canonicalization-criteria substantive scope.** Pathway 2 substantiation threshold: (a) Tier 3 anchor source explicitly establishing chokepoint structural framing OR (b) 3+ vault primary-source canonical pages substantively documenting the constraint scope OR (c) equivalent multi-source coverage (e.g., S71 [[liquid-cooling]] = 6-canonical vault participant scope at chokepoint synthesis methodology). Honest framing per Section 2.1: substantive primary-source substantiation drives Pathway 2 application — not directional momentum toward canonical placement without threshold met.
 
 **Pathway selection.** Default to Pathway 1 when source coverage is single-company; Pathway 2 when multi-source threshold met at session start. Verification at Stop 1 Phase 0 per Section 4.5 A6 sub-pattern (b).
+
+**4-canonical sub-domain coverage strengthening (codified Session 86).** Pathway 2 application strengthens when a sub-domain accumulates 4+ canonical participants at a single theme/chokepoint scope. FIRST INSTANCE: [[AI-agentic-CPU-orchestration-reemergence]] theme — S80 creation at 3-canonical threshold (ARM + AMD + INTC); S83 expansion to 4-canonical (NVDA Vera CPU addition). 4-canonical scope does not displace the 3-canonical Pathway 2 threshold; it reinforces methodology applicability. Forward implication: future Pathway 2 applications document with confidence at 3-canonical threshold; 4-canonical strengthening is reinforcement, not threshold-shift.
+
+### 3.16 Language convention — "substantive" / "substantively" discipline (codified Session 86)
+
+Default to direct language. Use "substantive" / "substantively" only where the word distinguishes Tier 1 primary substantiation from Tier 3 hedging or weak-fit assertion. The word should mark something genuinely material vs marginal, not provide emphasis.
+
+**Deletion test at composition.** Each candidate instance asks "does this word add meaning here, or just emphasis?" If emphasis, delete. Pattern observed at S81 baseline; corrected at S82 onward via deletion test discipline.
+
+**Honest framing on drift.** If drift surfaces in a session output, surface honestly as drift in Phase 4 reflection. Do not claim "load-bearing usage" retroactively for instances that fail the deletion test.
+
+**Application.** Prospective from Session 86 onward; existing oversized usage at NVDA.md S81 + log.md S81 + kickoff prompts preserved as historical artifact (forward-only application per Section 3.8 brevity discipline precedent). Cross-reference Section 3.3 voice convention.
 
 ## 4. Source ingest
 
