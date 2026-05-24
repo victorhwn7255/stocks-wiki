@@ -49,6 +49,7 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` v9.2 Sect
 | [ARM](wiki/companies/ARM.md)   | ARM    | 1     | outside   | —      | outside      | outside   | outside   | 2026-05-23   |
 | [AMD](wiki/companies/AMD.md)   | AMD    | 1     | outside   | —      | outside      | outside   | outside   | 2026-05-23   |
 | [INTC](wiki/companies/INTC.md) | INTC   | 1, 2  | outside   | —      | outside      | outside   | outside   | 2026-05-23   |
+| [MU](wiki/companies/MU.md)     | MU     | 2     | outside   | 2      | outside      | outside   | outside   | 2026-05-24   |
 
 ## Chokepoints
 
