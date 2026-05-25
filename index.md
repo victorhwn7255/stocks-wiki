@@ -50,6 +50,7 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` v9.2 Sect
 | [AMD](wiki/companies/AMD.md)   | AMD    | 1     | outside   | —      | outside      | outside   | outside   | 2026-05-23   |
 | [INTC](wiki/companies/INTC.md) | INTC   | 1, 2  | outside   | —      | outside      | outside   | outside   | 2026-05-23   |
 | [MU](wiki/companies/MU.md)     | MU     | 2     | outside   | 2      | outside      | outside   | outside   | 2026-05-24   |
+| [SNDK](wiki/companies/SNDK.md) | SNDK   | 4     | outside   | 4      | outside      | outside   | outside   | 2026-05-24   |
 
 ## Chokepoints
 
@@ -65,7 +66,7 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` v9.2 Sect
 | [HALEU-fuel-chokepoint](wiki/chokepoints/HALEU-fuel-chokepoint.md) | LEU, BWXT, CCJ, BE, GEV | 2026-05-10 |
 | [BTM-grid-bypass-workaround](wiki/chokepoints/BTM-grid-bypass-workaround.md) | BE, FCEL, GEV, CAT | 2026-05-12 |
 | [transformer-supply](wiki/chokepoints/transformer-supply.md) | ETN, GEV, NVDA | 2026-05-24 |
-| [HBM-oligopoly](wiki/chokepoints/HBM-oligopoly.md) | ONTO, COHU, AEHR, TSM | 2026-05-15 |
+| [HBM-oligopoly](wiki/chokepoints/HBM-oligopoly.md) | ONTO, COHU, AEHR, TSM, MKSI, MU | 2026-05-25 |
 | [liquid-cooling](wiki/chokepoints/liquid-cooling.md) | VRT, ETN, NVT, MOD, FLEX, COHR, ANET, NVDA | 2026-05-24 |
 
 ## Themes
