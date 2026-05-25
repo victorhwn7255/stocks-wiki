@@ -48,9 +48,10 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` v9.2 Sect
 | [MKSI](wiki/companies/MKSI.md) | MKSI   | 4     | 3         | —      | outside      | 2         | 3         | 2026-05-21   |
 | [ARM](wiki/companies/ARM.md)   | ARM    | 1     | outside   | —      | outside      | outside   | outside   | 2026-05-23   |
 | [AMD](wiki/companies/AMD.md)   | AMD    | 1     | outside   | —      | outside      | outside   | outside   | 2026-05-23   |
-| [INTC](wiki/companies/INTC.md) | INTC   | 1, 2  | outside   | —      | outside      | outside   | outside   | 2026-05-23   |
+| [INTC](wiki/companies/INTC.md) | INTC   | 1, 2  | outside   | —      | outside      | outside   | outside   | 2026-05-25   |
 | [MU](wiki/companies/MU.md)     | MU     | 2     | outside   | 2      | outside      | outside   | outside   | 2026-05-24   |
 | [SNDK](wiki/companies/SNDK.md) | SNDK   | 4     | outside   | 4      | outside      | outside   | outside   | 2026-05-24   |
+| [MP](wiki/companies/MP.md)     | MP     | 4-6   | outside   | outside | outside      | outside   | 1         | 2026-05-25   |
 
 ## Chokepoints
 
@@ -63,7 +64,7 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` v9.2 Sect
 | [optical-dsp-phy-supply](wiki/chokepoints/optical-dsp-phy-supply.md) | MRVL, AVGO, CRDO | 2026-04-28 |
 | [advanced-optical-packaging](wiki/chokepoints/advanced-optical-packaging.md) | FN, LITE, COHR, AAOI, TSEM, ANET, NOK, MKSI, NVDA | 2026-05-24 |
 | [cpo-integration](wiki/chokepoints/cpo-integration.md) | NVDA, AVGO, MRVL, CRDO, LITE, COHR, AAOI, TSM, FN, ALAB, ANET, TSEM | 2026-05-24 |
-| [HALEU-fuel-chokepoint](wiki/chokepoints/HALEU-fuel-chokepoint.md) | LEU, BWXT, CCJ, BE, GEV | 2026-05-10 |
+| [HALEU-fuel-chokepoint](wiki/chokepoints/HALEU-fuel-chokepoint.md) | LEU, BWXT, CCJ, BE, GEV | 2026-05-25 |
 | [BTM-grid-bypass-workaround](wiki/chokepoints/BTM-grid-bypass-workaround.md) | BE, FCEL, GEV, CAT | 2026-05-12 |
 | [transformer-supply](wiki/chokepoints/transformer-supply.md) | ETN, GEV, NVDA | 2026-05-24 |
 | [HBM-oligopoly](wiki/chokepoints/HBM-oligopoly.md) | ONTO, COHU, AEHR, TSM, MKSI, MU | 2026-05-25 |

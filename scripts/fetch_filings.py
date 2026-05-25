@@ -76,6 +76,7 @@ COMPANIES = {
     "MU":   {"cik": "0000723125", "forms": ["10-K", "10-Q"]},
     "SNDK": {"cik": "0002023554", "forms": ["10-K", "10-Q"]},
     "MP":   {"cik": "0001801368", "forms": ["10-K", "10-Q"]},
+    "NVTS": {"cik": "0001821769", "forms": ["10-K", "10-Q"]},
 }
 
 HEADERS = {"User-Agent": USER_AGENT, "Accept": "application/json"}
