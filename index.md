@@ -56,6 +56,7 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` v9.2 Sect
 | [POWI](wiki/companies/POWI.md) | POWI   | 4     | outside   | outside | 3            | outside   | outside   | 2026-05-25   |
 | [VICR](wiki/companies/VICR.md) | VICR   | 4     | outside   | outside | 3            | outside   | outside   | 2026-05-25   |
 | [ON](wiki/companies/ON.md)     | ON     | 4     | outside   | outside | 3            | outside   | outside   | 2026-05-25   |
+| [MPWR](wiki/companies/MPWR.md) | MPWR   | 4     | outside   | outside | 3            | outside   | outside   | 2026-05-25   |
 
 ## Chokepoints
 
@@ -88,6 +89,7 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` v9.2 Sect
 | [chokepoint-investability-priorities](wiki/themes/chokepoint-investability-priorities.md) | NVDA, AVGO, MRVL, CSCO, AEHR, AXTI, COHR, LITE, AAOI, ALAB, FN, GLW, VRT, ONTO, VECO, TSM, COHU | 2026-04-28 |
 | [AIDC-cooling-architecture-transition](wiki/themes/AIDC-cooling-architecture-transition.md) | VRT, ETN, NVT, MOD, FLEX, COHR, ANET | 2026-05-16 |
 | [AI-agentic-CPU-orchestration-reemergence](wiki/themes/AI-agentic-CPU-orchestration-reemergence.md) | ARM, AMD, INTC, NVDA | 2026-05-24 |
+| [power-semis](wiki/themes/power-semis.md) | NVTS, POWI, VICR, ON, MPWR | 2026-05-25 |
 
 ## Layers
 

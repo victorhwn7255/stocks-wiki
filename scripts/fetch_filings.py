@@ -80,6 +80,7 @@ COMPANIES = {
     "POWI": {"cik": "0000833640", "forms": ["10-K", "10-Q"]},
     "VICR": {"cik": "0000751978", "forms": ["10-K", "10-Q"]},
     "ON":   {"cik": "0001097864", "forms": ["10-K", "10-Q"]},
+    "MPWR": {"cik": "0001280452", "forms": ["10-K", "10-Q"]},
 }
 
 HEADERS = {"User-Agent": USER_AGENT, "Accept": "application/json"}

@@ -136,6 +136,10 @@ NVTS structural exposure to 800V DC transition aligned with [[GEV]] Energy/Power
 
 NVTS S92 establishes power-semiconductor sub-domain canonical methodology in vault. Power-semi sub-domain previously absent from vault canonical scope. Future power-semi candidates (Power Integrations POWI; Wolfspeed WOLF; STM ADR; Infineon IFNNY ADR; Texas Instruments TXN) inherit NVTS S92 Framework 7 Tier 3 analogy methodology pending formal `frameworks.md` codification.
 
+### [[power-semis]] theme — sub-domain canonical placement at theme creation entry
+
+S97 [[power-semis]] theme page creation post-MPWR S96 5-canonical sub-domain MAXIMIZED accumulation; NVTS S92 placement at sub-domain canonical roster as FIRST power-semi canonical + co-tier analogy inheritance 1st instance per Section 1.1 ownership exception. Theme page documents NVTS-specific contribution at 5-variant structural matrix: theme play + execution risk significant + small base + NVIDIA disclosure asymmetry venue-of-disclosure reference scope (Section 3.6 cross-venue gap convention 8th reference at NVIDIA naming asymmetry sub-pattern). Mutual cross-reference scope per theme bidirectional discovery convention.
+
 ## Open questions
 
 1. **Q2-Q3 2026 sequential growth durability.** Q2 2026 guide $10M (16% sequential midpoint) extends Q1 2026 +18% QoQ recovery. Does sequential growth persist across Q3-Q4 2026 with mobile + consumer wind-down completing? Does year-over-year revenue inflection cross positive by Q4 2026 vs Q4 2025 $7.3M baseline?

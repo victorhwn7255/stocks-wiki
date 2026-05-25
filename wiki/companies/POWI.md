@@ -227,6 +227,10 @@ POWI not in liquid-cooling chokepoint scope (S71 canonical; thermal management s
 
 Theme creation eligibility pending 3rd power-semi canonical addition (candidates: ON Semiconductor + MPWR + Wolfspeed + STM ADR + IFNNY ADR + Texas Instruments) OR Vic-side `_thesis.md` curation decision per Section 1.1 ownership exception.
 
+### [[power-semis]] theme — sub-domain canonical placement at theme creation entry
+
+S97 [[power-semis]] theme page creation post-MPWR S96 5-canonical sub-domain MAXIMIZED accumulation; POWI S93 placement at sub-domain canonical roster as SECOND power-semi canonical + co-tier analogy inheritance 2nd instance per Section 1.1 ownership exception. Theme page documents POWI-specific contribution at 5-variant structural matrix: broader-portfolio incumbent + emerging optionality + Avnet 32% named-distributor concentration archetype + Section 3.6 cross-venue gap AI end-market quantified disaggregation sub-pattern FIRST INSTANCE (9th reference at NEW sub-pattern variant) + cross-canonical mutual reciprocal naming 2nd instance at NVTS ↔ POWI. Mutual cross-reference scope per theme bidirectional discovery convention.
+
 ## Open questions
 
 1. **AI data center end-market scaling.** Does POWI disaggregate AI data center as named end-market category at FY2026 10-K (filed Q1 2027) per Section 3.6 falsification condition tracking? Or does venue-specific pattern continue (CEO commentary at Tier 2; preserved silence at Tier 1 disaggregation)?

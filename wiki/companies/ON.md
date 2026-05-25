@@ -231,6 +231,10 @@ Brief observations only at ON cross-vault scope; defer cross-vault propagation t
 
 S96+ Power Semis theme creation Pathway 2 candidate strengthened post-S95: 4-canonical sub-domain accumulation enables 4-variant structural matrix + IDM vs fabless commercial structure asymmetry methodology + NVIDIA disclosure asymmetry as canonical sub-domain finding + cross-canonical mutual reciprocal naming pattern at 2-instance precedent + ITC IP enforcement durability as differentiated structural moat at VICR scope.
 
+### [[power-semis]] theme — sub-domain canonical placement at theme creation entry
+
+S97 [[power-semis]] theme page creation post-MPWR S96 5-canonical sub-domain MAXIMIZED accumulation; ON S95 placement at sub-domain canonical roster as FOURTH power-semi canonical + co-tier analogy inheritance 3rd instance per Section 1.1 ownership exception (4-canonical sub-domain coverage strengthening per S86 codification FIRST PRACTICAL APPLICATION at S95). Theme page documents ON-specific contribution at 5-variant structural matrix: FIRST IDM structural variant at sub-domain (4 fabless + 1 IDM manufacturing model bifurcation) + IDM scale-incumbent + capital discipline + AI subsegment driver + AI revenue $250M FY2025 → $500M guide FY2026 Tier 2-only quantified scope + Section 3.6 cross-venue gap 11th reference at AI end-market quantified disaggregation sub-pattern 2nd instance + SiC heavy exposure with Wolfspeed cross-canonical context discipline-preserved. Mutual cross-reference scope per theme bidirectional discovery convention.
+
 ## Outside Framework placements rationale
 
 Per Section 3.10 four-criterion test inverse application — ON single-domain Framework 7 placement:

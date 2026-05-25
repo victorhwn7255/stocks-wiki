@@ -224,6 +224,10 @@ VRT S22 canonical at Layer 5 + energy_power_tier 1 (thermal/UPS/liquid cooling i
 
 ETN S37 + transformer-supply S63 at grid + electrical distribution scope (transformers + switchgear + UPS distribution); VICR at component-substrate AI accelerator power delivery scope. Adjacent at 800V DC architecture transition trajectory but distinct chokepoint positions. Brief observation only.
 
+### [[power-semis]] theme — sub-domain canonical placement at theme creation entry
+
+S97 [[power-semis]] theme page creation post-MPWR S96 5-canonical sub-domain MAXIMIZED accumulation; VICR S94 placement at sub-domain canonical roster as THIRD power-semi canonical (Pathway 2 3-canonical theme creation threshold MET at S94 unlocked S97 theme creation eligibility) + Section 1.1 CONFIRMATORY 1st INSTANCE per Vic-curated `frameworks.md` F7 Tier 3 explicit listing. Theme page documents VICR-specific contribution at 5-variant structural matrix: commercial-inflection-substantiated with execution risk + VPD Gen-5 deepest primary-substantiated 800V positioning at sub-domain (canonical sub-domain finding per theme page Section 3.1) + FIRST vault canonical placement at ITC IP enforcement + royalty stream scope + Cerebras-inferred lead customer Section 3.5 A1 Counterparty-attribution-only mode + Section 3.6 cross-venue gap 10th reference at NVIDIA naming asymmetry sub-pattern Tier 2 analyst-framed scope. Mutual cross-reference scope per theme bidirectional discovery convention.
+
 ## Outside Framework placements rationale
 
 Per Section 3.10 four-criterion test inverse application — VICR single-domain Framework 7 placement:
