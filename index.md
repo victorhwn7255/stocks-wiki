@@ -53,6 +53,7 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` v9.2 Sect
 | [SNDK](wiki/companies/SNDK.md) | SNDK   | 4     | outside   | 4      | outside      | outside   | outside   | 2026-05-24   |
 | [MP](wiki/companies/MP.md)     | MP     | 4-6   | outside   | outside | outside      | outside   | 1         | 2026-05-25   |
 | [NVTS](wiki/companies/NVTS.md) | NVTS   | 4     | outside   | outside | 3            | outside   | outside   | 2026-05-25   |
+| [POWI](wiki/companies/POWI.md) | POWI   | 4     | outside   | outside | 3            | outside   | outside   | 2026-05-25   |
 
 ## Chokepoints
 
