@@ -6,7 +6,7 @@ sub_domain: power_semi
 canonical_count: 5
 pathway: pathway_2
 s86_codification: 5_canonical_reinforcement
-last_updated: 2026-05-25
+last_updated: 2026-05-26
 ---
 
 # Power Semiconductors — AI Data Center 800V DC Architecture Transition
@@ -75,7 +75,17 @@ Vault FIRST INSTANCE at 5-canonical sub-domain accumulation scope. Theme page ex
 
 ## 3. 800V DC Architecture Transition Substrate
 
-The theme thesis substrate. AI data center 800V DC architecture transition driven by NVIDIA Vera Rubin + Rubin Ultra hyperscaler deployment + per-rack BOM expansion (~4× → ~11.5× per rack per Tier 3 industry context as cited at [[VICR]] S94 + [[MPWR]] S96 + [[ON]] S95) creates power-semiconductor sub-domain commercial-inflection cycle. Per-canonical 800V positioning depth varies materially.
+The theme thesis substrate. AI data center 800V DC architecture transition driven by NVIDIA Vera Rubin + Rubin Ultra hyperscaler deployment + per-rack BOM expansion creates power-semiconductor sub-domain commercial-inflection cycle. Per-canonical 800V positioning depth varies materially.
+
+**Quantitative substrate (per Tier 3 `raw/research/pure-play-power-semis.md` May 25, 2026 + NVIDIA Developer Blog "NVIDIA 800 V HVDC Architecture Will Power the Next Generation of AI Factories" + Schneider Electric blog May 8, 2026 + NVIDIA GTC March 16, 2026):**
+
+- **Kyber rack power scope:** 1.0–1.2 MW per rack (Schneider Electric); 576 Rubin Ultra GPUs per Kyber rack (Converge Digest + NVIDIA Developer Blog); "the first system built natively for 800V DC"
+- **Power-semi BOM expansion per rack:** ~4× GB200 → Vera Rubin; ~11.5× GB200 → Rubin Ultra (TheDiligenceStack via Tier 3 Pure-Play-Power_Semiconductors)
+- **54VDC physical cost at MW-scale:** ~200 kg copper busbar per rack + 64U power shelves per rack ("no room for compute" per NVIDIA Developer Blog) — justifies 800VDC transition at thermal + density + copper-cost scope
+- **Shipping timeline per NVIDIA GTC 2026 (Jensen Huang, March 16, 2026):** Vera Rubin shipping 2026; Kyber / Rubin Ultra shipping 2027 (CNBC)
+- **OCP Global Summit Oct 13-16, 2025:** NVIDIA enrolled 14 silicon partners for 800VDC (ADI + AOS + EPC + Infineon + Innoscience + MPS + Navitas + onsemi + Power Integrations + Renesas + Richtek + Rohm + STMicroelectronics + TI per Electronics Weekly); hyperscaler/operator adopters CoreWeave + Lambda + Nebius + Oracle Cloud + Together AI + Foxconn (40 MW Kaohsiung-1)
+
+**Honest framing per Tier 3 caveat.** Per Tier 3 Pure-Play-Power_Semiconductors May 25, 2026 caveat: "NVIDIA's Kyber/Rubin Ultra roadmap pronouncements... are stated plans, not delivered products. Independent observers (Glenn Lockwood) note Kyber demos at GTC 2026 may have been less power-dense than 2025 prototypes; NVIDIA did not formally restate Kyber power at GTC 2026." Theme thesis substrate quantitative scope preserves Tier 3 attribution + honest framing per Section 2.2 source hierarchy.
 
 ### 3.1 VICR Gen-5 VPD — deepest primary-substantiated 800V scope at sub-domain (canonical sub-domain finding)
 
@@ -101,6 +111,26 @@ Capacity expansion to $1.5B Fab One run rate + second fab construction reference
 ### 3.3 800V architecture commercial traction trajectory (open)
 
 Per-canonical 800V architecture commercial traction trajectory tracking through FY2026 + FY2027 — Vera Rubin shipment timeline + Rubin Ultra shipment timeline + hyperscaler deployment trajectory. VICR FY2026 ~$570M guidance basis tracks commercial-inflection cycle confirmation; MPWR Q1 FY2026 analyst Q&A on 800V / ±400V architecture sampling pending Q2-Q4 CEO response extraction. Falsification condition tracking initialized at theme scope per Section 13.
+
+### 3.4 SiC vs GaN architectural complementarity (NOT competing technologies)
+
+Per Tier 3 `raw/research/pure-play-power-semis.md` May 25, 2026: SiC and GaN are NOT competing technologies — they are complementary at architectural-stage partitioning scope within the 800V DC power chain:
+
+| Wide-bandgap technology | Architectural stage | Voltage scope | Application |
+|---|---|---|---|
+| **SiC** | Facility-level + rack-level high-voltage conversion | 650V–1700V+ | Solid-state transformers (SSTs; 13.8kV AC → 800VDC), rack-level HVDC bus, hot-swap, UPS |
+| **GaN** | Final-stage high-frequency conversion near GPU | 800V → 50V → 12V → 6V → core | Low- to mid-voltage Power Delivery Boards, DC-DC bricks |
+
+**Dual-portfolio broader addressable opportunity.** Per Tier 3 NAND Research as cited at Pure-Play-Power_Semiconductors: *"vendors with both GaN and SiC portfolios, including Infineon and Navitas, have a broader addressable opportunity."* This refines per-canonical structural variant framing at sub-domain:
+- [[NVTS]] **GeneSiC acquisition** (Aug 15, 2022; ~$270M total consideration = $100M cash + 24.9M NVTS shares + up to $25M earn-out per Navitas press release) — architectural-coverage strategy, NOT just product diversification
+- [[ON]] **SiC + GaN dual-technology at IDM scale** — PSG SiC heavy exposure + emerging GaN portfolio
+- [[POWI]] **PowiGaN at 1250V/1700V** — high-voltage industrial scope; CEO Lloyd Q1 FY2026: *"our 1,250 and 1,700-volt GaN technologies in the forthcoming 800-volt DC architectures"*
+
+**Wafer-supply bifurcation per Tier 3 (FinancialContent Jan 2026 commentary as cited at Pure-Play-Power_Semiconductors):**
+- **SiC: oversupply correction** (Chinese substrate manufacturer price wars; particularly 150 mm) — pressures pure-SiC vertically-integrated suppliers
+- **GaN: supply constrained + ASPs firm** — favors GaN-heavy fabless pure-plays near-term
+
+Sub-domain trajectory: near-term wafer-supply asymmetry favors GaN-heavy canonical structural variants ([[NVTS]] + [[POWI]]) vs pressures pure-SiC competitive exposure (Wolfspeed canonical creation candidate per Section 14.2 deferred per Tier 3 Avoid baseline at this cycle scope).
 
 ## 4. NVIDIA Disclosure Asymmetry as Canonical Sub-Domain Finding
 
@@ -332,6 +362,12 @@ Cross-canonical NVIDIA bilateral mode taxonomy substantive home: [[NVDA-platform
 - **Liquid cooling chokepoint ([[liquid-cooling]] S71):** thermal management scope distinct from power-semi component substrate scope; cross-vault adjacency at AI data center cooling + power dual-binding-constraint scope.
 - **CPO platform battle ([[CPO-platform-battle]] + [[cpo-integration]]):** photonics chokepoint scope distinct from power-semi component substrate scope; cross-vault adjacency at AI data center compute infrastructure + power infrastructure dual-anchor scope per `_thesis.md` rework.
 
+### 12.4 Upstream hyperscaler-capex concentration inherited risk
+
+Power-semi sub-domain commercial-inflection cycle is downstream of NVIDIA platform integration CAPEX flow path; sub-domain inherits NVDA direct-customer concentration risk at top-of-stack scope. Per Tier 3 `raw/research/pure-play-power-semis.md` May 25, 2026 Risk Framework: *"NVDA itself disclosed direct-customer concentration of 61% (vs. 36% one year earlier) in its most recent 10-Q, meaning the marginal AI dollar is highly concentrated. Any deceleration (model commoditization, capex pause, regulatory) compresses multiples violently."*
+
+Top-of-stack hyperscaler-capex-concentration trajectory at NVDA primary substantiation scope is upstream falsification candidate for sub-domain commercial-inflection cycle durability. Cross-canonical 5-variant structural matrix at Section 2 surfaces structural variant differentiation; upstream NVDA hyperscaler concentration risk affects 5-canonical baseline uniformly per CAPEX flow path inheritance. Cross-validation candidate at future [[NVDA]] canonical refresh scope (NVDA Q1 FY2027 last refresh per S81 baseline; staleness candidate).
+
 ## 13. Theme Thesis Falsification Candidates + Open Questions
 
 Theme-level falsification candidates pre-registered for ongoing tracking.
@@ -347,6 +383,8 @@ Theme-level falsification candidates pre-registered for ongoing tracking.
 4. **Commercial-inflection sustainability per primary substantiation.** Q1 FY2026 cross-canonical metrics (VICR backlog +69.9% QoQ + book-to-bill >2.0; MPWR record $804M revenue +26% YoY + Enterprise Data growth floor raised 85% YoY; ON 3rd consecutive QoQ GM expansion to 38.5%; POWI restructuring + industrial +23% YoY; NVTS Q1 FY2026 +18% QoQ recovery) — does sequential momentum sustain Q2-Q4 FY2026?
 
 5. **Wolfspeed competitive dynamics impact on SiC sub-domain methodology.** Wolfspeed Chapter 11 emergence September 2025 + Renesas convertible debt-to-equity conversion + CFIUS clearance January 2026 + Chinese SiC substrate oversupply industry context per Tier 3 as cited at [[ON]] S95. Does ON SiC market share trajectory benefit from Wolfspeed restructuring? Does Chinese SiC substrate oversupply industry pressure continue? Wolfspeed canonical creation candidate at S98+ deferred per scope creep prevention.
+
+6. **Wafer-supply bifurcation trajectory (per Section 3.4 refinement).** SiC oversupply correction (Chinese substrate price wars) vs GaN supply constrained (ASPs firm) per Tier 3 `raw/research/pure-play-power-semis.md` FinancialContent Jan 2026 commentary scope. Does SiC oversupply normalize at H2 2026 / 2027 trajectory (Aixtron SiC tool demand recovery expected H2 2026 / early 2027 per Tier 3 substantive scope)? Does GaN supply constraint persist as commercial-inflection driver for GaN-heavy fabless canonicals ([[NVTS]] + [[POWI]])? Cross-canonical structural variant trajectory dependency on wafer-supply cycle dynamics.
 
 ### 13.2 Open questions
 
@@ -370,6 +408,19 @@ Theme-level falsification candidates pre-registered for ongoing tracking.
 
 10. **Wolfspeed canonical creation candidate at S98+ deferred.** Cross-canonical SiC sub-domain methodology candidate; first vault distressed canonical placement candidate; Report 2 Avoid baseline per Tier 3 as cited at [[ON]] S95.
 
+### 13.3 Tier 3 dual-report framing bifurcation as canonical sub-domain finding
+
+Vault canonical Tier 3 source baseline at sub-domain comprises 2 institutional research reports at `raw/research/` — `power-semis-investment-research.md` (general; April-May 2026) + `pure-play-power-semis.md` (pure-play mandate; May 25, 2026). The two reports DISAGREE on portfolio philosophy in a structurally informative way that mirrors the theme page's own Section 6 dollar-volume-vs-pricing-power-vs-thematic-premium asymmetric framing.
+
+| Report | Top picks | Excludes | Framing axis |
+|---|---|---|---|
+| `power-semis-investment-research.md` | [[ON]] + [[MPWR]] (US core) + STM + IFNNY (foreign core) | None — [[VICR]] omitted from 10-stock ranked list entirely | "best risk-adjusted exposure" — scale + quality + diversification dimension |
+| `pure-play-power-semis.md` | [[VICR]] (TOP PICK) + [[POWI]] + AIXG | [[MPWR]] + [[ON]] + STM + IFNNY + TXN (per pure-play mandate exclusion) | "purest thematic vehicle" — exposure intensity dimension |
+
+**Sub-domain finding methodology:** Tier 3 analyst landscape bifurcation along same axis as Section 6 vault canonical synthesis. Both reports defensible at their respective framings — Report 1 answers "what's the best risk-adjusted power-semi position?" + Report 2 answers "what's the cleanest exposure to NVIDIA Kyber/Rubin Ultra 800V transition specifically?" The Tier 3 framing bifurcation validates Section 6 sub-domain economic structure NOT uniform observation — single-archetype framing at Tier 3 analyst landscape misses dimensional gradient that 5-variant cross-canonical analysis surfaces (per Section 2 vault FIRST INSTANCE at 5-canonical sub-domain accumulation).
+
+**Tier 3 propagation discipline preserved (per Section 3.6 cross-venue gap NEW SUB-PATTERN VARIANT at MPWR S96).** `pure-play-power-semis.md` MPWR exclusion rationale cites Tier 4 Edgewater Research "60-70% Blackwell socket loss to Infineon + Renesas" framing without flagging primary-substantiation contradiction at [[MPWR]] S96 (CEO Hsing direct quote: *"I don't see we lose any socket"*; Enterprise Data $$ trajectory essentially flat YoY -2%; segment-mix-shift COMPOSITION EFFECT not $$ collapse). Vault canonical primary substantiation wins on factual disagreements per Section 2.2 source hierarchy; Tier 3 informative on interpretation + relative positioning scope.
+
 ## 14. Sub-Domain Roster + Canonical Placement
 
 ### 14.1 Vault-canonical roster post-S96 (5 canonical participants)
@@ -388,7 +439,7 @@ Theme-level falsification candidates pre-registered for ongoing tracking.
 |---|---|---|---|
 | **IFNNY (Infineon ADR)** | F7 Tier 3 Vic-curated explicit listing (3rd name) | Foreign-issuer ADR; IBKR foreign access decision required per Section 4.2 protocol; OCP 2025 NVIDIA 800V partner per Tier 3 as cited at ON S95 + MPWR S96 | Completes F7 Tier 3 explicit listing vault-canonical roster |
 | **Wolfspeed (WOLF)** | Tier 3 Avoid baseline per Pure-Play-Power_Semiconductors as cited at ON S95 | Chapter 11 emergence September 2025 + Renesas convertible debt-to-equity conversion + CFIUS clearance January 2026; first vault distressed canonical candidate; cross-canonical SiC sub-domain methodology candidate | Deferred per scope creep prevention |
-| **AIXG / AIXA (Aixtron)** | MOCVD picks-and-shovels; equipment_tier candidate scope | Foreign-issuer (German XETRA); IBKR foreign access decision required; equipment substrate scope distinct from power-semi component substrate scope | Picks-and-shovels candidate; cross-vault MOCVD adjacency to [[VECO]] |
+| **AIXG / AIXA (Aixtron)** | MOCVD picks-and-shovels; equipment_tier candidate scope; Tier 3 `pure-play-power-semis.md` Buy at full weight: FY2026 guide €520M ±€30M revenue + 16-19% EBIT margin + 87% equity ratio + FY2025 FCF €181.9M; CEO Grawert: *"In 2026, optical data communication for AI applications and GaN power will be the main source of revenue"*; recent catalysts May 19, 2026 multiple G10-AsP MOCVD orders from Lumentum (InP for AI optical 800G+) + May 7, 2026 Renesas Planetary G5+C systems (GaN production expansion post-Transphorm) | Foreign-issuer (German XETRA AIXA preferred for liquidity; OTC ADR AIXG); IBKR foreign access decision required; equipment substrate scope distinct from power-semi component substrate scope; "Every NVIDIA 800V silicon partner needs MOCVD capacity → Aixtron supplies the tool" per Tier 3 | **Picks-and-shovels priority strengthened** post-Tier 3 substantive case acquisition; cross-vault MOCVD adjacency to [[VECO]]; candidate priority elevation candidate at S99+ above Wolfspeed per Tier 3 substantive case scope |
 | **TXN (Texas Instruments)** | Silicon-dominant + GaN entry; named at NVTS + POWI + ON + MPWR Competition sections | Structurally weaker fit at power-semi sub-domain (broad-portfolio analog incumbent; not chokepoint pure-play); Tier 3 Report 1 #4 CORE bucket ranking per as cited at MPWR S96 | Lower priority per structurally weaker fit |
 | **STM (STMicroelectronics ADR)** | Broader-portfolio GaN + SiC; named at NVTS + POWI + ON + MPWR Competition sections | Foreign-issuer ADR; broader power-semi portfolio at scale | Co-tier analogy inheritance candidate; foreign access decision |
 | **NXP / Renesas / ROHM** | Broad-portfolio competitors named at multiple canonical Competition sections | Cross-canonical Competition section enumeration; broader-portfolio analog/embedded scope | Lower priority per scope expansion sequencing |
@@ -410,10 +461,13 @@ Future power-semi canonical additions inherit Section 1.1 ownership exception su
 - [[ON]] S95: FY2025 10-K (filed February 9, 2026) + Q1 FY2026 10-Q (filed May 4, 2026; period-end April 3, 2026 ~3-day offset from calendar Mar 31, 2026 per Section 2.11.1 week-scope baseline) + Q1 FY2026 earnings call (May 4, 2026; Quartr transcript PDF via Yahoo)
 - [[MPWR]] S96: FY2025 10-K (filed February 27, 2026) + Q1 FY2026 10-Q (filed May 4, 2026) + Q1 FY2026 earnings call (April 30, 2026; Quartr transcript PDF via Yahoo)
 
-### 15.2 Tier 3 institutional research citations (canonical-already-cited reuse scope per Section 4.6 boundary discipline)
+### 15.2 Tier 3 institutional research citations (direct citation post-vault-filesystem acquisition; updated 2026-05-26)
 
-- **Power-Semis-Investment-Research-Report May 2026** (CORE bucket ranking framework; ON #1 + MPWR #2 + NVTS #3 + TXN #4 + POWI #5 ranked) — cited per canonical-already-cited reuse at [[ON]] S95 + [[MPWR]] S96
-- **Pure-Play-Power_Semiconductors May 25, 2026** (pure-play thematic concentration; VICR TOP PICK + POWI Strong Buy + AIXG/AIXA Buy + NVTS speculative call option; WOLF Avoid; MPWR EXCLUDED with Tier 4 Edgewater Research thesis-weakening framing CONTRADICTED at primary per Section 4) — cited per canonical-already-cited reuse at [[NVTS]] S92 + [[POWI]] S93 + [[VICR]] S94 + [[ON]] S95 + [[MPWR]] S96
+Citation pattern shifted from S97 Vic Decision #1 vault-canonical-reuse pattern (*"per Tier 3 [Report] as cited at [[Canonical]] [S-N]"*) to direct Tier 3 citation post-acquisition at vault filesystem on 2026-05-26.
+
+- **`raw/research/power-semis-investment-research.md`** (general institutional research; CORE bucket ranking framework; ON #1 + MPWR #2 + NVTS #3 + TXN #4 + POWI #5 ranked; 10-stock ranked picks ON + MPWR + NVTS + TXN + POWI + WOLF + NXP + STM + IFNNY + ROHM — VICR omitted from ranked list; 60-70% core / 20-30% satellite / 5-10% speculative portfolio construction framework)
+- **`raw/research/pure-play-power-semis.md`** (pure-play thematic mandate institutional research; May 25, 2026; VICR TOP PICK + POWI Strong Buy + AIXG/AIXA Buy + NVTS speculative call option ≤1-2% portfolio; WOLF Avoid until AI data center >25% of mix; MPWR + ON + STM + IFNNY + TXN EXCLUDED per pure-play mandate; quantitative 800V substrate scope at NVIDIA Kyber 1.0-1.2 MW per rack + ~4× → ~11.5× BOM expansion + 576 Rubin Ultra GPUs + OCP 2025 14-vendor NVIDIA 800V partner enumeration)
+- **Tier 3 dual-report framing bifurcation as canonical sub-domain finding** per Section 13.3 above — both reports defensible at distinct framings; Tier 3 analyst landscape bifurcation validates Section 6 sub-domain economic structure NOT uniform observation
 
 ### 15.3 Section 2.11.2 cross-canonical EXACT-period-parity methodology PEAK at sub-domain
 
@@ -426,3 +480,4 @@ Cross-canonical comparative analytical product enabled at substantively-clean pe
 ## 16. Change log
 
 - **2026-05-25 (S97):** NEW canonical theme page — Power Semiconductors sub-domain theme creation. FIRST Power Semis theme page in vault history; FIRST Pathway 2 + S86 codification compliance application at 5-canonical sub-domain MAXIMIZED scope. 16-section structure delivered; ~5-canonical primary substantiation baseline + Tier 3 institutional research canonical-already-cited reuse per Section 4.6 boundary discipline (Vic Decision #1). 5 cross-vault back-references added at [[NVTS]] + [[POWI]] + [[VICR]] + [[ON]] + [[MPWR]] Cross-vault adjacency sections per Vic Decision #2. Centerpiece: Cross-canonical 5-variant structural matrix (vault FIRST INSTANCE at 5-canonical sub-domain accumulation) + NVIDIA disclosure asymmetry as canonical sub-domain finding (12 Section 3.6 references + 3 sub-pattern variants including Tier 4 industry context CONTRADICTION sub-pattern MPWR S96 FIRST INSTANCE) + 800V DC architecture transition substrate (VICR Gen-5 VPD deepest primary-substantiated scope) + Customer concentration archetype typology (5 distinct archetypes) + Scale gradient asymmetric framing (observational per Section 5.2) + Manufacturing model bifurcation (4 fabless + 1 IDM) + Cross-canonical mutual reciprocal naming 3-instance precedent (NAND S88 + power-semi S93 + power-semi S96 MPWR ↔ ON; POWI→ON half-pattern unreciprocated — sub-domain mutual reciprocal naming NOT strictly transitive) + ITC IP enforcement at VICR (FIRST vault canonical placement at ITC-enforced licensing + royalty stream scope) + Enterprise Data NAMED reportable segment at MPWR (cleanest Section 3.10 4-criterion test inverse criterion #2 satisfaction at sub-domain) + Sub-domain frameworks.md placement reconciliation candidate (Vic-side curation flag) + Cross-vault adjacency framing (Layer 4 component substrate → Layer 5 integrated power infrastructure → Layer 4-5 electrical distribution → Layer 4 utility-scale generation → transformer-supply chokepoint sequential dependency).
+- **2026-05-26 (in-S98 small refresh; not counted as separate session per Vic instruction):** Tier 3 institutional research source acquisition at vault filesystem (`raw/research/power-semis-investment-research.md` + `raw/research/pure-play-power-semis.md`); 6 substantive additions integrated per honest filtering of new Tier 3 content vs S97 baseline scope. (1) **Section 3 introduction** enriched with quantitative 800V substrate (Kyber 1.0-1.2 MW per rack + ~4× → ~11.5× per-rack BOM expansion + 54VDC physical cost ~200 kg copper busbar + 64U power shelves + 576 Rubin Ultra GPUs per Kyber rack + Vera Rubin shipping 2026 + Kyber/Rubin Ultra shipping 2027 + OCP 2025 14-vendor NVIDIA 800V partner enumeration); (2) **NEW Section 3.4** SiC vs GaN architectural complementarity (NOT competing technologies; SiC 650V-1700V+ facility-level + GaN final-stage high-frequency near GPU; dual-portfolio broader addressable opportunity validates NVTS GeneSiC acquisition + ON SiC + GaN dual-technology + POWI PowiGaN 1250V/1700V framings; wafer-supply bifurcation SiC oversupply correction vs GaN supply constrained ASPs firm); (3) **Section 12.4 NEW** upstream hyperscaler-capex concentration inherited risk (NVDA direct-customer concentration 61% vs 36% one year earlier per Tier 3 risk framework; sub-domain inherits top-of-stack NVDA hyperscaler concentration risk); (4) **Section 13.1 falsification candidate #6 NEW** wafer-supply bifurcation trajectory tracking; (5) **NEW Section 13.3** Tier 3 dual-report framing bifurcation as canonical sub-domain finding (Report 1 vs Report 2 disagree on portfolio philosophy mirroring Section 6 dollar-volume-vs-pricing-power-vs-thematic-premium asymmetric framing; Tier 3 propagation discipline preserved per Section 3.6 cross-venue gap NEW SUB-PATTERN VARIANT at MPWR S96); (6) **Section 14.2 refinement** AIXG/AIXA priority strengthening with substantive Tier 3 case detail (FY2026 €520M ±€30M revenue + 16-19% EBIT margin + 87% equity ratio + Lumentum + Renesas catalyst news; priority elevation candidate above Wolfspeed at S99+). **Methodology shift:** Citation pattern shifted from S97 Vic Decision #1 vault-canonical-reuse pattern (*"per Tier 3 [Report] as cited at [[Canonical]] [S-N]"*) to direct Tier 3 citation at Section 15.2 per source-availability shift. Section 3.16 "substantive" deletion test applied at composition; load-bearing instances preserved per codified vocabulary (Mode 1 substantive + Section 2.11.1 substantively-clean + Tier 3 substantive scope). Section 5.2 P&L exclusion + Section 2.1 "Describe, don't recommend" discipline preserved — NO position sizing / NO valuation targets / NO Top Pick prescriptions / NO insider Code-S quantification amplification (preserved at canonical Open Question scope per Section 4.6 boundary). Forward-only application; existing S97 codified content preserved at composition baseline.
