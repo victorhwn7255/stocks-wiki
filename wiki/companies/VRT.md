@@ -3,7 +3,7 @@ type: company
 tickers: [VRT]
 layer: 5
 photonics_tier: 4
-last_updated: 2026-04-27
+last_updated: 2026-05-26
 ---
 
 # Vertiv Holdings Co (VRT)
@@ -187,6 +187,8 @@ Multi-vector buildout of liquid cooling capability documented across both Tier 1
 - **Pune India thermal manufacturing facility** (opened 2024). In-row, wall-mount, large direct expansion, free-cooling systems.
 
 10-K MD&A frames the expansion direction explicitly: "Our investment and expansion efforts are directed at capturing new technologies across the entire thermal chain from chip to heat rejection, re-use, and more to meet growing demands" (VRT 10-K FY2025).
+
+**Tier 3 substrate addition (per `raw/research/liquid-cooling-for-datacenters.md` 2026-05-26; in-place refresh per Vic instruction; not counted as separate session).** Tier 3 source documents Vertiv reference design positioning at OEM ecosystem scope: CoolChip CDU 121 / 600 + OCP Deschutes variants (rack to 600 kW + Deschutes-based variant up to 2 MW); NVIDIA GB200 reference architecture up to 132 kW/rack; direct-to-chip cold plates capture 70-75% of rack heat with residual 25-30% remaining in air path (validates hybrid air/liquid as structural architecture, not transitional). 6-OEM NVIDIA-aligned reference design catalog positions Vertiv at tier-1 OEM incumbency alongside Schneider Electric + Dell + HPE + Lenovo + Supermicro. Tier 3 substrate ≠ VRT primary refresh; substantive VRT refresh remains pending per [[liquid-cooling]] chokepoint Open Question #7 (S22 baseline 48 sessions stale). Per liquid-cooling-for-datacenters.md (2026-05-26).
 
 ### Hyperscaler customer naming
 
@@ -392,6 +394,7 @@ The most strategically substantive source for Session 22. Six analyst Q&A intera
 
 ## Change log
 
+- **2026-05-26 (in-place refresh per Vic instruction; not counted as separate session — Tier 3 substrate addition per `liquid-cooling-for-datacenters.md` 2026-05-26):** Added Tier 3 substrate paragraph at Liquid cooling expansion subsection: Vertiv reference design positioning at OEM ecosystem scope (CoolChip CDU 121/600 + OCP Deschutes variants up to 2 MW + NVIDIA GB200 reference up to 132 kW/rack + 70-75% direct-to-chip heat capture quantification); 6-OEM NVIDIA-aligned reference design catalog positions Vertiv at tier-1 OEM incumbency. Tier 3 substrate ≠ VRT primary refresh; substantive refresh remains pending per [[liquid-cooling]] Open Question #7 (S22 baseline 48 sessions stale). last_updated 2026-04-27 → 2026-05-26.
 - **2026-05-16 (Session 69 cross-reference update):** Added [[NVT]] cross-reference in Photonics tier reasoning section per Session 69 [[NVT]] first canonical placement. NVT canonical Layer 4 / energy_power_tier 3 (thermal management / electrical enclosures / Data Solutions sub-domain — 7th distinct F7 sub-domain). Direct thermal management competitor at liquid cooling / CDU / data center cooling scope; mutual non-naming pattern preserved. Substantive incumbent-vs-growth bilateral analytical product DEFERRED to next dedicated VRT refresh session per scope discipline. No content edits beyond cross-reference addition.
 - **2026-05-03 (Session 45 cross-reference update):** Added [[ENS]] cross-reference in Photonics tier reasoning section per Session 45 first canonical Framework 7 Tier 4 ingest. ENS named as Energy Systems segment competitor at ENS 10-K Item 1 — bilateral competitive relationship at UPS/Energy Systems scope. **Relationship type clarification:** S45 kickoff hypothesis "ENS battery cells (Layer 4) → VRT UPS system integration (Layer 5 + Tier 1) sequential dependency" structurally falsified at primary per Section 4.4 (one of six material kickoff hypothesis falsifications documented at ENS.md). Mutual non-naming pattern persists at VRT side (VRT 10-K does not name ENS as competitor; preserves industry-standard non-disclosure). No content edits beyond cross-reference addition per scope discipline.
 - **2026-05-01 (Session 37 cross-reference update):** Added [[ETN]] + [[GEV]] cross-references in Photonics tier reasoning section per Session 37 paired ingest. ETN canonical Framework 7 Tier 1 placement now established (direct competitor named in VRT 10-K Item 1 Business; mutual non-naming pattern preserved). GEV Layer 4 / energy_power_tier 3 non-overlap on UPS/thermal anchor; SMR camp distinction documented. No content edits beyond cross-reference additions per scope discipline.

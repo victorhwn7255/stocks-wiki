@@ -1,7 +1,7 @@
 ---
 type: theme
 tickers: [NVDA, COHR, LITE, GLW, VRT, ANET, ARM, AMD, INTC]
-last_updated: 2026-05-24
+last_updated: 2026-05-26
 ---
 
 # NVDA Platform Integration Pattern
@@ -216,6 +216,7 @@ Methodology codification candidate at Tranche 2C-iii — the 3-mode taxonomy is 
 
 ## Change log
 
+- **2026-05-26 (in-place adjacency cross-reference per Vic instruction; not counted as separate session):** Cross-reference flag per `raw/research/liquid-cooling-for-datacenters.md` (2026-05-26): Tier 3 source documents 6-OEM NVIDIA-aligned reference design ecosystem (Schneider Electric Motivair RD110/RD111 + Vertiv CoolChip CDU + Dell IR7000 + HPE Cray EX + Lenovo Neptune + Supermicro DLC-2) building thermal infrastructure reference architectures around NVIDIA platform — reinforces NVDA platform integration scope at thermal infrastructure ecosystem partner layer (cross-reference [[liquid-cooling]] + [[AIDC-cooling-architecture-transition]] in-place refresh 2026-05-26 Tier 3 OEM reference design catalog subsections). No content edits beyond cross-reference flag.
 - **2026-04-19:** Created from NVDA Q4 FY2026 earnings call (Tier 2) and frameworks.md. Documents four modalities of platform integration: acquisition (Mellanox), licensing (Groq), equity + purchase commitments (COHR/LITE), and equity backing (Ayar Labs), plus model builder ecosystem investments.
 - **2026-04-19:** Updated from LITE Q2 FY2026 earnings call (Tier 2). Added LITE-side perspective on the equity investment: "capital offset in exchange for supply assurance" framing vs. NVDA's "vertically securing laser supply chain." Cross-validated dual framing preserved without adjudication.
 - **2026-04-19:** Updated from COHR Q2 FY2026 earnings call (Tier 2) and March 2, 2026 press release context. Added COHR-side perspective: "financial commitment from customers" framing and "20-year relationship expansion." Three-way perspectival comparison now complete (NVDA/LITE/COHR).

@@ -11,7 +11,7 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` v9.2 Sect
 | [NVDA](wiki/companies/NVDA.md) | NVDA   | 1     | 1         | —      | —            | —         | —         | 2026-05-24   |
 | [TSM](wiki/companies/TSM.md)   | TSM    | 2     | 1         | —      | —            | —         | —         | 2026-04-26   |
 | [LITE](wiki/companies/LITE.md) | LITE   | 4     | 3         | —      | —            | —         | —         | 2026-05-10   |
-| [COHR](wiki/companies/COHR.md) | COHR   | 4     | 2         | —      | —            | —         | —         | 2026-05-10   |
+| [COHR](wiki/companies/COHR.md) | COHR   | 4     | 2         | —      | —            | —         | —         | 2026-05-26   |
 | [AEHR](wiki/companies/AEHR.md) | AEHR   | 3-4   | 4         | —      | —            | —         | —         | 2026-04-20   |
 | [ONTO](wiki/companies/ONTO.md) | ONTO   | 3-4   | 4         | —      | —            | —         | —         | 2026-05-11   |
 | [AAOI](wiki/companies/AAOI.md) | AAOI   | 5     | 5         | —      | —            | —         | —         | 2026-05-10   |
@@ -24,13 +24,13 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` v9.2 Sect
 | [CSCO](wiki/companies/CSCO.md) | CSCO   | 3     | 4         | —      | —            | —         | —         | 2026-04-27   |
 | [GLW](wiki/companies/GLW.md)   | GLW    | 4     | 3         | —      | —            | —         | —         | 2026-05-12   |
 | [FN](wiki/companies/FN.md)     | FN     | 6     | 4         | —      | —            | —         | —         | 2026-05-12   |
-| [VRT](wiki/companies/VRT.md)   | VRT    | 5     | 4         | —      | —            | —         | —         | 2026-04-27   |
+| [VRT](wiki/companies/VRT.md)   | VRT    | 5     | 4         | —      | —            | —         | —         | 2026-05-26   |
 | [CRDO](wiki/companies/CRDO.md) | CRDO   | 3     | 3         | —      | —            | —         | —         | 2026-04-28   |
-| [ANET](wiki/companies/ANET.md) | ANET   | 5     | 5         | —      | —            | —         | —         | 2026-05-11   |
+| [ANET](wiki/companies/ANET.md) | ANET   | 5     | 5         | —      | —            | —         | —         | 2026-05-26   |
 | [VIAV](wiki/companies/VIAV.md) | VIAV   | 4     | 4         | —      | —            | —         | —         | 2026-05-12   |
 | [PLAB](wiki/companies/PLAB.md) | PLAB   | 4     | outside   | —      | —            | —         | —         | 2026-04-28   |
-| [FLEX](wiki/companies/FLEX.md) | FLEX   | 6     | outside   | —      | 5            | outside   | —         | 2026-05-01   |
-| [ETN](wiki/companies/ETN.md)   | ETN    | 4     | outside   | —      | 1            | outside   | —         | 2026-05-10   |
+| [FLEX](wiki/companies/FLEX.md) | FLEX   | 6     | outside   | —      | 5            | outside   | —         | 2026-05-26   |
+| [ETN](wiki/companies/ETN.md)   | ETN    | 4     | outside   | —      | 1            | outside   | —         | 2026-05-26   |
 | [GEV](wiki/companies/GEV.md)   | GEV    | 4     | outside   | —      | 3            | outside   | —         | 2026-05-01   |
 | [BE](wiki/companies/BE.md)     | BE     | 4     | outside   | —      | 2            | outside   | —         | 2026-05-02   |
 | [LEU](wiki/companies/LEU.md)   | LEU    | 4     | outside   | —      | outside      | outside   | 1         | 2026-05-10   |
@@ -41,10 +41,10 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` v9.2 Sect
 | [CAT](wiki/companies/CAT.md)   | CAT    | 4     | outside   | —      | 4            | outside   | outside   | 2026-05-12   |
 | [FLNC](wiki/companies/FLNC.md) | FLNC   | 4     | outside   | —      | 3            | outside   | outside   | 2026-05-13   |
 | [TSEM](wiki/companies/TSEM.md) | TSEM   | 2     | 2         | —      | —            | outside   | outside   | 2026-05-14   |
-| [NVT](wiki/companies/NVT.md)   | NVT    | 4     | outside   | —      | 3            | outside   | outside   | 2026-05-16   |
-| [MOD](wiki/companies/MOD.md)   | MOD    | 4     | outside   | —      | 3            | outside   | outside   | 2026-05-16   |
+| [NVT](wiki/companies/NVT.md)   | NVT    | 4     | outside   | —      | 3            | outside   | outside   | 2026-05-26   |
+| [MOD](wiki/companies/MOD.md)   | MOD    | 4     | outside   | —      | 3            | outside   | outside   | 2026-05-26   |
 | [NOK](wiki/companies/NOK.md)   | NOK    | 4     | 2         | —      | outside      | outside   | outside   | 2026-05-19   |
-| [AAON](wiki/companies/AAON.md) | AAON   | 4     | outside   | —      | 3            | outside   | outside   | 2026-05-19   |
+| [AAON](wiki/companies/AAON.md) | AAON   | 4     | outside   | —      | 3            | outside   | outside   | 2026-05-26   |
 | [MKSI](wiki/companies/MKSI.md) | MKSI   | 4     | 3         | —      | outside      | 2         | 3         | 2026-05-21   |
 | [ARM](wiki/companies/ARM.md)   | ARM    | 1     | outside   | —      | outside      | outside   | outside   | 2026-05-23   |
 | [AMD](wiki/companies/AMD.md)   | AMD    | 1     | outside   | —      | outside      | outside   | outside   | 2026-05-23   |
@@ -71,9 +71,9 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` v9.2 Sect
 | [cpo-integration](wiki/chokepoints/cpo-integration.md) | NVDA, AVGO, MRVL, CRDO, LITE, COHR, AAOI, TSM, FN, ALAB, ANET, TSEM | 2026-05-24 |
 | [HALEU-fuel-chokepoint](wiki/chokepoints/HALEU-fuel-chokepoint.md) | LEU, BWXT, CCJ, BE, GEV | 2026-05-25 |
 | [BTM-grid-bypass-workaround](wiki/chokepoints/BTM-grid-bypass-workaround.md) | BE, FCEL, GEV, CAT | 2026-05-12 |
-| [transformer-supply](wiki/chokepoints/transformer-supply.md) | ETN, GEV, NVDA | 2026-05-24 |
+| [transformer-supply](wiki/chokepoints/transformer-supply.md) | ETN, GEV, NVDA | 2026-05-26 |
 | [HBM-oligopoly](wiki/chokepoints/HBM-oligopoly.md) | ONTO, COHU, AEHR, TSM, MKSI, MU | 2026-05-25 |
-| [liquid-cooling](wiki/chokepoints/liquid-cooling.md) | VRT, ETN, NVT, MOD, FLEX, COHR, ANET, NVDA | 2026-05-24 |
+| [liquid-cooling](wiki/chokepoints/liquid-cooling.md) | VRT, ETN, NVT, MOD, FLEX, COHR, ANET, AAON, NVDA | 2026-05-26 |
 
 ## Themes
 
@@ -84,12 +84,12 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` v9.2 Sect
 | [datacenter-photonics-supply-chain](wiki/themes/datacenter-photonics-supply-chain.md) | NVDA, TSM, AVGO, MRVL, ALAB, CSCO, COHR, LITE, AAOI, AEHR, ONTO, COHU, AXTI, VECO, GLW, FN, VRT | 2026-05-24 |
 | [hyperscaler-custom-ASIC](wiki/themes/hyperscaler-custom-ASIC.md) | ALAB, AAOI, MRVL, AVGO, NVDA, FN | 2026-05-24 |
 | [foundry-competition](wiki/themes/foundry-competition.md) | TSM, NVDA | 2026-04-20 |
-| [NVDA-platform-integration](wiki/themes/NVDA-platform-integration.md) | NVDA, COHR, LITE, GLW, VRT, ANET, ARM, AMD, INTC | 2026-05-24 |
+| [NVDA-platform-integration](wiki/themes/NVDA-platform-integration.md) | NVDA, COHR, LITE, GLW, VRT, ANET, ARM, AMD, INTC | 2026-05-26 |
 | [overseas-fab-expansion](wiki/themes/overseas-fab-expansion.md) | TSM | 2026-04-19 |
 | [chokepoint-investability-priorities](wiki/themes/chokepoint-investability-priorities.md) | NVDA, AVGO, MRVL, CSCO, AEHR, AXTI, COHR, LITE, AAOI, ALAB, FN, GLW, VRT, ONTO, VECO, TSM, COHU | 2026-04-28 |
-| [AIDC-cooling-architecture-transition](wiki/themes/AIDC-cooling-architecture-transition.md) | VRT, ETN, NVT, MOD, FLEX, COHR, ANET | 2026-05-16 |
+| [AIDC-cooling-architecture-transition](wiki/themes/AIDC-cooling-architecture-transition.md) | VRT, ETN, NVT, MOD, FLEX, COHR, ANET, AAON | 2026-05-26 |
 | [AI-agentic-CPU-orchestration-reemergence](wiki/themes/AI-agentic-CPU-orchestration-reemergence.md) | ARM, AMD, INTC, NVDA | 2026-05-24 |
-| [power-semis](wiki/themes/power-semis.md) | NVTS, POWI, VICR, ON, MPWR | 2026-05-25 |
+| [power-semis](wiki/themes/power-semis.md) | NVTS, POWI, VICR, ON, MPWR | 2026-05-26 |
 
 ## Layers
 
