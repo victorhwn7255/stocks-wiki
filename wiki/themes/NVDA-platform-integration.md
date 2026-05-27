@@ -1,7 +1,7 @@
 ---
 type: theme
 tickers: [NVDA, COHR, LITE, GLW, VRT, ANET, ARM, AMD, INTC]
-last_updated: 2026-05-26
+last_updated: 2026-05-27
 ---
 
 # NVDA Platform Integration Pattern
@@ -216,6 +216,7 @@ Methodology codification candidate at Tranche 2C-iii — the 3-mode taxonomy is 
 
 ## Change log
 
+- **2026-05-27 (in-place adjacency cross-reference per Vic instruction; not counted as separate session):** Cross-reference flag per `raw/research/CPO-for-AIDC-Infrastructure.md` 2026-05-26 + `raw/research/CPO-in-AIDC.md` 2026-05-27 dual-source CPO theme refresh: NVIDIA $4B March 2, 2026 LITE + COHR injection quantification refinement ($2B LITE at $695.31/share + $2B COHR per SEC 8-Ks) — substantively documented at vault [[NVDA-platform-integration]] S82 + S50 paired refresh; Tier 3 sources add share-price + 8-K filing specificity. OCI MSA 2026 NVIDIA co-founder observation (AMD + Broadcom + NVIDIA + Meta + Microsoft + OpenAI) — substantive cross-vendor standardization signal at NVDA platform integration scope; cross-reference [[cpo-integration]] Open Question #14. NVIDIA Spectrum-X Photonics 9W per 800G vs Broadcom TH6-Davisson 3.5W power gap observation flagged at vault [[cpo-integration]] NVDA $2B subsection. No content edits beyond cross-reference flag.
 - **2026-05-26 (in-place adjacency cross-reference per Vic instruction; not counted as separate session):** Cross-reference flag per `raw/research/liquid-cooling-for-datacenters.md` (2026-05-26): Tier 3 source documents 6-OEM NVIDIA-aligned reference design ecosystem (Schneider Electric Motivair RD110/RD111 + Vertiv CoolChip CDU + Dell IR7000 + HPE Cray EX + Lenovo Neptune + Supermicro DLC-2) building thermal infrastructure reference architectures around NVIDIA platform — reinforces NVDA platform integration scope at thermal infrastructure ecosystem partner layer (cross-reference [[liquid-cooling]] + [[AIDC-cooling-architecture-transition]] in-place refresh 2026-05-26 Tier 3 OEM reference design catalog subsections). No content edits beyond cross-reference flag.
 - **2026-04-19:** Created from NVDA Q4 FY2026 earnings call (Tier 2) and frameworks.md. Documents four modalities of platform integration: acquisition (Mellanox), licensing (Groq), equity + purchase commitments (COHR/LITE), and equity backing (Ayar Labs), plus model builder ecosystem investments.
 - **2026-04-19:** Updated from LITE Q2 FY2026 earnings call (Tier 2). Added LITE-side perspective on the equity investment: "capital offset in exchange for supply assurance" framing vs. NVDA's "vertically securing laser supply chain." Cross-validated dual framing preserved without adjudication.

@@ -3,7 +3,7 @@ type: company
 tickers: [MRVL]
 layer: 3
 photonics_tier: 3
-last_updated: 2026-04-27
+last_updated: 2026-05-27
 ---
 
 # Marvell Technology (MRVL)
@@ -89,6 +89,8 @@ Murphy characterized the $5 EPS as "just a floor" (MRVL Q4 FY2026 call). Guidanc
 
 **Custom ASIC competitive dynamics.** [[NVDA]] never named on the call — reciprocal non-naming pattern now observed at Layers 1, 2, and 3. [[AVGO]] never named but is clearly the "competition from another supplier" at the lead XPU customer (multiple analysts referenced this). [[ALAB]] is named as a direct competitor in ALAB's 10-K FY2025, and both companies compete in the scale-up fabric switching market — MRVL via UALink switches and Photonic Fabric, ALAB via Scorpio X-Series and NVLink Fusion. See [[hyperscaler-custom-ASIC]] for the cross-company competitive landscape. Murphy was emotionally defensive on custom silicon competitive noise: "Do you see me blinking? You don't... I'm very fired up on this topic" — referencing "analysts retracting notes" and "articles that weren't even accurate at all" (Murphy, MRVL Q4 FY2026 call). This is the most combative management passage in the vault. The defensive intensity signals live competitive pressure that standard corporate language would obscure.
 
+**Tier 3 substrate addition (per `raw/research/CPO-for-AIDC-Infrastructure.md` 2026-05-26 + `raw/research/CPO-in-AIDC.md` 2026-05-27; in-place refresh per Vic instruction; not counted as separate session).** Tier 3 dual-source framework positions MRVL at value-chain Layer A (Photonic Die / Optical Engine) + Layer B (DSP / SerDes / Switch Silicon) — substantively spans 2 of 6 value-chain layers; rare structural breadth among CPO ecosystem participants. **AWS endorsement quotation per Tier 3 source:** Dave Brown VP Compute & ML Services on Celestial acquisition: *"we believe optical interconnects will play an important role in the future of AI infrastructure"* — substantive AWS-side validation at Celestial scale-up architecture scope. Per Report 1 framing: "highest-beta strategic challenger because it spans custom XPU enablement, switching, photonics, and optical DSP, but it has more execution dependence." **Tier 3 reports announced deal terms** (Marvell 8-K Dec 2 2025: ~$3.25B upfront [$1B cash + ~$2.25B in ~27.2M shares] + up to ~27.2M earnout shares; total ~$6B deal value) substantively reconcile with vault primary-substantiated closed-deal terms (Feb 2 2026; $1.3B cash + ~24.5M shares + total up to ~$5.5B per 10-K FY2026); minor variance per disclosure-timing convention (announcement vs. close). Per Section 5.2: Tier 3 source's competitive positioning language at MRVL strategically-relevant scope captured observationally; conviction labels EXCLUDED. Per CPO-for-AIDC-Infrastructure.md (2026-05-26) + CPO-in-AIDC.md (2026-05-27).
+
 ## Customer concentration and hyperscaler trajectory
 
 | Customer | FY2024 | FY2025 | FY2026 | Trend |
@@ -134,6 +136,7 @@ Four customers represented 73% of gross AR at January 31, 2026. Distributor A at
 
 ## Change log
 
+- **2026-05-27 (in-place refresh per Vic instruction; not counted as separate session — Tier 3 substrate addition per `CPO-for-AIDC-Infrastructure.md` 2026-05-26 + `CPO-in-AIDC.md` 2026-05-27):** Added Tier 3 dual-source substrate paragraph at CPO platform positioning subsection: AWS endorsement quotation (Dave Brown VP); MRVL spans value-chain Layer A + Layer B substantive structural breadth; Marvell 8-K Dec 2 2025 announced terms reconciliation with vault primary-substantiated closed-deal terms (Feb 2 2026); Tier 3 competitive positioning at strategically-relevant scope captured observationally per Section 5.2 (conviction labels EXCLUDED). last_updated 2026-04-27 → 2026-05-27.
 - **2026-04-22:** Created from MRVL 10-Q Q3 FY2026 (Tier 1), MRVL 10-K FY2026 (Tier 1), MRVL Q4 FY2026 earnings call (Tier 2). First Layer 3 company page. Three-source coverage from inception. Template-setting for specialized designer tier.
 - **2026-04-23:** Session 12 audit execution (non-ingest). Added [[AI-demand-durability]] cross-reference.
 - **2026-04-23:** Session 14 cross-reference. Added [[ALAB]] competitive context in custom ASIC section and [[hyperscaler-custom-ASIC]] cross-reference.

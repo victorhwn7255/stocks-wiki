@@ -3,7 +3,7 @@ type: company
 tickers: [AVGO]
 layer: 1
 photonics_tier: 3
-last_updated: 2026-04-27
+last_updated: 2026-05-27
 ---
 
 # Broadcom Inc. (AVGO)
@@ -125,6 +125,14 @@ AVGO simultaneously claims CPO leadership ("we are the lead in CPOs") and pushes
 
 **Murphy ↔ Hock Tan disagreement.** This framing directly contradicts [[MRVL]] CEO Murphy's positioning: Murphy says scale-up CPO is "inflecting in a pretty big way" (MRVL Q4 FY2026 call); Hock Tan says scale-up uses copper and CPO is "bright, shiny objects." Both agree on the scale-out/scale-up bifurcation structure — they disagree on what technology wins scale-up: optical (CPO, MRVL's Photonic Fabric) or electrical (copper DAC, AVGO's SerDes). Both positions are self-serving: Murphy acquired Celestial AI for up to ~$5.5B to pursue scale-up CPO; Hock Tan's current competitive advantage is SerDes (200G, only one on market). See [[CPO-platform-battle]] for the full comparative analysis and resolution signals.
 
+**Tier 3 substrate addition (per `raw/research/CPO-for-AIDC-Infrastructure.md` 2026-05-26 + `raw/research/CPO-in-AIDC.md` 2026-05-27; in-place refresh per Vic instruction; not counted as separate session).** Tier 3 dual-source observable refines AVGO CPO positioning substantively beyond vault current scope (vault last_updated 2026-04-27):
+
+- **TH6-Davisson 102.4T CPO switch shipping Oct 8, 2025** per Tier 3 sources — 16× 6.4T silicon-photonic optical engines + ~3.5W per 800G port (~4.4 pJ/bit) + uses TSMC COUPE + field-replaceable ELSFP laser modules (resolves prior serviceability objection); 4th-gen 400G/lane in development per Broadcom disclosures.
+- **Meta Bailly production validation** (Amiralizadeh et al. paper at ECOC 2025): initially 1,049k 400G port-device-hours across 15 Bailly 51.2T CPO switches; extended at the ECOC talk to 15M 400G port-device-hours; "no failures or uncorrectable codewords (UCWs)"; one FEC bin >10 event in the initial 1,049k-hour run traced to a faulty fiber. Paper conclusion: *"The demonstrated lower bound mean time between failures (MTBFs) of optical links can readily support a 24K GPU AI cluster with >90 percent training efficiency without interconnect failures being the bottleneck."* 65% optics power savings vs pluggables (5.4W per 800G CPO vs 15W per 800G DSP pluggable).
+- **NVIDIA Spectrum-X vs Broadcom TH6-Davisson power gap observation** — NVIDIA Spectrum-X Photonics 9W per 800G port (~11.3 pJ/bit) vs TH6-Davisson 3.5W per 800G port (~4.4 pJ/bit) per Tier 3 source = meaningful under-discussed gap at switch-CPO scope per NVIDIA Developer Blog + Broadcom disclosures.
+
+Substantive observable trajectory shift since vault baseline 2026-04-27: prior vault Hock Tan "bright shiny objects" framing + AVGO Bailly silence at Tier 1 documented per [[CPO-platform-battle]] tier-silence pattern; Tier 3 sources document TH6-Davisson shipping with Meta production validation = substantive competitive trajectory advancement at AVGO CPO scope. **AVGO refresh recommended at next dedicated session candidate** — vault baseline substantively stale. Per CPO-for-AIDC-Infrastructure.md (2026-05-26) + CPO-in-AIDC.md (2026-05-27).
+
 ## Infrastructure software (VMware)
 
 VMware Cloud Foundation (VCF) provides the second basis for AVGO's Layer 1 classification:
@@ -187,6 +195,7 @@ The 42% single-distributor concentration is the highest in the vault, surpassing
 
 ## Change log
 
+- **2026-05-27 (in-place refresh per Vic instruction; not counted as separate session — Tier 3 substrate addition per `CPO-for-AIDC-Infrastructure.md` 2026-05-26 + `CPO-in-AIDC.md` 2026-05-27):** Added Tier 3 dual-source substrate paragraph at CPO positioning subsection: TH6-Davisson 102.4T CPO switch shipping Oct 8 2025 + 16× 6.4T optical engines + ~3.5W/800G + field-replaceable ELSFP modules + 4th-gen 400G/lane in development; Meta Bailly production validation (15M 400G port-device-hours; "no failures or uncorrectable codewords"; supports 24K GPU cluster at >90% training efficiency per ECOC 2025); NVIDIA Spectrum-X 9W vs TH6-Davisson 3.5W per 800G power gap observation. **AVGO refresh recommended at next dedicated session candidate** — vault baseline (2026-04-27) substantively stale relative to TH6-Davisson commercial trajectory. last_updated 2026-04-27 → 2026-05-27.
 - **2026-04-23:** Created from AVGO 10-K FY2025 (Tier 1), AVGO 10-Q Q1 FY2026 (Tier 1), AVGO Q1 FY2026 earnings call (Tier 2). Second Layer 1 company page (alongside [[NVDA]]). Three-source coverage from inception. Layer 1 with straddling tension flagged. Six XPU customers documented with GW-scale figures. $100B+ claim preserved with three escalating formulations. CPO dismissal ("bright, shiny objects") and Murphy ↔ Hock Tan scale-up interconnect disagreement documented. Two Tier 1/Tier 2 framing gaps identified (COT risk, rack leasing margins).
 - **2026-04-23:** Session 12 audit execution (non-ingest). Added [[AI-demand-durability]] cross-reference.
 - **2026-04-23:** Session 13 cross-reference. Added [[InP-supply]] link in InP wafer fabrication section.

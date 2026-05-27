@@ -1,7 +1,7 @@
 ---
 type: theme
 tickers: [NVDA, TSM, AVGO, MRVL, ALAB, CSCO, LITE, COHR, AEHR, ONTO, AAOI, COHU, AXTI, VECO, CRDO, ANET]
-last_updated: 2026-05-24
+last_updated: 2026-05-27
 ---
 
 # CPO Platform Battle
@@ -248,6 +248,39 @@ Neither executive is a disinterested analyst. Murphy's position requires CPO to 
 3. **MRVL Photonic Fabric revenue trajectory.** Murphy's quantified targets ($500M/$1B) are falsifiable by their stated timelines (Q4 FY2028 / Q4 FY2029). Significant shortfall would weaken the CPO-wins-scale-up thesis.
 4. **AVGO SerDes roadmap beyond 400G.** If copper data rates extend to 800G+ per lane, the reach/bandwidth limitations that motivate CPO adoption may be pushed further out, extending copper's relevance window.
 
+## Hyperscaler architecture heterogeneity 5-way matrix (per CPO-for-AIDC-Infrastructure.md 2026-05-26 + CPO-in-AIDC.md 2026-05-27)
+
+Tier 3 dual-source framework documents hyperscaler architecture choice as heterogeneous across 5 named hyperscalers — substantively distinct from monolithic "CPO adoption wave" narrative. Per Report 1: "Heterogeneity = no single-vendor 'CPO wave,' which is precisely why the laser/packaging layers (architecture-agnostic) capture the margin."
+
+| Hyperscaler | CPO commitment status | Evidence | Architecture path |
+|---|---|---|---|
+| **Meta** | Most committed | Amiralizadeh et al. ECOC 2025 paper: initially 1,049k 400G port-device-hours across 15 Bailly 51.2T CPO switches; extended at ECOC talk to 15M port-device-hours; "no failures or uncorrectable codewords (UCWs)" | Broadcom TH5-Bailly + TH6-Davisson strict-CPO path |
+| **Google** | Parallel OCS path (not strict CPO) | Ironwood TPUv7 uses 3D Torus + Apollo OCS with 9,216-chip superpods (144 4×4×4 cubes, 48 OCS units, 13,824 optical ports); TPU v4 OCS at <5% cost + <3% power per academic disclosure | OCS + ICI; "comfort with optics in system architecture" but not in compute package |
+| **NVIDIA** | Hybrid implementation (NOT strict CPO) | Quantum-X InfiniBand 2H 2025 + Spectrum-X Ethernet 2H 2026; $4B Coherent + Lumentum equity + multi-year purchase commitment March 2, 2026; per Jensen "copper orders of magnitude more reliable" for flagship GPU-to-GPU | TSMC SoIC-X 3D hybrid bonding + detachable optical sub-assemblies + external CW lasers |
+| **AWS** | Building proprietary scale-up via Marvell/Celestial AI Photonic Fabric | Dave Brown VP Compute & ML Services on Celestial acquisition: "we believe optical interconnects will play an important role in the future of AI infrastructure"; STMicroelectronics partnership funding photonics chip for data-center transceivers | Marvell custom XPU + Celestial Photonic Fabric scale-up |
+| **Microsoft** | Quietest publicly | Maia networking architecture not publicly committed to CPO; ~$80B AI datacenter investment FY2025 + Maia internal silicon program | Not publicly disclosed beyond capex |
+
+**Capex backdrop:** Big-Four (Microsoft + Alphabet + Amazon + Meta) plan $725B 2026 (+77% YoY per FT-compiled summaries; specific guidance: Amazon $200B + Google $175-185B + Meta $125-145B + Microsoft $190B). Of this, ~75% AI infrastructure (CreditSights); networking ~15-20% of AI infra → implied 2026 AI networking spend ~$80-110B. Per CPO-for-AIDC-Infrastructure.md (2026-05-26).
+
+## OCI MSA 2026 standardization observation (per CPO-in-AIDC.md 2026-05-27)
+
+Optical Compute Interconnect (OCI) MSA founded 2026 by **AMD + Broadcom + NVIDIA + Meta + Microsoft + OpenAI** — protocol-agnostic optical physical layer for scale-up AI systems with 3.2T-class link roadmap. Substantive cross-vendor industry convergence signal at scale-up CPO scope. Per Tier 3 framing: "the standardization work is moving, but around a staged future, not a completed present." Cross-reference [[cpo-integration]] chokepoint scope at Open Question #14 for 12-18 month interop milestone tracking.
+
+## Coexistence-vs-displacement framework (per CPO-for-AIDC-Infrastructure.md 2026-05-26 + CPO-in-AIDC.md 2026-05-27)
+
+Both Tier 3 sources converge on coexistence thesis 3-5 years (not displacement). Quantitative anchors:
+
+- **TrendForce 800G+ shipments**: 24M units (2025) → 63M (2026) — pluggable category accelerating even as CPO becomes production-ready
+- **McKinsey "Optical Networking: Capturing the Next Wave of Value"** (Wiseman/Marcil/Hämäläinen/Sachdeva): "Production of 800-Gbps transceivers is expected to fall 40 to 60 percent short of demand through 2027, and 30 to 40 percent shortfalls in the supply of 1.6-Tbps transceivers are likely to persist through 2029"
+- **OSFP-XD share**: 92% of 2025 hyperscaler 1.6T procurement per OCP guidance
+- **LightCounting + Cignal AI**: explicitly state CPO will not materially affect pluggable shipments in next 3 years
+
+Structural framing at theme scope distinct from [[cpo-integration]] chokepoint binding-constraint scope. The variant perception is "coexistence not displacement"; vault [[CPO-platform-battle]] preserves this honest framing per Section 2.1 + tier-silence-pattern observation at 44-data-point baseline.
+
+## 3-instance Tier 3 investment-research-style source precedent observation (per Section 5.2 enforcement)
+
+Per LC Pass 2 2026-05-26 precedent (`liquid-cooling-for-AIDC-invest-report.md`) + same-day CPO refresh dual-report 2026-05-27 (`CPO-for-AIDC-Infrastructure.md` + `CPO-in-AIDC.md`) = **3-instance precedent of Tier 3 investment-research-style sources requiring Section 5.2 enforcement.** Both reports carry conviction rankings + portfolio Add/Trim thresholds + pair-trade recommendations + Long/Hold/Neutral/Avoid labels. **All prescriptive content EXCLUDED from vault integration per CLAUDE.md Section 5.2 + Section 2.1 disciplines.** Methodology codification candidate at Tranche 2C-iii: formalize Section 5.2 enforcement discipline for investment-research-style Tier 3 sources at Section 4.6 sub-protocol scope.
+
 ## Signals to track
 
 **Design wins and partner announcements:**
@@ -281,6 +314,7 @@ Neither executive is a disinterested analyst. Murphy's position requires CPO to 
 
 ## Change log
 
+- **2026-05-27 (in-place refresh per Vic instruction; not counted as separate session — Tier 3 dual-source substrate enrichment per `CPO-for-AIDC-Infrastructure.md` 2026-05-26 + `CPO-in-AIDC.md` 2026-05-27):** Same-day dual-Tier-3-source delivery integrated per Vic mini in-place refresh decision. NEW Hyperscaler architecture heterogeneity 5-way matrix subsection (Meta most committed; Google parallel OCS path; NVIDIA HYBRID; AWS Marvell/Celestial; Microsoft quiet) per both reports. NEW OCI MSA 2026 standardization observation (AMD + Broadcom + NVIDIA + Meta + Microsoft + OpenAI founding members; 3.2T-class link roadmap). NEW Coexistence-vs-displacement framework subsection (TrendForce 24M → 63M shipments + McKinsey 30-40% shortfall through 2029 + OSFP-XD 92% of 2025 hyperscaler 1.6T procurement + LightCounting + Cignal AI). NEW 3-instance Tier 3 investment-research-style source precedent observation per Section 5.2 enforcement — LC Pass 2 + CPO dual-report = 3-instance precedent; Tranche 2C-iii codification candidate. Section 5.2 P&L exclusion discipline rigorously enforced — all conviction rankings + portfolio recommendations + Add/Trim thresholds + pair-trade language EXCLUDED. last_updated 2026-05-24 → 2026-05-27.
 - **2026-04-19:** Created to track thesis question 2. Baseline established: zero CPO/photonics discussion in first two ingested sources (NVDA Q4 FY2026 call, TSM Q1 2026 call). Contestants and tracking framework from frameworks.md. This page exists to accumulate evidence on a thesis question that primary sources have not yet addressed.
 - **2026-04-19:** Updated from TSM 20-F FY2025 (Tier 1). Third absence observation added: COUPE absent from formal technology enumeration in 244-page Tier 1 filing. Three-data-point threshold crossed for frameworks.md timeline revision consideration.
 - **2026-04-19:** Major update from LITE 10-K FY2025 (Tier 1), LITE 10-Q Q2 FY2026 (Tier 1), LITE Q2 FY2026 earnings call (Tier 2). The CPO silence breaks: LITE call names CPO as one of three primary growth catalysts. Tiered silence pattern identified — CPO discussed at component layer (Layer 4) before platform (Layer 1) or manufacturing (Layer 2) layers. Five new observations added. Interpretive framing revised. Same-day 10-Q vs. call divergence documented.
