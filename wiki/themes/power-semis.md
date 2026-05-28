@@ -6,7 +6,7 @@ sub_domain: power_semi
 canonical_count: 5
 pathway: pathway_2
 s86_codification: 5_canonical_reinforcement
-last_updated: 2026-05-26
+last_updated: 2026-05-28
 ---
 
 # Power Semiconductors — AI Data Center 800V DC Architecture Transition
@@ -48,7 +48,7 @@ Vault FIRST INSTANCE at 5-canonical sub-domain accumulation scope. Theme page ex
 | Dim | NVTS S92 | POWI S93 | VICR S94 | ON S95 | MPWR S96 |
 |---|---|---|---|---|---|
 | **Variant** | Theme play + execution risk significant | Broader-portfolio incumbent + emerging optionality | Commercial-inflection-substantiated with execution risk | IDM scale-incumbent + capital discipline + AI subsegment driver | Broad-cycle high-quality power IC + diversified-stable base + Tier 4 CONTRADICTED at primary |
-| **Mfg model** | Fabless (GlobalFoundries GaN + X-Fab SiC) | Fabless | Fabless (Fab One Andover MA) | **IDM** internal manufacturing | Fabless |
+| **Mfg model** | Fabless (GlobalFoundries GaN + [[XFAB]] SiC) | Fabless | Fabless (Fab One Andover MA) | **IDM** internal manufacturing | Fabless |
 | **Operating history** | Strategic transformation "Navitas 2.0" | 30+ yr public (1988) | 40+ yr public (1981 Andover MA; IPO May 1991) | 27+ yr public (1999 Motorola spin-off) | 28+ yr public (1997 Kirkland WA) |
 | **FY2025 revenue** | $45.9M (-45% YoY) | $443.5M (+5.9% YoY) | $407.7M (+13.5% YoY) | $5,995.4M (-15.3% YoY) | $2,790.5M (+26.4% YoY) |
 | **Scale (NVTS=1×)** | 1× | ~10× | ~9× | **~131×** | **~61×** |
@@ -272,7 +272,7 @@ Sub-domain commercial structure asymmetry at 5-canonical accumulation. First IDM
 
 | Canonical | Foundry partnerships | Commercial structure |
 |---|---|---|
-| [[NVTS]] | GlobalFoundries (GaN; US-based) + X-Fab (SiC; US-based with Texas operations) | 10-K Risk Factors frames US-based foundry partners as competitive advantage for AI data center customers requiring supply chain transparency |
+| [[NVTS]] | GlobalFoundries (GaN; US-based) + [[XFAB]] (SiC; US-based with Texas operations) | 10-K Risk Factors frames US-based foundry partners as competitive advantage for AI data center customers requiring supply chain transparency |
 | [[POWI]] | Mature foundry partnerships (specific foundry not enumerated at first canonical extraction scope) | 1988 founding + mature manufacturing partnership relationships |
 | [[VICR]] | Fab One Andover MA in-house + second fab construction referenced; capacity expansion to $1.5B run rate | Hybrid: in-house Fab One + external partnership scope; modular DC-DC bricks + Advanced Products (FPA + VPD) |
 | [[MPWR]] | TSMC + UMC scope (not enumerated specifically at first canonical extraction scope) | Fabless high-margin diversified power IC franchise |
@@ -281,7 +281,11 @@ Sub-domain commercial structure asymmetry at 5-canonical accumulation. First IDM
 
 ON 10-K Item 1 commercial structure CONFIRMED at primary: 3 "internal manufacturing" mentions + 8 "fab" mentions + 0 "fabless" mentions. CEO El-Khoury Q1 FY2026 positioning: "the only broad-based U.S. semiconductor power semiconductor supplier." Q1 FY2026 manufacturing utilization 77% (sequential recovery); capex $22M (1.4% of revenue); $50M Q1 non-core revenue exits + $30-40M Q2 expected = strategic portfolio rationalization at IDM scale.
 
-**Cross-vault implications.** Fabless canonicals carry foundry-partnership dependency at supply-side (TSMC + UMC + GlobalFoundries + X-Fab + others); IDM canonical carries internal manufacturing capacity scope + capex cycle exposure ($22M Q1 + $25-35M Q2 guidance). Capacity/supply/cycle exposure differentiation at sub-domain commercial structure scope.
+**Cross-vault implications.** Fabless canonicals carry foundry-partnership dependency at supply-side (TSMC + UMC + GlobalFoundries + [[XFAB]] + others); IDM canonical carries internal manufacturing capacity scope + capex cycle exposure ($22M Q1 + $25-35M Q2 guidance). Capacity/supply/cycle exposure differentiation at sub-domain commercial structure scope.
+
+### 7.3 Merchant SiC foundry-supply perspective (S99 — [[XFAB]] cross-reference)
+
+The fabless-vs-IDM bifurcation above views the sub-domain from the designer side. [[XFAB]] (S99) adds the merchant-foundry side: it is the SiC foundry behind [[NVTS]]'s fabless SiC line (A1 reciprocal-confirmation — Navitas named at XFAB Q1 2026 call + X-FAB named at NVTS 10-K Item 1). XFAB is a pure merchant foundry (no own designs), structurally distinct from both the fabless designers and the [[ON]] IDM model. Per its Q1 2026 call, XFAB has built SiC capacity to ~10,000 wafers/month and currently loads ~6,000 (≈60%), serving the same 800V→48V/12V/6V datacenter power architecture the designer canonicals address. Merchant SiC foundry capacity (XFAB + Wolfspeed + onsemi + STMicro + Infineon) is a candidate input to a future SiC merchant foundry capacity chokepoint; multi-source threshold not yet met (deferred per Section 3.15). XFAB sits at Energy/Power Tier 4 (broad-cycle foundry with growing datacenter SiC), below the designer-tier scope. See [[XFAB]] for the foundry-side view.
 
 ## 8. Cross-Canonical Mutual Reciprocal Naming — 3-Instance Precedent at Sub-Domain
 
@@ -537,6 +541,7 @@ Cross-canonical comparative analytical product enabled at substantively-clean pe
 
 ## 16. Change log
 
+- **2026-05-28 (S99 cross-reference update — XFAB canonical creation):** Converted plain-text "X-Fab" SiC foundry partner references to [[XFAB]] wikilink (3 instances: Section 2.1 matrix + Section 7.1 fabless foundry table + Section 7.1 cross-vault implications). Added Section 7.3 merchant SiC foundry-supply perspective — XFAB merchant-foundry side of the sub-domain (SiC foundry behind NVTS; A1 reciprocal-confirmation); 10K wafer/month capacity at ~60% load; future SiC merchant foundry capacity chokepoint candidate deferred per Section 3.15. XFAB placed Energy/Power Tier 4 (below designer-tier scope). No other content edits per scope discipline.
 - **2026-05-26 (in-place adjacency cross-reference per Vic instruction; not counted as separate session):** Cross-reference flag per `raw/research/liquid-cooling-for-datacenters.md` (2026-05-26; 5th Tier 3 source at vault filesystem post-power-semi 4-Tier-3-source acquisition cycle): 800V DC architecture transition + liquid cooling co-dependency observation — power-semi sub-domain Kyber 1 MW rack envelope + liquid cooling chokepoint mandatoriness scenarios (per [[liquid-cooling]] + [[AIDC-cooling-architecture-transition]] in-place refresh 2026-05-26) substantively co-bind at frontier AI datacenter scope. No content edits beyond cross-reference flag.
 - **2026-05-25 (S97):** NEW canonical theme page — Power Semiconductors sub-domain theme creation. FIRST Power Semis theme page in vault history; FIRST Pathway 2 + S86 codification compliance application at 5-canonical sub-domain MAXIMIZED scope. 16-section structure delivered; ~5-canonical primary substantiation baseline + Tier 3 institutional research canonical-already-cited reuse per Section 4.6 boundary discipline (Vic Decision #1). 5 cross-vault back-references added at [[NVTS]] + [[POWI]] + [[VICR]] + [[ON]] + [[MPWR]] Cross-vault adjacency sections per Vic Decision #2. Centerpiece: Cross-canonical 5-variant structural matrix (vault FIRST INSTANCE at 5-canonical sub-domain accumulation) + NVIDIA disclosure asymmetry as canonical sub-domain finding (12 Section 3.6 references + 3 sub-pattern variants including Tier 4 industry context CONTRADICTION sub-pattern MPWR S96 FIRST INSTANCE) + 800V DC architecture transition substrate (VICR Gen-5 VPD deepest primary-substantiated scope) + Customer concentration archetype typology (5 distinct archetypes) + Scale gradient asymmetric framing (observational per Section 5.2) + Manufacturing model bifurcation (4 fabless + 1 IDM) + Cross-canonical mutual reciprocal naming 3-instance precedent (NAND S88 + power-semi S93 + power-semi S96 MPWR ↔ ON; POWI→ON half-pattern unreciprocated — sub-domain mutual reciprocal naming NOT strictly transitive) + ITC IP enforcement at VICR (FIRST vault canonical placement at ITC-enforced licensing + royalty stream scope) + Enterprise Data NAMED reportable segment at MPWR (cleanest Section 3.10 4-criterion test inverse criterion #2 satisfaction at sub-domain) + Sub-domain frameworks.md placement reconciliation candidate (Vic-side curation flag) + Cross-vault adjacency framing (Layer 4 component substrate → Layer 5 integrated power infrastructure → Layer 4-5 electrical distribution → Layer 4 utility-scale generation → transformer-supply chokepoint sequential dependency).
 - **2026-05-26 (in-S98 small refresh; not counted as separate session per Vic instruction):** Tier 3 institutional research source acquisition at vault filesystem (`raw/research/power-semis-investment-research.md` + `raw/research/pure-play-power-semis.md`); 6 substantive additions integrated per honest filtering of new Tier 3 content vs S97 baseline scope.

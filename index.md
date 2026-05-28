@@ -52,11 +52,12 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` v9.2 Sect
 | [MU](wiki/companies/MU.md)     | MU     | 2     | outside   | 2      | outside      | outside   | outside   | 2026-05-24   |
 | [SNDK](wiki/companies/SNDK.md) | SNDK   | 4     | outside   | 4      | outside      | outside   | outside   | 2026-05-24   |
 | [MP](wiki/companies/MP.md)     | MP     | 4-6   | outside   | outside | outside      | outside   | 1         | 2026-05-25   |
-| [NVTS](wiki/companies/NVTS.md) | NVTS   | 4     | outside   | outside | 3            | outside   | outside   | 2026-05-25   |
+| [NVTS](wiki/companies/NVTS.md) | NVTS   | 4     | outside   | outside | 3            | outside   | outside   | 2026-05-28   |
 | [POWI](wiki/companies/POWI.md) | POWI   | 4     | outside   | outside | 3            | outside   | outside   | 2026-05-25   |
 | [VICR](wiki/companies/VICR.md) | VICR   | 4     | outside   | outside | 3            | outside   | outside   | 2026-05-25   |
 | [ON](wiki/companies/ON.md)     | ON     | 4     | outside   | outside | 3            | outside   | outside   | 2026-05-25   |
 | [MPWR](wiki/companies/MPWR.md) | MPWR   | 4     | outside   | outside | 3            | outside   | outside   | 2026-05-25   |
+| [XFAB](wiki/companies/XFAB.md) | XFAB   | 2     | 4         | —      | 4            | outside   | outside   | 2026-05-28   |
 
 ## Chokepoints
 
@@ -81,15 +82,15 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` v9.2 Sect
 |------|-----------------|--------------|
 | [AI-demand-durability](wiki/themes/AI-demand-durability.md) | TSM, NVDA, LITE, COHR, AEHR, ONTO, AAOI, MRVL, AVGO, AXTI, VECO, ALAB, GLW, FN, VRT | 2026-05-24 |
 | [CPO-platform-battle](wiki/themes/CPO-platform-battle.md) | NVDA, TSM, AVGO, MRVL, ALAB, CSCO, LITE, COHR, AEHR, ONTO, AAOI, COHU, AXTI, VECO | 2026-05-27 |
-| [datacenter-photonics-supply-chain](wiki/themes/datacenter-photonics-supply-chain.md) | NVDA, TSM, AVGO, MRVL, ALAB, CSCO, COHR, LITE, AAOI, AEHR, ONTO, COHU, AXTI, VECO, GLW, FN, VRT | 2026-05-24 |
+| [datacenter-photonics-supply-chain](wiki/themes/datacenter-photonics-supply-chain.md) | NVDA, TSM, AVGO, MRVL, ALAB, CSCO, COHR, LITE, AAOI, AEHR, ONTO, COHU, AXTI, VECO, GLW, FN, VRT | 2026-05-28 |
 | [hyperscaler-custom-ASIC](wiki/themes/hyperscaler-custom-ASIC.md) | ALAB, AAOI, MRVL, AVGO, NVDA, FN | 2026-05-24 |
-| [foundry-competition](wiki/themes/foundry-competition.md) | TSM, NVDA | 2026-04-20 |
+| [foundry-competition](wiki/themes/foundry-competition.md) | TSM, NVDA, TSEM, XFAB | 2026-05-28 |
 | [NVDA-platform-integration](wiki/themes/NVDA-platform-integration.md) | NVDA, COHR, LITE, GLW, VRT, ANET, ARM, AMD, INTC | 2026-05-27 |
 | [overseas-fab-expansion](wiki/themes/overseas-fab-expansion.md) | TSM | 2026-04-19 |
 | [chokepoint-investability-priorities](wiki/themes/chokepoint-investability-priorities.md) | NVDA, AVGO, MRVL, CSCO, AEHR, AXTI, COHR, LITE, AAOI, ALAB, FN, GLW, VRT, ONTO, VECO, TSM, COHU | 2026-04-28 |
 | [AIDC-cooling-architecture-transition](wiki/themes/AIDC-cooling-architecture-transition.md) | VRT, ETN, NVT, MOD, FLEX, COHR, ANET, AAON | 2026-05-26 |
 | [AI-agentic-CPU-orchestration-reemergence](wiki/themes/AI-agentic-CPU-orchestration-reemergence.md) | ARM, AMD, INTC, NVDA | 2026-05-24 |
-| [power-semis](wiki/themes/power-semis.md) | NVTS, POWI, VICR, ON, MPWR | 2026-05-26 |
+| [power-semis](wiki/themes/power-semis.md) | NVTS, POWI, VICR, ON, MPWR | 2026-05-28 |
 
 ## Layers
 

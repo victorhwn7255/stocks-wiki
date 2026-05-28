@@ -8,7 +8,7 @@ energy_power_tier: 3
 equipment_tier: outside
 materials_tier: outside
 foreign_issuer: false
-last_updated: 2026-05-25
+last_updated: 2026-05-28
 ---
 
 # NVTS — Navitas Semiconductor Corporation
@@ -73,7 +73,9 @@ Management frames GaN + SiC as complementary in AI power architecture: "GaN and 
 
 ### Patent portfolio + manufacturing model
 
-10-K Item 1: 300+ patents issued or pending; CarbonNeutral®-certified (first semiconductor company). Fabless model with foundry partners: GlobalFoundries (GaN; US-based) + X-Fab (SiC; US-based with Texas operations). 10-K Risk Factors frames US-based foundry partners as competitive advantage for AI data center customers requiring supply chain transparency.
+10-K Item 1: 300+ patents issued or pending; CarbonNeutral®-certified (first semiconductor company). Fabless model with foundry partners: GlobalFoundries (GaN; US-based) + [[XFAB]] (SiC; US-based with Texas operations). 10-K Risk Factors frames US-based foundry partners as competitive advantage for AI data center customers requiring supply chain transparency.
+
+**A1 reciprocal-confirmation (Section 3.5; added S99).** The Navitas→X-FAB SiC foundry partnership is bilaterally confirmed: Navitas names X-FAB as its SiC foundry partner at 10-K Item 1, and X-FAB names Navitas as a publicly known SiC customer at its Q1 2026 earnings call (Damien Macq, CEO). See [[XFAB]] for the merchant-foundry-side view. Reciprocal-confirmation at first XFAB ingest baseline.
 
 ## Strategic transformation — Navitas 2.0
 
@@ -184,5 +186,6 @@ Cross-venue disclosure gap convention (Section 3.6) classic instance: NVIDIA nam
 
 ## Change log
 
+- **2026-05-28 (S99 cross-reference update — XFAB canonical creation):** Converted plain-text "X-Fab" SiC foundry partner reference to [[XFAB]] wikilink at Patent portfolio + manufacturing model section. Added A1 reciprocal-confirmation observation (Section 3.5) — Navitas→X-FAB SiC partnership bilaterally confirmed at NVTS 10-K Item 1 + XFAB Q1 2026 earnings call. No content edits beyond cross-reference resolution per scope discipline.
 - **2026-05-26 (in-place refresh per Vic instruction; not counted as separate session):** Tier 3 `raw/research/800VHDC-power-semis-for-AIDC.md` + `raw/research/power-semi-for-800v-AIDC.md` acquired at vault filesystem post-S92. NEW product reference: Navitas "designed for production" **12 kW PSU using GaN + SiC at 97.8% efficiency** (distinct from previously captured 20 kW 800V-6V PDB; both at distinct architectural-stage scopes — 12 kW PSU at front-end PSU + 20 kW PDB at point-of-load delivery). NVTS co-developing NVIDIA 800V HVDC architecture for 1 MW+ racks per Tier 3 substantiation. Cross-validates "Navitas 2.0" strategic transition at AI data center end-market scope. Tier 3 GaN supply constrained framing favorable to GaN-heavy fabless canonicals near-term (vs SiC oversupply correction). Section 3.16 deletion test applied. Forward-only application.
 - 2026-05-25 (S92): NEW canonical — Navitas Semiconductor first canonical ingest. First power-semiconductor sub-domain canonical in vault. Layer 4 + Energy/Power Tier 3 per Framework 7 Tier 3 analogy inheritance (Tranche 2C-iii observation candidate). FY2025 10-K + Q1 2026 10-Q + Q1 2026 earnings press release ingested. Kickoff hypothesis falsification on NVIDIA partnership thesis — primary substantiation refines to venue-of-disclosure scope. Section 3.6 cross-venue gap 8th reference. Section 2.11.1 calendar-aligned baseline 2nd practical application. Mode 1 substantive home outcome (a) UNCHANGED at 2 home + 5 reference (NVTS adds reference scope; 2 home + 6 reference post-S92).

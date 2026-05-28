@@ -1,7 +1,7 @@
 ---
 type: theme
-tickers: [TSM, NVDA]
-last_updated: 2026-04-20
+tickers: [TSM, NVDA, TSEM, XFAB]
+last_updated: 2026-05-28
 ---
 
 # Foundry Competition
@@ -75,6 +75,18 @@ The research's temporal observation is important for calibration: EUV supply has
 
 EUV access to China is effectively blocked under current export controls. ASML stated in 2023 that EUV systems were already controlled; Dutch controls were extended to additional DUV immersion models in September 2024. The active policy frontier is not EUV (already restricted) but whether the West will tighten DUV immersion exports and service restrictions on already-installed equipment. Reuters reported in April 2026 that proposed U.S. legislation would broaden pressure for countrywide DUV immersion restrictions and tighter service provisions for named firms such as SMIC (per /raw/research/ASML-EUV-foundry-dependency.md, citing ASML 2024 Annual Report, Government of the Netherlands September 2024, and Reuters April 2026). This creates a two-speed dynamic: the first speed is static (China cannot buy the frontier scanner), the second is dynamic (the West is still debating how far to squeeze the DUV/service workaround path). SMIC's present 7 nm-class capability appears to depend precisely on that workaround path.
 
+## Specialty foundry sub-scope (distinct from leading-edge logic competition)
+
+The competition dynamics above concern **leading-edge logic foundry** (TSMC vs Intel vs Samsung at N2/N3/A14 + advanced packaging). A structurally separate sub-scope is **specialty foundry** at mature/specialty process nodes, where two vault canonicals sit: [[TSEM]] (S62; Israeli) and [[XFAB]] (S99; Belgian). Both are foreign-issuer specialty foundries; both occupy Layer 2 on different grounds than TSM.
+
+Specialty-foundry competitive dynamics differ from leading-edge logic in kind, not just degree:
+
+- **No EUV dependency.** Specialty foundries run mature nodes (XFAB 1.0μm → 110nm; TSEM 200mm + selected 300mm), so the ASML EUV chokepoint that shapes leading-edge competition does not bind them. Their competitive moat is process specialization (analog/mixed-signal IP, SiPh PDK, SiC/GaN, MEMS), not transistor density.
+- **Customer migration cost is the moat.** Long product lifecycles (XFAB cites >15 years; sole-source on most products + AEC-Q100 automotive qualification) make customer migration to another foundry equivalent to a new development. This durable-incumbency profile is what places both at Layer 2 despite mature-node positioning.
+- **Non-overlapping specializations.** [[TSEM]] is silicon-photonics-PDK + analog/RF-focused; [[XFAB]] is wide-bandgap-power (SiC/GaN) + automotive-CMOS-focused. They are structural peers, not direct competitors — distinct from the head-to-head TSM/Intel/Samsung leading-edge contest.
+
+Specialty-foundry competitors named at primary include GlobalFoundries, UMC, Infineon, STMicroelectronics, Wolfspeed, and onsemi (the latter three at the SiC/GaN end where XFAB competes). Specialty-foundry sub-scope is a monitoring lane distinct from the leading-edge thesis; it does not bear on the `_thesis.md` "TSMC's packaging advantage narrows" disconfirming signal.
+
 ## Evidence tracker
 
 | Date | Source | Signal | Direction |
@@ -102,3 +114,4 @@ EUV access to China is effectively blocked under current export controls. ASML s
 - **2026-04-19:** Updated from NVDA Q4 FY2026 earnings call (Tier 2). Added LPU terminology update (term absent from NVDA call), Groq licensing to evidence tracker, NVDA dielet avoidance as CoWoS demand signal. Net assessment updated to reflect two-source view.
 - **2026-04-19:** Updated from TSM 20-F FY2025 (Tier 1). Added Tier 1 vs. Tier 2 competitive disclosure observation (20-F competition section generic, less useful than Q1 call). Updated LPU terminology to three-source absence. Added two evidence tracker rows.
 - **2026-04-20:** Updated from Tier 3 research (/raw/research/ASML-EUV-foundry-dependency.md). Added tiered EUV dependency chain section (TSMC deepest integration ~56% installed base, Samsung EUV-dependent but demand/yield often more binding, Intel differentiated by High-NA first-mover, SMIC outside EUV chain). Added EUV temporal nuance (2024 transition year, 2025-26 AI tightening). Added two-speed geopolitical dynamic (EUV blocked; active frontier is DUV/service restrictions). Added four evidence tracker rows. Net assessment updated to reflect upstream EUV dimension.
+- **2026-05-28 (S99 cross-reference update — XFAB canonical creation):** Added "Specialty foundry sub-scope" section distinguishing mature/specialty-node foundry competition (TSEM + XFAB, no EUV dependency, customer-migration-cost moat, non-overlapping specializations) from leading-edge logic competition (TSM/Intel/Samsung). Added [[TSEM]] + [[XFAB]] to tickers per Section 3.2(b) provenance. Specialty-foundry sub-scope is a monitoring lane distinct from the `_thesis.md` packaging-advantage disconfirming signal.
