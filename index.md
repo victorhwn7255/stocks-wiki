@@ -29,7 +29,7 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` v9.2 Sect
 | [ANET](wiki/companies/ANET.md) | ANET   | 5     | 5         | —      | —            | —         | —         | 2026-05-26   |
 | [VIAV](wiki/companies/VIAV.md) | VIAV   | 4     | 4         | —      | —            | —         | —         | 2026-05-12   |
 | [PLAB](wiki/companies/PLAB.md) | PLAB   | 4     | outside   | —      | —            | —         | —         | 2026-04-28   |
-| [FLEX](wiki/companies/FLEX.md) | FLEX   | 6     | outside   | —      | 5            | outside   | —         | 2026-05-26   |
+| [FLEX](wiki/companies/FLEX.md) | FLEX   | 6     | outside   | —      | 3            | outside   | —         | 2026-05-29   |
 | [ETN](wiki/companies/ETN.md)   | ETN    | 4     | outside   | —      | 1            | outside   | —         | 2026-05-26   |
 | [GEV](wiki/companies/GEV.md)   | GEV    | 4     | outside   | —      | 3            | outside   | —         | 2026-05-01   |
 | [BE](wiki/companies/BE.md)     | BE     | 4     | outside   | —      | 2            | outside   | —         | 2026-05-02   |
@@ -42,7 +42,7 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` v9.2 Sect
 | [FLNC](wiki/companies/FLNC.md) | FLNC   | 4     | outside   | —      | 3            | outside   | outside   | 2026-05-13   |
 | [TSEM](wiki/companies/TSEM.md) | TSEM   | 2     | 2         | —      | —            | outside   | outside   | 2026-05-14   |
 | [NVT](wiki/companies/NVT.md)   | NVT    | 4     | outside   | —      | 3            | outside   | outside   | 2026-05-26   |
-| [MOD](wiki/companies/MOD.md)   | MOD    | 4     | outside   | —      | 3            | outside   | outside   | 2026-05-26   |
+| [MOD](wiki/companies/MOD.md)   | MOD    | 4     | outside   | —      | 3            | outside   | outside   | 2026-05-29   |
 | [NOK](wiki/companies/NOK.md)   | NOK    | 4     | 2         | —      | outside      | outside   | outside   | 2026-05-19   |
 | [AAON](wiki/companies/AAON.md) | AAON   | 4     | outside   | —      | 3            | outside   | outside   | 2026-05-26   |
 | [MKSI](wiki/companies/MKSI.md) | MKSI   | 4     | 3         | —      | outside      | 2         | 3         | 2026-05-21   |
@@ -76,7 +76,7 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` v9.2 Sect
 | [BTM-grid-bypass-workaround](wiki/chokepoints/BTM-grid-bypass-workaround.md) | BE, FCEL, GEV, CAT | 2026-05-12 |
 | [transformer-supply](wiki/chokepoints/transformer-supply.md) | ETN, GEV, NVDA | 2026-05-26 |
 | [HBM-oligopoly](wiki/chokepoints/HBM-oligopoly.md) | ONTO, COHU, AEHR, TSM, MKSI, MU | 2026-05-25 |
-| [liquid-cooling](wiki/chokepoints/liquid-cooling.md) | VRT, ETN, NVT, MOD, FLEX, COHR, ANET, AAON, NVDA | 2026-05-26 |
+| [liquid-cooling](wiki/chokepoints/liquid-cooling.md) | VRT, ETN, NVT, MOD, FLEX, COHR, ANET, AAON, NVDA | 2026-05-29 |
 
 ## Themes
 
@@ -90,9 +90,9 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` v9.2 Sect
 | [NVDA-platform-integration](wiki/themes/NVDA-platform-integration.md) | NVDA, COHR, LITE, GLW, VRT, ANET, ARM, AMD, INTC, MRVL | 2026-05-29 |
 | [overseas-fab-expansion](wiki/themes/overseas-fab-expansion.md) | TSM | 2026-04-19 |
 | [chokepoint-investability-priorities](wiki/themes/chokepoint-investability-priorities.md) | NVDA, AVGO, MRVL, CSCO, AEHR, AXTI, COHR, LITE, AAOI, ALAB, FN, GLW, VRT, ONTO, VECO, TSM, COHU | 2026-04-28 |
-| [AIDC-cooling-architecture-transition](wiki/themes/AIDC-cooling-architecture-transition.md) | VRT, ETN, NVT, MOD, FLEX, COHR, ANET, AAON | 2026-05-26 |
+| [AIDC-cooling-architecture-transition](wiki/themes/AIDC-cooling-architecture-transition.md) | VRT, ETN, NVT, MOD, FLEX, COHR, ANET, AAON | 2026-05-29 |
 | [AI-agentic-CPU-orchestration-reemergence](wiki/themes/AI-agentic-CPU-orchestration-reemergence.md) | ARM, AMD, INTC, NVDA | 2026-05-29 |
-| [power-semis](wiki/themes/power-semis.md) | NVTS, POWI, VICR, ON, MPWR | 2026-05-28 |
+| [power-semis](wiki/themes/power-semis.md) | NVTS, POWI, VICR, ON, MPWR | 2026-05-29 |
 
 ## Layers
 

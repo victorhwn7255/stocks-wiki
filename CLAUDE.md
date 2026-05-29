@@ -1,8 +1,8 @@
-# CLAUDE.md — stocks-wiki (v9.2)
+# CLAUDE.md — stocks-wiki (v9.3)
 
 A personal research vault for AI datacenter supply chain and chokepoint analysis. You maintain the wiki; the human curates sources and asks questions.
 
-*Version: v9.2 (Codification Tranche 2C-ii; Session 86; 2026-05-24). Prior: v9.1 post-Tranche 2C-i Session 79.*
+*Version: v9.3 (Section 4.7 refresh-ingest-log convention added; Session 104; 2026-05-29). Prior: v9.2 Codification Tranche 2C-ii Session 86.*
 
 ## Descriptive language convention
 
@@ -361,6 +361,17 @@ When drafting an ingest kickoff, distinguish four source tiers and place each in
 **Application discipline.** Treat the boundary as binding: when uncertain whether a claim is primary-source-verified, default to "Structural context per Tier 3/4 sources to verify at primary." Stop 1 Phase 0 verification per Section 4.5 A6 (g') tests primary-source content against kickoff "Codified background"; falsifications documented per Section 4.4. Empirical motivation: S44-S45 surfaced systemic factual variance from marketing-tier content treated as primary-source-verified.
 
 **Empirical ROI durability (codified Session 61).** Four-tier source discipline produced multi-session zero-falsification streak post-S46 (S47 FCEL = 1 falsification; subsequent sessions all 0; streak spans full ingest-type variety). Pre-codification (S45 ENS) = 6 falsifications; post-codification = 0/session. Marketing-tier non-corroboration at primary is EXPECTED per Section 4.5 discipline boundary, NOT a (g') variance. *See A.12 for streak enumeration; current count in MEMORY.md; frameworks.md Section 11.11 for cross-chokepoint theme framework application.*
+
+### 4.7 Refresh ingest log (`raw/notes/refresh_log.md`) (codified Session 104)
+
+**Mandatory close-out step for every refresh ingest.** When a session re-ingests an EXISTING vault company page with a new primary source set (a "refresh ingest" per Section 4.1 / 4.2 — distinct from first-canonical creation, chokepoint/theme/relationship creation, codification, or in-place Tier-3 substrate refreshes), append a dated entry to `raw/notes/refresh_log.md` as part of the operational close-out, alongside `index.md` + `log.md` + MEMORY.md and before the final verification pass.
+
+`refresh_log.md` is a cumulative, reverse-chronological reference of how each vault company's thesis evolves quarter over quarter — what changed since the prior baseline, why it mattered, placement changes, cross-vault propagation, and forward watch items. It complements `log.md` (every session, operational) by isolating refresh-specific analytical deltas for longitudinal reference; it builds up over time as a standalone resource.
+
+**Per-entry template** (newest at top; canonical format lives in the file header):
+`## S### — TICKER (Company) — YYYY-MM-DD — <period refreshed>`, then **Sources** / **Prior baseline** / **Headline** / **Key changes & new developments** / **Placement** (tier/layer change or "unchanged" + why) / **Cross-vault propagation** / **Forward watch** / **Key insight**.
+
+Keep entries to Section 3.8 brevity discipline. Not in `index.md`; `refresh_log.md` updates do not count for accounting.
 
 ## 5. Operational guidance
 
