@@ -46,7 +46,7 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` v9.2 Sect
 | [NOK](wiki/companies/NOK.md)   | NOK    | 4     | 2         | —      | outside      | outside   | outside   | 2026-05-19   |
 | [AAON](wiki/companies/AAON.md) | AAON   | 4     | outside   | —      | 3            | outside   | outside   | 2026-05-26   |
 | [MKSI](wiki/companies/MKSI.md) | MKSI   | 4     | 3         | —      | outside      | 2         | 3         | 2026-05-21   |
-| [ARM](wiki/companies/ARM.md)   | ARM    | 1     | outside   | —      | outside      | outside   | outside   | 2026-05-23   |
+| [ARM](wiki/companies/ARM.md)   | ARM    | 1     | outside   | —      | outside      | outside   | outside   | 2026-05-29   |
 | [AMD](wiki/companies/AMD.md)   | AMD    | 1     | outside   | —      | outside      | outside   | outside   | 2026-05-23   |
 | [INTC](wiki/companies/INTC.md) | INTC   | 1, 2  | outside   | —      | outside      | outside   | outside   | 2026-05-25   |
 | [MU](wiki/companies/MU.md)     | MU     | 2     | outside   | 2      | outside      | outside   | outside   | 2026-05-24   |

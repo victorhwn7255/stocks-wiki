@@ -32,6 +32,25 @@ Running reference log of **refresh ingests** — re-ingests of an EXISTING vault
 
 ---
 
+## S106 — ARM (Arm Holdings plc) — 2026-05-29 — FY2026 20-F (LIGHT Tier-1-firming refresh)
+
+- **Sources:** FY2026 20-F (Tier 1 annual; period-end March 31, 2026) — single new source. No new earnings call: the May 6 2026 Q4 FY2026 call + the Q4 FY2026 6-K shareholder letter were ingested at S76.
+- **Prior baseline:** S76 (FY2025 20-F as annual placeholder + Q4 FY2026 6-K letter + May 6 2026 call). The page was already on FY2026 financials/strategy; only the 20-F-exclusive disclosures sat on year-old FY2025 figures.
+- **Headline:** Tier-1-firming — the FY2026 20-F the page anticipated at S76 arrived; upgrades the controlling-shareholder / customer-concentration / royalty-concentration disclosures FY2025→FY2026. No placement change, no new thesis development.
+- **Key changes & new developments:**
+  - Mobile-apps-processor royalty 46%→43% (data-center-royalty mix growth; >99% mobile share maintained).
+  - Arm China largest-customer 17%→16% (declining trend 24→21→17→16 FY2023-FY2026); customer concentration four-at-49% → three-at-42% (16% / 14% / 12%).
+  - SoftBank beneficial ownership 87.1% (May 2025) → 86.4% (May 21 2026) — modest dilution, still a clear majority.
+  - Aggregate related-party revenue (Arm China + SoftBank) rose to 30% of total FY2026 ($1,499M) from 21% FY2025 — driven by the SoftBank related-party licensing + design-services agreement.
+  - FY2026 audited totals match the Q4 FY2026 6-K letter exactly (no Tier 1/Tier 2 variance); FY2025 financial table completed (royalty $2,168M confirmed; FY2024 total $3,233M added).
+  - Qualcomm/Nuvia litigation still pending; single operating segment unchanged.
+- **Placement:** UNCHANGED — Layer 1 + ALL `*_tier outside`; Caveat #3(b) Layer 1-2 hybrid notation still deferred (AGI CPU production revenue first-window Q4 FY2027, after this annual's period-end).
+- **Cross-vault propagation:** NONE — refreshed items are ARM-page-internal; no chokepoint/theme cites ARM's concentration figures.
+- **Forward watch:** Caveat #3(b) hybrid-notation revert when AGI CPU production revenue is material (fiscal 2027+); SoftBank ownership trajectory; Arm China share trend; Qualcomm/Nuvia resolution; next earnings refresh (Q1 FY2027, ~late July/early Aug 2026).
+- **Key insight:** for a non-calendar-cadence filer, the comprehensive 20-F can lag the earnings 6-K/call by weeks — so a recently-created page (S76) can still carry year-old 20-F-only disclosures until the annual catches up. This refresh closes that gap; the concentration figures all trend the right way (mobile + Arm China declining as data-center royalty scales).
+
+---
+
 ## S105 — AXTI (AXT, Inc.) — 2026-05-29 — Q1 FY2026 (10-Q + Q1 FY2026 call)
 
 - **Sources:** Q1 FY2026 10-Q (Tier 1; period ended March 31, 2026) + Q1 FY2026 earnings call April 30, 2026 (Tier 2, full transcript).
