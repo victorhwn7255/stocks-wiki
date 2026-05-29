@@ -32,6 +32,27 @@ Running reference log of **refresh ingests** — re-ingests of an EXISTING vault
 
 ---
 
+## S109 — ENS (EnerSys) — 2026-05-29 — FY2026 (10-K + Q4 FY2026 call)
+
+- **Sources:** FY2026 10-K (Tier 1; fiscal year ended March 31, 2026) + Q4 FY2026 earnings call (Tier 2; May 21, 2026; **full 23-page Quartr transcript**).
+- **Prior baseline:** S45 (FY2025 10-K + Q3 FY2026 10-Q + Q3 FY2026 *GuruFocus summary*). Page advanced Q3 → FY2026 annual.
+- **Headline:** ENS's **first AI-datacenter-direct products** (lithium DC UPS battery + warehouse BESS) entered customer commissioning with hyperscaler validation underway — alongside the full transcript **resolving the S45 Section 2.2 source-unavailability constraint**.
+- **Key changes & new developments:**
+  - Record *adjusted* results despite a Motive Power / transportation recession: adj diluted EPS $10.56 (+4%); ex-45X record $6.41; ex-45X record adj op profit $382M / 10.2% margin. FY2026 net sales $3,751.4M (+3.7%); Energy Systems $1,651.3M (+7.8%); book-to-bill 1.1 (4-yr high).
+  - **GAAP net earnings $293.6M (−19.3% YoY)** on restructuring $51.0M (vs $14.4M) + lower **Section 45X $158.6M (vs $184.6M, −14%)**. CFO bridged GAAP→adjusted transparently → no Tier 1/Tier 2 framing gap fires.
+  - **Lithium DC UPS + warehouse BESS** in customer commissioning (finished product shipped; OEM UPS handoffs + hyperscaler validation in progress; **revenue not until FY2028**). First AI-datacenter-direct product motion.
+  - **TPPL-for-datacenter Tier-2-substantiated** — high-rate sub-5-min discharges; data-center lead-acid +high teens FY2026; data-center orders +36% YoY; "leading market position" in lead-acid where greenfield trends lithium.
+  - **Tijuana lead-acid closure announced March 25 2026 → Springfield MO** (~$20M incremental 45X from FY2028); distinct from Monterrey→Richmond KY (substantially completed; ~$19M FY2027 savings). **Greenville SC re-scoped to A&D/FEOC** (DOE grant final stages). **Rebel acquisition** ($12.7M; defense hybrid power / drone charging).
+  - **Section 4.3 reconciliation** — FY2026 sources partially vindicate S45 Falsifications 1/2 (Tijuana/Springfield premature-but-real, distinct events) + 4/6 (TPPL-datacenter Tier-2-substantiated). S45 falsification record preserved; A6 (g') count NOT retroactively edited (forward-only).
+  - **Section 2.2 RESOLVED** — full transcript unlocks A1 (hyperscaler-validation-referenced-not-named; diversified archetype holds) / CEO combativeness (O'Connell confident, non-combative — count unchanged 2) / framing-gap (none) / analyst-silence.
+- **Placement:** **HELD** — Layer 4 + energy_power_tier 4. Honest-verdict-trigger discipline: products are commissioning-stage (revenue FY2028), no separate DC revenue disclosure, no named hyperscaler, Energy Systems 43% of consolidated. **4→3 trigger pre-registered** = DC sub-segment revenue disclosed OR lithium DC UPS material/named-hyperscaler revenue OR DC majority of Energy Systems.
+- **Section 2.11:** ENS = canonical first month+ instance (already coded). FY2026 ≈ calendar-2025/early-2026; Q4 FY2026 ≈ calendar Q1 2026.
+- **Cross-vault propagation:** [[AI-demand-durability]] (datacenter-backup-power signal — a distinct buildout layer from compute/networking/generation; + ticker). No VRT edit (no new ENS↔VRT competitive data).
+- **Forward watch:** energy_power_tier 4→3 trigger; lithium DC UPS revenue ramp (FY2028 inflection) + named hyperscaler; Investor Day June 11 2026 readout; Greenville DOE award completion; A&D / munitions backlog → revenue translation; Motive Power recovery timing.
+- **Key insight:** ENS made its first move from *battery-cell-supplier-to-the-buildout* to *AI-datacenter-product-vendor* (lithium UPS + BESS shipped, hyperscaler-validating) — but it is deliberately pre-revenue (FY2028), so the right read is trajectory, not a re-tier. The refresh also shows a kickoff claim can be "false-at-T, substantiated-at-T+1": two S45 "falsifications" (Tijuana/Springfield) became real ~11 months later as a genuinely distinct restructuring.
+
+---
+
 ## S108 — CSCO (Cisco Systems) — 2026-05-29 — Q3 FY2026 (10-Q + Q3 FY2026 call)
 
 - **Sources:** Q3 FY2026 10-Q (Tier 1; period ended April 25, 2026) + Q3 FY2026 earnings call (Tier 2; May 13, 2026).

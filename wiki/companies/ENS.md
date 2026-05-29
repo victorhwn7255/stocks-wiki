@@ -6,7 +6,7 @@ photonics_tier: outside
 energy_power_tier: 4
 equipment_tier: outside
 materials_tier: outside
-last_updated: 2026-05-03
+last_updated: 2026-05-29
 ---
 
 # ENS — EnerSys
@@ -17,23 +17,29 @@ ENS occupies Layer 4 (differentiated components / specialized designers) in the 
 
 This page is the **first canonical Framework 7 Tier 4 placement methodology precedent.** F7 T4 substantiated at **medium-high confidence (~70%)** — 3-of-4 four-criterion test inverse application met; criterion 4 (named hyperscaler concentration) structurally absent due to ENS diversified-broad-customer-base archetype (no >10% customer per 10-K Item 1). Honest-verdict surface per Section 2.1.
 
+**FY2026 refresh (Session 109; FY2026 10-K + full Q4 FY2026 call).** The page advances Q3 FY2026 → FY2026 annual. FY2026 delivered record *adjusted* results (adjusted diluted EPS $10.56; ex-45X record $6.41) despite a Motive Power / transportation demand recession; GAAP net earnings fell to $293.6M (−19.3% YoY) on higher restructuring ($51.0M) + lower Section 45X ($158.6M vs $184.6M). The structurally significant development is ENS's **first AI-datacenter-direct products** — a lithium data-center UPS battery + a warehouse battery energy storage system (BESS), both entering customer commissioning with hyperscaler validation underway (meaningful revenue not expected until FY2028). Management substantiated the TPPL-for-datacenter framing at Tier 2 for the first time. Placements **held** (Layer 4 + energy_power_tier 4) under honest-verdict-trigger discipline (Section 2.1) — strengthening is trajectory + pre-revenue, not a re-tier; a 4→3 trigger is pre-registered. The full transcript also **resolves the S45 Section 2.2 source-unavailability constraint** (the S45 Tier 2 source was a GuruFocus summary).
+
 **Key thesis-relevant findings:**
 
 1. **F7 Tier 4 substantiation at medium-high confidence (~70%).** 3-of-4 inverse criterion test met: (1) datacenter customer disclosure as generic plural; (2) datacenter as named served segment in 10-K Item 1; (3) AI datacenter exposure structural per 10-Q Item 2 explicit *"the data center market is in the midst of a growth cycle driven by AI and increasing digitization"*. Criterion 4 absent: 10-K Item 1 *"no single customer accounts for more than 10% of our revenues"* — ENS joins diversified-broad-customer-base archetype alongside [[ETN]] / [[VRT]] / [[GEV]] / [[FLEX]].
 
-2. **Energy Systems segment AI datacenter operating leverage materializing at Q3 FY2026.** Energy Systems segment income $42.1M (Q3 FY2026) vs $25.3M (Q3 FY2025) = **+66% YoY**; segment operating margin 8.3% (Q3 FY2026) vs 4.9% (Q3 FY2025) = **+340 bps margin expansion** — primary signal of AI datacenter growth-driven operating leverage. 9-month Energy Systems revenue +8.2% YoY ($1,225.6M vs $1,132.3M) per 10-Q Item 2 *"continuing robust demand from data center and industrial customers and recovering demand with a stronger product mix in communications"*.
+2. **Energy Systems segment AI datacenter operating leverage sustained through FY2026.** Energy Systems FY2026 net sales $1,651.3M (43.1% of consolidated; +7.8% YoY) per FY2026 10-K. Q4 FY2026 Energy Systems segment revenue $426M (+7% YoY) with adjusted operating margin 10% (+130 bps), bolstered by record sales of flagship XM products (Q4 FY2026 call). Data-center demand color: data-center *orders* +36% YoY and lead-acid data-center revenue grew "high teens" FY2026 YoY (CFO Funk, Q4 FY2026 call); Q4 data-center revenue was flat YoY against a strong prior-year comp (project-nature choppiness). The S45 Q3 FY2026 segment-income +66% / +340 bps signal is preserved in the Financial snapshot.
 
 3. **Layer 4 maintained per Caveat #9 seventh canonical Layer 4-5 straddling test.** Energy Systems segment integrates *"power conversion, power distribution, energy storage, and enclosures"* (Layer 5 candidate framing) but revenue mix is component-supplier-dominant across consolidated business; Motive Power 38.4% (forklift batteries) + Specialty 17.1% (aerospace/defense battery components) reinforce component-supplier baseline. Layer 5 promotion NOT warranted absent integrated-systems revenue separately disclosed >30% of consolidated.
 
 4. **Multi-segment AI datacenter exposure honest-verdict.** 9-month FY2026 segment mix: Energy Systems 44.4% / Motive Power 38.4% / Specialty 17.1% / New Ventures <1%. AI datacenter thesis fit is **partial** — Energy Systems is the AI datacenter exposure vehicle (44% of consolidated; AI as growth driver); Motive Power + Specialty + New Ventures are structurally peripheral. Datacenter % of Energy Systems segment NOT separately disclosed at primary; cannot quantify datacenter % of consolidated.
 
-5. **Substantial kickoff hypothesis falsifications documented per Section 4.4.** Six material primary-source falsifications (Tijuana → Monterrey; Springfield MO → Richmond KY + Greenville SC; "TPPL scaled for data center" → Motive Power forklift transition rationale; DataSafe HX / EnVision Connect / 5-15 min autonomy / AI rack engineered features → not in regulatory filings; ENS-VRT supplier-customer → competitor relationship; TPPL primary AI datacenter positioning → primary applications Specialty AGM aerospace/defense + Motive Power maintenance-free). See Section 4.4 falsifications subsection.
+5. **NEW (FY2026): first AI-datacenter-direct products — lithium DC UPS battery + warehouse BESS.** Both advanced into customer commissioning in Q4 FY2026 (finished product shipped to customers, not engineering/soft launch); meaningful revenue not expected until FY2028 pending OEM UPS handoffs ("all the large primary providers") + hyperscaler validation processes (Q4 FY2026 call). First products engineered specifically for AI-datacenter UPS + warehouse energy storage, distinct from battery cells feeding the broad Energy Systems segment. See AI datacenter product roadmap section.
 
-6. **NEW findings not anticipated in kickoff.** Section 45X production tax credits $184.6M FY2025 (material consolidated earnings driver; FY2025 ETR 10.5%); July 22, 2025 RIF Plan ($21.2M / $80M annualized savings; "strategic restructuring under our new leadership" — confirms Shaffer → O'Connell transition); Greenville SC lithium-ion cell facility ($199M DOE award; 45X-dependent; subject to Trump admin regulatory shift); ~$70M annualized direct tariff exposure (datacenter framed as tariff-defensive growth driver per 10-Q Item 2).
+6. **NEW (FY2026): TPPL-for-datacenter framing substantiated at Tier 2.** CEO O'Connell: TPPL is "more suited to these high-rate, short-duration discharges... sub five minute rates, in some cases, sub one minute rates" that exceed traditional lead-acid; data-center lead-acid grew high teens FY2026 YoY where ENS holds a "leading market position" (Q4 FY2026 call). This partially reconciles two S45 kickoff falsifications (TPPL AI-datacenter high-rate positioning) — see Section 4.3 reconciliation subsection; product-name ("DataSafe HX") + "5-15 min autonomy" specifics remain unconfirmed at primary.
 
-7. **First vault canonical placement of non-calendar-fiscal-year filer.** ENS uses March 31 fiscal year-end (FY2025 = April 2024 → March 2025; Q3 FY2026 = period-end Dec 28, 2025). Cross-vault period-parity caveat: Q3 FY2026 ≈ vault calendar peers' Q3 2025 / FY2025 (analytically equivalent recency); FY2025 baseline 12 months stale relative to calendar peers' FY2025. Codification candidate: non-calendar-fiscal-year filer Section 4.1 sub-protocol.
+7. **S45 kickoff falsifications — Section 4.3 partial vindication.** Two of the six S45 falsifications (Falsification 1 Tijuana; Falsification 2 Springfield MO) are reconciled by a NEW, distinct restructuring: the **Tijuana, Mexico lead-acid facility closure announced March 25, 2026** (production shifting to Springfield, Missouri; ~$20M incremental 45X from FY2028). The kickoff claims were directionally correct but predated the announcement by ~11 months and were mis-matched at S45 to the *Monterrey → Richmond KY* closure. See Section 4.3 reconciliation subsection. Methodological observation (kickoff claim false-at-T, substantiated-at-T+1); A6 (g') count NOT retroactively edited per Section 3.8 forward-only discipline.
 
-8. **First vault canonical placement substantively under-covered in Tier 3 anchor reports.** Reports 39 (S39 raw/research/) energy bottleneck primer + power supply chain primer have ZERO ENS-specific framing. Vault canonical placement substantiated through primary-source pattern recognition. Codification candidate: Tier 3-coverage gap ≠ thesis weakness convention.
+8. **Section 45X declined FY2025 → FY2026 ($184.6M → $158.6M, −14%); footprint optimization framed as forward 45X uplift.** FY2026 45X $158.6M (FY2026 10-K). Management frames the Tijuana + Monterrey closures as 45X-maximizing (Tijuana ~$20M incremental from FY2028; Monterrey early realization in FY2026). GAAP net earnings −19.3% YoY ($293.6M) reflect the lower 45X + higher restructuring ($51.0M vs $14.4M); the GAAP/adjusted divergence is transparently bridged on the call. Greenville SC lithium cell factory re-scoped to aerospace & defense (FEOC-compliant); DOE grant in final stages.
+
+9. **First vault canonical placement of non-calendar-fiscal-year filer.** ENS uses March 31 fiscal year-end. Per Section 2.11 (ENS = canonical first month+ instance), FY2026 (ended March 31, 2026) ≈ vault calendar peers' calendar-2025/early-2026; **Q4 FY2026 ≈ calendar Q1 2026** (analytically equivalent recency to Dec-31 peers' Q1 2026).
+
+10. **First vault canonical placement substantively under-covered in Tier 3 anchor reports.** Reports 39 (S39 raw/research/) energy bottleneck primer + power supply chain primer have ZERO ENS-specific framing. Vault canonical placement substantiated through primary-source pattern recognition.
 
 ## Layer placement reasoning (Layer 4)
 
@@ -134,7 +140,43 @@ Per Section 2.1 honest-verdict discipline, AI datacenter thesis fit at multi-seg
 
 ## Financial snapshot
 
-Per `CLAUDE.md` v9 Section 4.1 Multi-source ingests convention, separate tables per period.
+Per `CLAUDE.md` v9 Section 4.1 Multi-source ingests convention, separate tables per period. **Section 2.11 period-parity:** FY2026 (ended March 31, 2026) ≈ vault calendar peers' calendar-2025/early-2026; **Q4 FY2026 ≈ calendar Q1 2026**.
+
+### FY2026 annual (10-K, fiscal year ended March 31, 2026)
+
+| Metric | FY2026 | FY2025 | YoY |
+|---|---|---|---|
+| Net Sales | $3,751.4M | $3,617.6M | +3.7% |
+| Energy Systems revenue | $1,651.3M (43.1%) | $1,531.1M (42.3%) | +7.8% |
+| Motive Power revenue | $1,431.0M (37.5%) | $1,484.1M (41.0%) | -3.6% |
+| Specialty revenue | $665.1M (19.4%) | $593.6M (16.4%) | +12.1% |
+| Other (New Ventures) | $4.0M | $8.8M (0.3%) | -52.6% |
+| Gross Profit | $1,097.6M (29.2%) | $1,092.4M (30.2%) | +0.5% |
+| Restructuring & other exit charges | $51.0M (1.4%) | $14.4M (0.4%) | +$36.6M |
+| Operating Earnings (GAAP) | $426.4M (11.4%) | $464.7M (12.8%) | **-8.2%** |
+| Net Earnings (GAAP) | **$293.6M (7.8%)** | $363.7M (10.0%) | **-19.3%** |
+| **Section 45X credits** | **$158.6M** | $184.6M | **-14.1%** |
+
+**Adjusted (non-GAAP, Q4 FY2026 call):** adjusted operating earnings $540M (incl. $159M IRC 45X benefit); **excluding 45X, record adjusted operating profit $382M** at highest-ever full-year adjusted operating margin 10.2%; **adjusted diluted EPS record $10.56 (+4%)**; excluding 45X, record adjusted diluted EPS $6.41 (+$0.82). Full-year free cash flow $468M (159% conversion; ex-45X 236%); total capital returned $409M.
+
+**GAAP/adjusted divergence (Section 2.1 honest framing):** GAAP net earnings fell −19.3% while adjusted metrics set records — the divergence is driven by higher restructuring ($51.0M vs $14.4M; Tijuana + Monterrey) + lower Section 45X ($158.6M vs $184.6M). CFO Funk bridged GAAP-to-adjusted transparently on the call (restructuring + 45X identified); no Tier 1/Tier 2 framing gap fires.
+
+### Q4 FY2026 quarterly (≈ calendar Q1 2026; Q4 FY2026 call, adjusted unless noted)
+
+| Metric | Q4 FY2026 | YoY (per call) |
+|---|---|---|
+| Net Sales | $988M | +1% |
+| Energy Systems revenue | $426M | +7% |
+| Motive Power revenue | $370M | -6% |
+| Specialty revenue | $192M | +8% |
+| Adjusted Gross Profit | $292M (29.5% margin) | -4% (-$12M) |
+| Adjusted Operating Earnings | $154M (15.6% margin) | +1% |
+| Adjusted Diluted EPS | **$3.19 (record)** | **+7%** |
+| Adjusted Diluted EPS (ex-45X) | $1.96 (record) | +5% |
+
+*Prior-year (Q4 FY2025) absolute figures not separately tabled — YoY percentages as stated on the Q4 FY2026 call.*
+
+Net sales drivers: price mix +4%, FX +3%, organic volume −6% (against a strong prior-year comp inflated by pre-tariff order pull-forward). Q4 free cash flow $131M (170% conversion). **Book-to-bill 1.1** (highest in ~4 years; all lines of business orders outpaced revenue). Net debt $684M (−$100M YoY); leverage 1.1x EBITDA; cash $440M. Q4 buyback: 410,000 shares for $69M (~$171/share); ~$876M remaining authorization.
 
 ### FY2025 annual (10-K, fiscal year ended March 31, 2025)
 
@@ -179,15 +221,15 @@ Per `CLAUDE.md` v9 Section 4.1 Multi-source ingests convention, separate tables 
 | Specialty revenue | $472.9M (17.1%) | $415.8M (15.7%) | +13.8% |
 | Gross Profit | $806.7M (29.2%) | $788.7M (29.8%) | -60bps |
 
-### Q4 FY2026 forward guidance (per Q3 FY2026 disclosure summary)
+### FY2027 forward guidance (per Q4 FY2026 call)
 
-- Net Sales: $960M-$1,000M
-- Adjusted Diluted EPS: $1.91-$2.01 (excluding 45X benefits)
-- Q3 FY2026 Adjusted Diluted EPS: $1.84 (+50% YoY; record for Q3 fiscal)
+- **Q1 FY2027** net sales $915M-$955M; adjusted diluted EPS $2.80-$2.90 (incl. $42M-$47M 45X benefit to cost of sales); excluding 45X, adjusted diluted EPS $1.61-$1.71.
+- **FY2027 full-year:** adjusted operating earnings growth (ex-45X) expected to outpace revenue growth, supported by OpEx discipline + price-mix strength + improving end markets. CapEx ~$70M (down from $80M FY2026; heavier TPPL-capacity investments complete). Tax rate (ex-45X, as-adjusted) 21.5%-23.5%.
+- **Investor Day June 11, 2026 (NYSE)** — forward catalyst for technology-roadmap + strategic-priority detail.
 
 ## Energy Systems segment + AI datacenter operating leverage
 
-Energy Systems is the **canonical AI datacenter exposure vehicle** at ENS. Q3 FY2026 segment income +66% YoY ($42.1M vs $25.3M) + operating margin +340bps (8.3% vs 4.9%) = **primary signal of AI datacenter growth-driven operating leverage materializing.**
+Energy Systems is the **canonical AI datacenter exposure vehicle** at ENS. **FY2026 update:** segment net sales $1,651.3M (+7.8% YoY; 43.1% of consolidated) per FY2026 10-K — "due to a 3% increase in organic volume, a 3% increase in pricing, and a 2% increase in foreign currency translation." Q4 FY2026 segment revenue $426M (+7%), adjusted operating margin 10% (+130 bps), bolstered by record sales of flagship XM products (Q4 FY2026 call). **Data-center demand color (Q4 FY2026 call):** data-center *orders* +36% YoY; lead-acid data-center revenue grew "high teens" FY2026 YoY; Q4 data-center revenue flat YoY against a strong prior-year comp (CFO Funk: "it's very much a project business... not always going to be linear quarter-to-quarter"). Q3 FY2026 segment income +66% YoY ($42.1M vs $25.3M) + operating margin +340bps (8.3% vs 4.9%) was the prior-baseline primary signal of AI datacenter growth-driven operating leverage.
 
 10-Q Item 2 MD&A canonical text:
 > *"This increase in sales for the quarter and nine months is primarily a result of continuing robust demand from data center and industrial customers and recovering demand with a stronger product mix in communications."*
@@ -201,13 +243,27 @@ This is the strongest AI-explicit framing surfaced at primary — datacenter exp
 
 **Cross-vault Energy Systems competitor list (10-K Item 1):** East Penn Manufacturing, Exide Technologies (Stryten), Fiamm, SAFT, Hoppecke, New Power, C&D Technologies, **Vertiv**, ABB, Amphenol, Eltek (Delta Group), Chinese producers. **[[VRT]] listed as Energy Systems competitor — NOT supplier.** Relationship type clarification: kickoff hypothesis "ENS battery cells (Layer 4) → VRT UPS system integration sequential dependency" is structurally falsified at primary.
 
+## AI datacenter product roadmap (lithium DC UPS + warehouse BESS) — NEW at FY2026
+
+The most thesis-relevant FY2026 development: ENS's **first AI-datacenter-direct products**, distinct from battery cells feeding the broad Energy Systems segment. CEO O'Connell (Q4 FY2026 call): "2 top priorities on our roadmap, our lithium data center solution and battery energy storage solutions for warehouse operators, both advanced into customer commissioning this quarter."
+
+**Commissioning ≠ revenue (Section 3.3 rhetorical-vs-factual discipline).** Analyst Noah Kaye (Oppenheimer) pressed the validation-vs-commissioning distinction. O'Connell clarified the product "didn't exist 1 year ago," that the team gets "no credit unless they're shipping a product to a customer," and "We've shipped a finished product to the customer... It's not an A sample or a B sample." But meaningful revenue is **not expected until FY2028** — gated by (a) OEM UPS handoffs across "all the large primary providers" and (b) "the large hyperscalers have their own validation process for the product." This is the closest ENS comes to a named-hyperscaler relationship: hyperscalers are referenced as validation counterparties but **not named** (A1 diversified-archetype framing preserved; no reciprocal-confirmation, no over-claim).
+
+**TPPL high-rate/short-duration datacenter positioning (Tier 2 substantiated).** Separate from the new lithium product, ENS's incumbent TPPL lead-acid is positioned for datacenter UPS: O'Connell described "knocking on the bottom edge of a lithium-like experience without any of the inherent risks of lithium," answering "high demand rates. Sub five minute rates, in some cases, sub one minute rates" beyond standard lead-calcium capability. "A majority of greenfield data centers are adopting lithium, [but] robust demand remains for lead-acid solutions where we have a leading market position, as evidenced by our high teens fiscal 2026 year-on-year growth." The new lithium DC battery is framed as **incremental, not cannibalistic** ("additional share of wallet in a fast-growing market" — Funk).
+
+**Lithium cell sourcing (make-vs-buy).** ENS makes nine lithium chemistries across its A&D complex and also buys cells; for commercial DC/BESS it will "continue to buy those cells and incorporate" — these "still have Asian supply chains, where they're originating in places like China" (O'Connell noted ~99% of the LFP constituent-material supply chain is "in or owned by China"). The Greenville SC plant is purpose-built for A&D (FEOC-compliant), not commercial DC cells — see Greenville section.
+
+**Honest-verdict placement implication (Section 2.1).** These products strengthen ENS's AI-datacenter directness but are commissioning-stage with no meaningful revenue until FY2028 and no named hyperscaler — they support holding energy_power_tier 4 with a pre-registered 4→3 trigger, not an upgrade on momentum.
+
 ## Motive Power + Specialty + New Ventures (peripheral segments)
 
-**Motive Power (38.4% of 9-mo FY2026; -2.8% YoY):** Power for electric forklifts, AGVs, material handling equipment, floor care, mining, rail, airport ground support. Q3 FY2026 -1.9% YoY driven by lower volumes in Americas + lingering EMEA automotive market weakness + ongoing macro/geopolitical uncertainties impacting customer buying behaviors. Tariff-policy-sensitive market. Not AI datacenter relevant.
+**Motive Power (FY2026 $1,431.0M; 37.5% of consolidated; -3.6% YoY):** Power for electric forklifts, AGVs, material handling equipment, floor care, mining, rail, airport ground support. FY2026 was a recessionary year for the segment, yet ENS set company records — O'Connell (a 20+-year ENS veteran) could not recall the company setting records "with motive power being in a recessionary position." Q4 FY2026 revenue $370M (-6%); adjusted operating margin 14.2% (-280 bps on lost volume leverage + freight/tariff). **Recovery signal:** Q4 orders +19% sequentially; book-to-bill back over 1; maintenance-free product 30.4% of mix (vs 29.3% Q4 FY2025); management "cautiously optimistic" on return to growth before FY2027 end, led by motive power (Q4 FY2026 call). Tariff-policy-sensitive market. Not AI datacenter relevant.
 
 **Motive Power competitive landscape (10-K Item 1):** East Penn, Exide (Stryten), Hoppecke, Eternity, Midac, Sunlight, TAB, Chinese manufacturers. Maintenance-free TPPL + lithium product sales mix improving (FY2025 +1.9% YoY).
 
-**Specialty (17.1% of 9-mo FY2026; +13.8% YoY):** Premium starting/lighting/ignition transportation; aerospace/defense (satellites, spacecraft, commercial aircraft, military aircraft, submarines, ships, tactical vehicles); medical devices; portable power for soldiers. **Bren-Tronics acquisition driver** (Specialty +13.8% 9-mo YoY largely Bren-Tronics + Aerospace & Defense strength). Defense-segment focused; AI datacenter peripheral.
+**Specialty (FY2026 $665.1M; 19.4% of consolidated; +12.1% YoY):** Premium starting/lighting/ignition transportation; aerospace/defense (satellites, spacecraft, commercial aircraft, military aircraft, submarines, ships, tactical vehicles); medical devices; portable power for soldiers. **Bren-Tronics + NEW Rebel acquisition drivers** plus A&D strength. Q4 FY2026 Specialty revenue $192M (+8%); adjusted operating margin 9.4% (+90 bps); A&D revenue up mid-20% YoY and sequentially; munitions + space book-to-bill 1.22 (Q4 FY2026 call). Defense-segment focused; AI datacenter peripheral.
+
+**Rebel acquisition (NEW, FY2026; $12.7M cash per FY2026 10-K).** Hybridized power systems for defense — the "Rebel Hybrid System" addresses forward-edge-of-battle rechargeable-drone charging (O'Connell, Q4 FY2026 call). Integrated into Specialty/A&D alongside Bren-Tronics; management cited EMEA + US synergies "going phenomenal." Small bolt-on (vs Bren-Tronics $206.4M FY2025); reinforces the defense-electrification thesis (drones / counter-drone / soldier power). A&D demand drivers: munitions backlog growth (lithium silicon cobalt disulfide high-energy cells), space batteries, and — notably — "equal demand in the European theater" as allied military spending steps up.
 
 **Specialty competitive landscape (10-K Item 1):** AGM technology — Clarios, East Penn, Stryten, Fiamm, Banner, Atlas. Aerospace & Defense — Eagle Picher, SAFT.
 
@@ -237,13 +293,21 @@ This is the strongest AI-explicit framing surfaced at primary — datacenter exp
 
 ## Manufacturing realignment + new lithium plant
 
-### Monterrey, Mexico → Richmond, Kentucky restructuring (April 2025)
+**Two distinct Mexico facility closures (FY2026 10-K).** ENS announced two separate Mexico closures — Monterrey (flooded motive power batteries → Richmond KY) and the NEW Tijuana (lead-acid → Springfield MO). At S45 only Monterrey existed in filings; the Tijuana/Springfield closure is the Section 4.3 reconciliation (see that subsection).
 
-**10-Q Note (Q3 FY2026):** Board approved April 1, 2025 plan to close Monterrey, Mexico facility manufacturing flooded motive power batteries. Production moved to existing Richmond, Kentucky facility. Pre-tax charge ~$13.7M (cash $12.2M severance/environmental/decommissioning + $1.5M non-cash fixed asset/inventory). FY2026 mostly recognized.
+### Monterrey, Mexico → Richmond, Kentucky restructuring (announced April 2025)
+
+**10-Q Note (Q3 FY2026) + FY2026 10-K:** Board approved April 1, 2025 plan to close Monterrey, Mexico facility manufacturing flooded motive power batteries. Production moved to existing Richmond, Kentucky facility. Pre-tax charge ~$13.7M (cash $12.2M severance/environmental/decommissioning + $1.5M non-cash fixed asset/inventory). **FY2026 update:** closure "substantially completed"; expected to yield ~$19M savings in FY2027, with early incremental 45X realization already in FY2026 (Q4 FY2026 call).
 
 **Strategic rationale (per 10-Q):** *"Future demand for traditional motive power flooded cells will decrease as customers transition to maintenance free product solutions in lithium and Thin Plate Pure Lead (TPPL)."*
 
 **Honest-verdict framing (Section 2.1):** Restructuring is **Motive Power forklift transition** (flooded → maintenance-free TPPL/lithium), NOT data center-specific. Cross-segment scope; not AI datacenter capacity expansion.
+
+### Tijuana, Mexico → Springfield, Missouri restructuring (NEW; announced March 25, 2026)
+
+**FY2026 10-K + Q4 FY2026 call:** On March 25, 2026 ENS announced a plan to close its Tijuana, Mexico facility, which "focused on manufacturing lead acid batteries." Production shifts to the Springfield, Missouri plant. Rationale (10-K): "optimize its cost structure, maximize near-term advanced manufacturing production tax benefits, and mitigate future risks associated with potential tariffs while reinforcing EnerSys' commitment to strengthening domestic industrial capacity and supply chain resilience." Estimated substantially complete by December 2027. Expected to generate **~$20M of incremental 45X benefits beginning FY2028** (Q4 FY2026 call).
+
+**Section 4.3 significance:** this is a distinct, newly-announced event (lead-acid, Tijuana) — NOT the Monterrey closure (flooded motive power). It reconciles two S45 kickoff "falsifications" (Tijuana; Springfield MO) as premature-but-real — see Section 4.3 reconciliation subsection.
 
 ### Greenville, South Carolina lithium-ion cell production facility ($199M DOE award)
 
@@ -251,7 +315,9 @@ This is the strongest AI-explicit framing surfaced at primary — datacenter exp
 
 **Q3 FY2026 disclosure summary:** *"The lithium cell factory project has experienced slower progress than anticipated, delaying finalization with the Department of Energy."*
 
-**Honest-verdict framing:** Project structurally sensitive to (a) DOE funding finalization; (b) Section 45X production tax credit policy continuity; (c) executive order regulatory environment. Not yet operational; immaterial to FY2026 revenue. Future ingest verification candidate post-DOE finalization.
+**FY2026 update — RE-SCOPED to aerospace & defense (Q4 FY2026 call).** ENS "re-scoped the strategy for our lithium cell factory in Greenville, South Carolina, with an increased focus on applications for customers that value secure, domestic, FEOC compliant supply chains, particularly within aerospace and defense markets" (O'Connell). The revised plan "leverages more established and commercially proven cell technology, which we believe significantly de-risks the program, reduces complexity, enables a faster path to production." DOE discussions "now in the final stages of the grant process"; details withheld until the award completes; "more focused manufacturing footprint" expected. The plant is purpose-built for A&D (drones / counter-drone / soldier power) — **not** commercial datacenter/BESS cells (those continue make-vs-buy from Asian/China-origin supply chains per the AI datacenter product roadmap section). FY2026 10-K Risk Factors retain 45X-dependency language (SC + Greenville County incentive packages + Section 45X federal funding).
+
+**Honest-verdict framing:** Project structurally sensitive to (a) DOE grant finalization; (b) Section 45X policy continuity; (c) executive-order regulatory environment. Not yet operational; immaterial to FY2026 revenue. The A&D re-scope narrows scope but aligns with a willing-to-pay-for-domestic-supply customer (defense), de-risking the demand side.
 
 ## July 22, 2025 Reduction in Force Plan + new leadership transition
 
@@ -277,12 +343,12 @@ Per Inflation Reduction Act Section 45X, ENS qualifies for **advanced manufactur
 - Battery modules: $10 × kWh capacity
 - Active electrode materials: 10% of production costs
 
-**Recognized credits (10-K Item 7):**
-- FY2025: **$184.6M** (recognized as reduction to Cost of sales)
+**Recognized credits (10-K):**
+- FY2026: **$158.6M** (reduction to Cost of sales)
+- FY2025: $184.6M
 - FY2024: $136.4M
-- YoY: +35.3%
 
-**Material earnings driver:** FY2025 operating earnings $464.7M; 45X $184.6M = 39.7% of consolidated operating earnings. FY2025 effective tax rate 10.5% (vs FY2024 7.9%). Section 45X structurally material to consolidated earnings.
+**FY2026 — 45X declined −14% YoY ($184.6M → $158.6M), but framed as forward uplift.** The decline contributed to GAAP net earnings −19.3% (alongside higher restructuring). Management frames the two Mexico-closure footprint moves as 45X-maximizing: **Tijuana → Springfield MO ~$20M incremental 45X from FY2028**; Monterrey early realization already in FY2026; motive-power BESS will "spur some incremental 45X as well" (Q4 FY2026 call). FY2026 45X $158.6M = 37.2% of FY2026 adjusted operating earnings ($540M) / 37.2% of GAAP operating earnings ($426.4M). Section 45X remains structurally material to consolidated earnings.
 
 **Honest-verdict policy continuity risk (Section 2.1):** ENS earnings sensitivity to 45X policy continuity is material. Greenville SC lithium plant project explicitly subject to Trump admin "Unleashing American Energy Executive Order" regulatory shift. Future ingest tracking trigger: 45X policy continuation under current administration; IRS guidance updates; Section 45X benefit per-period trajectory.
 
@@ -353,9 +419,13 @@ ENS S45 is the **first vault canonical placement of non-calendar-fiscal-year US-
 
 | Source | Period coverage | Vault calendar peer equivalent |
 |---|---|---|
+| FY2026 10-K (period-end Mar 31, 2026) | Apr 2025 → Mar 2026 | ~vault peers' calendar-2025 / early-2026 (most-recent annual) |
+| Q4 FY2026 (period-end ~Mar 31, 2026) | Q4 fiscal: ~Dec 28, 2025 → Mar 31, 2026 | **~vault peers' calendar Q1 2026** (analytically equivalent recency) |
 | FY2025 10-K (period-end Mar 31, 2025) | Apr 2024 → Mar 2025 | ~vault peers' FY2024 Q3-FY2025 Q1 (12 months OLDER than calendar peers' FY2025) |
 | Q3 FY2026 10-Q (period-end Dec 28, 2025) | Q3 fiscal: Sep 29 → Dec 28, 2025 | ~vault peers' Q4 2025 / FY2025 (analytically equivalent recency) |
 | Q3 FY2026 earnings disclosure (Feb 6, 2026) | Recent commentary | ~vault peers' February 2026 Q4 2025 release window |
+
+**Now codified as Section 2.11 (post-S61).** The S45 "codification candidate" is codified — ENS is the **canonical first month+ Section 2.11 instance** (7-instance month+ precedent per A.11: ENS + FCEL + VIAV + FN + FLNC + MOD + ARM). FY2026 = calendar-2025/early-2026; Q4 FY2026 = calendar Q1 2026.
 
 **Cross-vault analytical product framing rule:** ENS Q3 FY2026 ≈ vault calendar peers' Q3 2025 / FY2025 (recent); ENS FY2025 baseline = 12 months stale relative to vault calendar peers' FY2025. Multi-source ingest separate-period tables per Section 4.1 already account for this.
 
@@ -373,9 +443,11 @@ ENS S45 is the **first vault canonical placement substantively under-covered in 
 
 **Vault discipline note:** Vault canonical placement substantiated through **primary-source pattern recognition** — Q3 FY2026 + Q1 FY2026 + Q4 FY2025 8-K commentary trajectory + 10-K Item 1 datacenter named served segment + 10-Q Item 2 explicit "AI growth cycle" framing. Codification candidate per Phase 4: **Tier 3-coverage gap ≠ thesis weakness convention** — vault discipline accommodates pattern recognition outside Tier 3 anchor scope.
 
-## Section 2.2 source unavailability observation (Tier 2 substitution)
+## Section 2.2 source unavailability observation (Tier 2 substitution) — RESOLVED at FY2026
 
-Per `CLAUDE.md` v9 Section 2.2 source-unavailability discipline:
+**FY2026 update — constraint resolved.** The S45 Tier 2 source was a GuruFocus summary article (below). The FY2026 refresh adds a **full 23-page Q4 FY2026 transcript** (May 21, 2026; Quartr), unlocking the four assessments constrained at S45: **A1 three-mode framing** (hyperscalers referenced as validation counterparties but not named → diversified-archetype preserved; no reciprocal-confirmation/over-claim); **CEO combativeness** (O'Connell first-full-year tone confident, analysts complimentary — count unchanged at 2); **Tier 1/Tier 2 framing gap** (GAAP −19.3% vs record-adjusted is transparently bridged on the call — no gap fires); **analyst-silence** (no photonics / named-hyperscaler probing; analysts focused on data-center growth rate, motive-power recovery, lithium sourcing, A&D). The S45 constraint observation is preserved below as the historical record.
+
+Per `CLAUDE.md` v9 Section 2.2 source-unavailability discipline (S45 record):
 
 **Q3 FY2026 earnings disclosure source:** `raw/transcripts/ENS-earnings-2026-02-06.pdf` is a **GuruFocus summary article** (4 pages; bullet-point financial highlights + positive/negative point summaries), **NOT a full earnings call transcript** with CEO commentary, Q&A, analyst exchanges, or detailed strategic narrative.
 
@@ -397,7 +469,21 @@ Per `CLAUDE.md` v9 Section 2.2 source-unavailability discipline:
 
 **Future ingest cycle verification candidate:** Full transcript availability from Bamsec / Seeking Alpha / Motley Fool at future S46+ ENS refresh ingest cycle would unlock A1 / CEO combativeness / framing gap / analyst silence assessments. Tier 1 primary-source weight (10-K + 10-Q) is sufficient to substantiate canonical placement at S45.
 
-## Section 4.4 Kickoff hypothesis falsifications (six material instances)
+## Section 4.3 reconciliation — FY2026 sources partially vindicate two S45 falsifications
+
+Per `CLAUDE.md` Section 4.3 (sources contradicting existing page claims — reconcile, don't silently overwrite), the FY2026 10-K + Q4 FY2026 call partially reconcile two of the six S45 kickoff "falsifications." **The S45 falsification record is preserved below; this subsection adds the reconciliation.**
+
+| S45 claim | S45 verdict | FY2026 evidence | Reconciliation |
+|---|---|---|---|
+| **Falsification 1 — Tijuana closure** | "Material — wrong city, wrong segment" (only Monterrey existed in S45 filings) | FY2026 10-K: Tijuana, Mexico **lead-acid** facility closure announced **March 25, 2026** | **Premature-but-real.** The kickoff's Tijuana reference was directionally correct (even the lead-acid descriptor matches) but predated the actual announcement by ~11 months and was mis-matched at S45 to the Monterrey (flooded motive power) closure. Two distinct closures now documented. |
+| **Falsification 2 — Springfield MO destination** | "Material — wrong destination state" (Monterrey went to Richmond KY) | Q4 FY2026 call: Tijuana production shifts to **Springfield, Missouri** | **Premature-but-real.** Springfield MO is the real destination — for the *Tijuana* closure, not Monterrey. |
+| **Falsifications 4 & 6 — TPPL AI-datacenter high-rate positioning** | "Possibly product-marketing detail / over-attribution" (not in S45 filings) | Q4 FY2026 call: TPPL "more suited to high-rate, short-duration discharges... sub five minute rates, in some cases, sub one minute rates"; data-center lead-acid +high teens FY2026 | **Partially vindicated at Tier 2.** The TPPL-for-datacenter high-rate framing is now management-substantiated. Product-name ("DataSafe HX") + "5-15 minute autonomy" specifics remain unconfirmed at primary. |
+
+**Methodological observation (codification candidate).** This is a "false-at-T, substantiated-at-T+1" pattern — a kickoff claim assessed as falsified at one ingest can be substantiated at a later ingest when the event actually occurs / management addresses it. Per Section 3.8 forward-only discipline, the **A6 (g') count is NOT retroactively edited** (the S45 6-falsification accounting stands as the historical record); the reconciliation is documented prospectively here. Flag for a future codification session.
+
+## Section 4.4 Kickoff hypothesis falsifications (six material instances) — S45 historical record
+
+*Preserved as the S45 record. See the Section 4.3 reconciliation subsection above for FY2026 partial vindication of Falsifications 1, 2, 4, and 6.*
 
 Per `CLAUDE.md` v9 Section 4.4 Kickoff hypothesis falsification protocol, document explicitly. S45 is structurally significant kickoff hypothesis falsification scope — **six material primary-source falsifications** documented:
 
@@ -441,20 +527,40 @@ Per `CLAUDE.md` v9 Section 4.4 Kickoff hypothesis falsification protocol, docume
 
 ## Open questions
 
-1. **Datacenter % of Energy Systems segment.** Sub-segment revenue breakdown not disclosed at primary; cannot quantify datacenter % of consolidated. Future ingest tracking trigger.
-2. **Hyperscaler customer naming.** Industry-standard customer non-disclosure pattern; "data center customers" generic plural framing throughout 10-K + 10-Q. Future ingest verification of named hyperscaler exposure trajectory.
-3. **TPPL AI datacenter product line at primary-source level.** DataSafe HX530T/HX600T + EnVision Connect specifications + 5-15 minute autonomy + AI rack engineered features not surfaced in regulatory filings. Future ingest may verify product-marketing claims via investor presentations / Q&A transcripts.
-4. **Section 45X policy continuity.** ENS earnings sensitivity to 45X production tax credit policy under current Trump administration "Unleashing American Energy" executive order regulatory shift. FY2026 / FY2027 45X benefit trajectory.
-5. **Greenville SC lithium plant DOE finalization timing.** $199M DOE award; project "slower progress than anticipated"; finalization delayed. Capex + capacity timeline + commercial impact post-finalization.
-6. **CEO transition commentary.** Shaffer → O'Connell transition (May-Jul 2025) + RIF Plan strategic rationale + new leadership product/customer/strategic priorities. Source unavailability constraint at S45 (summary article only); future full transcript ingest verification candidate.
+1. **Datacenter % of Energy Systems segment.** Still not disclosed at primary as a sub-segment revenue line — but FY2026 added directional color: data-center *orders* +36% YoY; lead-acid data-center revenue +high teens FY2026 (Q4 FY2026 call). Cannot yet quantify datacenter % of consolidated. Tracking trigger for the 4→3 upgrade (see below).
+2. **Hyperscaler customer naming.** Industry-standard customer non-disclosure pattern; "data center customers" generic plural framing throughout. FY2026 added a hyperscaler *validation*-relationship reference for the new lithium DC UPS battery ("the large hyperscalers have their own validation process") but still **no named hyperscaler**. Future trajectory: does commissioning → revenue surface a named hyperscaler?
+3. **TPPL AI datacenter product line at primary-source level.** TPPL-for-datacenter high-rate framing **now Tier-2-substantiated** (Q4 FY2026 call; see Section 4.3 reconciliation). Remaining open: product-name ("DataSafe HX530T/HX600T") + "EnVision Connect" + "5-15 minute autonomy" specifics still not surfaced at primary.
+4. **Section 45X policy continuity.** ENS earnings sensitivity to 45X policy under current administration regulatory environment. FY2026 45X $158.6M (−14% YoY); forward uplift framed (Tijuana ~$20M from FY2028). FY2027 45X benefit trajectory.
+5. **Greenville SC lithium plant — re-scoped to A&D; DOE finalization timing.** FY2026 update: re-scoped to FEOC-compliant aerospace & defense applications with de-risked proven cell technology; DOE grant "in the final stages." Remaining open: award completion + facility footprint detail (withheld until award completes) + commercial timeline.
+6. **CEO transition commentary — RESOLVED.** O'Connell first-full-year-as-CEO commentary now available via the full Q4 FY2026 transcript (S45 Section 2.2 constraint resolved). Strategic-framework priorities articulated; Investor Day June 11 2026 will add roadmap detail. Tone confident/non-combative (CEO combativeness count unchanged at 2).
 7. **Bren-Tronics defense scope trajectory.** Specialty segment +13.8% 9-mo YoY largely Bren-Tronics + Aerospace & Defense. Defense budget continuation; Department of War spending priorities.
 8. **Tariff exposure mitigation.** $70M annualized direct exposure; *"international nature of our organizational structure will allow us to mitigate some of the financial impact"* — quantitative mitigation efficacy TBD.
 9. **Motive Power EMEA recovery timing.** Class 8 truck + EMEA automotive market weakness expected through mid-FY2027 per Q3 FY2026 disclosure. Recovery timing critical to consolidated revenue trajectory.
 10. **New Ventures EV charging scale.** <0.5% of consolidated; +41% 9-mo YoY (small base). Future tier-revisit candidate if scales materially.
 11. **Cross-vault VRT competitor relationship at AI datacenter scope.** Primary-source competitive overlap in Energy Systems / UPS scope; future VRT refresh ingest verification of bilateral competitive framing.
 12. **Caveat #9 future tier-revisit.** Layer 5 upgrade triggers pre-registered (integrated-systems sub-segment >30% consolidated; "power-as-a-service" framing; named end-customer turnkey deployments).
+13. **Lithium DC UPS + warehouse BESS revenue ramp (NEW).** Both in customer commissioning; meaningful revenue not until FY2028 (OEM UPS handoffs + hyperscaler validation). Does the FY2028 inflection materialize on schedule, and at what scale / margin?
+14. **Investor Day June 11, 2026 (NYSE) readout (NEW).** Technology roadmap + strategic priorities + how the EnerSys Strategic Framework reframes the growth-vs-margin-expansion mix (management: earnings driver expected to shift from margin expansion toward top-line growth as new products gain traction).
+15. **GAAP/adjusted divergence durability (NEW).** FY2026 GAAP net earnings −19.3% vs record adjusted on lower 45X + restructuring. As restructuring rolls off and footprint-optimization 45X uplift arrives (FY2028), does GAAP re-converge toward adjusted?
+
+### Pre-registered energy_power_tier 4→3 upgrade trigger (NEW)
+
+Per honest-verdict-trigger discipline (Section 2.1), placement held at Tier 4. Upgrade to Tier 3 warranted if **any** of:
+1. Data-center sub-segment revenue separately disclosed at primary (resolving Open Q#1), OR
+2. New lithium DC UPS battery reaches material revenue (revenue ramp from FY2028) — especially with a **named hyperscaler** (resolving Open Q#2), OR
+3. Data-center becomes a disclosed majority of Energy Systems segment revenue.
+
+FY2026 evidence: NONE met (data-center orders +36% + high-teens lead-acid growth are strengthening signals, but commissioning-stage products + no separate disclosure + no named hyperscaler). Tier 4 maintained.
 
 ## Source audit notes
+
+### ENS 10-K FY2026 (Tier 1, fiscal year ended March 31, 2026)
+
+Annual filing (filed May 20, 2026). Confirms four operating segments unchanged (Energy Systems / Motive Power / Specialty / New Ventures); "no >10% customer" + "over 10,000 customers" diversified-archetype language unchanged. Net sales $3,751.4M (+3.7%); GAAP operating earnings $426.4M (−8.2%); net earnings $293.6M (−19.3%) on restructuring $51.0M (vs $14.4M) + lower 45X $158.6M (vs $184.6M). NEW: Tijuana lead-acid closure announced March 25, 2026 (→ Springfield MO; substantially complete by Dec 2027). Rebel acquisition $12.7M. Greenville retains 45X-dependency risk-factor language. Note: the call's "EnerSys segment $426M" is a Quartr mis-transcription of "Energy Systems" — 10-K is authoritative (Section 2.2); no segment rename.
+
+### ENS Q4 FY2026 earnings call (Tier 2, May 21, 2026 — full transcript; Section 2.2 constraint resolved)
+
+Full 23-page Quartr transcript (O'Connell CEO + Funk CFO + 4 analysts: Kaye/Oppenheimer, Lewis/BTIG, Drab/William Blair, Moore/Roth) — resolves the S45 GuruFocus-summary limitation. Record adjusted results (adj EPS $10.56; ex-45X record $6.41) despite Motive Power recession; book-to-bill 1.1 (4-year high). NEW lithium DC UPS + warehouse BESS in customer commissioning (revenue FY2028; hyperscaler validation underway, not named). TPPL-for-datacenter high-rate framing substantiated (Section 4.3). Greenville re-scoped to A&D/FEOC. **CEO tone confident/non-combative** (count unchanged at 2); **no Tier 1/Tier 2 framing gap** (GAAP/adjusted divergence transparently bridged); A1 hyperscaler-validation-referenced-not-named (diversified archetype preserved); analyst-silence on photonics/named customers.
 
 ### ENS 10-K FY2025 (Tier 1, fiscal year ended March 31, 2025)
 
@@ -470,4 +576,5 @@ Quarterly filing. Item 2 MD&A: AI datacenter as growth cycle driver (strongest f
 
 ## Change log
 
+- **2026-05-29 (Session 109):** FY2026 refresh ingest (FY2026 10-K + full Q4 FY2026 call). Advanced Q3 → FY2026 annual. Record adjusted results (adj EPS $10.56; ex-45X record $6.41) despite Motive Power recession; GAAP net earnings $293.6M (−19.3%) on restructuring $51.0M + lower 45X $158.6M. NEW: first AI-datacenter-direct products (lithium DC UPS + warehouse BESS) in customer commissioning (revenue FY2028; hyperscaler validation underway, unnamed); TPPL-for-datacenter framing Tier-2-substantiated; Tijuana lead-acid closure (announced March 25 2026 → Springfield MO; ~$20M incremental 45X from FY2028); Greenville re-scoped to A&D/FEOC; Rebel acquisition ($12.7M defense hybrid power). **Section 4.3 reconciliation** — FY2026 sources partially vindicate S45 Falsifications 1/2/4/6 (premature-but-real); S45 record preserved; A6 (g') count NOT retroactively edited (forward-only). **Section 2.2 constraint RESOLVED** (full transcript unlocks A1 / CEO combativeness [count unchanged 2] / framing-gap [none fires] / analyst-silence). **Placements HELD** (Layer 4 + energy_power_tier 4); 4→3 trigger pre-registered. Section 2.11 period-parity updated (Q4 FY2026 = calendar Q1 2026). Cross-vault: [[AI-demand-durability]] datacenter-backup-power signal + ticker. Section 4.6 ROI streak +1 (→58); A6 unchanged (20).
 - **2026-05-03 (Session 45):** Created from ENS 10-K FY2025 (Tier 1, Mar 31, 2025), ENS 10-Q Q3 FY2026 (Tier 1, Dec 28, 2025), ENS Q3 FY2026 earnings disclosure (Tier 2, Feb 6, 2026 GuruFocus summary article — Section 2.2 source unavailability). **First canonical Framework 7 Tier 4 ingest** under `frameworks.md` v10.1 + `_thesis.md` AI datacenter scope; closes last unpopulated F7 tier; F7 tier coverage complete post-S45. Multi-domain frontmatter applied per `CLAUDE.md` v9 Section 3.2 (`layer: 4` + `photonics_tier: outside` + `energy_power_tier: 4` + `equipment_tier: outside` + `materials_tier: outside`). **F7 T4 substantiated at medium-high confidence (~70%)** — 3-of-4 four-criterion test inverse application met; criterion 4 (named hyperscaler concentration) structurally absent due to ENS diversified-broad-customer-base archetype (no >10% customer per 10-K Item 1). **Caveat #9 seventh canonical Layer 4-5 straddling test outcome: Layer 4 maintained** per revenue-mix-required upgrade discipline; future tier-revisit triggers pre-registered. **First vault canonical placement of non-calendar-fiscal-year US-domiciled filer** (March 31 fiscal year-end); cross-vault period-parity caveat applied; codification candidate (non-calendar-fiscal-year filer Section 4.1 sub-protocol). **First vault canonical placement substantively under-covered in Tier 3 anchor reports** (Reports 39 zero ENS-specific framing); pattern-recognition-based canonical placement; codification candidate (Tier 3-coverage gap ≠ thesis weakness convention). **Energy Systems segment AI datacenter operating leverage materializing at Q3 FY2026** — segment income +66% YoY + operating margin +340bps; primary signal of AI datacenter growth-driven operating leverage. **Section 45X production tax credits $184.6M FY2025** material consolidated earnings driver (39.7% of operating earnings; FY2025 ETR 10.5%); honest-verdict policy continuity risk surfaced. **Six material kickoff hypothesis falsifications documented per Section 4.4** (Tijuana→Monterrey; Springfield MO→Richmond KY+Greenville SC; TPPL data center→Motive Power forklift transition; DataSafe HX/EnVision/AI rack features not in filings; ENS→VRT supplier→competitor; TPPL AI primary→Specialty AGM+Motive Power primary). **A6 (g)/(g)' subtype count 8 → 9** with sub-categorization candidate (g existing Tier 3 source figure variance + g' NEW kickoff drafting factual variance). **Customer concentration honest-verdict cross-vault Framework 11.1 contribution:** ENS joins diversified-broad-customer-base archetype alongside [[ETN]] / [[VRT]] / [[GEV]] / [[FLEX]]; archetype count 5; vault entries 6. **Source unavailability observation per Section 2.2** — Q3 FY2026 earnings PDF is GuruFocus summary article, not full transcript; A1 / CEO combativeness / framing gap / analyst silence assessments constrained; convention counts unchanged (Tier 1/Tier 2 framing gap 7; CEO combativeness 2; Cross-venue gap 2 obs). **NEW findings not anticipated in kickoff:** July 22, 2025 RIF Plan ($21.2M / $80M annualized savings; "new leadership" — confirms Shaffer→O'Connell transition); Greenville SC $199M DOE lithium plant (45X-dependent; subject to executive order regulatory shift); ~$70M tariff exposure (datacenter as tariff-defensive growth driver); Monterrey→Richmond restructuring (Motive Power scope, not data center). Cross-references propagated to [[VRT]] (ENS as Energy Systems segment competitor — relationship type clarification per Section 4.4 falsification 5). Forward-wikilink discipline preserved: 29-session vault wikilink-clean streak post-Session 45 (extended from 28 post-S44; zero forward [[ENS]] wikilinks pre-existing — clean creation). **Sets up codification session at S46+** per Vic-confirmed sequence — substantial backlog ~38-40 candidates accumulated through Sessions 32-45 (S45 adds: F7 T4 first canonical methodology; Tier 3-coverage gap ≠ thesis weakness; non-calendar-fiscal-year filer Section 4.1 sub-protocol; multi-segment company placement methodology; specialty technology platform proprietary moat methodology; A6 g/g' sub-categorization; Caveat #9 seventh canonical reinforcement).
