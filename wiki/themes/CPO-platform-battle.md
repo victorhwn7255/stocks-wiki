@@ -1,7 +1,7 @@
 ---
 type: theme
 tickers: [NVDA, TSM, AVGO, MRVL, ALAB, CSCO, LITE, COHR, AEHR, ONTO, AAOI, COHU, AXTI, VECO, CRDO, ANET]
-last_updated: 2026-05-28
+last_updated: 2026-05-29
 ---
 
 # CPO Platform Battle
@@ -289,6 +289,10 @@ Structural framing at theme scope distinct from [[cpo-integration]] chokepoint b
 
 Per LC Pass 2 2026-05-26 precedent (`liquid-cooling-for-AIDC-invest-report.md`) + same-day CPO refresh dual-report 2026-05-27 (`CPO-for-AIDC-Infrastructure.md` + `CPO-in-AIDC.md`) = **3-instance precedent of Tier 3 investment-research-style sources requiring Section 5.2 enforcement.** Both reports carry conviction rankings + portfolio Add/Trim thresholds + pair-trade recommendations + Long/Hold/Neutral/Avoid labels. **All prescriptive content EXCLUDED from vault integration per CLAUDE.md Section 5.2 + Section 2.1 disciplines.** Methodology codification candidate at Tranche 2C-iii: formalize Section 5.2 enforcement discipline for investment-research-style Tier 3 sources at Section 4.6 sub-protocol scope.
 
+## MRVL Q1 FY2027 update (scale-up CPO contestant)
+
+MRVL's Q1 FY2027 call advances its scale-up CPO position: scale-up optics revenue is now guided to "more than double" the prior ~$150M Celestial-only outlook for next fiscal year (FY2028), with a 3rd-generation **6.4T silicon-photonics light engine** engaged with multiple Tier 1 customers for NPO/CPO and the Celestial Photonic Fabric solution "selected by 1 hyperscaler" for next-gen XPU scale-up (MRVL Q1 FY2027 call); Celestial's PPA finalized at $3.5B (consolidated). The new **Polariton** acquisition adds plasmonic modulators (>1 THz bandwidth, characterized as ~10× silicon photonics / TFLN) extending the roadmap to 3.2T (call-only). NVIDIA took a **$2.0B convertible-preferred stake** in Marvell and expanded the optics / NVLink Fusion partnership — a contestant-and-partner duality (see [[NVDA-platform-integration]] Mode 4). The Murphy scale-out / scale-up bifurcation extends to a **scale-across** third axis. This updates the existing scale-up contestant evidence; no tier/contestant-count change.
+
 ## Signals to track
 
 **Design wins and partner announcements:**
@@ -324,6 +328,7 @@ Per LC Pass 2 2026-05-26 precedent (`liquid-cooling-for-AIDC-invest-report.md`) 
 
 ## Change log
 
+- **2026-05-29 (MRVL Q1 FY2027 refresh propagation):** Added "MRVL Q1 FY2027 update (scale-up CPO contestant)" subsection — scale-up optics FY2028 to "more than double" the prior ~$150M outlook; 6.4T light engine + "selected by 1 hyperscaler"; Celestial PPA $3.5B; Polariton plasmonics (3.2T); NVIDIA $2.0B convertible-preferred + NVLink Fusion (contestant-and-partner duality, [[NVDA-platform-integration]] Mode 4); bifurcation → scale-across trifurcation. MRVL already a contestant; no tier/contestant-count or tickers change. last_updated 2026-05-28 → 2026-05-29.
 - **2026-05-28 (S101 cross-reference update — SOI/Soitec canonical creation):** Extended "Substrate-tier CPO as demand amplifier" to the SOI/silicon-photonics leg — [[SOI]] (Soitec) as the Layer 6 SOI-substrate demand-amplifier alongside [[AXTI]]'s InP (CPO inserts interconnect at substrate level → more Photonics-SOI per unit; real-revenue >$100M FY26, supply-constrained, near-monopoly Smart Cut). Updated the Layer 6 table row (AXTI, SOI) and added SOI to Cross-references. **SOI NOT added to tickers** — substrate-amplifier addition, not a tiered-silence data point (consistent with the SIVE S100 treatment; preserves the "sixteen companies / forty-four-data-point" pattern count). last_updated unchanged (2026-05-28; same-day as S100).
 - **2026-05-28 (S100 cross-reference update — SIVE canonical creation):** Added "Merchant laser-layer new-entrant (architecture-agnostic)" subsection under Substrate-tier CPO as demand amplifier — [[SIVE]] as a sub-scale, pre-revenue CW/DFB laser entrant positioning at the architecture-agnostic laser layer (external light source for both pluggables and CPO) via POET/O-Net/Ayar Labs (over-claim). Honest calibration: challenger to [[LITE]]/[[COHR]]; open test whether a merchant reaches production before incumbents/integrators absorb the shortage. SIVE added to Cross-references; NOT added to tickers (component-layer aspirant, not a platform-battle participant). last_updated 2026-05-27 → 2026-05-28.
 - **2026-05-27 (in-place refresh per Vic instruction; not counted as separate session — Tier 3 dual-source substrate enrichment per `CPO-for-AIDC-Infrastructure.md` 2026-05-26 + `CPO-in-AIDC.md` 2026-05-27):** Same-day dual-Tier-3-source delivery integrated per Vic mini in-place refresh decision. NEW Hyperscaler architecture heterogeneity 5-way matrix subsection (Meta most committed; Google parallel OCS path; NVIDIA HYBRID; AWS Marvell/Celestial; Microsoft quiet) per both reports. NEW OCI MSA 2026 standardization observation (AMD + Broadcom + NVIDIA + Meta + Microsoft + OpenAI founding members; 3.2T-class link roadmap). NEW Coexistence-vs-displacement framework subsection (TrendForce 24M → 63M shipments + McKinsey 30-40% shortfall through 2029 + OSFP-XD 92% of 2025 hyperscaler 1.6T procurement + LightCounting + Cignal AI). NEW 3-instance Tier 3 investment-research-style source precedent observation per Section 5.2 enforcement — LC Pass 2 + CPO dual-report = 3-instance precedent; Tranche 2C-iii codification candidate. Section 5.2 P&L exclusion discipline rigorously enforced — all conviction rankings + portfolio recommendations + Add/Trim thresholds + pair-trade language EXCLUDED. last_updated 2026-05-24 → 2026-05-27.

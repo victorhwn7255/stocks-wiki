@@ -1,7 +1,7 @@
 ---
 type: theme
-tickers: [NVDA, COHR, LITE, GLW, VRT, ANET, ARM, AMD, INTC]
-last_updated: 2026-05-27
+tickers: [NVDA, COHR, LITE, GLW, VRT, ANET, ARM, AMD, INTC, MRVL]
+last_updated: 2026-05-29
 ---
 
 # NVDA Platform Integration Pattern
@@ -190,6 +190,16 @@ NVDA Q1 FY2027 substantiation: INTC is not named at any point in the 16-page cal
 
 **Confidence level: high (one-sided).** The partnership is real and operational per INTC primary substantiation; the bilateral asymmetry is intrinsic to the mode and worth tracking forward — whether NVDA reciprocally confirms at any future venue (next 10-K, next GTC, next earnings call) is a falsifiable observation. If reciprocal confirmation never arrives, the mode is durable bilateral-asymmetric strategic partnership. If reciprocal confirmation does arrive, the mode collapses into the more familiar "named ecosystem partner" category.
 
+### Mode 4 — Equity investment + strategic partnership with competitor overlap (MRVL; Q1 FY2027, FIRST INSTANCE)
+
+[[MRVL]] Q1 FY2027 substantiation (10-Q + May 27, 2026 call) documents the most multi-dimensional bilateral mode in the taxonomy: NVDA simultaneously (a) **takes equity** — a $2.0B Series A Convertible Preferred investment in Marvell (issued March 31, 2026; ~$91.84 conversion, max ~21.8M shares; MRVL 10-Q Q1 FY2027); (b) **partners** — expanded collaboration across optics / silicon photonics, NVLink Fusion (MRVL custom silicon interfacing NVIDIA infrastructure, positioned as "the bridge between custom and merchant"), and AI-RAN (OCTEON + NVIDIA GPUs); and (c) **competes** — the MRVL 10-K names NVDA as a direct custom-ASIC competitor, and the overlap at the lead XPU customer persists.
+
+This is distinct from Modes 1-3: ARM (IP licensing + competition), AMD (pure competition), and INTC (co-development partnership + competition) each lack the NVDA equity leg. MRVL combines the equity-plus-purchase modality from "The pattern" (cf. COHR/LITE) with a co-development partnership AND direct competition — the first vault instance where all three coexist with a confirmed NVDA equity stake.
+
+**Reciprocal naming — reversal on MRVL's side.** MRVL had maintained reciprocal non-naming through Q4 FY2026 ("NVDA never named on the call"). Q1 FY2027 reverses it: MRVL names NVIDIA throughout, leads with the partnership, and books the $2.0B preferred. NVDA-side reciprocal confirmation of the NVLink-Fusion / optics scope is pending an [[NVDA]] refresh; the equity instrument itself is MRVL Tier 1 fact. Per Section 3.5 A1 framing: MRVL-side disclosed + Tier 1 equity confirmed; full bilateral scope confirmation pending.
+
+**Confidence level: high (MRVL-side); reciprocal scope pending.**
+
 ### Why this taxonomy belongs in the NVDA platform integration framework
 
 The 7 modalities documented in "The pattern" section describe how NVDA absorbs, partners with, finances, or substitutes away technology providers and ecosystem participants. The 3-mode bilateral taxonomy adds the **competitor-architecture-vendor axis**: how NVDA relates to vendors that are simultaneously (a) suppliers of architecture or technology NVDA uses, (b) competitors in adjacent or overlapping product markets, and (c) ecosystem actors whose public framing affects NVDA's narrative space.
@@ -216,6 +226,7 @@ Methodology codification candidate at Tranche 2C-iii — the 3-mode taxonomy is 
 
 ## Change log
 
+- **2026-05-29 (MRVL Q1 FY2027 refresh propagation):** Added **Mode 4 — equity investment + strategic partnership with competitor overlap (MRVL; FIRST INSTANCE)** to the Cross-canonical NVIDIA bilateral mode taxonomy: NVDA's $2.0B Series A Convertible Preferred investment in Marvell (March 31, 2026) + NVLink Fusion / optics / AI-RAN partnership + persisting custom-ASIC competition — the first vault case combining a confirmed NVDA equity stake with both partnership and direct competition. Documents the MRVL-side reversal of reciprocal non-naming (per Section 4.3); NVDA-side scope confirmation pending an [[NVDA]] refresh (A1 framing). [[MRVL]] added to tickers (9 → 10). last_updated 2026-05-27 → 2026-05-29.
 - **2026-05-27 (in-place adjacency cross-reference per Vic instruction; not counted as separate session):** Cross-reference flag per `raw/research/CPO-for-AIDC-Infrastructure.md` 2026-05-26 + `raw/research/CPO-in-AIDC.md` 2026-05-27 dual-source CPO theme refresh: NVIDIA $4B March 2, 2026 LITE + COHR injection quantification refinement ($2B LITE at $695.31/share + $2B COHR per SEC 8-Ks) — substantively documented at vault [[NVDA-platform-integration]] S82 + S50 paired refresh; Tier 3 sources add share-price + 8-K filing specificity. OCI MSA 2026 NVIDIA co-founder observation (AMD + Broadcom + NVIDIA + Meta + Microsoft + OpenAI) — substantive cross-vendor standardization signal at NVDA platform integration scope; cross-reference [[cpo-integration]] Open Question #14. NVIDIA Spectrum-X Photonics 9W per 800G vs Broadcom TH6-Davisson 3.5W power gap observation flagged at vault [[cpo-integration]] NVDA $2B subsection. No content edits beyond cross-reference flag.
 - **2026-05-26 (in-place adjacency cross-reference per Vic instruction; not counted as separate session):** Cross-reference flag per `raw/research/liquid-cooling-for-datacenters.md` (2026-05-26): Tier 3 source documents 6-OEM NVIDIA-aligned reference design ecosystem (Schneider Electric Motivair RD110/RD111 + Vertiv CoolChip CDU + Dell IR7000 + HPE Cray EX + Lenovo Neptune + Supermicro DLC-2) building thermal infrastructure reference architectures around NVIDIA platform — reinforces NVDA platform integration scope at thermal infrastructure ecosystem partner layer (cross-reference [[liquid-cooling]] + [[AIDC-cooling-architecture-transition]] in-place refresh 2026-05-26 Tier 3 OEM reference design catalog subsections). No content edits beyond cross-reference flag.
 - **2026-04-19:** Created from NVDA Q4 FY2026 earnings call (Tier 2) and frameworks.md. Documents four modalities of platform integration: acquisition (Mellanox), licensing (Groq), equity + purchase commitments (COHR/LITE), and equity backing (Ayar Labs), plus model builder ecosystem investments.

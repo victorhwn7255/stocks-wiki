@@ -1,7 +1,7 @@
 ---
 type: theme
 tickers: [NVDA, TSM, AVGO, MRVL, ALAB, CSCO, COHR, LITE, AAOI, AEHR, ONTO, COHU, AXTI, VECO, GLW, FN, VRT, CRDO, ANET, VIAV, PLAB, FLEX, SOI]
-last_updated: 2026-05-28
+last_updated: 2026-05-29
 ---
 
 # AI datacenter photonics supply chain
@@ -52,7 +52,7 @@ Modulators convert electrical data onto light. The technology choice determines 
 
 EML is the incumbent for 800G and early 1.6T pluggables — compact, mature, strong for DR/FR reach. Silicon photonics is the natural CPO platform because it integrates waveguides, splitters, modulators, photodiodes, and WDM structures on a wafer-scale process. TFLN, BTO, and polymers are second-wave optionality past 3.2T per the architecture primer; commercial maturity is meaningful but earlier than the EML/SiPh ramp.
 
-*Vault.* [[COHR]] (EML + silicon photonics; 400G/lane SiPh demo with Tower Semiconductor in production-ready process; 100G and 200G EML leadership claim, first 400G differential EML demonstrated for 3.2T-class), [[LITE]] (EML focus; coherent DSP exited as Layer 4 boundary marker), [[CSCO]] (Acacia coherent + Cisco silicon photonics in 1.6T OSFP and 800G LPO), [[AVGO]] (Taurus 400G/lane optical DSP paired with first 400G EML/photodiode parts at OFC 2026).
+*Vault.* [[COHR]] (EML + silicon photonics; 400G/lane SiPh demo with Tower Semiconductor in production-ready process; 100G and 200G EML leadership claim, first 400G differential EML demonstrated for 3.2T-class), [[LITE]] (EML focus; coherent DSP exited as Layer 4 boundary marker), [[CSCO]] (Acacia coherent + Cisco silicon photonics in 1.6T OSFP and 800G LPO), [[AVGO]] (Taurus 400G/lane optical DSP paired with first 400G EML/photodiode parts at OFC 2026), [[MRVL]] (Q1 FY2027: MZM/EAM/MRM platform plus the new Polariton plasmonics acquisition — plasmonic modulators with demonstrated bandwidth >1 THz, characterized as ~10× silicon photonics and TFLN, extending the coherent/DCI roadmap to 3.2T; call-disclosed only, not in the 10-Q, so commercial maturity is unproven — see [[advanced-optical-packaging]]).
 
 *Non-vault.* Per the taxonomy report and the architecture primer: HyperLight (TFLN PIC, 400G/lane chiplet platform — UMC manufacturing partnership; per architecture primer, no primary-source verification of the 400G/lane PIC announcement); OpenLight (heterogeneous III-V on silicon, 1.6T DR8 PIC integrating DFB lasers + 224G modulators + SOAs — Synopsys/Jabil heritage, private); Tower Semiconductor (PH18 SiPh platform, 400G/lane modulator demos with Coherent and OpenLight); Lumiphase (BTO emerging); Lightwave Logic and NLM Photonics (electro-optic polymers, earlier-stage); imec/Veeco (300mm-compatible BTO-on-silicon process, January 2026).
 
@@ -412,6 +412,7 @@ Vic-authored synthesis with `citeturn`-style internal references. Used where it 
 
 ## Change log
 
+- **2026-05-29 (MRVL Q1 FY2027 refresh propagation):** Added [[MRVL]] to the Section 2.2 (Modulators) *Vault* note — MZM/EAM/MRM platform plus the new Polariton plasmonics acquisition (>1 THz modulator bandwidth, ~10× silicon photonics / TFLN; 3.2T roadmap; call-only, not in 10-Q). Light cross-ref; MRVL already in the main roster. No other content edits. last_updated 2026-05-28 → 2026-05-29.
 - **2026-05-28 (S101 cross-reference update — SOI/Soitec canonical creation):** Added [[SOI]] to Section 2.9 (Upstream materials and substrates) *Vault* as the engineered-SOI-substrate participant — the silicon-substrate analog to [[AXTI]]'s InP (every SiPh PIC is built on SOI; Soitec dominant via near-monopoly Smart Cut; Photonics-SOI >$100M FY2026, supply-constrained, CPO content uplift; geopolitical mirror extends to France/near-monopoly-IP vs AXTI China/export-controlled). **Added SOI to the main ticker roster** (real-revenue substrate participant — distinct from the SIVE/XFAB pre-revenue Section 2.1/2.6 notes). No other content edits.
 - **2026-05-28 (S100 cross-reference update — SIVE canonical creation):** Added pre-revenue entrant note in Section 2.1 (Lasers / external laser sources) for [[SIVE]] — CW/DFB laser maker positioned as external light source for pluggables + CPO (POET/O-Net/Ayar Labs partners, all over-claim); pre-revenue (2027+), sub-scale, going-concern-flagged; photonics_tier 4 with tier-3 upgrade trigger. Moved Sivers from the *Non-vault* enumeration (now a vault canonical). NOT added to main ticker roster pending the 2027+ revenue inflection. No other content edits per scope discipline.
 - **2026-05-28 (S99 cross-reference update — XFAB canonical creation):** Added pre-revenue development-stage entrant note in Section 2.6 (Photonic foundries) for [[XFAB]] — three silicon photonics projects in development with Ligentec + EU photonixFAB; photonics ~$7M NRE in 2025, product revenue not expected until end of 2027/2028; photonics_tier 4 with explicit pre-revenue framing. NOT added to main ticker roster pending the 2027-2028 product-revenue inflection. No other content edits per scope discipline.

@@ -3,8 +3,9 @@
 fetch_filings.py — Download the most recent SEC filings for the stocks-wiki seed set.
 
 Default behavior:
-- Downloads each filing as .htm from SEC EDGAR directly into the output folder
-- Skips any filing already present
+- Downloads each filing as .htm from SEC EDGAR into a `newly_fetched/` staging
+  subfolder of the output folder (a quarantine area to review before ingest)
+- Skips any filing already present in either the base output folder or the staging subfolder
 
 Usage:
     python fetch_filings.py
@@ -84,6 +85,22 @@ COMPANIES = {
 }
 
 HEADERS = {"User-Agent": USER_AGENT, "Accept": "application/json"}
+
+# New filings are staged in this subfolder of the base filings dir before being curated
+# and ingested into the base dir. Both the downloader and the freshness scan treat a
+# filing as "already local" if it exists in EITHER the base dir or this staging
+# subfolder, so a staged-but-not-yet-ingested filing is never re-listed or re-downloaded.
+STAGING_SUBDIR = "newly_fetched"
+
+
+def filing_already_local(
+    filename: str, base_dir: Path | None, staging_dir: Path | None
+) -> bool:
+    """True if filename is already present in the base (ingested) dir or the staging dir."""
+    for d in (base_dir, staging_dir):
+        if d and (d / filename).exists():
+            return True
+    return False
 
 
 def get_company_filings(cik: str) -> dict:
@@ -172,9 +189,14 @@ def build_filename(ticker: str, form: str, report_date: str) -> str:
 def fetch_for_company(
     ticker: str,
     config: dict,
-    output_dir: Path,
+    base_dir: Path,
+    staging_dir: Path,
 ) -> None:
-    """Fetch the most recent filing(s) for a company."""
+    """Fetch the most recent filing(s) for a company into the staging dir.
+
+    Skips any filing already present in either the base (ingested) dir or the staging
+    dir, so re-running never re-downloads a filing that is already archived or staged.
+    """
     print(f"\n→ {ticker} (CIK {config['cik']})")
 
     try:
@@ -192,11 +214,12 @@ def fetch_for_company(
             continue
 
         filename = build_filename(ticker, filing["form"], filing["report_date"])
-        htm_path = output_dir / filename
 
-        if htm_path.exists():
-            print(f"  ◦ {filename} already fetched, skipping")
+        if filing_already_local(filename, base_dir, staging_dir):
+            print(f"  ◦ {filename} already present (archive or staging), skipping")
             continue
+
+        htm_path = staging_dir / filename
 
         url = build_document_url(
             config["cik"], filing["accession"], filing["primary_doc"]
@@ -204,7 +227,7 @@ def fetch_for_company(
 
         try:
             download_document(url, htm_path)
-            print(f"  ✓ {filename}  (filed {filing['filing_date']})")
+            print(f"  ✓ {filename} → {STAGING_SUBDIR}/  (filed {filing['filing_date']})")
         except Exception as e:
             print(f"  ✗ Failed to download {filename}: {e}")
 
@@ -364,11 +387,17 @@ def parse_index_md_last_updated(index_path: Path) -> dict:
     return mapping
 
 
-def compute_freshness_per_ticker(ticker: str, config: dict) -> dict:
+def compute_freshness_per_ticker(
+    ticker: str,
+    config: dict,
+    base_dir: Path | None = None,
+    staging_dir: Path | None = None,
+) -> dict:
     """Query SEC EDGAR + compute freshness signals for one ticker.
 
     Returns dict with: most_recent_earnings (filing dict or None);
-    next_filings (list of {form, estimated, last}); error (if query failed).
+    next_filings (list of {form, estimated, last}); available_downloads (latest of each
+    tracked form not already present in base_dir or staging_dir); error (if query failed).
     """
     try:
         filings_json = get_company_filings(config["cik"])
@@ -401,15 +430,32 @@ def compute_freshness_per_ticker(ticker: str, config: dict) -> dict:
     # earnings call/release date, which can pre-date the 10-Q formal filing by weeks.
     earnings_event = find_latest_earnings_event(filings_json, forms)
 
+    # Cadence-estimated next filings + downloadable-filings preview share the per-form
+    # "latest filing" lookup. available_downloads mirrors the default (download) mode's
+    # skip-if-present logic, so the list previews exactly what `fetch_filings.py`
+    # (without --freshness) would fetch into the staging dir.
     next_filings = []
+    available_downloads = []
     for form_type in forms:
         last = find_latest_filing(filings_json, form_type)
-        if last and last.get("report_date"):
+        if not last:
+            continue
+        if last.get("report_date"):
             est = estimate_next_filing(last["report_date"], form_type)
             if est:
                 next_filings.append(
                     {"form": form_type, "estimated": est, "last_filed": last["filing_date"]}
                 )
+        filename = build_filename(ticker, last["form"], last.get("report_date") or "")
+        if not filing_already_local(filename, base_dir, staging_dir):
+            available_downloads.append(
+                {
+                    "form": last["form"],
+                    "filename": filename,
+                    "filing_date": last["filing_date"],
+                    "report_date": last.get("report_date") or "",
+                }
+            )
 
     return {
         "ticker": ticker,
@@ -417,6 +463,7 @@ def compute_freshness_per_ticker(ticker: str, config: dict) -> dict:
         "most_recent_earnings": most_recent_earnings,
         "earnings_event": earnings_event,
         "next_filings": next_filings,
+        "available_downloads": available_downloads,
     }
 
 
@@ -426,7 +473,7 @@ def format_freshness_report(
     today: datetime,
     confirmed_calls: dict | None = None,
 ) -> str:
-    """Format 3-section markdown report sorted by refresh-ingest priority."""
+    """Format 5-section markdown report sorted by refresh-ingest priority."""
     today_str = today.strftime("%Y-%m-%d")
     thirty_days_ago = today - timedelta(days=30)
     thirty_days_from_now = today + timedelta(days=30)
@@ -566,6 +613,41 @@ def format_freshness_report(
         out.append("- (no tickers stale beyond 90 days)")
     out.append("")
 
+    # Section 5 — New filings available to download. Latest of each tracked form per
+    # ticker that is not yet present in the local filings dir — i.e. exactly what the
+    # default download mode (`fetch_filings.py` without --freshness) would fetch. Sorted
+    # by filing date descending. Cap 12 + "and N more"; the single "Fetch all" command
+    # grabs the entire set regardless of the display cap.
+    downloads = []
+    for d in freshness_data:
+        if d.get("error"):
+            continue
+        for av in d.get("available_downloads", []):
+            downloads.append(
+                (d["ticker"], av["form"], av["filing_date"], av["filename"])
+            )
+    downloads.sort(key=lambda x: x[2], reverse=True)
+
+    out.append(
+        f"**New filings available to download (not yet in raw/filings/):** "
+        f"{len(downloads)} filings"
+    )
+    if downloads:
+        for t, f, fd, fn in downloads[:12]:
+            out.append(f"- {t} {f} (filed {fd}) → `{fn}`")
+        if len(downloads) > 12:
+            out.append(f"  and {len(downloads) - 12} more")
+        out.append("  Fetch all: `python scripts/fetch_filings.py`")
+        out.append(
+            "  Fetch one: `python scripts/fetch_filings.py --ticker TICKER --form FORM`"
+        )
+        out.append(
+            "  (files stage in raw/filings/newly_fetched/ — move to raw/filings/ after ingest)"
+        )
+    else:
+        out.append("- (local filings dir already current with the latest filings)")
+    out.append("")
+
     # Footer with errors if any.
     errors = [(d["ticker"], d["error"]) for d in freshness_data if d.get("error")]
     if errors:
@@ -577,13 +659,18 @@ def format_freshness_report(
     return "\n".join(out)
 
 
-def run_freshness_scan(companies: dict, index_path: Path) -> str:
+def run_freshness_scan(
+    companies: dict,
+    index_path: Path,
+    base_dir: Path | None = None,
+    staging_dir: Path | None = None,
+) -> str:
     """Top-level freshness scan orchestration. Returns markdown report string."""
     today = datetime.now()
     staleness_map = parse_index_md_last_updated(index_path)
     freshness_data = []
     for ticker, config in companies.items():
-        result = compute_freshness_per_ticker(ticker, config)
+        result = compute_freshness_per_ticker(ticker, config, base_dir, staging_dir)
         freshness_data.append(result)
         time.sleep(0.15)  # Stay well under SEC EDGAR 10 req/sec limit
     # Confirmed upcoming earnings calls from Nasdaq (~20 calls covering the trading-day
@@ -633,13 +720,20 @@ def main():
     else:
         companies = COMPANIES
 
-    # Freshness scan: query-only; no file downloads.
+    # New filings are staged in <output-dir>/newly_fetched/ for review before they are
+    # curated into the base filings dir. The base dir holds the ingested archive.
+    staging_dir = args.output_dir / STAGING_SUBDIR
+
+    # Freshness scan: query-only; no file downloads. Presence is checked against BOTH the
+    # base archive dir and the staging subfolder.
     if args.freshness:
-        report = run_freshness_scan(companies, args.index_path)
+        report = run_freshness_scan(
+            companies, args.index_path, args.output_dir, staging_dir
+        )
         print(report)
         return
 
-    args.output_dir.mkdir(parents=True, exist_ok=True)
+    staging_dir.mkdir(parents=True, exist_ok=True)
 
     if args.form:
         for c in companies.values():
@@ -647,9 +741,10 @@ def main():
 
     for ticker, config in companies.items():
         if config["forms"]:
-            fetch_for_company(ticker, config, args.output_dir)
+            fetch_for_company(ticker, config, args.output_dir, staging_dir)
 
-    print(f"\nDone. Filings saved to {args.output_dir.resolve()}")
+    print(f"\nDone. New filings staged in {staging_dir.resolve()}")
+    print(f"Review, then move into the base filings dir after ingest: {args.output_dir.resolve()}")
 
 
 if __name__ == "__main__":
