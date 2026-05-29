@@ -32,6 +32,27 @@ Running reference log of **refresh ingests** — re-ingests of an EXISTING vault
 
 ---
 
+## S108 — CSCO (Cisco Systems) — 2026-05-29 — Q3 FY2026 (10-Q + Q3 FY2026 call)
+
+- **Sources:** Q3 FY2026 10-Q (Tier 1; period ended April 25, 2026) + Q3 FY2026 earnings call (Tier 2; May 13, 2026).
+- **Prior baseline:** S16 (FY2025 10-K + Q2 FY2026 10-Q + Q2 FY2026 call). Page advanced Q2 → Q3 FY2026.
+- **Headline:** AI-orders acceleration + the **first named Silicon One hyperscaler design wins** (Q2 had named none).
+- **Key changes & new developments:**
+  - Record Q3: revenue $15.8B (+12%), product +17%, non-GAAP EPS $1.06 (+10%), both above guidance; FY2026 guide $62.8-63B / EPS $4.27-4.29.
+  - Hyperscaler AI orders **$1.9B Q3** (vs $600M yr-prior), YTD $5.3B; **FY2026 hyperscaler AI order target raised to ~$9B** (4.5x FY2025) + ~$4B AI revenue; FY2027 ≥$6B early signal.
+  - **Acacia >$1B Q3 orders / >200% FY2026**; >750k 400G + >40k 800G shipped. Still buried in Networking; litigation-only at Tier 1 → the widest-technology-disclosure-gap widens.
+  - **Silicon One hyperscaler design wins:** P200 scale-across ×2 + G200 scale-out ×1; +3rd P200 early Q4. "Half of AI orders = systems = Silicon One." Purchase commitments surged to $16.0B (from $7.6B Jul 2025).
+  - Restructuring "Fiscal 2026 Plan" — realign to silicon/optics/security/AI; up to $1B pre-tax ($450M Q4 FY2026, rest FY2027); "not savings-driven."
+  - Non-GAAP GM 66% (-260bps) — mix (bigger factor) + memory ("unprecedented" pricing; cross-ref [[HBM-oligopoly]]).
+  - CPO not re-litigated at Q3 (Chatterjee asked security/Mythos) → acknowledged-deferral stance stands.
+- **Placement:** **HELD** — Layer 3 (Layer 3/5 straddling maintained: design wins strengthen capability, not the captive-system revenue model) + photonics_tier 4 (Acacia strong but buried; CPO deferred; 4→3 trigger pre-registered = separate Acacia revenue + merchant optical sales + sustained >$1B).
+- **Section 2.11:** applied for the first time (page predates S61). Q3 FY2026 ended April 25 2026 ≈ calendar Q1 2026; **CSCO = 8th month+ instance** — flagged for a CLAUDE.md A.11 codification update.
+- **Cross-vault propagation:** [[CPO-platform-battle]] (Q3 deferral note; no new data point) + [[hyperscaler-custom-ASIC]] (Silicon One design-win "silicon diversity" note + ticker) + [[AI-demand-durability]] (networking-side signal + ticker).
+- **Forward watch:** photonics_tier 4→3 trigger; Silicon One → merchant switching-silicon share vs [[AVGO]] Tomahawk; scale-up product (still unannounced); FY2027 AI ≥$6B realization; Acacia separate revenue disclosure; memory-cost GM trajectory.
+- **Key insight:** the AI story is **systems/Silicon-One-led, not photonics-led** — the first named hyperscaler Silicon One design wins (P200/G200) are the bigger Q3 development than Acacia, and the silicon (not the optics) is what Robbins frames as existential to hyperscaler relevance. A >$1B Acacia business remains invisible at Tier 1 — the vault's widest tech-disclosure gap, now wider.
+
+---
+
 ## S106 — ARM (Arm Holdings plc) — 2026-05-29 — FY2026 20-F (LIGHT Tier-1-firming refresh)
 
 - **Sources:** FY2026 20-F (Tier 1 annual; period-end March 31, 2026) — single new source. No new earnings call: the May 6 2026 Q4 FY2026 call + the Q4 FY2026 6-K shareholder letter were ingested at S76.
