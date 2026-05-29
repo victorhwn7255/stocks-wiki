@@ -7,7 +7,7 @@ energy_power_tier: outside
 equipment_tier: outside
 materials_tier: 2
 foreign_issuer: true
-last_updated: 2026-05-02
+last_updated: 2026-05-29
 ---
 
 # CCJ — Cameco Corporation
@@ -320,7 +320,7 @@ Management does NOT quantify fair value adjustment (FIR) to carrying value from 
 | **Brookfield Asset Management (Westinghouse JV partner)** | Named explicitly | **Reciprocal-confirmation** — joint venture partnership |
 | **Westinghouse Electric Company** | Named extensively (49% equity-method) | **Reciprocal-confirmation** — equity-method investment with bilateral cash distributions |
 | **Microsoft / Meta / Amazon / Google (5 PPA partnerships)** | Named via downstream utility PPAs | **Reciprocal-confirmation** (publicly disclosed bilateral events; not CCJ direct customers) |
-| **Constellation / Talen / NextEra / Vistra** | Named via hyperscaler PPAs | Reciprocal-confirmation |
+| **[[CEG]] (Constellation) / Talen / NextEra / Vistra** | Named via hyperscaler PPAs | **Reciprocal-confirmation** — Constellation ([[CEG]]) is now a vault canonical (S107); the Microsoft-Constellation TMI/Crane + Meta-Constellation Clinton PPAs are **bilaterally confirmed at CEG primary** (Crane 835 MW Microsoft) |
 | **TerraPower / Oklo** | Named via Meta Prometheus partnership | Reciprocal-confirmation |
 | **Orano (McArthur River JV ~70/30)** | Named explicitly | **Reciprocal-confirmation** — joint venture |
 | **KazAtomProm (Inkai JV 40/60)** | Named explicitly | **Reciprocal-confirmation** — joint venture |

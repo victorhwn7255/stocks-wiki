@@ -1,7 +1,7 @@
 ---
 type: chokepoint
-tickers: [LEU, BWXT, CCJ, BE, GEV]
-last_updated: 2026-05-25
+tickers: [LEU, BWXT, CCJ, BE, GEV, CEG]
+last_updated: 2026-05-29
 ---
 
 # HALEU fuel chain chokepoint
@@ -171,7 +171,7 @@ DOE allocation as **de facto rationing mechanism** for scarce HALEU output. Reac
 
 - HALEU-dependent reactor developers: TerraPower Natrium / X-energy Xe-100 / **OKLO Aurora** / Kairos KP-FHR / BWXT Pele / Last Energy 20MWe — per HALEU report Tier 3 (OKLO + SMR not vault canonical pages)
 - LEU-fueled reactor developers: BWRX-300 ([[GEV]]) / AP300 / **NuScale US460 (SMR)** / AP1000 (Westinghouse via [[CCJ]]) — per HALEU report Tier 3
-- Hyperscaler-utility PPA reactor licensees (per [[CCJ]] Session 43 MD&A): Microsoft-Constellation Three Mile Island; Meta-Constellation Clinton; Amazon-Talen Susquehanna; Google-NextEra Duane Arnold; **Meta-Vistra/TerraPower/Oklo Prometheus 6.6 GWe Ohio supercluster**
+- Hyperscaler-utility PPA reactor licensees (per [[CCJ]] Session 43 MD&A; Constellation now bilaterally confirmed at [[CEG]] primary per S107): Microsoft-[[CEG]] (Constellation) Three Mile Island / Crane Clean Energy Center (~835 MW); Meta-[[CEG]] Clinton; Amazon-Talen Susquehanna; Google-NextEra Duane Arnold; **Meta-Vistra/TerraPower/Oklo Prometheus 6.6 GWe Ohio supercluster**
 
 ---
 

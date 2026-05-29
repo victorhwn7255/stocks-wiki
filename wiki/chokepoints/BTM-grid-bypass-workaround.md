@@ -1,8 +1,8 @@
 ---
 type: chokepoint
-tickers: [BE, FCEL, GEV, CAT]
+tickers: [BE, FCEL, GEV, CAT, CEG]
 related_themes: [AI-demand-durability, chokepoint-investability-priorities]
-last_updated: 2026-05-12
+last_updated: 2026-05-29
 ---
 
 # Behind-the-meter grid-bypass workaround chokepoint
@@ -81,7 +81,9 @@ last_updated: 2026-05-12
 
 **Deployment profile + commercial structure.** Big-3 frame-tier gas turbine 4-7 year lead times per Tier 3 source (heavy-duty turbines stretched from 2.5-3 years pre-2023 to 5-7 years today). Distinct from CAT Solar Turbines aero-derivative tier ("small/aero-derivative tier" per Tier 3 source) + reciprocating engine 12-24 month lead times. Diversified-broad utility customer concentration archetype.
 
-**No "grid bypass" framing in any GEV primary source per S37 canonical baseline.** No named hyperscaler nuclear/SMR partnerships at GEV (contrast Microsoft-Constellation + AWS-Talen + Meta nuclear PPAs which GEV does NOT participate in per S37 verification).
+**No "grid bypass" framing in any GEV primary source per S37 canonical baseline.** No named hyperscaler nuclear/SMR partnerships at GEV (contrast Microsoft-[[CEG]] (Constellation) + AWS-Talen + Meta nuclear PPAs which GEV does NOT participate in per S37 verification).
+
+**Generation-side firm-clean-baseload addition (S107, [[CEG]]).** [[CEG]] (Constellation; first primary power *generator* in the vault) is the supply side of the firm-clean-baseload-behind-the-meter dynamic: its Crane Clean Energy Center (TMI Unit 1 restart; ~835 MW Microsoft PPA) + Texas powered-land / co-location deals (CyrusOne at Freestone Energy Center; firm backup generation or full curtailability during grid stress) are grid-bypass-adjacent generation-side arrangements. Note the placement boundary: CEG is "Adjacent — Power Generation" per `frameworks.md` v10.1 (`energy_power_tier outside`), not a Framework 7 infrastructure participant — it generates the firm clean power rather than supplying the bypass/delivery equipment.
 
 **Source-freshness asymmetry flag.** S37 canonical baseline 20 sessions stale at S57 synthesis; pre-S46 codification. **Highest priority refresh propagation candidate** per Open questions; Q1 2026 actual + Q2 2026 release sequencing for S58+ refresh particularly.
 

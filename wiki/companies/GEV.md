@@ -5,7 +5,7 @@ layer: 4
 photonics_tier: outside
 energy_power_tier: 3
 equipment_tier: outside
-last_updated: 2026-05-01
+last_updated: 2026-05-29
 ---
 
 # GEV — GE Vernova Inc.
@@ -20,7 +20,7 @@ This page is the **second canonical AI-datacenter-scope ingest** post-rework arc
 
 1. **Framework 7 Tier 3 substantiated; Tier 2 promotion NOT warranted.** Per Section 3.10 promotion mechanism: NEITHER criterion met. Zero named hyperscaler customers (criterion 1 fails); estimated FY2026 datacenter-attributable revenue ~9-13% of total ($4-6B / $44.5-45.5B), below 15% threshold (criterion 2 fails). Tier 3 baseline preserved per honest-verdict discipline.
 2. **Generation-side primary 2026 constraint location partial falsification (cross-company paired analytical product with [[ETN]]).** GEV gas turbines NOT framed as supply-binding (CEO Strazik: *"the gas turbines are really not the gating item"* — EPC/permitting/fuel is). Distribution-side / transformer + electrical equipment layer (per [[ETN]]) is the primary 2026 power constraint location, NOT generation-side. Framework 7 + Framework 11.5 refinement candidate for Vic-side curation.
-3. **On-site generation as grid-bypass thesis partial falsification.** GEV primary sources do NOT substantiate aggressive on-site generation framing. Gas turbine 20% datacenter attribution ambiguous between on-site co-located and utility-scale grid-feed; primary-source evidence leans toward grid-feed dominance. No "grid bypass" framing; no named hyperscaler nuclear/SMR partnerships (contrast Microsoft-Constellation, AWS-Talen, Meta nuclear PPAs which GEV does not participate in). Documented per `CLAUDE.md` v9 Section 4.4 with epistemic humility framing (absence of detailed disclosure ≠ definitive absence).
+3. **On-site generation as grid-bypass thesis partial falsification.** GEV primary sources do NOT substantiate aggressive on-site generation framing. Gas turbine 20% datacenter attribution ambiguous between on-site co-located and utility-scale grid-feed; primary-source evidence leans toward grid-feed dominance. No "grid bypass" framing; no named hyperscaler nuclear/SMR partnerships (contrast Microsoft-[[CEG]] (Constellation), AWS-Talen, Meta nuclear PPAs which GEV does not participate in — [[CEG]] is the nuclear-fleet operator in those deals, now a vault canonical per S107). Documented per `CLAUDE.md` v9 Section 4.4 with epistemic humility framing (absence of detailed disclosure ≠ definitive absence).
 4. **Layer 4-5 straddling tension flagged but Layer 4 maintained.** "String of pearls" datacenter strategy (EMS in Q1 2026 first orders; Stability Block + MV UPS H2 2026 expected; SST Fall 2026 first delivery to "a hyperscaler" unnamed; orders H1 2027) is forward-looking Layer 5 trajectory; equipment-heavy revenue base (gas turbines, transformers, wind turbines) supports Layer 4 anchor placement. Future tier-revisit triggers pre-registered.
 5. **Q1 2026 raised guidance materially:** $44.5-45.5B revenue (+$500M); 12-14% adj EBITDA margin (+100 bps); $6.5-7.5B FCF (+$1.5-2.0B from prior $5.0-5.5B). $18.3B Q1 2026 orders (+71% organic); $163B total backlog; $200B target accelerated to 2027 from prior 2028.
 
