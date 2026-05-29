@@ -5,7 +5,7 @@ layer: 6
 photonics_tier: 3
 materials_tier: 2
 foreign_issuer: true
-last_updated: 2026-05-28
+last_updated: 2026-05-29
 ---
 
 # SOI — Soitec SA
@@ -70,7 +70,7 @@ Roughly 52% of revenue is **RF-SOI / mobile**, the cyclical engine currently in 
 
 ## Cross-vault adjacencies
 
-- **[[AXTI]]** — the substrate-peer analog. AXTI = InP substrate for lasers; Soitec = SOI substrate for silicon-photonics PICs. Both Layer 6 Western-headquartered substrate suppliers, on different material legs of the optical supply chain — and a **geopolitical mirror**: AXTI is 100% China-manufactured and under InP export-control pressure, while Soitec is France-based with near-monopoly Smart Cut IP (and its own China exposure via NSIG licensing).
+- **[[AXTI]]** — the substrate-peer analog. AXTI = InP substrate for lasers; Soitec = SOI substrate for silicon-photonics PICs. Both Layer 6 Western-headquartered substrate suppliers (now both also `materials_tier 2`, as of AXTI's S105 refresh — exact tier symmetry), on different material legs of the optical supply chain — and a **geopolitical mirror**: AXTI is 100% China-manufactured and under InP export-control pressure, while Soitec is France-based with near-monopoly Smart Cut IP (and its own China exposure via NSIG licensing). AXTI's Q1 FY2026 refresh (profitability inflection, $100M+ InP backlog, $632.5M April-2026 raise funding a multi-year capacity doubling) strengthens the InP leg of the shared substrate-tier demand story — the mirror image of Soitec's supply-constrained Photonics-SOI ramp.
 - **[[TSEM]]** — silicon-photonics PDK foundry (PH18DA) that builds PICs on SOI substrate; Soitec sits upstream of it (alongside non-vault GlobalFoundries and Intel).
 - **[[LITE]] / [[COHR]] / [[datacenter-laser-supply]]** — Soitec's SiPh substrate underpins the silicon-photonics route to optical interconnect, complementary to (and partly competing with) the InP/EML laser route LITE and COHR dominate. The more silicon-photonics/CPO wins share versus InP pluggables, the more Soitec benefits.
 - **[[MRVL]] / [[AVGO]]** — design the silicon-photonics chips (transceivers, CPO engines) fabricated on Soitec SOI via foundries.
@@ -120,3 +120,4 @@ Business/technology/risk depth + FY2025 audited baseline and comparatives (Smart
 ## Change log
 
 - **2026-05-28 (Session 101):** Initial canonical creation per Vic Session 101 ingest. Sources: URD FY2025 (Tier 1) + H1 FY2026 half-year report (Tier 1) + FY2026 full-year results (Tier 1) + Q3 FY2026 earnings call Feb 4, 2026 (Tier 2). Placements: Layer 6 (mirrors [[AXTI]] substrate) + photonics_tier 3 (real-revenue silicon-photonics substrate) + materials_tier 2 (engineered-substrate materials leader); foreign_issuer: true (French; Euronext Paris; 3rd European non-US-ADR canonical after [[XFAB]] S99 + [[SIVE]] S100). Section 2.11 applies (March 31 year-end; 4th March-31 filer; 2nd foreign-issuer dual application after [[ARM]]). Upstream SOI substrate for silicon photonics — the SOI analog to [[AXTI]] InP; Photonics-SOI >$100M FY26, supply-constrained, ramping for CPO with content uplift + pull-forward to end-CY2026. Honest-verdict: real-revenue substrate strength inside a cyclically-depressed (~52% mobile RF-SOI) company; SmartSiC impaired €41M. Cross-references added at [[datacenter-photonics-supply-chain]] (Section 2.9 + roster) + [[cpo-integration]] + [[CPO-platform-battle]] + [[AXTI]] (substrate-peer).
+- **2026-05-29 (Session 105 — [[AXTI]] Q1 FY2026 refresh cross-ref):** Updated the AXTI substrate-peer adjacency note — AXTI now also carries `materials_tier 2` (exact tier symmetry with Soitec), and its Q1 FY2026 profitability inflection + $100M+ backlog + $632.5M raise strengthens the InP leg of the shared substrate-tier demand story. `last_updated` 2026-05-28 → 2026-05-29. No other content edits.

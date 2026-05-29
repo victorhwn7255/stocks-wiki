@@ -18,7 +18,7 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` v9.2 Sect
 | [COHU](wiki/companies/COHU.md) | COHU   | 3     | outside   | —      | —            | —         | —         | 2026-05-11   |
 | [MRVL](wiki/companies/MRVL.md) | MRVL   | 3     | 3         | —      | —            | —         | —         | 2026-05-29   |
 | [AVGO](wiki/companies/AVGO.md) | AVGO   | 1     | 3         | —      | —            | —         | —         | 2026-05-27   |
-| [AXTI](wiki/companies/AXTI.md) | AXTI   | 6     | 3         | —      | —            | —         | —         | 2026-05-28   |
+| [AXTI](wiki/companies/AXTI.md) | AXTI   | 6     | 3         | —      | —            | —         | 2         | 2026-05-29   |
 | [VECO](wiki/companies/VECO.md) | VECO   | 3     | 4         | —      | —            | —         | —         | 2026-05-12   |
 | [ALAB](wiki/companies/ALAB.md) | ALAB   | 3     | 4         | —      | —            | —         | —         | 2026-05-11   |
 | [CSCO](wiki/companies/CSCO.md) | CSCO   | 3     | 4         | —      | —            | —         | —         | 2026-04-27   |
@@ -59,14 +59,14 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` v9.2 Sect
 | [MPWR](wiki/companies/MPWR.md) | MPWR   | 4     | outside   | outside | 3            | outside   | outside   | 2026-05-25   |
 | [XFAB](wiki/companies/XFAB.md) | XFAB   | 2     | 4         | —      | 4            | outside   | outside   | 2026-05-28   |
 | [SIVE](wiki/companies/SIVE.md) | SIVE   | 4     | 4         | —      | —            | —         | —         | 2026-05-28   |
-| [SOI](wiki/companies/SOI.md)   | SOI    | 6     | 3         | —      | —            | —         | 2         | 2026-05-28   |
+| [SOI](wiki/companies/SOI.md)   | SOI    | 6     | 3         | —      | —            | —         | 2         | 2026-05-29   |
 
 ## Chokepoints
 
 | Page | Related Tickers | Last Updated |
 |------|-----------------|--------------|
 | [TSMC-CoWoS](wiki/chokepoints/TSMC-CoWoS.md) | TSM, NVDA, AEHR, ONTO, AVGO, MRVL | 2026-05-24 |
-| [InP-supply](wiki/chokepoints/InP-supply.md) | AXTI, LITE, COHR, AAOI, AVGO, VECO | 2026-04-30 |
+| [InP-supply](wiki/chokepoints/InP-supply.md) | AXTI, LITE, COHR, AAOI, AVGO, VECO | 2026-05-29 |
 | [datacenter-laser-supply](wiki/chokepoints/datacenter-laser-supply.md) | LITE, COHR, NVDA, AAOI, FN, SIVE | 2026-05-28 |
 | [wafer-level-siph-test](wiki/chokepoints/wafer-level-siph-test.md) | AEHR | 2026-04-28 |
 | [optical-dsp-phy-supply](wiki/chokepoints/optical-dsp-phy-supply.md) | MRVL, AVGO, CRDO | 2026-05-29 |

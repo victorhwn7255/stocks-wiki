@@ -32,6 +32,26 @@ Running reference log of **refresh ingests** — re-ingests of an EXISTING vault
 
 ---
 
+## S105 — AXTI (AXT, Inc.) — 2026-05-29 — Q1 FY2026 (10-Q + Q1 FY2026 call)
+
+- **Sources:** Q1 FY2026 10-Q (Tier 1; period ended March 31, 2026) + Q1 FY2026 earnings call April 30, 2026 (Tier 2, full transcript).
+- **Prior baseline:** S13 (FY2025 10-K + Q3 FY2025 10-Q + Q4 FY2025 call); later touches were the [[InP-supply]] promotion (S33) + the [[SOI]] peer cross-ref (S101).
+- **Headline:** **Profitability inflection** — the long-loss-making InP-substrate supplier guides Q2 FY2026 to GAAP + non-GAAP profitability; the order-book early-signal converts to results.
+- **Key changes & new developments:**
+  - Q1 2026 revenue +39% YoY to $26.9M; non-GAAP GM rebounded to 29.9% (21.5% Q4 / −6.1% Q1'25); non-GAAP net loss narrowed to ~$585K; InP now >50% of revenue. Q2 guided to profitability ($0.05-0.08 EPS) and the largest InP quarter in AXT history (beats the $17.7M COVID high).
+  - **$632.5M April-2026 capital raise** (8.56M base + 1.28M over-allotment at $64.25/share, exercised in full Apr 22; ~6.6× the Dec-2025 $95.2M raise; priced ~5× the December level) — funds the capacity roadmap; subsequent event in the 10-Q.
+  - **InP backlog $60M+ → $100M+.** Capacity roadmap escalated and funded: ~$35M/qtr by end-2026 (ahead of plan) → ~$65-70M/qtr by end-2027 ("double, double") → 2028 greenfield (possibly outside China); management says demand "is 10x" the planned doubling.
+  - **China-demand leg (new):** China InP-laser revenue >2× QoQ in Q1, 2× again guided Q2; ~30%→40% of the global InP demand AXTI sees; in-China shipments are export-permit-exempt.
+  - Customer base broadening — "nearly all leading customers," hyperscalers engaging directly; long-term supply agreements discussed but unsigned/unnamed (A1 over-claim preserved); no customer >10% of revenue (top-5 ~32%).
+  - **Export-control Section 4.3 update:** prior "first US permit denials" reframed to "still pending" + China Ministry of Commerce requesting more data on US applications; non-US permits flow readily.
+  - JinMei high-purity-indium refining (vertical-integration deepening); 6-inch InP progress (iron-doped/sulfur-doped).
+- **Placement:** layer 6 unchanged; **photonics_tier 3 HELD** (honest-verdict-trigger discipline — Layer-6 substrate input, LTSAs unsigned/unnamed, no pre-registered trigger; strengthening documented in prose; 3→2 trigger now pre-registered: signed+named LTSA + sustained GAAP profit + InP-specific Tier-1 revenue disclosure). **materials_tier 2 ADDED** (engineered-substrate + raw-materials operator incl. indium refining; parallels [[SOI]]; classification predates the multi-domain `*_tier` convention).
+- **Cross-vault propagation:** [[InP-supply]] substrate-tier update (primary); light [[SOI]] (peer note + exact tier symmetry) / [[datacenter-photonics-supply-chain]] (Section 2.9) / [[CPO-platform-battle]] (amplifier-section 4x-6x sizing, no new data point). Tier D [[cpo-integration]] / [[datacenter-laser-supply]] skipped per scope.
+- **Forward watch:** photonics_tier 3→2 trigger; profitability durability across H2 2026 vs permit-timing volatility; US export-permit resolution; realized capacity output vs the $35M (end-2026) / $65-70M (end-2027) targets; Tongmei IPO / $49M contingent redemption; a named customer or signed LTSA.
+- **Key insight:** the vault's earliest-stage demand signal (the AXTI InP order book) has reached the income statement — substrate-tier AI demand is now confirmed at results, not just backlog. The April raise priced at $64.25 vs $12.25 five months earlier (~5×) is itself a market re-rating of the substrate-tier thesis.
+
+---
+
 ## S104 — MOD (Modine Manufacturing) — 2026-05-29 — FY2026 (10-K + Q4 FY2026 call)
 
 - **Sources:** FY2026 10-K (Tier 1; FYE March 31, 2026) + Q4 FY2026 earnings call May 27, 2026 (Tier 2, full transcript).
