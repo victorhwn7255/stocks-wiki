@@ -2,7 +2,7 @@
 type: chokepoint
 tickers: [ONTO, COHU, AEHR, TSM, MKSI, MU]
 related_themes: [AI-demand-durability, chokepoint-investability-priorities]
-last_updated: 2026-05-25
+last_updated: 2026-05-29
 ---
 
 # HBM oligopoly chokepoint
@@ -192,9 +192,12 @@ ALAB Leo CXL memory expansion at memory-tier boundary; complementary to HBM (not
 - **HBM3E → HBM4 dies-per-stack 12 → 16**: 33% more DRAM dies per AI accelerator
 - **Samsung HBM4 ramp depleting commodity DDR5 capacity** — commodity memory ASP appreciation cycle 2026-2027
 - **Meta extending server lifespans due to memory shortage per WSJ** — consumer-side memory shortage materialization
+- **[[CSCO]] Q3 FY2026 "unprecedented" memory pricing (NEW; S108)** — Cisco attributed a ~260 bps non-GAAP gross-margin decline partly to higher memory costs ("unprecedented" pricing on the Q3 FY2026 call), mitigated via component-engineering programs + price increases + a purchase-commitment surge to $16.0B (from $7.6B in July 2025). This is the **first vault non-memory-operator, consumer-side P&L confirmation** of the commodity-memory ASP shock the "3-to-1 rule" predicts — a networking-OEM buyer's income statement, distinct from the memory-operator supplier-tier vantage (CSCO Q3 FY2026 10-Q + call).
 - **Cross-market memory ASP shock**: each HBM generation transition concentrates more wafer capacity in lower-bit-yield processes; broader server-class memory market structurally tightens
 
 **Investment exposure implication per `_thesis.md`:** Memory exposure (MU + Samsung + SK Hynix) captures broader pricing power than HBM-specific revenue would suggest. The "3-to-1 rule" makes memory exposure structurally more attractive than headline HBM TAM growth would imply.
+
+*Honest framing (Section 3.2(c)):* [[CSCO]] is a downstream networking buyer, NOT a memory operator — surfaced here as cross-vault demand-side validation only; no `memory_tier` assignment and not added to supplier-tier participants.
 
 ---
 
@@ -390,6 +393,7 @@ MKSI 10-K Item 1 Business explicit: VSD **"Plasma and Reactive Gas Products, whi
 
 ## Change log
 
+- **2026-05-29 (S110 cross-vault re-evaluation propagation — A1):** Added a [[CSCO]] consumer-side demand-signal bullet to the "HBM4 ramp dynamics + 3-to-1 rule" section — Cisco's Q3 FY2026 "unprecedented" memory pricing (−260 bps GM; $16.0B purchase commitments) is the **first vault non-memory-operator, consumer-side P&L confirmation** of the commodity-memory ASP shock the 3-to-1 rule predicts (validates Open Q#12 from the downstream-buyer vantage). Honest-framing note added per Section 3.2(c): CSCO is a downstream networking buyer, NOT a memory operator — cross-vault demand-side validation only; **no memory_tier, not added to supplier-tier participants or tickers**. last_updated 2026-05-25 → 2026-05-29.
 - **2026-05-25 (Session 89; 1-stop refresh propagation post-S87 [[MU]] + S88 [[SNDK]] first canonical substantiation per Vic Decision #6 deferred work closure):** Supplier-tier MU row updated to vault-canonical status (memory_tier 2 + Layer 2 per Caveat #7); HBM3E → HBM4 generation transition refined with HBM4 36GB 12-high Vera Rubin customer naming + HBM4 16-high sampling (48GB; +33% capacity) + HBM4E 2027 ramp + 1γ DRAM technology node substantiation. NEW dedicated subsection "MU first canonical substantiation + SNDK non-participation observation (S89 NEW analytical product propagation)" added per S75 MKSI propagation note pattern. Section 3.6 cross-venue disclosure gap convention 7th reference per HBM4 customer naming asymmetry (Tier 1 SEC UndisclosedCustomerMember vs Tier 2 NVIDIA naming); falsification condition tracking deferred to MU canonical scope per Vic Decision #2 refinement. Cross-canonical NVIDIA bilateral mode taxonomy 5th reference (occurrence count 2 home + 5 reference post-S89). Frontmatter tickers updated: +MU per Section 3.2(b) provenance scope; SNDK preserved absent per non-participation scope (Tranche 2C-iii observation candidate flagged). last_updated 2026-05-21 → 2026-05-25.
 - **2026-05-21 (Session 75 minimal cross-reference — [[MKSI]] standalone first canonical ingest propagation):** Frontmatter tickers expansion 4 → 5 ([ONTO, COHU, AEHR, TSM, **MKSI**]) per Section 3.2 (b) multi-ticker provenance discipline. NEW substantive subsection "MKSI remote plasma + microwave for advanced DRAM applications equipment-tier participant (S75 NEW analytical product propagation)" added per S55/S59/S68 propagation pattern + S75 reserve scope. MKSI 5th canonical at HBM oligopoly chokepoint scope; sub-tier-1 OEM scope (equipment_tier 2 NEW sub-variant distinct from ONTO + AEHR Tier 1 OEM scope); FIRST multi-domain F5 + F8 + F9 simultaneous placement vault canonical; 5-tier scope discipline extended at HBM equipment-tier sub-tier-1 OEM layer; Lee Q1 2026 call explicit "remote plasma and microwave for advanced DRAM applications" verified at primary. last_updated 2026-05-15 → 2026-05-21. No other content edits per scope discipline.
 - **2026-05-15 (Session 65 cross-reference update — TSMC-CoWoS chokepoint refresh):** Reciprocal verification at S65 [[TSMC-CoWoS]] refresh substantive propagation of HBM integration tier paired chokepoint finding. S65 TSMC-CoWoS refresh delivered NEW substantive section "HBM integration tier paired chokepoint (S64 NEW analytical product)" — HBM upstream-vs-CoWoS integration tier pair formalization with sequential causation pattern documented + cross-domain 4-framework bridge substantiation. Paired chokepoint pattern (this page = upstream supplier-tier; [[TSMC-CoWoS]] S65 = integration-tier) reciprocally documented at both chokepoint pages per S57 [[BTM-grid-bypass-workaround]] + [[transformer-supply]] S63 paired-chokepoint methodology precedent. No content edits beyond cross-reference reciprocal verification per scope discipline.

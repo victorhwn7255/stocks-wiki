@@ -1,13 +1,13 @@
 ---
 name: agent-onboarding
-description: Load full context for the stocks-wiki vault. Invoke at the start of any new session before any other work — reads the anchor document, operational conventions, analytical scaffolding, current state, and all wiki content (24 company pages, 7 chokepoints, 8 themes). Use when starting fresh on this project; do not invoke if context is already loaded in the current conversation.
+description: Load full context for the stocks-wiki vault. Invoke at the start of any new session before other work — reads the anchor, operational conventions (CLAUDE.md), analytical scaffolding (frameworks.md), current state (MEMORY/log/index), and every wiki page catalogued in index.md (currently ~53 companies, 12 chokepoints, 11 themes, 1 relationship across wiki/). Skip only if context is already loaded in the current conversation.
 ---
 
 # Agent onboarding — stocks-wiki
 
 This skill orients a new Claude Code agent on the stocks-wiki vault by directing a complete read of the canonical files. It is a navigation aid, not a content cache. Canonical content lives in the files listed below; this skill specifies read order and meta-principles to apply.
 
-The vault is a personal research vault for AI datacenter supply chain and chokepoint analysis (multi-domain scope: compute, photonics, memory, energy, power, equipment, materials, and more — per `_thesis.md` rework + `frameworks.md` v10.1 + `CLAUDE.md` v9 codification). The agent maintains the wiki; the human curates sources and asks questions. Read everything below before responding to any task on this project.
+The vault is a personal research vault for AI datacenter supply chain and chokepoint analysis (multi-domain scope: compute, photonics, memory, energy, power, equipment, materials, and more — per `_thesis.md` rework + `frameworks.md` v10.1 + `CLAUDE.md` v9.3 codification). The agent maintains the wiki; the human curates sources and asks questions. Read everything below before responding to any task on this project.
 
 ## Read order
 
@@ -15,25 +15,32 @@ Follow this sequence. Each file is canonical for its scope; do not summarize unl
 
 ### 1. Anchor and conventions
 
-- **`wiki/_thesis.md`** — what the project is trying to figure out, current seed positions and conviction levels, disconfirming signals, dual-anchor portfolio reframing (compute + power infrastructure). **Never edited by the LLM by default.** Per CLAUDE.md v9 Section 1.1, a one-time Vic-authorized rework exception was applied during Sessions 32-36 arc (collaborative chat drafting); default ownership convention has resumed for all subsequent sessions. Future similar reworks require explicit Vic-authorized declaration; do not assume permission.
-- **`CLAUDE.md`** — operational conventions (currently v9). Source hierarchy, citation discipline, page conventions (multi-domain frontmatter; Outside Framework placement generalization; A1 three-mode framing; A4 / A4-bis framing gap conventions; A6 v9 8-pattern verification), four disciplines, scope rules.
-- **`raw/notes/frameworks.md`** — analytical scaffolding (currently v10.1). Frameworks 1-11 multi-domain (supply chain flow with 5 sub-domain diagrams; six value-capture layers; control-point analysis; structural-vs-cyclical per-domain; per-domain tier frameworks for photonics / memory / energy-power / equipment / materials; CAPEX flow allocation; cross-chokepoint themes). Human-maintained — propose edits at codification sessions; never silently revise. Same one-time-rework ownership exception as `_thesis.md` per CLAUDE.md v9 Section 1.1.
+- **`wiki/_thesis.md`** — what the project is trying to figure out, current seed positions and conviction levels, disconfirming signals, dual-anchor portfolio reframing (compute + power infrastructure). **Never edited by the LLM by default.** Per CLAUDE.md Section 1.1, a one-time Vic-authorized rework exception was applied during Sessions 32-36 arc (collaborative chat drafting); default ownership convention has resumed for all subsequent sessions. Future similar reworks require explicit Vic-authorized declaration; do not assume permission.
+- **`CLAUDE.md`** — operational conventions (currently v9.3; see the file header for the live version). Source hierarchy, citation discipline, page conventions (multi-domain frontmatter; Outside Framework placement generalization; A1 three-mode framing; A4 / A4-bis framing gap conventions; A6 8-pattern verification), four disciplines, scope rules.
+- **`raw/notes/frameworks.md`** — analytical scaffolding (currently v10.1; see the file header for the live version). Frameworks 1-11 multi-domain (supply chain flow with 5 sub-domain diagrams; six value-capture layers; control-point analysis; structural-vs-cyclical per-domain; per-domain tier frameworks for photonics / memory / energy-power / equipment / materials; CAPEX flow allocation; cross-chokepoint themes). Human-maintained — propose edits at codification sessions; never silently revise. Same one-time-rework ownership exception as `_thesis.md` per CLAUDE.md Section 1.1.
 
 ### 2. Current state
 
 - **`~/.claude/projects/-Users-victor-he-Downloads-Code-stocks-wiki/memory/MEMORY.md`** — auto-loaded at session start. Most recent vault state, monitoring counts, backlog items, process learnings. Treat as time-stamped snapshot — verify against current files where load-bearing.
 - **`log.md`** — append-only session-by-session execution log. Tail of file is most recent session's findings and Phase 4 reflection. Backlog and monitoring counts at session-close are canonical here.
-- **`index.md`** — catalog of all wiki pages with frontmatter (ticker, layer, photonics_tier, plus optional `memory_tier` / `energy_power_tier` / `equipment_tier` / `materials_tier` per multi-domain expansion per CLAUDE.md v9 Section 3.2; last_updated). Use as wiki navigation map.
+- **`index.md`** — **the authoritative catalog of every wiki page** with frontmatter (ticker, layer, photonics_tier, plus optional `memory_tier` / `energy_power_tier` / `equipment_tier` / `materials_tier` per multi-domain expansion per CLAUDE.md Section 3.2; last_updated). This is the list Section 3 reads against — trust it over any hard-coded page list.
+- **`raw/notes/refresh_log.md`** — reverse-chronological per-company refresh-ingest deltas (what changed since each company's prior baseline; codified Section 4.7). A reference read (not a mandatory full read) for quarter-over-quarter thesis-evolution context; most useful when the session's task is a refresh ingest.
 
-### 3. Substantive content (full read required for full context)
+### 3. Substantive content (full read = full context; this is the default)
 
-Read all pages in each directory. Do not skip; cross-session findings, reciprocal patterns, and chokepoint substantiation only become visible from cross-page reading.
+**Read every page in each wiki subdirectory.** Do not skip — cross-session findings, reciprocal patterns, and chokepoint substantiation only become visible from cross-page reading. **`index.md` is the authoritative catalog of what exists; read against it. Do NOT trust any hard-coded page list (it rots) — the directory enumeration below is stable, but the per-page set lives in `index.md`.** Current scope (verify against `index.md`): **~53 companies, 12 chokepoints, 11 themes, 1 relationship.**
 
-- **`wiki/companies/*.md`** — 24 company pages: AAOI, AEHR, ALAB, ANET, AVGO, AXTI, COHR, COHU, CRDO, CSCO, ETN, FLEX, FN, GEV, GLW, LITE, MRVL, NVDA, ONTO, PLAB, TSM, VECO, VIAV, VRT. Each has frontmatter, Thesis role, Financial snapshot, per-source content sections, Source audit notes, Change log.
-- **`wiki/chokepoints/*.md`** — 7 chokepoint pages: advanced-optical-packaging, cpo-integration, datacenter-laser-supply, InP-supply, optical-dsp-phy-supply, TSMC-CoWoS, wafer-level-siph-test.
-- **`wiki/themes/*.md`** — 8 theme pages: AI-demand-durability, chokepoint-investability-priorities, CPO-platform-battle, datacenter-photonics-supply-chain, foundry-competition, hyperscaler-custom-ASIC, NVDA-platform-integration, overseas-fab-expansion.
+- **`wiki/companies/*.md`** — company pages. Each has frontmatter, Thesis role, Financial snapshot, per-source content sections, Source audit notes, Change log.
+- **`wiki/chokepoints/*.md`** — chokepoint pages (provisional or canonical per CLAUDE.md Section 3.15).
+- **`wiki/themes/*.md`** — theme pages (dynamics / mechanism / absence types per CLAUDE.md Section 3.12).
+- **`wiki/relationships/*.md`** — relationship pages (currently `nvidia-supply-chain-commitments`): bilateral commercial-commitment + supply-chain-dependency + A1-mode analysis. **Read these — they are canonical cross-vault content.**
+- **`wiki/layers/*.md`** — layer pages (Framework 2 value-capture layers): a defined page type per CLAUDE.md Section 3.1 but **currently unpopulated (0 pages)**; read when populated.
 
-Total substantive content has grown materially since Session 19 baseline (~6,000-7,000 lines / 24 wiki pages); current vault is 39 wiki pages post-Session-37. Full read consumes meaningful context budget; that is the cost of full context. Specific line counts and per-page metrics are non-load-bearing — verify against canonical files when relevant.
+**Scale + how to load it.** A full read is now ~28,000 lines (~220–260k tokens) and grows every session. A **1M-context agent (this project's default) holds the full read comfortably** — load it efficiently with batched/parallel reads, and prefer the full read because rich cross-page context is the point. A **context-limited agent** should: read the orientation layer (Sections 1–2) fully, use `index.md` + `MEMORY.md` as the map, read the pages relevant to the session's task, optionally delegate breadth to domain-cluster sub-agents — and must **explicitly state it is operating with partial context** so the human knows. Per-page line counts are non-load-bearing; verify against canonical files when relevant.
+
+### 4. Verify full coverage
+
+After reading, confirm coverage against `index.md`: the number of pages read per directory should match the catalog. If any catalogued page was skipped, read it before proceeding — or, if operating with partial context by necessity, name the specific pages not yet read. This makes "full context" verified rather than assumed, and guards against silent partial onboarding as the vault grows.
 
 ## Meta-principles to apply
 
@@ -53,9 +60,9 @@ These are not duplications of `CLAUDE.md` — they are cross-cutting principles 
 
 ## Configuration file edit discipline
 
-- **`_thesis.md`** — never edited by the LLM by default. Vic-side action only. One-time Vic-authorized rework exception applied during Sessions 32-36 arc per CLAUDE.md v9 Section 1.1; default ownership convention has resumed.
-- **`frameworks.md`** — human-maintained at v10.1. LLM proposes edits at codification sessions; edits require explicit approval. No silent revisions. Same one-time-rework exception applies (v10/v10.1 collaborative chat drafting Sessions 32-36); default ownership resumed.
-- **`CLAUDE.md`** — operational conventions at v9. LLM proposes edits at codification sessions; edits require explicit approval.
+- **`_thesis.md`** — never edited by the LLM by default. Vic-side action only. One-time Vic-authorized rework exception applied during Sessions 32-36 arc per CLAUDE.md Section 1.1; default ownership convention has resumed.
+- **`frameworks.md`** — human-maintained (currently v10.1). LLM proposes edits at codification sessions; edits require explicit approval. No silent revisions. Same one-time-rework exception applies (v10/v10.1 collaborative chat drafting Sessions 32-36); default ownership resumed.
+- **`CLAUDE.md`** — operational conventions (currently v9.3). LLM proposes edits at codification sessions; edits require explicit approval.
 - **Wiki pages** — LLM-maintained. Standard editing per CLAUDE.md conventions (Source audit notes, Change log, frontmatter `last_updated`, citations).
 
 ## Active monitoring conventions
@@ -65,16 +72,25 @@ These conventions track patterns that warrant codification once a third instance
 - Tier 1/Tier 2 framing gap (B2 unified)
 - Cross-venue gap (structurally distinct from B2)
 - CEO combativeness
-- Reciprocal non-naming pattern
+- Reciprocal non-naming pattern — note: under reconciliation since the MRVL↔NVDA break (S102/S110; NVDA-platform-integration "Mode 4" is the documentation home); flagged as an open codification item.
+
+For the live accumulation state of these patterns (counts, threshold crossings, MEMORY drift), use the **`learning-monitor`** skill rather than re-deriving by hand.
 
 ## After onboarding
 
-Once the read sequence is complete, the agent has full vault context. Confirm onboarding completion to the user with a brief summary (vault state, current backlog items, monitoring conventions at current counts). Then proceed to the user's task.
+Once the read sequence is complete, the agent has full vault context. Confirm onboarding completion to the user with a brief summary that surfaces enough to **continue working immediately**:
+
+- **Current vault state** — scope (companies / chokepoints / themes / relationships) + most recent session (from the `MEMORY.md` top entry + `log.md` tail).
+- **Open Vic-side decision queue** — the "NEW Vic-side decision queue" / codification-candidate items in the latest `MEMORY.md` vault-state entry (these are the threads awaiting Vic's direction).
+- **Staging queue** — check `raw/filings/newly_fetched/`; any files there are sources Vic has dropped that are pending ingest (the typical next unit of work).
+- **Monitoring conventions** at current counts (defer to `MEMORY.md` / `learning-monitor`).
+
+**Sibling vault skills** (use rather than re-deriving by hand): **`check-recent-earnings`** — what reported recently / what's due for refresh-ingest; **`learning-monitor`** — pattern accumulation + codification readiness + MEMORY drift; **`connection-finder`** — candidate cross-page connections / new chokepoint/theme/relationship candidates.
 
 If the user provides a session kickoff with its own Phase 0 context-loading instructions, those instructions are session-specific and may overlap with this skill's read order — that overlap is acceptable; do not skip kickoff instructions because they were already covered here.
 
 ## Maintenance
 
-This skill is a navigation aid. It is updated when the vault's directory structure or canonical-file ownership changes, not on every session. Drift between this skill and `CLAUDE.md` / `frameworks.md` content is expected and acceptable for non-load-bearing items (specific monitoring counts, backlog item lists, vault metrics) because the skill points at canonical sources rather than caching their content. Drift on load-bearing items (read-order, meta-principles, edit discipline) requires correction.
+This skill is a navigation aid. It is updated when the vault's directory structure or canonical-file ownership changes, not on every session. **Page-count and per-page enumeration drift is eliminated by design** — Section 3 points at `index.md` rather than caching page lists, so the catalog stays current without skill edits. The **load-bearing items to keep current** are: the **directory list** (Read order Section 3), the **meta-principles**, the **edit discipline**, the **sibling-skill cross-references**, and the **version references** (CLAUDE.md / frameworks.md). Drift on those requires correction; everything else self-updates via the canonical-source pointers.
 
-Update this skill at codification sessions if the vault structure or principles change.
+Update this skill at codification sessions if the vault structure, canonical-file ownership, or sibling tooling changes.

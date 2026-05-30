@@ -66,17 +66,17 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` v9.2 Sect
 
 | Page | Related Tickers | Last Updated |
 |------|-----------------|--------------|
-| [TSMC-CoWoS](wiki/chokepoints/TSMC-CoWoS.md) | TSM, NVDA, AEHR, ONTO, AVGO, MRVL | 2026-05-24 |
+| [TSMC-CoWoS](wiki/chokepoints/TSMC-CoWoS.md) | TSM, NVDA, AEHR, ONTO, AVGO, MRVL | 2026-05-29 |
 | [InP-supply](wiki/chokepoints/InP-supply.md) | AXTI, LITE, COHR, AAOI, AVGO, VECO | 2026-05-29 |
-| [datacenter-laser-supply](wiki/chokepoints/datacenter-laser-supply.md) | LITE, COHR, NVDA, AAOI, FN, SIVE | 2026-05-28 |
+| [datacenter-laser-supply](wiki/chokepoints/datacenter-laser-supply.md) | LITE, COHR, NVDA, AAOI, FN, SIVE | 2026-05-29 |
 | [wafer-level-siph-test](wiki/chokepoints/wafer-level-siph-test.md) | AEHR | 2026-04-28 |
 | [optical-dsp-phy-supply](wiki/chokepoints/optical-dsp-phy-supply.md) | MRVL, AVGO, CRDO | 2026-05-29 |
 | [advanced-optical-packaging](wiki/chokepoints/advanced-optical-packaging.md) | FN, LITE, COHR, AAOI, TSEM, ANET, NOK, MKSI, NVDA, MRVL | 2026-05-29 |
 | [cpo-integration](wiki/chokepoints/cpo-integration.md) | NVDA, AVGO, MRVL, CRDO, LITE, COHR, AAOI, TSM, FN, ALAB, ANET, TSEM, SIVE, SOI | 2026-05-29 |
 | [HALEU-fuel-chokepoint](wiki/chokepoints/HALEU-fuel-chokepoint.md) | LEU, BWXT, CCJ, BE, GEV, CEG | 2026-05-29 |
 | [BTM-grid-bypass-workaround](wiki/chokepoints/BTM-grid-bypass-workaround.md) | BE, FCEL, GEV, CAT, CEG | 2026-05-29 |
-| [transformer-supply](wiki/chokepoints/transformer-supply.md) | ETN, GEV, NVDA | 2026-05-26 |
-| [HBM-oligopoly](wiki/chokepoints/HBM-oligopoly.md) | ONTO, COHU, AEHR, TSM, MKSI, MU | 2026-05-25 |
+| [transformer-supply](wiki/chokepoints/transformer-supply.md) | ETN, GEV, NVDA, FLEX | 2026-05-29 |
+| [HBM-oligopoly](wiki/chokepoints/HBM-oligopoly.md) | ONTO, COHU, AEHR, TSM, MKSI, MU | 2026-05-29 |
 | [liquid-cooling](wiki/chokepoints/liquid-cooling.md) | VRT, ETN, NVT, MOD, FLEX, COHR, ANET, AAON, NVDA | 2026-05-29 |
 
 ## Themes
@@ -87,7 +87,7 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` v9.2 Sect
 | [CPO-platform-battle](wiki/themes/CPO-platform-battle.md) | NVDA, TSM, AVGO, MRVL, ALAB, CSCO, LITE, COHR, AEHR, ONTO, AAOI, COHU, AXTI, VECO | 2026-05-29 |
 | [datacenter-photonics-supply-chain](wiki/themes/datacenter-photonics-supply-chain.md) | NVDA, TSM, AVGO, MRVL, ALAB, CSCO, COHR, LITE, AAOI, AEHR, ONTO, COHU, AXTI, VECO, GLW, FN, VRT, SOI | 2026-05-29 |
 | [hyperscaler-custom-ASIC](wiki/themes/hyperscaler-custom-ASIC.md) | ALAB, AAOI, MRVL, AVGO, NVDA, FN, CSCO | 2026-05-29 |
-| [foundry-competition](wiki/themes/foundry-competition.md) | TSM, NVDA, TSEM, XFAB | 2026-05-28 |
+| [foundry-competition](wiki/themes/foundry-competition.md) | TSM, NVDA, TSEM, XFAB, CSCO | 2026-05-29 |
 | [NVDA-platform-integration](wiki/themes/NVDA-platform-integration.md) | NVDA, COHR, LITE, GLW, VRT, ANET, ARM, AMD, INTC, MRVL | 2026-05-29 |
 | [overseas-fab-expansion](wiki/themes/overseas-fab-expansion.md) | TSM | 2026-04-19 |
 | [chokepoint-investability-priorities](wiki/themes/chokepoint-investability-priorities.md) | NVDA, AVGO, MRVL, CSCO, AEHR, AXTI, COHR, LITE, AAOI, ALAB, FN, GLW, VRT, ONTO, VECO, TSM, COHU | 2026-04-28 |
@@ -103,4 +103,4 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` v9.2 Sect
 
 | Page | Related Tickers | Last Updated |
 |------|-----------------|--------------|
-| [nvidia-supply-chain-commitments](wiki/relationships/nvidia-supply-chain-commitments.md) | NVDA, LITE, COHR, ETN, VRT, AVGO, ALAB, CSCO, ANET, FN, TSM | 2026-05-11 |
+| [nvidia-supply-chain-commitments](wiki/relationships/nvidia-supply-chain-commitments.md) | NVDA, LITE, COHR, ETN, VRT, AVGO, ALAB, CSCO, ANET, FN, TSM, MRVL | 2026-05-29 |

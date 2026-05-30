@@ -1,7 +1,7 @@
 ---
 type: theme
-tickers: [TSM, NVDA, TSEM, XFAB]
-last_updated: 2026-05-28
+tickers: [TSM, NVDA, TSEM, XFAB, CSCO]
+last_updated: 2026-05-29
 ---
 
 # Foundry Competition
@@ -33,6 +33,8 @@ C.C. Wei's response was carefully worded: "We are working with our customers for
 **Assessment:** Samsung's LPU win is narrow but symbolically significant — it represents Samsung's first meaningful AI chip manufacturing engagement. Whether this expands beyond LPU into GPUs or AI accelerators would be a much more material competitive development. Monitor for broadening.
 
 **LPU terminology update (NVDA Q4 FY2026 call + TSM 20-F FY2025):** The NVDA Q4 FY2026 call does not use the term "LPU" at all. The Vera Rubin platform is enumerated as seven named products — Vera CPU, Rubin GPU, NVLink 6 Switch, ConnectX-9, SuperNIC, BlueField-4 DPU, Spectrum-6 Ethernet Switch — none called "LPU." The Groq licensing deal is discussed separately as a technology integration (non-exclusive licensing agreement for low-latency inference), not as a chip product being manufactured at Samsung. The TSM 20-F FY2025 also does not use the term "LPU" anywhere in 244 pages (TSM 20-F FY2025). The TSM Q1 2026 call's reference to Samsung manufacturing "NVDA's LPU" now remains unresolved after three independent sources. The original reference may have been imprecise analyst/management shorthand, or the LPU may be an unannounced product. Defer to future product-focused sources (GTC, analyst day).
+
+**LPU resolution candidate via Groq LP30 (cross-vault link, [[NVDA-platform-integration]]).** A plausible reconciliation now exists: at GTC March 16, 2026, Jensen disclosed **LP30 — the third-generation LPU, manufactured by Samsung** — absorbed into the NVDA platform as a specialized low-latency-decode accelerator via NVIDIA Dynamo (per [[NVDA-platform-integration]] Groq modality). The Samsung-manufactures-an-LPU fact is therefore substantiated at the vault, and the most likely referent of the TSM Q1 2026 call's "NVDA's LPU at Samsung" is the **Groq LP30**, not a discrete NVDA-branded product. Epistemic hedge preserved: NVDA never explicitly equated "NVDA's LPU" with Groq's LP30, and the TSM-call phrasing was analyst shorthand — so this is a strong cross-vault link, not a confirmed identity. Competitively, it sharpens the Samsung read: Samsung's "AI foundry inroad" is an **inference-accelerator (LPU) win co-opted into the NVDA ecosystem**, not a GPU/leading-edge-logic win — narrower than the analyst "first true inroads" framing implied.
 
 ### ASE and OSAT competition
 
@@ -91,6 +93,7 @@ Specialty-foundry competitors named at primary include GlobalFoundries, UMC, Inf
 
 | Date | Source | Signal | Direction |
 |------|--------|--------|-----------|
+| 2026-05-13 | [[CSCO]] Q3 FY2026 call | First named Silicon One hyperscaler design wins (P200 ×2 + G200) + $16.0B purchase commitments — a large leading-edge networking-silicon foundry-demand datapoint | Informational — foundry-demand signal; foundry undisclosed (see note) |
 | 2026-04-16 | TSM Q1 2026 call | Samsung wins NVDA LPU manufacturing | Slight negative for TSMC |
 | 2026-04-16 | TSM Q1 2026 call | EMIB raised as packaging alternative | Neutral — acknowledged, not acute |
 | 2026-04-16 | TSM Q1 2026 call | Intel Terafab noted | Neutral — early stage, 3-5yr timeline |
@@ -108,6 +111,8 @@ Specialty-foundry competitors named at primary include GlobalFoundries, UMC, Inf
 
 **Net assessment (three primary sources + Tier 3 research):** TSMC's competitive position appears intact and is now framed by an additional upstream dimension: TSMC's installed-base lead in ASML EUV (~56% of global fleet, per external reconstruction) reinforces its downstream execution moat. Samsung's Taylor fab episode demonstrates that EUV access without customer pull does not translate into competitive pressure. Intel's High-NA strategy is the most differentiated competitive angle — earlier adoption at 14A — but remains unproven in production foundry volume. SMIC is structurally capped outside the EUV chain. The disconfirming signal ("TSMC's packaging advantage narrows") is not triggered by any source's evidence. The EUV dependency chain adds a new dimension: TSMC's advantage is partly derivative of being ASML's largest and most experienced downstream customer.
 
+*Foundry-demand / disclosure-gap note ([[CSCO]] Q3 FY2026, S108):* Cisco's first named Silicon One hyperscaler design wins (P200 ×2 scale-across + G200 scale-out) plus a $16.0B purchase-commitment surge mark a large new leading-edge networking-silicon foundry-demand vector — yet the CSCO FY2025 10-K names **no foundry** for Silicon One (no TSMC, no foundry attribution anywhere). This is a Tier 1 foundry-attribution gap consistent with this page's Tier 1/Tier 2 disclosure-asymmetry thread (a major leading-edge silicon buyer disclosing zero foundry relationship). It does not bear on the "packaging advantage narrows" disconfirming signal — surfaced as a foundry-demand + disclosure-gap observation only.
+
 ## Change log
 
 - **2026-04-19:** Created from TSM Q1 2026 earnings call (Tier 2). Covers Intel (Terafab, EMIB), Samsung (NVDA LPU win), OSAT dynamics, and TSMC's "no shortcuts" competitive defense.
@@ -115,3 +120,4 @@ Specialty-foundry competitors named at primary include GlobalFoundries, UMC, Inf
 - **2026-04-19:** Updated from TSM 20-F FY2025 (Tier 1). Added Tier 1 vs. Tier 2 competitive disclosure observation (20-F competition section generic, less useful than Q1 call). Updated LPU terminology to three-source absence. Added two evidence tracker rows.
 - **2026-04-20:** Updated from Tier 3 research (/raw/research/ASML-EUV-foundry-dependency.md). Added tiered EUV dependency chain section (TSMC deepest integration ~56% installed base, Samsung EUV-dependent but demand/yield often more binding, Intel differentiated by High-NA first-mover, SMIC outside EUV chain). Added EUV temporal nuance (2024 transition year, 2025-26 AI tightening). Added two-speed geopolitical dynamic (EUV blocked; active frontier is DUV/service restrictions). Added four evidence tracker rows. Net assessment updated to reflect upstream EUV dimension.
 - **2026-05-28 (S99 cross-reference update — XFAB canonical creation):** Added "Specialty foundry sub-scope" section distinguishing mature/specialty-node foundry competition (TSEM + XFAB, no EUV dependency, customer-migration-cost moat, non-overlapping specializations) from leading-edge logic competition (TSM/Intel/Samsung). Added [[TSEM]] + [[XFAB]] to tickers per Section 3.2(b) provenance. Specialty-foundry sub-scope is a monitoring lane distinct from the `_thesis.md` packaging-advantage disconfirming signal.
+- **2026-05-29 (S110 cross-vault re-evaluation propagation — A7):** Resolved the long-standing "Samsung manufactures NVDA's LPU" puzzle via cross-vault link to [[NVDA-platform-integration]] (Groq **LP30**, 3rd-gen LPU, Samsung-manufactured, GTC March 16 2026, absorbed via Dynamo) — epistemic hedge preserved; sharpens Samsung's read as an inference-accelerator win co-opted into the NVDA ecosystem, not a leading-edge-logic win. Added a CSCO Q3 FY2026 (S108) evidence-tracker row + foundry-demand/disclosure-gap note (first named Silicon One hyperscaler wins + $16.0B commitments, but zero foundry named at Tier 1). Added [[CSCO]] to tickers per Section 3.2(b) provenance. No change to the "packaging advantage narrows" disconfirming-signal assessment.

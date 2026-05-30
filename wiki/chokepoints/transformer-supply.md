@@ -1,8 +1,8 @@
 ---
 type: chokepoint
-tickers: [ETN, GEV, NVDA]
+tickers: [ETN, GEV, NVDA, FLEX]
 related_themes: [AI-demand-durability, chokepoint-investability-priorities]
-last_updated: 2026-05-26
+last_updated: 2026-05-29
 ---
 
 # Transformer + GOES steel chokepoint
@@ -175,11 +175,14 @@ Per Tier 3 source: distribution constraint is **pad-mount transformers + medium-
 ### Adjacent vault canonical + non-vault distribution-tier candidates
 
 - **[[ETN]]** — distribution-side anchor at transformer + switchgear + busbar + circuit protection scope (vault canonical)
+- **[[FLEX]]** — **vault canonical post-S103 (energy_power_tier 5 → 3 upgrade).** Flex's Cloud and Power Infrastructure (CPI) segment houses medium-voltage switchgear + power distribution + grid-modernization via **Crown Technical Systems** (MV switchgear/distribution) + **Anord Mardix** (switchgear/busway/power pods) + the May-2026 **EP² acquisition** (~$1.1B; utility-grade grid-modernization + electrification + long-cycle grid-resiliency programs). CPI = $6,614M / 24% of FY2026 net sales; spinning into a grid-to-chip AIDC pure-play (Q1 CY2027). Distribution/switchgear-tier participant; grid-resiliency scope overlaps ETN distribution-side anchor (FLEX FY2026 10-K + Q4 call, S103).
 - **Powell Industries (POWL)** — US-listed medium-voltage switchgear; "smaller-cap medium-voltage switchgear exposure with structural pricing power and AI datacenter tailwind" per `_thesis.md` Rank 5 Energy/Power. Sub-chokepoint candidate; Open question pre-registered.
 - **Schneider Electric (SBGSF ADR)** — European integrated solutions broader scope including switchgear + grid automation
 - **ABB (ABBNY ADR)** — Swiss-listed integrated solutions
 - **Prysmian (PRYMF) + Nexans + NKT** — HV cable adjacency
 - **Hubbell (HUBB)** — US-listed electrical equipment with data-center torque per Tier 3 source
+
+**ETN ↔ GEV-Prolec ↔ FLEX-Crown three-way mutual-non-naming triangle (NEW; S110).** Three vault canonicals now overlap at the transformer/switchgear/grid-distribution tier: [[ETN]] (transformer + switchgear anchor), [[GEV]] (Prolec GE transformer manufacturing), and [[FLEX]] (Crown MV switchgear + EP² grid modernization). Per FLEX.md S103, "GEV Prolec places GEV in direct transformer competition with both ETN and Crown — mutual non-naming across all three." This extends the existing ETN↔GEV mutual-non-naming pattern (Section above) to a **three-way** competitive equilibrium; structurally distinct from architect-customer non-naming. No A1 partnership mode (competitive co-positioning).
 
 ---
 
@@ -318,6 +321,7 @@ Per `CLAUDE.md` v9 Section 3.3 citation discipline + Section 3.15 spirit (Pathwa
 
 ## Change log
 
+- **2026-05-29 (S110 cross-vault re-evaluation propagation — A3):** Added [[FLEX]] as a vault-canonical distribution/switchgear-tier participant (energy_power_tier 5→3 post-S103) — Crown Technical Systems (MV switchgear) + Anord Mardix + the May-2026 EP² acquisition (~$1.1B grid modernization) within the CPI segment (24% of FY2026 net sales; spinning Q1 CY2027). Added the **ETN ↔ GEV-Prolec ↔ FLEX-Crown three-way mutual-non-naming triangle** (extends the prior ETN↔GEV pattern; competitive co-positioning, no A1 partnership mode). Added [[FLEX]] to tickers. No change to chokepoint binding-constraint thesis.
 - **2026-05-26 (in-place adjacency cross-reference per Vic instruction; not counted as separate session):** Cross-reference flag per `raw/research/liquid-cooling-for-datacenters.md` (2026-05-26): Tier 3 source mandatoriness scenarios (3-year / 5-year / 10-year frontier AI liquid cooling trajectory) substantively position transformer-supply chokepoint as upstream demand substrate — sequential causation pattern reinforced (transformer constraint upstream → liquid cooling chokepoint demand downstream per [[liquid-cooling]] 3-chokepoint cross-pairing scope). 1 MW rack envelope trajectory by ~2030 amplifies transformer-supply demand at AI datacenter scope. No content edits beyond cross-reference flag.
 - **2026-05-26 (in-place refresh per Vic instruction; not counted as separate session):** 4-Tier-3-report power-semi sub-domain substantiation (`raw/research/power-semis-investment-research.md` + `pure-play-power-semis.md` + `800VHDC-power-semis-for-AIDC.md` + `power-semi-for-800v-AIDC.md`) reinforces transformer-supply chokepoint as #2 binding bottleneck per Tier 3 Report 3 8-bottleneck ranking (only #1 utility grid interconnect ranks higher; power-semis #7 moderate/transient). Updated substantiation per Tier 3: **Wood Mackenzie Q2 2025: 128-week standard power transformer lead times + 144-week generator step-up units + some orders up to 4 years**; prices +77% since 2019; **IEA: prices up to 2.6× pre-pandemic in real terms; datacenter power density rose 11× 2020-2025 and will quadruple again by 2027**. **Sightline Climate: of 12 GW announced 2026 US datacenter capacity, only ~5 GW under construction** (more precise than `_thesis.md` "~50%" framing). **Hitachi Energy $457M South Boston VA transformer plant** part of $1B+ US investment program NOT operational until 2028; **Siemens $421M Charlotte expansion** still ramping. **EnkiAI: HV transformers + switchgear are "100% of the bottleneck" while accounting for <10% of total datacenter cost**. Transformer chokepoint binding-constraint thesis substantively REINFORCED post-Tier 3 acquisition; cross-vault adjacency to [[power-semis]] theme Section 12.4 framing strengthening. No content edits beyond cross-reference addition per scope discipline.
 - **2026-05-24 (Session 85 1-stop refresh batch propagation post-S81 NVDA + S82 NVDA-platform-integration):** Added NVDA Q1 FY2027 hyperscale CapEx forecast escalation observation at Adjacent chokepoint relationship section — $1T 2027 hyperscale CapEx (vs $700B 2026 baseline) + $3-4T 2030 AI infrastructure spending + multi-customer GPU count milestones (Microsoft Fairwater + AWS 1M+ + Google A5X 960k). ARM 4x CPU per gigawatt cross-reference. Vera CPU per-rack power efficiency compression noted; absolute power demand growth continues — transformer chokepoint binding constraint reinforced at multi-year scope without resolution. Frontmatter NVDA added per Section 3.2(b) provenance.
