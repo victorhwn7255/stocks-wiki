@@ -94,6 +94,7 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` v9.2 Sect
 | [AIDC-cooling-architecture-transition](wiki/themes/AIDC-cooling-architecture-transition.md) | VRT, ETN, NVT, MOD, FLEX, COHR, ANET, AAON | 2026-05-29 |
 | [AI-agentic-CPU-orchestration-reemergence](wiki/themes/AI-agentic-CPU-orchestration-reemergence.md) | ARM, AMD, INTC, NVDA | 2026-05-29 |
 | [power-semis](wiki/themes/power-semis.md) | NVTS, POWI, VICR, ON, MPWR | 2026-05-29 |
+| [software-AI-moat-durability](wiki/themes/software-AI-moat-durability.md) | MSFT, NOW, CRM, WDAY, SNOW, DDOG, PLTR, CRWD, ZS, PANW, ADBE, INTU, TEAM, SAP | 2026-06-01 |
 
 ## Layers
 

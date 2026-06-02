@@ -1,7 +1,7 @@
 ---
 type: theme
 tickers: [TSM, NVDA, LITE, COHR, AEHR, ONTO, AAOI, MRVL, AVGO, AXTI, VECO, ALAB, GLW, FN, VRT, CEG, CSCO, ENS]
-last_updated: 2026-05-29
+last_updated: 2026-06-01
 ---
 
 # AI Demand Durability
@@ -325,6 +325,7 @@ Based on evidence accumulated so far (will expand as more sources are ingested):
 4. **Multi-year hyperscaler commitment signals** — CSPs providing "very strong signal and positive outlook" (TSM Q1 2026 call, Tier 2 — management claim about customer sentiment). NVDA adds specificity: hyperscaler 2026 capex approaching $700B, and NVDA has purchase commitments extending into calendar 2027 (NVDA Q4 FY2026 call).
 5. **Hyperscaler ROI evidence emerging** — Meta's GEM model drove 3.5x ad click increase on Facebook and 1%+ conversation gain on Instagram, "translating into meaningful revenue growth" (NVDA Q4 FY2026 call). This is the most concrete customer ROI evidence ingested so far, though it is management-cited and from a single hyperscaler.
 6. **Physical AI as an emerging demand layer** — robotaxis (Waymo, Tesla, Uber, WeRide, Zoox), robotics, and autonomous systems contributed >$6B in NVDA FY2026 revenue. Jensen frames physical AI as "the next inflection beyond agentic AI" (NVDA Q4 FY2026 call).
+7. **Application-layer monetization as the demand-validation test** — whether deployed AI infrastructure is monetized at the software layer is the demand-side test of capex durability. [[software-AI-moat-durability]] (Tier 3-anchored, June 2026) finds this **bifurcated**: consumption-metered infrastructure/data/security revenue (AWS, Azure, Google Cloud, Snowflake, Datadog) scales with agent activity and validates the infra legs of the bet, while the productivity-seat leg (Copilot, Agentforce, seat-priced systems-of-record) is not yet proven. The structural risk is timing — capex deployed faster than value capture — the same shape as disconfirming signal #4 below.
 
 ## Disconfirming signals to watch
 
@@ -343,6 +344,7 @@ Evidence that would weaken the demand durability thesis:
 ## Cross-references
 
 - [[datacenter-photonics-supply-chain]] — layer-organized supply-chain structure underpinning the seven-position demand convergence; investability framing translates demand-durability evidence into qualification-spend buckets.
+- [[software-AI-moat-durability]] — demand-side / application-layer monetization sibling (Tier 3-anchored); tests whether deployed AI infrastructure is monetized at the software layer. Infra/data/security legs validate the capex bet; the productivity-seat leg is the watch item.
 
 ## Change log
 
@@ -368,3 +370,4 @@ Evidence that would weaken the demand durability thesis:
 - **2026-05-29 (S108 — [[CSCO]] Q3 FY2026 refresh propagation):** Added a "CSCO Q3 FY2026 — networking-side signal" subsection — hyperscaler AI orders $1.9B Q3 (vs $600M yr-prior), FY2026 target raised to ~$9B / ~$4B revenue (FY2027 ≥$6B), product orders +35% YoY, Acacia >$1B; plus a memory-pricing cost-side headwind (cross-ref [[HBM-oligopoly]]). Added CSCO to tickers. last_updated unchanged (2026-05-29).
 - **2026-05-29 (S107 — [[CEG]] new-canonical propagation):** Added a "CEG Q1 FY2026 — generation-side signal" subsection — the first **generation-side** demand signal (distinct from the compute/supply-chain positions): hyperscaler demand "not slowed," 2026 spending ~+75% YoY, 400k+ MW ERCOT large-load queue, ~5 GW into PJM queue, Crane/Microsoft 835 MW firm-clean PPA. Honest calibration: generation-side commentary with merchant-price exposure; CEG is "Adjacent — Power Generation" (`energy_power_tier outside`). Added CEG to tickers. last_updated unchanged (2026-05-29; same-day as MRVL).
 - **2026-05-29 (S109 — [[ENS]] FY2026 refresh propagation):** Added an "ENS Q4 FY2026 — datacenter-backup-power signal" subsection — a distinct backup-power/UPS layer of the buildout: data-center orders +36% YoY, lead-acid (TPPL) data-center revenue +high teens FY2026, first AI-datacenter-direct lithium UPS battery in customer commissioning (hyperscaler validation; revenue FY2028). Honest calibration: Tier 4 partial-fit name (datacenter is one Energy Systems sub-application; no separate disclosure; no named hyperscaler; Q4 DC revenue flat YoY on tough comp). Added ENS to tickers. last_updated unchanged (2026-05-29).
+- **2026-06-01 (S111 — [[software-AI-moat-durability]] sibling cross-link):** Added a "demand-validation test" item to Structural demand drivers + a Cross-references bullet linking the new Tier 3-anchored application-layer theme (app-layer monetization bifurcated — consumption infra/data/security validated, productivity-seat unproven). No ticker changes. last_updated 2026-05-29 → 2026-06-01.
