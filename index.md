@@ -64,6 +64,9 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` v9.2 Sect
 | [MSFT](wiki/companies/MSFT.md) | MSFT   | outside | outside | outside | outside      | outside   | outside   | 2026-06-02   |
 | [NOW](wiki/companies/NOW.md)   | NOW    | outside | outside | outside | outside      | outside   | outside   | 2026-06-02   |
 | [PLTR](wiki/companies/PLTR.md) | PLTR   | outside | outside | outside | outside      | outside   | outside   | 2026-06-02   |
+| [GOOGL](wiki/companies/GOOGL.md) | GOOGL | outside | outside | outside | outside      | outside   | outside   | 2026-06-02   |
+| [AMZN](wiki/companies/AMZN.md) | AMZN  | outside | outside | outside | outside      | outside   | outside   | 2026-06-02   |
+| [META](wiki/companies/META.md) | META  | outside | outside | outside | outside      | outside   | outside   | 2026-06-02   |
 
 ## Chokepoints
 
@@ -86,18 +89,19 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` v9.2 Sect
 
 | Page | Related Tickers | Last Updated |
 |------|-----------------|--------------|
-| [AI-demand-durability](wiki/themes/AI-demand-durability.md) | TSM, NVDA, LITE, COHR, AEHR, ONTO, AAOI, MRVL, AVGO, AXTI, VECO, ALAB, GLW, FN, VRT, CEG, CSCO, ENS | 2026-05-29 |
+| [AI-demand-durability](wiki/themes/AI-demand-durability.md) | TSM, NVDA, LITE, COHR, AEHR, ONTO, AAOI, MRVL, AVGO, AXTI, VECO, ALAB, GLW, FN, VRT, CEG, CSCO, ENS, MSFT, GOOGL, AMZN, META | 2026-06-02 |
 | [CPO-platform-battle](wiki/themes/CPO-platform-battle.md) | NVDA, TSM, AVGO, MRVL, ALAB, CSCO, LITE, COHR, AEHR, ONTO, AAOI, COHU, AXTI, VECO | 2026-05-29 |
 | [datacenter-photonics-supply-chain](wiki/themes/datacenter-photonics-supply-chain.md) | NVDA, TSM, AVGO, MRVL, ALAB, CSCO, COHR, LITE, AAOI, AEHR, ONTO, COHU, AXTI, VECO, GLW, FN, VRT, SOI | 2026-05-29 |
-| [hyperscaler-custom-ASIC](wiki/themes/hyperscaler-custom-ASIC.md) | ALAB, AAOI, MRVL, AVGO, NVDA, FN, CSCO | 2026-05-29 |
+| [hyperscaler-custom-ASIC](wiki/themes/hyperscaler-custom-ASIC.md) | ALAB, AAOI, MRVL, AVGO, NVDA, FN, CSCO, MSFT, GOOGL, AMZN, META | 2026-06-02 |
 | [foundry-competition](wiki/themes/foundry-competition.md) | TSM, NVDA, TSEM, XFAB, CSCO | 2026-05-29 |
 | [NVDA-platform-integration](wiki/themes/NVDA-platform-integration.md) | NVDA, COHR, LITE, GLW, VRT, ANET, ARM, AMD, INTC, MRVL | 2026-05-29 |
 | [overseas-fab-expansion](wiki/themes/overseas-fab-expansion.md) | TSM | 2026-04-19 |
 | [chokepoint-investability-priorities](wiki/themes/chokepoint-investability-priorities.md) | NVDA, AVGO, MRVL, CSCO, AEHR, AXTI, COHR, LITE, AAOI, ALAB, FN, GLW, VRT, ONTO, VECO, TSM, COHU | 2026-04-28 |
 | [AIDC-cooling-architecture-transition](wiki/themes/AIDC-cooling-architecture-transition.md) | VRT, ETN, NVT, MOD, FLEX, COHR, ANET, AAON | 2026-05-29 |
-| [AI-agentic-CPU-orchestration-reemergence](wiki/themes/AI-agentic-CPU-orchestration-reemergence.md) | ARM, AMD, INTC, NVDA | 2026-05-29 |
+| [AI-agentic-CPU-orchestration-reemergence](wiki/themes/AI-agentic-CPU-orchestration-reemergence.md) | ARM, AMD, INTC, NVDA, GOOGL, AMZN, META | 2026-06-02 |
 | [power-semis](wiki/themes/power-semis.md) | NVTS, POWI, VICR, ON, MPWR | 2026-05-29 |
 | [software-AI-moat-durability](wiki/themes/software-AI-moat-durability.md) | MSFT, NOW, CRM, WDAY, SNOW, DDOG, PLTR, CRWD, ZS, PANW, ADBE, INTU, TEAM, SAP | 2026-06-01 |
+| [hyperscaler-capex](wiki/themes/hyperscaler-capex.md) | MSFT, GOOGL, AMZN, META | 2026-06-02 |
 
 ## Layers
 

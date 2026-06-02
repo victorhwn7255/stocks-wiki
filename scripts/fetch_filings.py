@@ -85,6 +85,11 @@ COMPANIES = {
     "MSFT": {"cik": "0000789019", "forms": ["10-K", "10-Q"]},
     "NOW":  {"cik": "0001373715", "forms": ["10-K", "10-Q"]},
     "PLTR": {"cik": "0001321655", "forms": ["10-K", "10-Q"]},
+    "GOOGL": {"cik": "0001652044", "forms": ["10-K", "10-Q"]},
+    "AMZN": {"cik": "0001018724", "forms": ["10-K", "10-Q"]},
+    "META": {"cik": "0001326801", "forms": ["10-K", "10-Q"]},
+    "ORCL": {"cik": "0001341439", "forms": ["10-K", "10-Q"]},
+    "CRWV": {"cik": "0001769628", "forms": ["10-K", "10-Q"]},
 }
 
 HEADERS = {"User-Agent": USER_AGENT, "Accept": "application/json"}

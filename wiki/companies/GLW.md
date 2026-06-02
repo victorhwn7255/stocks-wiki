@@ -168,7 +168,7 @@ This is direct primary-source AI attribution at the segment-MD&A level — disti
 
 ### Meta $6B agreement (Tier 2 — Q4 2025 call)
 
-Wendell Weeks announced a multi-year, **up to $6B agreement** with Meta Platforms to support Meta's "apps, technologies, and AI ambitions" using Corning's "newest innovations in optical fiber, cable, and connectivity solutions" (GLW Q4 2025 call). Meta is the named anchor customer for the North Carolina capacity expansion and upgrade. The agreement structure includes "customer prepayments and stringent long-term customer commitments to provide revenue assurance."
+Wendell Weeks announced a multi-year, **up to $6B agreement** with [[META]] (Meta Platforms) to support Meta's "apps, technologies, and AI ambitions" using Corning's "newest innovations in optical fiber, cable, and connectivity solutions" (GLW Q4 2025 call). Meta is the named anchor customer for the North Carolina capacity expansion and upgrade. The agreement structure includes "customer prepayments and stringent long-term customer commitments to provide revenue assurance."
 
 Wendell Weeks explicitly mapped the agreement structure to prior Corning playbooks: "the model is quite similar to our extremely successful Gen 10.5 agreements with our display customers, and most recently, Apple's $2.5 billion commitment to produce 100% of iPhone and Apple Watch cover glass in our Kentucky facility. Basically, we're taking the proven approach in our glass businesses and applying it to optical communications" (GLW Q4 2025 call).
 

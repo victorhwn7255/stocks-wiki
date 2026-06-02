@@ -69,7 +69,7 @@ This section connects directly to the [[software-AI-moat-durability]] research g
 
 ## CAPEX & demand-durability
 
-MSFT is the vault's **first direct hyperscaler-CAPEX primary source** (previously the vault carried only NVDA's analyst-estimate ~$700B aggregate; see [[AI-demand-durability]]). Per the Q3 FY2026 10-Q + call:
+MSFT is the vault's **first direct hyperscaler-CAPEX primary source** (previously the vault carried only NVDA's analyst-estimate ~$700B aggregate; see [[AI-demand-durability]] + the [[hyperscaler-capex]] payer-comparison tracker). Per the Q3 FY2026 10-Q + call:
 
 - **Capex:** additions to property & equipment were **$30.9B** in Q3 (cash; up ~85% YoY from $16.7B; ~$31.9B including finance leases per the call, down sequentially on finance-lease delivery timing); $80.1B over nine months. Management guided **~$190B for calendar-year 2026** and Q4 capex to **>$40B** (call). Roughly two-thirds of spend is short-lived assets (servers/GPUs — the portion management frames as correlating with revenue) and one-third long-lived (datacenters/land/power, 15-year-plus lives).
 - **Backlog:** total remaining performance obligations **$633B** (10-Q); commercial RPO grew +26% YoY *excluding OpenAI* (call) — i.e., OpenAI is a material RPO component.

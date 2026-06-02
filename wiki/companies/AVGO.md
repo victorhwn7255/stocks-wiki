@@ -86,7 +86,7 @@ Six custom AI accelerator customers as of Q1 FY2026, corrected from five during 
 
 | Customer | Detail | Source |
 |----------|--------|--------|
-| Google | 7th-gen Ironwood TPU; continued 2026 growth; stronger demand from next-gen TPUs in 2027+ | AVGO Q1 FY2026 call |
+| [[GOOGL]] | 7th-gen Ironwood TPU; continued 2026 growth; stronger demand from next-gen TPUs in 2027+ | AVGO Q1 FY2026 call |
 | Anthropic | "1 GW of TPU compute" in 2026; demand surging to >3 GW in 2027 | AVGO Q1 FY2026 call |
 | Meta | MTIA "alive and well... we're shipping now"; next-gen XPUs to "multiple gigawatts in 2027 and beyond" | AVGO Q1 FY2026 call |
 | OpenAI | 6th customer; 1st-gen XPU 2027 at >1 GW; 10 GW deal through 2029 (analyst-sourced, not denied) | AVGO Q1 FY2026 call |
