@@ -84,6 +84,7 @@ COMPANIES = {
     "MPWR": {"cik": "0001280452", "forms": ["10-K", "10-Q"]},
     "MSFT": {"cik": "0000789019", "forms": ["10-K", "10-Q"]},
     "NOW":  {"cik": "0001373715", "forms": ["10-K", "10-Q"]},
+    "PLTR": {"cik": "0001321655", "forms": ["10-K", "10-Q"]},
 }
 
 HEADERS = {"User-Agent": USER_AGENT, "Accept": "application/json"}

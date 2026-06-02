@@ -62,6 +62,7 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` v9.2 Sect
 | [SOI](wiki/companies/SOI.md)   | SOI    | 6     | 3         | —      | —            | —         | 2         | 2026-05-29   |
 | [CEG](wiki/companies/CEG.md)   | CEG    | 2     | outside   | —      | outside      | outside   | outside   | 2026-05-29   |
 | [MSFT](wiki/companies/MSFT.md) | MSFT   | outside | outside | outside | outside      | outside   | outside   | 2026-06-02   |
+| [NOW](wiki/companies/NOW.md)   | NOW    | outside | outside | outside | outside      | outside   | outside   | 2026-06-02   |
 
 ## Chokepoints
 
