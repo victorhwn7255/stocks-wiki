@@ -453,7 +453,7 @@ Most strategically substantive source for Session 49 LEU side. Multi-firm Q&A co
 - **Oklo HALEU deconversion JV (March 2026 announcement) — partial resolution of S42 reactor developer naming gap:** *"exploring a joint venture with Oklo, focused on deconversion services for HALEU"*; Oklo = JV partner + large off-taker + customer triple-role; vertical integration framing; structural intersection with [[BWXT]] companion ingest's deconversion business
 - **FY2026 revenue guidance RAISED to $450-500M** (from $425-475M; +$25M midpoint to $475M); driven by commercial + operational progress + line of sight to long-term offtake
 - **Workforce additions Piketon raised** from 50+ to 100+ net new
-- **Palantir Foundry/AI partnership $300M identified cost savings** (Vexler: *"transformative...business-altering type structure...Palantir does is...real-time data...handles hundreds of suppliers...we've already declared $300 million in cost savings...we're not stopping there"*)
+- **[[PLTR]] (Palantir) Foundry/AI partnership $300M identified cost savings** (Vexler: *"transformative...business-altering type structure...Palantir does is...real-time data...handles hundreds of suppliers...we've already declared $300 million in cost savings...we're not stopping there"*)
 - **Geiger Brothers added as 3rd partner** (on-the-ground construction Ohio; previously served as key construction partner for existing HALEU cascade + 2013 LEU demonstration cascade)
 - **Fluor EPC partnership** (design engineering / procurement / construction / commissioning for Oak Ridge expansion)
 - **$560M Oak Ridge centrifuge manufacturing investment** (announced late January 2026; expanding + accelerating historic centrifuge manufacturing program)
