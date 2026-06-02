@@ -1,7 +1,7 @@
 ---
 type: theme
 tickers: [MSFT, NOW, CRM, WDAY, SNOW, DDOG, PLTR, CRWD, ZS, PANW, ADBE, INTU, TEAM, SAP]
-last_updated: 2026-06-01
+last_updated: 2026-06-02
 ---
 
 # Software moat durability in the AI era
@@ -51,11 +51,11 @@ The seat-pricing tension is no longer hypothetical: a software derating (labeled
 
 ## Company scorecard
 
-Verdicts and figures reproduced from the anchor report (§3); all metrics are management-reported unless otherwise noted and unverified against primary sources at construction. None of these companies are vault pages — names are plain text per forward-wikilink discipline.
+Verdicts and figures reproduced from the anchor report (§3); all metrics are management-reported unless otherwise noted and unverified against primary sources at construction. None of these companies are vault pages **except [[MSFT]] (ingested S112 — verdict validated at primary; see note below)** — names are plain text per forward-wikilink discipline.
 
 | Company | Moat type | AI-monetization evidence | Seat/pricing exposure | Top erosion risk | Verdict | Single falsifier |
 |---|---|---|---|---|---|---|
-| **MSFT (Microsoft)** | Distribution + Azure infra + data | AI run-rate ~$37B (+123% YoY); Copilot 20M+ paid seats; Azure +40% | Copilot is a per-seat add-on (~$30/user) — the model agents undercut; ~3.3% penetration | Capex (~$190B CY26) far exceeds AI revenue; OpenAI dependency (claimed 45% of Azure RPO); Copilot preference share ~8% | **Durable (infra/Azure) + Contested (Copilot seat monetization)** | Azure growth below ~35% for two consecutive quarters absent a supply explanation |
+| **MSFT (Microsoft)** | Distribution + Azure infra + data | AI run-rate ~$37B (+123% YoY); Copilot 20M+ paid seats; Azure +40% | Copilot is a per-seat add-on (~$30/user) — the model agents undercut; ~3.3% penetration | Capex (~$190B CY26 confirmed at primary, S112) far exceeds AI revenue; OpenAI dependency RPO-material but unquantified ("45% of Azure RPO" not supported at primary, S112); Copilot preference share ~8% | **Durable (infra/Azure) + Contested (Copilot seat monetization)** | Azure growth below ~35% for two consecutive quarters absent a supply explanation |
 | **NOW (ServiceNow)** | System-of-record + workflow lock-in | Now Assist net-new ACV >$600M FY25, tracking ~$1B FY26; largest deal >$20M | High: fulfiller-seat licensing; customers guided to expect ~80% fewer fulfiller seats as Now Assist auto-resolves | Seat deflation in IT/HR service desks; opaque consumption overlay | **Contested, leaning durable** | Net-new fulfiller-seat ACV turning negative while Now Assist consumption fails to offset |
 | **CRM (Salesforce)** | System-of-record + data | Agentforce + Data 360 ARR ~$2.9B (Agentforce ~$800M, +169%) | High: classic per-seat CRM; cut its own support 9,000→5,000 | Organic growth ~9% ex-Informatica; agents bypassing the UI | **Contested** | Core (ex-Data 360/Agentforce) subscription growth below mid-single digits |
 | **WDAY (Workday)** | System-of-record (HR/finance) | Emerging AI products >$100M new ACV Q4 FY26; AI ARR >$400M | High: per-employee pricing; agents reduce the humans licensed | Jefferies downgrade Feb 2026 on per-seat risk; sub-growth decelerating | **Contested, leaning vulnerable** | NRR dropping below ~110% as agents replace licensed users |
@@ -69,6 +69,8 @@ Verdicts and figures reproduced from the anchor report (§3); all metrics are ma
 | **INTU (Intuit)** | SMB system-of-record + data | "AI-driven expert platform"; FY26 guide ~$21B (+12–13%) | Low–medium: outcome-oriented | AI-native bookkeeping/tax challengers | **Durable** | Online Ecosystem growth below ~15% |
 | **TEAM (Atlassian)** | Workflow + Teamwork Graph | Rovo 5M MAU; AI code-gen users expand seats ~5% faster | Medium: per-seat dev/PM tools | MCP lets rivals pull the same context — moat narrows to UI | **Contested, leaning durable** | Seat growth stalling as standalone coding agents displace Jira-native surfaces |
 | **SAP** | ERP system-of-record + data | Cloud revenue +23%; backlog €77B (+30% cc); Business AI in ⅔ of Q4 cloud order entry | Medium: large seat/subscription base | Current-cloud-backlog deceleration; agents over ERP via API | **Durable, decelerating** | Constant-currency current-cloud-backlog growth falling materially below ~25% |
+
+**Primary-source validation — [[MSFT]] (S112, first scorecard name ingested).** The MSFT verdict (Durable infra/Azure + Contested Copilot-seat) holds at primary. The billed-unit discriminator is substantiated by MSFT's own split: the **consumption-metered** Azure leg grew +40% (accelerating) at a Microsoft Cloud gross margin compressing to 66% under AI-infra scaling (Durable/amplified); the **seat-metered** Copilot leg reached 20M+ paid seats but its AI revenue is disclosed only as a call-only non-GAAP "$37B ARR" construct with no clean Tier-1 line (Contested + the disclosure-quality caveat). Two flagged Tier-3 claims were corrected at primary — see Open questions.
 
 ## Honest counterpoints — deep-looking moats judged AI-vulnerable
 
@@ -96,7 +98,7 @@ The structural risk per the anchor (citing Allianz / Epoch AI) is **timing, not 
 
 Pre-registered per the Tier 3-anchored convention (CLAUDE.md Section 3.13) — the primary-source tests a future ingest would run. Framed as analytical reclassification triggers (describe-don't-recommend; the anchor's "Recommendations" thresholds are reproduced here as classification logic, not investment guidance).
 
-**First primary-source ingest candidates:** **MSFT** (hyperscaler / CAPEX-flow + infrastructure anchor; would also slot into [[AI-demand-durability]] and [[hyperscaler-custom-ASIC]]) and **NOW** (the first pure application-layer page) — both carry defended verdicts above awaiting primary-source confirmation.
+**Primary-source ingest candidates:** **[[MSFT]]** — ✓ ingested S112 (hyperscaler / CAPEX-flow + infrastructure anchor; also propagated to [[AI-demand-durability]] and [[hyperscaler-custom-ASIC]]); scorecard verdict held at primary. **NOW** remains the next candidate (the first pure application-layer page) — carries a defended verdict above awaiting primary-source confirmation.
 
 **Reclassification triggers (per company):**
 1. A Contested seat-name (NOW, CRM, WDAY, MSFT-Copilot, ADBE, TEAM) reclassifies toward *durable* if a separately-disclosed consumption/usage revenue line crosses ~20% of incremental growth at stable gross margin; toward *vulnerable* if net revenue retention drifts to ~110% with seat count flat or declining.
@@ -105,9 +107,9 @@ Pre-registered per the Tier 3-anchored convention (CLAUDE.md Section 3.13) — t
 **Cross-cutting metrics to watch (anchor §5):** net revenue retention at seat-anchored incumbents; consumption/AI revenue disclosed as a clean separate line (vs. bookings); gross-margin trajectory under inference load; seat-count vs. usage divergence; AI-feature *usage depth* (not announcements); the hyperscaler capex-to-AI-revenue ratio; AI-native challenger share in support/SDR/contract workflows; pricing-model migration pace.
 
 **Single-source / uncorroborated claims to verify at ingest (flagged Tier 3):**
-- **"OpenAI = 45% of Azure RPO"** and **MSFT ~$190B CY26 capex / Azure +40%** — net-new to the vault (no prior MSFT ingest); verify against MSFT primary sources.
+- **MSFT ~$190B CY26 capex / Azure +40%** — ✓ confirmed at primary (MSFT Q3 FY2026 call, S112; see [[MSFT]]). **"OpenAI = 45% of Azure RPO"** — ✗ not supported at primary: no such percentage disclosed; RPO is material but unquantified (total RPO $633B; commercial RPO grew +26% YoY *excluding* OpenAI).
 - The **Recon Analytics survey** (8% Copilot preference vs 70% ChatGPT) — a single survey carrying the "distribution ≠ monetization" finding.
-- **MSFT ~$37.5B single-quarter short-lived-asset capex** — verify period/source.
+- **MSFT ~$37.5B single-quarter short-lived-asset capex** — ✗ mischaracterized (S112): $37.5B was Q2 FY2026 *total* capex; short-lived-asset capex is not separately disclosed (Q3 cash capex $30.9B, ~⅔ short-lived per the call).
 - **Salesforce 9,000→5,000 support-headcount cut** — verify precise figure/period.
 - **CrowdStrike +73% net-new-ARR re-acceleration** — notable against prior deceleration; verify at the Q3 FY26 release.
 
@@ -121,3 +123,4 @@ Pre-registered per the Tier 3-anchored convention (CLAUDE.md Section 3.13) — t
 ## Change log
 
 - **2026-06-01 (S111 — creation):** Created as a Tier 3-anchored dynamics theme on the commissioned research synthesis (`raw/research/software-moat-durability-in-AI-era.md`, June 1 2026). Billed-unit (seat/consumption/outcome) as the primary moat discriminator; moat-archetype matrix + 14-company scorecard as the analytical body; honest counterpoints (AI-vulnerable deep moats) per honest-verdict discipline; demand-durability linkage (infra/data/security validated, productivity-seat unproven) cross-referenced to [[AI-demand-durability]]. MSFT + NOW pre-registered as first primary-source ingest candidates. Vault's first application-layer page — Section 1.2 scope-note proposed for a future codification session (CLAUDE.md not edited). No primary-source verification at construction (Section 3.13).
+- **2026-06-02 (S112 — [[MSFT]] primary-source validation):** MSFT ingested (vault's first hyperscaler page). Scorecard verdict held at primary (Durable infra/Azure + Contested Copilot-seat); billed-unit discriminator substantiated by MSFT's own seat-vs-consumption split. Two flagged Tier-3 claims resolved — Azure +40% / ~$190B CY26 capex confirmed; "OpenAI = 45% of Azure RPO" not supported (RPO material but unquantified) and "$37.5B short-lived-asset capex" mischaracterized (was Q2 total capex). Added validation note after the scorecard. last_updated 2026-06-01 → 2026-06-02.

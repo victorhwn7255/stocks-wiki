@@ -1,7 +1,7 @@
 ---
 type: theme
-tickers: [TSM, NVDA, LITE, COHR, AEHR, ONTO, AAOI, MRVL, AVGO, AXTI, VECO, ALAB, GLW, FN, VRT, CEG, CSCO, ENS]
-last_updated: 2026-06-01
+tickers: [TSM, NVDA, LITE, COHR, AEHR, ONTO, AAOI, MRVL, AVGO, AXTI, VECO, ALAB, GLW, FN, VRT, CEG, CSCO, ENS, MSFT]
+last_updated: 2026-06-02
 ---
 
 # AI Demand Durability
@@ -315,6 +315,10 @@ This is additive to the existing accelerator demand evidence base, not substitut
 
 [[ENS]] (EnerSys; energy_power_tier 4, S45) adds a **datacenter-backup-power / UPS** demand signal — a distinct layer of the buildout from compute (NVDA/AVGO/MRVL), networking (CSCO), and generation (CEG). Per the FY2026 10-K + Q4 FY2026 call: data-center *orders* +36% YoY; lead-acid (TPPL) data-center revenue grew "high teens" FY2026 YoY where ENS holds a leading market position; and ENS advanced its **first AI-datacenter-direct lithium UPS battery** into customer commissioning with hyperscaler validation underway (revenue not expected until FY2028). Management: "we continue to see healthy demand as customers invest in AI infrastructure and data center expansion." Honest calibration: ENS is a Tier 4, partial-thesis-fit name (datacenter is one sub-application within its 43%-of-revenue Energy Systems segment; no separate datacenter revenue disclosure; no named hyperscaler), and Q4 data-center revenue was flat YoY on a tough comp — so the +36% order growth + full-year high-teens is the durable read, corroborating backup-power demand durability from the storage vantage.
 
+### MSFT Q3 FY2026 — first direct hyperscaler-CAPEX signal (Tier 1 + Tier 2, quarter ended March 31, 2026 = calendar Q1 2026)
+
+[[MSFT]] (Microsoft; the vault's first hyperscaler / demand-side page, S112) adds the **demand source itself** — the first *direct* hyperscaler-CAPEX primary source (prior hyperscaler-capex evidence in this page was NVDA's analyst-estimate ~$700B aggregate). Per the Q3 FY2026 10-Q + call: capital expenditures (additions to property & equipment) $30.9B in the quarter (+~85% YoY; ~$31.9B including finance leases), with management guiding **~$190B for calendar-year 2026** and Q4 capex >$40B; Azure grew **+40%** (accelerating); total remaining performance obligations **$633B** (commercial RPO +26% YoY excluding OpenAI); Maia 200 + Cobalt in-house silicon live. Honest calibration: this is the demand-side / CAPEX-deployer vantage (MSFT is the buyer; `layer: outside`), and CFO Amy Hood directly addressed an investor "disconnect" between capex growth and revenue growth — the same timing risk [[software-AI-moat-durability]] flags (consumption/infra leg monetizing; productivity-seat leg unproven). The ~$190B MSFT figure now primary-sources the largest single component of the ~$640-720B 2026 hyperscaler aggregate underlying this thesis.
+
 ## Structural demand drivers
 
 Based on evidence accumulated so far (will expand as more sources are ingested):
@@ -371,3 +375,4 @@ Evidence that would weaken the demand durability thesis:
 - **2026-05-29 (S107 — [[CEG]] new-canonical propagation):** Added a "CEG Q1 FY2026 — generation-side signal" subsection — the first **generation-side** demand signal (distinct from the compute/supply-chain positions): hyperscaler demand "not slowed," 2026 spending ~+75% YoY, 400k+ MW ERCOT large-load queue, ~5 GW into PJM queue, Crane/Microsoft 835 MW firm-clean PPA. Honest calibration: generation-side commentary with merchant-price exposure; CEG is "Adjacent — Power Generation" (`energy_power_tier outside`). Added CEG to tickers. last_updated unchanged (2026-05-29; same-day as MRVL).
 - **2026-05-29 (S109 — [[ENS]] FY2026 refresh propagation):** Added an "ENS Q4 FY2026 — datacenter-backup-power signal" subsection — a distinct backup-power/UPS layer of the buildout: data-center orders +36% YoY, lead-acid (TPPL) data-center revenue +high teens FY2026, first AI-datacenter-direct lithium UPS battery in customer commissioning (hyperscaler validation; revenue FY2028). Honest calibration: Tier 4 partial-fit name (datacenter is one Energy Systems sub-application; no separate disclosure; no named hyperscaler; Q4 DC revenue flat YoY on tough comp). Added ENS to tickers. last_updated unchanged (2026-05-29).
 - **2026-06-01 (S111 — [[software-AI-moat-durability]] sibling cross-link):** Added a "demand-validation test" item to Structural demand drivers + a Cross-references bullet linking the new Tier 3-anchored application-layer theme (app-layer monetization bifurcated — consumption infra/data/security validated, productivity-seat unproven). No ticker changes. last_updated 2026-05-29 → 2026-06-01.
+- **2026-06-02 (S112 — [[MSFT]] first-canonical ingest):** Added "MSFT Q3 FY2026 — first direct hyperscaler-CAPEX signal" subsection — the vault's first *direct* hyperscaler-capex primary source (~$190B CY2026 capex guidance, Azure +40%, RPO $633B, the capex-vs-revenue "disconnect"; demand-side `layer: outside`). Added MSFT to tickers. last_updated 2026-06-01 → 2026-06-02.

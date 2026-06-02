@@ -1,7 +1,7 @@
 ---
 type: theme
-tickers: [ALAB, AAOI, MRVL, AVGO, NVDA, FN, CSCO]
-last_updated: 2026-05-29
+tickers: [ALAB, AAOI, MRVL, AVGO, NVDA, FN, CSCO, MSFT]
+last_updated: 2026-06-02
 ---
 
 
@@ -146,6 +146,10 @@ The MRVL Q1 FY2027 NVIDIA partnership adds a new wrinkle to the custom-vs-mercha
 
 This refines the custom-ASIC thesis from the opposite side of Vera: rather than custom and merchant being a zero-sum substitution, the architectures interoperate. A custom-ASIC designer (MRVL) is now both a competitor to NVIDIA (named in the MRVL 10-K) and a partner whose custom silicon plugs into the NVIDIA fabric — with NVIDIA holding equity. MRVL guides custom revenue to "more than double" in FY2028 toward a >$10B FY2029 target (~$55B TAM × ~20% share; MRVL Q1 FY2027 call), so the custom franchise grows concurrently with deepening NVIDIA integration — consistent with the "both grow concurrently" refinement above. See [[NVDA-platform-integration]] Mode 4 for the bilateral-relationship documentation and [[MRVL]] for the partnership detail.
 
+### Microsoft Maia + Cobalt — primary-source confirmation (S112)
+
+[[MSFT]] (ingested S112; the vault's first hyperscaler page) primary-source-confirms two in-house silicon lines previously tracked counterparty-side / Tier 3: **Maia 200** AI accelerator ("over 30% improved tokens per dollar," live in Iowa + Arizona) and the **Cobalt** Arm server CPU (deployed in nearly half of datacenter regions; Databricks/Siemens/Snowflake) — both per the MSFT Q3 FY2026 call. This reciprocally confirms the [[MRVL]] Microsoft custom-silicon partnership and substantiates the "hyperscalers ARE building their own Arm CPU silicon at scale" refinement above (Cobalt now primary, alongside Graviton + Axion). MSFT carries demand-side placement (`layer: outside`); see [[MSFT]].
+
 ## Signals to track
 
 1. **Hyperscaler in-house silicon announcements.** Google already designs TPUs internally; watch for Meta, Amazon, or Microsoft announcements of fully in-house ASIC programs that bypass AVGO/MRVL.
@@ -169,3 +173,4 @@ This refines the custom-ASIC thesis from the opposite side of Vera: rather than 
 - **2026-05-29 (MRVL Q1 FY2027 refresh propagation):** Added "Marvell–NVIDIA NVLink Fusion — the 'bridge between custom and merchant'" subsection: NVLink Fusion interoperation of MRVL custom silicon with NVIDIA infrastructure + NVIDIA's $2.0B convertible-preferred stake + custom revenue to "more than double" FY2028 toward >$10B FY2029. Reinforces the "custom and merchant grow concurrently" refinement; cross-references [[NVDA-platform-integration]] Mode 4. last_updated 2026-05-24 → 2026-05-29.
 - **2026-05-24 (Session 84 cross-vault propagation post-S81 NVDA + S82 NVDA-platform-integration):** Added new section "Hyperscaler bilateral relationship multi-modal expansion + Vera CPU competitive entry" covering hyperscaler-side bilateral naming break at NVDA Q1 FY2027 (Microsoft Fairwater + AWS 1M+ + Google A5X 960k + Anthropic + 11 frontier labs); Vera CPU competitive entry vs Arm hyperscaler custom silicon (Graviton + Axion + Cobalt) at $200B TAM + $20B standalone; custom ASIC thesis refinement (multi-modal hyperscaler relationship — custom silicon + NVIDIA deployment + networking collaboration concurrent rather than zero-sum). Vera classification both framings preserved per Section 2.1 (NVIDIA custom silicon for host CPU role AND competitive entry vs hyperscaler internal Arm silicon). Reciprocal naming asymmetry observation brief; cross-reference [[NVDA-platform-integration]] S82 for dedicated documentation.
 - **2026-05-29 (CSCO Q3 FY2026 refresh propagation — S108):** Added a "[[CSCO]] Silicon One — the 'silicon diversity' alternative" note under the competitive-landscape section — Q3 FY2026 first named hyperscaler Silicon One design wins (P200 scale-across ×2 + G200 scale-out ×1; +3rd P200 early Q4); framed as a hyperscaler second-source to [[AVGO]] Tomahawk (networking/switch silicon, not XPU accelerators) via a captive-system revenue model (Layer 3 capability / Layer 5 revenue). Added CSCO to tickers. last_updated unchanged (2026-05-29).
+- **2026-06-02 (MSFT first-canonical ingest — S112):** Added "Microsoft Maia + Cobalt — primary-source confirmation" subsection — [[MSFT]] (vault's first hyperscaler page) primary-confirms Maia 200 + Cobalt (Q3 FY2026 call), reciprocally confirming the [[MRVL]] Microsoft custom partnership and substantiating the "hyperscalers ARE building Arm CPU silicon at scale" refinement. Added MSFT to tickers. last_updated 2026-05-29 → 2026-06-02.
