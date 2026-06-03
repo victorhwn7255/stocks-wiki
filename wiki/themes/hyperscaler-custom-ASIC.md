@@ -1,7 +1,7 @@
 ---
 type: theme
-tickers: [ALAB, AAOI, MRVL, AVGO, NVDA, FN, CSCO, MSFT, GOOGL, AMZN, META]
-last_updated: 2026-06-02
+tickers: [ALAB, AAOI, MRVL, AVGO, NVDA, FN, CSCO, MSFT, GOOGL, AMZN, META, ORCL]
+last_updated: 2026-06-03
 ---
 
 
@@ -178,6 +178,10 @@ Amazon matches the multi-modal refinement above — it builds captive accelerato
 
 **[[AVGO]] ↔ META reciprocal-confirmation (A1).** AVGO names Meta as a custom XPU customer ("Meta MTIA 'alive and well… we're shipping now'; multiple gigawatts in 2027 and beyond," AVGO Q1 FY2026 call). META primary now confirms the program (">1 GW … with Broadcom"), bilaterally confirming the counterparty disclosure — a **second hyperscaler↔AVGO reciprocal-confirmation** alongside [[GOOGL]]'s TPU. (Meta does not use the "MTIA" label on the call; the name is the AVGO/10-K-side label.) Meta is also an [[AMD]] MI450/Helios co-developer (6GW + a 160M-share AMD warrant, AMD-side) — its "significant amount of AMD chips" corroborates that deployment. The Broadcom-custom + AMD + NVIDIA mix is another instance of the "custom and merchant grow concurrently" refinement above.
 
+### Oracle — the merchant-silicon exception (S119)
+
+[[ORCL]] (Oracle; ingested S119; the program's 5th payer / vault's 5th hyperscaler) is the counterpoint that sharpens this page's thesis: **the one big hyperscaler building no captive accelerator.** Where MSFT (Maia), GOOGL (TPU), AMZN (Trainium) and META (MTIA/Broadcom) all design in-house silicon to bend the capex/margin curve, Oracle's OCI runs on **merchant NVIDIA/AMD GPUs** (and merchant/Ampere ARM CPUs) — "AI infrastructure, both GPU and CPU, continues to exceed supply" (Magouyrk, ORCL Q3 FY2026 call), with no Oracle-designed XPU disclosed anywhere in the FY2025 10-K, Q3 FY2026 10-Q, or call. Oracle's competitive lever is **multicloud neutrality** (running Oracle Database inside Azure/Google/AWS — the +531%-growth segment) plus speed of OCI capacity build, not silicon verticalization. The honest read: the captive-silicon trend is near-universal among the big hyperscalers but not literally unanimous — Oracle scales the same AI-infra capex ($39.2B in 9 months; +223%) entirely through merchant procurement, and so carries no warrant/co-development entanglement of the [[ALAB]]/[[AVGO]] type. Whether that stance holds as Oracle scales (vs eventually commissioning captive accelerators) is a forward watch item (see [[ORCL]] Open questions). Oracle does *not* extend the Amazon warrant pattern (no Oracle-named supplier warrant in the vault).
+
 ## Signals to track
 
 1. **Hyperscaler in-house silicon announcements.** Google already designs TPUs internally; watch for Meta, Amazon, or Microsoft announcements of fully in-house ASIC programs that bypass AVGO/MRVL.
@@ -205,3 +209,4 @@ Amazon matches the multi-modal refinement above — it builds captive accelerato
 - **2026-06-02 (GOOGL first-canonical ingest — S115):** Added "Google TPU + Axion — primary-source confirmation" subsection — [[GOOGL]] (2nd hyperscaler page after [[MSFT]]; first ingest under the PAYER/SPENDER program) primary-confirms TPU 8t/8i + Axion host CPU + the external-TPU-sales (captive→merchant) shift; establishes the [[AVGO]]↔GOOGL reciprocal-confirmation (AVGO names Google as lead XPU customer; GOOGL primary now confirms the TPU program). Added GOOGL to tickers. last_updated unchanged (2026-06-02).
 - **2026-06-02 (AMZN first-canonical ingest — S116):** Added "Amazon Trainium + Graviton — primary-source confirmation" subsection — [[AMZN]] (3rd hyperscaler page) primary-confirms Trainium >$225B revenue commitments (Anthropic + OpenAI multi-GW; "tens of billions CapEx savings"; Trainium2/3/4 supply-constrained) + Graviton (distinct, ARM-letter-sourced); plus a buyer-side note — AMZN is now the vault-page counterparty to the "Amazon NV Investment Holdings" supplier-warrant pattern ([[ALAB]]/[[AAOI]]/[[FN]] + [[FLEX]]/[[AAON]]); pattern still 3-instance, reframing trigger not fired. Added AMZN to tickers. last_updated unchanged (2026-06-02).
 - **2026-06-02 (META first-canonical ingest — S117):** Added "Meta MTIA / Broadcom + AMD + NVIDIA — primary-source confirmation" subsection — [[META]] (4th hyperscaler page) primary-confirms the "Meta Compute" stack (>1GW Broadcom-built custom silicon + AMD chips + NVIDIA systems); establishes the [[AVGO]]↔META reciprocal-confirmation (2nd hyperscaler↔AVGO reciprocal alongside GOOGL's TPU; "MTIA" is the AVGO/10-K-side label). Added META to tickers. last_updated unchanged (2026-06-02).
+- **2026-06-03 (ORCL first-canonical ingest — S119):** Added "Oracle — the merchant-silicon exception" subsection — [[ORCL]] (5th hyperscaler page) is the counterpoint: the one big hyperscaler building *no* captive accelerator, running OCI on merchant NVIDIA/AMD GPUs + merchant/Ampere ARM CPUs, competing on multicloud neutrality rather than silicon verticalization. Sharpens the thesis (captive-silicon is near-universal but not unanimous); ORCL carries no warrant/co-development entanglement and does not extend the Amazon warrant pattern. Added ORCL to tickers. last_updated 2026-06-02 → 2026-06-03.
