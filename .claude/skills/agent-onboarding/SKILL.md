@@ -1,23 +1,32 @@
 ---
 name: agent-onboarding
-description: Load full context for the stocks-wiki vault. Invoke at the start of any new session before other work — reads the anchor, operational conventions (CLAUDE.md), analytical scaffolding (frameworks.md), current state (MEMORY/log/index), and every wiki page catalogued in index.md (currently ~53 companies, 12 chokepoints, 11 themes, 1 relationship across wiki/). Skip only if context is already loaded in the current conversation.
+description: Load full context for the stocks-wiki vault. Invoke at the start of any new session before other work — reads BOTH thesis anchors (AI-datacenter + Defense & Drones), operational conventions (CLAUDE.md), both analytical frameworks, current state (MEMORY/log/index), and every wiki page catalogued in index.md (currently ~62 companies, 12 chokepoints, 13 themes, 1 relationship across wiki/). Skip only if context is already loaded in the current conversation.
 ---
 
 # Agent onboarding — stocks-wiki
 
 This skill orients a new Claude Code agent on the stocks-wiki vault by directing a complete read of the canonical files. It is a navigation aid, not a content cache. Canonical content lives in the files listed below; this skill specifies read order and meta-principles to apply.
 
-The vault is a personal research vault for AI datacenter supply chain and chokepoint analysis (multi-domain scope: compute, photonics, memory, energy, power, equipment, materials, and more — per `_thesis.md` rework + `frameworks.md` v10.1 + `CLAUDE.md` v9.3 codification). The agent maintains the wiki; the human curates sources and asks questions. Read everything below before responding to any task on this project.
+The vault is a personal research vault spanning **two thesis domains** (per `CLAUDE.md` v9.4 Section 1.2): (1) **AI datacenter supply chain & chokepoint analysis** — the founding/primary thesis (multi-domain scope: compute, photonics, memory, energy, power, equipment, materials, and more — per `_thesis.md` rework + `frameworks.md` v10.1); and (2) **Defense & Drones (unmanned systems)** — a second thesis domain added Session 123 (drones-first scope — per `_thesis-defense-drones.md` + `frameworks-defense-drones.md` v1.0). Each domain has its own human-owned `_thesis` + `frameworks` anchor pair; both share the same methodology, source hierarchy, and disciplines. The agent maintains the wiki; the human curates sources and asks questions. Read everything below before responding to any task on this project.
 
 ## Read order
 
 Follow this sequence. Each file is canonical for its scope; do not summarize unless asked.
 
-### 1. Anchor and conventions
+### 1. Anchors and conventions
 
-- **`wiki/_thesis.md`** — what the project is trying to figure out, current seed positions and conviction levels, disconfirming signals, dual-anchor portfolio reframing (compute + power infrastructure). **Never edited by the LLM by default.** Per CLAUDE.md Section 1.1, a one-time Vic-authorized rework exception was applied during Sessions 32-36 arc (collaborative chat drafting); default ownership convention has resumed for all subsequent sessions. Future similar reworks require explicit Vic-authorized declaration; do not assume permission.
-- **`CLAUDE.md`** — operational conventions (currently v9.3; see the file header for the live version). Source hierarchy, citation discipline, page conventions (multi-domain frontmatter; Outside Framework placement generalization; A1 three-mode framing; A4 / A4-bis framing gap conventions; A6 8-pattern verification), four disciplines, scope rules.
-- **`raw/notes/frameworks.md`** — analytical scaffolding (currently v10.1; see the file header for the live version). Frameworks 1-11 multi-domain (supply chain flow with 5 sub-domain diagrams; six value-capture layers; control-point analysis; structural-vs-cyclical per-domain; per-domain tier frameworks for photonics / memory / energy-power / equipment / materials; CAPEX flow allocation; cross-chokepoint themes). Human-maintained — propose edits at codification sessions; never silently revise. Same one-time-rework ownership exception as `_thesis.md` per CLAUDE.md Section 1.1.
+**The vault holds two thesis domains** (per CLAUDE.md v9.4 Section 1.2), each with its own human-owned `_thesis` + `frameworks` anchor pair. **Read both pairs** — a company can sit in both supply chains (a "dual-thesis page"; e.g. MP / AMD / NVDA / PLTR). The filenames are deliberately asymmetric: the AI-datacenter anchor is the *unmarked default* (`_thesis.md` / `frameworks.md`) because it is the founding/primary thesis; the Defense anchor is the *marked expansion* (`-defense-drones` suffix).
+
+**AI-datacenter domain (the founding/primary thesis):**
+- **`wiki/_thesis.md`** — the AI-datacenter anchor: what the project is trying to figure out, current seed positions and conviction levels, disconfirming signals, dual-anchor portfolio reframing (compute + power infrastructure). **Never edited by the LLM by default.** Per CLAUDE.md Section 1.1, a one-time Vic-authorized rework exception was applied during Sessions 32-36 arc (collaborative chat drafting); default ownership convention has resumed for all subsequent sessions. Future similar reworks require explicit Vic-authorized declaration; do not assume permission.
+- **`raw/notes/frameworks.md`** — the AI-datacenter analytical scaffolding (currently v10.1; see the file header for the live version). Frameworks 1-11 multi-domain (supply chain flow with 5 sub-domain diagrams; six value-capture layers; control-point analysis; structural-vs-cyclical per-domain; per-domain tier frameworks for photonics / memory / energy-power / equipment / materials; CAPEX flow allocation; cross-chokepoint themes). Human-maintained — propose edits at codification sessions; never silently revise. Same one-time-rework ownership exception as `_thesis.md` per CLAUDE.md Section 1.1.
+
+**Defense & Drones domain (second thesis, added Session 123; drones-first scope):**
+- **`wiki/_thesis-defense-drones.md`** — the Defense & Drones anchor: the chokepoints-over-platforms thesis for unmanned systems (airframes commoditizing toward ~$2,000; value sits upstream in magnets / secure chips / seekers / autonomy / compliant supply chains); the enacted-vs-requested budget discipline (only FY2025 reconciliation is law; FY2027 DAWG is a request); the chokepoint quality gradient (geology/physics > policy — note the Blue UAS exemption expiry Jan 1 2027); tiered company universe. **Same ownership as the AI anchor** — human-owned; never edited by the LLM by default (created Session 123 via the same Vic-authorized collaborative-drafting exception per CLAUDE.md Section 1.1).
+- **`raw/notes/frameworks-defense-drones.md`** — the Defense & Drones analytical scaffolding (v1.0). Frameworks D1-D7: value-chain flow; value-capture tiers → the `defense_tier` field (1 prime / 2 mid-cap pure-play / 3 speculative micro-cap / 4 supply-chain enabler — **the number is NOT a conviction rank**; conviction tracks the D5 quality gradient); demand map / programs of record; structural-vs-cyclical; chokepoint framework + quality gradient; the booked-contract-vs-narrative / financial-quality "LASE discipline" screen (D6); cross-thesis overlap. Human-maintained; same ownership discipline as `frameworks.md`.
+
+**Shared across both domains:**
+- **`CLAUDE.md`** — operational conventions (currently v9.4; see the file header for the live version). Source hierarchy, citation discipline, page conventions (multi-domain frontmatter incl. `defense_tier`; Outside Framework placement generalization; A1 three-mode framing; A4 / A4-bis framing gap conventions; A6 8-pattern verification; two-domain scope per Section 1.2), four disciplines, scope rules. **Applies to both thesis domains.**
 
 ### 2. Current state
 
@@ -28,7 +37,7 @@ Follow this sequence. Each file is canonical for its scope; do not summarize unl
 
 ### 3. Substantive content (full read = full context; this is the default)
 
-**Read every page in each wiki subdirectory.** Do not skip — cross-session findings, reciprocal patterns, and chokepoint substantiation only become visible from cross-page reading. **`index.md` is the authoritative catalog of what exists; read against it. Do NOT trust any hard-coded page list (it rots) — the directory enumeration below is stable, but the per-page set lives in `index.md`.** Current scope (verify against `index.md`): **~53 companies, 12 chokepoints, 11 themes, 1 relationship.**
+**Read every page in each wiki subdirectory.** Do not skip — cross-session findings, reciprocal patterns, and chokepoint substantiation only become visible from cross-page reading. **`index.md` is the authoritative catalog of what exists; read against it. Do NOT trust any hard-coded page list (it rots) — the directory enumeration below is stable, but the per-page set lives in `index.md`.** Current scope (verify against `index.md`): **~62 companies, 12 chokepoints, 13 themes, 1 relationship.** (The two `wiki/_thesis*.md` thesis anchors + the two `raw/notes/frameworks*.md` files are read in Section 1, not counted here — they are scaffolding, not catalogued wiki pages.)
 
 - **`wiki/companies/*.md`** — company pages. Each has frontmatter, Thesis role, Financial snapshot, per-source content sections, Source audit notes, Change log.
 - **`wiki/chokepoints/*.md`** — chokepoint pages (provisional or canonical per CLAUDE.md Section 3.15).
@@ -60,9 +69,9 @@ These are not duplications of `CLAUDE.md` — they are cross-cutting principles 
 
 ## Configuration file edit discipline
 
-- **`_thesis.md`** — never edited by the LLM by default. Vic-side action only. One-time Vic-authorized rework exception applied during Sessions 32-36 arc per CLAUDE.md Section 1.1; default ownership convention has resumed.
-- **`frameworks.md`** — human-maintained (currently v10.1). LLM proposes edits at codification sessions; edits require explicit approval. No silent revisions. Same one-time-rework exception applies (v10/v10.1 collaborative chat drafting Sessions 32-36); default ownership resumed.
-- **`CLAUDE.md`** — operational conventions (currently v9.3). LLM proposes edits at codification sessions; edits require explicit approval.
+- **`_thesis.md` + `_thesis-defense-drones.md`** (the two thesis anchors) — never edited by the LLM by default. Vic-side action only. One-time Vic-authorized exceptions applied per CLAUDE.md Section 1.1 (AI anchor reworked Sessions 32-36; Defense anchor created Session 123 via the same collaborative-drafting exception); default ownership convention resumes after each.
+- **`frameworks.md` (v10.1) + `frameworks-defense-drones.md` (v1.0)** (the two frameworks files) — human-maintained. LLM proposes edits at codification sessions; edits require explicit approval. No silent revisions. Same one-time-exception ownership discipline as the thesis anchors.
+- **`CLAUDE.md`** — operational conventions (currently v9.4). LLM proposes edits at codification sessions; edits require explicit approval.
 - **Wiki pages** — LLM-maintained. Standard editing per CLAUDE.md conventions (Source audit notes, Change log, frontmatter `last_updated`, citations).
 
 ## Active monitoring conventions
@@ -91,6 +100,6 @@ If the user provides a session kickoff with its own Phase 0 context-loading inst
 
 ## Maintenance
 
-This skill is a navigation aid. It is updated when the vault's directory structure or canonical-file ownership changes, not on every session. **Page-count and per-page enumeration drift is eliminated by design** — Section 3 points at `index.md` rather than caching page lists, so the catalog stays current without skill edits. The **load-bearing items to keep current** are: the **directory list** (Read order Section 3), the **meta-principles**, the **edit discipline**, the **sibling-skill cross-references**, and the **version references** (CLAUDE.md / frameworks.md). Drift on those requires correction; everything else self-updates via the canonical-source pointers.
+This skill is a navigation aid. It is updated when the vault's directory structure or canonical-file ownership changes, not on every session. **Page-count and per-page enumeration drift is eliminated by design** — Section 3 points at `index.md` rather than caching page lists, so the catalog stays current without skill edits. The **load-bearing items to keep current** are: the **directory list** (Read order Section 3), the **meta-principles**, the **edit discipline**, the **sibling-skill cross-references**, and the **version references** (CLAUDE.md / frameworks.md / frameworks-defense-drones.md) + the **two-domain anchor set** (both `_thesis` + both `frameworks` pairs). Drift on those requires correction; everything else self-updates via the canonical-source pointers.
 
 Update this skill at codification sessions if the vault structure, canonical-file ownership, or sibling tooling changes.

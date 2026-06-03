@@ -2,7 +2,7 @@
 
 A personal research vault for AI datacenter supply chain and chokepoint analysis. You maintain the wiki; the human curates sources and asks questions.
 
-*Version: v9.3 (Section 4.7 refresh-ingest-log convention added; Session 104; 2026-05-29). Prior: v9.2 Codification Tranche 2C-ii Session 86.*
+*Version: v9.4 (Section 1.2 two-domain scope + Section 3.2 `defense_tier` field + Section 1.3 raw/ per-ticker subfolder reorg — vault expanded to a 2nd thesis domain, Defense & Drones; Session 123; 2026-06-03). Prior: v9.3 Section 4.7 refresh-ingest-log Session 104.*
 
 ## Descriptive language convention
 
@@ -18,6 +18,8 @@ When referencing frameworks, tiers, caveats, or sections in prose content, use d
 
 ### 1.2 Vault scope
 
+**Two thesis domains (codified Session 123).** The vault spans **two parallel thesis domains**, each with its own human-owned `_thesis` + `frameworks` anchor: (1) **AI datacenter supply chain** — `wiki/_thesis.md` + `raw/notes/frameworks.md` (scope detailed below); (2) **Defense & Drones (unmanned systems)** — `wiki/_thesis-defense-drones.md` + `raw/notes/frameworks-defense-drones.md` (drones-first; broad munitions, European rearmament, and standalone directed-energy sequenced for future expansion). All CLAUDE.md conventions (source hierarchy, page conventions, disciplines, ingest protocols) apply to both domains. A company may be a **dual-thesis page** when it sits in both supply chains (e.g., [[MP]], [[AMD]], [[NVDA]], [[PLTR]]) — add the second domain's framing + `defense_tier` to the existing page rather than duplicating. Both anchor pairs are human-owned per Section 1.1 (the ownership exception applies equally to the Defense anchors).
+
 Current scope: **AI datacenter supply chain — compute, photonics, memory, energy, power, equipment, materials, and more.** Multi-domain chokepoint analysis. Binding 2026 constraint per _thesis.md rework: power infrastructure (~50% of planned 2026 US datacenter builds delayed/cancelled; 4-year transformer lead times).
 
 Multi-domain framework structures per frameworks v10.1: Framework 5 (photonics); F6 (memory); F7 (energy/power); F8 (equipment); F9 (materials provisional); F10 (CAPEX flow); F11 (cross-chokepoint themes). Per-domain `*_tier` placement enables cross-domain participants to carry multiple classifications (e.g., TSM photonics_tier 1 + memory_tier 1 + equipment_tier 2; VRT photonics_tier 4 + energy_power_tier 1).
@@ -32,7 +34,9 @@ Multi-domain framework structures per frameworks v10.1: Framework 5 (photonics);
 
 ```
 raw/         # source material — read from, never modify
-  filings/ transcripts/ research/ news/ notes/
+  filings/<TICKER>/      # SEC filings grouped per ticker (+ flat newly_fetched/ staging)
+  transcripts/<TICKER>/  # earnings-call transcripts grouped per ticker
+  research/ news/ notes/ references/
 wiki/        # your domain — write, update, interlink
   _thesis.md companies/ layers/ chokepoints/ themes/ relationships/
 index.md     # catalog of wiki pages
@@ -45,7 +49,7 @@ The `raw/notes/` folder contains human's prior conversations and framework notes
 
 **Claude Code operational memory.** Persistent memory file at `~/.claude/projects/.../memory/MEMORY.md` outside vault. Cross-session context continuity (compressed mirror of `log.md`, structural notes, conventions, cumulative monitoring counts per Section 3.8). Must not contain independent analysis affecting wiki pages without Stop 1/Stop 2 protocol. Not in `index.md`/`log.md`; updates do not count for accounting.
 
-**Path discrepancy verification.** Verify path conventions before committing new vault paths. Skill directories use hyphens (`.claude/skills/agent-onboarding/`); raw subdirectories no separators (`raw/filings/`). File locations: skill files → `.claude/skills/<skill-name>/SKILL.md`; reference docs → `raw/references/`; session prompts → `prompts/`; Vic-authored synthesis → `raw/notes/`. *See A.2.*
+**Path discrepancy verification.** Verify path conventions before committing new vault paths. Skill directories use hyphens (`.claude/skills/agent-onboarding/`); raw subdirectories no separators (`raw/filings/`). **`raw/filings/` + `raw/transcripts/` group source files into per-ticker subfolders using uppercase tickers** (`raw/filings/MP/MP-10K-2025-12-31.htm`; codified Session 123); `raw/filings/newly_fetched/` stays flat as the fetch/ingest staging queue, and `scripts/fetch_filings.py`'s skip-check derives the ticker from the filename prefix. File locations: skill files → `.claude/skills/<skill-name>/SKILL.md`; reference docs → `raw/references/`; session prompts → `prompts/`; Vic-authored synthesis → `raw/notes/`. *See A.2.*
 
 ## 2. Discipline
 
@@ -132,6 +136,7 @@ memory_tier: 1-5 | outside
 energy_power_tier: 1-5 | outside
 equipment_tier: 1-5 | outside
 materials_tier: 1-5 | outside       # provisional
+defense_tier: 1-4 | outside         # defense/drones domain; see Section 3.2 note (Option A taxonomy)
 foreign_issuer: true                # non-US-domiciled filers only
 last_updated: YYYY-MM-DD
 ---
@@ -140,6 +145,8 @@ last_updated: YYYY-MM-DD
 `layer` (Framework 2) and per-domain `*_tier` fields (Frameworks 5/6/7/8/9) distinct from source `Tier`. Multi-domain companies carry multiple `*_tier` classifications (TSM photonics_tier 1 + memory_tier 1 + equipment_tier 2; VRT photonics_tier 4 + energy_power_tier 1). For multi-layer exposure, single primary `layer` value; nuance in body prose. For non-company pages, `tickers` lists tickers whose primary sources substantively informed page content (provenance, not relevance tag).
 
 **Frontmatter convention reinforcement (codified Session 46).** (a) `foreign_issuer: true` — apply on company pages for non-US-domiciled filers (foreign private issuers + MJDS Canadian filers); absent on US-domiciled (default; S43 CCJ precedent). (b) `tickers` — single-ticker scope on company pages; multi-ticker scope on chokepoint/theme/relationship pages where multiple tickers' primary sources informed content (provenance, not relevance tag; S44 HALEU-fuel-chokepoint precedent). (c) `*_tier` application — apply per-domain field only when company has substantive exposure to that domain, not derivatively (do not assign memory_tier to NVDA because NVDA buys HBM; do assign to MU/SK Hynix/Samsung as memory-domain operators). `outside` is honest-verdict-correct per Section 3.10 four-criterion test (S36 FLEX precedent).
+
+**`defense_tier` convention (codified Session 123; Option A taxonomy).** `defense_tier` classifies Defense & Drones domain companies per the four investability/structural-position tiers in `raw/notes/frameworks-defense-drones.md` Framework D2: **1 = prime with drone-relevant programs of record; 2 = mid-cap pure-play / specialist; 3 = speculative micro-cap (apply Framework D6 financial-quality screen); 4 = supply-chain / materials enabler (chokepoint owner).** **Semantics note — unlike the AI `*_tier` fields, the `defense_tier` number is NOT a conviction/quality rank:** Tier 4 enablers carry the *highest* structural conviction (they own the chokepoints), not the lowest. Conviction tracks the chokepoint quality gradient (Framework D5: geology/physics > policy), not the tier number. `outside` is honest-verdict-correct for defense-adjacent names with weak unmanned-systems fit. Apply per the (c) substantive-exposure discipline above; dual-thesis pages (MP / AMD / NVDA / PLTR) carry `defense_tier` alongside their AI `*_tier` fields.
 
 ### 3.3 Voice, wikilinks, citations
 

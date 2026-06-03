@@ -5,7 +5,8 @@ fetch_filings.py — Download the most recent SEC filings for the stocks-wiki se
 Default behavior:
 - Downloads each filing as .htm from SEC EDGAR into a `newly_fetched/` staging
   subfolder of the output folder (a quarantine area to review before ingest)
-- Skips any filing already present in either the base output folder or the staging subfolder
+- Skips any filing already present in either the base output folder (organized into
+  per-ticker subfolders, e.g. raw/filings/<TICKER>/) or the flat staging subfolder
 
 Usage:
     python fetch_filings.py
@@ -50,6 +51,8 @@ COMPANIES = {
     "FN":   {"cik": "0001408710", "forms": ["10-K", "10-Q"]},
     "VRT":  {"cik": "0001674101", "forms": ["10-K", "10-Q"]},
     "CRDO": {"cik": "0001807794", "forms": ["10-K", "10-Q"]},
+    "AVAV": {"cik": "0001368622", "forms": ["10-K", "10-Q"]},  # AeroVironment — Defense & Drones; FY ends ~Apr 30 (Section 2.11)
+    "LSCC": {"cik": "0000855658", "forms": ["10-K", "10-Q"]},  # Lattice Semiconductor — Defense & Drones (secure FPGAs) + AI-datacenter dual-thesis
     "ANET": {"cik": "0001596532", "forms": ["10-K", "10-Q"]},
     "VIAV": {"cik": "0000912093", "forms": ["10-K", "10-Q"]},
     "PLAB": {"cik": "0000810136", "forms": ["10-K", "10-Q"]},
@@ -97,19 +100,31 @@ COMPANIES = {
 
 HEADERS = {"User-Agent": USER_AGENT, "Accept": "application/json"}
 
-# New filings are staged in this subfolder of the base filings dir before being curated
-# and ingested into the base dir. Both the downloader and the freshness scan treat a
-# filing as "already local" if it exists in EITHER the base dir or this staging
-# subfolder, so a staged-but-not-yet-ingested filing is never re-listed or re-downloaded.
+# New filings are staged in this (flat) subfolder of the base filings dir before being
+# curated and ingested into the base dir's per-ticker subfolders (raw/filings/<TICKER>/).
+# Both the downloader and the freshness scan treat a filing as "already local" if it
+# exists in EITHER the base dir (ticker subfolder) or this staging subfolder, so a
+# staged-but-not-yet-ingested filing is never re-listed or re-downloaded.
 STAGING_SUBDIR = "newly_fetched"
 
 
 def filing_already_local(
     filename: str, base_dir: Path | None, staging_dir: Path | None
 ) -> bool:
-    """True if filename is already present in the base (ingested) dir or the staging dir."""
+    """True if filename is already present in the base (ingested) dir or the staging dir.
+
+    The base dir is organized into per-ticker subfolders (raw/filings/<TICKER>/<filename>),
+    so the base check derives the ticker from the filename prefix. The staging dir stays
+    flat. The legacy flat base-dir location is also checked for backward compatibility.
+    """
+    # staging dir is flat; legacy flat base-dir files (pre-reorg) also matched here
     for d in (base_dir, staging_dir):
         if d and (d / filename).exists():
+            return True
+    # base dir is ticker-subfoldered: base_dir/<TICKER>/<filename>
+    if base_dir:
+        ticker = filename.split("-", 1)[0]
+        if (base_dir / ticker / filename).exists():
             return True
     return False
 
@@ -653,7 +668,7 @@ def format_freshness_report(
             "  Fetch one: `python scripts/fetch_filings.py --ticker TICKER --form FORM`"
         )
         out.append(
-            "  (files stage in raw/filings/newly_fetched/ — move to raw/filings/ after ingest)"
+            "  (files stage in raw/filings/newly_fetched/ — move to raw/filings/<TICKER>/ after ingest)"
         )
     else:
         out.append("- (local filings dir already current with the latest filings)")
