@@ -90,6 +90,9 @@ COMPANIES = {
     "META": {"cik": "0001326801", "forms": ["10-K", "10-Q"]},
     "ORCL": {"cik": "0001341439", "forms": ["10-K", "10-Q"]},
     "CRWV": {"cik": "0001769628", "forms": ["10-K", "10-Q"]},
+    # Nebius Group N.V. — Netherlands foreign private issuer (successor to Yandex N.V.);
+    # files 20-F annually + 6-K interim (no 10-K/10-Q). Per Section 4.2.
+    "NBIS": {"cik": "0001513845", "forms": ["20-F", "6-K"]},
 }
 
 HEADERS = {"User-Agent": USER_AGENT, "Accept": "application/json"}

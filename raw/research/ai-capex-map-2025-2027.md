@@ -1,0 +1,94 @@
+# Who's Spending on AI Datacenters: The 2025–2027 CAPEX Map
+
+## TL;DR
+- **AI datacenter CAPEX has roughly doubled in a single year**: TrendForce's May 6, 2026 estimate puts combined 2026 CapEx of the top nine cloud providers—"Google, AWS, Meta, Microsoft, Oracle, ByteDance, Tencent, Alibaba, and Baidu—up to approximately US$830 billion in 2026, with the annual growth rate raised from 61% to 79%." It is led by four US hyperscalers—Amazon (~$200B), Microsoft (~$190B), Alphabet ($180–190B), and Meta ($125–145B)—whose combined 2026 commitments alone approach $700 billion, up from ~$413 billion of actual calendar-2025 spend.
+- **Spending is extraordinarily concentrated and increasingly debt-financed**: the Big Four US hyperscalers plus Oracle account for the bulk of global outlays; Oracle ($50B FY26), OpenAI/Stargate (~$1.4T multi-year commitments, reset to ~$600B by 2030), neoclouds (CoreWeave, Nebius), xAI, Chinese hyperscalers, and Gulf sovereigns form the next tier. Funding has shifted from operating cash flow toward bonds, private credit, and off-balance-sheet SPVs.
+- **The constraint is now power and equipment, not capital, and bubble warnings are rising**: of at least 16 GW of datacenter capacity slated for 2026 globally, Sightline Climate's 2026 Data Center Outlook finds only about 5 GW is actually under construction—implying a large share will slip or cancel on grid/transformer bottlenecks—even as the IMF, Bank of England, Michael Burry, and others warn of stretched valuations and a capex-revenue gap of roughly $8–10 of capex per $1 of current AI revenue.
+
+## Key Findings
+
+### The ranking (2026 guided CAPEX, AI/datacenter-heavy)
+1. **Amazon** — ~$200 billion (2026 guidance), majority AWS/AI
+2. **Microsoft** — ~$190 billion (FY26 guidance)
+3. **Alphabet/Google** — $180–190 billion (raised from $175–185B)
+4. **Meta** — $125–145 billion (raised from $115–135B)
+5. **Oracle** — ~$50 billion (FY26)
+6. **CoreWeave** — $31–35 billion
+7. **ByteDance** — >RMB 200 billion (~$29B)
+8. **Nebius** — $16–20 billion
+9. **Alibaba** — ~$53 billion over three years (RMB 380B)
+10. **xAI** — ~$30 billion annualized run-rate
+
+These are not all the same kind of dollar. The hyperscalers fund mostly from cash flow; neoclouds and AI labs fund mostly from debt and equity raises; sovereigns commit multi-year ceilings rather than annual spend.
+
+### Aggregate picture
+- **Calendar 2025 actuals (Big Four)**: Alphabet $91.4B, Amazon $131.8B, Meta $72.2B, Microsoft ~$88B fiscal 2025 (~$118B calendar-2025 derived). Combined ≈ $383B fiscal / ~$413B calendar basis.
+- **2026 combined Big Four guidance**: approaching $700 billion; with Oracle, the top-five US players sum to $660–690 billion (Futurum, Feb 12, 2026).
+- **Top-nine global CSPs**: ~$830 billion in 2026 (+79% YoY), per TrendForce (May 6, 2026), which also notes AWS alone is "forecast to exceed $230 billion."
+- **Multi-year**: Goldman Sachs Global Institute's "Tracking Trillions" report (early May 2026) models ~$7.6 trillion cumulative AI capex 2026–2031 (≈$5.1T chips, $2.15T data centers, $358B power), with "$765 billion in annual AI CapEx in 2026, growing to $1.6 trillion…in 2031"—explicitly baseline estimates, not forecasts (shortening assumed chip life from 5 to 3 years adds ~$1T in annual depreciation). McKinsey estimates $6.7 trillion total data center capex by 2030; Dell'Oro sees worldwide data center capex hitting $1.7 trillion by 2030. The Big Four US hyperscalers are expected to represent about half of global data center capex by 2030.
+
+## Details
+
+### 1. Hyperscalers
+
+**Amazon — the largest single spender.** Amazon spent $131.82 billion in calendar 2025 (up 58.8% from $83.0B in 2024) and guided to ~$200 billion for 2026, disclosed on its Q4 2025 earnings call (Feb 5, 2026). CEO Andy Jassy: "we expect to invest about $200 billion in capital expenditures across Amazon in 2026," predominantly in AWS. AWS exited 2025 at a $142 billion run rate (Q4 +24% YoY, fastest in 13 quarters) and AWS AI revenue surpassed a $15 billion run rate in Q1 2026. Q1 2026 capex was $43.2 billion. Free cash flow collapsed to $7.7B in 2025 (from $32.9B), with capex consuming ~94.5% of operating cash flow. Custom silicon (Trainium, Graviton, Nitro) now exceeds a $20B run rate; Jassy says Trainium could save "tens of billions" of capex annually. Amazon raised $15 billion in bonds in November 2025, its first USD issuance in three years.
+
+**Microsoft — running near $190B, capacity-constrained.** Microsoft does not give a clean annual number but guided FY26 capex toward ~$190 billion (TrendForce; ~130% YoY), of which ~$25 billion reflects rising memory/component costs. Quarterly: FY26 Q1 (Sep 2025) $34.9B, FY26 Q2 (Dec 2025) $37.5B, with roughly half to two-thirds on short-lived GPU/CPU assets. Fiscal 2025 capex was ~$88B; calendar-2025 derived ~$118B. Management says it will increase total AI capacity by over 80% in FY26 and roughly double its datacenter footprint over two years; Azure remains capacity-constrained "at least through 2026." Commercial RPO hit $392 billion (+51% YoY), before an incremental $250 billion Azure commitment from OpenAI. Operating cash flow of $45.1B/quarter funds the buildout internally. The stock fell ~10% on Jan 28, 2026 after a second straight Azure miss.
+
+**Alphabet/Google — fastest-rising guidance.** Calendar 2025 capex was $91.4 billion ($27.9B in Q4); CFO Anat Ashkenazi noted ~60% went to servers, 40% to data centers/networking. Initial 2026 guidance of $175–185 billion (announced Feb 4, 2026) was raised to $180–190 billion at Q1 2026 (April 29, 2026); Ashkenazi said 2027 capex would "significantly increase." Google Cloud grew 63% in Q1 2026 with a backlog reported above $460 billion; Pichai: "We are compute constrained in the near term." Alphabet acquired data center developer Intersect for $4.75 billion (Dec 2025).
+
+**Meta — biggest relative jump, most investor anxiety.** Meta spent $72.22 billion in 2025 (incl. finance leases) and guided 2026 to $115–135 billion, raised to $125–145 billion at Q1 2026 (April 29, 2026), citing higher component prices and "additional data center costs to support future-year capacity." Q1 2026 revenue grew 33% to $56.3B, but the stock fell ~6% on the capex raise. Multi-year infrastructure commitments jumped ~$107 billion in a single quarter. Meta uses off-balance-sheet structures: its Hyperion datacenter in Louisiana is funded via a ~$30 billion SPV (Blue Owl owns 80%, Meta 20%; $27B+ of A+-rated debt to 2049, PIMCO ~$18B anchor), arranged by Morgan Stanley—the largest private capital deal on record.
+
+**Apple — the deliberate outlier.** Apple spent just $12.72 billion in fiscal 2025 (up 35% YoY) and guides to roughly $14 billion for 2026—essentially flat and a fraction of peers. It runs a hybrid model: building first-party "Private Cloud Compute" on Apple Silicon while renting third-party capacity and pushing inference onto device. Apple is betting foundation models commoditize; critics call it underinvestment.
+
+### 2. Oracle & Stargate
+
+**Oracle** raised FY2026 (ending May 2026) capex guidance from $35B to ~$50 billion—up from $21.2B in FY25 and just $6.9B in 2024, a more than 7x increase in two years. Through nine months of FY26 it used $39.2 billion in capex; trailing free cash flow was about –$24.7 billion, and total debt exceeded $100 billion. RPO exploded to $553 billion (+325% YoY) by Q3 FY26, with OpenAI estimated at roughly half. CEO Safra Catz guided OCI revenue from $18B (FY26) to $32B, $73B, $114B, and $144B over the following four years. Oracle funded the build with an $18 billion bond (Sept 2025, ~5x oversubscribed) and ~$38 billion in JPMorgan-led term loans; total partner-debt packages exceed $72 billion. Notably, Oracle does not own most of the physical datacenters it uses. Blue Owl walked away from a $10 billion Oracle data center financing citing spending-pace concerns.
+
+**Stargate** (OpenAI + SoftBank + Oracle, announced Jan 2025) targets $500 billion and 10 GW by end of 2025, expanding to nearly 7 GW of planned capacity and over $400 billion across five new US sites plus the Abilene, TX flagship. Abilene will deploy 450,000+ GB200 GPUs under a 15-year Oracle lease; developer Crusoe secured $15B in debt/equity (mostly a $9.6B JPMorgan package) for it.
+
+**OpenAI's total compute commitments** reached ~$1.4 trillion over eight years (Altman, Nov 2025), spanning Oracle (~$300B), Nvidia (up to $100B investment / 10 GW), AMD (6 GW / ~$90B), Microsoft Azure (incremental $250B), AWS ($38B over 7 years), Broadcom (custom chips, ~10 GW), and CoreWeave (~$22.4B). In February 2026, OpenAI reset guidance to investors to ~$600 billion of total compute spend by 2030, targeting ~$280 billion in 2030 revenue (from $13.1B in 2025). Goldman estimates OpenAI loses $14 billion in 2026; HSBC estimates it needs ~$207 billion more by 2030.
+
+### 3. Neoclouds / GPU clouds
+
+**CoreWeave** — the flagship pure-play. Guided 2026 capex to $30–35 billion, roughly double prior year, against $12–13 billion of 2026 revenue guidance. Q1 2026 revenue was $2.08B (+111.7% YoY); backlog $99.4 billion; ~3.5 GW contracted power. It ended Q1 with $17.3B+ debt (vs. $4.9B a year earlier) and has raised over $20 billion in capital in 2026 alone (an $8.5B term loan, a $2B Nvidia equity investment, a $3.1B GPU-backed facility). Microsoft was ~67% of 2025 revenue; OpenAI ($22.4B) and Meta (~$14.2B) deals are diversifying it. Nvidia committed CoreWeave to building >5 GW of AI factories by 2030. CoreWeave's 2031 bonds yield ~11.5%, reflecting the credit risk in its ~4.5x debt-to-equity structure.
+
+**Nebius** — guided $16–20 billion of 2026 capex against just $3–3.4 billion of revenue, the most aggressive capex/revenue ratio in the group. It secured 2+ GW of contracted power (targeting 3+ GW), signed a Microsoft deal worth $17.4–19.4 billion and a ~$3 billion Meta deal, took a $2 billion Nvidia investment (March 2026), and issued $4.34 billion of debt in March 2026. Management describes the capex split as ~1% land/power, ~18–20% datacenter build, ~80% GPUs—deployed only against contracted demand.
+
+**Crusoe** — building the 1.2 GW Abilene Stargate campus and a Wyoming site; >45 GW power pipeline; ~$12B capex plan; raised a $1.375B Series E (Oct 2025) at >$10B valuation; a 2026 IPO candidate.
+
+**Lambda** — raised >$1.5B Series E (Nov 2025); reportedly pursuing an H2 2026 IPO; Microsoft multi-billion GPU deal and Nvidia sale-leaseback.
+
+**Bitcoin-miner pivots** — IREN ($9.7B Microsoft GPU deal + $3.4B Nvidia AI Cloud contract, 5 GW Nvidia partnership), Applied Digital (>$23B contracted lease revenue; $2.15B senior notes), and Cipher Mining ($5.5B AWS lease + Google/Fluidstack deals) are converting power-rich sites to AI/HPC. Fluidstack is reportedly raising $1B at ~$18B valuation and anchors a $50B US datacenter initiative with Anthropic.
+
+### 4. Other major spenders
+
+**xAI (Colossus)** — Spent $12.7 billion on AI infrastructure in 2025 and $7.7 billion in Q1 2026 alone (≈$30B annualized). Raised a $20 billion Series E (Jan 2026; investors include Nvidia, Qatar Investment Authority, MGX, and HUMAIN at $3B). Colossus 1 (~200k H100/H200 + ~30k GB200) plus Colossus 2 push toward ~2 GW of training power; Anthropic agreed (May 2026) to rent all of Colossus 1's capacity. xAI lost $2.4 billion in Q1 2026 and has signed $2.8B in turbine deals to self-power its sites.
+
+**Anthropic** — Committed $50 billion to US compute infrastructure (Nov 2025). Its Google TPU deal (Oct 2025) covers up to 1 million TPUs and >1 GW online in 2026, worth tens of billions; an April 2026 expansion adds ~3.5 GW of Google/Broadcom TPU capacity from 2027. Run-rate revenue surpassed $30 billion (from ~$9B end-2025); closed a $30 billion Series G at a $380B valuation.
+
+**Chinese hyperscalers** — Alibaba committed RMB 380 billion (~$53B) over three years (Feb 2025), with CEO signaling more to come. ByteDance raised 2026 capex to >RMB 200 billion (~$29B), roughly half for AI chips. Tencent's FY25 capex was RMB 79.2B (+3%; Q4 actually fell on GPU supply constraints) but plans to double its AI-product spend in 2026. Baidu's absolute capex is materially smaller. China's total AI investment was ~$125 billion in 2025, well below the US total.
+
+**Sovereign AI** — Saudi Arabia's PIF-backed HUMAIN targets 1.9 GW by 2030 and 6 GW by 2034, anchored by deals with Nvidia ($10B/500MW), AWS ($5B+), and a $1.2B National Infrastructure Fund framework; it also put $3B into xAI. The UAE's G42 leads Stargate UAE (5 GW Abu Dhabi campus, first 200–300 MW in 2026). MGX, with BlackRock/Microsoft/Nvidia, anchors the AI Infrastructure Partnership targeting up to $100 billion (first deal: acquiring Aligned Data Centers at ~$40B EV). Qatar's Qai formed a $20 billion JV with Brookfield (Dec 2025). Gulf ambitions face new risk from regional conflict in 2026, which has prompted some developers to pause investment decisions.
+
+**IBM and Salesforce** are not material owned-infrastructure capex spenders—both are asset-light and ride hyperscalers.
+
+### 5. Key dynamics
+
+**Financing has shifted from cash to debt and off-balance-sheet structures.** Hyperscalers issued ~$121 billion in new bonds in 2025 (>4x the prior five-year average), with >$90 billion in Q4 alone. Tech bond issuance topped $200 billion; AI-related IG debt was ~$200 billion. Morgan Stanley's July 16, 2025 report "Bridging a $1.5tn Data Center Financing Gap" projects $2.9T of 2025–2028 data center capex, with ~$1.4T coverable by hyperscaler cash flow, leaving a $1.5 trillion gap split ~$800B private credit, ~$200B corporate/IG bonds, ~$150B ABS/CMBS, and ~$350B PE/VC/bank/other. JPMorgan sees up to $1.5 trillion of IG bonds over five years. Combined hyperscaler capex now consumes ~94% of operating cash flow after dividends/buybacks. Off-balance-sheet SPVs (Meta's $30B Hyperion, Alphabet's $40.7B VIE commitments including a $30B equity derivative, Oracle/OpenAI vendor financing with Nvidia) are masking leverage; the Bank for International Settlements warns private credit lending to AI-related sectors has grown from near zero to over $200 billion.
+
+**Power, not money, is the binding constraint.** Sightline Climate's 2026 Data Center Outlook finds that of at least 16 GW of capacity slated for 2026 globally, only about 5 GW is currently under construction; analyst Olivia Wang notes "the 2025 projects were planned likely two to three years ago, predating the absolute acceleration in AI demand and today's labor and equipment shortages." Binding constraints are transformers, switchgear, batteries, and grid interconnection. PJM peak demand is projected to rise from ~154 GW (2025) toward ~210 GW by 2036. Data center project cancellations more than quadrupled to 25 in 2025 from six in 2024.
+
+**Bubble warnings are now mainstream.** The IMF's October 2025 Global Financial Stability Report ("Shifting Ground beneath the Calm") warned that "valuation models indicate that risk asset prices are well above fundamentals, increasing the probability of disorderly corrections when adverse shocks occur." The Bank of England flagged AI-tech valuations as the most stretched since the dot-com bubble. Michael Burry built large put positions (notional ~$187M against Nvidia and ~$912M against Palantir as of Sept 30, plus Oracle) and on Nov 11, 2025 argued on X that hyperscalers are "understating depreciation by extending useful life of assets…one of the more common frauds of the modern era…By my estimates they will understate depreciation by $176 billion 2026–2028. By 2028, ORCL will overstate earnings 26.9%, META by 20.8%." MIT's Project NANDA report "The GenAI Divide" (July 2025) found "just 5% of integrated AI pilots are extracting millions in value, while the vast majority remain stuck with no measurable P&L impact." Even generous AI revenue estimates (~$50–60B annually) sit against $500B+ in annual capex—roughly $8–10 of capex per $1 of revenue. Goldman's house view: not yet a bubble, but profits may be only half what's needed to justify the spend. Counterpoint: every hyperscaler reaffirmed or raised guidance even after DeepSeek's January 2025 shock, citing Jevons-paradox demand elasticity, and all report capacity being absorbed as fast as it comes online.
+
+## Recommendations
+- **Track the top five US spenders as the leading indicator.** Amazon, Microsoft, Alphabet, Meta, and Oracle drive ~half of global datacenter capex; any single one cutting GPU orders 20–30% would cascade through the supply chain. Watch quarterly capex guidance revisions and cloud backlog (RPO) conversion.
+- **Use power and equipment as the real-time reality check.** Capital is committed; energized megawatts are the bottleneck. Monitor Sightline Climate/BloombergNEF construction-vs-announced gaps, PJM interconnection queues, and transformer/switchgear lead times. Projects with secured power (PPAs, on-site generation, nuclear/SMR) will convert capex to revenue first.
+- **Distinguish balance-sheet quality across tiers.** Hyperscalers (cash-funded, AA/AA+ credits) are most durable. Neoclouds (CoreWeave ~4.5x debt/equity, customer concentration; 11.5% bond yields) and debt-funded AI labs carry refinancing and demand-plateau risk—watch 2026 debt maturities, interest coverage, and customer diversification. Sovereign commitments are multi-year ceilings, not guaranteed annual spend.
+- **Thresholds that would change the thesis:** (a) a hyperscaler guiding capex *down* sequentially without a power excuse; (b) AI revenue run-rates failing to grow faster than capex; (c) a major neocloud refinancing failure or covenant breach; (d) memory/HBM price collapse signaling overcapacity. Any two of these together would signal the cycle is turning.
+
+## Caveats
+- **Fiscal vs. calendar years differ.** Microsoft's fiscal year ends June 30; its ~$190B figure is a fiscal-2026 guide, and calendar-2025 (~$118B) is derived, not company-reported. Comparisons across companies require care.
+- **Guidance vs. actuals vs. commitments.** 2026 figures are mostly guidance (frequently revised upward mid-year). OpenAI's $1.4T, Anthropic's $50B, sovereign figures, and OEM "deal values" are multi-year commitments or ceilings—not annual capex spent. Confirmed actuals are clearly labeled.
+- **Analyst aggregate estimates use different baskets and assumptions.** Goldman's $7.6T is an explicit sensitivity analysis, not a forecast; McKinsey's $6.7T is the middle of three scenarios; TrendForce's $830B (top-9 CSPs) and Goldman's $765B (global) are not directly comparable. Treat all multi-year totals as scenario-dependent.
+- **Some figures derive from secondary aggregators**; primary sources (SEC filings, company IR, Bloomberg, Reuters, CNBC, Goldman/Morgan Stanley) are cited where traceable, but private-company valuations and "in talks" raises should be treated as reported, not confirmed.

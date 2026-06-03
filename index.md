@@ -65,9 +65,11 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` v9.2 Sect
 | [NOW](wiki/companies/NOW.md)   | NOW    | outside | outside | outside | outside      | outside   | outside   | 2026-06-02   |
 | [PLTR](wiki/companies/PLTR.md) | PLTR   | outside | outside | outside | outside      | outside   | outside   | 2026-06-02   |
 | [GOOGL](wiki/companies/GOOGL.md) | GOOGL | outside | outside | outside | outside      | outside   | outside   | 2026-06-02   |
-| [AMZN](wiki/companies/AMZN.md) | AMZN  | outside | outside | outside | outside      | outside   | outside   | 2026-06-02   |
+| [AMZN](wiki/companies/AMZN.md) | AMZN  | outside | outside | outside | outside      | outside   | outside   | 2026-06-03   |
 | [META](wiki/companies/META.md) | META  | outside | outside | outside | outside      | outside   | outside   | 2026-06-02   |
 | [ORCL](wiki/companies/ORCL.md) | ORCL  | outside | outside | outside | outside      | outside   | outside   | 2026-06-03   |
+| [CRWV](wiki/companies/CRWV.md) | CRWV  | outside | outside | outside | outside      | outside   | outside   | 2026-06-03   |
+| [NBIS](wiki/companies/NBIS.md) | NBIS  | outside | outside | outside | outside      | outside   | outside   | 2026-06-03   |
 
 ## Chokepoints
 
@@ -90,7 +92,7 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` v9.2 Sect
 
 | Page | Related Tickers | Last Updated |
 |------|-----------------|--------------|
-| [AI-demand-durability](wiki/themes/AI-demand-durability.md) | TSM, NVDA, LITE, COHR, AEHR, ONTO, AAOI, MRVL, AVGO, AXTI, VECO, ALAB, GLW, FN, VRT, CEG, CSCO, ENS, MSFT, GOOGL, AMZN, META, ORCL | 2026-06-03 |
+| [AI-demand-durability](wiki/themes/AI-demand-durability.md) | TSM, NVDA, LITE, COHR, AEHR, ONTO, AAOI, MRVL, AVGO, AXTI, VECO, ALAB, GLW, FN, VRT, CEG, CSCO, ENS, MSFT, GOOGL, AMZN, META, ORCL, CRWV, NBIS | 2026-06-03 |
 | [CPO-platform-battle](wiki/themes/CPO-platform-battle.md) | NVDA, TSM, AVGO, MRVL, ALAB, CSCO, LITE, COHR, AEHR, ONTO, AAOI, COHU, AXTI, VECO | 2026-05-29 |
 | [datacenter-photonics-supply-chain](wiki/themes/datacenter-photonics-supply-chain.md) | NVDA, TSM, AVGO, MRVL, ALAB, CSCO, COHR, LITE, AAOI, AEHR, ONTO, COHU, AXTI, VECO, GLW, FN, VRT, SOI | 2026-05-29 |
 | [hyperscaler-custom-ASIC](wiki/themes/hyperscaler-custom-ASIC.md) | ALAB, AAOI, MRVL, AVGO, NVDA, FN, CSCO, MSFT, GOOGL, AMZN, META, ORCL | 2026-06-03 |
@@ -102,7 +104,7 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` v9.2 Sect
 | [AI-agentic-CPU-orchestration-reemergence](wiki/themes/AI-agentic-CPU-orchestration-reemergence.md) | ARM, AMD, INTC, NVDA, GOOGL, AMZN, META, ORCL | 2026-06-03 |
 | [power-semis](wiki/themes/power-semis.md) | NVTS, POWI, VICR, ON, MPWR | 2026-05-29 |
 | [software-AI-moat-durability](wiki/themes/software-AI-moat-durability.md) | MSFT, NOW, CRM, WDAY, SNOW, DDOG, PLTR, CRWD, ZS, PANW, ADBE, INTU, TEAM, SAP | 2026-06-01 |
-| [hyperscaler-capex](wiki/themes/hyperscaler-capex.md) | MSFT, GOOGL, AMZN, META, ORCL | 2026-06-03 |
+| [hyperscaler-capex](wiki/themes/hyperscaler-capex.md) | MSFT, GOOGL, AMZN, META, ORCL, CRWV, NBIS | 2026-06-03 |
 
 ## Layers
 
@@ -112,4 +114,4 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` v9.2 Sect
 
 | Page | Related Tickers | Last Updated |
 |------|-----------------|--------------|
-| [nvidia-supply-chain-commitments](wiki/relationships/nvidia-supply-chain-commitments.md) | NVDA, LITE, COHR, ETN, VRT, AVGO, ALAB, CSCO, ANET, FN, TSM, MRVL | 2026-05-29 |
+| [nvidia-supply-chain-commitments](wiki/relationships/nvidia-supply-chain-commitments.md) | NVDA, LITE, COHR, ETN, VRT, AVGO, ALAB, CSCO, ANET, FN, TSM, MRVL, CRWV, NBIS | 2026-06-03 |
