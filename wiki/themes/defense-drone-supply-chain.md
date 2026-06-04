@@ -37,7 +37,7 @@ With four Defense & Drones pages in the vault, **both ends of the chain are repr
 ## Forward nodes — not yet vault pages (future-ingest candidates)
 
 The map has upstream nodes the vault has not yet substantiated with primary sources (plain-text until they cross the page threshold):
-- **EO/IR sensors & seekers** → Teledyne (TDY, via FLIR) — the dominant Western EO/IR position; the report's next-priority chokepoint after the four ingested names.
+- **EO/IR sensors & seekers** → [[TDY]] (Teledyne, via FLIR) — **now a vault page (S131)**, graduated from this forward list: the dominant Western EO/IR position, and a *squeezed-middle* node — it **owns** the sensor chokepoint (downstream) while **disclosing rare-earth-magnet + germanium dependence** (upstream), making it the 2nd disclosed consumer on [[rare-earth-magnet-chokepoint]]. The picks-and-shovels sensor supplier to all drone makers (the layer value migrates *to* as airframes commoditize — see [[drone-platform-commoditization]]).
 - **High-energy-density batteries** → Amprius (AMPX) — silicon-anode endurance cells.
 - **Trusted microelectronics** → Mercury Systems (MRCY) — a cross-thesis node alongside [[LSCC]].
 - **Rare-earth feedstock / refining** → USA Rare Earth, Energy Fuels, American Resources — upstream of [[MP]]'s finished magnets.

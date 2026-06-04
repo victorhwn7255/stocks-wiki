@@ -73,6 +73,7 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` Section 3
 | [AVAV](wiki/companies/AVAV.md) | AVAV  | —       | —       | —       | —            | —         | —         | 1        | 2026-06-03   |
 | [LSCC](wiki/companies/LSCC.md) | LSCC  | 3       | —       | —       | —            | —         | —         | 4        | 2026-06-03   |
 | [KTOS](wiki/companies/KTOS.md) | KTOS  | —       | —       | —       | —            | —         | —         | 1        | 2026-06-04   |
+| [TDY](wiki/companies/TDY.md)   | TDY   | —       | —       | —       | —            | —         | —         | 4        | 2026-06-04   |
 
 ## Chokepoints
 
@@ -90,7 +91,7 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` Section 3
 | [transformer-supply](wiki/chokepoints/transformer-supply.md) | ETN, GEV, NVDA, FLEX | 2026-05-29 |
 | [HBM-oligopoly](wiki/chokepoints/HBM-oligopoly.md) | ONTO, COHU, AEHR, TSM, MKSI, MU | 2026-05-29 |
 | [liquid-cooling](wiki/chokepoints/liquid-cooling.md) | VRT, ETN, NVT, MOD, FLEX, COHR, ANET, AAON, NVDA | 2026-05-29 |
-| [rare-earth-magnet-chokepoint](wiki/chokepoints/rare-earth-magnet-chokepoint.md) | MP, AVAV | 2026-06-04 |
+| [rare-earth-magnet-chokepoint](wiki/chokepoints/rare-earth-magnet-chokepoint.md) | MP, AVAV, TDY | 2026-06-04 |
 
 ## Themes
 

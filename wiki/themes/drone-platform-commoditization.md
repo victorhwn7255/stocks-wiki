@@ -37,6 +37,8 @@ The interesting analytical content is that the two primes respond to the *same* 
 
 Neither is a pure commoditizing-airframe play; both are *managing* the squeeze — one by building the upstream, the other by scaling and climbing the layers.
 
+**The counter-example — [[TDY]] (the layer value migrates *to*).** Teledyne (now a vault page, S131) is the live confirmation of the thesis's prediction. It owns the EO/IR sensor/seeker chokepoint and supplies infrared detectors "to everyone else across the world that's making drones" (Mehrabian, Q1 FY2026 call) — so as airframes are driven to the ~$2,000 floor, Teledyne captures value **regardless of which airframe wins**. It is the *inverse* exposure to [[AVAV]]/[[KTOS]]: the chokepoint layer margin migrates **to**, not the platform layer it migrates **from**. The honest caveat: drones are a slice of Teledyne's ~30–35% defense revenue, and the sensor layer (while defensible against cheap airframes) still faces ASP discipline on high-volume cheap counter-UAS demand.
+
 ## The honest test (thesis falsifier) + early primary evidence
 
 The thesis's own falsifier is explicit: *if airframes become disposable commodities, value accrues only to chokepoint owners and software, and even AVAV/KTOS earn thin, cyclical platform margins.* The early, primary-sourced evidence already shows margin pressure at the platform layer:
