@@ -75,6 +75,8 @@ Framework 2.6 operates across all domains (not photonics-specific); applies to c
 | Oracle | ~$15B | Stargate $100B initial / $500B by 2029 | Multi-year commitment |
 | **Combined Big 4** | **~$381B** | **~$640-720B** | **~+70-90%** |
 
+*Status note (2026-06-04): the guidance figures in this section are the April-2026 snapshot from the thesis rework. The demand-side hyperscaler pages (MSFT / GOOGL / AMZN / META / ORCL) and the hyperscaler-capex theme now carry current primary-sourced CAPEX figures; refresh this section from those at the next thesis revision.*
+
 **Microsoft FY2026 trajectory:** Q1 FY2026 CAPEX $34.9B; Q2 $37.5B; Q3 $31.9B; full-year guidance raised to $190B+ as of April 2026 (originally $110-120B). Roughly two-thirds of Q3 spend on short-lived assets (GPUs/CPUs); one-third on long-lived assets (datacenters/land/power infrastructure for 15+ year lifespans). Azure backlog $80B; capacity constrained through 2026.
 
 **Alphabet 2026 trajectory:** Original guidance $175-185B; raised to $180-190B in Q1 2026 earnings (April 2026). 60% allocation to servers; 40% to datacenters and networking equipment. Google Cloud backlog $460B (nearly doubled QoQ). 2027 CAPEX guided to "significantly increase."
@@ -166,6 +168,8 @@ Each holding is present for a reason rooted in this framework. What I want the w
 - **VRT** — Layer 5 / photonics_tier 4 thermal infrastructure with NVIDIA reciprocal-confirmation; 800V DC programs H2 2026; EcoDataCenter Sweden Vera Rubin deployment. Wiki tracks: thermal/power infrastructure positioning under 2026 power constraint binding; VRT vs FLEX (JetCool) competitive dynamics; structural reclassification under AI datacenter scope (was adjacent infrastructure under photonics-primary scope; now primary chokepoint exposure under power-binding-constraint observation).
 
 **Candidate additions per AI datacenter scope expansion (sequenced per vault planning):**
+
+*Status note (2026-06-04): FLEX, ETN, MU, MPWR, VICR, VECO, and TSEM are now ingested vault pages (see `index.md`); the per-name notes below reflect the original pre-ingest framing and are retained as written.*
 
 - **FLEX** (Session 36+): Layer 6 contract manufacturing + JetCool liquid cooling acquisition. Liquid cooling AI datacenter exposure thesis verification at primary sources. Possible Outside Framework 5 placement if EMS exposure dominates.
 - **ETN** (Session 37+): Layer 4-5 power infrastructure; canonical Tier B Energy/Power per Tier 3 source. Power transformer + electrical equipment exposure — most directly investible US-listed exposure to the binding 2026 power constraint.

@@ -74,7 +74,7 @@ How an unmanned-systems capability gets physically built and fielded. Read top t
 
 ## Framework D2: Value-capture / investability tiers (the `defense_tier` field)
 
-A four-tier classification for US-listed defense/drone exposure quality — the first-pass categorization reflected in the **proposed `defense_tier` frontmatter field** (pending Vic codification in CLAUDE.md). Distinct from the value-chain *layer* in Framework D1: a company's tier reflects its investability/structural quality, its layer reflects where it sits in the chain. (Mirrors how the AI vault separates `layer` from `*_tier`.)
+A four-tier classification for US-listed defense/drone exposure quality — the first-pass categorization reflected in the **`defense_tier` frontmatter field** (codified in CLAUDE.md Section 3.2, Session 123). Distinct from the value-chain *layer* in Framework D1: a company's tier reflects its investability/structural quality, its layer reflects where it sits in the chain. (Mirrors how the AI vault separates `layer` from `*_tier`.)
 
 **Tier 1 — Primes with real drone-relevant programs of record**
 Real contracts, real revenue scale; for the large primes, drones are a slice of a diversified business.
@@ -96,7 +96,7 @@ Real revenue inflections, but dilution, losses, and narrative-ahead-of-financial
 **Tier 4 — Supply-chain / materials enablers (highest structural conviction)**
 The chokepoint owners — where `_thesis-defense-drones.md` places the strongest structural case.
 - MP (MP Materials) — rare-earth magnets. **Multi-thesis node** (AI/materials page exists).
-- LSCC (Lattice) — secure FPGAs. **Cross-thesis** (AI-datacenter overlap; not yet a vault page).
+- LSCC (Lattice) — secure FPGAs. **Cross-thesis** (AI-datacenter overlap; [[LSCC]] is now a vault page — dual-thesis from creation, S125).
 - TDY (Teledyne) — EO/IR sensors + loitering munition (Rogue 1).
 - AMPX (Amprius) — high-energy-density batteries.
 - MRCY (Mercury Systems) — trusted/secure microelectronics + C-UAS processing. **Cross-thesis** (not yet a vault page).
@@ -203,7 +203,7 @@ Several names sit at the intersection of this thesis and the AI-datacenter suppl
 | **AMD** | Xilinx FPGAs (avionics/EW/radar) — Tier 4 | AI accelerators + datacenter CPU; compute | **Existing AI page** — add defense framing |
 | **NVDA** | Jetson edge-AI modules (indirect) — Tier 4 | Platform definer; Layer 1 | **Existing AI page** — add defense framing |
 | **PLTR** | Maven/Gotham data fusion — Tier 2 | AI demand-side / software | **Existing AI page** — add defense framing |
-| **LSCC (Lattice)** | Secure FPGAs — Tier 4 chokepoint | Secure-control FPGAs; AI server FPGA +85% YoY | **Not yet a vault page** — would be dual-thesis from creation |
+| **[[LSCC]] (Lattice)** | Secure FPGAs — Tier 4 chokepoint | Secure-control FPGAs; AI server FPGA +86% YoY | **Vault page (S125)** — dual-thesis from creation |
 | **MRCY (Mercury)** | Trusted microelectronics — Tier 4 | Secure microelectronics | **Not yet a vault page** — would be dual-thesis from creation |
 
 **The cleanest multi-thesis chokepoint: rare-earth NdFeB magnets.** The same China concentration that constrains drone motors constrains AI-datacenter power-semiconductor magnets and robotics — one chokepoint, two demand drivers. MP is the shared node.
@@ -214,12 +214,12 @@ Several names sit at the intersection of this thesis and the AI-datacenter suppl
 
 ## Positioning judgments for the tracked universe
 
-Calibrated reference points for how each US-listed name fits the frameworks. Current views; primary-source evidence should refine rather than overwrite them. **Figures are Tier-3 (mostly Q1 2026 / FY2025) — verify at ingest.** `defense_tier` is the proposed field per Framework D2.
+Calibrated reference points for how each US-listed name fits the frameworks. Current views; primary-source evidence should refine rather than overwrite them. **Figures are Tier-3 (mostly Q1 2026 / FY2025) — verify at ingest; the four INGESTED names ([[MP]], [[AVAV]], [[LSCC]], [[KTOS]]) now carry primary-source-verified figures, marked "INGESTED".** `defense_tier` is the codified field per Framework D2 (CLAUDE.md Section 3.2).
 
 | Ticker | defense_tier | Value-chain layer | Chokepoint position | Structural/cyclical | Tier-3 scale & flags | Current thesis fit |
 |---|---|---|---|---|---|---|
-| AVAV | 1 | Platforms + C-UAS + autonomy | Platforms; some C-UAS | Structural (co. ) / cyclical (program) | FY2026 guide $1.9-2.0B; ~$1.1B funded backlog; Q3 miss; securities class actions (deadline July 2026) | Strong — most complete US-listed pure-play; valuation embeds heavy optimism |
-| KTOS | 1 | Large UAS platforms | Large UAS | Structural/cyclical | FY2026 guide $1.70-1.76B; record backlog $2.01B; Valkyrie ramping; $1B equity raise | Good — best large-UAS/CCA exposure; valuation rich; Valkyrie rate-timing the watch item |
+| [[AVAV]] | 1 | Platforms + C-UAS + autonomy | Platforms; chokepoint consumer | Structural (co.) / cyclical (program) | INGESTED S124: Q3 FY2026 rev $408M (+143%); FY2026 guide CUT to $1.85–1.95B; $151.3M goodwill impairment (SCAR termination-for-convenience); funded backlog $1.12B; US Gov ~75% / Ukraine ~18% | Strong — most complete US-listed pure-play; chokepoint *consumer* (not owner); margin + integration the watch item |
+| [[KTOS]] | 1 | Large UAS + hypersonics + propulsion | Large UAS; propulsion/SRM (chokepoint builder) | Structural/cyclical | INGESTED S127: Q1 FY2026 rev $371M (+15.8% org); record backlog $2.011B; book-to-bill 1.6x; FY2026 guide RAISED to $1.70–1.76B; $1.35B Feb-2026 equity raise (net) | Good — beat-and-raise; honest-verdict = serial dilution + negative FCF + pre-PoR timing; vertically integrated (builds engines + SRMs) |
 | RTX | 1 | C-UAS + autonomy + sensors | C-UAS leader | Structural | ~$80B+; diversified | C-UAS leader but drone/C-UAS a slice |
 | LHX | 1 | C-UAS + EW + datalinks | C-UAS/EW | Structural | ~$21B; diversified | Real but diluted |
 | LMT / NOC / BA | 1 | Platforms + integration | Large UAS / sensing | Structural | Large; drones a slice (BA loss-making co.-wide) | Diversified; drone exposure not needle-moving |
@@ -234,8 +234,8 @@ Calibrated reference points for how each US-listed name fits the frameworks. Cur
 | UAVS | 3 | Small UAS + sensors | — | Cyclical | Tiny (~$2M-scale quarters); "income" from warrant fair-value gains | FLAG — tiny revenue; warrant-driven earnings |
 | PDYN | 3 | Autonomy software | Autonomy (speculative) | Cyclical | Q1 2026 $3.5M; loss $12.6M; ~$43.7M cash (~2.8yr runway) | FLAG — minimal revenue; narrative-driven |
 | PRZO | 3 | C-UAS interceptor | C-UAS (micro) | Cyclical | FY2025 ~$1.05M; negative GM; **May 2026 Nasdaq bid-price deficiency** | FLAG — micro revenue; partners with ONDS |
-| MP | 4 | Supply-chain (magnets) | **Rare-earth magnets (core)** | Structural | Q1 2026 $90.6M (+49%); +$42.3M PPA income; Adj EBITDA $36.6M; $1.74B cash; DoD largest shareholder | Strongest enabler — purest play on the most durable chokepoint; **dual-thesis** |
-| LSCC | 4 | Supply-chain (secure FPGAs) | **Secure microelectronics (core)** | Structural | Q1 2026 $170.9M (+42%); ~69% GM; profitable; **64% Greater China revenue, 94% distributor** | Strong — secure-FPGA chokepoint + AI overlap; China-revenue asterisk; **cross-thesis** |
+| [[MP]] | 4 | Supply-chain (magnets) | **Rare-earth magnets (core)** | Structural | INGESTED S90 (dual-thesis S123): Q1 FY2026 rev $90.6M (+49%); +$42.3M PPA income; Materials adj EBITDA $36.7M; $400M DoW convertible preferred (DPA Title III); 10X facility 2028 | Strongest enabler — purest play on the most durable chokepoint; **dual-thesis**; owner-side anchor of [[rare-earth-magnet-chokepoint]] |
+| [[LSCC]] | 4 | Supply-chain (secure FPGAs) | **Secure microelectronics (core)** | Structural | INGESTED S125: Q1 FY2026 rev $170.9M (+42%); GM 68.8%; net income $21.8M; **64% Greater China revenue**; fabless on TSMC/Samsung/UMC; AMI acq ($1.65B, ~Q3 close) | Strong on secure-FPGA *capability* (defense revenue thin/undisclosed); currently an AI-datacenter story; China + Taiwan-fab the counter-signal; **cross-thesis** |
 | TDY | 4 | Payloads/sensors | **EO/IR sensors (core)** | Structural | ~$6.23B TTM; Rogue 1/LASSO; Black Hornet | Strong — diversified, profitable way to own the sensor layer |
 | AMPX | 4 | Supply-chain (batteries) | **High-energy batteries** | Structural | FY2025 $73M (+202%); Q4 positive adj EBITDA; customers incl. Teledyne FLIR | Good — energy-density moat; EBITDA inflection |
 | MRCY | 4 | Supply-chain (microelectronics) | Secure microelectronics + C-UAS processing | Structural (turnaround) | FY2025 $912M; GAAP loss; "BuiltSECURE" | Turnaround; **cross-thesis** |
@@ -252,7 +252,7 @@ Calibrated reference points for how each US-listed name fits the frameworks. Cur
 
 ## How the LLM should use these frameworks
 
-1. **For first-pass categorization:** place each defense/drone company in its value-chain layer (D1), its `defense_tier` (D2), and its chokepoint position (D5). Company pages reference the proposed `defense_tier` field once Vic codifies it; until then, use prose placement and note the field is pending.
+1. **For first-pass categorization:** place each defense/drone company in its value-chain layer (D1), its `defense_tier` (D2), and its chokepoint position (D5). Company pages carry the `defense_tier` field (codified CLAUDE.md Section 3.2).
 
 2. **Separate enacted from requested everywhere (D3).** When a primary or Tier-3 source cites a budget figure, classify it: enacted law (FY2025 reconciliation $156.2B) vs. a request (FY2027 DAWG $54.6B, ~98% reconciliation-contingent). Never present a request as a fact. This is the defense thesis's single most important discipline.
 
@@ -270,4 +270,4 @@ Calibrated reference points for how each US-listed name fits the frameworks. Cur
 
 ---
 
-**Note on this creation (2026-06-03):** Drafted via Vic-authorized collaborative drafting as the companion frameworks file to `wiki/_thesis-defense-drones.md` (the vault's second thesis domain). Sourced from the Tier-3 report `raw/research/US-defense-and-drones-report.md` plus prior chat synthesis. Mirrors the AI `frameworks.md` structure (supply-chain flow → value-capture tiers → demand/CAPEX map → structural-vs-cyclical → chokepoint framework → financial-quality screen → cross-thesis overlap → positioning judgments → LLM application). Drones-first scope; broad munitions, European rearmament, and standalone directed-energy sequenced for future expansion. The AI `frameworks.md` (v10.1) is untouched. Proposed (pending Vic approval): the `defense_tier` frontmatter field (Framework D2) and a CLAUDE.md Section 1.2 two-domain scope note.
+**Note on this creation (2026-06-03):** Drafted via Vic-authorized collaborative drafting as the companion frameworks file to `wiki/_thesis-defense-drones.md` (the vault's second thesis domain). Sourced from the Tier-3 report `raw/research/US-defense-and-drones-report.md` plus prior chat synthesis. Mirrors the AI `frameworks.md` structure (supply-chain flow → value-capture tiers → demand/CAPEX map → structural-vs-cyclical → chokepoint framework → financial-quality screen → cross-thesis overlap → positioning judgments → LLM application). Drones-first scope; broad munitions, European rearmament, and standalone directed-energy sequenced for future expansion. The AI `frameworks.md` (v10.1) is untouched. Both subsequently codified (Session 123, CLAUDE.md v9.4): the `defense_tier` frontmatter field (Framework D2) and the CLAUDE.md Section 1.2 two-domain scope note.

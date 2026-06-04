@@ -345,7 +345,7 @@ Not all positions in the supply chain capture equal value. Higher layers extract
 │  LITE — lasers + photonic components             │
 │  HyperLight — TFLN modulators (private)          │
 │  ETN — power infrastructure + electrical equip   │
-│    (Layer 4-5 straddling — see Caveat #8)        │
+│    (Layer 4-5 straddling — see Caveat #9)        │
 │  MPWR — high-density power management            │
 │  VICR — high-density power architecture          │
 │  ABB / Schneider — electrical equipment (foreign)│
@@ -1215,7 +1215,7 @@ Calibrated reference points for how each tracked company fits the frameworks. Th
 
 **The LITE/COHR March 2026 differentiation:** The $2B NVDA investment in each, combined with multi-year purchase commitments and capacity access rights, is a material strengthening event for both laser supplier theses. Session 5 cross-validation established that LITE and COHR are not structurally equivalent. COHR sits at photonics_tier 2 (chokepoint participant, six-inch InP monopoly, 20+ year NVDA relationship) while LITE sits at photonics_tier 3 (differentiated supplier, three-inch InP, newer capital-constrained relationship). The tier gap could narrow if LITE demonstrates a proprietary three-inch process moat in future sources, or if COHR's six-inch monopoly claim proves overstated. On current evidence, the differentiation is earned.
 
-**The VRT structural reclassification under AI datacenter scope:** VRT was originally placed Tier 4 photonics with explicit "adjacent infrastructure" framing (Session 22 codification). Under AI datacenter scope expansion (CLAUDE.md v9 / _thesis.md rework 2026-04-30), VRT becomes a primary chokepoint participant at Energy/Power Tier 2. The structural reclassification reflects the binding 2026 power constraint observation — thermal/power infrastructure is now structural to AI datacenter buildout, not adjacent. Photonics_tier 4 placement preserved per existing Sessions 22-32 canonical content; energy_power_tier 2 placement adds canonical Energy/Power framework positioning.
+**The VRT structural reclassification under AI datacenter scope:** VRT was originally placed Tier 4 photonics with explicit "adjacent infrastructure" framing (Session 22 codification). Under AI datacenter scope expansion (CLAUDE.md v9 / _thesis.md rework 2026-04-30), VRT becomes a primary chokepoint participant at Energy/Power Tier 1. The structural reclassification reflects the binding 2026 power constraint observation — thermal/power infrastructure is now structural to AI datacenter buildout, not adjacent. Photonics_tier 4 placement preserved per existing Sessions 22-32 canonical content; energy_power_tier 1 placement adds canonical Energy/Power framework positioning.
 
 **The dual-anchor portfolio reframing:** Under AI datacenter scope expansion, the portfolio should evolve toward dual-anchor exposure — compute (NVDA / TSM as canonical) + power infrastructure (ETN / VRT as canonical) — capturing the binding-constraint observation. Photonics positions remain core to thesis but should be sized considering broader AI datacenter exposure rather than photonics-pure exposure.
 

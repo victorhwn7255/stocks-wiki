@@ -4,7 +4,7 @@ Catalog of all wiki pages. Updated with each ingest.
 
 ## Companies
 
-Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` v9.2 Section 3.2 multi-domain frontmatter convention. Empty cell `—` = no exposure assessed (frontmatter field absent); `outside` = explicit Outside Framework placement per Section 3.10. Frontmatter divergences from canonical text in `frameworks.md` v10.1 positioning judgments table are pre-rework artifacts pending separate retro-application session.
+Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` Section 3.2 multi-domain frontmatter convention. The **Defense** column reflects `defense_tier` (Section 3.2; the Defense & Drones domain). Empty cell `—` = no exposure assessed (frontmatter field absent); `outside` = explicit Outside Framework placement per Section 3.10. Frontmatter divergences from the positioning-judgments tables in `frameworks.md` and `frameworks-defense-drones.md` are pending a positioning-table retro-application/refresh (tracked separately) — for current per-page tier state, this `index.md` (frontmatter as-written) is authoritative.
 
 | Page                           | Ticker | Layer | Photonics | Memory | Energy/Power | Equipment | Materials | Defense  | Last Updated |
 | ------------------------------ | ------ | ----- | --------- | ------ | ------------ | --------- | --------- | -------- | ------------ |
