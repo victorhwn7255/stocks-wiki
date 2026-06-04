@@ -209,6 +209,8 @@ Cross-canonical strategic materials pattern observation candidate at MEMORY.md; 
 
 **[[AVAV]] downstream rare-earth-magnet consumer (FIRST intra-defense supply-chain link; S124).** AeroVironment's FY2025 10-K flags that its motors + batteries rely on rare-earth metals, a significant majority sourced from China — placing AVAV (Defense & Drones `defense_tier 1` platform prime) structurally downstream of MP's NdFeB magnet chokepoint. First intra-defense supply-chain linkage in the vault: MP owns the chokepoint; AVAV consumes it. Cross-thesis adjacency parallels the AI-side cooling-motor NdFeB dependency, reinforcing rare-earth magnets as the cleanest multi-thesis chokepoint (defense + AI + EV/wind).
 
+**[[rare-earth-magnet-chokepoint]] + [[defense-drone-supply-chain]] (S128).** MP is the owner-side anchor of the vault's first defense chokepoint page ([[rare-earth-magnet-chokepoint]], provisional) and the upstream node on the Defense supply-chain map theme ([[defense-drone-supply-chain]]). Both cross-reference this page for the owner-side depth.
+
 ## Open questions
 
 1. **Pentagon offtake horizon dependency.** DoW 10-year offtake commitment + DPA Title III "unconventional use" authority + future appropriation risk per 10-K Item 1A. Verify multi-year funding trajectory + appropriation cycle dynamics at future cycles. Risk-Factor explicit at 10-K — material scope warrants ongoing monitoring.
@@ -252,6 +254,8 @@ Period-parity per Section 2.11 calendar-aligned baseline (Section 2.11 N/A per S
 Not a new primary-source ingest. Defense framing layered over the existing Tier-1 substrate (FY2025 10-K + Q1 FY2026 10-Q + 8-K press release, ingested S90) using the Tier-3 anchor report `raw/research/US-defense-and-drones-report.md` for chokepoint-concentration + drone-demand context — attributed; the IEA Nov 2025 magnet-concentration figures, Pentagon tonnage targets, and drones-<3%-of-NdFeB scope are Tier-3, to verify against primaries (CRS / IEA / IDTechEx) before treating as load-bearing. No financial deltas; financials remain as of Q1 FY2026 (last refreshed S90). `defense_tier 4` added; FIRST defense-domain placement in the vault.
 
 ## Change log
+
+- **2026-06-04 (Session 128 — cross-ref):** Added Cross-vault adjacency links to the Defense domain's first structural pages — [[rare-earth-magnet-chokepoint]] (MP is the owner-side anchor) + [[defense-drone-supply-chain]] (upstream node). No content change; financials unchanged (Q1 FY2026, S90).
 
 - **2026-06-03 (Session 123 — dual-thesis annotation; FIRST defense-domain placement in vault):** Added `defense_tier 4` (supply-chain/materials enabler per `frameworks-defense-drones.md` Framework D2; codified note — Tier 4 = highest conviction, not lowest) + a Defense & Drones thesis-role section: reframes MP's fit as DIRECT on the defense side (vs INDIRECT on AI), places rare-earth NdFeB magnets as the #1 geology/physics chokepoint on the Framework D5 quality gradient, and links the DoW partnership to the defense enacted-vs-requested budget-contingency discipline. Honest scoping: drones <3% of global NdFeB demand (Tier-3) — criticality not tonnage; no drone-demand overclaim. NOT a refresh — no new primary source; financials unchanged (Q1 FY2026, S90); no refresh_log entry. Tier-3 framing attributed, to verify at primaries. Open question #11 + Source audit entry added. MP = vault's FIRST dual-thesis page. `last_updated` → 2026-06-03.
 

@@ -114,7 +114,7 @@ The honest-verdict centerpiece. AVAV held an Other Transaction Agreement (OTA) t
 
 ## Competitive positioning
 
-The most capable pure drone-autonomy companies — **Anduril** (Lattice; ~$2.2B 2025 revenue; CCA YFQ-44A) and **Shield AI** (Hivemind) — are **private and un-investable**, and capture many of the marquee programs. AVAV is the public-market pure-play: its edge is **production scale**, **breadth across Group 1–3 UAS + loitering munitions + counter-UAS + (now) space/cyber/DE**, and **programs-of-record incumbency**, rather than a single defensible chokepoint. Among US-listed peers it sits alongside Kratos (large UAS / CCA-adjacent) and the diversified primes (RTX/LHX in counter-UAS, etc.) — none yet vault pages.
+The most capable pure drone-autonomy companies — **Anduril** (Lattice; ~$2.2B 2025 revenue; CCA YFQ-44A) and **Shield AI** (Hivemind) — are **private and un-investable**, and capture many of the marquee programs. AVAV is the public-market pure-play: its edge is **production scale**, **breadth across Group 1–3 UAS + loitering munitions + counter-UAS + (now) space/cyber/DE**, and **programs-of-record incumbency**, rather than a single defensible chokepoint. Among US-listed peers it sits alongside [[KTOS]] (Kratos — the other Defense & Drones platform prime, weighted toward jet-powered drones / CCA-adjacent platforms, hypersonics, and propulsion) and the diversified primes (RTX / LHX in counter-UAS, etc.; not yet vault pages). AVAV and [[KTOS]] are structural co-positioned peers (Section 3.14 parallel-but-independent) — overlapping most at the CCA-adjacent / affordable-mass layer, with Kratos sitting further upstream via in-house engines and solid rocket motors.
 
 ## Supply chain / chokepoint consumption
 
@@ -122,7 +122,7 @@ AVAV is a **downstream consumer** of the upstream chokepoints the Defense thesis
 - **Rare-earth NdFeB magnets** → [[MP]] (the intra-defense supply-chain link: MP is the magnet chokepoint owner; AVAV is a motor/actuator consumer). First intra-defense supply-chain linkage in the vault.
 - **Secure microelectronics / FPGAs**, **high-energy-density batteries**, and **EO/IR sensors** — the secure-chip ([[LSCC]] / Mercury), battery (Amprius), and sensor (Teledyne) chokepoints AVAV depends on but does not own. [[LSCC]] is now a vault page — the secure-FPGA chokepoint *capability* AVAV consumes (second intra-defense supply-chain link, after AVAV→[[MP]] magnets); Mercury / Amprius / Teledyne not yet vault pages, tracked under `frameworks-defense-drones.md` Framework D5.
 
-The structural read (Framework D5): the China rare-earth + secure-component dependence is a *shared* vulnerability across the whole platform tier — value and pricing power sit upstream with the chokepoint owners, not with AVAV.
+The structural read (Framework D5): the China rare-earth + secure-component dependence is a *shared* vulnerability across the whole platform tier — value and pricing power sit upstream with the chokepoint owners, not with AVAV. AVAV's disclosed magnet dependence anchors the consumer side of [[rare-earth-magnet-chokepoint]] (the vault's first defense chokepoint page), and AVAV sits at the platform-consumer end of the [[defense-drone-supply-chain]] map. Its OWA/affordable-mass exposure is the subject of [[drone-platform-commoditization]].
 
 ## Open questions
 
@@ -148,6 +148,10 @@ First reporting periods on the post-BlueHalo two-segment structure (Autonomous S
 Speakers: Wahid Nawabi (Chairman, President, CEO) + Kevin McDonnell (EVP, CFO) + Denise Pacioni (IR). CEO framing: demand for cost-efficient AI-enabled autonomous lethal/non-lethal drones and counter-drones is "unprecedented." Detailed the program awards (the $874M FMS IDIQ, $168M Switchblade task order, $23M Titan USMC, $96M FE1, P550 LRR, JUMP 20 Navy/Europe). **No Tier-1/Tier-2 framing gap** — the impairment, the SCAR termination, and the guidance cut are disclosed in both the 10-Q and the call. CEO tone measured (acknowledged the miss + shutdown impact directly); **CEO-combativeness monitoring unchanged at 2**. **Report-vs-primary delta:** the Tier-3 anchor report's "FY2026 guide $1.9–2.0B" is superseded by the call's $1.85–1.95B (primary wins; report is Tier-3, so not an A6 (g') increment).
 
 ## Change log
+
+- **2026-06-04 (Session 128 — cross-ref):** Added cross-refs to the Defense domain's first structural pages — [[rare-earth-magnet-chokepoint]] (AVAV anchors the consumer side), [[defense-drone-supply-chain]] (platform-consumer node), and [[drone-platform-commoditization]] (its OWA/affordable-mass exposure). No content change.
+
+- **2026-06-04 (Session 127 — cross-ref):** Added cross-prime co-positioning reference to [[KTOS]] (now a vault page) in Competitive positioning — the two Defense & Drones platform primes (Section 3.14 parallel-but-independent; Kratos weighted to jet-drones / hypersonics / propulsion). No other content change.
 
 - **2026-06-03 (Session 125 — cross-ref):** Upgraded the secure-microelectronics chokepoint reference to a [[LSCC]] wikilink (now a vault page) — the second intra-defense supply-chain link (AVAV consumes secure FPGAs; LSCC supplies them). No other content change.
 

@@ -53,6 +53,7 @@ COMPANIES = {
     "CRDO": {"cik": "0001807794", "forms": ["10-K", "10-Q"]},
     "AVAV": {"cik": "0001368622", "forms": ["10-K", "10-Q"]},  # AeroVironment — Defense & Drones; FY ends ~Apr 30 (Section 2.11)
     "LSCC": {"cik": "0000855658", "forms": ["10-K", "10-Q"]},  # Lattice Semiconductor — Defense & Drones (secure FPGAs) + AI-datacenter dual-thesis
+    "KTOS": {"cik": "0001069258", "forms": ["10-K", "10-Q"]},  # Kratos Defense & Security — Defense & Drones (large UAS / XQ-58 Valkyrie)
     "ANET": {"cik": "0001596532", "forms": ["10-K", "10-Q"]},
     "VIAV": {"cik": "0000912093", "forms": ["10-K", "10-Q"]},
     "PLAB": {"cik": "0000810136", "forms": ["10-K", "10-Q"]},
@@ -114,17 +115,24 @@ def filing_already_local(
     """True if filename is already present in the base (ingested) dir or the staging dir.
 
     The base dir is organized into per-ticker subfolders (raw/filings/<TICKER>/<filename>),
-    so the base check derives the ticker from the filename prefix. The staging dir stays
-    flat. The legacy flat base-dir location is also checked for backward compatibility.
+    so the primary base check derives the ticker from the filename prefix. The staging dir
+    stays flat. A recursive fallback (plus the legacy flat base-dir location) ensures a file
+    that is present but in an unexpected location is never re-downloaded as a duplicate —
+    belt-and-suspenders as the per-ticker tree grows on both axes (more tickers, more files).
     """
     # staging dir is flat; legacy flat base-dir files (pre-reorg) also matched here
     for d in (base_dir, staging_dir):
         if d and (d / filename).exists():
             return True
-    # base dir is ticker-subfoldered: base_dir/<TICKER>/<filename>
     if base_dir:
+        # primary: base dir is ticker-subfoldered (base_dir/<TICKER>/<filename>)
         ticker = filename.split("-", 1)[0]
         if (base_dir / ticker / filename).exists():
+            return True
+        # fallback: a present-but-misfiled or oddly-named file is still found anywhere
+        # under base_dir. Runs only when the O(1) checks miss; a directory walk of a few
+        # thousand files is milliseconds and is far cheaper than re-downloading a dup.
+        if base_dir.exists() and next(base_dir.rglob(filename), None) is not None:
             return True
     return False
 

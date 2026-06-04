@@ -72,6 +72,7 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` v9.2 Sect
 | [NBIS](wiki/companies/NBIS.md) | NBIS  | outside | outside | outside | outside      | outside   | outside   | —        | 2026-06-03   |
 | [AVAV](wiki/companies/AVAV.md) | AVAV  | —       | —       | —       | —            | —         | —         | 1        | 2026-06-03   |
 | [LSCC](wiki/companies/LSCC.md) | LSCC  | 3       | —       | —       | —            | —         | —         | 4        | 2026-06-03   |
+| [KTOS](wiki/companies/KTOS.md) | KTOS  | —       | —       | —       | —            | —         | —         | 1        | 2026-06-04   |
 
 ## Chokepoints
 
@@ -89,6 +90,7 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` v9.2 Sect
 | [transformer-supply](wiki/chokepoints/transformer-supply.md) | ETN, GEV, NVDA, FLEX | 2026-05-29 |
 | [HBM-oligopoly](wiki/chokepoints/HBM-oligopoly.md) | ONTO, COHU, AEHR, TSM, MKSI, MU | 2026-05-29 |
 | [liquid-cooling](wiki/chokepoints/liquid-cooling.md) | VRT, ETN, NVT, MOD, FLEX, COHR, ANET, AAON, NVDA | 2026-05-29 |
+| [rare-earth-magnet-chokepoint](wiki/chokepoints/rare-earth-magnet-chokepoint.md) | MP, AVAV | 2026-06-04 |
 
 ## Themes
 
@@ -107,6 +109,8 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` v9.2 Sect
 | [power-semis](wiki/themes/power-semis.md) | NVTS, POWI, VICR, ON, MPWR | 2026-05-29 |
 | [software-AI-moat-durability](wiki/themes/software-AI-moat-durability.md) | MSFT, NOW, CRM, WDAY, SNOW, DDOG, PLTR, CRWD, ZS, PANW, ADBE, INTU, TEAM, SAP | 2026-06-01 |
 | [hyperscaler-capex](wiki/themes/hyperscaler-capex.md) | MSFT, GOOGL, AMZN, META, ORCL, CRWV, NBIS | 2026-06-03 |
+| [defense-drone-supply-chain](wiki/themes/defense-drone-supply-chain.md) | MP, LSCC, AVAV, KTOS | 2026-06-04 |
+| [drone-platform-commoditization](wiki/themes/drone-platform-commoditization.md) | AVAV, KTOS | 2026-06-04 |
 
 ## Layers
 
