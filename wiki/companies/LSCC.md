@@ -118,6 +118,8 @@ Speakers: Ford Tamer (CEO), Lorenzo Flores (CFO), Rick Muscha (IR); AMI CEO Sanj
 
 ## Change log
 
+- **2026-06-05 (Session 134 — cross-ref):** Added a cross-ref to [[MRCY]] (Mercury Systems, now a vault page) — the *trusted-domestic counterpart* at the secure-microelectronics node: LSCC is the China-exposed (64% Greater China) / TSMC-fab secure-FPGA designer; MRCY is the onshore-DMEA-trusted secure-processing integrator. The two poles of the same node. No content change.
+
 - **2026-06-04 (Session 133 — cross-ref):** Added to the new vault-wide [[china-exposure]] theme as a **cross-thesis node** — the standout 64%-Greater-China-revenue name *and* TSMC-fab-dependent (a "trusted-defense" name that is majority-China-revenue). No content change.
 
 - **2026-06-04 (Session 128 — cross-ref):** Added a cross-ref to [[defense-drone-supply-chain]] (LSCC is the upstream secure-microelectronics node; the TSMC-fab dependence is the cross-thesis seam). No content change.

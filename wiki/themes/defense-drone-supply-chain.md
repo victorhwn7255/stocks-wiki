@@ -1,6 +1,6 @@
 ---
 type: theme
-tickers: [MP, LSCC, AVAV, KTOS, AMPX]
+tickers: [MP, LSCC, AVAV, KTOS, AMPX, MRCY]
 last_updated: 2026-06-04
 ---
 
@@ -39,7 +39,7 @@ With four Defense & Drones pages in the vault, **both ends of the chain are repr
 The map has upstream nodes the vault has not yet substantiated with primary sources (plain-text until they cross the page threshold):
 - **EO/IR sensors & seekers** → [[TDY]] (Teledyne, via FLIR) — **now a vault page (S131)**, graduated from this forward list: the dominant Western EO/IR position, and a *squeezed-middle* node — it **owns** the sensor chokepoint (downstream) while **disclosing rare-earth-magnet + germanium dependence** (upstream), making it the 2nd disclosed consumer on [[rare-earth-magnet-chokepoint]]. The picks-and-shovels sensor supplier to all drone makers (the layer value migrates *to* as airframes commoditize — see [[drone-platform-commoditization]]).
 - **High-energy-density batteries** → [[AMPX]] (Amprius) — **now a vault page (S132)**, graduated from this forward list: the silicon-anode battery enabler whose SiCore cells are designed into [[AVAV]] and [[TDY]] (FLIR Black Hornet) UAS programs — the energy-density chokepoint that gates drone endurance (loiter / range / payload). A *squeezed-middle* node like [[TDY]]: positioned as the **NDAA-compliant domestic battery** answer (the DIU standardization contract; the NDAA battery mandate) while *itself* China-dependent (materials "sourced primarily from China"; silicon-anode IP from Berzelius-Nanjing; China's lithium-battery export controls suspended to Nov 2026). On the right side of commoditization (picks-and-shovels cells to all drone makers — see [[drone-platform-commoditization]]), but loss-making and cash-burning (Framework D6).
-- **Trusted microelectronics** → Mercury Systems (MRCY) — a cross-thesis node alongside [[LSCC]].
+- **Trusted microelectronics** → [[MRCY]] (Mercury Systems) — **now a vault page (S134)**, graduated from this forward list: the trusted/secure "processing at the edge" specialist (`defense_tier 2`) and the **trusted-domestic pole** of the secure-microelectronics node, alongside [[LSCC]] but as its *inverse* — DMEA-certified onshore trusted manufacturing vs LSCC's 64%-China-revenue / TSMC-Taiwan-fab profile. Together the two now represent the node's two poles (China-exposed designer vs onshore-trusted integrator); a dedicated trusted-microelectronics chokepoint page is a closer candidate (two participants), deferred pending a third.
 - **Rare-earth feedstock / refining** → USA Rare Earth, Energy Fuels, American Resources — upstream of [[MP]]'s finished magnets.
 - **Autonomy / AI software** → Anduril (Lattice), Shield AI (Hivemind) — *private and un-investable*, which is itself a central structural finding: the best pure drone-autonomy capability is not publicly accessible.
 
@@ -59,6 +59,8 @@ The secure-microelectronics node is the cleanest **cross-domain** link between t
 Tier-3-anchored synthesis; no new primary source ingested at creation. The value-chain spine + the layer-attractiveness ordering are Vic-authored scaffolding (the Tier-3 report + `frameworks-defense-drones.md` Framework D1), attributed and paraphrased. The owner↔consumer links are cross-referenced to primary-source evidence on the company pages: AVAV→MP and AVAV→LSCC from AVAV's FY2025 10-K (China rare-earth + secure-component risk); KTOS's non-disclosure of magnet dependence + its propulsion/SRM vertical integration from KTOS's FY2025 10-K + Q1 FY2026 call. Budget/program/concentration figures are Tier-3 (IEA Nov 2025 via the report; FY2027/DAWG figures are *requests*, not enacted) — to verify against primaries at future ingest. Refinement expected as TDY / AMPX / MRCY cross the page threshold.
 
 ## Change log
+
+- **2026-06-05 (Session 134 — trusted-microelectronics node graduated):** [[MRCY]] (Mercury Systems) ingested as a vault page (`defense_tier 2`); graduated the **trusted-microelectronics node** from forward-candidate to a live node — the trusted-domestic pole alongside [[LSCC]] (the two now represent the node's China-exposed-designer vs onshore-trusted-integrator poles). `tickers` +MRCY. No structural change to the owner↔consumer spine.
 
 - **2026-06-04 (Session 132 — battery node graduated):** [[AMPX]] (Amprius) ingested as a vault page; graduated the **high-energy-density battery node** from forward-candidate to a live node (the silicon-anode enabler whose SiCore cells are designed into [[AVAV]] + [[TDY]]/FLIR UAS programs; a squeezed-middle node — NDAA-compliant-battery answer yet itself China-dependent). `tickers` +AMPX. No structural change to the owner↔consumer spine.
 

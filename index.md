@@ -75,6 +75,7 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` Section 3
 | [KTOS](wiki/companies/KTOS.md) | KTOS  | —       | —       | —       | —            | —         | —         | 1        | 2026-06-04   |
 | [TDY](wiki/companies/TDY.md)   | TDY   | —       | —       | —       | —            | —         | —         | 4        | 2026-06-04   |
 | [AMPX](wiki/companies/AMPX.md) | AMPX  | —       | —       | —       | —            | —         | —         | 4        | 2026-06-04   |
+| [MRCY](wiki/companies/MRCY.md) | MRCY  | —       | —       | —       | —            | —         | —         | 2        | 2026-06-05   |
 
 ## Chokepoints
 
