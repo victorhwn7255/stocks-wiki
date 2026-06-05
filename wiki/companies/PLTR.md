@@ -90,6 +90,8 @@ The honest counterweight (the "execution-dependent" qualifier):
 
 PLTR is the only software-moat scorecard name with a pre-existing vault footprint: it is the **Palantir Foundry / AI partner at Centrus ([[LEU]])** for the Piketon HALEU enrichment supply chain — "$300M identified cost savings" and a $5M Q1 prepayment, alongside Fluor (EPC) and Geiger Brothers (construction). Documented at primary on [[LEU]] and [[HALEU-fuel-chokepoint]]; LEU's primary sources name Palantir (an A1 reciprocal-confirmation). This is a vault-internal example of AIP/Foundry deployed in a tracked supply chain — a commercial-customer data point, not a change to PLTR's application-layer placement.
 
+A second, lighter touchpoint surfaced S135: [[INOD]] (the anchor of [[AI-data-supply-chain]]) disclosed on its Q1 2026 call that its Federal practice does computer-vision work *"in concert with Palantir"* for US government customers — emerging and immaterial to PLTR (INOD-side disclosure, not reciprocally confirmed in PLTR primary sources), noted for provenance.
+
 ## Open questions
 
 1. **AIP revenue disclosure.** Does PLTR ever break out an AIP/AI revenue line (Tier 1), or does it stay embedded in total revenue with the AI signal visible only via growth + TCV bookings?
@@ -107,3 +109,4 @@ PLTR is the only software-moat scorecard name with a pre-existing vault footprin
 ## Change log
 
 - **2026-06-02 (S114 — creation):** First-canonical ingest from FY2025 10-K (Tier 1) + Q1 2026 10-Q (Tier 1) + Q1 2026 call (Tier 2; May 4 2026). Third [[software-AI-moat-durability]] scorecard name; `layer: outside` + all `*_tier outside` (application-layer / compute consumer, per MSFT/NOW precedent); frameworks application-layer gap flagged for codification (not edited). Research-goal verdict Durable/amplified (execution-dependent) held; adds the deal/outcome billed-unit flavor; moat refined to ontology + agentic execution; metrics refined upward (Rule of 40 145, NDR 150%, US commercial +133%, FY2026 guide $7.65–7.66B) and government concentration down (~53% vs ~55%). Vault touchpoint: LEU/Centrus AIP/Foundry deployment ([[LEU]] + [[HALEU-fuel-chokepoint]] cross-ref). Karp prepared-remarks combativeness documented; CEO-combativeness count UNCHANGED at 2 (Section 3.7 analyst-question criterion not met). Calendar FY (Section 2.11 N/A). Financials Tier-1-verified at execution.
+- **2026-06-05 (S135 — [[INOD]] cross-ref):** Added a second, lighter Vault-touchpoint note — INOD's Q1 2026 call discloses Federal computer-vision work "in concert with Palantir" (INOD-side, immaterial to PLTR, not reciprocally confirmed). Provenance only; no placement change. last_updated unchanged (2026-06-02).

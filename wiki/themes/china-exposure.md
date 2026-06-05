@@ -1,7 +1,7 @@
 ---
 type: theme
-tickers: [TSM, NVDA, AVGO, AMD, MRVL, ALAB, MU, ARM, INTC, AAOI, AXTI, LITE, COHR, CRDO, ONTO, COHU, VECO, PLAB, TSEM, MKSI, MPWR, NVTS, POWI, ON, SOI, SNDK, FN, GLW, FLEX, VICR, NOK, ENS, XFAB, AEHR, MOD, MP, TDY, AMPX, AVAV, LSCC, KTOS, MRCY]
-last_updated: 2026-06-04
+tickers: [TSM, NVDA, AVGO, AMD, MRVL, ALAB, MU, ARM, INTC, AAOI, AXTI, LITE, COHR, CRDO, ONTO, COHU, VECO, PLAB, TSEM, MKSI, MPWR, NVTS, POWI, ON, SOI, SNDK, FN, GLW, FLEX, VICR, NOK, ENS, XFAB, AEHR, MOD, MP, TDY, AMPX, AVAV, LSCC, KTOS, MRCY, INOD]
+last_updated: 2026-06-05
 ---
 
 # China & Taiwan exposure — the vault's geopolitical-concentration map
@@ -112,6 +112,7 @@ Honest-verdict: **not everything is China-exposed**, and naming what *isn't* is 
 - **Domestic energy / nuclear:** [[BE]], [[CCJ]], [[CEG]], [[FCEL]], [[LEU]], [[FLNC]].
 - **Diversified / US-centric industrials & optics:** [[VRT]], [[VIAV]].
 - **Generic-tariff-only (not China-specific):** [[AAON]], [[ANET]], [[BWXT]], [[CAT]], [[ETN]], [[GEV]] disclose tariff risk but no China-specific revenue/sourcing/fab dependence; [[CSCO]] names Huawei as a competitor only.
+- **AI-data services (offshore-but-not-China):** [[INOD]] — global delivery is principally India / Sri Lanka / Philippines (12,200 professionals across 70+ countries); the Hong Kong subsidiary is treasury, not operations; no China revenue, sourcing, fab, or export-control exposure (the AI-data-supplier name, see [[AI-data-supply-chain]]). A reminder that "offshore" ≠ "China."
 
 The cleanest *intra-vault* hedge against a Taiwan event sits in the software/cloud demand layer (which *pays* for the compute but doesn't *manufacture* it) and the domestic-energy names.
 
@@ -132,3 +133,4 @@ Cross-cutting synthesis; no new primary source ingested at creation. The **corre
 - **2026-06-05 (Session 134 — added MRCY):** [[MRCY]] (Mercury Systems) ingested; added to the Defense matrix as a **Low / "trusted-domestic"** entry — the reshoring-aligned inverse of [[LSCC]] at the secure-microelectronics node (DMEA onshore; no disclosed TSMC/China dependence). `tickers` +MRCY. Reinforces the reshoring-inverse-exposure thread.
 
 - **2026-06-04 (Session 133 — creation; the vault's first cross-thesis, vault-wide theme):** Created from a vault-wide China/Taiwan-exposure survey of all ~67 company pages + the chokepoint/theme pages + both `_thesis`/`frameworks` anchors. Consolidates a frame already scattered across ~36 pages into one map; spans **both** thesis domains. Centerpiece: China exposure is **correlated, not diversifiable** (the Taiwan-fab master node), and **direction matters more than magnitude** (supply risk vs lost demand vs demand-driver vs market exposure). Eight-axis master matrix indexing every exposed name to its company-page evidence; six cluster narratives; the demand-vs-supply direction matrix; the vault-wide "squeezed-middle" chokepoint-consumer paradox ([[TDY]]/[[LSCC]]/[[AMPX]]/[[AXTI]]/[[MP]]); the reshoring inverse-exposure winners; the China-policy calendar; and the honest no-exposure hedge set. Tier-3 concentration figures attributed (verify-at-primary); billing-address caveat applied to the revenue axis; describe-don't-recommend preserved. Cross-references the China/Taiwan chokepoint pages ([[rare-earth-magnet-chokepoint]], [[TSMC-CoWoS]], [[transformer-supply]], [[InP-supply]]) + adjacent themes ([[defense-drone-supply-chain]], [[datacenter-photonics-supply-chain]], [[foundry-competition]], [[overseas-fab-expansion]], [[hyperscaler-custom-ASIC]], [[HBM-oligopoly]]) it consolidates rather than duplicates. Both `_thesis`/`frameworks` anchors referenced by name only (human-owned; byte-unchanged). NOT an ingest; no new primary source; not a refresh.
+- **2026-06-05 (S135 — [[INOD]] no-exposure add):** Added [[INOD]] to the no/minimal-exposure hedge set as an AI-data-services name with offshore-but-not-China delivery (India / Sri Lanka / Philippines; HK treasury-only; no China revenue/sourcing/fab/export-control). Cross-ref to the new [[AI-data-supply-chain]] theme. Added INOD to tickers. last_updated 2026-06-04 → 2026-06-05.
