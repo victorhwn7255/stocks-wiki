@@ -74,6 +74,7 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` Section 3
 | [LSCC](wiki/companies/LSCC.md) | LSCC  | 3       | —       | —       | —            | —         | —         | 4        | 2026-06-03   |
 | [KTOS](wiki/companies/KTOS.md) | KTOS  | —       | —       | —       | —            | —         | —         | 1        | 2026-06-04   |
 | [TDY](wiki/companies/TDY.md)   | TDY   | —       | —       | —       | —            | —         | —         | 4        | 2026-06-04   |
+| [AMPX](wiki/companies/AMPX.md) | AMPX  | —       | —       | —       | —            | —         | —         | 4        | 2026-06-04   |
 
 ## Chokepoints
 
@@ -110,8 +111,9 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` Section 3
 | [power-semis](wiki/themes/power-semis.md) | NVTS, POWI, VICR, ON, MPWR | 2026-05-29 |
 | [software-AI-moat-durability](wiki/themes/software-AI-moat-durability.md) | MSFT, NOW, CRM, WDAY, SNOW, DDOG, PLTR, CRWD, ZS, PANW, ADBE, INTU, TEAM, SAP | 2026-06-01 |
 | [hyperscaler-capex](wiki/themes/hyperscaler-capex.md) | MSFT, GOOGL, AMZN, META, ORCL, CRWV, NBIS | 2026-06-03 |
-| [defense-drone-supply-chain](wiki/themes/defense-drone-supply-chain.md) | MP, LSCC, AVAV, KTOS | 2026-06-04 |
+| [defense-drone-supply-chain](wiki/themes/defense-drone-supply-chain.md) | MP, LSCC, AVAV, KTOS, AMPX | 2026-06-04 |
 | [drone-platform-commoditization](wiki/themes/drone-platform-commoditization.md) | AVAV, KTOS | 2026-06-04 |
+| [china-exposure](wiki/themes/china-exposure.md) | TSM, NVDA, AVGO, AMD, MRVL, ALAB, MU, ARM, INTC, AAOI, AXTI, LITE, COHR, CRDO, ONTO, COHU, VECO, PLAB, TSEM, MKSI, MPWR, NVTS, POWI, ON, SOI, SNDK, FN, GLW, FLEX, VICR, NOK, ENS, XFAB, AEHR, MOD, MP, TDY, AMPX, AVAV, LSCC, KTOS | 2026-06-04 |
 
 ## Layers
 

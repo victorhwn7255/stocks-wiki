@@ -255,6 +255,8 @@ Not a new primary-source ingest. Defense framing layered over the existing Tier-
 
 ## Change log
 
+- **2026-06-04 (Session 133 — cross-ref):** Added to the new vault-wide [[china-exposure]] theme as the **rare-earth materials node** and a **reshoring inverse-exposure** name (China escalation raises MP's value). No content change.
+
 - **2026-06-04 (Session 128 — cross-ref):** Added Cross-vault adjacency links to the Defense domain's first structural pages — [[rare-earth-magnet-chokepoint]] (MP is the owner-side anchor) + [[defense-drone-supply-chain]] (upstream node). No content change; financials unchanged (Q1 FY2026, S90).
 
 - **2026-06-03 (Session 123 — dual-thesis annotation; FIRST defense-domain placement in vault):** Added `defense_tier 4` (supply-chain/materials enabler per `frameworks-defense-drones.md` Framework D2; codified note — Tier 4 = highest conviction, not lowest) + a Defense & Drones thesis-role section: reframes MP's fit as DIRECT on the defense side (vs INDIRECT on AI), places rare-earth NdFeB magnets as the #1 geology/physics chokepoint on the Framework D5 quality gradient, and links the DoW partnership to the defense enacted-vs-requested budget-contingency discipline. Honest scoping: drones <3% of global NdFeB demand (Tier-3) — criticality not tonnage; no drone-demand overclaim. NOT a refresh — no new primary source; financials unchanged (Q1 FY2026, S90); no refresh_log entry. Tier-3 framing attributed, to verify at primaries. Open question #11 + Source audit entry added. MP = vault's FIRST dual-thesis page. `last_updated` → 2026-06-03.

@@ -55,6 +55,8 @@ COMPANIES = {
     "LSCC": {"cik": "0000855658", "forms": ["10-K", "10-Q"]},  # Lattice Semiconductor — Defense & Drones (secure FPGAs) + AI-datacenter dual-thesis
     "KTOS": {"cik": "0001069258", "forms": ["10-K", "10-Q"]},  # Kratos Defense & Security — Defense & Drones (large UAS / XQ-58 Valkyrie)
     "TDY":  {"cik": "0001094285", "forms": ["10-K", "10-Q"]},  # Teledyne Technologies — Defense & Drones (EO/IR sensors via FLIR; Black Hornet; Rogue 1)
+    "AMPX": {"cik": "0001899287", "forms": ["10-K", "10-Q"]},  # Amprius Technologies — Defense & Drones (silicon-anode batteries; SiCore; Teledyne FLIR customer); calendar FY
+    "MRCY": {"cik": "0001049521", "forms": ["10-K", "10-Q"]},  # Mercury Systems — Defense & Drones (trusted microelectronics / processing subsystems; pairs with LSCC); FY ends ~late June (Section 2.11)
     "ANET": {"cik": "0001596532", "forms": ["10-K", "10-Q"]},
     "VIAV": {"cik": "0000912093", "forms": ["10-K", "10-Q"]},
     "PLAB": {"cik": "0000810136", "forms": ["10-K", "10-Q"]},

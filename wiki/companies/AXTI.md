@@ -255,6 +255,8 @@ Quarterly filing providing mid-year baseline. Notable for the North America reve
 
 ## Change log
 
+- **2026-06-04 (Session 133 — cross-ref):** Added to the new vault-wide [[china-exposure]] theme as the **AI-side "squeezed-middle" twin** — owns an InP-substrate chokepoint position yet is 100% China-manufactured and InP-export-controlled (the AI analog of the defense [[TDY]]/[[LSCC]] pattern). No content change.
+
 - **2026-04-23:** Page created. Session 13 paired ingest (AXTI + [[VECO]]). Sources: AXTI 10-K FY2025, AXTI 10-Q Q3 FY2025, AXTI Q4 FY2025 earnings call. Layer 6 classification (first in vault — provisional, pending frameworks.md update). See also [[InP-supply]] for the substrate-level chokepoint analysis.
 - **2026-04-27 (Session 24 chokepoint research framework integration — Integration 2):** Added Open question #7 InP substrate concentration two-claim reconciliation. Tier 3 source `raw/research/photonics-chokepoint-table.md` claim (60-70% AXTI) reconciled with canonical Session 19 architecture primer claim (78% JX Advanced Metals) via two-layer distinction (indium feedstock upstream vs. InP wafer production downstream). Both treated as over-claim mode per A1 three-mode framing convention pending future primary-source cross-validation. No frontmatter changes; no inbound wikilink updates required.
 - **2026-04-27 (Session 25):** Cross-referenced from new theme page [[chokepoint-investability-priorities]] Chokepoint 3 (InP substrate supply) per A2 first canonical application. Two-layer reconciliation framework (indium feedstock layer / JX dominant; InP wafer production layer / AXTI significant) preserved per Session 24 Integration 2. No content edits.
