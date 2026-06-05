@@ -1,0 +1,147 @@
+# The Humanoid Robot Investment Theme: A Goldman Sachs–Anchored Map of the High-Value Subsystems
+
+## TL;DR
+- Goldman Sachs sees the most durable value in humanoid robots concentrating in the **mechatronic "body"** — specifically **harmonic reduction gears and actuator assemblies** — which top its proprietary Exhibit 5 exposure ranking (16 and 14 of 18 points), because they combine high content value, high technology/manufacturing barriers, and large incremental humanoid-driven demand; the AI "brain" and compute (GPU/CPU) score lower on the *durable supply-chain* axis even though they are strategically essential.
+- Goldman's base case is a **$38bn total addressable market by 2035** (raised "more than sixfold" from $6bn), with **~1.4 million units shipped in 2035** (~76k by 2027E, >250k by 2030, ~502k by 2032E) and a **blue-sky scenario of up to $205bn**; the upgrade was driven mostly by faster-than-expected AI progress ("AI progress surprised us the most") and a ~40% drop in component/manufacturing costs.
+- The structural reality underneath Goldman's neutral framing is **geographic concentration in China** (Morgan Stanley: ~63% of the value chain; China makes ~90% of permanent magnets that underpin every actuator), with the West/Japan/Germany retaining edges in foundation models, high-end sensors, precision grinding machines and some vision — making the supply chain both an opportunity and a chokepoint.
+
+## Key Findings
+
+1. **Goldman's investment thesis is "own the picks and shovels, not the robot."** Across its humanoid series (*Humanoid Robot: The AI Accelerant*, Jan 8 2024; *Humanoid Robots III: The Supply Chain Dynamism*, 2025, both led by Jacqueline Du, head of China Industrial Technology research), Goldman's repeated conclusion is that "the best investment opportunities for now could lie in component makers that form the supply chain," and within that it states a clear preference: *"we prefer harmonic reduction gear suppliers and actuator assemblers on stronger technology barriers and higher product adoption certainty."*
+
+2. **Exhibit 5's six-criteria scoring is the analytical spine.** Goldman scores each component 1–3 on (1) content value % in BOM, (2) certainty of technology choice, (3) technology barrier, (4) manufacturing/engineering barrier, (5) capacity flexibility, and (6) % incremental opportunity from humanoids. Harmonic reduction gear (16) and dexterous hand module (15) rank highest, with actuator assembly and planetary roller screw tied at 14.
+
+3. **The BOM is actuator-dominated.** Independent cross-checks corroborate that actuators (motor + gearbox/screw + sensors + control) are the dominant cost block; JP Morgan estimates reducers + roller screws alone at ~33% of BOM, while McKinsey puts total actuators at 40–60% of BOM. Goldman's one public per-component figure is that the planetary-roller-screw-based linear joint "currently accounts for 20-30% of the cost of high-spec robotic components."
+
+4. **Cost is falling far faster than expected**, the single biggest reason for Goldman's TAM upgrade: manufacturing cost per unit fell ~40% (vs. the 15–20%/yr decline Goldman had modeled), from a $50,000–$250,000 range to $30,000–$150,000.
+
+5. **2025–2026 is the inflection from R&D to volume.** Tesla is converting Fremont for Optimus Gen-3 (targeting a 1mn-unit/yr line by end-2026), Figure AI raised >$1bn at a $39bn valuation, Unitree (the global unit-shipment leader, >5,500 humanoids in 2025, 32.4% share) filed for a Shanghai STAR Market IPO, and NVIDIA, Boston Dynamics/Hyundai and the Chinese OEMs all showcased new platforms at CES 2026.
+
+## Details
+
+### 1. Goldman's market sizing and adoption timeline
+
+Goldman's headline base case (raised in the Jan 2024 report and reaffirmed/refined in Humanoid Robots III):
+- **TAM: $38bn by 2035** (base case), "up more than sixfold from a previous projection of $6 billion."
+- **Blue-sky: up to $154bn (2024 report), raised to $205bn (Humanoid Robots III, 2025)** — Goldman likens the blue-sky outcome to roughly the size of the global EV market.
+- **Unit shipments (base case): ~76k by 2027E → >250k in 2030 → ~502k by 2032E → ~1.4 million in 2035** (the precise model figure cited internally is ~1.38mn by 2035E; Goldman's published round figure is "1.4 million units," a fourfold increase over its prior estimate). Consumer robot sales are expected to ramp "exceeding a million units annually in just over a decade."
+- **Labor-substitution math:** assuming a 5–15% substitution rate in car manufacturing plus dangerous jobs, demand could reach **1.1–3.5 million units globally**.
+
+Drivers of the upgrade, in Goldman's own words: *"AI progress surprised us the most"* — specifically end-to-end AI / robotic LLMs that let models train themselves rather than relying on hand-coded behavior — plus the ~40% cost decline. Goldman's framing is deliberately neutral and conditional: it stresses that "the viability of such machines hasn't been proven yet," that manipulation and human interaction remain bottlenecks, and that near-term demand is concentrated in **structured environments** (EV assembly, component sorting) and "dangerous, dirty, and dull" jobs (mining, disaster rescue, nuclear maintenance, chemicals).
+
+Goldman is notably *more conservative than the market* on near-term shipments: it models 76k/502k units by 2027E/2032E, explicitly "at a slower pace than market expectations as we believe it will likely take longer for AI-empowered robots to be ready." In Humanoid Robots III, after surveying nine Chinese supply chain companies (Nov 3–6, 2025, including Sanhua and Tuopu), Goldman flagged that suppliers are planning 100k–1mn robot-equivalent units of annual capacity each — "bullish vs GSe of 1.38mn units of global humanoid robot shipment by 2035E" — i.e., a "capacity-first" gamble that risks idle capacity if orders don't materialize. No surveyed supplier had confirmed sizable binding orders.
+
+### 2. Bill-of-materials / value distribution
+
+Goldman folds most cost into "actuators" and emphasizes the precision mechanical parts as the value and bottleneck concentration. Cross-bank/industry BOM views (with attribution):
+
+| Source | Actuators (motor+gearbox/screw+sensor) | Sensing/perception | Compute/control | Battery + structure | Notes |
+|---|---|---|---|---|---|
+| **JP Morgan** | Reducers + roller screws alone ≈ **33%** of BOM | — | — | — | Planetary roller screw $1,350–$2,700 each; ~40+ per robot |
+| **McKinsey (Apr 2026)** | **40–60%** of BOM (within actuator: gearbox 30–50%, driver 15–20%, motor 10–20%) | **10–20%** | **10–15%** | structure 5–10% + battery 5–10% | These five domains = 85–90% of unit cost; roller screws + harmonic reducers flagged as choke points |
+| **Bank of America (Apr 2025)** | Dominant block | depth cam + LiDAR | AI chip | — | Total BOM ≈ **$35,000** in 2025 (China-made), falling to **$13,000–$17,000 by 2030–2035** (~14% CAGR decline) |
+| **Goldman (public figure)** | Linear joint (roller screw) = **20–30% of high-spec component cost** | — | — | — | Prefers harmonic gear + actuator assembly |
+
+Tesla's own disclosed Optimus BOM target is ~$43,000 in small-batch falling to <$20,000 at scale; an Optimus uses ~28 actuators (14 rotary + 14 linear) plus two dexterous hands. The actuator/joint module is consistently the single largest cost block (>30% of a high-spec robot, and >50% in basic versions lacking dexterous hands and high-end sensors).
+
+### 3. Subsystem-by-subsystem deep dive (ordered by Goldman's Exhibit 5 exposure ranking)
+
+For each subsystem: function → why it matters → content value/barriers → chokepoint vs. commoditizing → Goldman's score and named companies (light placements).
+
+#### (a) Harmonic reduction gear — Exposure rank 16 (3/2/3/3/2/3) — Goldman's top pick
+**Function:** A strain-wave gear (flexspline + circular spline + wave generator) that converts a motor's high-speed/low-torque output into the low-speed/high-torque, near-zero-backlash precision motion required at **rotary joints** (shoulder, elbow, wrist, neck). **Why it matters / barriers:** Manufacturing requires high-precision grinding machines (limited in number — a key bottleneck Goldman flags), specialized flexspline metallurgy and tight tolerances; qualification cycles are long. This is a **structural chokepoint**: the top five players (Harmonic Drive LLC, Nabtesco, Harmonic Drive Systems, Wittenstein, Schaeffler) control ~55–60% of the global market, and it scores 3 on both technology and manufacturing barriers in Goldman's matrix. **Companies (light placements):**
+- **Harmonic Drive (HDS, Japan)** — Goldman "Buy"; global technology pioneer and leader in strain-wave gears; sits at the apex of the rotary-actuator value chain.
+- **LeaderDrive (China)** — leading domestic Chinese harmonic-gear supplier, a key share-gainer as Chinese OEMs localize; positioned as the cost-competitive challenger to the Japanese incumbents.
+- (Context — China-listed peer Green Harmonic reportedly holds >60% domestic share and is a Tesla harmonic-reducer supplier.)
+
+Goldman's rationale: highest composite score because it combines high content value, high barriers on both technology and manufacturing, and high incremental humanoid-driven demand — i.e., the most "defensible" growth.
+
+#### (b) Dexterous hand module — Exposure rank 15 (3/1/3/3/2/3)
+**Function:** The end-effector that performs fine manipulation (grasping, handling fragile/small objects). Designs range from 6 to 20+ degrees of freedom (a human hand has ~27 DoF). **Why it matters / barriers:** High content value and high technology/manufacturing barriers, but Goldman scores it **only 1 on certainty of technology choice** — the architecture is unsettled (tendon-driven vs. linkage vs. Bowden-cable; coreless motors + worm gears + lead screws + tactile sensors). This is a **high-value but still-contested** subsystem: a chokepoint in capability terms, but with route risk. **Companies (light placements):**
+- **Zhaowei (China)** — cross-over entrant; supplies integrated dexterous-hand drive modules combining micro-motors, reduction gearboxes and lead screws; cost-performance positioning leveraging its precision micro-transmission base.
+- **Inovance (China)** — servo and motion-control leader extending into hand actuation/modules; broad mechatronic capability across the actuator stack.
+- (Context — cross-over players RoboSense, Leadshine, Leili apply core-business precision/sensing tech to hands; Maxon, Moons' Electric and Fortior supply motors/drivers into the hand.)
+
+#### (c) Actuator assembly — Exposure rank 14 (3/3/1/2/3/2) — Goldman's "adoption certainty" pick
+**Function:** The integrated joint module that packages motor + reducer/screw + encoder + sensors + control into an "artificial muscle." **Why it matters:** Highest content value (3) and **highest certainty of technology choice (3)** plus high capacity flexibility (3) — but Goldman scores the **technology barrier low (1)** because assembly/integration is less of a moat than the precision parts inside it. This is the subsystem Goldman prefers for **product-adoption certainty** rather than defensibility. The trend (per Humanoid Robots III) is suppliers moving "from single components to integrated, modular solutions," consolidating value upstream. **Companies (light placements):**
+- **Sanhua (China)** — Goldman "Buy"; leveraged its automotive thermal-management leadership (>35% global share) into Optimus actuator assemblies and liquid-cooling joint modules; reported as a dominant Optimus actuator-assembly supplier with capacity build-out in Monterrey, Mexico (designed for ~300k actuators/yr) and Thailand.
+- **Tuopu / Top Group (China)** — Goldman "Buy"; auto-chassis leader that developed in-house rotary/linear actuators for Optimus; "deeply aligned with Tesla," doing final assembly/testing of actuator modules, ~300k-set capacity built.
+
+#### (d) Planetary roller screw — Exposure rank 14 (3/2/2/3/1/3)
+**Function:** Converts a motor's rotation into linear motion in **linear joints** (knee, ankle, arm); threaded rollers (vs. balls) give higher load capacity, rigidity and durability under the shock loads of walking. **Why it matters / barriers:** High content value (3) and high manufacturing barrier (3), but Goldman scores **capacity flexibility low (1)** — the precision-grinding constraint makes capacity hard to scale. This is the **most acute physical chokepoint** alongside harmonic gears (narrow supplier base, long lead times, limited substitution). Tesla's Optimus uses ~14; each can cost $1,350–$2,700. **Companies (light placements):**
+- **Schaeffler (Germany, via Ewellix)** — cleanest Western roller-screw exposure; precision-bearing/linear-motion heritage.
+- **Hengli Hydraulic (China)** — leveraging hydraulics/precision-machining base to localize roller-screw production.
+- **Sanhua, LeaderDrive** — extending actuator/transmission capability into screws.
+- (Context — THK, NSK, SKF also scaling; Shanghai Beite announced a ~$260mn dedicated PRS facility; Wuzhou Xinchun supplies reverse PRS for hip/knee joints at roughly half the price of Germany's Rollvis.)
+
+#### (e) Sensors (position, torque, 6D force-torque, tactile) — Exposure rank 13 (2/2/3/2/2/2)
+**Function:** Feedback for closed-loop control and safe interaction — encoders (position), torque sensors, six-axis force/torque sensors (e.g., at ankle/wrist), and tactile/fingertip sensors. **Why it matters / barriers:** Highest **technology barrier (3)** in this tier; the 6-axis F/T market is dominated by a few players (ATI and HBM cited as market leaders). A **chokepoint on the high-precision end** (6D F/T, tactile) but more commoditized for basic encoders. **Companies:** **ATI Industrial Automation (owned by Novanta, US)** — inventor/market leader in six-axis force/torque sensors widely used on humanoids; **Vishay Precision (US)** — precision strain-gauge/force-sensing components. (Context — Kunwei, Murata, TDK named by Goldman in the broader sensor enabler list.)
+
+#### (f) GPU/CPU compute — Exposure rank 13 (2/3/3/3/1/1)
+**Function:** Onboard "cerebellum/cortex" running perception, planning and real-time control. **Why it matters / barriers:** Highest possible scores on certainty, technology barrier and manufacturing barrier (3/3/3) — but Goldman scores **capacity flexibility and incremental humanoid opportunity both at 1**, because humanoids are a small incremental market for a compute giant whose value is driven by data-center AI. So it's a **strategic chokepoint that is not a pure-play humanoid growth story.** **Companies:** **NVIDIA** — dominant via Jetson AGX Thor (Blackwell GPU, 2,070 FP4 TFLOPS, 128GB unified memory) plus the Isaac/GR00T/Cosmos full-stack platform; **Intel** — CPU/edge and (via the now-independent RealSense) vision. NVIDIA's January 2026 CES and June 2026 GTC Taipei announcements (GR00T N1.7/N2, the Isaac GR00T Reference Humanoid built on a Unitree H2 Plus body with Sharpa hands) cement its "brain" platform position.
+
+#### (g) Coreless motor — Exposure rank 13 (2/1/2/2/3/3)
+**Function:** Compact, high-power-density "cup" motors used chiefly in **dexterous-hand finger joints** where precision and fast response in tiny spaces are critical. **Why it matters:** High capacity flexibility and high incremental opportunity (3/3) but **low technology-choice certainty (1)**. Reportedly ~50% of a dexterous hand's actuator cost. **Companies:** **Moons' Electric, Leadshine, Leili, Veichi (China)**, **Zhaowei** — Chinese motor specialists scaling micro-motor output; (global peer AMETEK is a top-3 coreless-motor player). Moderately competitive/commoditizing relative to the gear chokepoints.
+
+#### (h) Frameless torque motor — Exposure rank 13 (2/2/1/2/3/3)
+**Function:** A permanent-magnet motor (rotor + stator only, no housing/shaft/bearing) that directly drives the load in **rotary joints**, paired with the harmonic reducer. **Why it matters:** High capacity flexibility and incremental opportunity (3/3) but **low technology barrier (1)** — relatively lower moat. **Companies:** **Kinco, Haozhi, Veichi (China)** — motor makers scaling frameless torque output. Tends toward commoditization.
+
+#### (i) Battery — Exposure rank 12 (1/3/2/2/3/1)
+**Function:** Energy storage (typically ~2–3 kWh Li-ion packs giving ~2–5 hours runtime). **Why it matters:** Highest certainty of technology choice (3) and capacity flexibility (3), but **lowest content value (1) and lowest incremental opportunity (1)** — humanoids are a rounding error for battery giants. **Companies:** **CATL, Samsung SDI, Panasonic** — incumbent EV-battery leaders; CATL is also deploying humanoids in its own battery plants (via Spirit AI's "Xiaomo"/"Moz"). A mature, commoditizing input rather than a chokepoint.
+
+#### (j) Camera/LiDAR (vision) — Exposure rank 12 (1/2/2/2/3/2)
+**Function:** Perception — depth cameras, LiDAR and image sensors feeding the vision/VLA stack. **Why it matters:** Goldman scores it **lowest content value (1)** and explicitly lists cameras among components "mostly ready for commercial purposes." This subsystem is **commoditizing**, not a chokepoint: 2025 saw explosive LiDAR volume growth and multiple competing Chinese suppliers. **Companies:** **Intel (RealSense)** — stereo-depth cameras reportedly embedded in a majority of AMRs/humanoids (D455 in Agility's Digit), spun out as an independent company in 2025; **Orbbec** — 3D depth cameras (Gemini series integrated with Jetson Thor); **RoboSense** — robotics LiDAR shipments up >1,100% YoY in 2025 (~303k units), vertically integrating into a full "eyes + hand" stack across >10 humanoid OEMs (Unitree, AgiBot, Galbot); **Hesai** — robotics LiDAR up >5x in 2025 (~239k units), investing ~$29mn in 2026 in robot "eyes and muscles"; **Sunny Optical** — lens/camera-module supplier (humanoid design-win detail unconfirmed). DJI/Livox's Mid-360 is the de facto sensor on the Unitree G1. The value migration is toward perception *software* (vSLAM, sensor fusion) rather than the commoditizing hardware. (Note: a genuine technology-route split exists — Tesla pursues vision-only; most Chinese OEMs favor LiDAR + depth because vision-only struggles with all-scenario reliability.)
+
+#### Foundation models / "physical AI" brain (Exhibit 2 enabler; not separately ranked in Exhibit 5)
+**Function:** The vision-language-action (VLA) "brain" enabling generalized perception, reasoning and manipulation — the variable Goldman says "surprised us the most." **Companies Goldman names:** Tesla, NVIDIA, OpenAI, Alphabet, Meta, iFlytek, Huawei. This is where the **West retains its clearest edge** (most sophisticated AI models), even as it is the least "proven" bottleneck to mass production. Key 2025–26 developments: NVIDIA GR00T/Cosmos/Isaac; Figure's in-house Helix VLA (after exiting its OpenAI partnership in Feb 2025); Google DeepMind's Gemini Robotics powering Boston Dynamics' Atlas.
+
+### 4. The rare-earth / NdFeB materials chokepoint (underpins all motors/actuators)
+
+Every motor in every joint uses **NdFeB permanent magnets** (Nd/Pr, with Dy/Tb for high-temperature grades) — no other commercially viable material offers comparable energy density at the required size/efficiency. Estimates of magnet content per robot range from **~0.9–1.3 kg of NdPr** (Morgan Stanley's 2026 BluePaper estimates ~0.9kg NdPr per robot) to **~3.5–4 kg of high-performance NdFeB** (roughly twice an EV's magnet content). A Tesla Optimus Gen-2 architecture has ~42 motors (16 rotary + 14 linear actuators + 6 coreless motors per hand).
+
+The binding constraint is **midstream processing, not mining**: China makes **~90% of the world's permanent magnets** (McKinsey) and Morgan Stanley's 2026 BluePaper puts refined rare-earth supply at ~88% China-controlled; China also produces ~40% of precision bearings and encoders. This capacity was built over ~40 years and is hard to replicate within a single price cycle. Adamas Intelligence projects robotics will surpass all other end-uses as the largest NdFeB demand driver by ~2040, and that scaling humanoids to billions of units would require ~186x more NdFeB capacity. Beijing's 2025 export controls already disrupted automotive/robotics supply chains. Goldman folds magnets into its actuator/motor lines and does not publicly call out the rare-earth bottleneck; notably, **Bank of America takes the contrarian near-term view** that "the availability of critical materials, such as high-performance alloy steel and neodymium (NdFeB) magnets, will not become a bottleneck in the near term," pointing instead to high-end machine tools as the constraint. Ex-China magnet names (MP Materials, Lynas) vs. China's JL Mag/Northern Rare Earth define the geopolitical split.
+
+### 5. Geographic concentration
+
+Goldman's neutral framing — "no one country or region appears to be completely dominant… Some Western companies likely have the most sophisticated AI software models, while Asia will probably be the manufacturing hub" — maps onto a sharper structural picture corroborated by Morgan Stanley's Humanoid 100:
+- **China: ~63% of the overall value chain; ~45% of the "Body"/integration segment;** dominant in actuators, reducers, screws, dexterous hands, motors, batteries and rare-earth magnets; 56% of Humanoid-100 companies are China-based. Cost edge is structural (EV-grade ecosystem reuse) — building Optimus Gen-2 without Chinese suppliers reportedly costs ~3x more ($46k → $131k per one analysis).
+- **US/West: leads the "Brain"** (NVIDIA, OpenAI, Alphabet/DeepMind, Meta, Tesla, Figure) and high-end force/torque sensors (ATI/Novanta).
+- **Japan/Germany: precision mechanical core** — Harmonic Drive and Nabtesco (strain-wave gears), THK/NSK/SKF/Schaeffler (screws, bearings), and the high-precision grinding machine tools that gate roller-screw/harmonic-reducer capacity worldwide.
+
+### 6. Cross-bank corroboration
+
+- **Morgan Stanley ("Humanoid 100," Feb 2025):** brain/body/integrator taxonomy; $5tn TAM by 2050; China 63% of value chain; ~1 billion units by 2050 (90% in industrial/commercial use, China largest installed base at ~302mn). More bullish long-run than Goldman.
+- **JP Morgan:** reducers + roller screws ≈ 33% of BOM; PRS $1,350–$2,700 each.
+- **Bank of America (Apr 2025):** BOM ≈ $35k in 2025 falling to $13k–$17k by 2030–35; machine tools (not magnets) the key near-term constraint.
+- **McKinsey (Apr 2026):** actuators 40–60% of BOM; roller screws/harmonic reducers the choke points; China ~3x cost advantage; China makes 90% of magnets and 40% of precision bearings/encoders.
+- **Jefferies / IDTechEx:** corroborate the PRS market (~$1.8bn, >30% CAGR per a Nanjing Process Equipment manager cited by Jefferies) and a ~68% humanoid price decline by 2030 (IDTechEx).
+
+### 7. Current state of the industry (2025–2026)
+
+- **Tesla Optimus:** Gen-3 (first design "meant for mass production") slated to begin production at Fremont (converted Model S/X line) in summer 2026, targeting a 1mn-unit/yr line by end-2026 and a 10mn-unit Giga Texas line longer term; realistic 2026 output is widely estimated in the low thousands to tens of thousands. Target cost ~$20k at scale. Large actuator orders placed with Sanhua (a ~$685mn linear-actuator order plus a later ~RMB1.2bn rotary-actuator order ≈ 43k units).
+- **Figure AI:** >$1bn Series C at a **$39bn post-money valuation** (Sept 16 2025, led by Parkway Venture Capital with Brookfield, NVIDIA, Intel Capital, Salesforce, Qualcomm — a 15x jump from $2.6bn in Feb 2024); Figure 03 (Oct 2025) redesigned for mass manufacturing/home; in-house Helix VLA; completed an 11-month BMW Spartanburg pilot (>90,000 parts, ~1,250 hours, >30,000 X3s). BotQ targets 12,000 units/yr (100,000 over four years).
+- **Boston Dynamics/Hyundai:** all-electric Atlas product version unveiled at CES 2026 (production begun at Boston HQ); all 2026 fleets committed to Hyundai's RMAC and Google DeepMind; Gemini Robotics brain; Hyundai factory deployment from ~2028.
+- **China OEMs:** **Unitree** — world unit-shipment leader (>5,500 humanoids in 2025; 32.4% global share per its prospectus), 2025 revenue ¥1.708bn (+335% YoY), ~60% gross margin, filed STAR Market IPO Mar 20 2026 (~¥4.2bn / ~$610mn raise; pre-filing valuation referenced at ~RMB40–50bn, with some market observers expecting >RMB100bn post-IPO); G1 from ~$16k. By contrast, Omdia estimates Tesla, Figure AI and Agility each shipped only ~150 humanoids in 2025. **UBTech** — first listed humanoid pure-play (HK), targeting ~5,000 deliveries in 2026. **AGIBOT** — produced its 10,000th unit by Mar 2026 (5k→10k in three months). **Xiaomi, XPeng (IRON, mass production targeted end-2026)** — consumer-electronics/auto integrators. TrendForce projects Unitree + AGIBOT ≈ 80% of 2026 domestic shipments.
+- **NVIDIA platform:** Jetson Thor (Blackwell) generally available 2025; GR00T N1.7/N2 and Cosmos world models; Isaac GR00T Reference Humanoid (on a Unitree H2 Plus body, 75 DoF total) for research, availability from Unitree expected late 2026.
+
+## Recommendations
+
+These are staged, decision-useful framings consistent with Goldman's neutral analyst view (not a personal buy/sell overlay):
+
+1. **Near term (2025–2027) — concentrate on the defensible mechatronic chokepoints.** Goldman's logic points to **harmonic reduction gears** (highest exposure score; structural chokepoint via precision grinding + concentrated supply) and **planetary roller screws** as the parts with the most durable pricing power, plus **actuator assemblers** for adoption certainty. Watch: harmonic-gear and roller-screw **capacity additions and grinding-machine availability** — the key supply constraint. *Threshold that would change the view:* if precision-grinding capacity scales faster than expected (compressing lead times and margins), the chokepoint thesis weakens and value shifts downstream.
+
+2. **Monitor the order-vs-capacity gap as the central risk signal.** Goldman's own survey shows Chinese suppliers building 100k–1mn-unit capacity *without* binding orders. *Benchmark:* the first sizable, confirmed OEM orders (especially a Tesla Optimus Gen-3 production order, an XPeng IRON mass-production order, or Figure BotQ scale-up) would validate the capacity bet; continued absence into 2H2026 would signal overcapacity/margin risk.
+
+3. **Treat compute and the AI brain as strategic but not pure-play humanoid exposure.** NVIDIA scores high on barriers but low on *incremental humanoid opportunity* — its humanoid upside is real but small relative to data-center AI. The foundation-model layer is where the West leads and where the unproven bottleneck (generalized manipulation) sits; *catalyst to watch:* a credible "ChatGPT moment" for manipulation/generalization would re-rate the entire chain and pull Goldman's conservative shipment curve upward.
+
+4. **Track the rare-earth/NdFeB constraint as a binary macro overlay.** Production scaling depends on Chinese magnet processing (~90% of permanent magnets). *Threshold:* further Chinese export controls, or conversely material ex-China magnet capacity coming online (MP Materials, Lynas), would move the whole actuator/motor complex.
+
+5. **Treat batteries, frameless torque motors, coreless motors and vision as commoditizing** — participate via volume/cost leaders rather than expecting chokepoint economics, consistent with their lower Exhibit 5 scores.
+
+## Caveats
+
+- **Goldman's primary reports are subscriber-only.** Figures here are drawn from Goldman's public article, verbatim PDF excerpts of *Humanoid Robots III*, and reputable secondary summaries. Goldman does **not** publish a clean per-subsystem content-value % table publicly; the only public Goldman per-component figure is the linear-joint/roller-screw "20–30% of high-spec component cost." The cleaner actuator-40–60% / sensing-10–20% / compute-10–15% / structure-5–10% / battery-5–10% split (≈85–90% of unit cost) is **McKinsey's**, not Goldman's, and the 33%-reducers-plus-screws figure is **JP Morgan's** — these should not be misattributed to Goldman.
+- **Blue-sky TAM was revised** from $154bn (2024 report) to $205bn (2025 Humanoid Robots III) — cite the year accordingly. The 2035 base-case unit figure appears as both ~1.4mn (rounded, public) and ~1.38mn (model figure).
+- **Forward-looking/speculative content is flagged as such:** Tesla's 1mn/10mn-unit capacity targets, Figure's $39bn valuation, and Morgan Stanley's $5tn/2050 figure are aspirational projections or single-point-in-time private marks, not realized results. Realistic 2026 Tesla output is widely estimated in the low thousands to tens of thousands, far below line capacity, and Omdia's 2025 shipment estimates for US players (~150 units each) underline how early the industry still is.
+- **Company placements are intentionally light** and describe value-chain position, not financial recommendations. Some supplier relationships (e.g., "exclusive" Optimus supplier claims) come from Chinese-language trade press and should be treated as reported, not confirmed by the OEMs.
+- **The competitive landscape is fast-moving and the technology routes are unsettled** (dexterous-hand architecture, vision-only vs. LiDAR, hydraulic→electric), so subsystem rankings could shift. Goldman itself stresses that the viability of mass-produced general-purpose humanoids "hasn't been proven yet."

@@ -117,6 +117,7 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` Section 3
 | [drone-platform-commoditization](wiki/themes/drone-platform-commoditization.md) | AVAV, KTOS | 2026-06-04 |
 | [china-exposure](wiki/themes/china-exposure.md) | TSM, NVDA, AVGO, AMD, MRVL, ALAB, MU, ARM, INTC, AAOI, AXTI, LITE, COHR, CRDO, ONTO, COHU, VECO, PLAB, TSEM, MKSI, MPWR, NVTS, POWI, ON, SOI, SNDK, FN, GLW, FLEX, VICR, NOK, ENS, XFAB, AEHR, MOD, MP, TDY, AMPX, AVAV, LSCC, KTOS, MRCY, INOD | 2026-06-05 |
 | [AI-data-supply-chain](wiki/themes/AI-data-supply-chain.md) | INOD | 2026-06-05 |
+| [humanoid-robot-value-chain](wiki/themes/humanoid-robot-value-chain.md) | MP, NVDA, INTC, INOD | 2026-06-05 |
 
 ## Layers
 

@@ -9,7 +9,7 @@ energy_power_tier: outside
 equipment_tier: outside
 defense_tier: 4
 foreign_issuer: false
-last_updated: 2026-06-03
+last_updated: 2026-06-05
 ---
 
 # MP — MP Materials Corp.
@@ -41,6 +41,12 @@ MP is the vault's **first dual-thesis page** under the two-domain scope (CLAUDE.
 **The DoW deal as chokepoint template + the budget-contingency discipline.** The Series A Cumulative Perpetual Convertible Preferred Stock ($400M / $413.6M net; 13.32M-share conversion at $30.03) + 10-year NdPr price floor + 10-year magnet offtake + Samarium Project Loan is the clearest case in either vault domain of the government converting a chokepoint into a backstopped commercial position (DPA Title III authority). It is also the defense thesis's **enacted-vs-requested budget discipline in action**: the page's own Pentagon partnership scope quotes the 10-K Item 1A risk that DoW funding is partly *"contingent on future appropriations"* — the same contingency the Defense thesis flags for the requested FY2027 DAWG funding. Government-as-capital-provider is a tracked Framework D3 (demand-map / programs-of-record) pattern — compare the reported Office of Strategic Capital equity talks with drone makers; MP is the most-developed instance.
 
 **Cross-thesis node.** Rare-earth NdFeB magnets are the cleanest *multi-thesis chokepoint*: the same China concentration constrains defense/drone motors, AI-datacenter power-semiconductor + cooling-motor magnets, and EV/wind. One chokepoint, multiple demand drivers — MP is the shared node. Defense anchors: `_thesis-defense-drones.md` + `frameworks-defense-drones.md`. The execution-risk + bilateral-geopolitical-tail-risk framing in the Thesis role above applies identically under the defense lens (high-conviction strategic position bounded by thin operating history + appropriations dependence).
+
+## Humanoid-robotics thesis role (triple-thesis)
+
+MP is the shared node of a **third** demand driver off the same rare-earth-magnet chokepoint: **humanoid robots.** Every actuator in a humanoid (rotary reducers, linear roller-screw joints, coreless hand motors) runs on NdFeB permanent magnets — a humanoid uses ~40+ motors and roughly **0.9–4 kg of magnet** (≈2× an EV; Tier-3, Morgan Stanley / industry estimates). Goldman's humanoid value-chain work *folds magnets inside "actuators"* and does not call out the bottleneck — but it is the same geology/physics chokepoint MP reshores, which is why the humanoid theme treats MP as **the single cleanest US-listed expression of the humanoid materials substrate.** With defense (DoW offtake) + EV/wind + datacenter-cooling already on the page, the humanoid leg makes MP a **triple-thesis node** (anchor of [[humanoid-robot-value-chain]]; see [[rare-earth-magnet-chokepoint]] for the cross-domain owner-side depth).
+
+**Honest scoping (needle-mover discipline, `frameworks-humanoid-robot.md` Framework H6).** Humanoid is a **future incremental demand driver, not current MP revenue** — the same discipline applied to the drone leg (drones are <3% of NdFeB demand today). Humanoids are pre-volume (low-thousands of units shipped industry-wide in 2025); the magnet pull is a 2030s story (Adamas projects robotics becomes the *largest* NdFeB demand driver by ~2040 — Tier-3, verify-at-primary). No humanoid-demand overclaim: MP's offtake + price-floor economics are not humanoid-driven; the humanoid angle is *optionality on the existing defense+EV magnet business*, the cleanest among many cross-application end-markets.
 
 ## Company structure
 
@@ -254,6 +260,8 @@ Period-parity per Section 2.11 calendar-aligned baseline (Section 2.11 N/A per S
 Not a new primary-source ingest. Defense framing layered over the existing Tier-1 substrate (FY2025 10-K + Q1 FY2026 10-Q + 8-K press release, ingested S90) using the Tier-3 anchor report `raw/research/US-defense-and-drones-report.md` for chokepoint-concentration + drone-demand context — attributed; the IEA Nov 2025 magnet-concentration figures, Pentagon tonnage targets, and drones-<3%-of-NdFeB scope are Tier-3, to verify against primaries (CRS / IEA / IDTechEx) before treating as load-bearing. No financial deltas; financials remain as of Q1 FY2026 (last refreshed S90). `defense_tier 4` added; FIRST defense-domain placement in the vault.
 
 ## Change log
+
+- **2026-06-05 (Session 136 — humanoid-robotics graduation → triple-thesis):** Added a "Humanoid-robotics thesis role" section making MP the shared node of a third demand driver (humanoid actuators: ~40+ NdFeB motors, ~0.9–4 kg magnet/robot) off the same rare-earth chokepoint — anchor of the new [[humanoid-robot-value-chain]] theme (first page of the vault's third thesis domain). Needle-mover scoping applied: humanoid is a *future incremental* driver, not current revenue (no overclaim; Adamas robotics-largest-NdFeB-by-~2040 is Tier-3). No frontmatter change (no `humanoid_tier` — held under YAGNI); financials unchanged (Q1 FY2026, S90). NOT a refresh; no new primary source. `last_updated` → 2026-06-05.
 
 - **2026-06-04 (Session 133 — cross-ref):** Added to the new vault-wide [[china-exposure]] theme as the **rare-earth materials node** and a **reshoring inverse-exposure** name (China escalation raises MP's value). No content change.
 

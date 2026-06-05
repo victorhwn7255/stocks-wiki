@@ -1,7 +1,7 @@
 ---
 type: chokepoint
 tickers: [MP, AVAV, TDY]
-last_updated: 2026-06-04
+last_updated: 2026-06-05
 ---
 
 # Rare-earth NdFeB magnet chokepoint
@@ -45,9 +45,10 @@ The same China concentration constrains multiple demand drivers off one chokepoi
 - **Defense / drones** — motors, actuators, seekers (this page).
 - **AI-datacenter cooling** — NdFeB content in cooling-fan and coolant-pump motors (see [[liquid-cooling]]).
 - **Wind** — direct-drive offshore turbines use substantial NdFeB (see [[GEV]]).
-- **EV / robotics** — traction-motor and humanoid-actuator magnets.
+- **EV** — traction-motor magnets.
+- **Humanoid robots / physical AI** — every actuator (rotary reducers, linear roller-screw joints, coreless hand motors) runs on NdFeB; a humanoid uses ~40+ motors and roughly **0.9–4 kg of magnet** (≈2× an EV). A *future* incremental driver — pre-volume today (low-thousands of units shipped industry-wide in 2025), but Adamas projects robotics becomes the **largest** NdFeB demand source by ~2040 (Tier-3, verify-at-primary). Goldman's humanoid value-chain work folds magnets inside "actuators" and does not flag the bottleneck — making [[MP]] the cleanest US-listed expression of the humanoid materials substrate. See [[humanoid-robot-value-chain]].
 
-[[MP]] is the shared node across all of them — which is why rare-earth magnets are the cleanest *multi-thesis* chokepoint in the vault.
+[[MP]] is the shared node across all of them — which is why rare-earth magnets are the cleanest *multi-thesis* chokepoint in the vault (defense + AI-datacenter cooling + wind + EV + humanoid robotics).
 
 ## Open questions
 
@@ -66,6 +67,8 @@ The same China concentration constrains multiple demand drivers off one chokepoi
 - **Tier-3 anchor report** (`raw/research/US-defense-and-drones-report.md`) — the China concentration figures (IEA Nov 2025: ~85–90% finished magnets / ~91% separation / ~69% mining / ~100% equipment), Pentagon tonnage targets, and the drones-<3%-of-NdFeB scope are Tier-3; verify against primaries (IEA / CRS / USGS) before treating as load-bearing. Honest scoping preserved: criticality (heavy RE) not tonnage; no drone-demand overclaim.
 
 ## Change log
+
+- **2026-06-05 (Session 136 — humanoid demand-driver):** Strengthened the Multi-thesis scope "EV / robotics" line into a fuller **humanoid-robot** demand driver (~40+ NdFeB motors / ~0.9–4 kg magnet per robot; a *future* incremental driver, Adamas largest-NdFeB-by-~2040, Tier-3) and cross-referenced the new [[humanoid-robot-value-chain]] theme — for which [[MP]] is the day-one anchor. No `tickers` change (humanoid is a demand-driver mention, not a new disclosed consumer); no new primary source; not a refresh. `last_updated` → 2026-06-05.
 
 - **2026-06-04 (Session 131 — PROMOTED provisional → canonical):** [[TDY]]'s first-canonical ingest surfaced an explicit 10-K disclosure of rare-earth-mineral + permanent-magnet dependence ("used in our products"), making Teledyne the **2nd disclosed defense consumer** after [[AVAV]] — substantively firing the pre-registered promotion trigger (Section 2.1 honest-verdict trigger discipline; not directional momentum). With owner [[MP]] + 2 disclosed consumers ([[AVAV]] + [[TDY]]) + the Tier-3 anchor, the page meets the Pathway 2 canonical threshold. Promotion executed: removed the provisional disclaimer; added TDY (+ a germanium/IR-optics dimension) to the consumer side; converted "What would confirm or weaken" into canonical **Open questions + Source audit notes**. `tickers` → [MP, AVAV, TDY].
 

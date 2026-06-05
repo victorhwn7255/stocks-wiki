@@ -84,7 +84,7 @@ What is driving the 40%+ guide (Q1 2026 call; figures are Tier 2 / management fr
 - **Post-training + evaluation** — alignment, preference optimization, and evals across the "five of the Magnificent Seven" base.
 - **Agentic AI** — an **Agent Observability platform** (beta; a first ~$1M platform customer; 15 companies evaluating; two hyperscaler channel-partner discussions).
 - **Trust & safety / red-teaming** — a large hyperscaler selected INOD as its global trust-and-safety partner; management floated *"approximately $3 billion of potential annual run-rate revenue"* from the initial SOW (**heavily attributed; promotional; not a forecast**).
-- **Physical AI / robotics datasets** — embodied-intelligence data (part of an ~$8M cloud/commerce contract spanning agent safety, game data, responsible-AI testing, and physical AI).
+- **Physical AI / robotics datasets** — embodied-intelligence data (part of an ~$8M cloud/commerce contract spanning agent safety, game data, responsible-AI testing, and physical AI). This is the *data feedstock* for the humanoid/embodied-AI brain — the link from [[AI-data-supply-chain]] to the vault's third domain, [[humanoid-robot-value-chain]].
 - **Federal** — a dedicated Federal Practice (launched 2025); a **prime contract position under the Missile Defense Agency's SHIELD program** (part of Golden Dome) and computer-vision work *"in concert with [[PLTR]]"*. A faint, emerging defense-data adjacency — too thin to classify as a `defense_tier` (watch item).
 
 ## Moat / competitive positioning
@@ -108,5 +108,7 @@ INOD's defensibility claim is **institutional-knowledge compounding** (each enga
 - **Tier-3 cross-check (Section 4.6).** The two commissioned AI-data-supply-chain reports' INOD figures (revenue $251.7M; ~58% concentration; net income $32.2M; adjusted EBITDA $57.9M) **verified clean** against primary — no (g') variance.
 
 ## Change log
+
+- **2026-06-05 (S136 — humanoid cross-ref):** Added a one-line cross-ref on the Physical-AI/robotics-datasets growth vector — INOD's robotics data is the *feedstock* for the humanoid/embodied-AI brain, linking [[AI-data-supply-chain]] to the new [[humanoid-robot-value-chain]] theme. No content/placement change; last_updated unchanged (2026-06-05).
 
 - **2026-06-05 (S135 — creation):** First-canonical ingest from FY2025 10-K (Tier 1) + Q1 2026 10-Q (Tier 1) + Q1 2026 call (Tier 2; May 7 2026). Anchor of the new [[AI-data-supply-chain]] theme (created same session). `layer: outside` + all five AI `*_tier: outside` (demand-side / outside-the-frameworks, per [[PLTR]]/[[MSFT]]/[[NOW]] precedent); no `defense_tier` (Federal/SHIELD adjacency too thin to classify). Calendar FY → **Section 2.11 N/A**. **Section 2.1 instance documented** (3 reportable segments → 1, FY2025 10-K → Q1 2026 10-Q; joins NVT/MOD/NOK/AMD/NVDA). Financials verified off the statements (net income positive both periods — no sign-flip). Three-fold honest verdict: high-quality business / structurally fragile (~56–58% one-customer + 63% A/R + 30–90-day terminability) / picks-and-shovels services not a toll booth / the $3B claim flagged promotional. CEO-combativeness unchanged at 2. Cross-refs: [[AI-data-supply-chain]] (anchor), [[AI-demand-durability]] (demand-side sibling), [[PLTR]] (Federal computer-vision), [[china-exposure]] (no-China honest profile).
