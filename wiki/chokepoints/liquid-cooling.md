@@ -2,10 +2,10 @@
 type: chokepoint
 pathway: 2
 structural_type: competing-technology-base
-tickers: [VRT, ETN, NVT, MOD, FLEX, COHR, ANET, AAON, NVDA]
+tickers: [VRT, ETN, NVT, MOD, FLEX, COHR, ANET, AAON, NVDA, SANHUA, TUOPU]
 related_themes: [AI-demand-durability, AIDC-cooling-architecture-transition]
 related_chokepoints: [transformer-supply, BTM-grid-bypass-workaround, HBM-oligopoly]
-last_updated: 2026-05-29
+last_updated: 2026-06-06
 ---
 
 # Liquid cooling chokepoint
@@ -117,6 +117,11 @@ Tier 3 source documents supply-chain choke points at sub-component scope — rei
 | **Thermal/mechanical engineering talent** | Acute shortage; two-phase boiling STEM PhDs scarce | All canonical participants exposed |
 
 Defensible moats ranked per Tier 3 source: **cold-plate IP & co-design > integrated CDU + service > QDCs > generic chillers**. Per liquid-cooling-for-AIDC-invest-report.md (2026-05-17).
+
+**China component participants — two, at different confidence levels:**
+
+- **[[TUOPU]] (拓普集团) — confirmed component participant (S142).** Tuopu's FY2025 年报 explicitly extends its thermal-management technology to **液冷服务器 (liquid-cooled servers)** (+ 储能 energy storage + robots), reporting **first-batch orders of ¥1.5B (取得首批订单 15 亿元)** and describing a full datacenter liquid-cooling system — **cold plates (液冷板) with micro-channel + folded fins, coolant pumps (液冷泵), manifolds, flow-control valves, gas-liquid separators, and temp/pressure sensors** — citing AI/HPC chip heat density (GPU/CPU throttling under air cooling) as the driver. That maps directly onto the sub-component bottleneck map above (cold plates, manifolds, CDUs/pumps). It is still a **component supplier** (not systems-tier), China-domiciled, and a new entrant — but the **sized order + explicit 液冷 disclosure is the most concrete data-center-cooling disclosure of any China name in the vault**, earning Tuopu a numeric **Energy/Power Tier 4 (specialty component supplier scope)** placement (vs Sanhua's `outside`). Watch: the data-center-cooling slice within the ¥1.5B (which spans servers+storage+robots) + repeat orders. See [[TUOPU]].
+- **[[SANHUA]] (三花智控) — emerging/adjacent participant (watch, S141).** The global thermal-management-components leader (near-exclusive AC electronic-expansion/solenoid valves, Omega pumps, microchannel heat exchangers) reports *"advancing data-center-domain projects"* (FY2025 年报), and the AI/data-center build-out is a named demand tailwind for its commercial-AC exports. **But the leg is unsized and the filings do not use "液冷/liquid cooling" explicitly** — so Sanhua is an *emerging/adjacent* coolant-loop component supplier (pumps/valves/heat exchangers), not yet a confirmed/sized participant. Structurally one of the most capable potential suppliers if it scales the business; promotion trigger = a sized data-center-cooling disclosure. See [[SANHUA]].
 
 ## 5-modality competing-technology framework
 
@@ -458,6 +463,10 @@ Pre-registered cross-validation tests per Pathway 2 chokepoint canonical-from-fi
 **Cross-vault paired strategic narrative methodology 2-instance precedent (MOD + AAON parallel transformation)** — both companies executing structurally analogous strategic repositioning toward AI DC cooling concentrated exposure (MOD Performance Technologies spin-off + Gentherm combination vs AAON BASX brand acquisition + Memphis facility scaling); 2nd instance precedent post-[[NVT]] + [[MOD]] 1st instance precedent; **codification threshold MET at 2-instance precedent for Tranche 2C.**
 
 ## Change log
+
+- **2026-06-06 (S142 — [[TUOPU]] confirmed China component participant):** Added [[TUOPU]] (拓普集团, SSE 601689) as a **confirmed component participant** alongside the Sanhua note — Tuopu's FY2025 年报 explicitly extends thermal-management tech to **液冷服务器 (liquid-cooled servers)**, reporting **¥1.5B first-batch orders** + a full datacenter liquid-cooling system (cold plates/micro-channel, pumps, manifolds, flow-control valves, gas-liquid separators, sensors) that maps onto the sub-component bottleneck map. The **sized order + explicit 液冷 disclosure** (the most concrete of any China name in the vault) earns Tuopu a numeric **Energy/Power Tier 4** placement — vs Sanhua's `outside` (unsized, no "液冷"). Still a component supplier (not systems-tier), China-domiciled, new entrant. `tickers` +TUOPU per Section 3.2(b) provenance. Propagated from the [[TUOPU]] first-canonical ingest. No modality/structural-type changes.
+
+- **2026-06-06 (S141 — [[SANHUA]] emerging-participant note):** Added [[SANHUA]] (三花智控, A+H) as an **emerging/watch China component participant** after the sub-component bottleneck map — the global thermal-management-components leader (AC valves, Omega pumps, microchannel heat exchangers) reports *"advancing data-center-domain projects,"* but the leg is **unsized and the filings never say "液冷/liquid cooling"** → an adjacent/emerging coolant-loop component supplier, not yet a confirmed/sized participant (promotion trigger = a sized data-center-cooling disclosure). `tickers` +SANHUA per Section 3.2(b) provenance. Propagated from the [[SANHUA]] first-canonical ingest. No modality/participant-tier changes.
 
 - **2026-05-29 (S110 cross-vault re-evaluation propagation — A6):** Downstream-table freshness pass (main 7-canonical synthesis table was already current from the S104/S103 same-day refreshes). Updated the customer-concentration-archetype table — [[MOD]] row 43%→**49%** top-10 + the **>$4B single-customer** concentration-trajectory vector. Added a **Google-FLEX counterparty-attribution-only** row to the A1 three-mode table (first hyperscaler named at FLEX primary; NVIDIA-FLEX over-claim flagged NOT-resolved at the NVIDIA-silent FY2026 10-K). Added the **MOD↔NVT period-parity datacenter-growth comparison** (MOD Q4 FY2026 ≈ calendar Q1 2026; +158% vs NVT +118.9% same window, per Section 2.11) + the **2-instance parallel cooling/infra pure-play spin** sub-pattern note (MOD PT-spin + FLEX CPI-spin; hold for a 3rd). Light consistency fix to the MOD paired-narrative row (PT spin = Reverse Morris Trust, close end CY2026). No tier/participant changes.
 - **2026-05-29 (MOD FY2026 refresh propagation):** Updated the [[MOD]] participant row — Q4 Data Centers +$246M/+158%; **>$4B single-customer DC cooling agreement (CY2027-2029)**; PT spin restructured as a Reverse Morris Trust with Gentherm (close end CY2026) → pure-play; FY2027 Climate Solutions splits into Data Centers + Commercial HVAC segments; energy_power_tier HELD at 3 (3→2 watch). Pairs with [[FLEX]] CPI spin (now 2 parallel cooling/infra pure-play spins at chokepoint scope). last_updated already 2026-05-29 (same-day FLEX refresh).

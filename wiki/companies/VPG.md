@@ -110,6 +110,8 @@ VPG and [[NOVT]] are the two US-listed names in Goldman's humanoid sensor row, a
 
 NOVT is the larger, profitable, AI-datacenter-equipment compounder where humanoid is unsized optionality; VPG is the smaller, lower-margin, inflecting name that ties its demand to AI infrastructure most explicitly and is the only vault name to put a number on humanoid revenue. Both confirm the theme's central reality: the US-investable sensor layer is real but a mid-tier slice of diversified businesses, not a humanoid pure-play.
 
+The third US sensor/perception name, **[[OUST]]** (Ouster, ingested S140), sits in a different structural position again — the camera/LiDAR layer (Goldman-12), a loss-making pure Physical-AI/robotics platform placed *outside* the AI-datacenter frameworks (no `equipment_tier`). See the full 3-way comparison on [[OUST]].
+
 ## Open questions
 
 1. **Does the AI-infrastructure Sensors demand sustain the booking surge?** Q1 bookings (>$100M, B/B 1.21; Sensors B/B 1.36) are the strongest since 2022 — but off three years averaging below 1.0. Verify the AI-infra/semi-equipment/data-center slice converts to sustained revenue, and whether VPG begins sizing it.
@@ -125,5 +127,7 @@ NOVT is the larger, profitable, AI-datacenter-equipment compounder where humanoi
 - **VPG Q1 2026 earnings call (2026-05-12; CEO/President Ziv Shoshani + CFO Bill Clancy) — Tier 2.** The richest source on the vault-relevant material: the AI-infrastructure precision-resistor demand, the **quantified humanoid leg** ($600K Q1; ~50% CAGR model), the new three-year operating model, and the A&D/space programs. **Tier 1/Tier 2 disclosure-lifecycle observation (Section 3.3):** the entire humanoid disclosure is Tier-2 (call) ahead of any Tier-1 (filing) treatment — management commentary leading the filings. **CEO-combativeness: no increment** — Shoshani/Clancy were measured and candid, openly tempering the humanoid narrative ("adoption rate is still fairly low… anything can happen").
 
 ## Change log
+
+- **2026-06-06 (S140 — reciprocal cross-ref):** Added a cross-ref to [[OUST]] (the third US sensor/perception name, camera/LiDAR layer, ingested S140) extending the cross-vault comparison cohort to three. No other change.
 
 - **2026-06-06 (S139 — first-canonical creation):** Created from VPG FY2025 10-K + Q1 2026 10-Q + Q1 2026 call. Placement `equipment_tier 4` (differentiated-component / indirect-exposure scope; VECO 9%-relevant precedent; NOVT/MKSI analogs) + Layer 4 + `defense_tier outside` (real but broad A&D/space test & instrumentation; weak unmanned-systems fit) + `photonics_tier` absent (no photonics products) + theme-anchored humanoid (no `humanoid_tier`). Honest-verdict lead: small, low-margin, diversified precision-measurement company; **net earnings positive FY2025 (+$5.3M) but a GAAP net loss in Q1 2026 ($(0.3)M)** — both signs stated explicitly, no sign-flip. Vault-relevant exposure = AI-infrastructure precision resistors (Sensors) + a disclosed-but-tiny (~1.5%) humanoid leg ($600K Q1 / ~$5M 2026 target). Section 2.11 N/A (52/53-week, week-scope; joins NOVT/AMD/INTC); Section 2.1 N/A (three stable segments). Cross-vault NOVT-vs-VPG comparison added (the two US sensor-layer names).

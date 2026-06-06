@@ -79,6 +79,10 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` Section 3
 | [INOD](wiki/companies/INOD.md) | INOD   | outside | outside | outside | outside      | outside   | outside   | —        | 2026-06-05   |
 | [NOVT](wiki/companies/NOVT.md) | NOVT   | 4       | outside | —       | —            | 4         | —         | —        | 2026-06-06   |
 | [VPG](wiki/companies/VPG.md)   | VPG    | 4       | —       | —       | —            | 4         | —         | outside  | 2026-06-06   |
+| [OUST](wiki/companies/OUST.md) | OUST   | outside | outside | outside | outside      | outside   | outside   | outside  | 2026-06-06   |
+| [SANHUA](wiki/companies/SANHUA.md) | SANHUA | outside | —       | —       | outside      | —         | —         | —        | 2026-06-06   |
+| [TUOPU](wiki/companies/TUOPU.md) | TUOPU  | 4       | —       | —       | 4            | —         | —         | —        | 2026-06-06   |
+| [SHUANGHUAN](wiki/companies/SHUANGHUAN.md) | SHUANGHUAN | outside | — | — | — | — | — | — | 2026-06-06 |
 
 ## Chokepoints
 
@@ -95,7 +99,7 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` Section 3
 | [BTM-grid-bypass-workaround](wiki/chokepoints/BTM-grid-bypass-workaround.md) | BE, FCEL, GEV, CAT, CEG | 2026-05-29 |
 | [transformer-supply](wiki/chokepoints/transformer-supply.md) | ETN, GEV, NVDA, FLEX | 2026-05-29 |
 | [HBM-oligopoly](wiki/chokepoints/HBM-oligopoly.md) | ONTO, COHU, AEHR, TSM, MKSI, MU | 2026-05-29 |
-| [liquid-cooling](wiki/chokepoints/liquid-cooling.md) | VRT, ETN, NVT, MOD, FLEX, COHR, ANET, AAON, NVDA | 2026-05-29 |
+| [liquid-cooling](wiki/chokepoints/liquid-cooling.md) | VRT, ETN, NVT, MOD, FLEX, COHR, ANET, AAON, NVDA, SANHUA, TUOPU | 2026-06-06 |
 | [rare-earth-magnet-chokepoint](wiki/chokepoints/rare-earth-magnet-chokepoint.md) | MP, AVAV, TDY | 2026-06-04 |
 
 ## Themes
@@ -117,9 +121,9 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` Section 3
 | [hyperscaler-capex](wiki/themes/hyperscaler-capex.md) | MSFT, GOOGL, AMZN, META, ORCL, CRWV, NBIS | 2026-06-03 |
 | [defense-drone-supply-chain](wiki/themes/defense-drone-supply-chain.md) | MP, LSCC, AVAV, KTOS, AMPX | 2026-06-04 |
 | [drone-platform-commoditization](wiki/themes/drone-platform-commoditization.md) | AVAV, KTOS | 2026-06-04 |
-| [china-exposure](wiki/themes/china-exposure.md) | TSM, NVDA, AVGO, AMD, MRVL, ALAB, MU, ARM, INTC, AAOI, AXTI, LITE, COHR, CRDO, ONTO, COHU, VECO, PLAB, TSEM, MKSI, MPWR, NVTS, POWI, ON, SOI, SNDK, FN, GLW, FLEX, VICR, NOK, ENS, XFAB, AEHR, MOD, MP, TDY, AMPX, AVAV, LSCC, KTOS, MRCY, INOD, NOVT, VPG | 2026-06-06 |
+| [china-exposure](wiki/themes/china-exposure.md) | TSM, NVDA, AVGO, AMD, MRVL, ALAB, MU, ARM, INTC, AAOI, AXTI, LITE, COHR, CRDO, ONTO, COHU, VECO, PLAB, TSEM, MKSI, MPWR, NVTS, POWI, ON, SOI, SNDK, FN, GLW, FLEX, VICR, NOK, ENS, XFAB, AEHR, MOD, MP, TDY, AMPX, AVAV, LSCC, KTOS, MRCY, INOD, NOVT, VPG, OUST, SANHUA, TUOPU, SHUANGHUAN | 2026-06-06 |
 | [AI-data-supply-chain](wiki/themes/AI-data-supply-chain.md) | INOD | 2026-06-05 |
-| [humanoid-robot-value-chain](wiki/themes/humanoid-robot-value-chain.md) | MP, NVDA, INTC, INOD, NOVT, VPG | 2026-06-06 |
+| [humanoid-robot-value-chain](wiki/themes/humanoid-robot-value-chain.md) | MP, NVDA, INTC, INOD, NOVT, VPG, OUST, SANHUA, TUOPU, SHUANGHUAN | 2026-06-06 |
 
 ## Layers
 
