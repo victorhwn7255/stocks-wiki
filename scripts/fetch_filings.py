@@ -101,6 +101,9 @@ COMPANIES = {
     # files 20-F annually + 6-K interim (no 10-K/10-Q). Per Section 4.2.
     "NBIS": {"cik": "0001513845", "forms": ["20-F", "6-K"]},
     "INOD": {"cik": "0000903651", "forms": ["10-K", "10-Q"]},  # Innodata — AI-data-supplier theme (pure-play AI training-data/RLHF/eval services); calendar FY (Dec 31), Section 2.11 N/A
+    "NOVT": {"cik": "0001076930", "forms": ["10-K", "10-Q"]},  # Novanta — humanoid-robot-value-chain (6-axis force/torque sensors via ATI Industrial Automation; also photonics/vision/medical); 52/53-week FY ending ~Dec 31
+    "VPG":  {"cik": "0001487952", "forms": ["10-K", "10-Q"]},  # Vishay Precision Group — humanoid-robot-value-chain (force/torque sensors + strain gages) + AI-datacenter (precision resistors for semi equipment / data center / fiber optics); calendar FY (Dec 31), Section 2.11 N/A
+    "OUST": {"cik": "0001816581", "forms": ["10-K", "10-Q"]},  # Ouster — humanoid-robot-value-chain (camera/LiDAR; "Physical AI" sensing/perception platform; Stereolabs AI-vision acquisition Feb 2026); calendar FY (Dec 31), Section 2.11 N/A
 }
 
 HEADERS = {"User-Agent": USER_AGENT, "Accept": "application/json"}

@@ -1,7 +1,7 @@
 ---
 type: theme
-tickers: [TSM, NVDA, AVGO, AMD, MRVL, ALAB, MU, ARM, INTC, AAOI, AXTI, LITE, COHR, CRDO, ONTO, COHU, VECO, PLAB, TSEM, MKSI, MPWR, NVTS, POWI, ON, SOI, SNDK, FN, GLW, FLEX, VICR, NOK, ENS, XFAB, AEHR, MOD, MP, TDY, AMPX, AVAV, LSCC, KTOS, MRCY, INOD]
-last_updated: 2026-06-05
+tickers: [TSM, NVDA, AVGO, AMD, MRVL, ALAB, MU, ARM, INTC, AAOI, AXTI, LITE, COHR, CRDO, ONTO, COHU, VECO, PLAB, TSEM, MKSI, MPWR, NVTS, POWI, ON, SOI, SNDK, FN, GLW, FLEX, VICR, NOK, ENS, XFAB, AEHR, MOD, MP, TDY, AMPX, AVAV, LSCC, KTOS, MRCY, INOD, NOVT, VPG]
+last_updated: 2026-06-06
 ---
 
 # China & Taiwan exposure — the vault's geopolitical-concentration map
@@ -65,6 +65,8 @@ A name can sit on several at once. The most important analytical move on this pa
 | [[AEHR]] | C | **Low** | TSMC CoWoS test/burn-in dependency |
 | [[MOD]] | B, C | **Low** | Section 232 aluminum tariffs |
 | [[XFAB]] | H | **Low** | European-sovereignty SiPh (Ligentec / photonixFAB) — the *anti-China* hedge inside the photonics cluster |
+| [[NOVT]] | A, B | **Low** | China **9.5%** of FY2025 revenue — a *growth* region for NOVT (semiconductor + industrial apps) + a Suzhou manufacturing site (1 of 20+); diversified precision-tech, the AI-datacenter-equipment name |
+| [[VPG]] | A, B | **Low** | **Asia ~14%** of FY2025 revenue (China not separately broken out; reported by selling-subsidiary location) + manufacturing facilities in **both** the PRC and Taiwan; diversified precision-measurement, the paired sensor-layer name with NOVT |
 
 ### Defense & Drones domain
 
@@ -131,6 +133,10 @@ The cleanest *intra-vault* hedge against a Taiwan event sits in the software/clo
 Cross-cutting synthesis; no new primary source ingested at creation. The **correlated-concentration framing** is Vic-authored scaffolding (AI `_thesis.md` line 363 + `frameworks.md` Framework 11.10 + Defense `_thesis-defense-drones.md` "China-pacing" + Framework D5), attributed and paraphrased in wiki voice. Per-company axis placements are cross-referenced to the primary-source evidence on each company page (the matrix is an *index* into those pages, not a re-derivation). **Concentration percentages** (China ~85–90% magnets, ~91% refining, ~60% transformers, etc.) are **Tier-3** (IEA Nov 2025 via the anchors) — verify against primaries (IEA / CRS / USGS) before treating as load-bearing. **Billing-address caveat** applied throughout the revenue axis (A): several "China revenue %" figures are ship-to/routing, not end-market demand. No portfolio or buy/sell calls — this is a structural risk-concentration map (Section 2.1 honest-verdict + describe-don't-recommend). The **no-exposure set** is named honestly as a finding, not an omission.
 
 ## Change log
+
+- **2026-06-06 (S139 — added VPG):** [[VPG]] (Vishay Precision Group) ingested; added to the **AI-datacenter** matrix as a **Low** entry (axes A+B) — Asia ~14% of FY2025 revenue (China not separately broken out; by-subsidiary-location) + manufacturing in both the PRC and Taiwan. `tickers` +VPG.
+
+- **2026-06-06 (S138 — added NOVT):** [[NOVT]] (Novanta) ingested; added to the **AI-datacenter** matrix as a **Low** entry (axes A+B) — China 9.5% of FY2025 revenue (a *growth* region for it, in semiconductor + industrial apps) plus a Suzhou manufacturing site (1 of 20+). `tickers` +NOVT. last_updated 2026-06-05 → 2026-06-06.
 
 - **2026-06-05 (Session 134 — added MRCY):** [[MRCY]] (Mercury Systems) ingested; added to the Defense matrix as a **Low / "trusted-domestic"** entry — the reshoring-aligned inverse of [[LSCC]] at the secure-microelectronics node (DMEA onshore; no disclosed TSMC/China dependence). `tickers` +MRCY. Reinforces the reshoring-inverse-exposure thread.
 

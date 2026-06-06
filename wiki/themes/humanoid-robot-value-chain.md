@@ -1,7 +1,7 @@
 ---
 type: theme
-tickers: [MP, NVDA, INTC, INOD]
-last_updated: 2026-06-05
+tickers: [MP, NVDA, INTC, INOD, NOVT, VPG]
+last_updated: 2026-06-06
 ---
 
 # Humanoid Robot Value Chain — where the durable value sits
@@ -22,19 +22,24 @@ A humanoid is five functional systems on a materials substrate, with the AI brai
 
 Goldman's Exhibit 5 scores each component 1–3 on six criteria (content value in BOM, certainty of tech choice, technology barrier, manufacturing barrier, capacity flexibility, % incremental opportunity from humanoids), summed out of 18:
 
-| Component | GS score | Read |
-|---|---|---|
-| **Harmonic reduction gear** | **16** | GS top pick ("growth") — high content value + high barriers + high humanoid demand |
-| **Dexterous hand module** | **15** | High value, but lowest certainty-of-tech-choice (architecture unsettled) — route-risk |
-| **Actuator assembly** | **14** | GS "adoption certainty" pick — highest certainty, but low tech barrier (integration, not core IP) |
-| **Planetary roller screw** | **14** | Acute chokepoint — high mfg barrier, low capacity-flexibility = pricing power |
-| **Sensors (6-axis force/torque, tactile)** | **13** | Highest *tech barrier* in its tier; the high-precision end is a chokepoint |
-| **GPU/CPU** | **13** | Top barriers but **lowest incremental-humanoid opportunity (1)** — strategic, not a pure-play |
-| **Coreless / frameless motors** | **13** | High demand, low tech barrier — commoditizing |
-| **Battery** | **12** | Lowest content value + lowest incremental humanoid opportunity — EV-shared |
-| **Camera / LiDAR** | **12** | Lowest content value; "mostly ready" — commoditizing |
+Goldman's ranking groups into **three tiers** — and its two headline picks sit at the top:
 
-**The chokepoint quality gradient:** physics/geology (magnets) > precision-grinding/metallurgy (harmonic gears, roller screws) > integration (actuator assembly) > commodity (basic motors, vision, battery). Score a name on *what makes its position durable*, not on today's order book.
+| Tier | Component | GS score | Read |
+|---|---|---|---|
+| **High-value mechatronic core** | **Harmonic reduction gear** ★ | **16** | GS **top pick** ("growth") — high content value + high tech *and* manufacturing barriers + high humanoid demand |
+| | **Dexterous hand module** | **15** | High value + high barriers, but **lowest certainty-of-tech-choice** (architecture unsettled) — route-risk, so *not* a headline pick |
+| | **Actuator assembly** ★ | **14** | GS's other **headline pick** ("adoption certainty") — highest certainty-of-tech-choice, but low tech barrier (integration, not core IP) |
+| | **Planetary roller screw** | **14** | High content value + high mfg barrier; knock is **low capacity-flexibility** (precision-grinding constraint) = pricing power |
+| **Middle (solid, a notch below)** | **Sensors (6-axis force/torque, tactile)** | **13** | Highest *tech barrier* in this tier; the high-precision end is a chokepoint |
+| | **GPU/CPU** | **13** | Top barriers but **lowest incremental-humanoid opportunity (1)** — humanoids tiny vs its data-center business; strategic, not a pure-play |
+| | **Coreless motor** | **13** | High volume, low tech moat — commoditizing |
+| | **Frameless torque motor** | **13** | High volume, low tech moat — commoditizing |
+| **Bottom (commoditized / "ready")** | **Battery** | **12** | Lowest content value + lowest incremental humanoid opportunity — EV-shared |
+| | **Camera / LiDAR** | **12** | Lowest content value; parts "mostly ready" — commoditized |
+
+★ = Goldman's two explicit headline picks. The **high-value layers are the mechatronic core** (the four top rows); reduce it to Goldman's stated preference and it's **harmonic reduction gears (growth) + actuator assembly (adoption certainty)**.
+
+**The chokepoint quality gradient (the vault's overlay):** physics/geology (magnets) > precision-grinding/metallurgy (harmonic gears, roller screws) > integration (actuator assembly) > commodity (basic motors, vision, battery). Score a name on *what makes its position durable*, not on today's order book.
 
 ## The central tension — strongest chokepoints, worst US-listed access
 
@@ -45,18 +50,40 @@ This is the defining feature of investing in humanoids from a US brokerage:
 
 ## Goldman's preference + our refinement
 
-**Goldman's "deserves investment"** = the high-content-value mechatronic parts: **harmonic reduction gears** (growth), **actuator assembly** (adoption certainty), and **planetary roller screws** (chokepoint), with dexterous hands the high-upside/high-route-risk wildcard.
+**Goldman's "deserves investment"** = the high-value **mechatronic core** — the four top-ranked layers (harmonic gears 16, dexterous hands 15, actuator assembly 14, roller screws 14). Goldman's slide narrows it to **two explicit headline picks: harmonic reduction gears** (highest growth potential + barriers) **and actuator assembly** (highest adoption certainty). Dexterous hands (high value, but unsettled architecture) and roller screws (capacity-constrained) round out the core but aren't the two it most prefers.
 
 **Our refinement** adds the two cleanest *US-listed* expressions GS's component-ranking underweights:
 - **The materials substrate — rare-earth magnets.** GS folds magnets *inside* "actuators," but every motor needs NdFeB permanent magnets (~0.9–4 kg/robot, ~2× an EV; ~40+ motors per humanoid), and China controls ~90% of finished magnets. **[[MP]] is the one clean US-listed play** — and a **triple-thesis node** (defense + EV/wind + humanoid). See [[rare-earth-magnet-chokepoint]].
-- **The high-end sensor layer (6-axis force/torque).** GS ranks it mid-tier (13), but it's the rising, US-investable sweet spot via **Novanta (NOVT, owns ATI Industrial Automation)** and **Vishay Precision (VPG)** — the exact names in GS's sensor row, just not flagged as a top pick.
+- **The high-end sensor layer (6-axis force/torque).** GS ranks it mid-tier (13), but it's the rising, US-investable sweet spot via **[[NOVT]]** (owns ATI Industrial Automation) and **[[VPG]]** (Vishay Precision Group) — the exact names in GS's sensor row, just not flagged as a top pick. *Caveat from both ingests (S138/S139): each is a clean US name, but force/torque/strain sensing is a small slice of a diversified precision-tech business — the real vault exposure is AI-datacenter equipment, not humanoid sensing. VPG is the one name that actually **quantifies** humanoid revenue (~$600K Q1 2026, ~$5M 2026 target, ~50% CAGR); NOVT never sized it.*
 
-## The investable surface
+## Value-layer map (stock → value layer → investability)
 
-- **🟢 Cleanest US-listed expressions (the edges the banks underweight):** **[[MP]]** (magnets — already in vault), **NOVT** (force/torque via ATI), **VPG** (force/strain).
-- **🟢 US-listed, already-owned or commoditizing:** [[NVDA]] (brain/compute — *don't double-count*), [[INTC]] (RealSense/edge), TSLA (the maker with an in-house brain), Regal Rexnord (RRX — cleanest US motion/motor), Ouster/Hesai/Innoviz/Luminar (LiDAR — higher-beta optionality, vision-vs-LiDAR route risk).
-- **🟡 Foreign-listed chokepoint pure-plays (awkward to own):** Harmonic Drive Systems (6324.T, Japan), Schaeffler (Germany), HIWIN (Taiwan), Nidec (Japan), Lynas (Australia).
-- **🔴 China A-share / HK or private (map, don't pretend investable):** LeaderDrive, Sanhua, Tuopu, Inovance, Zhaowei, Hengli, CATL, RoboSense, Sunny Optical; Unitree (pre-IPO), UBTech; Figure AI, 1X, Maxon, DJI. *As with Defense, the best pure-play capability is often not publicly investable — a structural feature, not a temporary gap.*
+Every company on Goldman's two exhibits, organized by value layer (rank-ordered by the Exhibit 5 exposure score), tagged by investability. **🟢 US-listed** (incl. foreign ADRs like HSAI/INVZ) · **🟡 foreign-listed** (Japan/Germany/Korea/Taiwan/Australia) · **🔴 China A-share / HK or private** (map, don't pretend investable). The materials substrate + the brain are appended (Exhibit 2 layers GS doesn't score in Exhibit 5).
+
+| Value layer | GS rank | Companies (by investability) | Cleanest US-investable |
+|---|---|---|---|
+| **Harmonic reduction gear** | 16 | 🟡 Harmonic Drive (Japan) · 🔴 LeaderDrive, **Shuanghuan**, **Zhongda Leader**, Sling, Reach Machinery, FORE Intelligent, Laiful, Picea Motion | — none clean |
+| **Dexterous hand module** | 15 | 🟡 Maxon (Swiss, private) · 🔴 Zhaowei, Inovance, Moons' Electric, LeaderDrive, Fortior, RoboSense, Leadshine, Leili, Veichi, FORE Intelligent, Paxini | — none clean |
+| **Actuator assembly** | 14 | 🔴 **Sanhua**, **Tuopu** | — none clean |
+| **Planetary roller screw** | 14 | 🟡 Schaeffler (Germany), HIWIN (Taiwan) · 🔴 Sanhua, LeaderDrive, Beite, XCC, Seenpin, Best, Hengli Hydraulic, Zhenyu, CSB, Shuanglin | — none clean |
+| **Sensors (force/torque/tactile)** | 13 | 🟢 **[[NOVT]]** (via ATI), **[[VPG]]** (Vishay Precision) · 🟡 Murata, TDK (Japan) · 🔴 Kunwei | **[[NOVT]], [[VPG]]** |
+| **GPU / CPU** | 13 | 🟢 [[NVDA]], [[INTC]] — *already owned via the AI book* | NVDA, INTC (don't double-count) |
+| **Coreless motor** | 13 | 🟢 Regal Rexnord (RRX, adjacent) · 🔴 Moons' Electric, Zhaowei, Leadshine, Leili, Veichi | RRX (adjacent) |
+| **Frameless torque motor** | 13 | 🟡 Nidec (Japan) · 🟢 RRX (adjacent) · 🔴 Kinco, Haozhi, Veichi | RRX (adjacent) |
+| **Battery** | 12 | 🟡 Samsung SDI (Korea), Panasonic (Japan) · 🔴 CATL | — none clean |
+| **Camera / LiDAR** | 12 | 🟢 Ouster (OUST), Hesai (HSAI, ADR), Innoviz (INVZ, ADR), Luminar (LAZR), [[INTC]] · 🔴 DJI/Livox, Orbbec, RoboSense, Sunny Optical | OUST / HSAI / INVZ / LAZR (higher-beta) |
+| **Foundation models / brain** | *(Exh. 2; not scored in 5)* | 🟢 [[NVDA]], TSLA, GOOGL, META, OpenAI (private) · 🔴 iFlytek, Huawei | already owned (NVDA/GOOGL/META) |
+| **Materials substrate (magnets)** | *(GS folds into "actuators")* | 🟢 **[[MP]]** · 🟡 Lynas (Australia) | **[[MP]]** — the GS-miss; already in vault |
+
+*Investability flags are this vault's classification (the GS slide's color key is the authority for nationality); a few obscure names (Picea Motion; Sanhua/Tuopu HK-listing status) carry a verify-at-source caveat.*
+
+**What the map shows — the inversion, made concrete.** The four **highest-value layers** (harmonic gear 16, dexterous hands 15, actuator assembly 14, roller screw 14) have **no clean US-investable name** — they're China A-share or Japanese/German. The **US-investable** names cluster in the **lower** layers (sensors 13, camera/LiDAR 12), plus the materials substrate (**MP**, which GS hides) and the already-owned brain. The value-layer ranking and the investability ranking run in opposite directions.
+
+**Ingest priority that follows from the map:**
+1. **[[MP]]** — the one US-investable *high-value* chokepoint (materials substrate); already in vault ✓ (humanoid-magnet graduation).
+2. **[[NOVT]]** ✓ (S138), **[[VPG]]** ✓ (S139) — the US sensors layer, both ingested. Both are clean US names where the needle-mover screen fired: each carries the sensor/strain exposure as a small slice of a diversified precision-tech business, and both landed `equipment_tier 4` + theme-anchored humanoid (the real vault exposure is AI-datacenter equipment). NOVT never sized humanoid ("prototype phase," 2027); **VPG quantifies it** (~$600K Q1 2026, ~$5M 2026 target, ~50% CAGR) — disclosed but ~1.5% of revenue. See the NOVT-vs-VPG comparison on [[VPG]].
+3. **OUST** (+ HSAI / INVZ / LAZR) — camera/LiDAR, higher-beta optionality with vision-vs-LiDAR route risk.
+4. **The top-layer China chokepoints** (Sanhua / Tuopu / Shuanghuan / Zhongda + Harmonic Drive / Schaeffler) → covered via a consolidated **`humanoid-actuator-chokepoint`** page (un-investable structural coverage), **not** company-page ingests — the same "un-investable names live in chokepoint/theme pages" precedent the vault uses for Anduril/Figure.
 
 ## How real, how big (the early-innings discipline)
 
@@ -82,7 +109,7 @@ The left side of Goldman's map is 40+ robot makers (Tesla, Figure, Boston Dynami
 
 ## Open questions (primary-source verification triggers)
 
-1. **Needle-mover (the key one):** how much of NOVT / VPG / MP revenue is actually humanoid vs. legacy industrial automation / defense / EV? Humanoid is *optionality on a legacy business*, not a base case — verify the revenue mix at each ingest before calling any name a "humanoid play."
+1. **Needle-mover (the key one):** how much of NOVT / VPG / MP revenue is actually humanoid vs. legacy industrial automation / defense / EV? Humanoid is *optionality on a legacy business*, not a base case — verify the revenue mix at each ingest before calling any name a "humanoid play." **[[NOVT]] S138 + [[VPG]] S139 = two confirmations:** NOVT left humanoid unsized ("prototype phase," 2027); VPG sized it at ~$600K Q1 2026 / ~$5M 2026 target (~1.5% of revenue). Both real, both small, both AI-datacenter-equipment names first. The screen works.
 2. **Vision-only vs LiDAR** — if Tesla's vision-only approach wins, the LiDAR TAM leg (OUST/HSAI/INVZ/LAZR) shrinks.
 3. **The missing US precision-actuator pure-play** — does a US-listed harmonic-gear / roller-screw name emerge to fill the biggest access gap?
 4. **Magnet-free motors** — does the R&D advance enough to de-risk (and undercut) the magnet chokepoint?
@@ -102,7 +129,15 @@ The left side of Goldman's map is 40+ robot makers (Tesla, Figure, Boston Dynami
 - [[china-exposure]] — the geopolitical overlay; the humanoid chain is the most China-concentrated in the vault.
 - [[drone-platform-commoditization]] — the "value migrates from makers to enablers" parallel (drones → AI-data → humanoids, a third time).
 - [[AI-data-supply-chain]] / [[INOD]] — the physical-AI/robotics data feedstock for the humanoid brain.
+- [[NOVT]] — the US sensor / precision-motion layer; ingested S138 as an AI-datacenter equipment name (`equipment_tier 4`) with humanoid as theme-anchored optionality — the needle-mover screen in action.
+- [[VPG]] — the paired US sensor-layer name (Vishay Precision Group); ingested S139, also `equipment_tier 4` + theme-anchored humanoid. The one vault name that *quantifies* humanoid revenue; carries the NOVT-vs-VPG comparison.
 
 ## Change log
+
+- **2026-06-06 (S139 — second humanoid name ingested):** [[VPG]] (Vishay Precision Group) ingested — the paired US sensor-layer name (#2 on the map, with NOVT). VPG bracketed at its mentions; added to `tickers`; ingest-priority #2 marked complete. VPG is the **first vault name to *quantify* humanoid revenue** (~$600K Q1 2026, ~$5M 2026 target, ~50% CAGR) — the disclosed-magnitude contrast vs NOVT (which never sized it); both landed `equipment_tier 4` + theme-anchored humanoid (~1.5% optionality). The needle-mover screen now has two confirmations.
+
+- **2026-06-06 (S138 — first humanoid name ingested):** [[NOVT]] ingested as the first company off the value-layer map (sensor layer, ingest-priority #2). NOVT bracketed at its mentions; added to `tickers`. The ingest **confirmed Open Question #1 (the needle-mover screen)**: NOVT is a clean US name but humanoid is its *smallest* AI leg (unsized at filing level, "prototype phase," 2027) — its real vault exposure is the ~15% AI-datacenter semiconductor-equipment collective, so it landed `equipment_tier 4` + theme-anchored humanoid (no `humanoid_tier`). Also split the value-capture gradient's "Coreless / frameless motors" into two rows (both GS-13) to match Exhibit 5 + the value-layer map.
+
+- **2026-06-06 (S137 — value-layer map):** Superseded the lighter "investable surface" bullets with a comprehensive **Value-layer map** — every company on Goldman's Exhibits 2 & 5, organized by value layer (rank-ordered), tagged by investability (🟢 US-listed / 🟡 foreign / 🔴 China-A·HK·private), with a "cleanest US-investable" column + the ingest-priority order. Makes the inversion concrete (top-value layers = un-investable China/Japan; US names cluster in lower layers + the MP magnet substrate). Tier-3 mapping, describe-don't-recommend; no `tickers` change (in-vault names unchanged; the rest plain text). Also (per a Goldman-value-layer note relayed by Vic) re-grouped the value-capture gradient table into Goldman's explicit **three tiers** (high-value mechatronic core / middle 13 / bottom 12) and marked the **two headline picks (★ harmonic gears + actuator assembly)** precisely. `last_updated` → 2026-06-06.
 
 - **2026-06-05 (S136 — creation):** First vault page of the third thesis domain (Humanoid Robots), built on the v0.1 domain anchors (`_thesis-humanoid-robot.md` + `frameworks-humanoid-robot.md`). Tier-3-anchored on Goldman's humanoid value-chain work + two commissioned reports. Centerpiece: the value-capture gradient (GS Exhibit 5) + **the central tension — strongest chokepoints, worst US-listed access** + the two GS-misses ([[MP]] magnets, NOVT/VPG sensors). Attached to [[MP]] as the day-one anchor (humanoid-magnet graduation → triple-thesis); cross-refs [[rare-earth-magnet-chokepoint]], [[china-exposure]], [[drone-platform-commoditization]], [[INOD]]. No `humanoid_tier` codified (held under YAGNI). `tickers: [MP, NVDA, INTC, INOD]` (the in-vault names referenced; the rest plain text pending ingest). Describe-don't-recommend applied; all figures Tier-3, verify-at-primary.

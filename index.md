@@ -77,6 +77,8 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` Section 3
 | [AMPX](wiki/companies/AMPX.md) | AMPX  | —       | —       | —       | —            | —         | —         | 4        | 2026-06-04   |
 | [MRCY](wiki/companies/MRCY.md) | MRCY  | —       | —       | —       | —            | —         | —         | 2        | 2026-06-05   |
 | [INOD](wiki/companies/INOD.md) | INOD   | outside | outside | outside | outside      | outside   | outside   | —        | 2026-06-05   |
+| [NOVT](wiki/companies/NOVT.md) | NOVT   | 4       | outside | —       | —            | 4         | —         | —        | 2026-06-06   |
+| [VPG](wiki/companies/VPG.md)   | VPG    | 4       | —       | —       | —            | 4         | —         | outside  | 2026-06-06   |
 
 ## Chokepoints
 
@@ -115,9 +117,9 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` Section 3
 | [hyperscaler-capex](wiki/themes/hyperscaler-capex.md) | MSFT, GOOGL, AMZN, META, ORCL, CRWV, NBIS | 2026-06-03 |
 | [defense-drone-supply-chain](wiki/themes/defense-drone-supply-chain.md) | MP, LSCC, AVAV, KTOS, AMPX | 2026-06-04 |
 | [drone-platform-commoditization](wiki/themes/drone-platform-commoditization.md) | AVAV, KTOS | 2026-06-04 |
-| [china-exposure](wiki/themes/china-exposure.md) | TSM, NVDA, AVGO, AMD, MRVL, ALAB, MU, ARM, INTC, AAOI, AXTI, LITE, COHR, CRDO, ONTO, COHU, VECO, PLAB, TSEM, MKSI, MPWR, NVTS, POWI, ON, SOI, SNDK, FN, GLW, FLEX, VICR, NOK, ENS, XFAB, AEHR, MOD, MP, TDY, AMPX, AVAV, LSCC, KTOS, MRCY, INOD | 2026-06-05 |
+| [china-exposure](wiki/themes/china-exposure.md) | TSM, NVDA, AVGO, AMD, MRVL, ALAB, MU, ARM, INTC, AAOI, AXTI, LITE, COHR, CRDO, ONTO, COHU, VECO, PLAB, TSEM, MKSI, MPWR, NVTS, POWI, ON, SOI, SNDK, FN, GLW, FLEX, VICR, NOK, ENS, XFAB, AEHR, MOD, MP, TDY, AMPX, AVAV, LSCC, KTOS, MRCY, INOD, NOVT, VPG | 2026-06-06 |
 | [AI-data-supply-chain](wiki/themes/AI-data-supply-chain.md) | INOD | 2026-06-05 |
-| [humanoid-robot-value-chain](wiki/themes/humanoid-robot-value-chain.md) | MP, NVDA, INTC, INOD | 2026-06-05 |
+| [humanoid-robot-value-chain](wiki/themes/humanoid-robot-value-chain.md) | MP, NVDA, INTC, INOD, NOVT, VPG | 2026-06-06 |
 
 ## Layers
 
