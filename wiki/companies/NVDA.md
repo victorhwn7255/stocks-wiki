@@ -342,6 +342,10 @@ Analyst estimates for 2026 capex across top five cloud providers and hyperscaler
 
 H200 products for China-based customers have been approved by the US government but generated minimal revenue; NVDA does not know whether future imports will be allowed (NVDA Q4 FY2026 call). Chinese competitors "bolstered by recent IPOs, are making progress and have the potential to disrupt the structure of the global AI industry over the long-term" (NVDA Q4 FY2026 call). No Data Center compute revenue from China is assumed in Q1 FY2027 guidance.
 
+### Cross-thesis — Humanoid Robots (physical AI / the robot brain)
+
+NVDA is the **key player in the humanoid robot's compute/brain layer** — Goldman's GPU/CPU layer *and* the foundation-model "brain" layer. It supplies the integrated onboard brain (**Jetson Thor** — GPU + Arm CPU on one SoC) plus the full robot software platform (**Isaac Lab / GR00T / Cosmos**), with named robotics partners (Boston Dynamics, Caterpillar, Franka Robotics, Disney; Uber robotaxi ~30 cities / 4 continents by 2028) and disclosed **"physical AI" revenue >$6B FY2026 → >$9B trailing-12-months** (Q1 FY2027). **Needle-mover discipline** (per the humanoid frameworks): physical AI is small vs ~$194B data-center revenue, and Goldman scores the layer's *incremental humanoid opportunity* at 1 — so humanoid is **immaterial optionality already owned via the AI-datacenter book, not a separate thesis** (don't double-count). Distinct from [[INTC]] — also in this GS layer but **peripheral** (x86 isn't in the robot; the two don't compete in the robot, they meet upstream in the training data center). See [[humanoid-robot-value-chain]] (GPU/CPU + brain layers).
+
 ## Supply chain dependencies
 
 ### TSMC dependency
@@ -546,6 +550,7 @@ The contrast with TSM's management tone is notable: C.C. Wei was confident but e
 
 ## Change log
 
+- **2026-06-08 (S145 follow-up — Humanoid Robots cross-thesis note):** Added a light "Cross-thesis — Humanoid Robots" note (Demand profile section) + `[[humanoid-robot-value-chain]]` cross-ref — NVDA is the key player in the humanoid compute/brain layer (Jetson Thor GPU+Arm CPU + Isaac/GR00T/Cosmos; physical AI >$6B FY26 → >$9B TTM), but immaterial *incremental* vs data-center (don't double-count), per frameworks H7. Bidirectional linkage with the humanoid theme (previously one-directional). No primary-source refresh; `last_updated` unchanged (light cross-ref, per the S133 china-exposure precedent).
 - **2026-06-04 (Session 133 — cross-ref):** Added to the new vault-wide [[china-exposure]] theme as the **outbound-export-control node** — China datacenter compute effectively zeroed in guidance + multi-$B H20 write-downs — *and* TSMC-fab-dependent. No content change.
 
 - **2026-04-19:** Created from NVDA Q4 FY2026 earnings call (Tier 2). Covers Q4 results ($68B revenue, $62B data center), FY2026 full year ($194B data center, $31B networking), Q1 FY2027 guidance ($78B), platform architecture (Blackwell, Vera Rubin, dielet philosophy), networking (NVLink 72, Spectrum-X, AWS integration), ecosystem (Anthropic, OpenAI, Meta, Groq), demand profile (tokenomics, agentic AI inflection), supply chain (TSMC oblique dependency, COHR/LITE investments), and competitive positioning (custom ASICs, Groq licensing). CPO/photonics roadmap conspicuously absent from this source.

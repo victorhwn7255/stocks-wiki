@@ -85,6 +85,9 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` Section 3
 | [SHUANGHUAN](wiki/companies/SHUANGHUAN.md) | SHUANGHUAN | outside | — | — | — | — | — | — | 2026-06-06 |
 | [ZHONGDA](wiki/companies/ZHONGDA.md) | ZHONGDA | outside | — | — | — | — | — | — | 2026-06-06 |
 | [HARMONIC](wiki/companies/HARMONIC.md) | HARMONIC | 4 | — | — | — | 4 | — | 4 | 2026-06-07 |
+| [SLING](wiki/companies/SLING.md) | SLING | outside | — | — | — | — | — | — | 2026-06-08 |
+| [ZHAOWEI](wiki/companies/ZHAOWEI.md) | ZHAOWEI | outside | — | — | — | — | — | — | 2026-06-08 |
+| [HENGLI](wiki/companies/HENGLI.md) | HENGLI | outside | — | — | — | — | — | — | 2026-06-08 |
 
 ## Chokepoints
 
@@ -123,9 +126,9 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` Section 3
 | [hyperscaler-capex](wiki/themes/hyperscaler-capex.md) | MSFT, GOOGL, AMZN, META, ORCL, CRWV, NBIS | 2026-06-03 |
 | [defense-drone-supply-chain](wiki/themes/defense-drone-supply-chain.md) | MP, LSCC, AVAV, KTOS, AMPX | 2026-06-04 |
 | [drone-platform-commoditization](wiki/themes/drone-platform-commoditization.md) | AVAV, KTOS | 2026-06-04 |
-| [china-exposure](wiki/themes/china-exposure.md) | TSM, NVDA, AVGO, AMD, MRVL, ALAB, MU, ARM, INTC, AAOI, AXTI, LITE, COHR, CRDO, ONTO, COHU, VECO, PLAB, TSEM, MKSI, MPWR, NVTS, POWI, ON, SOI, SNDK, FN, GLW, FLEX, VICR, NOK, ENS, XFAB, AEHR, MOD, MP, TDY, AMPX, AVAV, LSCC, KTOS, MRCY, INOD, NOVT, VPG, OUST, SANHUA, TUOPU, SHUANGHUAN, ZHONGDA | 2026-06-06 |
+| [china-exposure](wiki/themes/china-exposure.md) | TSM, NVDA, AVGO, AMD, MRVL, ALAB, MU, ARM, INTC, AAOI, AXTI, LITE, COHR, CRDO, ONTO, COHU, VECO, PLAB, TSEM, MKSI, MPWR, NVTS, POWI, ON, SOI, SNDK, FN, GLW, FLEX, VICR, NOK, ENS, XFAB, AEHR, MOD, MP, TDY, AMPX, AVAV, LSCC, KTOS, MRCY, INOD, NOVT, VPG, OUST, SANHUA, TUOPU, SHUANGHUAN, ZHONGDA, SLING, ZHAOWEI, HENGLI | 2026-06-08 |
 | [AI-data-supply-chain](wiki/themes/AI-data-supply-chain.md) | INOD | 2026-06-05 |
-| [humanoid-robot-value-chain](wiki/themes/humanoid-robot-value-chain.md) | MP, NVDA, INTC, INOD, NOVT, VPG, OUST, SANHUA, TUOPU, SHUANGHUAN, ZHONGDA, HARMONIC | 2026-06-07 |
+| [humanoid-robot-value-chain](wiki/themes/humanoid-robot-value-chain.md) | MP, NVDA, INTC, INOD, NOVT, VPG, OUST, SANHUA, TUOPU, SHUANGHUAN, ZHONGDA, HARMONIC, SLING, ZHAOWEI, HENGLI | 2026-06-08 |
 
 ## Layers
 
