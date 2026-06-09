@@ -1,12 +1,16 @@
-# CLAUDE.md — stocks-wiki (v9.6)
+# CLAUDE.md — stocks-wiki (v9.8)
 
-A personal research vault for AI datacenter supply chain and chokepoint analysis. You maintain the wiki; the human curates sources and asks questions.
+A personal research vault for chokepoint and supply-chain analysis across **three thesis domains**: (1) **AI datacenter supply chain** — both photonics and power & energy; (2) **Humanoid Robots** — the embodied-AI value chain; and (3) **Defense & Drones** — unmanned systems. You maintain the wiki; the human curates sources and asks questions.
 
-*Version: v9.6 (Section 5.3 forward-only growth discipline + Appendix A.1–A.12 moved verbatim to `raw/notes/conventions-ledger.md` — the rulebook stays lean; per-instance precedent/evidence lives in the ledger, live counts in MEMORY.md; rules + inline examples untouched; Session 129; 2026-06-04). Prior: v9.5 Section 1.3 filename-convention invariant + `fetch_filings.py` skip-check hardening, Session 126.*
+*Version: v9.8 (Section 3.18 **forward-edge layer** — the cross-vault `forward-edge-tracker.md` consensus-divergence tracker [Layer 3 / variant-view]: where the vault's structural read differs from what the market is pricing, each entry with a catalyst + falsifier, under a hard no-price/valuation guardrail; §3.17 reserved for the pending latest-alpha digest-block convention; 2026-06-09, post-S148). Prior: v9.7 opening summary + Section 1.2 scope bumped two → three thesis domains, 2026-06-09. Prior: v9.6 Section 5.3 forward-only growth discipline + Appendix A.1–A.12 moved verbatim to `raw/notes/conventions-ledger.md`; Session 129; 2026-06-04.*
 
 ## Descriptive language convention
 
 When referencing frameworks, tiers, caveats, or sections in prose content, use descriptive names rather than numerical shorthand. Pair numbers with descriptive scope on first reference (e.g., "Energy/Power Tier 4 specialty component supplier scope"); descriptive name alone on subsequent references. Frontmatter YAML fields retain numerical values. Existing canonical pages from Sessions 1-45 are not retroactively updated; this convention applies to all session outputs from Session 46 onward.
+
+## Plain-language convention
+
+Use simple, everyday words — both when explaining things in chat and when writing wiki prose. Pick the easy word over the hard one. Examples: "backs up / supports / agrees with / matches" not "corroborates"; "the real bottleneck" not "the binding constraint"; "shows" or "proves" not "substantiates / validates" where plainer; "uses" not "leverages"; "about" not "regarding"; "approve / sign off" not "bless". Keep sentences short — one idea each. The wiki keeps its analytical third-person voice, but plain does not mean vague: clear writing does not need hard words. (Vic, 2026-06-09: "stop using 'corroborates' — change to an easy-to-understand word." Extends the 2026-06-03 plain-language request; sibling to Section 3.16 word discipline.)
 
 ## 1. Foundation
 
@@ -18,7 +22,7 @@ When referencing frameworks, tiers, caveats, or sections in prose content, use d
 
 ### 1.2 Vault scope
 
-**Two thesis domains (codified Session 123).** The vault spans **two parallel thesis domains**, each with its own human-owned `_thesis` + `frameworks` anchor: (1) **AI datacenter supply chain** — `wiki/_thesis.md` + `raw/notes/frameworks.md` (scope detailed below); (2) **Defense & Drones (unmanned systems)** — `wiki/_thesis-defense-drones.md` + `raw/notes/frameworks-defense-drones.md` (drones-first; broad munitions, European rearmament, and standalone directed-energy sequenced for future expansion). All CLAUDE.md conventions (source hierarchy, page conventions, disciplines, ingest protocols) apply to both domains. A company may be a **dual-thesis page** when it sits in both supply chains (e.g., [[MP]], [[AMD]], [[NVDA]], [[PLTR]]) — add the second domain's framing + `defense_tier` to the existing page rather than duplicating. Both anchor pairs are human-owned per Section 1.1 (the ownership exception applies equally to the Defense anchors).
+**Three thesis domains (Defense & Drones added Session 123; Humanoid Robots added Session 136).** The vault spans **three parallel thesis domains**, each with its own human-owned `_thesis` + `frameworks` anchor: (1) **AI datacenter supply chain** — `wiki/_thesis.md` + `raw/notes/frameworks.md` (the founding/primary thesis; scope detailed below); (2) **Humanoid Robots (embodied-AI value chain & chokepoints)** — `wiki/_thesis-humanoid-robot.md` + `raw/notes/frameworks-humanoid-robot.md` (humanoid-first, broadening to "physical AI" later; both anchors v0.2 LIVING, reworked Session 145); (3) **Defense & Drones (unmanned systems)** — `wiki/_thesis-defense-drones.md` + `raw/notes/frameworks-defense-drones.md` (drones-first; broad munitions, European rearmament, and standalone directed-energy sequenced for future expansion). All CLAUDE.md conventions (source hierarchy, page conventions, disciplines, ingest protocols) apply to all three domains. A company may be a **dual-/tri-thesis page** when it sits in more than one supply chain (e.g., [[MP]] triple-thesis [AI/materials + defense + humanoid]; [[HARMONIC]] tri-thesis [AI-datacenter equipment + defense + humanoid]; [[AMD]] / [[NVDA]] / [[PLTR]] dual-thesis) — add the additional domain's framing + the relevant `*_tier` to the existing page rather than duplicating. **Domain `*_tier` asymmetry:** the AI domain uses per-sub-domain `*_tier` fields and Defense uses `defense_tier`, but the Humanoid domain has **no `humanoid_tier` field (held under YAGNI)** — humanoid names land `outside` the existing frameworks + **theme-anchored** to [[humanoid-robot-value-chain]], OR carry another domain's tier where cross-thesis (e.g. HARMONIC `equipment_tier 4` + `defense_tier 4`; TUOPU `energy_power_tier 4`). All three anchor pairs are human-owned per Section 1.1 (the ownership exception applies equally to the Defense and Humanoid anchors).
 
 Current scope: **AI datacenter supply chain — compute, photonics, memory, energy, power, equipment, materials, and more.** Multi-domain chokepoint analysis. Binding 2026 constraint per _thesis.md rework: power infrastructure (~50% of planned 2026 US datacenter builds delayed/cancelled; 4-year transformer lead times).
 
@@ -295,6 +299,22 @@ Default to direct language. Use "substantive" / "substantively" only where the w
 **Honest framing on drift.** If drift surfaces in a session output, surface honestly as drift in Phase 4 reflection. Do not claim "load-bearing usage" retroactively for instances that fail the deletion test.
 
 **Application.** Prospective from Session 86 onward; existing oversized usage at NVDA.md S81 + log.md S81 + kickoff prompts preserved as historical artifact (forward-only application per Section 3.8 brevity discipline precedent). Cross-reference Section 3.3 voice convention.
+
+### 3.18 Forward-edge layer — consensus-divergence tracker (codified 2026-06-09, post-S148)
+
+The vault runs on three information layers. (1) **Canon (verified)** — 10-K/10-Q/call primary sources; backward-looking ground truth; the backbone that keeps the rest honest. (2) **Latest alpha (timely)** — 8-K/conference/news between filings; closes the lag; quarantined discovery-only (the Section 3.17 digest-block convention — reserved, pending separate approval). (3) **Forward edge (variant view)** — where the vault's structural read differs from what the market is pricing, with the **catalyst** that would force a re-rate and the **falsifier** that would prove the vault wrong. Layer 2 feeds Layer 3's catalysts; Layer 1 verifies or falsifies a Layer 3 entry (a refresh ingest confirms a catalyst or trips a falsifier).
+
+**Artifact.** The forward edge lives in ONE cross-vault, canon-grade theme page — `wiki/themes/forward-edge-tracker.md` (`type: theme`; sibling to absence themes per Section 3.12) — organized by domain, curated to high-conviction divergences only. It **extends, not duplicates**, the three theses' "what would prove this thesis wrong" sections and the chokepoint-quality gradient (the variant views are already latent there; this surfaces them in one structured place). It is agent-maintainable as canon analysis — updated when a latest-alpha run surfaces a catalyst, when a refresh ingest confirms/falsifies an entry, or on request; it is NOT auto-written by the latest-alpha skill.
+
+**Entry format (six fields, fixed order):** subject + durability anchor (chokepoint-quality gradient) → **Consensus** (Tier 3/4) → **Vault view** (primary-grounded, linked) → **Catalyst / timeline** → **Falsifier** → **Last moved** (date + what changed). **Entry contract: every entry MUST carry a catalyst AND a falsifier** — no falsifier means it is a hot take, not an entry. Curated to high-conviction only, not every name.
+
+**Discipline guardrails (load-bearing):**
+- **No price/valuation, ever.** "Consensus" is described as a **structural narrative** ("the market prices NVDA as the durable AI winner; treats power as adjacent") or via an **observable mechanism** (lead times, interconnection queues, bond yields, order-vs-capacity) — **never** stock price, market cap, valuation multiples, or analyst price targets. Price action / price targets stay "signal only (not weighted)" in the Section 3.17 latest-alpha blocks, never here. Reinforces Section 2.1 thesis-tool-not-portfolio-tracker + describe-don't-recommend.
+- **Tier discipline (Section 2.2 / 4.6).** Tag the Consensus line Tier 3/4 (cite, don't treat as fact); primary-ground the Vault-view + Falsifier lines with citations to thesis / chokepoint / company pages.
+- **Honest-verdict (Section 2.1).** If the vault view is weak or consensus is right, say so — do not manufacture a contrarian take to fill a slot.
+- **Human-owned anchors untouched.** Reference and link the `_thesis*` files; never edit them (Section 1.1).
+
+Cross-reference Section 3.6 (cross-venue gap), Section 3.12 (absence themes), Section 3.15 (confirm/weaken framing), Section 3.17 (latest-alpha, pending).
 
 ## 4. Source ingest
 

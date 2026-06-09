@@ -8,6 +8,8 @@ last_updated: 2026-06-04
 
 *Tier-3-anchored map theme (per CLAUDE.md Section 3.13). Anchored on the Vic-curated Tier-3 report `raw/research/US-defense-and-drones-report.md` + the human-owned anchors `_thesis-defense-drones.md` / `frameworks-defense-drones.md` (Framework D1), enriched by the four vault primary-source company pages ([[MP]], [[LSCC]], [[AVAV]], [[KTOS]]). The structural framing (the value-chain spine) is Vic-authored scaffolding paraphrased in wiki voice; company placements are cross-referenced to the primary-source evidence on each company page.*
 
+*Forward edge: see [[forward-edge-tracker]] for where the vault's view diverges from consensus (chokepoints > platforms; the FY2027 surge is a request, not enacted law) plus the catalysts and falsifiers.*
+
 ## The map — value capture is inverted relative to visibility
 
 The defense unmanned-systems supply chain runs, top (upstream) to bottom (downstream), roughly as: **upstream chokepoint inputs → components → platforms → autonomy/AI software → counter-UAS → program integration / demand** (Framework D1, per the Tier-3 anchor). The structural read that organizes this whole theme — and the reason the vault tracks the supply chain at all — is that **value capture is inverted relative to visibility**: the platform (the drone you can photograph) is the *most visible and least defensible* layer, deliberately commoditized toward a price floor; the upstream inputs (magnets, secure chips, seekers, batteries, autonomy) are the *least visible and most defensible*. This is the defense analogue of the AI-datacenter thesis's "money is not the bottleneck" insight — *airframes are not the bottleneck; the magnet, the secure chip, the seeker, and the autonomy stack are.*

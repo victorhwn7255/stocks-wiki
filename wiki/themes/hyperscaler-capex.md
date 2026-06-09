@@ -6,6 +6,8 @@ last_updated: 2026-06-03
 
 # Hyperscaler AI-datacenter CAPEX — the payer/spender tracker
 
+*Forward edge: see [[forward-edge-tracker]] for where the vault's view diverges from what the market is pricing (power-infrastructure > compute; custom silicon → [[TSM]]) plus the catalysts and falsifiers.*
+
 ## Thesis relevance
 
 The chokepoint thesis is downstream of one number: how much the hyperscalers spend building out AI datacenters. Their capex is the **demand source** at the top of `frameworks.md` Framework 10 (CAPEX flow) — the cash that ultimately funds every supply-side chokepoint the vault tracks (compute, memory, power, cooling, photonics, fiber). If that capex keeps growing, the constraints stay binding; if it plateaus or is cut, capacity catches up and structural positions erode. This page is the **demand-side PAYER/SPENDER tracker** — the hyperscalers' capex drawn into one comparison: what each is committing, how firm/comparable the guidance is, and the dynamics that cut across them (the four big hyperscalers + [[ORCL]] as the 5th, distinct-model payer).

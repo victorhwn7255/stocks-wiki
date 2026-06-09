@@ -129,6 +129,7 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` Section 3
 | [china-exposure](wiki/themes/china-exposure.md) | TSM, NVDA, AVGO, AMD, MRVL, ALAB, MU, ARM, INTC, AAOI, AXTI, LITE, COHR, CRDO, ONTO, COHU, VECO, PLAB, TSEM, MKSI, MPWR, NVTS, POWI, ON, SOI, SNDK, FN, GLW, FLEX, VICR, NOK, ENS, XFAB, AEHR, MOD, MP, TDY, AMPX, AVAV, LSCC, KTOS, MRCY, INOD, NOVT, VPG, OUST, SANHUA, TUOPU, SHUANGHUAN, ZHONGDA, SLING, ZHAOWEI, HENGLI | 2026-06-08 |
 | [AI-data-supply-chain](wiki/themes/AI-data-supply-chain.md) | INOD | 2026-06-05 |
 | [humanoid-robot-value-chain](wiki/themes/humanoid-robot-value-chain.md) | MP, NVDA, INTC, INOD, NOVT, VPG, OUST, SANHUA, TUOPU, SHUANGHUAN, ZHONGDA, HARMONIC, SLING, ZHAOWEI, HENGLI | 2026-06-08 |
+| [forward-edge-tracker](wiki/themes/forward-edge-tracker.md) | ETN, VRT, GEV, TSM, NVDA, AVGO, MRVL, ALAB, AAOI, MP, LSCC, TDY, AVAV, KTOS, HARMONIC, SANHUA, TUOPU, NOVT, VPG | 2026-06-09 |
 
 ## Layers
 
