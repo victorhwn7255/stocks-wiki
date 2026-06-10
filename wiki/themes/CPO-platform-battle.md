@@ -1,7 +1,7 @@
 ---
 type: theme
 tickers: [NVDA, TSM, AVGO, MRVL, ALAB, CSCO, LITE, COHR, AEHR, ONTO, AAOI, COHU, AXTI, VECO, CRDO, ANET]
-last_updated: 2026-05-29
+last_updated: 2026-06-10
 ---
 
 # CPO Platform Battle
@@ -328,7 +328,15 @@ MRVL's Q1 FY2027 call advances its scale-up CPO position: scale-up optics revenu
 - [[SIVE]] (S100) — merchant laser-layer new-entrant; architecture-agnostic external light source (feeds both pluggables and CPO); pre-revenue / sub-scale challenger to [[LITE]]/[[COHR]]. See also [[datacenter-laser-supply]] merchant-new-entrant vantage.
 - [[SOI]] (S101) — silicon-photonics SOI substrate (Layer 6 demand-amplifier alongside [[AXTI]] InP); CPO content uplift per unit; real-revenue (Photonics-SOI >$100M FY26), near-monopoly Smart Cut. Extends the substrate-tier amplifier finding to the SOI/SiPh leg.
 
+## AVGO production-shipping update — the "active dismissal" framing needs splitting by scope (S150)
+
+**Web-verified at Broadcom's own investor press release (October 2025; verified 2026-06-10):** Broadcom has been **shipping Tomahawk 6 – Davisson, its third-generation CPO Ethernet switch (102.4 Tbps), since October 2025** — with early-access customer sampling and production-volume shipment language in company materials. This means the Layer 1 contrast is no longer "NVDA production vs AVGO dismissal": **both platform definers ship CPO switches in production.**
+
+**The reconciliation (honest framing):** AVGO's documented dismissal ("bright, shiny objects"; copper DAC advocacy) was aimed at **scale-up** (XPU-to-XPU) — where Hock Tan pushes SerDes/copper — while Davisson is a **scale-out** CPO switch. So AVGO's real posture is *ships scale-out CPO while dismissing scale-up CPO* — structurally the same scale-out/scale-up split NVDA exhibits, expressed with opposite rhetoric. The "claimed leadership" half of the S10 observation ("we are the lead in CPOs") now has production substance behind it. The tiered-silence evidence table's "Active dismissal" row should be read as scale-up-scoped; bilateral verification of Davisson volume/customers at the next [[AVGO]] refresh is pre-registered (the page's existing Bailly-emergence open item stands alongside).
+
 ## Change log
+
+- **2026-06-10 (S150):** Added AVGO production-shipping update — Tomahawk 6-Davisson 3rd-gen CPO switch shipping since Oct 2025 per Broadcom investor PR (web-verified). Layer 1 framing refined: both platform definers now ship CPO; AVGO's dismissal re-scoped as scale-up-specific ("ships scale-out CPO while dismissing scale-up"). Surfaced via the 2026-05-08 video intel note; verified at company primary before page use. Evidence-table count unchanged; AVGO-refresh bilateral verification pre-registered.
 
 - **2026-05-29 (CSCO Q3 FY2026 refresh propagation — S108):** Added a Q3 FY2026 update to the CSCO acknowledged-deferral subsection — no prominent CPO question at Q3 (the Chatterjee question was security/Mythos), so CSCO's deferral stance is unchanged from Q2 and **no new tiered-silence data point was added** (count preserved at forty-four / sixteen companies). Noted the strengthening consistent with benefiting from CPO deferral (Acacia >$1B Q3 orders; first named Silicon One hyperscaler design wins P200/G200; "Fiscal 2026 Plan" restructuring toward silicon/optics). No tickers change. last_updated unchanged (2026-05-29).
 - **2026-05-29 (AXTI Q1 FY2026 refresh propagation):** Updated the substrate-tier demand-amplifier section — the Q1 FY2026 call reaffirmed the late-2027 CPO timing across a second consecutive cycle and sized it within an expected 4x-6x optical-component substrate-market increase over 3-5 years (plus China entering the CPO supply chain). Updated the calibration note to reflect the April 2026 ~$632.5M raise preceding the call (same promotional-incentive context as Q4). **No new tiered-silence data point added** — AXTI Q1 reaffirmation is amplifier-section color, preserving the "sixteen companies / forty-four-data-point" count (consistent with SOI/SIVE treatment). No tickers change. last_updated unchanged (2026-05-29; same-day as MRVL).

@@ -1,7 +1,7 @@
 ---
 type: chokepoint
 tickers: [NVDA, AVGO, MRVL, CRDO, LITE, COHR, AAOI, TSM, FN, ALAB, ANET, TSEM, SIVE, SOI]
-last_updated: 2026-05-29
+last_updated: 2026-06-10
 ---
 
 # CPO integration
@@ -401,6 +401,8 @@ CPO transition concentrates dependency risk at adjacent chokepoints. Component-t
 4. **Reliability data emergence at hyperscale CPO deployment.** MTBF + failure mode analysis at NVDA Spectrum-X production scale; serviceability concerns resolution timeline.
 5. **AVGO Bailly emergence in Tier 1 disclosures.** Currently never named in vault primary sources; Tier 1 emergence would shift CPO Layer 1 contestant set materially.
 6. **CRDO OmniConnect commercial scale.** ZeroFlap production ramp Q1 FY2027 + OmniConnect/Weaver gearbox production fiscal 2028 — does displacement architecture capture meaningful CPO-displacement value, or remain niche?
+7. **Hyperscaler route attributions — verify before treating as fact (S150 pre-registration).** Two Tier-3 sources (April–May 2026 video intel notes) attribute route choices: Google leans pluggable ("CPO is always 2 years away, every year" at OFC); Meta + Amazon chose NPO; NVIDIA drives CPO — while stressing hyperscalers multi-source all three ("adults don't pick just one"). Attributions are an insider's read of public info, not filings. Verify against GOOGL/META/AMZN primary + OFC disclosures; if confirmed, the NPO leg deserves expanded treatment at this page.
+8. **Non-NVIDIA CPO adoption vector — AMD/GlobalFoundries ecosystem (S150 pre-registration).** SIVE×GlobalFoundries silicon-photonics partnership confirmed at company-announcement level (GF SCALE platform; SIVE laser arrays; ecosystem participants reportedly include AMD; SIVE also supplies Ayar Labs — listed on Ayar's site — and the MRVL/Celestial route). If the AMD/GF route ramps, CPO demand stops being NVDA-conditional — directly bears on this page's conditional-on-demand framing and Open question 1. Verify at SIVE filings + any AMD CPO disclosure; SIVE-page propagation candidate at next SIVE refresh.
 7. **TSM COUPE Tier 1 disclosure timing.** Currently zero mentions in 20-F FY2025 + Q1 2026 call; Tier 1 emergence would validate NVDA-attributed "only in production" rhetorical.
 8. **Scale-up vs scale-out structural split durability.** Bifurcation analytically useful at vault canonical scope; durability across future ingest cycles remains testable.
 9. **Layer 4 component supplier displacement risk asymmetry.** ELS architecture relief depends on integrated-laser-only suppliers having pivot capability; pure-play integrated laser exposure without ELS pivot is structurally vulnerable.
@@ -492,6 +494,8 @@ Three Layer 1 CPO timing scenarios preserved without forced winner attribution. 
 - **3-instance Tier 3 investment-research-style source precedent observation:** LC Pass 2 (1st instance; 2026-05-26 `liquid-cooling-for-AIDC-invest-report.md`) + CPO refresh dual-report (2nd + 3rd instance; 2026-05-27 `CPO-for-AIDC-Infrastructure.md` + `CPO-in-AIDC.md`) = 3-instance precedent. **Tranche 2C-iii codification candidate** at Section 4.6 sub-protocol scope: formalize Section 5.2 enforcement discipline for investment-research-style Tier 3 sources. Vic decision required at future codification cycle.
 
 ## Change log
+
+- **2026-06-10 (S150):** Added Open questions 7 (hyperscaler route attributions — Google pluggable / Meta+Amazon NPO / NVDA CPO, Tier-3-attributed, verify at primary) + 8 (AMD/GlobalFoundries/SIVE non-NVIDIA CPO adoption vector — would loosen the NVDA-conditional demand framing). Both surfaced via April–May 2026 video intel notes; pre-registered as verification triggers, not facts.
 
 - **2026-05-29 (MRVL Q1 FY2027 refresh propagation):** Added "Q1 FY2027 update" to the MRVL per-company section: Celestial PPA finalized $3.5B + consolidated (framing gap narrowing); scale-up optics FY2028 to "more than double" the prior ~$150M outlook; 3rd-gen 6.4T light engine + "selected by 1 hyperscaler" for XPU scale-up; new Polariton plasmonics acquisition (>1 THz, 3.2T roadmap; call-only); NVIDIA's $2.0B convertible-preferred stake in MRVL + NVLink Fusion (second NVDA equity-plus-partnership at CPO scope; [[NVDA-platform-integration]] Mode 4); bifurcation → scale-across trifurcation. No tickers change (MRVL already a participant). last_updated 2026-05-28 → 2026-05-29.
 - **2026-05-28 (Session 101 cross-reference — [[SOI]]/Soitec canonical creation):** Added per-company section "SOI — silicon-photonics substrate (upstream of the photonic die)" — Soitec SOI wafer sits one layer below the photonic die; near-monopoly Smart Cut; CPO is a substrate-content uplift + pulling forward to end-CY2026; Photonics-SOI >$100M FY2026, supply-constrained; the SOI analog to [[AXTI]] InP. SOI added to tickers (13 → 14 participants). No edits to existing per-company sections.

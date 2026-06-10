@@ -297,6 +297,18 @@ Most strategically substantive source for Session 20. Key disclosures:
 
 **Tier 1/Tier 2 framing gap.** No clear sixth instance. The 10-K Optical Communications business section, the 10-Q MD&A, and the Q4 2025 call all align on the same demand narrative. Risk factors in the 10-K are conventional and not selectively dismissed on the call.
 
+<!-- LATEST-ALPHA:START -->
+## ⚠️ Latest alpha — unverified, between-filings (as of 2026-06-10)
+
+*Tier 1-timely/3/4 discovery — NOT canonical. Recent events post-dating the Q1 2026 ingest, to verify at the next primary source (Q2 2026 10-Q, ~late July). Items graduate into canon (or are pruned) at the next 10-Q/10-K ingest.*
+
+- **NVIDIA $500M warrant investment + multi-year agreement** (GLW 8-K, May 6, 2026) — Tier 1 · warrants for up to 15M shares @ $180 + 3M pre-funded; rights up to **$3.2B over time**; paired with **10× US optical-connectivity capacity, +50% fiber output, 3 new plants (NC + TX)**. Extends the hyperscaler-prepayment/LTA model to an NVDA equity-linked instrument — the fifth instrument in the [[nvidia-supply-chain-commitments]] pattern and a direct test of the page's partial-non-naming observation (NVDA now names GLW). `[verify: 8-K + Q2 10-Q capacity/capex disclosure]`
+- **Meta up-to-$6B fiber-plant commitment** — already in canon (Q4 2025 call baseline); the NVDA deal stacks a second mega-buyer on the same capacity model. `[context, not new]`
+- Related: [[NVDA]] · [[LITE]] · [[COHR]] (the equity-defense pattern GLW now joins)
+
+*Signal only (not weighted): the deal was widely covered as making GLW "an AI trade."*
+<!-- LATEST-ALPHA:END -->
+
 ## Change log
 
 - **2026-04-27:** Created from three sources: GLW 10-Q Q3 2025 (Tier 1), GLW 10-K FY2025 (Tier 1), GLW Q4 2025 earnings call (Tier 2). First fiber-attach / connectors layer vault coverage. Layer 4 (with carrier-business straddling note) + photonics_tier 3. Three-source coverage from inception. Central findings: (1) explicit "Generative AI products" demand attribution in 10-K + 10-Q MD&A; (2) Meta $6B multi-year agreement as anchor customer for North Carolina expansion (announced Q4 2025 call); (3) Customer-prepayment + long-term-commitment model migration from Display Gen 10.5 + Apple Kentucky to Optical Communications — structural moat-deepening; (4) Optical capex +135% 9M YoY accelerating to $1.7B 2026 corporate guidance; (5) Wendell Weeks enabler-tier scale-up CPO perspective (inevitability conviction with conservative timing); (6) partial non-naming pattern (declines technology partners — NVDA / GlobalFoundries / SENKO / Foxconn / Sumitomo — but names end-customer Meta); (7) Session 19 cross-validation finding — three of five Tier 3-derived ecosystem-partner claims not confirmed by GLW primary sources, one materially refined (Contour single-core 40% smaller diameter + Contour Flow Cable 2x density, NOT multicore fiber 4x density). Cross-references propagated to [[datacenter-photonics-supply-chain]], [[NVDA-platform-integration]], [[AI-demand-durability]].

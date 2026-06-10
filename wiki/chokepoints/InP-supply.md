@@ -1,7 +1,7 @@
 ---
 type: chokepoint
 tickers: [AXTI, LITE, COHR, AAOI, AVGO, VECO]
-last_updated: 2026-05-29
+last_updated: 2026-06-10
 ---
 
 # InP supply (substrate + epitaxial capacity)
@@ -212,6 +212,12 @@ The substrate-tier + epitaxial-tier chokepoints exhibit asymmetric dependency me
 - Whether the geopolitical mirror structure escalates symmetrically (both control regimes tightening) or asymmetrically (one regime tightens; counter-regime relaxes)
 - Whether NVDA $2B March 2026 equity-plus-purchase modality propagates beyond LITE + COHR to AXTI (substrate-tier vertical securing) or to non-vault InP suppliers (Sumitomo / JX Nippon counterparty exposure)
 
+## Pre-registered falsifier — quantum-dot lasers on silicon (S150)
+
+**Falsification watch item for the InP-scarcity thesis.** Industry commentary (two independent Tier-3 sources, April–May 2026 video intel notes) flags **quantum-dot lasers grown directly on silicon** as the technology that could bypass the InP substrate constraint entirely — jumping laser manufacturing from 3–4″ InP wafers to 12″/300mm silicon, breaking both the substrate-tier constraint (Chokepoint 3) and the wafer-size-transition moat (COHR 6″ advantage). Status: startup-stage; no production evidence found at primary. **Pre-registered test:** any vault canonical (COHR/LITE/TSEM/VECO) naming quantum-dot-on-silicon programs at primary, or a credible production announcement, would begin weakening this chokepoint's durability. Until then, the constraint framing stands.
+
+**Substrate-maker field precision note (S150).** AXTI's 10-K ("three primary suppliers worldwide": AXTI + Sumitomo + JX Nippon) remains the Tier-1 anchor for the trio framing. Market-research compilations also name Freiberger Compound Materials (Germany) in the InP wafer field (Freiberger is primarily a GaAs substrate maker); treated as field-adjacent, not a fourth primary supplier, absent Tier-1 contradiction.
+
 ## Cross-references
 
 - [[chokepoint-investability-priorities]] Chokepoint 3 (InP substrate supply) + Chokepoint 4 (InP epitaxial capacity) — Tier 3-anchored vault-canonical reference; Session 24 Integration 2 two-layer reconciliation framework (indium feedstock layer / JX Advanced Metals dominant; InP wafer production layer / AXTI significant)
@@ -267,6 +273,8 @@ Per CLAUDE.md v8 A6 application discipline: 8 pattern types verified PASS at Pha
 Three Layer 4 InP wafer-size positions preserved without forced winner attribution: COHR six-inch device-fabrication advantage; LITE three-inch industry-standard manufacturing; AAOI Sugar Land MBE+MOCVD dual-process. Vertical integration moat dynamics preserved as conditional (depends on wafer-size transition pacing + ELS architecture viability + NVDA equity modality propagation). Substrate-tier supply concentration dispute (2 vs 3 suppliers) preserved per Tier 1/Tier 2 framing gap convention; no silent adjudication. Geopolitical mirror structure preserved as conditional risk (both control regimes simultaneously tightening) without forced escalation prediction.
 
 ## Change log
+
+- **2026-06-10 (S150):** Added pre-registered quantum-dot-lasers-on-silicon falsifier (Tier-3-surfaced watch item; no primary evidence yet; tests named) + substrate-maker field precision note (AXTI 10-K trio framing preserved as Tier-1 anchor; Freiberger noted as field-adjacent per market research, not a fourth primary supplier). No change to constraint substantiation.
 
 - **2026-04-23:** Page created. Session 13 paired ingest ([[AXTI]] + [[VECO]]). Provisional chokepoint page — sourced primarily from AXTI filings and call, with VECO context for equipment tier. Geopolitical mirror structure documented as primary structural risk.
 - **2026-04-27:** Session 19 cross-reference. Added Cross-references section linking [[datacenter-photonics-supply-chain]].

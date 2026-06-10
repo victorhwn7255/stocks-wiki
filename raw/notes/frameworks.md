@@ -1,6 +1,6 @@
 # Frameworks — AI Datacenter Supply Chain & Chokepoint Analysis
 
-> **Status (v10.1):** Working analytical framework expanded from photonics-primary to AI datacenter supply chain scope; v10.1 refinement applies full structural alignment with _thesis.md (3 critical fixes + 4 significant gaps + 3 lesser refinements per Option C alignment).
+> **Status (v10.2):** v10.2 adds Framework 12 (six-question chokepoint-durability test) + Theme 11.12 (stacked-bottleneck migration) — both derived from the 2026-06-10 MLCC-vs-HBM comparison work and 8 calibration runs across vault chokepoints. **Edited under explicit Vic authorization declared 2026-06-10 (per CLAUDE.md Section 1.1 ownership-exception mechanism); default human-ownership convention resumes for all subsequent sessions.** Prior: v10.1 full structural alignment with _thesis.md (3 critical fixes + 4 significant gaps + 3 lesser refinements per Option C alignment).
 > **Purpose:** Calibrate the LLM's initial categorization of companies before primary sources refine the specifics.
 > **Epistemic note:** The frameworks here are *interpretive scaffolding*, not facts extractable from filings. They represent how I think about this space. Primary sources should *enrich* these frameworks, not override them. Specific company placements may shift as evidence accumulates — the frameworks themselves are the stable part.
 
@@ -1165,9 +1165,42 @@ Kickoff drafting four-tier source discipline (Primary-source-verified / Tier 3 /
 
 **LLM application:** at every ingest kickoff drafting + Stop 1 Phase 0 verification, distinguish primary-source-verified content from Tier 3/4 industry-summary content. Default uncertain claims to "Structural context per Tier 3/4 sources to verify at primary" NOT "Codified background." Track streak at log.md Phase 4 reflection "Section 4.6 ROI VALIDATED at N falsifications" annotation per session. See CLAUDE.md Section 4.6 codified methodology + per-instance evidence at log.md S47-S60 entries.
 
+### 11.12 Stacked-bottleneck migration (added v10.2)
+
+**The AI constraint migrates down the stack, and the market re-rates each layer as it is "discovered."** Observed sequence to date: GPU/compute (2023) → HBM/memory (2025) → power infrastructure (2026) → optical interconnect → MLCC/passives (the "new memory" framing, mid-2026). Triangulated three ways: the vault's own chokepoint-creation history, an optical-interconnect industry insider (April 2026 interview), and independent supply-chain analysis (May 2026) — all independently describing the same migration. The supply-chain migration is the framework claim; the market-re-rating corollary (each layer re-prices fast once the banks name it — often within days) is the observed-but-softer half, carried as Tier-3-flavored.
+
+**LLM application:** maintain the standing forward question — *"if this layer's constraint clears, what binds next?"* — at chokepoint refreshes, `/connection-finder` runs, and forward-edge-tracker entries. Corollary discipline: by the time a layer has a bank-coined nickname, much of the re-rating has happened; the analytical edge is identifying the next layer from supply-chain structure before the narrative arrives, then verifying at primary.
+
 ### LLM application: cross-chokepoint theme prioritization
 
 When reasoning about portfolio construction or position sizing implications across the wiki, apply Framework 11 themes as analytical lens beyond single-chokepoint placement. Multiple Framework 11 themes may apply simultaneously to any holding — e.g., NVDA carries themes 11.2 (platform integration), 11.5 (binding constraint exposure), 11.7 (custom silicon disruption), 11.10 (Taiwan TSM dependency); ETN carries themes 11.5 (binding constraint participant), 11.10 (geopolitical risk via Chinese transformer competition). Cross-chokepoint themes capture analytical patterns that per-chokepoint frameworks cannot.
+
+---
+
+## Framework 12: Chokepoint durability test (six questions) — v1.0, added v10.2
+
+**Purpose.** Concentration alone does not make a chokepoint. This test probes what actually decides whether a supply-side chokepoint holds: whether buyers defend it with money, how fast supply answers, whether technology gates exclude laggards, how close the substitution tail sits, whether the gated thing is even ramping, and whether atoms/borders add durability the economics miss. Derived 2026-06-10 from the MLCC-vs-HBM comparison (`raw/research/mlcc-ai-datacenter-bottleneck-report.md` Part 3); refined on the photonics chokepoint family, which exposed Q5 (from cpo-integration) and Q6 (from InP-supply). **Operationalized via the `/chokepoint-eval` skill**, which carries calibration anchors and cites this section as the canonical doctrine.
+
+**The six questions (every cell requires cited evidence, never vibes):**
+
+| # | Question | Pass / fail calibration |
+|---|---|---|
+| Q1 | **Buyer-defense** — is anyone *paying* to defend the supplier (equity stakes, prepayments, capacity bookings, binding LTAs)? | Gold standard: NVDA's $2B each into LITE + COHR (+ $2B MRVL convertible; $500M-to-$3.2B GLW warrants; TSM prepay-at-scale). Fail mode (the MLCC lesson): tiny %-of-BOM criticality nobody writes checks for. |
+| Q2 | **Supply-response** — how fast can capacity answer? | <24 months (buildings + known process) = weak; 3+ years (leading-edge fabs, crystal growth, TSMC-grade packaging) = strong. Cite announced expansions + dates. |
+| Q3 | **Generational lockout** — hard per-generation technology gates (HBM4-style), or continuous improvement? | Hard gates = strong. Continuous = weak — the tail always absorbs the less-extreme parts of demand. |
+| Q4 | **Substitution tail** — how many credible second-tier / regional makers, and how close? | ~3 makers on Earth = strong. A second tier + a fast regional (China) tier shipping adjacent grades = weak. Name the tail. |
+| Q5 | **Demand-ramp** — is the gated thing actually ramping, or is ownership perfect for a market that may not arrive? | A 4/4 economic score is *conditional* if adoption is unresolved (the CPO case). |
+| Q6 | **Geology/policy overlay** — do atoms/borders add durability the economics miss, or does policy expiry add fragility? | Geology can rescue a failed Q1 (the InP case). Policy-created chokepoints are fragile regardless of score. Cross-checks the chokepoint-quality gradient: geology/physics > precision-manufacturing > policy. |
+
+**Verdict scale (per-cell pass/weak/fail/split → one label):** **memory-grade** (durable structural chokepoint) / **quality-but-cyclical** (real moat at a top bin; cycle/tail caps durability — the MLCC verdict) / **theme-spike** (narrative without ownership) / **policy-contingent** (statute-dependent, expiry-dated) / **conditional-on-demand** (ownership maximal, adoption unresolved — the CPO verdict) / **quality-but-competitive** (*provisional 6th label, single instance — liquid-cooling: durable demand, contested ownership; confirm at a second instance before treating as standard*).
+
+**Scoring disciplines:** honest-verdict (no manufactured passes — a run that flatters every chokepoint failed); splits over averages (a page holding two different-quality sub-chokepoints gets two scores — the advanced-optical-packaging case); every claim cited to a page section or source.
+
+**Calibration anchors (the 2026-06-10 derivation runs; do not re-derive, verify against):** TSMC-CoWoS memory-grade (full pass; Taiwan caveat) · datacenter-laser-supply memory-grade-adjacent (Q1 proven with real money) · optical-dsp-phy-supply memory-grade-at-merchant-bin (LPO/CPO displacement caveat) · advanced-optical-packaging split (wafer-level ~4/4; assembly ~2/4) · InP-supply quality-geology-rescued · cpo-integration conditional-on-demand · wafer-level-siph-test conditional+thin · liquid-cooling quality-but-competitive · MLCC quality-but-cyclical (founding run).
+
+**Pre-registered revision triggers (the test applied to itself — v1.0 discipline):** (a) a run whose verdict a subsequent primary-source refresh materially overturns → diagnose which question misfired and revise; (b) a chokepoint type the six questions cannot score (e.g., a pure demand-side or software chokepoint) → extend rather than force-fit; (c) the provisional 6th label confirming or failing at its second instance; (d) any systematic bias toward flattering verdicts across 5+ consecutive runs → recalibrate fail thresholds.
+
+**LLM application:** run the test (via `/chokepoint-eval`) at new-chokepoint-page creation (informs the Pathway 1 provisional vs Pathway 2 canonical judgment, CLAUDE.md Section 3.15), at chokepoint refreshes (has the score moved?), and when writing forward-edge-tracker entries (the durability-anchor field). The test complements — never replaces — the chokepoint-quality gradient and the theses; Q6 cross-checks the gradient explicitly. Verdicts conflicting with a page's framing are flagged for human-gated update, never silently reconciled.
 
 ---
 
@@ -1244,6 +1277,8 @@ Calibrated reference points for how each tracked company fits the frameworks. Th
 10. **Calibrate hyperscaler CAPEX commentary against Framework 10.** When primary sources mention hyperscaler CAPEX trajectory, allocation, or guidance changes, calibrate against Framework 10's 8-category allocation framework. Specific company exposure cross-references via category recipient lists. Material divergences from this allocation pattern (e.g., a primary source claims hyperscaler power infrastructure CAPEX is much smaller than ~10-15%) should surface as falsification candidates.
 
 11. **Apply Framework 11 cross-chokepoint themes for portfolio construction analysis.** When reasoning about portfolio construction, position sizing, or correlated risk across the wiki, apply Framework 11's 10 cross-chokepoint themes as analytical lens. Multiple themes may apply simultaneously to any holding. Cross-chokepoint themes capture analytical patterns (hyperscaler customer concentration; NVDA platform integration; power constraint binding ceiling; HBM cannibalization; geopolitical concentration; etc.) that per-chokepoint frameworks cannot.
+
+12. **Apply Framework 12 (six-question durability test) at chokepoint creation, refresh, and forward-edge work.** Run via `/chokepoint-eval`. The test decides how durable a chokepoint *really* is (buyer-defense / supply-response / lockout / tail / demand-ramp / geology-policy) and outputs a standard verdict label. It informs Pathway 1-vs-2 judgments per CLAUDE.md Section 3.15 and the forward-edge tracker's durability anchors. Pair with Theme 11.12 (stacked-bottleneck migration): at every chokepoint refresh, ask "if this layer clears, what binds next?"
 
 12. **Cross-reference _thesis.md as anchor.** Per CLAUDE.md "_thesis.md is the evaluation point for everything." Frameworks support thesis articulation; thesis evolution may surface framework refinements. When framework structures and thesis content diverge, raise the divergence to Vic — don't silently reconcile.
 

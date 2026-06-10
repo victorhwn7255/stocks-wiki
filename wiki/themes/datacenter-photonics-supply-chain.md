@@ -1,7 +1,7 @@
 ---
 type: theme
 tickers: [NVDA, TSM, AVGO, MRVL, ALAB, CSCO, COHR, LITE, AAOI, AEHR, ONTO, COHU, AXTI, VECO, GLW, FN, VRT, CRDO, ANET, VIAV, PLAB, FLEX, SOI]
-last_updated: 2026-05-29
+last_updated: 2026-06-10
 ---
 
 # AI datacenter photonics supply chain
@@ -305,6 +305,10 @@ Boundary justifications:
 - **[[PLAB]] excluded from Future ingest candidates per Outside Framework 5 placement** (Session 28 honest-verdict discipline application). [[PLAB]] is the second canonical Outside Framework 5 vault company after [[COHU]] — vault inclusion is for counterpoint role rather than thesis centrality. PLAB photomask exposure to AI advanced packaging ramp is real but structurally adjacent rather than directly photonic. ZERO photonic foundry customer disclosure across PLAB 10-K + 10-Q + Q1 FY2026 call. PLAB serves as analytical reference for broad-cycle semi infrastructure pattern; not photonics chokepoint participant. See [[PLAB]] for primary-source canonical framing including high-end IC mask leadership ($71M Q1 FY2026 record, +19% YoY) and capex cycle ($330M FY2026; Allen + Korea expansion volume production 2027).
 - **[[ANET]] in-vault post-Session 27 paired ingest with [[CRDO]]** — ANET was previously plain-text reference per `frameworks.md` v8 line 289 control-point thread fifth-member framing. Session 27 2-source ingest (FY2025 10-K + Q4 2025 call) confirmed Framework 2.6 placement (bottleneck participant with platform-tier ambition alongside [[CSCO]]). ANET completes five-company in-vault control-point thread.
 
+## Family-level concentration note — Taiwan as the correlated single point (S150)
+
+A risk no single chokepoint page carries because it only appears at family scope: **nearly every layer of the photonics chain routes through Taiwan.** [[TSMC-CoWoS]] advanced packaging and COUPE wafer-level optical integration sit at TSM (Taiwan); the optical DSPs ([[AVGO]] ~95% TSMC wafers; [[MRVL]] Taiwan ship-to ~20% of revenue) are fabbed there; and the compound-semiconductor foundry tier (WIN Semiconductors, the largest GaAs/InP pure foundry — non-vault) is Taiwan-listed and Taiwan-fabbed. Individually, each page notes its own dependency; collectively, the family's *economic* durability (strong per-chokepoint moats, demonstrated buyer defense) carries a single correlated *geographic* exposure that per-page scores do not capture. Diversification across photonics chokepoints is therefore not diversification of Taiwan risk. Documented as a family-level observation; no per-page placement change.
+
 ## Open questions and limitations
 
 ### What's hard to size from public sources
@@ -411,6 +415,8 @@ Vic-authored synthesis with `citeturn` references that do not resolve to URLs. P
 Vic-authored synthesis with `citeturn`-style internal references. Used where it adds analytical value beyond the taxonomy report and the architecture primer. The narrative report's TSMC COUPE production claim conflicts with vault Session 17 findings; reconciled by preferring primer framing and applying industry-reporting attribution per Stop 1 spot-check finding. Bottleneck hierarchy closing analysis and OFC commentary integrated where supplementary.
 
 ## Change log
+
+- **2026-06-10 (S150):** Added family-level Taiwan-concentration note (CoWoS/COUPE + DSP fabbing + WIN Semi compound-semi foundry tier all route through Taiwan — a correlated geographic exposure per-page scores don't capture). Observation-only; no placement changes.
 
 - **2026-05-29 (S110 cross-vault re-evaluation propagation — A8):** Refreshed the [[CSCO]] Acacia entry in Section 2.3 (Optical DSP / SerDes) with the Q3 FY2026 (S108) scale — Acacia coherent optics >$1B Q3 orders / on track >200% FY2026 / 2 named hyperscaler optics wins — while preserving the captive (Cisco-branded, not merchant) framing. Light freshness touch; no roster/placement change.
 - **2026-05-29 (AXTI Q1 FY2026 refresh propagation):** Refreshed the [[AXTI]] entry in Section 2.9 (Upstream materials and substrates) *Vault* — profitability inflection (revenue +39% YoY to $26.9M; Q2 2026 guided to GAAP + non-GAAP profitability); InP backlog $60M+ → $100M+ (InP >50% of revenue); capacity roadmap escalated to ~$35M/qtr end-2026 → ~$65-70M/qtr end-2027, funded by the April 2026 $632.5M raise; new China-demand leg (~30%→40% of global InP demand); export-control framing updated per Section 4.3 (US permits "still pending"). Light cross-ref; AXTI already in the main roster. No other content edits.

@@ -2,7 +2,7 @@
 type: relationship
 pattern: nvidia-architect-customer-commitments
 tickers: [NVDA, LITE, COHR, ETN, VRT, AVGO, ALAB, CSCO, ANET, FN, TSM, MRVL, CRWV, NBIS]
-last_updated: 2026-06-03
+last_updated: 2026-06-10
 ---
 
 # NVIDIA supply chain commitments
@@ -185,6 +185,12 @@ Cross-vault Aschenbrenner thesis pattern post-S52: 11+ participants ([[BE]] + [[
 
 ---
 
+## NVDA–Corning $500M warrant + multi-year capacity agreement (S150; fiber-layer extension of the pattern)
+
+**Verified at the GLW 8-K level (web-verified 2026-06-10).** On **May 6, 2026**, NVIDIA entered a securities purchase agreement with [[GLW]]: a warrant for up to **15M shares at $180.00** plus a pre-funded warrant for up to 3M shares, **aggregate $500M**, both ~3-year expiry — combined giving NVIDIA the **right to invest up to $3.2B in Corning over time**. Paired commitment: Corning to expand **US optical-connectivity manufacturing capacity ~10×**, lift domestic fiber output **>50%**, and build **three new plants (North Carolina + Texas)**.
+
+**Pattern significance.** This is the **fifth structural commitment instrument** in the NVIDIA supply-chain-securing pattern (LITE $2.02B equity + COHR $2B equity + multi-year CPO supply + MRVL $2.0B convertible-preferred + GLW $500M-to-$3.2B warrants) — and the first at the **fiber/connectivity layer**, extending the equity-defense pattern one layer further downstream than lasers/DSPs. Modality note: warrant-plus-capacity-commitment is a *new sub-modality* (option-structured rather than direct equity; capacity expansion contractually paired). GLW-side context: this lands on top of GLW's existing hyperscaler prepayment/LTA model (Meta $6B + two additional similar-size LTAs per GLW Q1 2026). **Bilateral verification pre-registered:** GLW-side 8-K/10-Q ingest at next GLW refresh + NVDA-side disclosure at next NVDA refresh.
+
 ## Open questions
 
 1. **NVDA Q1 fiscal 2027 refresh — architect-side bilateral verification (post-May 20, 2026 release).** NVDA-side disclosure of Beam Rubin DSX (ETN partnership) + LITE/COHR equity investment scope + VRT EcoDataCenter Sweden deployment + multiyear CPO supply commitment per COHR — Tier 1/Tier 2 framing-gap candidate at NVDA filings vs vault counterparty-side disclosure.
@@ -254,6 +260,8 @@ Per `CLAUDE.md` v9 Section 3.3 citation discipline + Section 3.15 spirit (multi-
 ---
 
 ## Change log
+
+- **2026-06-10 (S150):** Added NVDA–Corning $500M warrant + multi-year capacity agreement section (May 6, 2026; GLW 8-K-verified via web) — fifth structural commitment instrument in the pattern, first at the fiber/connectivity layer; new warrant-plus-capacity-commitment sub-modality noted; bilateral verification pre-registered at next GLW + NVDA refreshes. Surfaced via the 2026-05-08 video intel note; verified at 8-K level before page use.
 
 - **2026-06-03 (S122 — [[NBIS]] ingest propagation; 2nd downstream/circularity instance):** Extended the customer-side / circularity modality with **NBIS** — NVIDIA's **~$2.0B in proceeds + a pre-funded Class A warrant (~21M shares)** into Nebius (primary-confirmed in Nebius's FY2025 20-F). Now **two primary-confirmed downstream instances** (CRWV + NBIS, both vault neoclouds), so the "supplier funds its own demand" direction is a substantiated pattern, not a one-off; the warrant structure is the modality variant vs CoreWeave's direct common purchase. Added [[NBIS]] to frontmatter tickers. last_updated unchanged (2026-06-03; same day as S121).
 - **2026-06-03 (S121 — [[CRWV]] ingest propagation; first downstream/circularity modality):** Added a "Customer-side / circularity modality" subsection — NVIDIA's **$2.0B equity investment in CoreWeave Class A common stock** (Jan 2026, $87.20/share; primary-confirmed in CoreWeave's FY2025 10-K Subsequent Events). Structurally the *inverse* of the upstream supplier-equity modality (LITE/COHR/MRVL): NVIDIA equity flowing *downstream* into a customer/capacity-provider — the first vault-canonical instance of the circular "supplier funds its own demand" pattern the [[hyperscaler-capex]] tracker flags (dynamic #9). Reciprocal-confirmation. Tier-3 places it in a broader downstream pattern (OpenAI/Nebius/xAI) beyond vault-primary scope. Added [[CRWV]] to frontmatter tickers. last_updated 2026-05-29 → 2026-06-03.
