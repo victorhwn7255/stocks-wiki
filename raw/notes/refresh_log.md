@@ -32,9 +32,22 @@ Running reference log of **refresh ingests** — re-ingests of an EXISTING vault
 
 ---
 
-## S151 — AVGO (Broadcom) — 2026-06-13 — Q2 FY2026 (10-Q only; PARTIAL — call transcript pending)
+## S152 — TSEM (Tower Semiconductor) — 2026-06-13 — Q4 2025 call gap-fill (LIGHT; no new fiscal period)
 
-- **Sources:** Q2 FY2026 10-Q (Tier 1; quarter ended May 3, 2026). Q2 earnings call (June 3, 2026) transcript NOT yet staged — escalation trigger 5 (source unavailability) acknowledged; refresh executed Tier-1-only under Vic's standing Step 1–5 authorization; call lands as addendum when staged.
+- **Sources:** Q4/FY2025 earnings call (Tier 2; Feb 11 2026; Vic-staged) — the one source outside the S62 set. The staged 20-F + Q1 2026 call were verified as ALREADY in canon (S62 created the page from them); the freshness-queue 20-F listing was a file-archive gap, now closed (file archived + filename normalized).
+- **Prior baseline:** S62 first-canonical (20-F FY2025 + Q1 2026 call), May 14 2026.
+- **Headline:** NVIDIA 1.6T scope IS management-confirmed — Ellwanger Q4-call prepared remarks: Tower "by far the majority supplier of 1.6T silicon PICs"; the S62 "1.6T analyst-introduced, not management-confirmed" annotation is superseded.
+- **Key changes:** A1 reciprocal-confirmation-LIMITED rationale updated (1.6T confirmed at Tier 2; module role scoped to PIC/TIA/driver content per Hosseini Q&A); OQ3 partially resolved; Q4-call source audit note added.
+- **Placement:** Layer 2 / photonics_tier 2 UNCHANGED.
+- **Forward watch:** next real refresh = Q2 2026 results (~Aug call + 6-K); Intel NM mediation; $1.3B 2027 SiPh contract execution.
+- **Key insight:** venue-sampling matters — an A1 mode classification drawn from one call flipped when the adjacent quarter's call entered the sample; worth checking both adjacent calls when classifying naming modes.
+
+---
+
+## S151 — AVGO (Broadcom) — 2026-06-13 — Q2 FY2026 (10-Q + earnings call; COMPLETE — call staged and ingested same day)
+
+- **Sources:** Q2 FY2026 10-Q (Tier 1; quarter ended May 3, 2026) + Q2 FY2026 earnings call (Tier 2; June 3, 2026; full Quartr transcript, Vic-staged same day). Initially executed Tier-1-only (trigger 5 noted); completed by same-day call addendum.
+- **Call addendum highlights:** AI semi $10.8B +143% (49% of revenue); **FY2026 AI guide $56B (+~180%)**; Q3 AI $16B +200%; **>$30B AI bookings in the quarter, visibility to 2028**; FY2027 ">$100B" reiterated. Customer map: Anthropic **+5 GW next-gen TPU from 2027** (April agreement), Meta MTIA 3 GW thru 2028 (1 GW order received), OpenAI 1.3 GW 2027 contractual, Google multi-generation LTA ("very substantial dollars," diversity-of-sources accepted). **$29B backstop structure identified = Apollo/Blackstone "AI XPU platform"** (>20 GW thru 2028; $35B first tranche; customer inferably Anthropic per the 8-K Hock cited). **CPO reversal: "bright, shiny objects" (Q1) → "we are the de facto standard" (Q2)** — propagated to [[CPO-platform-battle]] (pre-registered verification fired). CFO transition Spears → Thuener (June 12).
 - **Prior baseline:** S10 canonical + 2026-05-27 in-place Tier-3 substrate refresh (page was at Q1 FY2026).
 - **Headline:** NEW $29B maximum-exposure backstop on a single customer's AI-rack lease obligations (investor-partner structure) — the rack-leasing risk both prior filings flagged generically, now quantified at ~1.3× a quarter's revenue.
 - **Key changes & new developments:** Revenue $22.19B +48% YoY (semi $15.0B +79%, now 68% of revenue; software $7.2B +9%); GAAP op margin 49% (vs 39%); EPS $1.91 (vs $1.03). Inventory $2,270M → $4,328M in two quarters (+91%) — the ramp signal accelerating. Distributor concentration STABLE at 42% (first non-acceleration after 21→28→32→42); top-5 end customers ~45%. ~95% TSMC restated + new "TSMC has raised, and may in the future raise, their prices" language. Zero CPO mentions (Tier-1 silence persists vs Tier-3 TH6-Davisson shipping record — widest cross-venue gap in vault).

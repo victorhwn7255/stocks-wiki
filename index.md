@@ -77,7 +77,7 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` Section 3
 | [SNDK](wiki/companies/SNDK.md) | SNDK | 4 | outside | 4 | outside | outside | outside | — | 2026-05-24 |
 | [SOI](wiki/companies/SOI.md) | SOI | 6 | 3 | — | — | — | 2 | — | 2026-05-29 |
 | [TDY](wiki/companies/TDY.md) | TDY | — | — | — | — | — | — | 4 | 2026-06-04 |
-| [TSEM](wiki/companies/TSEM.md) | TSEM | 2 | 2 | — | — | outside | outside | — | 2026-05-14 |
+| [TSEM](wiki/companies/TSEM.md) | TSEM | 2 | 2 | — | — | outside | outside | — | 2026-06-13 |
 | [TSM](wiki/companies/TSM.md) | TSM | 2 | 1 | — | — | — | — | — | 2026-04-26 |
 | [TUOPU](wiki/companies/TUOPU.md) | TUOPU | 4 | — | — | 4 | — | — | — | 2026-06-06 |
 | [VECO](wiki/companies/VECO.md) | VECO | 3 | 4 | — | — | — | — | — | 2026-05-12 |
@@ -88,6 +88,7 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` Section 3
 | [XFAB](wiki/companies/XFAB.md) | XFAB | 2 | 4 | — | 4 | outside | outside | — | 2026-05-28 |
 | [ZHAOWEI](wiki/companies/ZHAOWEI.md) | ZHAOWEI | outside | — | — | — | — | — | — | 2026-06-08 |
 | [ZHONGDA](wiki/companies/ZHONGDA.md) | ZHONGDA | outside | — | — | — | — | — | — | 2026-06-06 |
+
 
 
 
