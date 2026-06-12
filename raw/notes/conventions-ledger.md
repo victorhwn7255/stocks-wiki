@@ -122,3 +122,22 @@ Combined post-S75: 10 instances (8 (g) + 2 (g')). Current count in MEMORY.md.
 ### A.12 Section 4.6 source discipline ROI streak *(cross-ref Section 4.6)*
 
 Pre-codification baseline: S45 ENS = 6 material falsifications. Post-codification: S47 FCEL = 1; S48-S75 all 0 = 28 consecutive sessions. 16-instance streak at S61 → 29-instance post-S75 across full ingest-type variety (refresh + relationship creation + chokepoint creation + new canonical creation + theme creation + codification). Per-instance session enumeration + current count in MEMORY.md.
+
+---
+
+## A.13 — Page-structure + ingest-process optimization (CLAUDE.md v9.9; S151, 2026-06-13)
+
+**Authorization.** Vic-authorized in chat ("please run Step 1 to Step 5"), following a structural review of all 10 sample kickoffs + all 80 company pages. Knob settings Vic accepted by approving the plan: rolling window = latest annual + 2 quarters; change-log cap = 3 sentences (hard); compaction trigger = every 3rd refresh.
+
+**Empirical evidence motivating each rule:**
+- **§3.8 enforcement + telemetry relocation:** change-log entries had drifted to 40–50-line session summaries (AAOI S48 entry; HENGLI S148 entry) duplicating log.md; pages carried process telemetry (§4.6 ROI streak, A6 counts, wikilink-streak) that is vault bookkeeping, not company knowledge.
+- **§3.19(a) rolling snapshot:** AAOI carried 4 financial tables + 2 capital-structure tables after ONE refresh; unbounded per-period table accumulation projected pages to become mostly tables within ~8 quarters.
+- **§3.19(b) open-questions lifecycle:** resolved questions lingered struck-through (AAOI OQ2 resolved-but-present), degrading the section's watch-list function.
+- **§3.19(c) third-refresh compaction:** early-era pages (BWXT 668 lines / ENS 580 / ETN 577 / BE 568 / CCJ 549 / LEU 487) run ~2× the newer page shape (HENGLI 114 / MSFT 110) without 2× analytical value.
+- **§3.17 codification:** 2 reference instances (AAOI 2026-06-09; GLW 2026-06-10) functioning as designed — the AAOI block's auditor-change + ATM finds fed directly into refresh planning. Vic authorization supersedes the previously planned AEHR validation gate.
+- **Kickoff templates:** the 10 sample kickoffs ran 400–600 lines with ~50%+ restating CLAUDE.md conventions verbatim across all samples (conventions-in-force lists, A6 sub-pattern enumerations, Stop-1/Stop-2 output formats); templates at `prompts/templates/` reference instead of restate.
+- **`scripts/build_index.py`:** index.md's hand-maintained Companies table vs 80 frontmatter blocks = a standing drift class (index.md's own header flags "frontmatter divergences pending retro-application"). First read-only run caught 1 real drift (MP last_updated 06-03 vs frontmatter 06-05); `--write` makes frontmatter the single source of truth.
+
+**Pilot validation (S151, AVGO Q2 FY2026 partial refresh):** page updated under all new rules; 3-sentence change-log entry held; no telemetry on page; nothing analytically valuable lost (the $29B rack-backstop find + OQ lifecycle landed cleanly); escalation trigger 5 (missing call transcript) correctly identified and documented. §4.6 falsification discipline intact (0 falsifications; streak 86).
+
+**Rollout:** opportunistic at each US-listed page's next refresh; foreign-issuer pages at their next refresh; fast-track batch compaction of the 6 oversized pages deferred to a dedicated session. Legacy oversized change-log entries trimmed only at §3.19(c) compaction, never in a retroactive sweep.

@@ -32,6 +32,19 @@ Running reference log of **refresh ingests** — re-ingests of an EXISTING vault
 
 ---
 
+## S151 — AVGO (Broadcom) — 2026-06-13 — Q2 FY2026 (10-Q only; PARTIAL — call transcript pending)
+
+- **Sources:** Q2 FY2026 10-Q (Tier 1; quarter ended May 3, 2026). Q2 earnings call (June 3, 2026) transcript NOT yet staged — escalation trigger 5 (source unavailability) acknowledged; refresh executed Tier-1-only under Vic's standing Step 1–5 authorization; call lands as addendum when staged.
+- **Prior baseline:** S10 canonical + 2026-05-27 in-place Tier-3 substrate refresh (page was at Q1 FY2026).
+- **Headline:** NEW $29B maximum-exposure backstop on a single customer's AI-rack lease obligations (investor-partner structure) — the rack-leasing risk both prior filings flagged generically, now quantified at ~1.3× a quarter's revenue.
+- **Key changes & new developments:** Revenue $22.19B +48% YoY (semi $15.0B +79%, now 68% of revenue; software $7.2B +9%); GAAP op margin 49% (vs 39%); EPS $1.91 (vs $1.03). Inventory $2,270M → $4,328M in two quarters (+91%) — the ramp signal accelerating. Distributor concentration STABLE at 42% (first non-acceleration after 21→28→32→42); top-5 end customers ~45%. ~95% TSMC restated + new "TSMC has raised, and may in the future raise, their prices" language. Zero CPO mentions (Tier-1 silence persists vs Tier-3 TH6-Davisson shipping record — widest cross-venue gap in vault).
+- **Placement:** Layer 1 / photonics_tier 3 UNCHANGED (straddling tension stands; no trigger met).
+- **Cross-vault propagation:** none this pass (rack-backstop customer unnamed; [[hyperscaler-custom-ASIC]] + [[CPO-platform-battle]] candidates deferred to the call addendum).
+- **Forward watch:** Q2 call transcript (the $100B-claim restatement + any backstop commentary vs Hock Tan's Q1 "hallucinating" dismissal); which customer sits behind the $29B backstop (OpenAI the natural unconfirmed candidate); whether the backstop ceiling grows.
+- **Key insight:** AVGO is now carrying quantified, single-customer credit exposure to make its XPU ramp financeable — platform-definer economics increasingly entangled with customer balance-sheet risk, exactly the pattern the rack-leasing risk language foreshadowed.
+
+---
+
 ## S109 — ENS (EnerSys) — 2026-05-29 — FY2026 (10-K + Q4 FY2026 call)
 
 - **Sources:** FY2026 10-K (Tier 1; fiscal year ended March 31, 2026) + Q4 FY2026 earnings call (Tier 2; May 21, 2026; **full 23-page Quartr transcript**).

@@ -1,8 +1,8 @@
-# CLAUDE.md — stocks-wiki (v9.8)
+# CLAUDE.md — stocks-wiki (v9.9)
 
 A personal research vault for chokepoint and supply-chain analysis across **three thesis domains**: (1) **AI datacenter supply chain** — both photonics and power & energy; (2) **Humanoid Robots** — the embodied-AI value chain; and (3) **Defense & Drones** — unmanned systems. You maintain the wiki; the human curates sources and asks questions.
 
-*Version: v9.8 (Section 3.18 **forward-edge layer** — the cross-vault `forward-edge-tracker.md` consensus-divergence tracker [Layer 3 / variant-view]: where the vault's structural read differs from what the market is pricing, each entry with a catalyst + falsifier, under a hard no-price/valuation guardrail; §3.17 reserved for the pending latest-alpha digest-block convention; 2026-06-09, post-S148). Prior: v9.7 opening summary + Section 1.2 scope bumped two → three thesis domains, 2026-06-09. Prior: v9.6 Section 5.3 forward-only growth discipline + Appendix A.1–A.12 moved verbatim to `raw/notes/conventions-ledger.md`; Session 129; 2026-06-04.*
+*Version: v9.9 (page-structure + ingest-process optimization, Vic-authorized in chat 2026-06-13 ["please run Step 1 to Step 5"]: Section 3.8 change-log enforcement + telemetry relocation; Section 3.17 latest-alpha digest block CODIFIED [was reserved]; NEW Section 3.19 page lifecycle conventions [rolling financial snapshot + open-questions lifecycle + third-refresh compaction]; kickoff templates established at `prompts/templates/`. Scope: US-listed pages; foreign-issuer pages adopt at their next refresh.) Prior: v9.8 Section 3.18 forward-edge layer, 2026-06-09. Prior: v9.7 opening summary + Section 1.2 scope bumped two → three thesis domains, 2026-06-09. Prior: v9.6 Section 5.3 forward-only growth discipline + Appendix A.1–A.12 moved verbatim to `raw/notes/conventions-ledger.md`; Session 129; 2026-06-04.*
 
 ## Descriptive language convention
 
@@ -10,7 +10,7 @@ When referencing frameworks, tiers, caveats, or sections in prose content, use d
 
 ## Plain-language convention
 
-Use simple, everyday words — both when explaining things in chat and when writing wiki prose. Pick the easy word over the hard one. Examples: "backs up / supports / agrees with / matches" not "corroborates"; "the real bottleneck" not "the binding constraint"; "shows" or "proves" not "substantiates / validates" where plainer; "uses" not "leverages"; "about" not "regarding"; "approve / sign off" not "bless". Keep sentences short — one idea each. The wiki keeps its analytical third-person voice, but plain does not mean vague: clear writing does not need hard words. (Vic, 2026-06-09: "stop using 'corroborates' — change to an easy-to-understand word." Extends the 2026-06-03 plain-language request; sibling to Section 3.16 word discipline.)
+Use simple, everyday words — both when explaining things in chat and when writing wiki prose. Pick the easy word over the hard one. Examples: "backs up / supports / agrees with / matches" not "corroborates"; "the real bottleneck" not "the binding constraint"; "shows" or "proves" not "substantiates / validates" where plainer; "uses" not "leverages"; "about" not "regarding"; "approve / sign off" not "bless"; "group / part of the portfolio" not "sleeve"; "what would prove it wrong" not "falsifier / falsifiable"; "the verified wiki pages / our confirmed knowledge" not "canon" (in chat — "canonical" stays as the technical page-status term where load-bearing, with a plain gloss on first use); "protective" not "defensive" (in the hedging sense). Keep sentences short — one idea each. The wiki keeps its analytical third-person voice, but plain does not mean vague: clear writing does not need hard words. (Vic, 2026-06-12: flagged "sleeve," "canon," "bless," "falsifiable," "defensive" as hard words. Prior: 2026-06-09 "corroborates"; extends the 2026-06-03 plain-language request; sibling to Section 3.16 word discipline.)
 
 ## 1. Foundation
 
@@ -218,6 +218,8 @@ When CEO responds to structurally reasonable analyst questions with unusually de
 
 Canonical analytical content lives in Thesis role + middle sections + Open questions. Change log + source audit notes + log.md track *what changed*, not *what the analysis was*. Phase 4 reflection content belongs in chat session deliverables. **Application:** prospective from S38+; existing oversized entries not retroactively trimmed.
 
+**Enforcement + telemetry relocation (codified v9.9, 2026-06-13).** The 1-3 sentence change-log cap is a HARD cap, enforced at composition — entries had drifted to 40-50-line session summaries. Two rules: (1) a company-page change-log entry records only *what changed on this page* (sections added/updated, placement decisions, resolved open questions, the one key finding); (2) **process telemetry never appears on company pages** — streak counts (Section 4.6 ROI, wikilink-clean), A6 sub-pattern counts, framing-gap/CEO-combativeness tallies, and protocol meta-notes live ONLY in `log.md` and `raw/notes/conventions-ledger.md`, which already record them. A reader of a company page should encounter company knowledge, not vault bookkeeping. Application: prospective; existing oversized entries are trimmed at each page's third-refresh compaction (Section 3.19), not in a retroactive sweep.
+
 ### 3.9 Company page structure
 
 Five sections universal: Thesis role, Financial snapshot, Open questions, Source audit notes, Change log. Middle sections (technology roadmap, capacity, ecosystem, demand, competitive positioning, supply chain) vary by company type and layer. Do not force a rigid universal template; structure follows analytical significance. *Layer 4 differentiation + Layer straddling tension: see A.5.*
@@ -300,9 +302,17 @@ Default to direct language. Use "substantive" / "substantively" only where the w
 
 **Application.** Prospective from Session 86 onward; existing oversized usage at NVDA.md S81 + log.md S81 + kickoff prompts preserved as historical artifact (forward-only application per Section 3.8 brevity discipline precedent). Cross-reference Section 3.3 voice convention.
 
+### 3.17 Latest-alpha digest block on company pages (codified v9.9, 2026-06-13; was reserved at v9.8)
+
+A company page MAY carry one quarantined between-filings digest block, written only by a `/latest-alpha` run (never during a canonical ingest). Reference instances: [[AAOI]] (2026-06-09) + [[GLW]] (2026-06-10); Vic-authorized codification supersedes the previously planned AEHR validation gate.
+
+**Format (fixed):** fenced between `<!-- LATEST-ALPHA:START -->` / `<!-- LATEST-ALPHA:END -->` markers, placed immediately before Change log. Header line carries the ⚠️ unverified label + as-of date; body is tier-tagged bullets each with a `[verify: …]` trigger naming where the item gets checked at the next primary source; one explicitly-labeled "signal only (not weighted)" line for price/sentiment items; link to the full discovery note in `raw/notes/latest-alpha/`.
+
+**Rules (load-bearing):** (1) the block never touches frontmatter — `last_updated` reflects canonical ingests only; (2) wikilinks only to existing pages; (3) **graduation/decay keyed off "already in canon," never the `last_updated` date** — at the next canonical ingest, each item either graduates (verified → absorbed into canonical sections) or is pruned; the block never accumulates across quarters; (4) discovery-only tier discipline per Section 2.2 — nothing in the block is citable as vault fact. **Operational default (US-listed):** run `/latest-alpha` as the pre-refresh scouting step for any name whose refresh is due; the digest block becomes the verify-list the refresh ingest works through.
+
 ### 3.18 Forward-edge layer — consensus-divergence tracker (codified 2026-06-09, post-S148)
 
-The vault runs on three information layers. (1) **Canon (verified)** — 10-K/10-Q/call primary sources; backward-looking ground truth; the backbone that keeps the rest honest. (2) **Latest alpha (timely)** — 8-K/conference/news between filings; closes the lag; quarantined discovery-only (the Section 3.17 digest-block convention — reserved, pending separate approval). (3) **Forward edge (variant view)** — where the vault's structural read differs from what the market is pricing, with the **catalyst** that would force a re-rate and the **falsifier** that would prove the vault wrong. Layer 2 feeds Layer 3's catalysts; Layer 1 verifies or falsifies a Layer 3 entry (a refresh ingest confirms a catalyst or trips a falsifier).
+The vault runs on three information layers. (1) **Canon (verified)** — 10-K/10-Q/call primary sources; backward-looking ground truth; the backbone that keeps the rest honest. (2) **Latest alpha (timely)** — 8-K/conference/news between filings; closes the lag; quarantined discovery-only (the Section 3.17 digest-block convention). (3) **Forward edge (variant view)** — where the vault's structural read differs from what the market is pricing, with the **catalyst** that would force a re-rate and the **falsifier** that would prove the vault wrong. Layer 2 feeds Layer 3's catalysts; Layer 1 verifies or falsifies a Layer 3 entry (a refresh ingest confirms a catalyst or trips a falsifier).
 
 **Artifact.** The forward edge lives in ONE cross-vault, canon-grade theme page — `wiki/themes/forward-edge-tracker.md` (`type: theme`; sibling to absence themes per Section 3.12) — organized by domain, curated to high-conviction divergences only. It **extends, not duplicates**, the three theses' "what would prove this thesis wrong" sections and the chokepoint-quality gradient (the variant views are already latent there; this surfaces them in one structured place). It is agent-maintainable as canon analysis — updated when a latest-alpha run surfaces a catalyst, when a refresh ingest confirms/falsifies an entry, or on request; it is NOT auto-written by the latest-alpha skill.
 
@@ -314,7 +324,17 @@ The vault runs on three information layers. (1) **Canon (verified)** — 10-K/10
 - **Honest-verdict (Section 2.1).** If the vault view is weak or consensus is right, say so — do not manufacture a contrarian take to fill a slot.
 - **Human-owned anchors untouched.** Reference and link the `_thesis*` files; never edit them (Section 1.1).
 
-Cross-reference Section 3.6 (cross-venue gap), Section 3.12 (absence themes), Section 3.15 (confirm/weaken framing), Section 3.17 (latest-alpha, pending).
+Cross-reference Section 3.6 (cross-venue gap), Section 3.12 (absence themes), Section 3.15 (confirm/weaken framing), Section 3.17 (latest-alpha digest block).
+
+### 3.19 Page lifecycle conventions — rolling snapshot, open-questions lifecycle, third-refresh compaction (codified v9.9, 2026-06-13)
+
+Three rules that keep company pages from growing without bound across refreshes. Scope: applied at each US-listed page's next refresh (no big-bang retroactive sweep); foreign-issuer pages adopt the same rules at their next refresh.
+
+**(a) Rolling financial snapshot.** Full per-period tables are kept for the **latest annual + latest two quarters** only. At each refresh, periods older than that compress into a one-line-per-period **trajectory strip** (a single table: period × revenue × the page's one or two load-bearing metrics × one-phrase note). Cross-period deltas survive; table accumulation does not. Section 4.1's separate-tables-per-period rule applies to the periods kept in full.
+
+**(b) Open-questions lifecycle.** At each refresh, questions fully RESOLVED move out of the section into that refresh's change-log entry as a one-line disposition ("OQ2 resolved — 800G first volume shipped Q1"); remaining questions renumber. PARTIALLY RESOLVED questions stay, rewritten to their live remainder. The section is a true watch-list: every item still actionable, each with its pre-registered trigger.
+
+**(c) Third-refresh compaction.** At a page's third refresh (and every third thereafter), prune superseded analysis: collapse narrative that later periods overtook, merge duplicate cross-reference notes, trim oversized historical change-log entries to the 1-3 sentence cap (the one retroactive trim Section 3.8 authorizes). What is removed is summarized in one change-log line. Mirrors the Section 5.3 forward-only growth discipline at page scope. Compaction never removes: the honest verdict, placement rationale, pre-registered triggers, source audit notes, or anything a current Open question depends on.
 
 ## 4. Source ingest
 

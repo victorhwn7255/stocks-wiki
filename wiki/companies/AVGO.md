@@ -3,7 +3,7 @@ type: company
 tickers: [AVGO]
 layer: 1
 photonics_tier: 3
-last_updated: 2026-05-27
+last_updated: 2026-06-13
 ---
 
 # Broadcom Inc. (AVGO)
@@ -56,6 +56,30 @@ Layer 1 platform definer alongside [[NVDA]]. AVGO designs custom AI accelerators
 | FCF | ~$8,010M (41.5%) | ~$5,963M |
 
 (AVGO 10-Q Q1 FY2026)
+
+### Q2 FY2026 quarterly (10-Q, Tier 1, quarter ended May 3, 2026 — Tier-1-only partial refresh; Q2 call transcript pending per Section 2.2)
+
+| Metric | Q2 FY2026 | Q2 FY2025 | YoY |
+|--------|-----------|-----------|-----|
+| Revenue | $22,187M | $15,004M | +48% |
+| Semiconductor solutions | $15,009M (68%) | $8,408M (56%) | +79% |
+| Infrastructure software | $7,178M (32%) | $6,596M (44%) | +9% |
+| GAAP gross margin | 69% | 68% | +100bps |
+| GAAP operating income | $10,788M (49% of rev) | $5,829M (39%) | +85% |
+| Semi segment operating income | $9,281M (61.8%) | $4,806M (57.2%) | +93% |
+| Software segment operating income | $5,647M (78.7%) | $4,987M (75.6%) | +13% |
+| Net income | $9,310M | $4,965M | +88% |
+| Diluted EPS | $1.91 | $1.03 | +85% |
+| Inventory | $4,328M | $2,270M (Nov 2, 2025) | +91% in two quarters |
+| Cash | $19,628M | $16,178M (Nov 2, 2025) | — |
+
+(AVGO 10-Q Q2 FY2026)
+
+Revenue landed slightly above the ~$22B guide; the semiconductor segment (+79% YoY) is now 68% of revenue and its operating margin expanded ~460bps YoY. Inventory nearly doubled in two quarters ($2,270M → $2,962M → $4,328M) — the production-ramp signal first flagged at Q1 is accelerating. 1H capital returns: $8,450M buybacks + $6,178M dividends.
+
+**NEW — the $29B AI-rack lease backstop (the rack-leasing risk, now quantified).** AVGO "arranged for an investor partner to take on certain agreements to purchase AI racks based on custom AI accelerators designed by us and the related lease agreements with a customer," and entered a backstop for that customer's lease obligations over 5-year terms — **maximum exposure $29 billion**, growing as racks deploy and shrinking as the customer pays (AVGO 10-Q Q2 FY2026). Remedies on default include assuming the lease or selling the racks. This converts the previously generic rack-leasing risk language into a quantified, single-customer credit exposure roughly 1.3× a full quarter of revenue — while keeping the rack economics off AVGO's own gross margin via the investor-partner structure. Which XPU customer is unnamed.
+
+**Stability checks at Q2 (Tier 1):** single-distributor concentration **42%** (stable vs Q1's 42%; vs 29% prior year); top-5 end customers ~45% (vs 40%); ~95% TSMC wafer dependency restated verbatim, with new explicit language that TSMC "has raised, and may in the future raise" prices; **zero CPO / silicon-photonics mentions** — the Tier-1 silence pattern persists through Q2.
 
 ### Forward outlook (Tier 2 — management guidance, AVGO Q1 FY2026 call)
 
@@ -178,12 +202,12 @@ The 42% single-distributor concentration is the highest in the vault, surpassing
 ## Open questions
 
 1. **Layer 1 straddling resolution.** Watch semiconductor segment margin trajectory, custom ASIC margin mix (rack leasing compresses gross margin per Tier 1 filings), and whether networking platform revenue becomes separable from custom ASIC revenue.
-2. **$100B+ claim verification.** Track Q2-Q4 FY2026 AI semiconductor revenue trajectory against the 2027 target. The ~10 GW math requires consistent $/GW across customers or more GW than stated — error bars are wide.
+2. **$100B+ claim verification.** Track Q2-Q4 FY2026 AI semiconductor revenue trajectory against the 2027 target. Q2 semiconductor revenue of $15.0B (+79% YoY) is directionally consistent, but the AI-specific split is call-only — the Q2 call (transcript pending) is where the claim gets its next test. The ~10 GW math still carries wide error bars.
 3. **Anthropic independence.** Is Anthropic's program architecturally derived from Google TPU? Watch for Anthropic-specific silicon disclosures in future calls.
 4. **OpenAI execution risk.** First-gen XPU deploying 2027 at >1 GW, with 10 GW through 2029 (analyst-sourced). Sharp ramp from zero to gigawatt scale with no track record.
 5. **COT timeline.** Hock Tan says "many years." AI design tools are lowering barriers (10-K). Watch for hyperscaler in-house silicon announcements.
 6. **CPO timing.** "Not this year, maybe not next year." Watch for shifts relative to [[MRVL]]'s Photonic Fabric deployment (commercial FY2028) and hyperscaler CPO adoption signals.
-7. **Rack leasing margin compression.** Tier 1 filings flag it explicitly; call dismisses it. Watch consolidated gross margin trajectory as rack mix increases.
+7. **Rack leasing exposure — now quantified at $29B max backstop (sharpened at Q2 FY2026).** The generic risk language became a concrete structure: investor partner owns the racks; AVGO backstops one customer's 5-year lease obligations up to $29B. Live remainder: which customer (OpenAI is the natural unconfirmed candidate given the >1 GW 2027 ramp); whether the backstop grows past $29B as more racks deploy; whether the investor-partner structure actually keeps rack economics off AVGO's gross margin; and what the (pending) Q2 call says about it — versus Hock Tan's "hallucinating" dismissal of the margin question at Q1.
 
 ## Source audit notes
 
@@ -193,8 +217,11 @@ The 42% single-distributor concentration is the highest in the vault, surpassing
 
 **Q1 FY2026 earnings call (Tier 2, March 4, 2026).** Most customer-specific AI call in the vault — four customers named (Google, Anthropic, Meta, OpenAI) with GW-scale figures, two unnamed, corrected from five to six during the call. $100B+ AI chip revenue claim with three formulations and escalating qualifier — most extreme forward-looking AI revenue statement in the industry. CPO dismissed as "bright, shiny objects" — most dismissive CPO commentary in the vault. Hock Tan's tone: combative and confident. Called Arcuri's margin question "hallucinating" — paralleling [[MRVL]]'s Murphy "Do you see me blinking?" response to competitive pressure questions. Both are CEO combativeness on structurally reasonable margin/competition questions; whether this reflects genuine confidence or defensive deflection is itself analytically significant. "Freudian slip" — said TPUs generically for all XPUs. [[TSM]] never named; "T-glass" and "leading-edge wafers" referenced. 11 analysts; zero questions about CPO/photonics, TSMC by name, VMware integration, or tariffs/China. Complete analyst disinterest in the software business despite VMware representing 35% of revenue.
 
+**10-Q Q2 FY2026 (Tier 1, quarter ended May 3, 2026; partial refresh — call transcript pending).** The headline disclosure is the $29B maximum-exposure backstop on a single customer's AI-rack lease obligations via an investor-partner structure — the most concrete quantification yet of the rack-leasing risk both prior filings flagged generically. Inventory nearly doubled in two quarters ($2,270M → $4,328M), the strongest production-ramp signal in the filing. Distributor concentration held at 42% (no further acceleration); ~95% TSMC dependency restated with new "TSMC has raised, and may in the future raise, their prices" language; zero CPO/silicon-photonics mentions — the Tier-1 silence pattern persists while the Tier-3 record shows TH6-Davisson CPO shipping since October 2025 (the cross-venue gap at its widest).
+
 ## Change log
 
+- **2026-06-13 (S151 — Q2 FY2026 partial refresh, Tier-1-only; first refresh executed under CLAUDE.md v9.9 page conventions):** Added Q2 FY2026 snapshot ($22.2B revenue +48%, semi segment +79%, EPS $1.91) + the NEW $29B AI-rack lease backstop disclosure; sharpened Open question 7 to its live remainder and updated Open question 2. Q2 earnings-call (June 3) transcript not yet staged — escalation trigger 5 noted; call content lands as an addendum when staged. The 2026-05-27 "AVGO refresh recommended" flag is resolved by this refresh.
 - **2026-05-27 (in-place refresh per Vic instruction; not counted as separate session — Tier 3 substrate addition per `CPO-for-AIDC-Infrastructure.md` 2026-05-26 + `CPO-in-AIDC.md` 2026-05-27):** Added Tier 3 dual-source substrate paragraph at CPO positioning subsection: TH6-Davisson 102.4T CPO switch shipping Oct 8 2025 + 16× 6.4T optical engines + ~3.5W/800G + field-replaceable ELSFP modules + 4th-gen 400G/lane in development; Meta Bailly production validation (15M 400G port-device-hours; "no failures or uncorrectable codewords"; supports 24K GPU cluster at >90% training efficiency per ECOC 2025); NVIDIA Spectrum-X 9W vs TH6-Davisson 3.5W per 800G power gap observation. **AVGO refresh recommended at next dedicated session candidate** — vault baseline (2026-04-27) substantively stale relative to TH6-Davisson commercial trajectory. last_updated 2026-04-27 → 2026-05-27.
 - **2026-04-23:** Created from AVGO 10-K FY2025 (Tier 1), AVGO 10-Q Q1 FY2026 (Tier 1), AVGO Q1 FY2026 earnings call (Tier 2). Second Layer 1 company page (alongside [[NVDA]]). Three-source coverage from inception. Layer 1 with straddling tension flagged. Six XPU customers documented with GW-scale figures. $100B+ claim preserved with three escalating formulations. CPO dismissal ("bright, shiny objects") and Murphy ↔ Hock Tan scale-up interconnect disagreement documented. Two Tier 1/Tier 2 framing gaps identified (COT risk, rack leasing margins).
 - **2026-04-23:** Session 12 audit execution (non-ingest). Added [[AI-demand-durability]] cross-reference.
