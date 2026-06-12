@@ -1,6 +1,6 @@
 ---
 name: agent-onboarding
-description: Load full context for the stocks-wiki vault. Invoke at the start of any new session before other work — reads ALL THREE thesis anchors (AI-datacenter + Defense & Drones + Humanoid Robots), operational conventions (CLAUDE.md), all three analytical frameworks, current state (MEMORY/log/index), and every wiki page catalogued in index.md (currently ~77 companies, 13 chokepoints, 18 themes, 1 relationship across wiki/). Skip only if context is already loaded in the current conversation.
+description: Load full context for the stocks-wiki vault. Invoke at the start of any new session before other work — reads ALL THREE thesis anchors (AI-datacenter + Defense & Drones + Humanoid Robots), operational conventions (CLAUDE.md), all three analytical frameworks, current state (MEMORY/log/index), and every wiki page catalogued in index.md (currently ~80 companies, 13 chokepoints, ~17 themes, 4 trackers, 1 relationship across wiki/). Skip only if context is already loaded in the current conversation.
 ---
 
 # Agent onboarding — stocks-wiki
@@ -42,13 +42,15 @@ Follow this sequence. Each file is canonical for its scope; do not summarize unl
 
 ### 3. Substantive content (full read = full context; this is the default)
 
-**Read every page in each wiki subdirectory.** Do not skip — cross-session findings, reciprocal patterns, and chokepoint substantiation only become visible from cross-page reading. **`index.md` is the authoritative catalog of what exists; read against it. Do NOT trust any hard-coded page list (it rots) — the directory enumeration below is stable, but the per-page set lives in `index.md`.** Current scope (verify against `index.md`): **~77 companies, 13 chokepoints, 18 themes, 1 relationship.** (The three `wiki/_thesis*.md` thesis anchors + the three `raw/notes/frameworks*.md` files are read in Section 1, not counted here — they are scaffolding, not catalogued wiki pages.)
+**Read every page in each wiki subdirectory.** Do not skip — cross-session findings, reciprocal patterns, and chokepoint substantiation only become visible from cross-page reading. **`index.md` is the authoritative catalog of what exists; read against it. Do NOT trust any hard-coded page list (it rots) — the directory enumeration below is stable, but the per-page set lives in `index.md`.** Current scope (verify against `index.md`): **~80 companies, 13 chokepoints, ~17 themes, 4 trackers, 1 relationship.** (The three `wiki/_thesis*.md` thesis anchors + the three `raw/notes/frameworks*.md` files are read in Section 1, not counted here — they are scaffolding, not catalogued wiki pages.)
 
 - **`wiki/companies/*.md`** — company pages. Each has frontmatter, Thesis role, Financial snapshot, per-source content sections, Source audit notes, Change log.
 - **`wiki/chokepoints/*.md`** — chokepoint pages (provisional or canonical per CLAUDE.md Section 3.15).
 - **`wiki/themes/*.md`** — theme pages (dynamics / mechanism / absence types per CLAUDE.md Section 3.12).
+- **`wiki/trackers/*.md`** — tracker pages (CLAUDE.md Section 3.20; added v10.0): cross-vault **status-bearing** pages updated by propagation (`forward-edge-tracker` per Section 3.18, `hyperscaler-capex`, `china-exposure`, `what-could-go-wrong` — the vault-level risk register). **Read these — they carry the live signal/falsifier state**, and their freshness obligation means any session touching a tracked signal updates them.
 - **`wiki/relationships/*.md`** — relationship pages (currently `nvidia-supply-chain-commitments`): bilateral commercial-commitment + supply-chain-dependency + A1-mode analysis. **Read these — they are canonical cross-vault content.**
-- **`wiki/layers/*.md`** — layer pages (Framework 2 value-capture layers): a defined page type per CLAUDE.md Section 3.1 but **currently unpopulated (0 pages)**; read when populated.
+
+*(The former `wiki/layers/` page type was retired unused at CLAUDE.md v10.0 — the company-page `layer` frontmatter field is unchanged.)*
 
 **Scale + how to load it.** A full read is now ~31,000+ lines (~250–290k tokens) and grows every session. A **1M-context agent (this project's default) holds the full read comfortably** — load it efficiently with batched/parallel reads, and prefer the full read because rich cross-page context is the point. A **context-limited agent** should: read the orientation layer (Sections 1–2) fully, use `index.md` + `MEMORY.md` as the map, read the pages relevant to the session's task, optionally delegate breadth to domain-cluster sub-agents — and must **explicitly state it is operating with partial context** so the human knows. Per-page line counts are non-load-bearing; verify against canonical files when relevant.
 
@@ -98,7 +100,7 @@ For the live accumulation state of these patterns (counts, threshold crossings, 
 
 Once the read sequence is complete, the agent has full vault context. Confirm onboarding completion to the user with a brief summary that surfaces enough to **continue working immediately**:
 
-- **Current vault state** — scope (companies / chokepoints / themes / relationships) + most recent session (from the `MEMORY.md` top entry + `log.md` tail).
+- **Current vault state** — scope (companies / chokepoints / themes / trackers / relationships) + most recent session (from the `MEMORY.md` top entry + `log.md` tail).
 - **Open Vic-side decision queue** — the "NEW Vic-side decision queue" / codification-candidate items in the latest `MEMORY.md` vault-state entry (these are the threads awaiting Vic's direction).
 - **Staging queue** — check `raw/filings/newly_fetched/`; any files there are sources Vic has dropped that are pending ingest (the typical next unit of work).
 - **Monitoring conventions** at current counts (defer to `MEMORY.md` / `learning-monitor`).

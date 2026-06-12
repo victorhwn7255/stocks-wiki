@@ -1,8 +1,8 @@
-# CLAUDE.md — stocks-wiki (v9.9)
+# CLAUDE.md — stocks-wiki (v10.0)
 
 A personal research vault for chokepoint and supply-chain analysis across **three thesis domains**: (1) **AI datacenter supply chain** — both photonics and power & energy; (2) **Humanoid Robots** — the embodied-AI value chain; and (3) **Defense & Drones** — unmanned systems. You maintain the wiki; the human curates sources and asks questions.
 
-*Version: v9.9 (page-structure + ingest-process optimization, Vic-authorized in chat 2026-06-13 ["please run Step 1 to Step 5"]: Section 3.8 change-log enforcement + telemetry relocation; Section 3.17 latest-alpha digest block CODIFIED [was reserved]; NEW Section 3.19 page lifecycle conventions [rolling financial snapshot + open-questions lifecycle + third-refresh compaction]; kickoff templates established at `prompts/templates/`. Scope: US-listed pages; foreign-issuer pages adopt at their next refresh.) Prior: v9.8 Section 3.18 forward-edge layer, 2026-06-09. Prior: v9.7 opening summary + Section 1.2 scope bumped two → three thesis domains, 2026-06-09. Prior: v9.6 Section 5.3 forward-only growth discipline + Appendix A.1–A.12 moved verbatim to `raw/notes/conventions-ledger.md`; Session 129; 2026-06-04.*
+*Version: v10.0 (wiki folder reorganization, Vic-authorized in chat 2026-06-12: NEW Section 3.20 tracker pages + `wiki/trackers/` folder — forward-edge-tracker + hyperscaler-capex + china-exposure moved in, what-could-go-wrong created there; `layer` PAGE TYPE retired unused after 151 sessions (`wiki/layers/` folder removed — the company-page `layer` frontmatter FIELD and Framework 2 placement are UNCHANGED); Section 3.18 artifact path re-pointed. Scope: type/folder taxonomy only; no analytical content changed.) Prior: v9.9 (page-structure + ingest-process optimization, Vic-authorized in chat 2026-06-13 ["please run Step 1 to Step 5"]: Section 3.8 change-log enforcement + telemetry relocation; Section 3.17 latest-alpha digest block CODIFIED [was reserved]; NEW Section 3.19 page lifecycle conventions [rolling financial snapshot + open-questions lifecycle + third-refresh compaction]; kickoff templates established at `prompts/templates/`. Scope: US-listed pages; foreign-issuer pages adopt at their next refresh.) Prior: v9.8 Section 3.18 forward-edge layer, 2026-06-09. Prior: v9.7 opening summary + Section 1.2 scope bumped two → three thesis domains, 2026-06-09. Prior: v9.6 Section 5.3 forward-only growth discipline + Appendix A.1–A.12 moved verbatim to `raw/notes/conventions-ledger.md`; Session 129; 2026-06-04.*
 
 ## Descriptive language convention
 
@@ -42,7 +42,7 @@ raw/         # source material — read from, never modify
   transcripts/<TICKER>/  # earnings-call transcripts grouped per ticker
   research/ news/ notes/ references/
 wiki/        # your domain — write, update, interlink
-  _thesis.md companies/ layers/ chokepoints/ themes/ relationships/
+  _thesis.md companies/ chokepoints/ themes/ trackers/ relationships/
 index.md     # catalog of wiki pages
 log.md       # append-only record of activity
 ```
@@ -122,17 +122,17 @@ When two vault canonicals share EXACT-match fiscal calendar structure (identical
 
 ### 3.1 Page types and creation triggers
 
-Page types: companies / chokepoints / themes / relationships / layers.
+Page types: companies / chokepoints / themes / trackers / relationships. (The `layer` page type was retired unused at v10.0 — Framework 2 layer content lives in `frameworks.md` plus the company-page `layer` field; per-instance rationale in the conventions ledger.)
 
 A new page exists because a source informed it, not because a company name came up. Companies not in seed portfolio: first mention gets a note inside primary page; promote to own page when entity referenced by 3+ sources or central to identified chokepoint/theme. Never create empty stub pages.
 
-**Filenames.** Companies use uppercase tickers (`TSM.md`). Chokepoints / themes / relationships use kebab-case (`TSMC-CoWoS.md`, `CPO-platform-battle.md`, `TSM-NVDA-allocation.md`). Layers use `layer-N-description.md`.
+**Filenames.** Companies use uppercase tickers (`TSM.md`). Chokepoints / themes / trackers / relationships use kebab-case (`TSMC-CoWoS.md`, `CPO-platform-battle.md`, `forward-edge-tracker.md`, `TSM-NVDA-allocation.md`).
 
 ### 3.2 Frontmatter
 
 ```yaml
 ---
-type: company | chokepoint | theme | layer | relationship
+type: company | chokepoint | theme | tracker | relationship
 tickers: [TSM, NVDA]
 layer: 1-6                          # company pages only
 photonics_tier: 1-5 | outside       # per-domain *_tier fields optional
@@ -145,6 +145,8 @@ foreign_issuer: true                # non-US-domiciled filers only
 last_updated: YYYY-MM-DD
 ---
 ```
+
+**`layer` field vs. layer page type.** The `layer: 1-6` company-page field (Framework 2 placement) is load-bearing and unchanged; only the never-used layer *page type* and its folder were retired at v10.0.
 
 `layer` (Framework 2) and per-domain `*_tier` fields (Frameworks 5/6/7/8/9) distinct from source `Tier`. Multi-domain companies carry multiple `*_tier` classifications (TSM photonics_tier 1 + memory_tier 1 + equipment_tier 2; VRT photonics_tier 4 + energy_power_tier 1). For multi-layer exposure, single primary `layer` value; nuance in body prose. For non-company pages, `tickers` lists tickers whose primary sources substantively informed page content (provenance, not relevance tag).
 
@@ -248,6 +250,8 @@ When a company's core business faces structural displacement from a tracked tech
 
 Three types from practice: **Dynamics themes** (evolving competitive/market dynamic; e.g., `AI-demand-durability.md`, `foundry-competition.md`); **Mechanism themes** (how a company maintains/challenges structural position; e.g., `NVDA-platform-integration.md`); **Absence themes** (thesis-significant topic primary sources are not yet addressing; e.g., `CPO-platform-battle.md`). Future ingests may surface other legitimate page types.
 
+**Tracker carve-out (v10.0).** Cross-vault status-bearing pages formerly typed as themes (hyperscaler-capex, china-exposure, forward-edge-tracker) are now `type: tracker` per Section 3.20; Section 3.12's three theme types cover analytical content only.
+
 ### 3.13 Tier 3-anchored theme pages (A2)
 
 A theme page may be anchored on Tier 3 synthesis sources when primary-source-anchored creation is premature but cross-cutting analytical content exists. Structural requirements: (1) Vic-authored synthesis as anchor with attribution explicit in body and frontmatter; (2) Counterparty-attribution-only annotation per three-mode framing (Section 3.5); (3) No-verification at construction; deviation-based refinement at ingest; (4) Open questions section pre-registers primary-source verification triggers.
@@ -314,7 +318,7 @@ A company page MAY carry one quarantined between-filings digest block, written o
 
 The vault runs on three information layers. (1) **Canon (verified)** — 10-K/10-Q/call primary sources; backward-looking ground truth; the backbone that keeps the rest honest. (2) **Latest alpha (timely)** — 8-K/conference/news between filings; closes the lag; quarantined discovery-only (the Section 3.17 digest-block convention). (3) **Forward edge (variant view)** — where the vault's structural read differs from what the market is pricing, with the **catalyst** that would force a re-rate and the **falsifier** that would prove the vault wrong. Layer 2 feeds Layer 3's catalysts; Layer 1 verifies or falsifies a Layer 3 entry (a refresh ingest confirms a catalyst or trips a falsifier).
 
-**Artifact.** The forward edge lives in ONE cross-vault, canon-grade theme page — `wiki/themes/forward-edge-tracker.md` (`type: theme`; sibling to absence themes per Section 3.12) — organized by domain, curated to high-conviction divergences only. It **extends, not duplicates**, the three theses' "what would prove this thesis wrong" sections and the chokepoint-quality gradient (the variant views are already latent there; this surfaces them in one structured place). It is agent-maintainable as canon analysis — updated when a latest-alpha run surfaces a catalyst, when a refresh ingest confirms/falsifies an entry, or on request; it is NOT auto-written by the latest-alpha skill.
+**Artifact.** The forward edge lives in ONE cross-vault, canon-grade tracker page — `wiki/trackers/forward-edge-tracker.md` (`type: tracker`; tracker conventions per Section 3.20) — organized by domain, curated to high-conviction divergences only. It **extends, not duplicates**, the three theses' "what would prove this thesis wrong" sections and the chokepoint-quality gradient (the variant views are already latent there; this surfaces them in one structured place). It is agent-maintainable as canon analysis — updated when a latest-alpha run surfaces a catalyst, when a refresh ingest confirms/falsifies an entry, or on request; it is NOT auto-written by the latest-alpha skill.
 
 **Entry format (six fields, fixed order):** subject + durability anchor (chokepoint-quality gradient) → **Consensus** (Tier 3/4) → **Vault view** (primary-grounded, linked) → **Catalyst / timeline** → **Falsifier** → **Last moved** (date + what changed). **Entry contract: every entry MUST carry a catalyst AND a falsifier** — no falsifier means it is a hot take, not an entry. Curated to high-conviction only, not every name.
 
@@ -335,6 +339,23 @@ Three rules that keep company pages from growing without bound across refreshes.
 **(b) Open-questions lifecycle.** At each refresh, questions fully RESOLVED move out of the section into that refresh's change-log entry as a one-line disposition ("OQ2 resolved — 800G first volume shipped Q1"); remaining questions renumber. PARTIALLY RESOLVED questions stay, rewritten to their live remainder. The section is a true watch-list: every item still actionable, each with its pre-registered trigger.
 
 **(c) Third-refresh compaction.** At a page's third refresh (and every third thereafter), prune superseded analysis: collapse narrative that later periods overtook, merge duplicate cross-reference notes, trim oversized historical change-log entries to the 1-3 sentence cap (the one retroactive trim Section 3.8 authorizes). What is removed is summarized in one change-log line. Mirrors the Section 5.3 forward-only growth discipline at page scope. Compaction never removes: the honest verdict, placement rationale, pre-registered triggers, source audit notes, or anything a current Open question depends on.
+
+### 3.20 Tracker pages — `wiki/trackers/` (codified v10.0, 2026-06-12)
+
+A **tracker** is a cross-vault page whose value is *current status*, not narrative analysis. The folder exists because trackers carry a different maintenance obligation than themes — a stale tracker is worse than no tracker (it falsely reassures).
+
+**Membership test (all three must hold):**
+1. **Cross-vault** — spans multiple companies/domains; no single ingest "owns" it.
+2. **Status-bearing** — entries carry live state (fired / not fired, last-moved dates, signal checklists) that decays if unmaintained.
+3. **Propagation-updated** — updated when *other* pages' ingests touch a tracked signal; never the subject of its own ingest.
+
+Pages failing any criterion are themes (Section 3.12). Folders encode operational difference only; topic/domain stays in frontmatter + index.md — no domain subfolders, here or elsewhere.
+
+**Roster at codification:** [[forward-edge-tracker]] (conventions per Section 3.18), [[hyperscaler-capex]], [[china-exposure]], [[what-could-go-wrong]].
+
+**Freshness obligation.** When a canonical or refresh ingest touches a tracked signal or cohort name, the affected tracker entry updates status + last-checked **in the same session** — this is part of cross-vault propagation, not optional polish. Change log required; Source audit notes optional (same as theme pages, Section 3.8 brevity discipline applies).
+
+**`what-could-go-wrong` conventions (the vault-level risk register).** Tracks the factors that could break the three theses and the frameworks. **Dashboard-not-duplicate rule:** every falsifier has ONE canonical home (a `_thesis*` file, theme, chokepoint, or company page); the register links to that home and adds only status — it never restates or re-derives the analysis, so the two copies cannot drift. **Entry format (six fields, fixed order):** Risk (what breaks) → Domain(s) → Canonical home (wikilink) → Tripwire (observable mechanism — guidance cuts, lead-time normalization, utilization shifts, policy expirations; **never price/valuation**, per Section 3.18's discipline) → Status (NOT FIRED / PARTIAL / FIRED, with date + primary-source evidence) → Last checked (date + session). **Scope discipline:** thesis-level risks only, curated — not a mirror of every page's Open questions. Distinct from [[forward-edge-tracker]]: the forward edge holds *consensus-divergence* views; the risk register also holds **consensus-aligned risks** (where the vault and the market could be wrong together — e.g., an AI-capex cycle turn). Tier discipline per Section 2.2: Tier 3/4 sources may *name* a risk mechanism; only primary sources *fire* a tripwire. Honest-verdict per Section 2.1: a fired tripwire is stated plainly at the top of the page, not buried.
 
 ## 4. Source ingest
 

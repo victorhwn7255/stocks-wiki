@@ -49,7 +49,7 @@ PAGE_TYPE_DIRS = {
     "chokepoint": "wiki/chokepoints",
     "theme": "wiki/themes",
     "relationship": "wiki/relationships",
-    "layer": "wiki/layers",
+    "tracker": "wiki/trackers",
 }
 
 

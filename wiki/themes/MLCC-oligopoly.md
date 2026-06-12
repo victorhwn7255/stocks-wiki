@@ -10,7 +10,7 @@ last_updated: 2026-06-10
 
 ## Thesis role
 
-The AI constraint story keeps moving down the stack: GPU → HBM/memory → power infrastructure — and now, per Goldman Sachs' late-May 2026 framing, MLCC: the tiny multilayer ceramic capacitors that stabilize power to the GPU, HBM, and ASIC. Goldman called MLCC the "new memory" — the 3rd-largest AI-server BOM item after GPU and memory, with AI-server demand growing ~4.3× FY2025→FY2030 against industry capacity "locked at ~10%/yr" (bottleneck report, citing GS coverage via cls.cn / Tencent / 21jingji, May 31–Jun 1 2026 — attribution only; the GS notes are non-public). This is the same stacked-bottleneck pattern the vault tracks at [[HBM-oligopoly]] and [[power-semis]]: each time one constraint clears, the next one down binds.
+The AI constraint story keeps moving down the stack: GPU → HBM/memory → power infrastructure — and now, per Goldman Sachs' late-May 2026 framing, MLCC: the tiny multilayer ceramic capacitors that stabilize power to the GPU, HBM, and ASIC. Goldman called MLCC the "new memory" — the 3rd-largest AI-server BOM item after GPU and memory, with AI-server demand growing ~4.3× FY2025→FY2030 against industry capacity "locked at ~10%/yr" (bottleneck report, citing GS coverage via cls.cn / Tencent / 21jingji, May 31–Jun 1 2026 — attribution only; the GS notes are non-public). This is the same stacked-bottleneck pattern the vault tracks at [[HBM-oligopoly]] and [[power-semis]]: each time one constraint clears, the next one down binds. The demand-side half of the pattern — the memory price surge taxing device makers and feeding the double-ordering this page documents — is synthesized at [[memory-shortage-winners-losers]].
 
 **The honest verdict, up front (from the bottleneck report's verdict):** high-end AI-server MLCC is a **quality-but-cyclical position with one genuinely structural kernel** — the top-bin chip-adjacent and embedded-in-substrate parts. It is **not yet a memory-grade durable chokepoint**, and it is more than a pure theme-spike. The cycle has memory's *story*; so far it has only one quarter of memory's *evidence*. The "new memory" label is a Goldman narrative, carried here under strict Tier-3 attribution — not a vault conclusion.
 
@@ -91,4 +91,5 @@ Pre-registered tests, from the bottleneck report's "what to watch":
 
 ## Change log
 
+- **2026-06-13 (S156 cross-reference):** One-sentence pointer added in Thesis role to the new [[memory-shortage-winners-losers]] theme (the demand-side half of the stacked-bottleneck pattern; shares the Murata Q1 + double-booking triggers). No other content edits.
 - **2026-06-10:** Created as Tier-3-anchored theme page per Section 3.13, anchored on the two `raw/research/` MLCC reports (bottleneck + supplier landscape); multi-agent research + adversarial-verification pipeline; seeded from the 2026-06-07 video intel note.

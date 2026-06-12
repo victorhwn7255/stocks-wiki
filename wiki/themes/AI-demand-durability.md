@@ -12,6 +12,8 @@ The chokepoint thesis depends on sustained AI demand. Chokepoints only create du
 
 The central question: Is current AI demand a multi-year structural shift that will sustain capacity constraints through the 2026-2028 thesis window, or is there cyclical overshoot risk that could collapse the demand-supply gap?
 
+This page's falsifier-side twin is [[AI-buildout-who-holds-the-risk]]: it maps who is financially exposed if the demand tracked here disappoints — the backstops, vendor financing, and credit structures leaning on these same cash flows arriving.
+
 ## Multi-layer demand convergence
 
 Multi-layer demand convergence across the AI supply chain (currently 15 companies organized across Framework 2 Layers 1-6 plus equipment tier; chronological accumulation pattern documented per source below). All companies report demand exceeding supply or capacity in their respective segments for the 2026-2028 window. The convergence is the central analytical product of this page: when companies at every supply chain layer simultaneously report constraint, the demand durability thesis is structurally validated across vantage points rather than from any single perspective.

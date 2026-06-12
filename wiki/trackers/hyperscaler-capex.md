@@ -1,5 +1,5 @@
 ---
-type: theme
+type: tracker
 tickers: [MSFT, GOOGL, AMZN, META, ORCL, CRWV, NBIS]
 last_updated: 2026-06-03
 ---
@@ -126,6 +126,7 @@ The Tier-3 synthesis adds a useful aggregation rule: **any two of these together
 - [[HBM-oligopoly]] — the memory-pricing cost-push currently lifting the capex guides.
 - [[software-AI-moat-durability]] — the monetization/return side (whether the deployed capex is monetized at the application layer); the demand-validation counterpart.
 - [[nvidia-supply-chain-commitments]] — the bilateral-commitment detail behind the circularity (dynamic #9): NVIDIA's investments in and commitments with the customers who buy its chips.
+- [[AI-buildout-who-holds-the-risk]] — the synthesis of dynamics #8 + #9: the full credit-risk map (structures → loss-bearers), the official-sector sizing (BIS/IMF/FSB), and the early-warning instruments.
 - Company pages: [[MSFT]], [[GOOGL]], [[AMZN]], [[META]], [[ORCL]] (hyperscalers) + [[CRWV]] + [[NBIS]] (rent-side neocloud pair) — the seven payers. Funded chokepoints: [[transformer-supply]], [[liquid-cooling]], [[HBM-oligopoly]].
 
 ## Change log

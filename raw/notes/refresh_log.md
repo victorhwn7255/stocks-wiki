@@ -32,6 +32,28 @@ Running reference log of **refresh ingests** — re-ingests of an EXISTING vault
 
 ---
 
+## S155 — PLAB (Photronics) — 2026-06-13 — Q2 FY2026 (quarter ended May 3, 2026)
+
+- **Sources:** Q2 FY2026 10-Q (Tier 1; quarter ended May 3 2026) + Q2 FY2026 earnings call (Tier 2; May 28 2026; Vic-staged, full transcript). October 31 fiscal year per Section 2.11 — Q2 FY2026 ≈ calendar Q1/Q2 2026.
+- **Prior baseline:** S28 first-canonical (FY2025 10-K + Q1 FY2026 10-Q + call), Apr 28 2026; first refresh of this page.
+- **Headline:** The AI boom HURT the mask maker — revenue $209.9M flat YoY and below guide on both lines because elevated fab utilization + the memory price surge suppressed design releases (photomask demand follows tape-outs, not wafer starts); FPD (+13%, high-end +21%) was the offset.
+- **Key changes:** Q2 snapshot with full disaggregation (IC high-end record streak broke: $71M → $56.7M); AI crowd-out mechanism added to Thesis role; Allen qualification masks in production (initial revenue late FY26) + Korea 8nm installs later FY26; gross margin −560 bps; Q3 guided flat-to-down ($207-215M); Tier 1/Tier 2 framing gap documented (call names Iran/memory/fab-utilization; 10-Q MD&A says only "delayed design releases"); OQ3 rewritten to design-release recovery timing, OQ9 (visibility) resolved-confirmed, OQs renumbered.
+- **Placement:** Unchanged — Layer 4 / photonics_tier outside (Outside Framework 5), re-tested: zero photonics/CPO mentions across both Q2 sources; no escalation trigger fired.
+- **Cross-vault propagation:** None written (Outside-placement default exclusion); the AI-crowd-out + memory-constraint observation noted as a candidate enrichment for [[AI-demand-durability]] / [[HBM-oligopoly]] at their next refreshes (second-order demand-suppression evidence).
+- **Forward watch:** Q3 report (~September) — does the early-May tape-out recovery hold; Allen initial revenue late FY2026; the undefined "additional investment opportunities" capex teaser; G8.6 AMOLED adoption broadening later in calendar 2026.
+- **Key insight:** PLAB is the vault's cleanest second-order AI counterpoint — inside the semiconductor supply chain yet *hurt* by the AI boom near-term, because full fabs and scarce memory delay the design releases photomask demand actually follows.
+
+## S153 — FCEL (FuelCell Energy) — 2026-06-13 — Q2 FY2026 (period ended April 30, 2026)
+
+- **Sources:** Q2 FY2026 10-Q (Tier 1; period ended Apr 30 2026) + Q2 FY2026 earnings call (Tier 2; Jun 8 2026; full transcript, Vic-staged). October 31 fiscal year per Section 2.11 — Q2 FY2026 ≈ calendar Q1/Q2 2026.
+- **Prior baseline:** S47 first-canonical (FY2025 10-K + Q1 FY2026 10-Q + call), May 10 2026.
+- **Headline:** The narrative-vs-proof gap WIDENED — pipeline jumped 1.5 → 4 GW (89% data-center; avg proposal 65 → 130 MW) and Torrington target raised 350 → 500 MW/yr ($200-275M, gated on contracted backlog), while reported revenue fell 5% to $35.6M and a $42.6M Groton impairment doubled the net loss to $78.7M.
+- **Key changes:** Q2 snapshot table with full segment disaggregation; adjusted EBITDA −$17.1M (improved 12%); cash $440.9M built by ~$156M gross ATM dilution in/just after Q2; backlog $1.14B (−9%); narrative-outrunning-proof re-test (all 5 falsification triggers still unmet); Rotterdam carbon-capture modules en route (June delivery); OQ7 (dilution) + OQ12 (segment mix) resolved, OQs renumbered, Groton post-impairment economics added as new OQ11.
+- **Placement:** Unchanged — Layer 4 / energy_power_tier 4 at ~65-70%; criterion 4 (named hyperscaler) still falsified at primary: 4 GW is proposals, zero firm hyperscaler orders.
+- **Cross-vault propagation:** None — no escalation trigger fired; BTM-grid-bypass-workaround chokepoint propagation deferred to a conversion event.
+- **Forward watch:** Management's own dated test — convert proposals to contracted backlog within FY2026 (by Oct 31, 2026); also the ">250% pipeline increase" arithmetic vs the Q1 1.5 GW base (~167% computed), SDCL one-quarter venue silence, and Torrington firm capex commitment.
+- **Key insight:** FCEL is now the vault's cleanest live case of the order-vs-capacity test: management raised capacity targets on proposal momentum but self-gated the spend on contracted backlog — the within-FY2026 conversion goal turns the thesis question into a dated, checkable event.
+
 ## S152 — TSEM (Tower Semiconductor) — 2026-06-13 — Q4 2025 call gap-fill (LIGHT; no new fiscal period)
 
 - **Sources:** Q4/FY2025 earnings call (Tier 2; Feb 11 2026; Vic-staged) — the one source outside the S62 set. The staged 20-F + Q1 2026 call were verified as ALREADY in canon (S62 created the page from them); the freshness-queue 20-F listing was a file-archive gap, now closed (file archived + filename normalized).

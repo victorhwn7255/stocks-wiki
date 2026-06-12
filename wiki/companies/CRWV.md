@@ -61,7 +61,7 @@ The section this ingest exists to source (cross-ref [[hyperscaler-capex]] + [[AI
 
 ## Financing & debt fragility (the canary)
 
-The distinguishing feature versus the five hyperscalers: CoreWeave funds its build with **debt, not operating cash flow**.
+The distinguishing feature versus the five hyperscalers: CoreWeave funds its build with **debt, not operating cash flow**. CRWV is Structure #4 (GPU-collateralized debt) in the cross-vault credit-risk map at [[AI-buildout-who-holds-the-risk]] — including the March 2026 $8.5B non-recourse SPV facility rated A3 (the first investment-grade GPU-backed financing; the rating rides one customer contract plus GPU residual value, not CoreWeave's corporate credit).
 
 - **Total debt principal $25.1B** (Q1 2026), up from $21.6B (Dec-31-2025) and $8.0B (Dec-31-2024) — including a $2.0B 2030 Senior Notes issuance (May 2025) and a $1.75B 2031 Senior Notes issuance (July 2025), plus GPU-backed facilities. FY2025 **interest expense was $1.23B** and rising — the single biggest driver of the net loss.
 - **The reflexive financing — NVIDIA invested $2.0B in CoreWeave's Class A common stock in January 2026** (at $87.20/share; 10-K Subsequent Events) — primary confirmation, from CoreWeave's own filing, of the "supplier funding its customer" circularity the tracker flags (see [[nvidia-supply-chain-commitments]]).

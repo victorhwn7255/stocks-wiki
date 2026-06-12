@@ -6,7 +6,7 @@ photonics_tier: outside
 energy_power_tier: 4
 equipment_tier: outside
 materials_tier: outside
-last_updated: 2026-05-10
+last_updated: 2026-06-13
 ---
 
 # FCEL — FuelCell Energy
@@ -89,6 +89,8 @@ Photonics_tier outside per Section 3.10 four-criterion test. Fuel cell + carbon 
 
 **Verdict: 3-of-4 met at ~65-70% medium-high confidence — slightly below ENS S45 ~70%.** Criterion 4 falsification at primary is structurally honest-verdict-correct framing per Section 2.1; Korea MOUs are pipeline-stage not firm-order-stage.
 
+**Q2 FY2026 re-test (S153): placement unchanged.** Criterion 1 evidence strengthened (pipeline 1.5 → 4 GW, 89% data-center, average proposal 65 → 130 MW per Q2 call) but it is still proposals, not orders; criterion 4 remains falsified — no firm hyperscaler order disclosed at the Q2 10-Q or call. Energy/Power Tier 4 held at ~65-70%; no escalation trigger fires.
+
 **Tier 4 placement methodology durability test:** ENS S45 first canonical methodology successfully extends to FCEL S47 second canonical application. Both placements substantiated at ~65-70% confidence with criterion 4 absence pattern (diversified customer base; MOU/proposal stage rather than firm hyperscaler agreements). Methodology durable at Tier 4 component-supplier scope.
 
 ## Multi-segment AI datacenter exposure honest-verdict assessment
@@ -137,6 +139,8 @@ Per `raw/research/AI-datacenter-power-supply-chain-primer.md` (S39 Tier 3 anchor
 
 S47 primary-source evidence: NONE of 5 falsification triggers met. **Pre-scale narrative-outrunning-proof positioning maintained at honest-verdict.**
 
+**Q2 FY2026 refresh re-test (S153): still NONE of 5 triggers met — and the gap between narrative and proof WIDENED this quarter.** The narrative side strengthened (pipeline 1.5 → 4 GW; Torrington target raised to 500 MW; average proposal size doubled) while the proof side weakened (revenue −5% YoY; $42.6M Groton impairment; ~$156M gross ATM dilution in/just after the quarter; still zero firm hyperscaler orders). The honest counterweights: adjusted EBITDA improved 12% to −$17.1M, and management is imposing its own discipline — capacity expansion gated on contracted backlog, with a stated within-FY2026 proposal-conversion goal that gives trigger #1 a near-term test date.
+
 ## Financial snapshot
 
 Per `CLAUDE.md` v9 Section 4.1 multi-source ingests convention, separate tables per period.
@@ -165,6 +169,24 @@ Per `CLAUDE.md` v9 Section 4.1 multi-source ingests convention, separate tables 
 | Net loss per share | $(0.49) | $(1.42) | beat consensus -$0.68 |
 | Proposal pipeline | **1.5 GW** | (prior baseline) | >80% data center-focused (CEO commentary) |
 | Adjusted EBITDA target | Positive at 100 MW annualized production | (forward-looking) | Implies current production sub-100 MW |
+
+### Q2 FY2026 quarterly (10-Q + earnings call, period ended April 30, 2026)
+
+| Metric | Q2 FY2026 | Q2 FY2025 | YoY |
+|---|---|---|---|
+| Total revenue | **$35.6M** | $37.4M | **−5%** |
+| — Product | $18.0M | $13.0M | +38% (GGE module deliveries; LTSA revenue) |
+| — Service agreements | $4.2M | $8.1M | −49% (no module exchanges in the quarter) |
+| — Generation | $8.7M | $12.1M | −28% (Groton project under repairs → lower output) |
+| — Advanced Technologies | $4.7M | ~$4.2M | ~+13% |
+| Loss from operations | **$77.9M** | $35.8M | worsened — includes **$42.6M non-cash Groton impairment** ($41.5M project assets + $1.1M inventories per 10-Q) |
+| Net loss attributable / per share | $78.7M / $(1.45) | $38.8M / $(1.79) | per-share improvement is share-count-driven (dilution), not operating |
+| Adjusted EBITDA (non-GAAP) | **−$17.1M** | −$19.5M | **improved 12%** — the cleaner operating-trajectory read ex-impairment |
+| Total cash (incl. restricted) | **$440.9M** | $341.8M (Oct 31, 2025) | unrestricted $373.2M vs $278M; built by ATM issuance, not operations |
+| Backlog | **$1.14B** (−9% YoY) | — | product $36.1M + service $155.4M + **generation $928.5M (~15-yr PPAs)** + adv tech $15.4M |
+| Proposal pipeline | **4 GW; 89% data-center** | 1.5 GW at Q1 | call: "more than 250% increase"; avg proposal size 65 → 130 MW in one quarter |
+
+**The quarter's structural story (call + 10-Q):** demand signal up sharply, proof still pending. Pipeline grew to 4 GW of *submitted proposals* (89% data-center; average proposal doubled to 130 MW — CEO: hyperscalers and data-center developers "now engaging" at scale), and management raised the Torrington capacity-expansion target from 350 MW to **500 MW/yr at an estimated $200–275M cost** — but explicitly **gated on contracted backlog** ("we will execute this expansion in strict alignment with contracted backlog… not ahead of the market"). Management's stated goal: convert submitted proposals into contracted backlog **within this fiscal year** — a self-imposed, dated test for Open question #1. Meanwhile the reported quarter went the other way: revenue fell 5%, the Groton (7.4 MW Navy submarine-base microgrid) impairment doubled the net loss, and funding remains equity-driven — **10.9M shares sold via ATM at $9.45 average (~$102M gross) in Q2 + 4.1M shares at $13.31 (~$54M gross) after quarter-end**. Carbon capture moved from concept toward proof: two modules en route to the ExxonMobil Esso Rotterdam refinery, June 2026 delivery expected (call, slide 17). Backlog conversion, not pipeline size, remains the thing to watch.
 
 ### Cross-vault scale comparison context
 
@@ -391,20 +413,27 @@ A6 sub-pattern (g') count update: **2 instances post-S47** (1 post-S45 ENS + 1 S
 
 ## Open questions
 
-1. **Pipeline conversion to firm orders.** 1.5 GW proposal pipeline >80% data center-focused — quarterly conversion rate to firm orders + customer concentration emerging at primary. Future ingest verification candidate.
-2. **Inuverse 100 MW data center MOU firm conversion timing.** Korea data center MOU pending firm contract structure + revenue recognition timeline.
-3. **SDCL framework commercial structure detail.** "Up to 450 MW" framework — verify primary-source disclosure of firm capacity commitment vs aspirational scope; revenue recognition timing.
-4. **12.5 MW standardized power block commercial deployment status.** Post-March 2026 announcement — verify capex + capacity expansion + first deployments at next 10-K filing.
-5. **Torrington manufacturing capacity expansion 100 → 350 MW.** Marketing claim — verify firm capex commitment + timeline at primary.
-6. **Operating profitability inflection trajectory.** Quarterly progression toward break-even adjusted EBITDA; positive adjusted EBITDA target at 100 MW annualized production milestone.
-7. **Equity issuance + dilution risk pattern.** Pre-revenue stock financing pattern verification at next 10-Q + 10-K cycles.
-8. **Section 45Q + 30% ITC policy continuity risk.** OBBBA reinstatement through 2032 + Section 45Q $85/ton — verify primary disclosure of policy-dependent revenue recognition + carbon capture commercial structure.
-9. **Customer concentration archetype determination.** Korea-utility concentration vs diversified-broad-customer-base determination at deeper 10-K Item 1A Risk Factors + Notes read.
-10. **Cross-vault BE-FCEL bilateral mutual non-naming verification.** Does FCEL 10-K name BE as competitor in Item 1 Risk Factors? Does BE 10-K name FCEL? Bilateral status pending verification at next refresh ingest cycle.
-11. **DPP (Dedicated Power Partners) joint venture commercial structure.** Detail verification at deeper 10-K read.
-12. **Q1 FY2026 segment financial mix.** Product Sales / Generation / Service Agreements / Advanced Technology revenue breakdown verification.
+1. **Pipeline conversion to contracted backlog — management's own dated test.** 4 GW submitted proposals (89% data-center; average proposal 130 MW); management's stated goal is conversion to contracted backlog **within fiscal 2026 (by October 31, 2026)** — the Q4 FY2026 report is the pass/fail venue. Also reconcile the Tier 2 arithmetic: the call characterized growth as "more than 250%," but against the Q1 call's 1.5 GW figure the increase computes to ~167% — was the Q1 base measured differently?
+2. **Inuverse 100 MW AI Daegu Data Center MOU firm conversion.** Q2 call cites "progress under our MOU" — still MOU-stage; pending firm contract structure + revenue recognition timeline.
+3. **SDCL framework commercial structure.** "Up to 450 MW" framework was NOT mentioned at the Q2 FY2026 call — one quarter of venue silence; verify whether the framework is producing pipeline entries or going quiet.
+4. **12.5 MW FuelCell Energy Block first deployments.** Productized this quarter (Q2 call, slide 7) — verify first commercial deployments + associated capex at next filings.
+5. **Torrington 350 → 500 MW expansion firm commitment.** Target raised at the Q2 call with $200-275M cost estimate, explicitly gated on contracted backlog — verify firm capex commitment + phasing at primary when (if) backlog conversion lands.
+6. **Operating profitability inflection trajectory.** Adjusted EBITDA −$17.1M (improved 12% YoY); positive-adjusted-EBITDA target at 100 MW annualized production unchanged. Ongoing ATM funding (~$156M gross in/just after Q2) remains the bridge — watch burn vs dilution each quarter.
+7. **Section 45Q + 30% ITC policy continuity risk.** OBBBA reinstatement through 2032 + Section 45Q $85/ton — verify primary disclosure of policy-dependent revenue recognition + carbon capture commercial structure (Rotterdam modules delivering June 2026 make this live).
+8. **Customer concentration archetype determination.** Korea-utility concentration vs diversified-broad-customer-base determination at deeper 10-K Item 1A Risk Factors + Notes read.
+9. **Cross-vault BE-FCEL bilateral mutual non-naming verification.** Does FCEL 10-K name BE as competitor? Does BE 10-K name FCEL? Bilateral status pending at next annual-filing read (Q2 10-Q does not name Bloom).
+10. **DPP (Dedicated Power Partners) joint venture commercial structure.** Not mentioned at the Q2 call; detail verification at deeper 10-K read.
+11. **Groton project post-impairment economics.** $42.6M impairment taken; management plans to upgrade the 7.4 MW Navy submarine-base microgrid with current-generation modules — verify upgrade capex, timeline, and Generation-segment output restoration.
 
 ## Source audit notes
+
+### FCEL Q2 FY2026 earnings call (Tier 2; June 8, 2026; full transcript verified)
+
+Few/Bishop tone unchanged — measured-strategic, "proof over promise" carried forward; not combative. The call leads with the demand narrative (4 GW pipeline; hyperscalers "now engaging"; Torrington raise to 500 MW) while the reported quarter (revenue −5%, impairment-doubled net loss) gets factual but brief treatment — a mild Tier 2 emphasis asymmetry worth watching rather than a framing gap (the 10-Q and call disclose the same facts). Notable discipline signal: management volunteered the gating language ("strict alignment with contracted backlog… not ahead of the market") on the capacity raise unprompted. The ">250% pipeline increase" claim does not tie cleanly to the Q1 call's 1.5 GW figure (computes to ~167%) — flagged at Open question #1. SDCL and DPP both unmentioned — venue silence noted.
+
+### FCEL 10-Q Q2 FY2026 (Tier 1, period ended April 30, 2026; filed June 2026)
+
+Quarterly filing. Revenue $35.6M −5% YoY with full segment disaggregation (product $18.0M +38% / service $4.2M −49% / generation $8.7M −28% / adv tech $4.7M); $42.6M Groton impairment ($41.5M project assets + $1.1M inventories); loss from operations $77.9M; net loss attributable $78.7M / $(1.45); total cash $440.9M ($373.2M unrestricted) vs $341.8M Oct 31; backlog $1.14B −9% YoY; ATM issuance 10.9M shares @ $9.45 average (~$102M gross) + post-quarter 4.1M @ $13.31 (~$54M gross). Going-concern-adjacent funding posture remains equity-market-dependent.
 
 ### FCEL 10-K FY2025 (Tier 1, fiscal year ended October 31, 2025; filed December 18, 2025)
 
@@ -436,7 +465,23 @@ Most strategically substantive source for Session 47. Full Q&A verified per Insi
 
 **Analyst silence observations:** Detailed Q&A analysis pending Stop 2 deeper read.
 
+<!-- LATEST-ALPHA:START -->
+## ⚠️ Latest alpha — unverified, between-filings (as of 2026-06-13)
+
+*Tier 3/4 discovery — NOT canonical. Recent 8-K / shelf / news, to verify at the next primary source. Full detail + sources: [discovery note](../../raw/notes/latest-alpha/2026-06-13_FCEL_recent-developments.md). Items graduate into canon (or are pruned) at the next 10-Q ingest.*
+
+- **Fresh S-3ASR automatic shelf filed the SAME DAY as Q2 earnings** (SEC, Jun 8) — Tier 1 · the ATM dilution machinery renewed, not retired, while management pitched the 4 GW pipeline. `[verify: ATM activity + share count, Q3 FY2026 10-Q equity footnote]`
+- **The Street now trades the page's own dated test** (news, Jun 9) — Tier 4 · Canaccord upgrade thesis = a significant data-center contract before fiscal year-end (Oct 31) — the conversion event is consensus-anticipated, no longer a quiet watch item. `[verify: any contracted-backlog addition, Q3 call/8-K]`
+- **New director John Livingston** (8-K, May 19) — Tier 1 · cybersecurity entrepreneur + McKinsey veteran; enterprise-buyer-credibility read is inferable at most — 8-K states no arrangements. `[verify: committee roles, next proxy]`
+- **SDCL cross-venue asymmetry** (IR deck, May 8) — Tier 2 · the "up to 450 MW" data-center collaboration still lives in the corporate deck but went unmentioned at the Jun 8 call; silence ≠ retreat while the deck carries it. `[verify: SDCL status, Q3 call]`
+- **No order, contract, or named customer appeared anywhere in the ~90-day window** — the honest counterweight to the pipeline narrative (already in canon).
+- Related: [[BE]] (the converted comparable at the same BTM chokepoint) · [[BTM-grid-bypass-workaround]]
+
+*Signal only (not weighted): shares +10% Jun 9 on the Canaccord Hold→Buy upgrade (price target $12→$30) — the tape is pricing the contract before it exists.*
+<!-- LATEST-ALPHA:END -->
+
 ## Change log
 
+- **2026-06-13 (Session 153 — Q2 FY2026 refresh; 10-Q period ended April 30, 2026 + June 8 earnings call):** Added Q2 FY2026 snapshot (revenue $35.6M −5%; $42.6M Groton impairment; adjusted EBITDA −$17.1M improved 12%; cash $440.9M; backlog $1.14B; pipeline 4 GW / 89% data-center; Torrington target raised to 500 MW gated on contracted backlog) + narrative-outrunning-proof re-test (all 5 falsification triggers still unmet; gap widened) + Q2 source audit notes. Placement unchanged: Layer 4 / Energy/Power Tier 4 at ~65-70%; criterion 4 still falsified (zero firm hyperscaler orders). OQ7 resolved — dilution pattern confirmed (~$156M gross ATM in/just after Q2); OQ12 resolved — segment mix disclosed at Q2 10-Q disaggregation; remaining questions renumbered, with the within-FY2026 backlog-conversion goal now the dated test at OQ1.
 - **2026-05-26 (in-place cross-vault adjacency note per Vic instruction; not counted as separate session):** 4-Tier-3-report power-semi sub-domain substantiation flagged "energy storage integrated directly into 800VDC path" as catalyst per Tier 3 Report 4 best-catalysts-to-monitor framing. FCEL MCFC fuel-cell technology stack carries DC-native energy generation profile structurally adjacent to 800VDC architecture transition substrate per [[power-semis]] theme Section 12.4 framing. Light cross-vault adjacency only; no content edits beyond cross-reference.
 - **2026-05-10 (Session 47):** Created from FCEL 10-K FY2025 (Tier 1, period ended October 31, 2025), FCEL 10-Q Q1 FY2026 (Tier 1, period ended January 31, 2026), FCEL Q1 FY2026 earnings call (Tier 2, March 9, 2026; full transcript verified — distinct from S45 ENS source unavailability per Section 2.2). **Second canonical Energy/Power Tier 4 placement** post-[[ENS]] Session 45 first canonical (codified Session 46 methodology). **Second non-calendar-fiscal-year US-domiciled filer canonical placement** (October 31 fiscal year-end; first instance ENS S45 March 31). Multi-domain frontmatter applied per `CLAUDE.md` v9 Section 3.2 (`layer: 4` + `photonics_tier: outside` + `energy_power_tier: 4` + `equipment_tier: outside` + `materials_tier: outside`). **Energy/Power Tier 4 substantiated at medium-high confidence (~65-70%)** — slightly below ENS S45 ~70% due to primer S39 narrative-outrunning-proof framing caveat + pipeline-vs-firm-order pre-scale positioning. Criterion 4 (named hyperscaler concentration) falsification at primary — Korea MOUs (Inuverse 100 MW) are MOUs not firm hyperscaler agreements; SDCL "up to 450 MW" framework not firm capacity. **Caveat #9 8th canonical Layer 4-5 straddling test outcome: Layer 4 maintained** per revenue-mix-required upgrade discipline; future tier-revisit triggers pre-registered. **CRITICAL kickoff hypothesis falsification per Section 4.4 + A6 sub-pattern (g'):** Section 45X production tax credit eligibility FALSIFIED at primary — FCEL applicable credits are Section 45Q ($85/ton carbon capture) + 30% ITC (OBBBA reinstated through 2032), NOT Section 45X. **FCEL is NOT 6th cross-vault Section 45X participant** (vs LEU + BWXT + CCJ-Westinghouse + BE + ENS = 5). A6 (g') count: 1 (post-S45 ENS) + 1 (S47 Section 45X falsification) = **2 instances post-S47**. **Section 4.6 codified kickoff drafting source discipline ROI VALIDATED at first canonical application** — S47 falsification rate (1) substantively LOWER than S45 ENS scope (6); ~83% reduction in kickoff drafting factual variance. **Narrative-outrunning-proof framing per primer S39 Tier 3 applied honestly** — pre-scale commercial inflection positioning; 1.5 GW pipeline = PROPOSALS not firm orders; Q1 FY2026 $30.5M revenue ≈ 13% of BE Q1 2026 $751M; cumulative workforce reductions ~33% over 7 months. **Vic-requested BE comparison subsection (~30-40 lines; 7 dimensions)** delivered as substantive cross-vault analytical product — technology stack (MCFC vs SOFC); commercial scale (1:25 ratio favoring BE); customer concentration archetype; hyperscaler customer disclosure (BE substantiated vs FCEL pending); Aschenbrenner thesis fit (BE substantiated vs FCEL pending); financial structure (BE post-inflection vs FCEL pre-inflection); Layer 5 upgrade triggers. Korea momentum verified at primary (GGE 58.8 MW + KOSPO 20 MW + Noeul 20 MW + Inuverse 100 MW MOU + CGN initial deliveries + POSCO legacy + ExxonMobil Esso Rotterdam carbon capture). **CEO combativeness count remains 2** — Jason Few "proof over promise" measured-strategic framing not combative. **Tier 3 source coverage gap third instance** (after BE S40 + ENS S45) — three-instance precedent reinforces Tranche 2 codification candidate. Cross-references propagated to [[BE]] (FCEL as MCFC alternative competitor at BTM grid-bypass workaround chokepoint terrain — light cross-reference per Vic decision Option A; bilateral mutual non-naming verification candidate at future BE refresh ingest). **Wikilink-clean streak: 31 sessions clean post-Session 47** (extended from 30 post-Session 46; zero forward [[FCEL]] wikilinks pre-existing — clean creation; new [[FCEL]] cross-reference added to [[BE]] competitor list).

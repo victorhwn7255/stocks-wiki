@@ -1,7 +1,7 @@
 ---
-type: theme
-tickers: [ETN, VRT, GEV, TSM, NVDA, AVGO, MRVL, ALAB, AAOI, MP, LSCC, TDY, AVAV, KTOS, HARMONIC, SANHUA, TUOPU, NOVT, VPG]
-last_updated: 2026-06-09
+type: tracker
+tickers: [ETN, VRT, GEV, TSM, NVDA, AVGO, MRVL, ALAB, AAOI, FCEL, MU, SNDK, CSCO, PLAB, CRWV, NBIS, ORCL, AMZN, MP, LSCC, TDY, AVAV, KTOS, HARMONIC, SANHUA, TUOPU, NOVT, VPG]
+last_updated: 2026-06-13
 ---
 
 # Forward-Edge Tracker — Consensus vs. Vault View
@@ -11,6 +11,8 @@ This is the vault's **forward-edge layer**: a curated, cross-domain tracker of t
 **Why this layer exists.** Primary filings (10-K/10-Q/call) are backward-looking and largely priced by the time they're filed. The edge is not being *first* on public news (a speed game the vault can't win) — it's having a *better structural read* of public information: seeing where a chokepoint is more durable, or a constraint more binding, or a narrative more fragile, than consensus assumes.
 
 **Discipline rule (load-bearing).** "Consensus" is described as a **structural narrative** or via an **observable mechanism** (lead times, interconnection queues, bond yields, order-vs-capacity) — **never** as stock price, market cap, valuation multiples, or analyst price targets (those stay "signal only" in the quarantined `latest-alpha` blocks). Describe-don't-recommend; a reader cannot tell what is owned. Honest-verdict: if the vault view is weak or consensus is right, say so — do not manufacture a contrarian take. **Entry contract: every entry must carry a catalyst AND a falsifier.** No falsifier means it's a hot take, not an entry.
+
+**Sibling register.** [[what-could-go-wrong]] is the vault-level risk register (CLAUDE.md Section 3.20): it holds the **consensus-aligned** risks this page's consensus-divergence contract cannot — where the vault and the market could be wrong together. The two pages may share tripwires but answer different questions (where the vault *differs* vs. where the vault could be *wrong*).
 
 ## The three layers (filings vs. alpha)
 
@@ -52,6 +54,33 @@ Layer 2 *feeds* the catalysts here; Layer 1 *verifies or falsifies* an entry (a 
 - **Catalyst / re-rate trigger (the one genuinely un-priced lever):** merchant **laser / ELS revenue** appearing in a 10-Q — the in-house InP laser becoming a standalone CPO/ELS product (a Layer-5 → Layer-4 tier-upgrade), so far evidenced only at conference (OFC 25dBm ELSFP + a live 6.4T on-board-optics demo; a ~350% InP-fab expansion to 2027). *(latest-alpha + the next refresh feed this)*
 - **Falsifier (of the cautious vault view):** that merchant laser/ELS line becomes material AND AAOI rides CPO as a *laser supplier* rather than a displaced *module maker* — re-rating it toward a differentiated Layer-4 component-with-IP and vindicating the "winner" framing. (Conversely the vault view is confirmed if CPO eats the pluggable core while merchant laser stays ~0% and dilution continues — per [[AAOI]] Open questions #4 / #5 / #6.)
 - **Last moved:** 2026-06-09 (created).
+
+### [[FCEL]] — market now prices the data-center contract before it exists (inverse divergence, 2nd instance)
+**Subject:** [[FCEL]] — **Durability:** the BTM grid-bypass terrain is real (demand pull from grid-constrained data centers, high) but FCEL's own position on it is pre-conversion — narrative-outrunning-proof, the weakest seat at the [[BTM-grid-bypass-workaround]] chokepoint (vs [[BE]] converted, [[CAT]]/[[GEV]] shipping at scale)
+
+- **Consensus (Tier 3/4):** post-Q2-FY2026, the narrative flipped bullish — sell-side upgrades and the retail conversation now treat a significant data-center contract before fiscal year-end as the expected outcome, with "the next Bloom Energy" as the standing frame; the proposal pipeline (4 GW, 89% data-center) is read as demand already secured.
+- **Vault view (less bullish than consensus):** the order-vs-capacity test applied to FCEL itself says the conversion is an open question, not a likelihood — 4 GW is *submitted proposals* while contracted backlog FELL 9% and revenue fell 5%; zero firm hyperscaler orders at primary (criterion 4 falsified since S47); the funding model is ATM equity issuance, with the shelf machinery renewed the same day as the Q2 earnings; and the capacity chicken-and-egg is structural — the average proposal (130 MW) exceeds a full year of current production (~100 MW/yr), while the expansion that would fix it is self-gated on the very backlog that hasn't arrived. Even a landed contract starts a BE-path test, not a BE outcome (1:25 scale gap; buyer alternatives shipping today). The market is pricing the contract before it exists. (per [[FCEL]] Thesis role + narrative-outrunning-proof section + Q2 FY2026 snapshot + [[BTM-grid-bypass-workaround]])
+- **Catalyst / timeline:** management's own dated test — convert submitted proposals into contracted backlog **within fiscal 2026 (by October 31)**; interim read at the Q3 FY2026 report (~September); the Q4 report (~December) is pass/fail. *(latest-alpha feeds this; the 2026-06-13 run found no contract anywhere in the 90-day window)*
+- **Falsifier:** a signed, material data-center contract (named counterparty or sized capacity) by fiscal year-end with backlog turning up — the conversion is real, the cautious read was wrong, and FCEL moves onto the BE trajectory test. Conversely the vault view is confirmed if FY2026 closes with the pipeline still unconverted while ATM dilution continues — at which point "next Bloom" was a narrative, not a thesis. (per [[FCEL]] Open question #1)
+- **Last moved:** 2026-06-13 (created, at the S153 Q2 FY2026 refresh + same-day latest-alpha/last30days runs).
+
+### Memory shortage — market prices the boom, not the cycle clock
+**Subjects:** [[MU]] · [[SNDK]] · the memory-tax victims ([[CSCO]] · [[PLAB]] · device makers) — **Durability:** the HBM reallocation is structural near-term (cleanroom physics, 12-18 months); the standard-memory windfall is cyclical by precedent
+
+- **Consensus (Tier 3/4):** memory tightness is read as a memory-makers' bull story with a long runway — sell-side talk of the rally extending "past 2028"; the shortage framed as proof of durable AI demand; the shipment damage (IDC: smartphones −12.9%, PCs −11.3% in 2026) treated as a side note.
+- **Vault view (the cycle-clock half is unpriced):** the same mechanism that makes the boom is already running the bust sequence — the **spot-vs-contract divergence** (DDR5 spot/retail cracked ~30% in segments by late March while contract rose +50-63%) shows the consumer demand leg breaking under the price tax; MLCC channels show documented double-booking with ODM orders falling; the 2017-18 precedent (Yageo −34.5% in the unwind) is the template. The shortage is real AND it is demand-destroying — both halves are true, and the second is not in the narrative. (per [[memory-shortage-winners-losers]] + [[HBM-oligopoly]] + [[MLCC-oligopoly]])
+- **Catalyst / timeline:** MU Q3 FY2026 (~June 25, 2026) pricing/bit-growth language; Murata Q1 actuals (~July); TrendForce Q3-Q4 2026 contract-price trajectory — contract following spot down is the clock striking.
+- **Falsifier:** contract prices keep rising into 2027 with shipment forecasts *improving* (demand absorbing the tax) — then the long-runway consensus was right and the cycle-clock read was early. Conversely confirmed if contract prices roll while double-booked channel inventory unwinds. (per [[memory-shortage-winners-losers]] falsifiers #1/#2/#4)
+- **Last moved:** 2026-06-13 (created, with the [[memory-shortage-winners-losers]] theme).
+
+### AI financing — market reads the mega-deals as demand proof; the funding regime already flipped
+**Subjects:** [[AVGO]] · [[NVDA]] · [[CRWV]] · [[NBIS]] · [[ORCL]] · [[AMZN]] — **Durability:** structural while credit stays cheap; by construction a credit-cycle claim (the lowest-durability anchor in the AI section)
+
+- **Consensus (Tier 3/4):** every mega-deal headline (Anthropic racks, Stargate, neocloud capacity) is read as proof of insatiable AI demand; the financing behind the deals is treated as plumbing; lenders price AI credit identically to non-AI credit (the BIS spread finding — the market's own revealed consensus).
+- **Vault view (the leverage half is unpriced):** the funding regime has already flipped — big-five free cash flow is BELOW capex (BIS, Jan 2026) and ~$1.5T of the 2025-28 build needs outside capital — so part of the "demand" is simultaneously someone's credit exposure: AVGO carries a $29B backstop on its largest custom-silicon story, NVDA part-funds its own buyers, Amazon is lender+landlord+shareholder to one counterparty, and the IMF quantifies a ~$40B circularity premium in the AI circle's market cap. Either lenders are underpricing the risk or equity is overpricing the cash flows — one of the two markets is wrong. (per [[AI-buildout-who-holds-the-risk]] + `raw/research/ai-buildout-credit-risk-report.md`)
+- **Catalyst / timeline:** AVGO Q3 FY2026 10-Q backstop ceiling (~Sept); CRWV vs S&P's FFO/debt-12% threshold; the BIS-style AI-vs-non-AI spread differential opening; any first drawn/impaired/pulled structure.
+- **Falsifier:** AI earnings arrive on schedule and FCF climbs back above capex (the flip reverses — financing was bridge, not crutch); or a full GPU depreciation cycle passes with credit losses near zero (the lenders were right). Honest counterweight already on record: as of June 2026 NOTHING has broken — no drawn backstop, no impairment, no failed financing.
+- **Last moved:** 2026-06-13 (created, with the [[AI-buildout-who-holds-the-risk]] theme).
 
 ---
 
@@ -105,5 +134,9 @@ Forward-edge entries are the vault's own variant views, seeded 2026-06-09 from t
 
 ## Change log
 
+- **2026-06-13 (S157 update):** Added the AI-financing entry to the AI section (consensus reads mega-deals as demand proof; vault view = the funding regime flipped — FCF below capex, ~$1.5T external — and one of two markets is mispricing the risk; catalysts AVGO Q3 ceiling / CRWV S&P thresholds / the spread differential). Created alongside the [[AI-buildout-who-holds-the-risk]] theme. 10 entries total; tickers +CRWV +NBIS +ORCL +AMZN.
+- **2026-06-13 (S156 update):** Added the memory-shortage entry to the AI section (consensus prices the memory boom's runway; vault view = the cycle clock is already running via the spot-vs-contract divergence + documented double-booking; catalysts MU June 25 / Murata July / Q3-Q4 contract prices). Created alongside the [[memory-shortage-winners-losers]] theme. 9 entries total; tickers +MU +SNDK +CSCO +PLAB.
+- **2026-06-13 (update):** Added the [[FCEL]] entry to the AI section — the 2nd *inverse* divergence (after AAOI): post-Q2 consensus prices a data-center contract before fiscal year-end as the expected outcome; vault view = order-vs-capacity applied to FCEL itself (proposals ≠ orders, backlog falling, ATM-funded, capacity chicken-and-egg), with management's own Oct 31 conversion deadline as the dated catalyst. 8 entries total; tickers +FCEL.
+- **2026-06-12 (S154):** Moved to `wiki/trackers/` (`type: tracker`) at the CLAUDE.md v10.0 folder reorganization; added the [[what-could-go-wrong]] sibling-register cross-reference. No entry content changed.
 - **2026-06-09 (update):** Added the [[AAOI]] entry to the AI section — an *inverse* divergence (market prices a durable AI-optics winner; vault view = a fragile, minimally-differentiated Layer-5 assembler whose one un-priced lever is the unproven laser→merchant-CPO/ELS tier-upgrade). 7 entries total; tickers +AAOI.
 - **2026-06-09 (created):** New cross-vault forward-edge tracker (Layer 3 / consensus-divergence) per CLAUDE.md §3.18. Seeded with 6 high-conviction entries across the three domains (AI: power>compute, custom-silicon→TSM; Humanoid: investor-access lens, order-vs-capacity gamble; Defense: chokepoints>platforms, FY2027 request-not-law), each with a catalyst + falsifier traced to the human-owned theses. Inbound links added from related theme/chokepoint pages. No thesis/frameworks files touched.

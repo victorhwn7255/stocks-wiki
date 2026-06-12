@@ -32,7 +32,7 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` Section 3
 | [CSCO](wiki/companies/CSCO.md) | CSCO | 3 | 4 | — | — | — | — | — | 2026-05-29 |
 | [ENS](wiki/companies/ENS.md) | ENS | 4 | outside | — | 4 | outside | outside | — | 2026-05-29 |
 | [ETN](wiki/companies/ETN.md) | ETN | 4 | outside | — | 1 | outside | — | — | 2026-05-26 |
-| [FCEL](wiki/companies/FCEL.md) | FCEL | 4 | outside | — | 4 | outside | outside | — | 2026-05-10 |
+| [FCEL](wiki/companies/FCEL.md) | FCEL | 4 | outside | — | 4 | outside | outside | — | 2026-06-13 |
 | [FLEX](wiki/companies/FLEX.md) | FLEX | 6 | outside | — | 3 | outside | — | — | 2026-05-29 |
 | [FLNC](wiki/companies/FLNC.md) | FLNC | 4 | outside | — | 3 | outside | outside | — | 2026-05-13 |
 | [FN](wiki/companies/FN.md) | FN | 6 | 4 | — | — | — | — | — | 2026-05-27 |
@@ -67,7 +67,7 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` Section 3
 | [ONTO](wiki/companies/ONTO.md) | ONTO | 3-4 | 4 | — | — | — | — | — | 2026-05-11 |
 | [ORCL](wiki/companies/ORCL.md) | ORCL | outside | outside | outside | outside | outside | outside | — | 2026-06-03 |
 | [OUST](wiki/companies/OUST.md) | OUST | outside | outside | outside | outside | outside | outside | outside | 2026-06-06 |
-| [PLAB](wiki/companies/PLAB.md) | PLAB | 4 | outside | — | — | — | — | — | 2026-04-28 |
+| [PLAB](wiki/companies/PLAB.md) | PLAB | 4 | outside | — | — | — | — | — | 2026-06-13 |
 | [PLTR](wiki/companies/PLTR.md) | PLTR | outside | outside | outside | outside | outside | outside | — | 2026-06-02 |
 | [POWI](wiki/companies/POWI.md) | POWI | 4 | outside | outside | 3 | outside | outside | — | 2026-05-25 |
 | [SANHUA](wiki/companies/SANHUA.md) | SANHUA | outside | — | — | outside | — | — | — | 2026-06-06 |
@@ -88,6 +88,8 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` Section 3
 | [XFAB](wiki/companies/XFAB.md) | XFAB | 2 | 4 | — | 4 | outside | outside | — | 2026-05-28 |
 | [ZHAOWEI](wiki/companies/ZHAOWEI.md) | ZHAOWEI | outside | — | — | — | — | — | — | 2026-06-08 |
 | [ZHONGDA](wiki/companies/ZHONGDA.md) | ZHONGDA | outside | — | — | — | — | — | — | 2026-06-06 |
+
+
 
 
 
@@ -126,18 +128,24 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` Section 3
 | [AI-agentic-CPU-orchestration-reemergence](wiki/themes/AI-agentic-CPU-orchestration-reemergence.md) | ARM, AMD, INTC, NVDA, GOOGL, AMZN, META, ORCL | 2026-06-03 |
 | [power-semis](wiki/themes/power-semis.md) | NVTS, POWI, VICR, ON, MPWR | 2026-05-29 |
 | [software-AI-moat-durability](wiki/themes/software-AI-moat-durability.md) | MSFT, NOW, CRM, WDAY, SNOW, DDOG, PLTR, CRWD, ZS, PANW, ADBE, INTU, TEAM, SAP | 2026-06-01 |
-| [hyperscaler-capex](wiki/themes/hyperscaler-capex.md) | MSFT, GOOGL, AMZN, META, ORCL, CRWV, NBIS | 2026-06-03 |
 | [defense-drone-supply-chain](wiki/themes/defense-drone-supply-chain.md) | MP, LSCC, AVAV, KTOS, AMPX | 2026-06-04 |
 | [drone-platform-commoditization](wiki/themes/drone-platform-commoditization.md) | AVAV, KTOS | 2026-06-04 |
-| [china-exposure](wiki/themes/china-exposure.md) | TSM, NVDA, AVGO, AMD, MRVL, ALAB, MU, ARM, INTC, AAOI, AXTI, LITE, COHR, CRDO, ONTO, COHU, VECO, PLAB, TSEM, MKSI, MPWR, NVTS, POWI, ON, SOI, SNDK, FN, GLW, FLEX, VICR, NOK, ENS, XFAB, AEHR, MOD, MP, TDY, AMPX, AVAV, LSCC, KTOS, MRCY, INOD, NOVT, VPG, OUST, SANHUA, TUOPU, SHUANGHUAN, ZHONGDA, SLING, ZHAOWEI, HENGLI | 2026-06-08 |
 | [AI-data-supply-chain](wiki/themes/AI-data-supply-chain.md) | INOD | 2026-06-05 |
 | [humanoid-robot-value-chain](wiki/themes/humanoid-robot-value-chain.md) | MP, NVDA, INTC, INOD, NOVT, VPG, OUST, SANHUA, TUOPU, SHUANGHUAN, ZHONGDA, HARMONIC, SLING, ZHAOWEI, HENGLI | 2026-06-08 |
-| [forward-edge-tracker](wiki/themes/forward-edge-tracker.md) | ETN, VRT, GEV, TSM, NVDA, AVGO, MRVL, ALAB, AAOI, MP, LSCC, TDY, AVAV, KTOS, HARMONIC, SANHUA, TUOPU, NOVT, VPG | 2026-06-09 |
-| [MLCC-oligopoly](wiki/themes/MLCC-oligopoly.md) | NVDA | 2026-06-10 |
+| [MLCC-oligopoly](wiki/themes/MLCC-oligopoly.md) | NVDA | 2026-06-13 |
+| [memory-shortage-winners-losers](wiki/themes/memory-shortage-winners-losers.md) | MU, SNDK, PLAB, CSCO, NVDA, META, AVGO | 2026-06-13 |
+| [AI-buildout-who-holds-the-risk](wiki/themes/AI-buildout-who-holds-the-risk.md) | AVGO, NVDA, CRWV, NBIS, ORCL, AMZN, META, MSFT, GOOGL, BE, CSCO | 2026-06-13 |
 
-## Layers
+## Trackers
 
-*No layer pages yet.*
+Cross-vault status-bearing pages per CLAUDE.md Section 3.20 — updated by propagation when other pages' ingests touch a tracked signal; a stale tracker is a defect.
+
+| Page | Related Tickers | Last Updated |
+|------|-----------------|--------------|
+| [forward-edge-tracker](wiki/trackers/forward-edge-tracker.md) | ETN, VRT, GEV, TSM, NVDA, AVGO, MRVL, ALAB, AAOI, MP, LSCC, TDY, AVAV, KTOS, HARMONIC, SANHUA, TUOPU, NOVT, VPG | 2026-06-12 |
+| [hyperscaler-capex](wiki/trackers/hyperscaler-capex.md) | MSFT, GOOGL, AMZN, META, ORCL, CRWV, NBIS | 2026-06-03 |
+| [china-exposure](wiki/trackers/china-exposure.md) | TSM, NVDA, AVGO, AMD, MRVL, ALAB, MU, ARM, INTC, AAOI, AXTI, LITE, COHR, CRDO, ONTO, COHU, VECO, PLAB, TSEM, MKSI, MPWR, NVTS, POWI, ON, SOI, SNDK, FN, GLW, FLEX, VICR, NOK, ENS, XFAB, AEHR, MOD, MP, TDY, AMPX, AVAV, LSCC, KTOS, MRCY, INOD, NOVT, VPG, OUST, SANHUA, TUOPU, SHUANGHUAN, ZHONGDA, SLING, ZHAOWEI, HENGLI | 2026-06-08 |
+| [what-could-go-wrong](wiki/trackers/what-could-go-wrong.md) | MSFT, NVDA, AVGO | 2026-06-12 |
 
 ## Relationships
 
