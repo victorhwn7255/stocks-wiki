@@ -75,7 +75,7 @@ This is no longer just a narrative. **IMF staff attribute ~7 of the ~12 percenta
 
 1. **AVGO backstop ceiling at the Q3 FY2026 10-Q (~September 2026).** Does $29B grow as later tranches deploy? Does any "drawn" or impairment language appear? (Shared trigger with [[what-could-go-wrong]] Entry 5.)
 2. **CRWV against S&P's pre-registered thresholds.** FFO/debt 12% and CFO/debt 10% (now upgrade triggers after the April 2026 positive outlook); internal-control remediation by end-2026; the secured-vs-unsecured spread gap as the market's live vote on contract-vs-company quality.
-3. **The spread differential.** Does the BIS AI-vs-non-AI loan pricing gap (currently ~zero) open up? A widening = lenders starting to price the risk; the warning light turning from amber to red.
+3. **The spread differential.** Does the BIS AI-vs-non-AI loan pricing gap (currently ~zero) open up? A widening = lenders starting to price the risk; the warning light turning from amber to red. **Now tracked operationally at [[AI-credit-spread-watch]]** (four instrument layers + `scripts/spread_watch.py`).
 4. **Depreciation-life changes in hyperscaler 10-Ks.** Any extension of useful lives (flattering current earnings while the IMF scenario worsens) or — more honest — shortening.
 5. **The frontier-lab funding cadence.** Anthropic/OpenAI raise announcements vs their commitment schedule; AMZN's $20B facility drawdowns appearing in Amazon's 10-Qs (compute-delivery-milestone-linked).
 6. **Data-center vacancy/overcapacity data + electricity-supply shortfalls** — the FSB's two named cascade triggers; feeds from [[transformer-supply]] + [[hyperscaler-capex]].

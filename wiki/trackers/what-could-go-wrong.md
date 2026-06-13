@@ -62,7 +62,7 @@ The single place that tracks the factors that could make the three theses, the f
 - **Risk:** the build-out is increasingly funded by debt, leases, and SPV structures rather than operating cash flow; a credit-market event halts construction with demand intact — the *involuntary* version of Risk 1 (a voluntary capex cut) and the system-wide version of Risk 5 (NVDA-specific circularity).
 - **Domain(s):** AI (all sub-domains); consensus-aligned.
 - **Canonical home:** [[AI-buildout-who-holds-the-risk]] (the structures→loss-bearers map + the BIS/IMF/FSB sizing); the financing-shift dynamic also tracked at [[hyperscaler-capex]].
-- **Tripwire:** a failed or pulled financing at a major datacenter developer or neocloud; spreads on AI-datacenter debt widening sharply; an SPV impairment or lease default surfacing in primary disclosures; a hyperscaler citing cost of capital as a reason to slow builds.
+- **Tripwire:** a failed or pulled financing at a major datacenter developer or neocloud; spreads on AI-datacenter debt widening sharply (instrumented at [[AI-credit-spread-watch]]); an SPV impairment or lease default surfacing in primary disclosures; a hyperscaler citing cost of capital as a reason to slow builds.
 - **Status:** NOT FIRED. Financing markets remain open per the home page's baseline — the documented raises and structures are completing on schedule.
 - **Last checked:** 2026-06-12 (S154).
 

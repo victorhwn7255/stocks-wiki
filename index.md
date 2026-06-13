@@ -135,6 +135,7 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` Section 3
 | [MLCC-oligopoly](wiki/themes/MLCC-oligopoly.md) | NVDA | 2026-06-13 |
 | [memory-shortage-winners-losers](wiki/themes/memory-shortage-winners-losers.md) | MU, SNDK, PLAB, CSCO, NVDA, META, AVGO | 2026-06-13 |
 | [AI-buildout-who-holds-the-risk](wiki/themes/AI-buildout-who-holds-the-risk.md) | AVGO, NVDA, CRWV, NBIS, ORCL, AMZN, META, MSFT, GOOGL, BE, CSCO | 2026-06-13 |
+| [AI-implementation-deployment-layer](wiki/themes/AI-implementation-deployment-layer.md) | ACN, IBM, EPAM, GLOB, CTSH, INFY, PLTR, CRM, MDB, DDOG, PANW, OKTA, CRWD, ZS | 2026-06-13 |
 
 ## Trackers
 
@@ -142,10 +143,11 @@ Cross-vault status-bearing pages per CLAUDE.md Section 3.20 — updated by propa
 
 | Page | Related Tickers | Last Updated |
 |------|-----------------|--------------|
-| [forward-edge-tracker](wiki/trackers/forward-edge-tracker.md) | ETN, VRT, GEV, TSM, NVDA, AVGO, MRVL, ALAB, AAOI, MP, LSCC, TDY, AVAV, KTOS, HARMONIC, SANHUA, TUOPU, NOVT, VPG | 2026-06-12 |
+| [forward-edge-tracker](wiki/trackers/forward-edge-tracker.md) | ETN, VRT, GEV, TSM, NVDA, AVGO, MRVL, ALAB, AAOI, FCEL, MU, SNDK, CSCO, PLAB, CRWV, NBIS, ORCL, AMZN, MP, LSCC, TDY, AVAV, KTOS, HARMONIC, SANHUA, TUOPU, NOVT, VPG | 2026-06-13 |
 | [hyperscaler-capex](wiki/trackers/hyperscaler-capex.md) | MSFT, GOOGL, AMZN, META, ORCL, CRWV, NBIS | 2026-06-03 |
 | [china-exposure](wiki/trackers/china-exposure.md) | TSM, NVDA, AVGO, AMD, MRVL, ALAB, MU, ARM, INTC, AAOI, AXTI, LITE, COHR, CRDO, ONTO, COHU, VECO, PLAB, TSEM, MKSI, MPWR, NVTS, POWI, ON, SOI, SNDK, FN, GLW, FLEX, VICR, NOK, ENS, XFAB, AEHR, MOD, MP, TDY, AMPX, AVAV, LSCC, KTOS, MRCY, INOD, NOVT, VPG, OUST, SANHUA, TUOPU, SHUANGHUAN, ZHONGDA, SLING, ZHAOWEI, HENGLI | 2026-06-08 |
 | [what-could-go-wrong](wiki/trackers/what-could-go-wrong.md) | MSFT, NVDA, AVGO | 2026-06-12 |
+| [AI-credit-spread-watch](wiki/trackers/AI-credit-spread-watch.md) | CRWV, ORCL, MSFT, AVGO, NVDA, NBIS | 2026-06-13 |
 
 ## Relationships
 
