@@ -44,7 +44,7 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` Section 3
 | [INOD](wiki/companies/INOD.md) | INOD | outside | outside | outside | outside | outside | outside | — | 2026-06-05 |
 | [INTC](wiki/companies/INTC.md) | INTC | 1, 2 | outside | — | outside | outside | outside | — | 2026-05-25 |
 | [KTOS](wiki/companies/KTOS.md) | KTOS | — | — | — | — | — | — | 1 | 2026-06-04 |
-| [LEU](wiki/companies/LEU.md) | LEU | 4 | outside | — | outside | outside | 1 | — | 2026-05-10 |
+| [LEU](wiki/companies/LEU.md) | LEU | 4 | outside | — | outside | outside | 1 | — | 2026-06-14 |
 | [LITE](wiki/companies/LITE.md) | LITE | 4 | 3 | — | — | — | — | — | 2026-05-10 |
 | [LSCC](wiki/companies/LSCC.md) | LSCC | 3 | — | — | — | — | — | 4 | 2026-06-03 |
 | [META](wiki/companies/META.md) | META | outside | outside | outside | outside | outside | outside | — | 2026-06-02 |
@@ -105,7 +105,7 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` Section 3
 | [optical-dsp-phy-supply](wiki/chokepoints/optical-dsp-phy-supply.md) | MRVL, AVGO, CRDO | 2026-05-29 |
 | [advanced-optical-packaging](wiki/chokepoints/advanced-optical-packaging.md) | FN, LITE, COHR, AAOI, TSEM, ANET, NOK, MKSI, NVDA, MRVL | 2026-05-29 |
 | [cpo-integration](wiki/chokepoints/cpo-integration.md) | NVDA, AVGO, MRVL, CRDO, LITE, COHR, AAOI, TSM, FN, ALAB, ANET, TSEM, SIVE, SOI | 2026-05-29 |
-| [HALEU-fuel-chokepoint](wiki/chokepoints/HALEU-fuel-chokepoint.md) | LEU, BWXT, CCJ, BE, GEV, CEG | 2026-05-29 |
+| [HALEU-fuel-chokepoint](wiki/chokepoints/HALEU-fuel-chokepoint.md) | LEU, BWXT, CCJ, BE, GEV, CEG | 2026-06-14 |
 | [BTM-grid-bypass-workaround](wiki/chokepoints/BTM-grid-bypass-workaround.md) | BE, FCEL, GEV, CAT, CEG | 2026-05-29 |
 | [transformer-supply](wiki/chokepoints/transformer-supply.md) | ETN, GEV, NVDA, FLEX | 2026-05-29 |
 | [HBM-oligopoly](wiki/chokepoints/HBM-oligopoly.md) | ONTO, COHU, AEHR, TSM, MKSI, MU | 2026-05-29 |
