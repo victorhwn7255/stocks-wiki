@@ -27,6 +27,7 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` Section 3
 | [CEG](wiki/companies/CEG.md) | CEG | 2 | outside | — | outside | outside | outside | — | 2026-05-29 |
 | [COHR](wiki/companies/COHR.md) | COHR | 4 | 2 | — | — | — | — | — | 2026-05-27 |
 | [COHU](wiki/companies/COHU.md) | COHU | 3 | outside | — | — | — | — | — | 2026-05-11 |
+| [CORZ](wiki/companies/CORZ.md) | CORZ | outside | outside | outside | outside | outside | outside | — | 2026-06-15 |
 | [CRDO](wiki/companies/CRDO.md) | CRDO | 3 | 3 | — | — | — | — | — | 2026-04-28 |
 | [CRWV](wiki/companies/CRWV.md) | CRWV | outside | outside | outside | outside | outside | outside | — | 2026-06-03 |
 | [CSCO](wiki/companies/CSCO.md) | CSCO | 3 | 4 | — | — | — | — | — | 2026-05-29 |
@@ -106,7 +107,7 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` Section 3
 | [advanced-optical-packaging](wiki/chokepoints/advanced-optical-packaging.md) | FN, LITE, COHR, AAOI, TSEM, ANET, NOK, MKSI, NVDA, MRVL | 2026-05-29 |
 | [cpo-integration](wiki/chokepoints/cpo-integration.md) | NVDA, AVGO, MRVL, CRDO, LITE, COHR, AAOI, TSM, FN, ALAB, ANET, TSEM, SIVE, SOI | 2026-05-29 |
 | [HALEU-fuel-chokepoint](wiki/chokepoints/HALEU-fuel-chokepoint.md) | LEU, BWXT, CCJ, BE, GEV, CEG | 2026-06-14 |
-| [BTM-grid-bypass-workaround](wiki/chokepoints/BTM-grid-bypass-workaround.md) | BE, FCEL, GEV, CAT, CEG | 2026-05-29 |
+| [BTM-grid-bypass-workaround](wiki/chokepoints/BTM-grid-bypass-workaround.md) | BE, FCEL, GEV, CAT, CEG, CORZ | 2026-06-15 |
 | [transformer-supply](wiki/chokepoints/transformer-supply.md) | ETN, GEV, NVDA, FLEX | 2026-05-29 |
 | [HBM-oligopoly](wiki/chokepoints/HBM-oligopoly.md) | ONTO, COHU, AEHR, TSM, MKSI, MU | 2026-05-29 |
 | [liquid-cooling](wiki/chokepoints/liquid-cooling.md) | VRT, ETN, NVT, MOD, FLEX, COHR, ANET, AAON, NVDA, SANHUA, TUOPU | 2026-06-06 |
@@ -134,8 +135,9 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` Section 3
 | [humanoid-robot-value-chain](wiki/themes/humanoid-robot-value-chain.md) | MP, NVDA, INTC, INOD, NOVT, VPG, OUST, SANHUA, TUOPU, SHUANGHUAN, ZHONGDA, HARMONIC, SLING, ZHAOWEI, HENGLI | 2026-06-08 |
 | [MLCC-oligopoly](wiki/themes/MLCC-oligopoly.md) | NVDA | 2026-06-13 |
 | [memory-shortage-winners-losers](wiki/themes/memory-shortage-winners-losers.md) | MU, SNDK, PLAB, CSCO, NVDA, META, AVGO | 2026-06-13 |
-| [AI-buildout-who-holds-the-risk](wiki/themes/AI-buildout-who-holds-the-risk.md) | AVGO, NVDA, CRWV, NBIS, ORCL, AMZN, META, MSFT, GOOGL, BE, CSCO | 2026-06-13 |
+| [AI-buildout-who-holds-the-risk](wiki/themes/AI-buildout-who-holds-the-risk.md) | AVGO, NVDA, CRWV, NBIS, ORCL, AMZN, META, MSFT, GOOGL, BE, CSCO, CORZ | 2026-06-15 |
 | [AI-implementation-deployment-layer](wiki/themes/AI-implementation-deployment-layer.md) | ACN, IBM, EPAM, GLOB, CTSH, INFY, PLTR, CRM, MDB, DDOG, PANW, OKTA, CRWD, ZS | 2026-06-13 |
+| [physical-AI-value-chain](wiki/themes/physical-AI-value-chain.md) | NVDA, MP, HARMONIC, SANHUA, TUOPU, HENGLI, ZHAOWEI, SHUANGHUAN, ZHONGDA, SLING, NOVT, VPG, OUST, TDY, ARM | 2026-06-15 |
 
 ## Trackers
 
@@ -147,7 +149,7 @@ Cross-vault status-bearing pages per CLAUDE.md Section 3.20 — updated by propa
 | [hyperscaler-capex](wiki/trackers/hyperscaler-capex.md) | MSFT, GOOGL, AMZN, META, ORCL, CRWV, NBIS | 2026-06-03 |
 | [china-exposure](wiki/trackers/china-exposure.md) | TSM, NVDA, AVGO, AMD, MRVL, ALAB, MU, ARM, INTC, AAOI, AXTI, LITE, COHR, CRDO, ONTO, COHU, VECO, PLAB, TSEM, MKSI, MPWR, NVTS, POWI, ON, SOI, SNDK, FN, GLW, FLEX, VICR, NOK, ENS, XFAB, AEHR, MOD, MP, TDY, AMPX, AVAV, LSCC, KTOS, MRCY, INOD, NOVT, VPG, OUST, SANHUA, TUOPU, SHUANGHUAN, ZHONGDA, SLING, ZHAOWEI, HENGLI | 2026-06-08 |
 | [what-could-go-wrong](wiki/trackers/what-could-go-wrong.md) | MSFT, NVDA, AVGO | 2026-06-12 |
-| [AI-credit-spread-watch](wiki/trackers/AI-credit-spread-watch.md) | CRWV, ORCL, MSFT, AVGO, NVDA, NBIS | 2026-06-13 |
+| [AI-credit-spread-watch](wiki/trackers/AI-credit-spread-watch.md) | CRWV, ORCL, MSFT, AVGO, NVDA, NBIS, CORZ | 2026-06-15 |
 
 ## Relationships
 

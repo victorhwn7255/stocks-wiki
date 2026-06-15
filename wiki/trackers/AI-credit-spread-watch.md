@@ -1,7 +1,7 @@
 ---
 type: tracker
-tickers: [CRWV, ORCL, MSFT, AVGO, NVDA, NBIS]
-last_updated: 2026-06-13
+tickers: [CRWV, ORCL, MSFT, AVGO, NVDA, NBIS, CORZ]
+last_updated: 2026-06-15
 ---
 
 # AI Credit Spread Watch — the cycle's fuel gauge
@@ -28,6 +28,7 @@ These move with the whole credit market. They are the *control group*: AI-specif
 | **CRWV 9.75% 2031 unsecured notes** — yield vs the HY index | The purest public AI-credit instrument; the system's most leveraged public node | FINRA bond search (TRACE) / brokerage bond screen |
 | **CRWV secured-vs-unsecured gap** — the A3-rated SPV paper (~5.9% at issue) vs the unsecured notes | Whether lenders still trust the *customer contracts* (the gap widening at the SECURED leg = doubting the contracts themselves — the loud alarm) | issue pricing in 8-Ks; TRACE |
 | **ORCL vs MSFT bonds** (matched maturity) | The investment-grade "AI-leverage premium": debt-funded builder vs cash-rich payer. MSFT is the control, not a signal — subtracting it cancels general market conditions | FINRA/brokerage |
+| **CORZ host-layer instruments** — the $3.3B 7.75% CoreWeave *project bond* (secured/lockbox vs the lease cash flows) + the 0%/3% public convertibles | Whether the *host/landlord* layer (not just compute) reprices — but the converts blend credit + equity-option value, so a noisier signal than CRWV's straight unsecured | FINRA/TRACE; 8-K issue pricing |
 
 **Instrument-selection logic (why three probes, not all seven payers):** credit stress breaks the weakest link first — neocloud (CRWV, pure AI credit) → leveraged hyperscaler (ORCL, the marginal IG name) → fortress names last. The AA/AAA payers (MSFT/GOOGL/AMZN/META) carry almost no AI-specific spread signal while calm; watching them adds noise, not information (the BIS QR March 2026 CDS finding — differentiation "especially for hyperscalers with lower credit ratings" — confirms the weakest-link ordering). **Pre-registered expansion trigger:** if dial 4 (ORCL-vs-MSFT) turns 🟡, the next run ADDS META-vs-MSFT and AMZN-vs-MSFT pairs to test whether the repricing is Oracle-specific or spreading across the group. NBIS is covered via dial 6 rating actions + the Layer-3 deal sweep (foreign filer; bond data too thin for a clean dial).
 
@@ -53,6 +54,7 @@ BIS Quarterly Review / Bulletins (the AI-vs-non-AI loan spread analysis itself),
 | 5 | Latest new-issue pricing | CRWV DDTL 4.0 at SOFR+2.25% / ~5.9% fixed (A3) | Mar 31, 2026 (8-K) | ⚪ Baseline set |
 | 6 | Rating actions | S&P CRWV outlook → POSITIVE (B+ affirmed); thresholds FFO/debt 12% / CFO/debt 10% | Apr 9, 2026 | 🟢 Improving, honestly noted |
 | 7 | Primary-market behavior (new-issue concessions / failed takedowns) | None observed; GS desk clock says 12-18mo away, 2027 squeeze point; the "~Q1 2026 private-credit repricing" precursor is UNVERIFIED | Jun 12, 2026 (Tier 3, GS desk) | ⚪ The earliest-crack dial — currently quiet |
+| 8 | CORZ host-layer credit (project bond + converts) | (not yet read) — NEW host-layer name added this session; the $3.3B 7.75% CoreWeave project bond closed ~May 2026 (net ~$2.9B, lockbox) | 2026-06-15 (added) | ⚪ Unread — needs first manual FINRA/TRACE reading (a `/spread-watch` job) |
 
 Status legend: ⚪ baseline/unread · 🟢 easing · 🟡 widening vs control · 🔴 gap open + confirmed at a second dial.
 
@@ -74,6 +76,7 @@ The vault's full early-warning system for the AI capex cycle, one row per ending
 
 ## Change log
 
+- **2026-06-15 (S162 — CORZ added):** Added [[CORZ]] (Core Scientific) as a new **host-layer** credit name — the $3.3B 7.75% CoreWeave project bond (secured/lockbox) + the 0%/3% public convertibles — as a Layer-2 instrument row + dial 8 (⚪ unread). From the CORZ first-canonical ingest per the §3.20 freshness obligation; no yield invented here — the actual TRACE reading is a `/spread-watch` follow-up. +CORZ ticker.
 - **2026-06-13 (run #2 addendum):** Dial 7 added — primary-market behavior (new-issue concessions / failed takedowns), the historically-earliest crack, named with a 12-18-month clock + 2027 squeeze point by a GS rates-desk co-head (video-intel 2026-06-12, Tier 3); the "~Q1 2026 private-credit repricing" precursor logged as an unverified lead. Instrument-selection logic + ORCL-🟡 expansion trigger also documented (Vic question).
 - **2026-06-13 (run #2, same day):** Layer-4 check (was due, Jan-2026 row): dial 1 updated from BIS QR March 2026 — loan-spread parity RE-CONFIRMED; new color: hyperscaler CDS rising (especially lower-rated — the first differentiated AI pricing, at the CDS layer), BDC −10%/NAV discounts deepening (private-credit stress proxy), SaaS $500B direct-loan adjacency. Controls unchanged (HY 2.80 / IG 0.75, 06-10). Dials 2/4 flagged stale — need manual FINRA readings.
 - **2026-06-13 (S158):** Created per Vic request (standalone tracker; the spread-differential instrument from [[AI-buildout-who-holds-the-risk]] made operational). Four-layer instrument stack + six-dial readings table (baselines from BIS Bulletin 120, CRWV 8-K/S&P actions) + the five-dial cycle-turn dashboard. Companion script `scripts/spread_watch.py` added. Dials 2 and 4 await first manual FINRA/TRACE readings.

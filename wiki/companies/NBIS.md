@@ -81,6 +81,8 @@ The section this ingest exists to source (cross-ref [[hyperscaler-capex]] + [[CR
 
 Nebius's core model mirrors CoreWeave's: **buy NVIDIA GPUs → house them → rent AI compute on multi-year contracts**, with capacity repeatedly "sold out." It markets **ARR** (annualized run-rate revenue) as its headline forward metric (Q1 group revenue $399M, +75% QoQ). The group is a **holding company**: the core Nebius cloud (adjusted-EBITDA-positive +$59.0M FY2025) plus **Avride** (autonomous driving; $(82.7)M FY2025 adj. EBITDA) and **TripleTen** (edtech; $(41.2)M) — the moonshots that pull the consolidated EBITDA negative — with **Toloka** (AI data) deconsolidated mid-2025. It also retains minority stakes from the Yandex heritage. The non-core businesses are the analytical complication: the AI-cloud story is stronger than the consolidated numbers, but the group's losses are real.
 
+**Where Nebius sits in the stack.** Unlike a pure GPU-renter, Nebius builds and operates its *own* datacenters — so it spans both the compute-rental tier and the host tier. That contrasts with the vault's host/landlord page [[CORZ]] (Core Scientific), which owns power-secured capacity and leases it *to* neoclouds rather than renting compute. The three-tier picture the vault now covers end to end: **demand (hyperscalers) → compute rental ([[CRWV]] / NBIS) → host infrastructure ([[CORZ]]).**
+
 ## The CoreWeave comparison (the analytical product)
 
 Reading the two neoclouds together is the point — the rent-side canary as a *pattern*, not a single point:

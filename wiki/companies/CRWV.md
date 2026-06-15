@@ -79,6 +79,8 @@ The distinguishing feature versus the five hyperscalers: CoreWeave funds its bui
 
 CoreWeave's model is simple and capital-intensive: **buy NVIDIA GPUs → install them in data centers with power and cooling → rent the compute on multi-year contracts.** It is a specialist ("neocloud") — narrow where AWS/Azure/Google Cloud are broad — competing on speed of deployment of NVIDIA's newest accelerators and AI-optimized infrastructure, which is why even Microsoft (which builds its own capacity) rents from it. As of Dec 31 2025 it had ~**3.1 GW of contracted power** (850 MW active) to deploy over future periods, and NVIDIA has committed CoreWeave to building large-scale AI capacity over the coming years (alongside the $2B equity investment). It maintains direct relationships with semiconductor manufacturers and OEMs to secure supply.
 
+**Host-tier dependence (the layer below CoreWeave).** Where CoreWeave does not build its own shells, it **leases power-secured datacenter capacity from host/landlord operators** — most notably [[CORZ]] (Core Scientific), from which it leases ~**590 MW on 12-year terms** (CoreWeave is **100% of CORZ's colocation revenue** — the dependence runs both ways). The relationship is also a governance footnote: CoreWeave **signed an all-stock agreement to acquire Core Scientific in July 2025**, but **CORZ's own stockholders rejected the merger in October 2025**, so its largest host stays independent. See [[CORZ]] for the host-tier view — the infrastructure layer beneath the neocloud.
+
 ## Open questions
 
 1. **Backlog-vs-debt race.** Does the $99.4B contracted backlog convert to revenue and cash flow fast enough to service $25B+ of rising-cost debt before maturities come due?

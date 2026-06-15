@@ -1,7 +1,7 @@
 ---
 type: theme
-tickers: [AVGO, NVDA, CRWV, NBIS, ORCL, AMZN, META, MSFT, GOOGL, BE, CSCO]
-last_updated: 2026-06-13
+tickers: [AVGO, NVDA, CRWV, NBIS, ORCL, AMZN, META, MSFT, GOOGL, BE, CSCO, CORZ]
+last_updated: 2026-06-15
 ---
 
 # AI Build-out — Who Holds the Risk
@@ -32,7 +32,7 @@ Mechanism theme. **The question: if AI revenue disappoints, who actually eats th
 
 Honest caveats baked in: the $2.9T/$1.5T split is ultimately one sell-side estimate (MS itself flags it biased *higher* if hyperscalers cut capex, pushing more onto credit markets); "AI-related" private credit uses broad PitchBook verticals; and total IT investment at ~5% of GDP now *exceeds* the 2000 peak even though the AI-specific slice is smaller.
 
-## The seven structures — the exposure table
+## The eight structures — the exposure table
 
 Vault-primary (Tier 1/2) unless noted:
 
@@ -45,6 +45,7 @@ Vault-primary (Tier 1/2) unless noted:
 | 5 | **Off-balance-sheet SPV/VIE** — [[META]] Hyperion ~$30B (Blue Owl 80/20) + [[GOOGL]] VIE commitments ~$40.7B; BIS: structures "might mask leverage by moving it off the balance sheet. Yet leverage does not disappear by being out of sight" | **~$70B+** these two alone | The hyperscalers (capacity without reported debt) | Credit funds first; reported leverage understates reality |
 | 6 | **Backlog against an unnamed counterparty** — [[ORCL]]: RPO $552.6B (+325%) naming neither OpenAI nor Stargate once; $50B CY2026 financing envelope; CFO: the structures mean "uncoupling of CapEx from Oracle's capital requirements" (Q3 FY2026 call) | $552.6B RPO | ORCL (booked as backlog) | ORCL's lenders — capex is real and current; the offsetting revenue depends on one customer's own unproven funding |
 | 7 | **The prepayment wall** — [[CSCO]] purchase commitments $7.6B→$16.0B in 9 months; [[NVDA]] + [[MSFT]] each ~$145B of supply commitments incl. prepaids; [[MU]]/[[SNDK]] customer advances | $300B+ visible across vault filings | Suppliers (cash up front) | The committers, if demand turns before delivery (links to [[memory-shortage-winners-losers]] Channel C) |
+| 8 | **Host-layer project bond** — [[CORZ]] (Core Scientific): a **$3.3B CoreWeave-contracted project bond at 7.75%** (net ~$2.9B; a lockbox/cash-waterfall secured by the CoreWeave site assets + the 12-year lease cash flows), plus ~$1.1B of public convertibles — the *inverse* of #4: where CRWV borrows against GPUs, CORZ borrows against the host **real estate + the lease contracts**. CoreWeave is **100% of CORZ's colocation revenue** (and signed to buy CORZ in 2025 — rejected by CORZ's own holders Oct 2025) | $3.3B bond + ~$1.1B converts | CORZ (host rent) | Project-bond holders (lockbox-secured); equity holders (stockholders' deficit $(1.3)B) |
 
 **The end of the chain (verified):** behind the ~$800B private-credit channel sit **insurance companies, pension funds, sovereign wealth funds, endowments, and high-net-worth retail** (Morgan Stanley); private-credit investors are *first*-loss, not sole loss — the top-5 banks hold **63% of committed BDC lending** (FSB). The FSB names the two triggers that would start the loss cascade: **a shortfall in electricity supply** (the vault's own power thesis, read as credit risk) or **data-center overcapacity** — development outpacing AI-services demand.
 
@@ -87,4 +88,5 @@ Created from a two-layer evidence base: (1) vault primary sources already in can
 
 ## Change log
 
+- **2026-06-15 (Session 162):** Added **Structure #8 — host-layer project bond** ([[CORZ]] Core Scientific's $3.3B 7.75% CoreWeave-contracted bond + ~$1.1B convertibles; the *inverse* of #4's GPU-collateralized debt — host real-estate + lease contracts as collateral), from the CORZ first-canonical ingest. The host/landlord tier beneath the neoclouds now appears in the credit map; CORZ added to tickers.
 - **2026-06-13 (Session 157):** Page created (mechanism theme; Vic-approved kickoff; the second of the two S155-audit dig-deeper builds after [[memory-shortage-winners-losers]]). Seven-structure exposure table fusing vault primary + verified official-sector research; loss-bearer chain traced to end-holders; IMF circularity quantification + obsolescence scenario; honest gaps recorded (lab funding-gap math and telecom-2000 comparison did not survive verification; nothing has broken yet). Cross-references added at [[AVGO]] + [[nvidia-supply-chain-commitments]] + [[CRWV]] + [[hyperscaler-capex]] + [[AI-demand-durability]]; [[what-could-go-wrong]] Entries 5 + 6 re-pointed here as canonical evidence home; forward-edge-tracker 10th entry added.
