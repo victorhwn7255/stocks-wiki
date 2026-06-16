@@ -1,7 +1,7 @@
 ---
 type: tracker
 tickers: [ETN, VRT, GEV, TSM, NVDA, AVGO, MRVL, ALAB, AAOI, FCEL, MU, SNDK, CSCO, PLAB, CRWV, NBIS, ORCL, AMZN, MP, LSCC, TDY, AVAV, KTOS, HARMONIC, SANHUA, TUOPU, NOVT, VPG]
-last_updated: 2026-06-13
+last_updated: 2026-06-16
 ---
 
 # Forward-Edge Tracker — Consensus vs. Vault View
@@ -93,6 +93,17 @@ Layer 2 *feeds* the catalysts here; Layer 1 *verifies or falsifies* an entry (a 
 
 ---
 
+### Inference sustains the chokepoints — market reads the inference shift as relief
+**Subjects:** [[HBM-oligopoly]] · [[NVDA]] · [[MU]] · [[TSM]] (CoWoS) · the cooling/power/optics chokepoints — **Durability:** memory-bandwidth + power physics (high); HBM 3-supplier oligopoly generationally locked (high)
+
+- **Consensus (Tier 3/4):** the market reads the training→inference shift as *relief* — inference is the lighter, cheaper, distributable workload that loosens the datacenter constraint once training clusters are built, with edge/on-device AI and efficiency gains pulling demand off the datacenter.
+- **Vault view:** inference is **memory-bandwidth-bound** (token decode + reasoning/KV-cache explosion), so the shift **sustains** the chokepoints — HBM demand keeps surging, racks get denser (~370 kW, ~3x training), optics converge on CPO — and the binding constraint migrates *toward* memory bandwidth, not away from the datacenter. Edge is a false dawn for frontier inference; NVIDIA defends *into* inference (Groq). (per [[training-to-inference-shift]] — Tier-3-anchored, 17/25 verified — + [[HBM-oligopoly]] + [[AI-demand-durability]])
+- **Catalyst / re-rate triggers:** a hyperscaler breaking out inference capex / inference-rack volumes separately from training; HBM4/4E/5 adoption tracking inference deployment; a first *disclosed* per-vendor inference-ASIC revenue figure. *(latest-alpha + refresh feed these)*
+- **Falsifier:** KV-cache compression advances fast enough to *reverse* (not just flatten) the memory-demand slope, OR the inference/training workload mix equalizes and memory bandwidth stops being the binding constraint (frontier inference disperses to edge/client), OR inference capex peaks before ~2028 and training-cycle-completion relief dominates. (per [[training-to-inference-shift]] "What this page does NOT claim" + Open questions)
+- **Last moved:** 2026-06-16 (created).
+
+---
+
 ## Humanoid Robots
 
 ### Investor-access lens — the strongest chokepoints are ownable
@@ -143,6 +154,7 @@ Forward-edge entries are the vault's own variant views, seeded 2026-06-09 from t
 
 ## Change log
 
+- **2026-06-16 (S163 update):** Added the AI entry **"Inference sustains the chokepoints"** — consensus reads the inference shift as relief; vault view = inference is memory-bandwidth-bound so it *sustains* HBM/cooling/power/optics (from the new [[training-to-inference-shift]] theme). 11 → 12 entries; last_updated 2026-06-13 → 2026-06-16.
 - **2026-06-13 (S159 update):** Added the "bottleneck game is over" meta-entry to the AI section — Gavin Baker's named Tier-3 counterview to this page's own method (Bg2 Pod, 2026-06-11 video-intel note) vs the vault's spotting-vs-grading distinction (Framework 12 durability classes as the live discriminator; the memory, AAOI, and FCEL entries as its test cases). 11 entries total; no ticker changes.
 - **2026-06-13 (S157 update):** Added the AI-financing entry to the AI section (consensus reads mega-deals as demand proof; vault view = the funding regime flipped — FCF below capex, ~$1.5T external — and one of two markets is mispricing the risk; catalysts AVGO Q3 ceiling / CRWV S&P thresholds / the spread differential). Created alongside the [[AI-buildout-who-holds-the-risk]] theme. 10 entries total; tickers +CRWV +NBIS +ORCL +AMZN.
 - **2026-06-13 (S156 update):** Added the memory-shortage entry to the AI section (consensus prices the memory boom's runway; vault view = the cycle clock is already running via the spot-vs-contract divergence + documented double-booking; catalysts MU June 25 / Murata July / Q3-Q4 contract prices). Created alongside the [[memory-shortage-winners-losers]] theme. 9 entries total; tickers +MU +SNDK +CSCO +PLAB.

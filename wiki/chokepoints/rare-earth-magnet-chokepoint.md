@@ -51,6 +51,8 @@ The same China concentration constrains multiple demand drivers off one chokepoi
 
 [[MP]] is the shared node across all of them — which is why rare-earth magnets are the cleanest *multi-thesis* chokepoint in the vault (defense + AI-datacenter cooling + wind + EV + humanoid robotics).
 
+**Cross-vault placement (S165).** This is the **critical-materials leg** of [[commodity-supercycle-chokepoints]], where it ranks **#1 on chokepoint hardness** across the six commodity legs — because the bottleneck is *processing/separation* (China ~91%), not geology (rare earths are abundant). That same map flags a node **deeper than rare earths** the vault does not yet cover: **gallium + the chelating-resin extraction technology (Sunresin ~90%)**, plus germanium — a leg-level deep-dig (run `wf_ba1299db-7c0`) is testing whether those warrant their own chokepoint pages, and how durable the (policy-contingent) Western response is.
+
 ## Open questions
 
 1. **Does China relax export controls?** The mirror falsifier — normalization weakens the reshoring case and the chokepoint's pricing power.
@@ -69,6 +71,7 @@ The same China concentration constrains multiple demand drivers off one chokepoi
 
 ## Change log
 
+- **2026-06-16 (S165 cross-reference):** Added a cross-vault placement note — this is the critical-materials leg of the new [[commodity-supercycle-chokepoints]] umbrella theme, where it ranks #1 on chokepoint hardness (processing, not geology); flagged the gallium/germanium/resin-tech node (deeper than rare earths, uncovered) + the in-flight critical-materials deep-dig (`wf_ba1299db-7c0`). In-body cross-ref only; last_updated unchanged.
 - **2026-06-06 (S142 — secure-side consumer observation):** Added a consumer-side honest-scoping bullet — [[TUOPU]] + [[SANHUA]] are **China-domiciled** magnet consumers (permanent-magnet/frameless motors for humanoid actuators + EV thermal) that sit on the *secure* side of this chokepoint, the inverse of squeezed US consumers [[AVAV]]/[[TDY]]; neither discloses rare-earth dependence (inferable-only per Section 3.3) so they are **not** added to the consumer roster or `tickers`. Reinforces the chokepoint's geopolitical direction (US vulnerability = China advantage). Propagated from the [[TUOPU]] S142 ingest; no source/tier change.
 
 - **2026-06-05 (Session 136 — humanoid demand-driver):** Strengthened the Multi-thesis scope "EV / robotics" line into a fuller **humanoid-robot** demand driver (~40+ NdFeB motors / ~0.9–4 kg magnet per robot; a *future* incremental driver, Adamas largest-NdFeB-by-~2040, Tier-3) and cross-referenced the new [[humanoid-robot-value-chain]] theme — for which [[MP]] is the day-one anchor. No `tickers` change (humanoid is a demand-driver mention, not a new disclosed consumer); no new primary source; not a refresh. `last_updated` → 2026-06-05.

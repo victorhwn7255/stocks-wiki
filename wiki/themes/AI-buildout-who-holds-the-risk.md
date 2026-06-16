@@ -1,7 +1,7 @@
 ---
 type: theme
 tickers: [AVGO, NVDA, CRWV, NBIS, ORCL, AMZN, META, MSFT, GOOGL, BE, CSCO, CORZ]
-last_updated: 2026-06-15
+last_updated: 2026-06-16
 ---
 
 # AI Build-out — Who Holds the Risk
@@ -9,6 +9,8 @@ last_updated: 2026-06-15
 ## Thesis role
 
 Mechanism theme. **The question: if AI revenue disappoints, who actually eats the loss?** The AI build-out is increasingly paid for with other people's money and circular promises — vendors investing in their own customers, chipmakers guaranteeing their customers' debt, credit funds lending against GPUs, and frontier labs committing sums they have not raised. This page maps the financing structures, traces each one to its loss-bearer, and keeps the early-warning instruments in one place. It is the falsifier-side twin of [[AI-demand-durability]]: that page tracks whether the demand is real; this page tracks who is exposed if it isn't.
+
+**Sibling page (verdict-ownership rule).** [[neocloud-moat-durability]] asks the adjacent question for the GPU-rental layer specifically — *is the neocloud business model a durable moat or a borrowed one?* — and owns **moat-durability verdicts** (its answer: borrowed-and-temporary, tilting leverage-trap; the neocloud sits at the bottom of the chokepoint gradient, renting every scarce input and owning only the spread). **This page owns loss-distribution verdicts** — where CoreWeave (Structure #4) and Core Scientific (#8) sit in the credit cascade. A name on both carries one verdict of each kind, never two of the same: the durability *why* lives there; the who-eats-the-loss *map* lives here.
 
 **The verdict (from the 2026-06-13 verified research run; anchor: `raw/research/ai-buildout-credit-risk-report.md`): the honest middle, tilted toward load-bearing at the margin.** Three findings carry it:
 
@@ -88,5 +90,6 @@ Created from a two-layer evidence base: (1) vault primary sources already in can
 
 ## Change log
 
+- **2026-06-16 (Session 164):** Added the [[neocloud-moat-durability]] sibling-page cross-reference (verdict-ownership rule — loss-distribution verdicts here; moat-durability verdicts there), from the neocloud-business-model deep-research build. No structures or loss-bearer findings changed. last_updated 2026-06-15 → 2026-06-16.
 - **2026-06-15 (Session 162):** Added **Structure #8 — host-layer project bond** ([[CORZ]] Core Scientific's $3.3B 7.75% CoreWeave-contracted bond + ~$1.1B convertibles; the *inverse* of #4's GPU-collateralized debt — host real-estate + lease contracts as collateral), from the CORZ first-canonical ingest. The host/landlord tier beneath the neoclouds now appears in the credit map; CORZ added to tickers.
 - **2026-06-13 (Session 157):** Page created (mechanism theme; Vic-approved kickoff; the second of the two S155-audit dig-deeper builds after [[memory-shortage-winners-losers]]). Seven-structure exposure table fusing vault primary + verified official-sector research; loss-bearer chain traced to end-holders; IMF circularity quantification + obsolescence scenario; honest gaps recorded (lab funding-gap math and telecom-2000 comparison did not survive verification; nothing has broken yet). Cross-references added at [[AVGO]] + [[nvidia-supply-chain-commitments]] + [[CRWV]] + [[hyperscaler-capex]] + [[AI-demand-durability]]; [[what-could-go-wrong]] Entries 5 + 6 re-pointed here as canonical evidence home; forward-edge-tracker 10th entry added.
