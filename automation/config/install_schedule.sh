@@ -24,7 +24,7 @@ launchctl unload "$DEST" 2>/dev/null || true
 launchctl load "$DEST"
 
 echo "Installed + loaded: $DEST  (Label: \"Stocks Wiki\")"
-echo "Scheduled: DAILY 07:30 local — free deterministic scan Tue-Sun; full agentic loop on Mondays (Max subscription)."
+echo "Scheduled: DAILY 02:30 local (Singapore) — free deterministic scan Tue-Sun; full agentic loop on Mondays (Max subscription)."
 echo "Verify:        launchctl list | grep -i 'Stocks Wiki'"
 echo "Run once now:  python3 automation/scripts/run.py --full --run-llm"
 echo "Remove:        automation/config/uninstall_schedule.sh"

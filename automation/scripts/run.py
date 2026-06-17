@@ -25,6 +25,7 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import re
 import shutil
 import subprocess
 import sys
@@ -39,6 +40,7 @@ DIGESTS = AUTOMATION / "digests"
 CALIBRATION = AUTOMATION / "calibration"
 DISCOVERY = AUTOMATION / "discovery"
 PROMPTS = AUTOMATION / "prompts"
+RESEARCH_SELF = VAULT_ROOT / "raw" / "research" / "self-research"   # daily deep-research reports
 
 # The locked tool allow-list for any headless claude -p the runner launches.
 # Read/scan + Write-scoped-to-automation only. NEVER Edit on wiki/.
@@ -69,7 +71,7 @@ def _runid() -> str:
 
 
 def _ensure_dirs():
-    for d in (LOGS, DIGESTS, CALIBRATION, DISCOVERY):
+    for d in (LOGS, DIGESTS, CALIBRATION, DISCOVERY, RESEARCH_SELF):
         d.mkdir(parents=True, exist_ok=True)
 
 
@@ -282,6 +284,48 @@ def agentic_step(name: str, prompt_file: Path, run_llm: bool) -> dict:
             "out_tail": (res["out"] or "")[-1500:], "err": res["err"][:500]}
 
 
+def _slug(text: str, n: int = 7) -> str:
+    words = re.findall(r"[A-Za-z0-9]+", text.lower())[:n]
+    return "-".join(words) or "topic"
+
+
+def build_deepresearch_cmd(question: str, report_path: Path) -> list[str]:
+    """A `claude -p` that runs the deep-research workflow and saves the report.
+    Broad tools (deep-research needs web + workflow); only canon EDITS are hard-blocked."""
+    instruction = (
+        "Run a thorough multi-source DEEP-RESEARCH investigation (use the deep-research workflow: "
+        "fan out search angles, fetch sources, adversarially verify claims, synthesize) on:\n\n"
+        f"{question}\n\n"
+        f"When complete, save the final CITED, VERIFIED report as a Tier-3 anchor to EXACTLY: "
+        f"{report_path.relative_to(VAULT_ROOT)} (create the folder if needed). "
+        "CONTRACT: discovery-only. Write ONLY that report file under raw/research/self-research/. "
+        "NEVER edit any wiki/ page, _thesis*, frameworks*, CLAUDE.md, index.md, or log.md. Never run git."
+    )
+    return [CLAUDE_BIN, "-p", instruction, "--disallowedTools", "Edit,MultiEdit,NotebookEdit"]
+
+
+def deep_research_step(run_llm: bool) -> dict:
+    res = _run(["python3", "scripts/research_agenda.py", "--pick"], timeout=30)
+    question = (res["out"] or "").strip()
+    if not question:
+        return {"name": "deep-research", "executed": False,
+                "note": "no Pending topic in raw/research/topics-list.md"}
+    report_path = RESEARCH_SELF / f"{_stamp()}_{_slug(question)}.md"
+    cmd = build_deepresearch_cmd(question, report_path)
+    if not run_llm:
+        return {"name": "deep-research", "executed": False, "topic": question,
+                "note": "DRY-RUN — pass --run-llm to actually research",
+                "cmd": " ".join(f'"{c}"' if " " in c else c for c in cmd)}
+    RESEARCH_SELF.mkdir(parents=True, exist_ok=True)
+    r = _run(cmd, timeout=3600)  # deep-research can take many minutes
+    saved = report_path.exists()
+    if saved:  # mark the topic researched (deterministic) only if the report actually landed
+        _run(["python3", "scripts/research_agenda.py", "--mark-done", str(report_path)], timeout=30)
+    return {"name": "deep-research", "executed": True, "ok": r["ok"] and saved,
+            "topic": question, "report": str(report_path.relative_to(VAULT_ROOT)),
+            "report_saved": saved, "err": r["err"][:400]}
+
+
 def main():
     ap = argparse.ArgumentParser(description="stocks-wiki automation runner (self-X loop).")
     ap.add_argument("--scan", action="store_true", help="deterministic scan (default)")
@@ -290,7 +334,9 @@ def main():
     ap.add_argument("--full", action="store_true",
                     help="the autonomous loop: scan + calibration scoring + briefing (Max subscription)")
     ap.add_argument("--auto", action="store_true",
-                    help="daily heartbeat: free deterministic scan Tue-Sun, the FULL agentic loop on Mondays")
+                    help="daily heartbeat: scan every day; deep-research Tue-Sat; full agentic review Mon")
+    ap.add_argument("--deep-research", dest="deep_research", action="store_true",
+                    help="run /deep-research on the top topics-list.md item -> raw/research/self-research/")
     ap.add_argument("--with-freshness", action="store_true", help="also run SEC EDGAR freshness (network)")
     ap.add_argument("--run-llm", action="store_true", help="actually invoke claude -p (default: dry-run)")
     ap.add_argument("--quiet", action="store_true")
@@ -301,9 +347,14 @@ def main():
     # so Max usage stays ~1 run/week while hygiene/discovery/freshness run daily.
     if args.auto:
         args.with_freshness = True
-        if _now().weekday() == 0:  # Monday
+        wd = _now().weekday()       # Mon=0 ... Sun=6
+        if wd == 0:                 # Monday → weekly agentic review (calibration + briefing)
             args.full = True
             args.run_llm = True
+        elif 1 <= wd <= 5:          # Tue–Sat → deep-research day (one topic)
+            args.deep_research = True
+            args.run_llm = True
+        # Sunday → free deterministic scan only
 
     _ensure_dirs()
     runid = _runid()
@@ -327,6 +378,12 @@ def main():
             steps.append(("brief", "brief.md"))
     agentic = [agentic_step(name, PROMPTS / pf, args.run_llm) for name, pf in steps]
 
+    # Deep-research day (Tue–Sat via --auto, or explicit --deep-research):
+    # keep the agenda fresh (free), then research the top Pending topic.
+    if args.deep_research:
+        _run(["python3", "scripts/research_agenda.py", "--propose"], timeout=200)
+        agentic.append(deep_research_step(args.run_llm))
+
     if not args.quiet:
         print(f"✅ scan complete — run {runid}")
         print(f"   digest:      {digest_path.relative_to(VAULT_ROOT)}")
@@ -337,11 +394,15 @@ def main():
         for a in actions:
             print(f"     - {a}")
         for step in agentic:
-            if step["executed"]:
-                print(f"\n   agentic {step['name']}: {'ok' if step['ok'] else 'FAILED'}")
+            if step.get("executed"):
+                extra = f" — {step['topic'][:60]}" if step.get("topic") else ""
+                print(f"\n   {step['name']}: {'ok' if step.get('ok') else 'check log'}{extra}")
+                if step.get("report"):
+                    print(f"     report: {step['report']} (saved={step.get('report_saved')})")
             else:
-                print(f"\n   agentic {step['name']} (dry-run): {step['note']}")
-                print(f"     cmd: {step['cmd']}")
+                print(f"\n   {step['name']} (not run): {step.get('note', '')}")
+                if step.get("cmd"):
+                    print(f"     cmd: {step['cmd']}")
     sys.exit(0)
 
 

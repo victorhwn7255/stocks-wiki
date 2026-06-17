@@ -57,7 +57,7 @@ last_updated: 2026-05-29
 **NOT covered here (other chokepoint page scope):**
 - CoWoS advanced packaging chokepoint scope at integration tier → [[TSMC-CoWoS]] (paired integration-tier chokepoint; see Adjacent chokepoint relationships section)
 - DRAM-NAND broader memory chokepoint scope → future memory chokepoint synthesis candidates per `_thesis.md` Rank 2/Rank 3 Memory framing
-- Substrate supply tier (silicon wafers SUMCO/Shin-Etsu; HBM substrates Ibiden) → future `HBM-substrate-supply.md` chokepoint candidate per `_thesis.md` Rank 5 Materials
+- Substrate supply tier (silicon wafers SUMCO/Shin-Etsu; HBM substrates Ibiden) → future `HBM-substrate-supply.md` chokepoint candidate per `_thesis.md` Rank 5 Materials. **Scope-boundary note (S-2026-06-17):** the adjacent [[pcb-interconnect-substrate-chokepoint]] (provisional) now covers the AI *logic*-side interconnect-material/substrate stack (high-layer PCB → low-loss CCL/glass/foil → ABF FCBGA substrate); **Ibiden is the shared node** (HBM base substrate here vs ABF logic substrate there) — and because Ibiden + the Ajinomoto ABF film monopoly serve *both* sides, HBM-stack substrate and logic-package substrate **compete for the same node**: a capacity-allocation tension (memory-heavy 2026-27 on the HBM4 ramp, logic-heavy into 2028+ on custom-ASIC/GPU package growth), detailed at [[pcb-interconnect-substrate-chokepoint]] ("Shared bottleneck with HBM — Ibiden's dual substrate role"). The memory-side HBM-substrate chokepoint remains a distinct future candidate.
 - ASML EUV equipment tier upstream of HBM manufacturing → Equipment Tier 1 chokepoint candidate per Top 5 vault survey
 
 ---
@@ -397,6 +397,7 @@ MKSI 10-K Item 1 Business explicit: VSD **"Plasma and Reactive Gas Products, whi
 
 ## Change log
 
+- **2026-06-17 (cross-reference):** Added a scope-boundary note in the "NOT covered here" substrate-supply bullet pointing to the new [[pcb-interconnect-substrate-chokepoint]] (provisional) — Ibiden is the shared node (HBM base substrate vs ABF logic substrate); the memory-side HBM-substrate chokepoint stays a distinct future candidate. Cross-reference only; `last_updated` unchanged.
 - **2026-06-16 (in-place, per Vic instruction):** Added a one-line Tier-3 market-sizing pointer (BofA: memory the fastest semis segment to 2030 + a modeled 2028 air-pocket) to the [[memory-shortage-winners-losers]] table; no last_updated change (cross-reference pointer).
 - **2026-06-16 (S163 cross-reference):** Added the demand-side **"inference-demand floor under HBM"** bullet (inference is memory-bandwidth-bound → HBM demand surges independent of the training-capex cycle) — the demand mechanism the page's supply-side framing lacked — pointing to the new [[training-to-inference-shift]] theme.
 - **2026-06-13 (S156 cross-reference):** One-sentence pointer added at the CSCO demand-signal bullet to the new [[memory-shortage-winners-losers]] theme, which synthesizes the second-order crowd-out mechanism this page first surfaced. No other content edits.

@@ -112,6 +112,7 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` Section 3
 | [HBM-oligopoly](wiki/chokepoints/HBM-oligopoly.md) | ONTO, COHU, AEHR, TSM, MKSI, MU | 2026-05-29 |
 | [liquid-cooling](wiki/chokepoints/liquid-cooling.md) | VRT, ETN, NVT, MOD, FLEX, COHR, ANET, AAON, NVDA, SANHUA, TUOPU | 2026-06-06 |
 | [rare-earth-magnet-chokepoint](wiki/chokepoints/rare-earth-magnet-chokepoint.md) | MP, AVAV, TDY | 2026-06-04 |
+| [pcb-interconnect-substrate-chokepoint](wiki/chokepoints/pcb-interconnect-substrate-chokepoint.md) | NVDA, AVGO, MKSI, NOVT, ONTO | 2026-06-17 |
 
 ## Themes
 

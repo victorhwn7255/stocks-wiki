@@ -10,7 +10,7 @@ Every automated run — cron script or headless `claude -p` / Agent SDK agent �
 - run `git` (Vic commits everything himself);
 - bump any page's `last_updated`.
 
-It writes **only** inside `automation/`. When something belongs in canon, it **drops a proposal in a queue here for a separate, human-gated action — it never cascades.** Verified facts still reach canon only through the normal two-stop ingest.
+It writes **only** inside `automation/` — plus the Tier-3 research zone `raw/research/self-research/` (where the daily deep-research saves reports) and `raw/research/topics-list.md` (the agenda it updates). Both are research material, **not canon**. When something belongs in canon, it **drops a proposal in a queue here for a separate, human-gated action — it never cascades.** Verified facts still reach canon only through the normal two-stop ingest.
 
 **Enforcement:** headless runs launch with a restricted tool allow-list — `Read, Grep, Glob, Bash` + `Write` scoped to `automation/` only, **no `Edit` on `wiki/`**. That restriction is what makes unattended runs safe; don't loosen it. This is the vault's existing discovery-only contract extended to scheduled/headless mode — the human gate is unchanged: automation fills the queues, Vic empties them.
 

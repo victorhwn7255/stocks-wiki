@@ -32,11 +32,12 @@
         <string>/Users/victor_he</string>
     </dict>
 
-    <!-- Daily 07:30 local. The runner's --auto mode does a free deterministic scan
-         Tue-Sun and the full agentic loop (on the Max subscription) only on Mondays. -->
+    <!-- Daily 02:30 local (Singapore, UTC+8). The runner's --auto mode does a free
+         deterministic scan Tue-Sun and the full agentic loop (Max) only on Mondays.
+         NOTE: if the Mac is asleep at 02:30, launchd runs the job at the next wake. -->
     <key>StartCalendarInterval</key>
     <dict>
-        <key>Hour</key><integer>7</integer>
+        <key>Hour</key><integer>2</integer>
         <key>Minute</key><integer>30</integer>
     </dict>
 

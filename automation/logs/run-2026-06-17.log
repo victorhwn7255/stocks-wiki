@@ -94,3 +94,11 @@
   actions: 2
     - ⚠️ unresolved wikilinks: [[CMI]], [[Canonical]], [[QCOM]], [[TSMC]] — forward-link or typo (check).
     - 📥 new filings available to ingest — see Discovery › Freshness.
+
+=== run 2026-06-17T143641 ===
+  hygiene: ok
+  calibration: ok
+  connections: ok
+  patterns: ok
+  actions: 1
+    - ⚠️ unresolved wikilinks: [[CMI]], [[Canonical]], [[QCOM]], [[TSMC]] — forward-link or typo (check).
