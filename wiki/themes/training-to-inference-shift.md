@@ -30,7 +30,7 @@ This is the analytical heart, and it is what the existing pages were missing. Tr
 
 The supply-chain consequence is direct: **as inference comes to dominate, the system gets *more* memory-bandwidth-hungry, not less.** That is why HBM demand keeps climbing rather than rolling over when training capex matures:
 
-- **HBM demand surging** — over 130% YoY in 2025 and over 70% in 2026 (TrendForce, Tier 3); HBM4 reaches ~2-3.3 TB/s (Samsung's HBM4 at ~13 Gb/s per pin, confirmed 3-0). "HBM demand is surging, NOT relieved by the inference shift" — confirmed 3-0. → [[HBM-oligopoly]].
+- **HBM demand surging** — over 130% YoY in 2025 and over 70% in 2026 (TrendForce, Tier 3); HBM4 reaches ~2-3.3 TB/s (Samsung's HBM4 at ~13 Gb/s per pin, confirmed 3-0). "HBM demand is surging, NOT relieved by the inference shift" — confirmed 3-0. → [[HBM-oligopoly]]. (Tier-3 market-sizing: BofA models memory the fastest-growing semis segment to 2030, ~33% CAGR — though its own forecast bakes in a 2028 air-pocket; table on [[memory-shortage-winners-losers]].)
 - **Power density rises** — inference racks run ~370 kW, roughly 3x a training-generation rack (Deloitte), because the memory + interconnect to feed decode is dense. → [[liquid-cooling]] + [[transformer-supply]].
 - **Optics converge on CPO** — feeding inference clusters drives DWDM scale-up + DR-optics scale-out and the industry's convergence on co-packaged optics (confirmed 3-0). → [[cpo-integration]] + [[advanced-optical-packaging]].
 

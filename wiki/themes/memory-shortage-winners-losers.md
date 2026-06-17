@@ -1,7 +1,7 @@
 ---
 type: theme
 tickers: [MU, SNDK, PLAB, CSCO, NVDA, META, AVGO]
-last_updated: 2026-06-13
+last_updated: 2026-06-16
 ---
 
 # Memory Shortage — Winners and Losers
@@ -13,6 +13,26 @@ Mechanism theme. **The AI build-out is eating the world's memory-chip supply, an
 This page does three jobs: (1) lay out the **transmission chain** from HBM demand to everyone else's pain, with each link cited to primary sources already in the vault; (2) keep the **winners / losers / protected map** across vault names; (3) run the **cycle clock** — because the same shortage mechanics (panic prices, double-ordering, spec cuts) are how memory booms have historically ended, and the early cracks are already visible in spot prices.
 
 Honest framing on what is and isn't differentiated here: the *headline* (memory shortage hurts phones and PCs) is now consensus — IDC and Gartner both published 2026 shipment-cut forecasts (Tier 3, February 2026). The vault-specific value is narrower: the per-name winners/losers map below, the **spot-vs-contract price divergence as a dated early-warning instrument**, and the link to the [[MLCC-oligopoly]] double-booking precedent — the *ending* of this kind of story, which the bullish consensus is not pricing. [[HBM-oligopoly]] first connected memory tightness to a non-memory P&L (the CSCO observation); this page extends that finding into the full mechanism.
+
+## The magnitude — a Tier-3 market-sizing frame (BofA)
+
+One outside picture of how big this is — **BofA's semiconductor forecast by end-market** (Exhibit 2). **Tier 3** — a sell-side model, cite-don't-treat-as-fact; everything 2026E+ is an estimate. Chart saved at `raw/research/charts/semis-memory-projection-2026-2030.jpg`. Revenue in $bn (the chart labels "$mn" but the figures are billions — global semis ≈ $790B in 2025):
+
+| Revenue ($bn) | 2023 | 2024 | 2025 | 2026E | 2027E | 2028E | 2029E | 2030E | CAGR '25-30 |
+|---|---|---|---|---|---|---|---|---|---|
+| **Total semis** | 528 | 633 | 790 | **1,300** | 1,481 | 1,599 | 1,810 | 1,962 | 20.0% |
+| — YoY % | (11.0) | 19.7 | 24.8 | **+64.5** | 14.0 | 8.0 | 13.2 | 8.4 | — |
+| **Memory** | 94 | 170 | 220 | **588** | 660 | 682 | 808 | 900 | **32.6%** |
+| — YoY % | (37.4) | 81.3 | 28.9 | **+168.0** | 12.1 | **3.3** | 18.6 | 11.4 | — |
+| **Core semis (ex-memory)** | 435 | 463 | 570 | 711 | 821 | 918 | 1,002 | 1,062 | 13.2% |
+| — YoY % | (2.1) | 6.4 | 23.3 | +24.7 | 15.5 | 11.8 | 9.2 | 6.0 | — |
+
+Two readings, and both belong on this page:
+
+- **The boom (this page's first half).** Memory is *the* line — **+168% in 2026E** ($220B → $588B), the fastest semis segment by a wide margin (32.6% CAGR to 2030 vs 13.2% for core semis). That figure fuses the HBM volume surge ([[HBM-oligopoly]]) with the standard-memory ASP shock this page maps — it is this thesis sized in one number, from an outside model.
+- **The cycle (this page's second half — the load-bearing caveat).** Read the memory row's *shape*, not just 2026: a brutal 2023 (−37.4%), the 2026 blow-out, then BofA's own model decelerates to **+3.3% in 2028E** (near-flat) before re-accelerating. Even the bull case bakes in an air-pocket — the 2026 spike is modeled as a shortage *peak* that partly normalizes, not a run-rate. That is the [[MLCC-oligopoly]] "quality-but-cyclical" verdict drawn on BofA's own pencil, and it is exactly what Channel D (the cycle clock) watches for.
+
+Honest-verdict: a Tier-3 sell-side *forecast*, not vault fact — its single most fragile assumption is the +168% 2026 memory line (it does enormous work). The vault's value-add is not the table but the **spot-vs-contract divergence** that tells you, before BofA revises, whether 2026 holds or the cycle turns early.
 
 ## The transmission chain
 
@@ -87,4 +107,5 @@ Created from evidence already in vault canon (per-source provenance lives on the
 
 ## Change log
 
+- **2026-06-16 (in-place Tier-3 chart addition per Vic instruction; not counted as a separate session):** Added "The magnitude — a Tier-3 market-sizing frame (BofA)" subsection — the BofA semis/memory forecast table (`raw/research/charts/semis-memory-projection-2026-2030.jpg`), read against the page's two halves: the +168% 2026E memory boom AND the modeled +3.3% 2028E air-pocket (the cyclicality caveat). Tier-3 forecast, cite-don't-treat-as-fact. last_updated 2026-06-13 → 2026-06-16.
 - **2026-06-13 (Session 156):** Page created (mechanism theme; Vic-approved kickoff). Transmission chain assembled from seven vault primary sources (MU, SNDK, PLAB, CSCO, NVDA, META, AVGO) + Tier 3/4 verification round (IDC/Gartner/TrendForce/Counterpoint); winners/losers/protected map; cycle-clock section anchored on the spot-vs-contract divergence + the 2017-18 MLCC precedent; four falsifiers + six dated open questions pre-registered. Cross-references added at [[HBM-oligopoly]] + [[MLCC-oligopoly]] + [[PLAB]]; forward-edge-tracker entry added.

@@ -19,6 +19,10 @@ Therefore this skill is **discovery-only**, with ONE narrow, fenced exception �
 
 It produces three artifacts: (1) the **discovery note** under `raw/notes/latest-alpha/`, (2) a **compact, fenced `Latest alpha` digest block** on the target company's page (Step 6b), and (3) a short chat summary. The on-page block is a *quarantined, dated, tier-tagged digest that links to the note* — never blended into canon, never asserted as verified fact. Anything that should reach the canonical analysis still goes through the **normal primary-source ingest**, human-gated (the two-stop protocol). The skill's job is to tell the user **what to go verify**, not to verify it. Mirror of `/youtube-intel`, plus this one fenced block.
 
+### Headless / note-only mode (for the automation layer)
+
+When this skill runs **unattended** (invoked by the `automation/` runner / any `claude -p` under the locked tool allow-list, which has **no `Edit` on `wiki/`**), **skip Step 6b entirely** — write ONLY the `raw/notes/latest-alpha/` discovery note, never the on-page fenced block. The block is an *interactive-only* convenience; under the automation contract the page write would be blocked anyway, so note-only is the correct, clean behavior. Detection: treat the run as headless if there is no interactive user in the loop (the runner passes the locked allow-list) — when in doubt under automation, default to note-only. Everything else (the SEC anchor, IR/news sweep, tiering, the verify-at-primary leads) is unchanged.
+
 ## When to use
 
 - The user invokes `/latest-alpha <TICKER>` (or names a company and asks "what's new / recent developments").

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- Shows in System Settings → Login Items & Extensions → Allow in the Background. -->
+    <key>Label</key>
+    <string>Stocks Wiki</string>
+
+    <!-- The autonomous self-X loop: deterministic scan + agentic calibration scoring + briefing.
+         The agentic steps run `claude -p` under the user's logged-in Claude Max subscription
+         (NOT API billing), behind the locked tool allow-list (discovery-only, writes only to automation/). -->
+    <!-- Run the app-bundle launcher (not python3 directly) so macOS displays this
+         background item as "Stocks Wiki". The launcher exec()s run.py --full --run-llm
+         --with-freshness --quiet; env below flows through. -->
+    <key>ProgramArguments</key>
+    <array>
+        <string>/Users/victor_he/Applications/Stocks Wiki.app/Contents/MacOS/Stocks Wiki</string>
+    </array>
+
+    <key>WorkingDirectory</key>
+    <string>/Users/victor_he/Downloads/Code/stocks-wiki</string>
+
+    <!-- launchd has a minimal PATH with no `claude`; supply the node bin + CLAUDE_BIN + HOME
+         so the Max-authenticated CLI is found and can read its stored credentials. -->
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/Users/victor_he/.nvm/versions/node/v22.22.0/bin:/Library/Frameworks/Python.framework/Versions/3.13/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+        <key>CLAUDE_BIN</key>
+        <string>/Users/victor_he/.nvm/versions/node/v22.22.0/bin/claude</string>
+        <key>HOME</key>
+        <string>/Users/victor_he</string>
+    </dict>
+
+    <!-- Daily 07:30 local. The runner's --auto mode does a free deterministic scan
+         Tue-Sun and the full agentic loop (on the Max subscription) only on Mondays. -->
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Hour</key><integer>7</integer>
+        <key>Minute</key><integer>30</integer>
+    </dict>
+
+    <key>StandardOutPath</key>
+    <string>/Users/victor_he/Downloads/Code/stocks-wiki/automation/logs/launchd.out.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/victor_he/Downloads/Code/stocks-wiki/automation/logs/launchd.err.log</string>
+
+    <!-- Wait for the scheduled time; do not fire on every login (each agentic run uses Max usage). -->
+    <key>RunAtLoad</key>
+    <false/>
+</dict>
+</plist>

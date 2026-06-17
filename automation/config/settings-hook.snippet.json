@@ -1,0 +1,29 @@
+// Phase-4 PostToolUse guardrail — READY TO ENABLE (not auto-applied).
+//
+// The automation build deliberately did NOT self-edit .claude/settings.json: adding a
+// startup hook is self-modification of the agent's own config, which the ROADMAP flags
+// as an open decision needing Vic's explicit ok (and the harness classifier blocks it).
+//
+// To enable: merge the "hooks" block below into .claude/settings.json (keep your existing
+// "enabledPlugins"). The hook runs automation/scripts/hook_postwrite.sh after every
+// Edit/Write/MultiEdit; for a wiki/ page it runs the FAST single-file hygiene quick-check
+// (the page's links resolve + it's in index.md) and logs to automation/logs/hook.log.
+// READ-ONLY, non-blocking (always exits 0). Disable by removing this block.
+//
+// Tested working: `echo '{"tool_input":{"file_path":".../wiki/themes/power-semis.md"}}'
+//                  | automation/scripts/hook_postwrite.sh`  → caught the [[Canonical]] typo.
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Edit|MultiEdit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/Users/victor_he/Downloads/Code/stocks-wiki/automation/scripts/hook_postwrite.sh"
+          }
+        ]
+      }
+    ]
+  }
+}
