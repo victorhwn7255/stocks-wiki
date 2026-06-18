@@ -7,7 +7,7 @@
 # Disable by removing the PostToolUse hook from .claude/settings.json.
 set -uo pipefail
 
-ROOT="/Users/victor_he/Downloads/Code/stocks-wiki"
+ROOT="/Users/victor_he/Projects/stocks-wiki"
 LOG="$ROOT/automation/logs/hook.log"
 mkdir -p "$ROOT/automation/logs"
 

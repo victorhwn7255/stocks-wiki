@@ -20,7 +20,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "/Users/victor_he/Downloads/Code/stocks-wiki/automation/scripts/hook_postwrite.sh"
+            "command": "/Users/victor_he/Projects/stocks-wiki/automation/scripts/hook_postwrite.sh"
           }
         ]
       }

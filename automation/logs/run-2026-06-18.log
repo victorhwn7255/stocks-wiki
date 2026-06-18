@@ -1,0 +1,20 @@
+
+=== run 2026-06-18T060233 ===
+  hygiene: ok
+  calibration: ok
+  connections: ok
+  patterns: ok
+  freshness: ok
+  actions: 2
+    - ⚠️ unresolved wikilinks: [[CMI]], [[Canonical]], [[QCOM]], [[TSMC]] — forward-link or typo (check).
+    - 📥 new filings available to ingest — see Discovery › Freshness.
+
+=== run 2026-06-18T104514 ===
+  hygiene: ok
+  calibration: ok
+  connections: ok
+  patterns: ok
+  freshness: ok
+  actions: 2
+    - ⚠️ unresolved wikilinks: [[CMI]], [[Canonical]], [[QCOM]], [[TSMC]] — forward-link or typo (check).
+    - 📥 new filings available to ingest — see Discovery › Freshness.

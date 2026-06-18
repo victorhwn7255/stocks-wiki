@@ -18,7 +18,7 @@
     </array>
 
     <key>WorkingDirectory</key>
-    <string>/Users/victor_he/Downloads/Code/stocks-wiki</string>
+    <string>/Users/victor_he/Projects/stocks-wiki</string>
 
     <!-- launchd has a minimal PATH with no `claude`; supply the node bin + CLAUDE_BIN + HOME
          so the Max-authenticated CLI is found and can read its stored credentials. -->
@@ -42,9 +42,9 @@
     </dict>
 
     <key>StandardOutPath</key>
-    <string>/Users/victor_he/Downloads/Code/stocks-wiki/automation/logs/launchd.out.log</string>
+    <string>/Users/victor_he/Projects/stocks-wiki/automation/logs/launchd.out.log</string>
     <key>StandardErrorPath</key>
-    <string>/Users/victor_he/Downloads/Code/stocks-wiki/automation/logs/launchd.err.log</string>
+    <string>/Users/victor_he/Projects/stocks-wiki/automation/logs/launchd.err.log</string>
 
     <!-- Wait for the scheduled time; do not fire on every login (each agentic run uses Max usage). -->
     <key>RunAtLoad</key>

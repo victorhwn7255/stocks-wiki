@@ -15,7 +15,7 @@ int main(void) {
         "/Library/Frameworks/Python.framework/Versions/3.13/bin/python3";
     char *args[] = {
         py,
-        "/Users/victor_he/Downloads/Code/stocks-wiki/automation/scripts/run.py",
+        "/Users/victor_he/Projects/stocks-wiki/automation/scripts/run.py",
         "--auto", "--quiet",   /* daily: free scan Tue-Sun, full agentic loop on Mondays */
         (char *)0
     };

@@ -36,10 +36,12 @@ from vault_parsers import (  # noqa: E402
 )
 
 
-# Default MEMORY.md location for drift comparison.
-DEFAULT_MEMORY_PATH = Path.home() / ".claude" / "projects" / (
-    "-Users-victor-he-Downloads-Code-stocks-wiki"
-) / "memory" / "MEMORY.md"
+# Default MEMORY.md location for drift comparison. Derive the Claude Code project
+# slug from the vault root so this never rots if the project is moved: the slug is the
+# absolute vault path with "/", "_", and "." each replaced by "-"
+# (e.g. /Users/victor_he/Projects/stocks-wiki -> -Users-victor-he-Projects-stocks-wiki).
+_PROJECT_SLUG = str(SCRIPT_DIR.parent).replace("/", "-").replace("_", "-").replace(".", "-")
+DEFAULT_MEMORY_PATH = Path.home() / ".claude" / "projects" / _PROJECT_SLUG / "memory" / "MEMORY.md"
 
 
 # ---------------------------------------------------------------------------
