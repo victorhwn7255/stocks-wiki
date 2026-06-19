@@ -77,7 +77,7 @@ The 2017-18 precedent: standard MLCC spot prices rose 5-10× into mid-2018; the 
 | Bucket | Names | Evidence |
 |---|---|---|
 | **Winners (sell memory)** | [[MU]] · [[SNDK]] · (SK Hynix, Samsung — not vault pages) | MU: pricing + first 5-year supply agreement (counterparty inferably NVDA); SNDK: +251% revenue, record EPS, NBM customer prepayments $511M |
-| **Winners (sell the panic)** | MLCC top-bin makers (Murata — Tier 3 scope at [[MLCC-oligopoly]]) | Server-capacitor sales guided +85-90% FY2026; same cycle, same crowd-out |
+| **Winners (sell the panic)** | MLCC top-bin makers ([[MURATA]] — now primary, S169) | Server-capacitor sales **+85-90% CONFIRMED at primary**; double-booking **quarantined to consumer-grade** (top-bin order intake exceeds capacity) — see [[MURATA]] + [[MLCC-oligopoly]] |
 | **Losers (pay more, sell less)** | [[CSCO]] (−260 bps GM) · [[PLAB]] (design-release suppression) · [[NVDA]] consumer/gaming edge · low-end consumer electronics broadly | All at primary except the broad consumer read (Tier 3) |
 | **Losers (capex inflation)** | [[META]] — and by mechanism every hyperscaler buying standard server DRAM | Capex raise explicitly memory-priced; server-life extension |
 | **Protected (locked supply)** | [[AVGO]] ("fully secured... 2026 through 2028" incl. HBM — Hock Tan) · [[NVDA]] for HBM (SK Hynix concentration per [[HBM-oligopoly]]) | Protection is for *AI* inputs; their consumer-facing segments still feel Channel A |
@@ -95,7 +95,7 @@ Two honest caveats. First, the damage is uneven: [[PLAB]]'s Q2 call notes high-e
 ## Open questions
 
 1. **MU Q3 FY2026 (~June 25, 2026 — days away).** Does the trade-ratio / bit-growth language hold or tighten? Any new long-term supply agreements? First read on whether the spot-price crack is reaching seller commentary.
-2. **Murata Q1 FY2026 actuals (~July 2026).** Do server-capacitor sales track the +85-90% guide, and does the consumer-grade double-booking spread to high-end grades? (Shared trigger with [[MLCC-oligopoly]].)
+2. **[[MURATA]] — landed at S169.** The full-year actuals confirm server-capacitor +85-90% and show the double-booking **quarantined to consumer-grade** (the top bin runs supply-short, not hoarded). Live question: does it spread to high-end grades into FY2027? (Shared trigger with [[MLCC-oligopoly]].)
 3. **PLAB Q3 FY2026 (~September 2026).** Does the early-May tape-out recovery hold — i.e., does Channel B start healing while memory prices remain high (falsifier #3 test)?
 4. **The contract-price rollover.** TrendForce/Counterpoint Q3-Q4 2026 contract trajectories — the dated test of Channel D. Contract prices following spot down = the cycle clock striking.
 5. **Hyperscaler memory-cost pass-through.** Do MSFT/GOOGL/AMZN follow [[META]] in naming memory pricing as a capex driver at their next calls? (Feeds [[hyperscaler-capex]].)
@@ -107,5 +107,6 @@ Created from evidence already in vault canon (per-source provenance lives on the
 
 ## Change log
 
+- **2026-06-19 (S169 — [[MURATA]] first-canonical ingest):** Resolved Murata→[[MURATA]] in the Winners row + upgraded to primary (server-capacitor +85-90% confirmed); noted the double-booking is **quarantined to consumer-grade** (the AI top bin runs supply-short, not hoarded). Open Q#2 (Murata actuals) landed. Cross-reference + primary-upgrade; `last_updated` unchanged.
 - **2026-06-16 (in-place Tier-3 chart addition per Vic instruction; not counted as a separate session):** Added "The magnitude — a Tier-3 market-sizing frame (BofA)" subsection — the BofA semis/memory forecast table (`raw/research/charts/semis-memory-projection-2026-2030.jpg`), read against the page's two halves: the +168% 2026E memory boom AND the modeled +3.3% 2028E air-pocket (the cyclicality caveat). Tier-3 forecast, cite-don't-treat-as-fact. last_updated 2026-06-13 → 2026-06-16.
 - **2026-06-13 (Session 156):** Page created (mechanism theme; Vic-approved kickoff). Transmission chain assembled from seven vault primary sources (MU, SNDK, PLAB, CSCO, NVDA, META, AVGO) + Tier 3/4 verification round (IDC/Gartner/TrendForce/Counterpoint); winners/losers/protected map; cycle-clock section anchored on the spot-vs-contract divergence + the 2017-18 MLCC precedent; four falsifiers + six dated open questions pre-registered. Cross-references added at [[HBM-oligopoly]] + [[MLCC-oligopoly]] + [[PLAB]]; forward-edge-tracker entry added.

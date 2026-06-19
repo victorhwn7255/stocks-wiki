@@ -5,7 +5,7 @@ description: The self-improving loop for the stocks-wiki vault — mine recent s
 
 # extract-learnings — the self-improving loop (RL-from-traces, drafted)
 
-This skill is the agentic draft layer on top of `learning-monitor`. Where `learning-monitor` *counts* pattern instances and flags threshold crossings, this skill *reads the traces* and *drafts the codification proposal* — shortening the lag between noticing a pattern and promoting it to a convention.
+This skill is the agentic draft layer on top of `learning-monitor`. Where `learning-monitor` *counts* pattern instances and flags threshold crossings, this skill *reads the traces* — including the `calibration-check` loop's scored **WRONG / PARTIAL** calls — and *drafts the codification proposal*, shortening the lag between noticing a pattern and promoting it to a convention. Mining the calibration output is what **closes the self-X loop**: self-maintenance (`vault-hygiene`) → self-evaluation (`calibration-check`) → self-improvement (this skill) *compound* instead of running as three separate scans.
 
 ## The boundary (propose-only — human-owned anchors)
 
@@ -26,8 +26,9 @@ Any ask about recent learnings, codification readiness, drafting convention prop
 2. **Mine the traces** for what changed and what was learned:
    - `log.md` tail (recent sessions' Phase-4 reflections + backlog items),
    - `raw/notes/refresh_log.md` (per-company refresh deltas),
-   - `raw/notes/conventions-ledger.md` (codification history + per-instance evidence).
-   Look for: a pattern that crossed its threshold; a convention that proved wrong / was retired; a recurring methodology that isn't codified yet; MEMORY drift vs the live counts.
+   - `raw/notes/conventions-ledger.md` (codification history + per-instance evidence),
+   - **`automation/calibration/*_scored.md` + `scorecard.md`** (the self-evaluation output — the **WRONG / PARTIAL** verdicts and their one-line lessons; this is the loop-closing source).
+   Look for: a pattern that crossed its threshold; a convention that proved wrong / was retired; a recurring methodology that isn't codified yet; MEMORY drift vs the live counts; **a scored call that came out WRONG/PARTIAL — its lesson is an inverse-RL signal for the "negative signal / retire" section.**
 
 3. **Draft proposals** to `automation/codification/<YYYY-MM-DD>_proposals.md`, one block each:
    `date · pattern/convention · instance count + where (cite the ledger / pages) · the proposed convention text (a paste-ready draft) · which human-owned file it would touch (CLAUDE.md §X / frameworks / anchor) · the case for codifying now`.

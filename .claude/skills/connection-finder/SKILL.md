@@ -47,6 +47,13 @@ Optional flags:
 - `--no-recency` — disable recency weighting (treat all pages as equally recent)
 - `--debug` — emit diagnostic counts to stderr
 
+Dismissed-candidate memory (kills recurring noise):
+- `--dismiss AVGO,NVT --reason "..."` — retire a cluster Vic has judged "not worth a page"; it stops surfacing as HIGH SIGNAL on every future scan.
+- `--list-dismissed` — show the curated skip-list.
+- `--undismiss AVGO,NVT` — restore a cluster so it can surface again.
+
+The skip-list lives in `scripts/find_connections_dismissed.json` (git-tracked, Vic-curated, fully reversible). A dismissed ticker-set is silently excluded from HIGH SIGNAL — so the same low-value cluster doesn't re-appear run after run, and (because the automation's `research_agenda.py --propose` mines this script) it also stops polluting the nightly "Proposed" queue. **When Vic says "dismiss that one" about a surfaced cluster, run `--dismiss` with his reason; never hand-edit the JSON by guessing.**
+
 The script:
 1. Loads all wiki pages (companies + chokepoints + themes + relationships)
 2. Builds co-mention matrix across all pages (weighted: +2 for reciprocal company-page wikilinks, +1 for shared non-company-page mentions, +1 for plaintext on company pages)
@@ -119,7 +126,7 @@ The skill produces a ranked evidence list. All analytical judgment is reserved f
 
 ## Source-of-truth discipline
 
-This skill maintains zero static state. All signals derive from current vault file state at time of invocation. Same vault state produces same output (deterministic). No ticker list to maintain separately — the script reads company pages directly via `wiki/companies/*.md` glob.
+This skill maintains *almost* zero static state. All signals derive from current vault file state at time of invocation (same vault state produces same output, deterministic), and the script reads company pages directly via `wiki/companies/*.md` glob — no ticker list to maintain. The **one** piece of curated state is `scripts/find_connections_dismissed.json` — the Vic-curated skip-list of clusters not worth re-surfacing (managed via `--dismiss` / `--undismiss`, fully reversible).
 
 When new company pages are added to `wiki/companies/`, they automatically participate in the next scan. No SKILL.md update required for new tickers. Same applies to new chokepoint/theme/relationship pages — they automatically participate in captured-pair detection.
 

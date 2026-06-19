@@ -13,6 +13,9 @@ Usage:
     python scripts/find_connections.py --min-score 3.0
     python scripts/find_connections.py --no-recency       # disable recency weighting
     python scripts/find_connections.py --debug            # extra diagnostic output
+    python scripts/find_connections.py --dismiss AVGO,NVT --reason "commercial tie, no page"
+    python scripts/find_connections.py --list-dismissed   # show the curated skip-list
+    python scripts/find_connections.py --undismiss AVGO,NVT
 
 Requires: PyYAML (pip install pyyaml).
 """
@@ -37,6 +40,88 @@ from vault_parsers import (  # noqa: E402
     get_last_updated,
     read_page,
 )
+
+
+# ---------------------------------------------------------------------------
+# Dismissed-candidate memory (Vic-curated skip-list — kills recurring noise)
+# ---------------------------------------------------------------------------
+#
+# When a surfaced HIGH SIGNAL cluster (e.g. "AVGO + NVT") is judged "not worth a
+# page," it goes here and stops re-surfacing every scan. Reversible + git-tracked.
+# Stored as: {"dismissed": [{"tickers": ["AVGO","NVT"], "reason": "...", "date": "YYYY-MM-DD"}]}
+
+DISMISSED_PATH = SCRIPT_DIR / "find_connections_dismissed.json"
+
+
+def _read_dismissed_records() -> list[dict]:
+    import json
+    if not DISMISSED_PATH.exists():
+        return []
+    try:
+        return json.loads(DISMISSED_PATH.read_text(encoding="utf-8")).get("dismissed", [])
+    except Exception:  # noqa: BLE001 — a malformed sidecar must never break the scan
+        return []
+
+
+def _write_dismissed_records(records: list[dict]) -> None:
+    import json
+    DISMISSED_PATH.write_text(
+        json.dumps({"dismissed": records}, indent=2) + "\n", encoding="utf-8"
+    )
+
+
+def load_dismissed() -> set[frozenset]:
+    """Return the dismissed ticker-sets (frozensets) to skip; empty if none/absent."""
+    return {
+        frozenset(t.upper() for t in r["tickers"])
+        for r in _read_dismissed_records()
+        if r.get("tickers")
+    }
+
+
+def _parse_ticker_csv(csv: str) -> list[str]:
+    return sorted({t.strip().upper() for t in csv.split(",") if t.strip()})
+
+
+def cmd_dismiss(tickers_csv: str, reason: str) -> str:
+    tickers = _parse_ticker_csv(tickers_csv)
+    if len(tickers) < 2:
+        return "dismiss needs >=2 comma-separated tickers, e.g. --dismiss AVGO,NVT"
+    records = _read_dismissed_records()
+    if any(frozenset(r["tickers"]) == frozenset(tickers) for r in records):
+        return f"already dismissed: {' + '.join(tickers)}"
+    records.append(
+        {
+            "tickers": tickers,
+            "reason": reason or "(no reason given)",
+            "date": date.today().strftime("%Y-%m-%d"),
+        }
+    )
+    _write_dismissed_records(records)
+    return f"dismissed: {' + '.join(tickers)} — will no longer surface as a HIGH SIGNAL cluster."
+
+
+def cmd_undismiss(tickers_csv: str) -> str:
+    tickers = _parse_ticker_csv(tickers_csv)
+    records = _read_dismissed_records()
+    kept = [r for r in records if frozenset(r["tickers"]) != frozenset(tickers)]
+    if len(kept) == len(records):
+        return f"not in dismissed list: {' + '.join(tickers)}"
+    _write_dismissed_records(kept)
+    return f"restored: {' + '.join(tickers)} — eligible to surface again."
+
+
+def cmd_list_dismissed() -> str:
+    records = _read_dismissed_records()
+    if not records:
+        return 'No dismissed clusters. (Add one: --dismiss AVGO,NVT --reason "...")'
+    lines = ["Dismissed connection candidates (skipped from HIGH SIGNAL):"]
+    for r in records:
+        lines.append(
+            f"  - {' + '.join(r['tickers'])} — {r.get('reason', '')} "
+            f"(dismissed {r.get('date', '?')})"
+        )
+    return "\n".join(lines)
 
 
 # ---------------------------------------------------------------------------
@@ -311,6 +396,7 @@ def detect_clusters(
     scored_pairs: list[dict],
     min_score_threshold: float = 3.0,
     max_cluster_size: int = 5,
+    dismissed: set[frozenset] | None = None,
 ) -> list[dict]:
     """Surface candidate connections as small high-density clusters (or single pairs).
 
@@ -333,9 +419,12 @@ def detect_clusters(
     Returns list of cluster dicts: {tickers, cluster_score, evidence, pairs}.
     Sorted by cluster_score descending.
     """
+    dismissed = dismissed or set()
     qualifying = [
         p for p in scored_pairs
-        if p["raw_score"] >= min_score_threshold and not p["captured"]
+        if p["raw_score"] >= min_score_threshold
+        and not p["captured"]
+        and p["pair"] not in dismissed  # a dismissed 2-ticker pair never seeds a cluster
     ]
     if not qualifying:
         return []
@@ -413,6 +502,10 @@ def detect_clusters(
             }
         )
 
+    # Drop any formed cluster whose exact ticker-set Vic has dismissed (handles 3+
+    # ticker dismissals; the qualifying-pair filter above already handles 2-ticker ones).
+    if dismissed:
+        clusters = [c for c in clusters if frozenset(c["tickers"]) not in dismissed]
     clusters.sort(key=lambda c: (-c["cluster_score"], c["tickers"]))
     return clusters
 
@@ -808,8 +901,11 @@ def run_connections_scan(
               f"{sum(1 for s in scored if s['captured'])} scored-and-captured",
               file=sys.stderr)
 
-    # HIGH SIGNAL: density-constrained clusters from NOT-CAPTURED qualifying pairs
-    new_clusters = detect_clusters(scored, min_score_threshold=min_score)
+    # HIGH SIGNAL: density-constrained clusters from NOT-CAPTURED qualifying pairs,
+    # minus any Vic-dismissed cluster (the curated skip-list — kills recurring noise).
+    new_clusters = detect_clusters(
+        scored, min_score_threshold=min_score, dismissed=load_dismissed()
+    )
 
     # MEDIUM SIGNAL: per-page refresh candidates (external tickers with high
     # affinity to existing page members)
@@ -865,7 +961,38 @@ def main():
         action="store_true",
         help="Emit diagnostic counts to stderr.",
     )
+    parser.add_argument(
+        "--dismiss",
+        metavar="T1,T2",
+        help="Add a ticker-set to the dismissed skip-list (won't re-surface as HIGH SIGNAL).",
+    )
+    parser.add_argument(
+        "--reason",
+        default="",
+        help="Reason note recorded with --dismiss.",
+    )
+    parser.add_argument(
+        "--undismiss",
+        metavar="T1,T2",
+        help="Remove a ticker-set from the dismissed skip-list.",
+    )
+    parser.add_argument(
+        "--list-dismissed",
+        action="store_true",
+        help="Print the dismissed skip-list and exit.",
+    )
     args = parser.parse_args()
+
+    # Dismissed-list management commands run and exit (no scan).
+    if args.list_dismissed:
+        print(cmd_list_dismissed())
+        return
+    if args.dismiss:
+        print(cmd_dismiss(args.dismiss, args.reason))
+        return
+    if args.undismiss:
+        print(cmd_undismiss(args.undismiss))
+        return
 
     report = run_connections_scan(
         args.vault_root,

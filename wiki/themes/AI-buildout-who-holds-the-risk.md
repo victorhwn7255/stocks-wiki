@@ -1,7 +1,7 @@
 ---
 type: theme
 tickers: [AVGO, NVDA, CRWV, NBIS, ORCL, AMZN, META, MSFT, GOOGL, BE, CSCO, CORZ]
-last_updated: 2026-06-16
+last_updated: 2026-06-18
 ---
 
 # AI Build-out — Who Holds the Risk
@@ -33,6 +33,8 @@ Mechanism theme. **The question: if AI revenue disappoints, who actually eats th
 | AI share of 2025 private-credit deal value | 34% (vs ~17% prior-5yr avg) | FSB/OECD |
 
 Honest caveats baked in: the $2.9T/$1.5T split is ultimately one sell-side estimate (MS itself flags it biased *higher* if hyperscalers cut capex, pushing more onto credit markets); "AI-related" private credit uses broad PitchBook verticals; and total IT investment at ~5% of GDP now *exceeds* the 2000 peak even though the AI-specific slice is smaller.
+
+**Primary-source confirmation of the flip (Alphabet, June 2026).** On June 1, 2026 [[GOOGL]] announced an **$80B equity capital raise to fund AI infrastructure** (GOOGL 8-K, Ex-99.1) — the freshest vault-primary instance of the FCF-below-capex flip pushing a mega-cap to the public *equity* market, beyond the debt and off-balance-sheet channels. The 8-K states 2026 capex of **$180-190B against $174B of trailing-12-month operating cash flow** (capex now exceeds OCF) plus >$100B of total debt. Where the eight structures below distribute loss to non-obvious bearers, a public equity raise is the *transparent* end of the spectrum — the loss-bearer is the most visible of any here (existing shareholders, via dilution), which is why it sits in this sizing section, not the opaque-structures table. Honest nuance: only ~$40B of the $80B funds the build (~$30B underwritten common + convertible preferred + a $10B Berkshire Hathaway private placement); the ~$40B at-the-market tranche *primarily* covers employee-equity-award tax obligations, not capex.
 
 ## The eight structures — the exposure table
 
@@ -90,6 +92,7 @@ Created from a two-layer evidence base: (1) vault primary sources already in can
 
 ## Change log
 
+- **2026-06-18 (S167 — Alphabet equity raise confirms the regime flip):** Added a primary-source confirmation of finding #1 under "The regime flip — the sizing" — Alphabet's **$80B equity capital raise** (GOOGL 8-K, June 1 2026), with 2026 capex $180-190B exceeding $174B TTM OCF; framed as the *transparent* end of the financing spectrum (loss-bearer = diluted shareholders), distinct from the eight opaque structures. Honest nuance recorded (~$40B of the $80B is an employee-tax ATM, not capex). No structure/loss-bearer findings changed. last_updated 2026-06-16 → 2026-06-18.
 - **2026-06-16 (Session 164):** Added the [[neocloud-moat-durability]] sibling-page cross-reference (verdict-ownership rule — loss-distribution verdicts here; moat-durability verdicts there), from the neocloud-business-model deep-research build. No structures or loss-bearer findings changed. last_updated 2026-06-15 → 2026-06-16.
 - **2026-06-15 (Session 162):** Added **Structure #8 — host-layer project bond** ([[CORZ]] Core Scientific's $3.3B 7.75% CoreWeave-contracted bond + ~$1.1B convertibles; the *inverse* of #4's GPU-collateralized debt — host real-estate + lease contracts as collateral), from the CORZ first-canonical ingest. The host/landlord tier beneath the neoclouds now appears in the credit map; CORZ added to tickers.
 - **2026-06-13 (Session 157):** Page created (mechanism theme; Vic-approved kickoff; the second of the two S155-audit dig-deeper builds after [[memory-shortage-winners-losers]]). Seven-structure exposure table fusing vault primary + verified official-sector research; loss-bearer chain traced to end-holders; IMF circularity quantification + obsolescence scenario; honest gaps recorded (lab funding-gap math and telecom-2000 comparison did not survive verification; nothing has broken yet). Cross-references added at [[AVGO]] + [[nvidia-supply-chain-commitments]] + [[CRWV]] + [[hyperscaler-capex]] + [[AI-demand-durability]]; [[what-could-go-wrong]] Entries 5 + 6 re-pointed here as canonical evidence home; forward-edge-tracker 10th entry added.

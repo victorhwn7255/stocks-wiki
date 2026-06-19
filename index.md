@@ -42,6 +42,7 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` Section 3
 | [GOOGL](wiki/companies/GOOGL.md) | GOOGL | outside | outside | outside | outside | outside | outside | — | 2026-06-02 |
 | [HARMONIC](wiki/companies/HARMONIC.md) | HARMONIC | 4 | — | — | — | 4 | — | 4 | 2026-06-07 |
 | [HENGLI](wiki/companies/HENGLI.md) | HENGLI | outside | — | — | — | — | — | — | 2026-06-08 |
+| [IBIDEN](wiki/companies/IBIDEN.md) | IBIDEN | 4 | — | — | — | — | 2 | — | 2026-06-19 |
 | [INOD](wiki/companies/INOD.md) | INOD | outside | outside | outside | outside | outside | outside | — | 2026-06-05 |
 | [INTC](wiki/companies/INTC.md) | INTC | 1, 2 | outside | — | outside | outside | outside | — | 2026-05-25 |
 | [KTOS](wiki/companies/KTOS.md) | KTOS | — | — | — | — | — | — | 1 | 2026-06-04 |
@@ -52,6 +53,7 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` Section 3
 | [MKSI](wiki/companies/MKSI.md) | MKSI | 4 | 3 | — | outside | 2 | 3 | — | 2026-05-21 |
 | [MOD](wiki/companies/MOD.md) | MOD | 4 | outside | — | 3 | outside | outside | — | 2026-05-29 |
 | [MP](wiki/companies/MP.md) | MP | 4-6 | outside | outside | outside | outside | 1 | 4 | 2026-06-05 |
+| [MURATA](wiki/companies/MURATA.md) | MURATA | 4 | — | — | — | — | outside | — | 2026-06-19 |
 | [MPWR](wiki/companies/MPWR.md) | MPWR | 4 | outside | outside | 3 | outside | outside | — | 2026-05-25 |
 | [MRCY](wiki/companies/MRCY.md) | MRCY | — | — | — | — | — | — | 2 | 2026-06-05 |
 | [MRVL](wiki/companies/MRVL.md) | MRVL | 3 | 3 | — | — | — | — | — | 2026-05-29 |
@@ -112,7 +114,7 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` Section 3
 | [HBM-oligopoly](wiki/chokepoints/HBM-oligopoly.md) | ONTO, COHU, AEHR, TSM, MKSI, MU | 2026-05-29 |
 | [liquid-cooling](wiki/chokepoints/liquid-cooling.md) | VRT, ETN, NVT, MOD, FLEX, COHR, ANET, AAON, NVDA, SANHUA, TUOPU | 2026-06-06 |
 | [rare-earth-magnet-chokepoint](wiki/chokepoints/rare-earth-magnet-chokepoint.md) | MP, AVAV, TDY | 2026-06-04 |
-| [pcb-interconnect-substrate-chokepoint](wiki/chokepoints/pcb-interconnect-substrate-chokepoint.md) | NVDA, AVGO, MKSI, NOVT, ONTO | 2026-06-17 |
+| [pcb-interconnect-substrate-chokepoint](wiki/chokepoints/pcb-interconnect-substrate-chokepoint.md) | NVDA, AVGO, MKSI, NOVT, ONTO, IBIDEN | 2026-06-19 |
 
 ## Themes
 
@@ -134,9 +136,9 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` Section 3
 | [drone-platform-commoditization](wiki/themes/drone-platform-commoditization.md) | AVAV, KTOS | 2026-06-04 |
 | [AI-data-supply-chain](wiki/themes/AI-data-supply-chain.md) | INOD | 2026-06-05 |
 | [humanoid-robot-value-chain](wiki/themes/humanoid-robot-value-chain.md) | MP, NVDA, INTC, INOD, NOVT, VPG, OUST, SANHUA, TUOPU, SHUANGHUAN, ZHONGDA, HARMONIC, SLING, ZHAOWEI, HENGLI | 2026-06-08 |
-| [MLCC-oligopoly](wiki/themes/MLCC-oligopoly.md) | NVDA | 2026-06-13 |
+| [MLCC-oligopoly](wiki/themes/MLCC-oligopoly.md) | NVDA, MURATA | 2026-06-19 |
 | [memory-shortage-winners-losers](wiki/themes/memory-shortage-winners-losers.md) | MU, SNDK, PLAB, CSCO, NVDA, META, AVGO | 2026-06-16 |
-| [AI-buildout-who-holds-the-risk](wiki/themes/AI-buildout-who-holds-the-risk.md) | AVGO, NVDA, CRWV, NBIS, ORCL, AMZN, META, MSFT, GOOGL, BE, CSCO, CORZ | 2026-06-16 |
+| [AI-buildout-who-holds-the-risk](wiki/themes/AI-buildout-who-holds-the-risk.md) | AVGO, NVDA, CRWV, NBIS, ORCL, AMZN, META, MSFT, GOOGL, BE, CSCO, CORZ | 2026-06-18 |
 | [AI-implementation-deployment-layer](wiki/themes/AI-implementation-deployment-layer.md) | ACN, IBM, EPAM, GLOB, CTSH, INFY, PLTR, CRM, MDB, DDOG, PANW, OKTA, CRWD, ZS | 2026-06-13 |
 | [physical-AI-value-chain](wiki/themes/physical-AI-value-chain.md) | NVDA, MP, HARMONIC, SANHUA, TUOPU, HENGLI, ZHAOWEI, SHUANGHUAN, ZHONGDA, SLING, NOVT, VPG, OUST, TDY, ARM | 2026-06-15 |
 | [training-to-inference-shift](wiki/themes/training-to-inference-shift.md) | NVDA, AMD, ARM, MU, AVGO, MRVL, TSM | 2026-06-16 |
@@ -150,7 +152,7 @@ Cross-vault status-bearing pages per CLAUDE.md Section 3.20 — updated by propa
 | Page | Related Tickers | Last Updated |
 |------|-----------------|--------------|
 | [forward-edge-tracker](wiki/trackers/forward-edge-tracker.md) | ETN, VRT, GEV, TSM, NVDA, AVGO, MRVL, ALAB, AAOI, FCEL, MU, SNDK, CSCO, PLAB, CRWV, NBIS, ORCL, AMZN, MP, LSCC, TDY, AVAV, KTOS, HARMONIC, SANHUA, TUOPU, NOVT, VPG | 2026-06-16 |
-| [hyperscaler-capex](wiki/trackers/hyperscaler-capex.md) | MSFT, GOOGL, AMZN, META, ORCL, CRWV, NBIS | 2026-06-03 |
+| [hyperscaler-capex](wiki/trackers/hyperscaler-capex.md) | MSFT, GOOGL, AMZN, META, ORCL, CRWV, NBIS | 2026-06-18 |
 | [china-exposure](wiki/trackers/china-exposure.md) | TSM, NVDA, AVGO, AMD, MRVL, ALAB, MU, ARM, INTC, AAOI, AXTI, LITE, COHR, CRDO, ONTO, COHU, VECO, PLAB, TSEM, MKSI, MPWR, NVTS, POWI, ON, SOI, SNDK, FN, GLW, FLEX, VICR, NOK, ENS, XFAB, AEHR, MOD, MP, TDY, AMPX, AVAV, LSCC, KTOS, MRCY, INOD, NOVT, VPG, OUST, SANHUA, TUOPU, SHUANGHUAN, ZHONGDA, SLING, ZHAOWEI, HENGLI | 2026-06-08 |
 | [what-could-go-wrong](wiki/trackers/what-could-go-wrong.md) | MSFT, NVDA, AVGO | 2026-06-12 |
 | [AI-credit-spread-watch](wiki/trackers/AI-credit-spread-watch.md) | CRWV, ORCL, MSFT, AVGO, NVDA, NBIS, CORZ | 2026-06-15 |

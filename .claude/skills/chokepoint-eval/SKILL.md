@@ -1,6 +1,6 @@
 ---
 name: chokepoint-eval
-description: "Run the six-question chokepoint-durability test on a vault chokepoint/theme page or a new candidate — buyer-defense, supply-response, generational lockout, substitution tail, demand-ramp, geology/policy overlay — producing an evidence-cited scorecard and a one-line durability verdict (memory-grade / quality-but-cyclical / theme-spike / policy-contingent / conditional-on-demand). Read-only on the vault; flags page contradictions, never edits."
+description: "Run the six-question chokepoint-durability test on a vault chokepoint/theme page or a new candidate — buyer-defense, supply-response, generational lockout, substitution tail, demand-ramp, geology/policy overlay — producing an evidence-cited scorecard and a one-line durability verdict (memory-grade / quality-but-cyclical / theme-spike / policy-contingent / conditional-on-demand). Also supports a BATCH / leaderboard mode (/chokepoint-eval batch) that runs the test across all chokepoints + chokepoint-shaped themes and ranks them by durability. Read-only on the vault; flags page contradictions, never edits."
 ---
 
 # chokepoint-eval — the six-question chokepoint-durability test
@@ -16,6 +16,7 @@ This skill answers one question with a fixed rubric: **how durable is this choke
 ## When to use
 
 - The user invokes `/chokepoint-eval <page-or-candidate>` or asks "how durable is X as a chokepoint?" / "is X a real chokepoint?"
+- The user invokes `/chokepoint-eval batch` (or `--all`) or asks to "rank all the chokepoints" / "which chokepoints are strongest/weakest" / "chokepoint durability leaderboard" → see **Batch / leaderboard mode** below.
 - At Stop-1 planning for a **new chokepoint page** (informs the Pathway 1 provisional vs Pathway 2 canonical judgment, CLAUDE.md §3.15).
 - At a **chokepoint refresh** (has the score moved since the last ingest?).
 - When writing or updating a **forward-edge-tracker entry** (the durability-anchor field).
@@ -55,6 +56,21 @@ Scoring per cell: **pass / weak / fail** (or **split** when a page contains two 
 5. The one-line methodology status note (agent-side rubric, pending frameworks codification).
 
 On explicit request only, save the full scorecard as `raw/notes/chokepoint-eval/<RUN_DATE>_<name>.md`.
+
+## Batch / leaderboard mode
+
+Invoked as `/chokepoint-eval batch` (or `/chokepoint-eval --all`): run the six-question test across the whole chokepoint set and produce a comparative **durability leaderboard** — so the strongest and weakest chokepoints are visible at a glance, and any page whose framing has drifted from its score gets caught.
+
+**Scope.** Glob `wiki/chokepoints/*.md` (all of them) **plus the chokepoint-shaped pages in `wiki/themes/*.md`**. Many theme pages are *dynamics / mechanism / absence* pages (CLAUDE.md §3.12), not chokepoints — judge each: if a theme is genuinely about owning a structural bottleneck (e.g. [[MLCC-oligopoly]], [[HBM-oligopoly]]), include it; otherwise mark it **"N/A — not a chokepoint"** and exclude it from the ranking (list the skipped ones in one line so coverage is honest).
+
+**Steps:**
+1. Enumerate the in-scope pages. For the five pages with published **calibration anchors** (the Reference results below — datacenter-laser-supply, cpo-integration, advanced-optical-packaging, InP-supply, MLCC-oligopoly), reuse the anchor verdict as-is (don't re-derive). Score the rest by reading each page and running Q1–Q6 with cited evidence (same rubric, same pass/weak/fail per cell).
+2. Assign each its one-line verdict on the five-label scale, **per Framework 12**.
+3. Rank into bands, most-durable first: **memory-grade > quality-but-cyclical > conditional-on-demand > policy-contingent > theme-spike**.
+4. **Save** the leaderboard to `raw/notes/chokepoint-eval/<RUN_DATE>_leaderboard.md`: grouped by verdict band + a Q1–Q6 detail table (page × Q1–Q6 × verdict × the one load-bearing evidence anchor per row). Chat output = the ranked summary (bands + a compact table).
+5. **Contradiction flags.** Where a page's *current framing or tier placement* conflicts with its batch verdict (e.g. a page framed canonical-chokepoint-grade that scores theme-spike), list it as a **human-gated page-update candidate** — never edit the page.
+
+Same read-only boundary as the single-page run: `raw/notes/chokepoint-eval/` is a discovery log (not in `index.md`/`log.md`, doesn't count for accounting); nothing under `wiki/` is touched. A full pass is meaningful agent work (six questions per page), so batch **only when asked** — never as a side effect of a single-page run.
 
 ## Disciplines
 

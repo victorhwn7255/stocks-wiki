@@ -305,25 +305,46 @@ def build_deepresearch_cmd(question: str, report_path: Path) -> list[str]:
 
 
 def deep_research_step(run_llm: bool) -> dict:
+    """Research the top Pending topic via the headless-reliable SEQUENTIAL RESEARCH LOOP
+    (automation/scripts/research_loop.py) — paced, low-concurrency (peak 2), checkpointed,
+    resumable. Replaces the bundled deep-research workflow, whose ~100-agent burst fail-fasts
+    on a rate throttle (the 2026-06-19 failure). See automation/RESEARCH-LOOP-SPEC.md."""
     res = _run(["python3", "scripts/research_agenda.py", "--pick"], timeout=30)
     question = (res["out"] or "").strip()
     if not question:
         return {"name": "deep-research", "executed": False,
                 "note": "no Pending topic in raw/research/topics-list.md"}
     report_path = RESEARCH_SELF / f"{_stamp()}_{_slug(question)}.md"
-    cmd = build_deepresearch_cmd(question, report_path)
     if not run_llm:
         return {"name": "deep-research", "executed": False, "topic": question,
-                "note": "DRY-RUN — pass --run-llm to actually research",
-                "cmd": " ".join(f'"{c}"' if " " in c else c for c in cmd)}
+                "note": "DRY-RUN — pass --run-llm to actually run the research loop"}
     RESEARCH_SELF.mkdir(parents=True, exist_ok=True)
-    r = _run(cmd, timeout=3600)  # deep-research can take many minutes
+    # Local import so a research_loop issue can never break the (free) deterministic scan.
+    import research_loop  # noqa: E402
+
+    loglines: list[str] = []
+    result = research_loop.run(
+        question, report_path, claude_bin=CLAUDE_BIN,
+        max_agents=60, max_concurrent=2, pace_seconds=30,
+        per_call_timeout=600, max_retries=3, verify_each=True,
+        log=lambda m: loglines.append(str(m)),
+    )
+    # Observability — write the loop's per-step outcome into the day's run log so a failure
+    # (throttle, budget cap, synthesis miss) is VISIBLE in the morning, not buried in a JSONL.
+    try:
+        with (LOGS / f"run-{_stamp()}.log").open("a", encoding="utf-8") as f:
+            f.write("\n  deep-research (loop):\n")
+            for ln in loglines:
+                f.write(f"    {ln}\n")
+    except Exception:  # noqa: BLE001
+        pass
+
     saved = report_path.exists()
-    if saved:  # mark the topic researched (deterministic) only if the report actually landed
+    if saved:  # mark the topic researched only if the report actually landed
         _run(["python3", "scripts/research_agenda.py", "--mark-done", str(report_path)], timeout=30)
-    return {"name": "deep-research", "executed": True, "ok": r["ok"] and saved,
-            "topic": question, "report": str(report_path.relative_to(VAULT_ROOT)),
-            "report_saved": saved, "err": r["err"][:400]}
+    result["report_saved"] = saved
+    result["log"] = loglines
+    return result
 
 
 def main():

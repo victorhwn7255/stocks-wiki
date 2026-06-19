@@ -1,0 +1,37 @@
+
+=== run 2026-06-19T023007 ===
+  hygiene: ok
+  calibration: ok
+  connections: ok
+  patterns: ok
+  freshness: ok
+  actions: 2
+    - ⚠️ unresolved wikilinks: [[CMI]], [[Canonical]], [[QCOM]], [[TSMC]] — forward-link or typo (check).
+    - 📥 new filings available to ingest — see Discovery › Freshness.
+
+=== run 2026-06-19T101036 ===
+  hygiene: ok
+  calibration: ok
+  connections: ok
+  patterns: ok
+  actions: 1
+    - ⚠️ unresolved wikilinks: [[CMI]], [[Canonical]], [[QCOM]], [[TSMC]] — forward-link or typo (check).
+
+  deep-research (loop):
+    scope ok (15 angles)
+      angle 1/15 AI-server vs traditional-server PCB bill ..... ok
+      angle 2/15 Low-loss CCL grade migration economics ( ..... ok
+      angle 3/15 CCL supply concentration and whether res ..... ok
+      angle 4/15 High-layer-count / any-layer HDI fabrica ..... ok
+      angle 5/15 Listed AI-PCB exposure map: revenue % fr ..... ok
+      angle 6/15 Material chokepoint quality — Nittobo T- ..... ok
+      angle 7/15 GPU/accelerator board roadmap (GB200/GB3 ..... ok
+      angle 8/15 Switch / networking line-card PCB conten ..... ok
+      angle 9/15 Rack-scale content economics: how NVL72- ..... ok
+      angle 10/15 Structural-vs-cyclical decomposition: pe ..... ok
+      angle 11/15 Value-capture migration: gross-margin po ..... ok
+      angle 12/15 China board-fab capex ramp and AI/HPC sh ..... ok
+      angle 13/15 ABF/FCBGA substrate adjacency — demarcat ..... ok
+      angle 14/15 Falsifiers & risks: capex air-pocket, ma ..... ok
+      angle 15/15 Geography & access lens: Japan/Taiwan/Ko ..... ok
+    synthesis ok → raw/research/self-research/2026-06-19_how-much-does-ai-server-accelerator-content.md (15/15 angles, 32 calls)

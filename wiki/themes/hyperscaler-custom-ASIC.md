@@ -196,10 +196,11 @@ Amazon matches the multi-modal refinement above — it builds captive accelerato
 ## Cross-references
 
 - [[datacenter-photonics-supply-chain]] — Section 2.3 (Optical DSP / SerDes) and Section 2.10 (Specialized electronics, 224G IP) for control-silicon layer organization; Bucket A in the investability framing covers the merchant control-silicon investability thesis underlying the custom ASIC franchise dynamics.
-- [[pcb-interconnect-substrate-chokepoint]] — the physical layer beneath every custom ASIC: each TPU/Trainium/MTIA program (and Victory Giant's Google-TPU boards) gates on ABF IC substrate + high-layer PCB, so the substrate/material chokepoint is the back-end constraint on the custom-silicon ramp this page tracks.
+- [[pcb-interconnect-substrate-chokepoint]] — the physical layer beneath every custom ASIC: each TPU/Trainium/MTIA program (and Victory Giant's Google-TPU boards) gates on ABF IC substrate ([[IBIDEN]] the FCBGA-substrate leader — ~70-80% AI-server-substrate share, and it reports switch-substrate orders from "a major GPU customer" + hyperscaler-ASIC inquiries) + high-layer PCB, so the substrate/material chokepoint is the back-end constraint on the custom-silicon ramp this page tracks.
 
 ## Change log
 
+- **2026-06-19 (S168 cross-reference):** Resolved the substrate-chokepoint cross-reference to name [[IBIDEN]] (ingested S168) — the FCBGA-substrate leader beneath the custom-silicon ramp, which reports switch-substrate orders from "a major GPU customer" + hyperscaler-ASIC inquiries. Cross-reference only; `last_updated` unchanged.
 - **2026-06-17 (cross-reference):** Added [[pcb-interconnect-substrate-chokepoint]] to Cross-references — the ABF-substrate/high-layer-PCB back-end constraint beneath the custom-silicon ramp. Cross-reference only; `last_updated` unchanged.
 
 - **2026-04-23:** Created from ALAB (10-K FY2025, 10-Q Q3 FY2025, Q4 FY2025 call), cross-referencing AAOI (10-K FY2025, Q4 FY2025 call), MRVL (10-K FY2026, Q4 FY2026 call), and AVGO (10-K FY2025, 10-Q Q1 FY2026, Q1 FY2026 call). Dynamics theme page tracking hyperscaler custom ASIC warrant structures, competitive landscape by layer, and COT risk. Triggered by ALAB ingest (Session 14) per backlog item deferred from Session 11.

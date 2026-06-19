@@ -17,7 +17,13 @@ __pycache__/
 *.swp
 *.swo
 
+# Obsidian (per-vault config; workspace.json rewrites constantly)
+.obsidian/
+.obsidian.bak/
+
 prompts/
 
 automation/digests/
 automation/prompts/
+# Research-loop transient working dirs (state + findings per run)
+automation/research-runs/

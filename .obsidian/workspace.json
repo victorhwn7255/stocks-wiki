@@ -1,14 +1,14 @@
 {
   "main": {
-    "id": "316ad97a50cb8c30",
+    "id": "8fe44ba028b030bc",
     "type": "split",
     "children": [
       {
-        "id": "7b6063e0d301d5fc",
+        "id": "676d414d19d6444b",
         "type": "tabs",
         "children": [
           {
-            "id": "b432a07e661c2f93",
+            "id": "b48970a1268f3477",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -23,15 +23,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "6ebb80c126bf6924",
+    "id": "03c6992b11e1a863",
     "type": "split",
     "children": [
       {
-        "id": "d6dfe110ae6cb7f1",
+        "id": "fe006649d6790311",
         "type": "tabs",
         "children": [
           {
-            "id": "af6f05f84988d172",
+            "id": "e30409527041695a",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -44,7 +44,7 @@
             }
           },
           {
-            "id": "142573bef5648141",
+            "id": "7f38c43fc6a0a108",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -61,7 +61,7 @@
             }
           },
           {
-            "id": "0ac12de5e21ed8d9",
+            "id": "17e3e720fe968e15",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -74,18 +74,18 @@
       }
     ],
     "direction": "horizontal",
-    "width": 284.5
+    "width": 300
   },
   "right": {
-    "id": "f3288ce013686b6c",
+    "id": "1f8988b26626559b",
     "type": "split",
     "children": [
       {
-        "id": "b92d8f5343538ffd",
+        "id": "11fd5f8835e195e5",
         "type": "tabs",
         "children": [
           {
-            "id": "ca1236208950d305",
+            "id": "43913ae0e35491b7",
             "type": "leaf",
             "state": {
               "type": "backlink",
@@ -103,7 +103,7 @@
             }
           },
           {
-            "id": "cb88c9e7918d31cf",
+            "id": "b798350961242f41",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
@@ -116,7 +116,7 @@
             }
           },
           {
-            "id": "a8350ee817e0aed8",
+            "id": "69a1b9558bcd460e",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -131,7 +131,7 @@
             }
           },
           {
-            "id": "142d024360eb3a2c",
+            "id": "ae2fdbe89d4d03aa",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -145,7 +145,7 @@
             }
           },
           {
-            "id": "27eec0dd000be9f2",
+            "id": "5852181bb6728419",
             "type": "leaf",
             "state": {
               "type": "outline",
@@ -176,45 +176,8 @@
       "bases:Create new base": false
     }
   },
-  "active": "b432a07e661c2f93",
+  "active": "b48970a1268f3477",
   "lastOpenFiles": [
-    "wiki/companies/AAOI.md",
-    "wiki/themes/AIDC-cooling-architecture-transition.md",
-    "wiki/chokepoints/liquid-cooling.md",
-    "prompts/session71_liquid_cooling_chokepoint_kickoff.md",
-    "wiki/companies/MOD.md",
-    "prompts/session70_mod_ingest_kickoff.md",
-    "wiki/companies/NVT.md",
-    "prompts/session69_nvt_ingest_kickoff.md",
-    "prompts/samples/[single_ingest]/session69_nvt_ingest_kickoff.md",
-    "raw/transcripts/MOD-earnings-2026-02-05.pdf",
-    "raw/transcripts/NVT-earnings-2026-05-01.pdf",
-    "raw/filings/MOD-10Q-2025-12-31.htm",
-    "raw/filings/MOD-10K-2025-03-31.htm",
-    "raw/filings/NVT-10Q-2026-03-31.htm",
-    "raw/filings/NVT-10K-2025-12-31.htm",
-    "wiki/chokepoints/HBM-oligopoly.md",
-    "wiki/chokepoints/transformer-supply.md",
-    "prompts/samples/[refresh_ingest]/etn_refresh_kickoff.md",
-    "prompts/samples/[refresh_ingest]/lite_cohr_paired_refresh_kickoff.md",
-    "prompts/samples/[refresh_ingest]/bwxt_leu_paired_refresh_kickoff.md",
-    "prompts/samples/[refresh_ingest]/aaoi_refresh_kickoff.md",
-    "prompts/samples/[refresh_ingest]/session52_etn_refresh_kickoff.md",
-    "prompts/samples/[refresh_ingest]/session50_lite_cohr_paired_refresh_kickoff.md",
-    "prompts/samples/[refresh_ingest]/session48_aaoi_refresh_kickoff.md",
-    "prompts/samples/[refresh_ingest]/session49_bwxt_leu_paired_refresh_kickoff.md",
-    "prompts/samples/[refresh_ingest]",
-    "prompts/samples/[pair_ingest]/alab_anet_paired_refresh_kickoff.md",
-    "prompts/samples/[pair_ingest]/session55_alab_anet_paired_refresh_kickoff.md",
-    "prompts/samples/[pair_ingest]/veco_viav_paired_refresh_kickoff.md",
-    "prompts/samples/[pair_ingest]/session58_veco_viav_paired_refresh_kickoff.md",
-    "prompts/samples/[pair_ingest]/glw_fn_paired_refresh_kickoff.md",
-    "prompts/samples/[pair_ingest]/session59_glw_fn_paired_refresh_kickoff.md",
-    "prompts/samples/[pair_ingest]/leu_bwxt_paired_ingest_kickoff.md",
-    "prompts/samples/[single_ingest]",
-    "prompts/samples/[pair_ingest]",
-    "prompts/samples",
-    "Untitled.canvas",
-    "raw/transcripts/COHR-earnings-2026-02-04_files/1.png"
+    "wiki/themes/MLCC-oligopoly.md"
   ]
 }
