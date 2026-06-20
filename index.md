@@ -79,6 +79,7 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` Section 3
 | [SLING](wiki/companies/SLING.md) | SLING | outside | — | — | — | — | — | — | 2026-06-08 |
 | [SNDK](wiki/companies/SNDK.md) | SNDK | 4 | outside | 4 | outside | outside | outside | — | 2026-05-24 |
 | [SOI](wiki/companies/SOI.md) | SOI | 6 | 3 | — | — | — | 2 | — | 2026-05-29 |
+| [TAIYO](wiki/companies/TAIYO.md) | TAIYO | 4 | — | — | — | — | outside | — | 2026-06-19 |
 | [TDY](wiki/companies/TDY.md) | TDY | — | — | — | — | — | — | 4 | 2026-06-04 |
 | [TSEM](wiki/companies/TSEM.md) | TSEM | 2 | 2 | — | — | outside | outside | — | 2026-06-13 |
 | [TSM](wiki/companies/TSM.md) | TSM | 2 | 1 | — | — | — | — | — | 2026-04-26 |
@@ -112,6 +113,7 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` Section 3
 | [BTM-grid-bypass-workaround](wiki/chokepoints/BTM-grid-bypass-workaround.md) | BE, FCEL, GEV, CAT, CEG, CORZ | 2026-06-15 |
 | [transformer-supply](wiki/chokepoints/transformer-supply.md) | ETN, GEV, NVDA, FLEX | 2026-05-29 |
 | [HBM-oligopoly](wiki/chokepoints/HBM-oligopoly.md) | ONTO, COHU, AEHR, TSM, MKSI, MU | 2026-05-29 |
+| [MLCC-oligopoly](wiki/chokepoints/MLCC-oligopoly.md) | NVDA, MURATA, TAIYO | 2026-06-19 |
 | [liquid-cooling](wiki/chokepoints/liquid-cooling.md) | VRT, ETN, NVT, MOD, FLEX, COHR, ANET, AAON, NVDA, SANHUA, TUOPU | 2026-06-06 |
 | [rare-earth-magnet-chokepoint](wiki/chokepoints/rare-earth-magnet-chokepoint.md) | MP, AVAV, TDY | 2026-06-04 |
 | [pcb-interconnect-substrate-chokepoint](wiki/chokepoints/pcb-interconnect-substrate-chokepoint.md) | NVDA, AVGO, MKSI, NOVT, ONTO, IBIDEN | 2026-06-19 |
@@ -136,8 +138,7 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` Section 3
 | [drone-platform-commoditization](wiki/themes/drone-platform-commoditization.md) | AVAV, KTOS | 2026-06-04 |
 | [AI-data-supply-chain](wiki/themes/AI-data-supply-chain.md) | INOD | 2026-06-05 |
 | [humanoid-robot-value-chain](wiki/themes/humanoid-robot-value-chain.md) | MP, NVDA, INTC, INOD, NOVT, VPG, OUST, SANHUA, TUOPU, SHUANGHUAN, ZHONGDA, HARMONIC, SLING, ZHAOWEI, HENGLI | 2026-06-08 |
-| [MLCC-oligopoly](wiki/themes/MLCC-oligopoly.md) | NVDA, MURATA | 2026-06-19 |
-| [memory-shortage-winners-losers](wiki/themes/memory-shortage-winners-losers.md) | MU, SNDK, PLAB, CSCO, NVDA, META, AVGO | 2026-06-16 |
+| [memory-shortage-winners-losers](wiki/themes/memory-shortage-winners-losers.md) | MU, SNDK, PLAB, CSCO, NVDA, META, AVGO, MURATA, TAIYO | 2026-06-16 |
 | [AI-buildout-who-holds-the-risk](wiki/themes/AI-buildout-who-holds-the-risk.md) | AVGO, NVDA, CRWV, NBIS, ORCL, AMZN, META, MSFT, GOOGL, BE, CSCO, CORZ | 2026-06-18 |
 | [AI-implementation-deployment-layer](wiki/themes/AI-implementation-deployment-layer.md) | ACN, IBM, EPAM, GLOB, CTSH, INFY, PLTR, CRM, MDB, DDOG, PANW, OKTA, CRWD, ZS | 2026-06-13 |
 | [physical-AI-value-chain](wiki/themes/physical-AI-value-chain.md) | NVDA, MP, HARMONIC, SANHUA, TUOPU, HENGLI, ZHAOWEI, SHUANGHUAN, ZHONGDA, SLING, NOVT, VPG, OUST, TDY, ARM | 2026-06-15 |

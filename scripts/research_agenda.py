@@ -129,7 +129,9 @@ def _open_questions(cap: int = 4) -> list[tuple[str, str]]:
             nxt = re.search(r"^#{1,4}\s+", rest, re.MULTILINE)
             section = rest[: nxt.start()] if nxt else rest
             for line in section.splitlines():
-                s = line.strip().lstrip("-*0123456789.) ").strip()
+                # strip only the leading list marker (-, *, +, or "N." / "N)"); keep a
+                # leading **bold** lead phrase intact (lstrip-ing "*" used to eat the opening **)
+                s = re.sub(r"^\s*(?:[-*+]|\d+[.)])\s+", "", line).strip()
                 if "?" in s and 40 <= len(s) <= 240:
                     out.append((p.stem, s))
                     break  # one per page

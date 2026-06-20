@@ -1,6 +1,6 @@
 ---
 name: research-loop
-description: Vault-aware deep research on a topic, interactively. Scopes the topic into 15-20 angles, researches each (research → adversarial challenge → verify), runs 10 grounded agents that tie the findings to the existing vault, then synthesizes one cited Tier-3 report with a "Vault connections" section. The on-demand sibling of the headless automation/scripts/research_loop.py. Discovery-only — saves ONE report to raw/research/interactive/ and never edits canon, the agenda, or any wiki page. Use when the user runs /research-loop <topic>, or asks to research a topic AND connect it to the vault (the gap /deep-research [web-only] and connection-finder [vault-only] each leave).
+description: Vault-aware deep research on a topic, interactively. Scopes the topic into 15 angles, researches each (research → adversarial challenge → verify), runs 10 grounded agents that tie the findings to the existing vault, then synthesizes one cited Tier-3 report with a "Vault connections" section. The on-demand sibling of the headless automation/scripts/research_loop.py. Discovery-only — saves ONE report to raw/research/interactive/ and never edits canon, the agenda, or any wiki page. Use when the user runs /research-loop <topic>, or asks to research a topic AND connect it to the vault (the gap /deep-research [web-only] and connection-finder [vault-only] each leave).
 ---
 
 # research-loop — vault-aware deep research, interactively
@@ -32,7 +32,7 @@ Not for: a quick web-only question (use `/deep-research`), surfacing connections
    ```
    Workflow({ name: "research-loop", args: { topic: "<the user's topic>" } })
    ```
-   It runs four phases — **Scope** (15-20 adaptive angles) → **Research** (each angle: research → adversarial challenge → verify, concurrent) → **Connect** (10 grounded vault-connection agents) → **Synthesize** (one report). It runs in the background; the user can watch the phases live with **`/workflows`**. The workflow returns `{ topic, report, angles, connections }`.
+   It runs four phases — **Scope** (15 angles) → **Research** (each angle: research → adversarial challenge → verify, concurrent) → **Connect** (10 grounded vault-connection agents) → **Synthesize** (one report). It runs in the background; the user can watch the phases live with **`/workflows`**. The workflow returns `{ topic, report, angles, connections }`.
 
 3. **Save the report.** Take the returned `report` markdown and **Write** it to:
    ```
@@ -45,7 +45,7 @@ Not for: a quick web-only question (use `/deep-research`), surfacing connections
 ## What the workflow does (for reference)
 
 `.claude/workflows/research-loop.js` — the orchestration:
-- **Scope:** one agent → 15-20 distinct angles (adaptive to topic breadth; capped at 20).
+- **Scope:** one agent → 15 distinct angles (fixed; capped at 15).
 - **Research:** `pipeline()` over the angles — each runs research (5-8 web searches) → **challenge** (find the strongest *disconfirming* evidence; rewrite two-sided) → verify (fact-check). Angles run concurrently (~16 cap).
 - **Connect:** `parallel()` over the **10 connection specs** (companies×2, themes×2, chokepoints CONFIRM + CHALLENGE, trackers+relationships, thesis+frameworks, prior-research [unverified-tagged], coverage-gaps) — each greps its slice of the vault and reports CONFIRM/CHALLENGE/EXTEND links, honest-verdict. These specs **mirror** `automation/scripts/research_loop.py` — keep the two in sync.
 - **Synthesize:** one agent → the cited report (verdict · value chain · analysis · Vault connections · what-to-verify).

@@ -120,10 +120,9 @@ def _call_with_retry(prompt: str, claude_bin: str, timeout: int, max_retries: in
 def _scope(topic: str, claude_bin: str, timeout: int, max_retries: int) -> tuple[list[str], int]:
     prompt = (
         f"You are scoping a research plan. Topic:\n«{topic}»\n\n"
-        "Output ONLY a JSON array of 15-20 focused, DISTINCT, non-overlapping research angles a "
+        "Output ONLY a JSON array of EXACTLY 15 focused, DISTINCT, non-overlapping research angles a "
         "stock analyst would investigate to answer it (value chain, chokepoint quality, competitors, "
-        "demand, who-captures-value, risks/falsifiers, etc.). Choose the NUMBER by the topic's "
-        "breadth — closer to 15 for a focused topic, up to 20 for one spanning a whole value chain. "
+        "demand, who-captures-value, risks/falsifiers, etc.). "
         "Never pad with overlapping angles to hit the count; 15 means 15 genuinely distinct facets. "
         "Each angle a short phrase. No prose, no markdown fence — just the JSON array."
     )
@@ -135,7 +134,7 @@ def _scope(topic: str, claude_bin: str, timeout: int, max_retries: int) -> tuple
         return [], r["calls"]
     try:
         angles = [str(a).strip() for a in json.loads(m.group(0)) if str(a).strip()]
-        return angles[:20], r["calls"]
+        return angles[:15], r["calls"]
     except (json.JSONDecodeError, ValueError):
         return [], r["calls"]
 

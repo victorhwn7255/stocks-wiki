@@ -1,9 +1,9 @@
 export const meta = {
   name: 'research-loop',
-  description: 'Vault-aware deep research for the stocks-wiki vault: scope a topic into 15-20 angles, research+challenge+verify each, run 10 grounded vault-connection agents, then synthesize one cited Tier-3 report. The interactive sibling of automation/scripts/research_loop.py (uses the Workflow tool, not headless claude -p).',
+  description: 'Vault-aware deep research for the stocks-wiki vault: scope a topic into 15 angles, research+challenge+verify each, run 10 grounded vault-connection agents, then synthesize one cited Tier-3 report. The interactive sibling of automation/scripts/research_loop.py (uses the Workflow tool, not headless claude -p).',
   whenToUse: 'When the user runs /research-loop <topic> — research a topic AND ground it in the existing vault (connections), interactively.',
   phases: [
-    { title: 'Scope', detail: 'topic → 15-20 adaptive research angles' },
+    { title: 'Scope', detail: 'topic → 15 research angles' },
     { title: 'Research', detail: 'each angle: research → challenge → verify (concurrent)' },
     { title: 'Connect', detail: '10 grounded agents tie findings to the vault' },
     { title: 'Synthesize', detail: 'one cited report with a Vault connections section' },
@@ -39,7 +39,7 @@ const CONNECTION_SPECS = [
 
 const ANGLES_SCHEMA = {
   type: 'object',
-  properties: { angles: { type: 'array', items: { type: 'string' }, minItems: 8, maxItems: 20 } },
+  properties: { angles: { type: 'array', items: { type: 'string' }, minItems: 15, maxItems: 15 } },
   required: ['angles'],
 }
 
@@ -52,14 +52,13 @@ if (!topic) {
 phase('Scope')
 const scoped = await agent(
   `You are scoping a research plan. Topic:\n«${topic}»\n\n` +
-  'Produce 15-20 focused, DISTINCT, non-overlapping research angles a stock analyst would ' +
+  'Produce EXACTLY 15 focused, DISTINCT, non-overlapping research angles a stock analyst would ' +
   'investigate to answer it (value chain, chokepoint quality, competitors, demand, ' +
-  'who-captures-value, risks/falsifiers, etc.). Choose the NUMBER by the topic\'s breadth — ' +
-  'closer to 15 for a focused topic, up to 20 for one spanning a whole value chain. Never pad ' +
+  'who-captures-value, risks/falsifiers, etc.). Never pad ' +
   'with overlapping angles; 15 means 15 genuinely distinct facets. Each angle a short phrase.',
   { schema: ANGLES_SCHEMA, label: 'scope', phase: 'Scope' },
 )
-const angles = (scoped && scoped.angles ? scoped.angles : []).slice(0, 20)
+const angles = (scoped && scoped.angles ? scoped.angles : []).slice(0, 15)
 if (!angles.length) {
   return { error: 'scope produced no angles' }
 }

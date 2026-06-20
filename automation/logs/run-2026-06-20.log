@@ -1,0 +1,44 @@
+
+=== run 2026-06-20T023005 ===
+  hygiene: ok
+  calibration: ok
+  connections: ok
+  patterns: ok
+  freshness: ok
+  actions: 4
+    - 🔴 HYGIENE FAIL — a hard defect (index-sync / frontmatter). See Hygiene.
+    - ⚠️ unresolved wikilinks: [[CMI]], [[Canonical]], [[QCOM]], [[TSMC]] — forward-link or typo (check).
+    - 🔴 index out of sync with disk — run build_index.py (human-gated).
+    - 📥 new filings available to ingest — see Discovery › Freshness.
+
+  deep-research (loop):
+    scope ok (20 angles)
+      angle 1/20 Value-chain map: where chelating-resin a ..... ok
+      angle 2/20 Byproduct economics: gallium/germanium a ..... ok
+      angle 3/20 The resin chemistry itself: decades-old  ..... ok
+      angle 4/20 Manufacturing-scale moat: industrial ads ..... ok
+      angle 5/20 Process know-how moat: engineered adsorp ..... ok
+      angle 6/20 Sunresin revenue exposure: gallium/germa ..... ok
+      angle 7/20 Sunresin financial-quality screen + Chin ..... ok
+      angle 8/20 Sunresin patent and IP landscape on sele ..... ok
+      angle 9/20 Competitor map: Purolite/Ecolab, DuPont/ ..... ok
+      angle 10/20 China geographic concentration of galliu ..... ok
+      angle 11/20 Export-policy lever: China gallium/germa ..... ok
+      angle 12/20 Switching costs and refiner qualificatio ..... ok
+      angle 13/20 Substitution risk: solvent extraction, p ..... ok
+      angle 14/20 Demand pull — gallium end markets (GaN/G ..... ok
+      angle 15/20 Demand pull — germanium end markets (fib ..... ok
+      angle 16/20 Western/ex-China reshoring and recovery  ..... ok
+      angle 17/20 Secondary recovery and recycling of gall ..... ok
+      angle 18/20 Who-captures-value: margin-pool split ac ..... ok
+      angle 19/20 Pricing-power evidence: post-export-cont ..... ok
+      angle 20/20 Falsifiers and risks: resin commoditizat ..... ok
+      connection 1/10 companies-A            ..... ok
+      connection 2/10 companies-B            ..... ok
+      connection 3/10 themes-A               ..... ok
+      connection 4/10 themes-B               ..... ok
+      connection 5/10 chokepoints-confirm    ..... ok
+      connection 6/10 chokepoints-challenge  ..... ok
+      connection 7/10 trackers-relationships ..... FAILED (retries 1)
+      connection 8/10 thesis-frameworks      ..... FAILED (retries 1)
+    throttled during connections — checkpointed; will resume on the next run

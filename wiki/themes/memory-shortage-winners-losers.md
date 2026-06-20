@@ -1,6 +1,6 @@
 ---
 type: theme
-tickers: [MU, SNDK, PLAB, CSCO, NVDA, META, AVGO]
+tickers: [MU, SNDK, PLAB, CSCO, NVDA, META, AVGO, MURATA, TAIYO]
 last_updated: 2026-06-16
 ---
 
@@ -77,13 +77,13 @@ The 2017-18 precedent: standard MLCC spot prices rose 5-10× into mid-2018; the 
 | Bucket | Names | Evidence |
 |---|---|---|
 | **Winners (sell memory)** | [[MU]] · [[SNDK]] · (SK Hynix, Samsung — not vault pages) | MU: pricing + first 5-year supply agreement (counterparty inferably NVDA); SNDK: +251% revenue, record EPS, NBM customer prepayments $511M |
-| **Winners (sell the panic)** | MLCC top-bin makers ([[MURATA]] — now primary, S169) | Server-capacitor sales **+85-90% CONFIRMED at primary**; double-booking **quarantined to consumer-grade** (top-bin order intake exceeds capacity) — see [[MURATA]] + [[MLCC-oligopoly]] |
+| **Winners (sell the panic)** | MLCC top-bin makers ([[MURATA]] #1 + [[TAIYO]] #3 — both now primary, S169-S170) | Server-capacitor sales **+85-90% CONFIRMED** ([[MURATA]]); the limited-qualified-supplier oligopoly structure + pricing restraint **double-confirmed at the #3** ([[TAIYO]] full-year A7 / Q3 A12); double-booking **quarantined to consumer-grade** (AI top bin runs supply-short) — see [[MLCC-oligopoly]] (now a canonical chokepoint) |
 | **Losers (pay more, sell less)** | [[CSCO]] (−260 bps GM) · [[PLAB]] (design-release suppression) · [[NVDA]] consumer/gaming edge · low-end consumer electronics broadly | All at primary except the broad consumer read (Tier 3) |
 | **Losers (capex inflation)** | [[META]] — and by mechanism every hyperscaler buying standard server DRAM | Capex raise explicitly memory-priced; server-life extension |
 | **Protected (locked supply)** | [[AVGO]] ("fully secured... 2026 through 2028" incl. HBM — Hock Tan) · [[NVDA]] for HBM (SK Hynix concentration per [[HBM-oligopoly]]) | Protection is for *AI* inputs; their consumer-facing segments still feel Channel A |
 | **The thermometer** | MLCC channel inventory · CSCO-style purchase commitments · spot-vs-contract spread | Not investments — the page's measuring instruments |
 
-Two honest caveats. First, the damage is uneven: [[PLAB]]'s Q2 call notes high-end Western consumer electronics (flagship phones, watches) were NOT hit — the tax falls on the low end, where there is no margin to absorb it. Second, "winner" here means pricing power this cycle, not durability: the [[MLCC-oligopoly]] verdict (quality-but-cyclical) applies to the standard-memory windfall too — it is exactly the kind of earnings spike that mean-reverts when Channel D fires.
+Three honest caveats. First, the damage is uneven: [[PLAB]]'s Q2 call notes high-end Western consumer electronics (flagship phones, watches) were NOT hit — the tax falls on the low end, where there is no margin to absorb it. Second, "winner" here means pricing power this cycle, not durability: the [[MLCC-oligopoly]] verdict (quality-but-cyclical) applies to the standard-memory windfall too — it is exactly the kind of earnings spike that mean-reverts when Channel D fires. Third, even the parts feeding *into* memory modules aren't a clean monotonic bet: [[TAIYO]] reported a temporary **DDR5-inductor lull** as DDR4 replacement demand strengthened (Q2 Q&A, Nov 2025) — total memory demand kept rising, but the DDR4→DDR5 mix shift created near-term noise in the inductors that go into memory modules.
 
 ## What would prove this framing wrong
 
@@ -107,6 +107,7 @@ Created from evidence already in vault canon (per-source provenance lives on the
 
 ## Change log
 
+- **2026-06-19 (S170 — [[TAIYO]] second-maker ingest):** Added [[TAIYO]] (#3) to the "sell the panic" Winners row alongside [[MURATA]] (#1) — the limited-qualified-supplier oligopoly + pricing restraint now **double-confirmed** at a 2nd primary maker; added a 3rd honest caveat (the **DDR5-inductor lull** — DDR4 replacement noise in the parts feeding memory modules; Taiyo Q2 Q&A). Noted [[MLCC-oligopoly]] is now a canonical chokepoint (promoted S170). +MURATA, TAIYO to `tickers`. Cross-reference; `last_updated` unchanged.
 - **2026-06-19 (S169 — [[MURATA]] first-canonical ingest):** Resolved Murata→[[MURATA]] in the Winners row + upgraded to primary (server-capacitor +85-90% confirmed); noted the double-booking is **quarantined to consumer-grade** (the AI top bin runs supply-short, not hoarded). Open Q#2 (Murata actuals) landed. Cross-reference + primary-upgrade; `last_updated` unchanged.
 - **2026-06-16 (in-place Tier-3 chart addition per Vic instruction; not counted as a separate session):** Added "The magnitude — a Tier-3 market-sizing frame (BofA)" subsection — the BofA semis/memory forecast table (`raw/research/charts/semis-memory-projection-2026-2030.jpg`), read against the page's two halves: the +168% 2026E memory boom AND the modeled +3.3% 2028E air-pocket (the cyclicality caveat). Tier-3 forecast, cite-don't-treat-as-fact. last_updated 2026-06-13 → 2026-06-16.
 - **2026-06-13 (Session 156):** Page created (mechanism theme; Vic-approved kickoff). Transmission chain assembled from seven vault primary sources (MU, SNDK, PLAB, CSCO, NVDA, META, AVGO) + Tier 3/4 verification round (IDC/Gartner/TrendForce/Counterpoint); winners/losers/protected map; cycle-clock section anchored on the spot-vs-contract divergence + the 2017-18 MLCC precedent; four falsifiers + six dated open questions pre-registered. Cross-references added at [[HBM-oligopoly]] + [[MLCC-oligopoly]] + [[PLAB]]; forward-edge-tracker entry added.

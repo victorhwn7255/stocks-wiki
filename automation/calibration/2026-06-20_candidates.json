@@ -1,0 +1,374 @@
+{
+  "as_of": "2026-06-20",
+  "due_days": 30,
+  "counts": {
+    "forward_edge": 12,
+    "risk_register": 16,
+    "review_due": 0,
+    "fired": 0
+  },
+  "candidates": [
+    {
+      "source": "forward-edge-tracker",
+      "title": "Power infrastructure > compute (the binding-constraint inversion)",
+      "last_moved": "2026-06-09",
+      "days_since": 11,
+      "review_due": false,
+      "has_catalyst": true,
+      "has_falsifier": true,
+      "temporal_markers": [],
+      "catalyst": "hyperscaler capex guidance naming power as the gating item; utility interconnection-queue data; a power-equipment lead-time/order disclosure at the next refresh. *(latest-alpha + [[hyperscaler-capex]] feed these)*",
+      "falsifier": "power constraint resolves faster than expected \u2014 new transformer capacity (Cleveland-Cliffs, Korean/Chinese US plants), grid-interconnection acceleration \u2014 OR hyperscaler capex decelerates broadly. (per `_thesis.md` \"what would prove this wrong\" #5 / #7)"
+    },
+    {
+      "source": "forward-edge-tracker",
+      "title": "Custom silicon redirects capex away from merchant compute",
+      "last_moved": "2026-06-09",
+      "days_since": 11,
+      "review_due": false,
+      "has_catalyst": true,
+      "has_falsifier": true,
+      "temporal_markers": [],
+      "catalyst": "hyperscaler custom-ASIC ramp disclosures (TPU / Trainium / MTIA / Maia volumes); NVDA datacenter-compute share + margin trajectory; TSM advanced-packaging allocation between merchant and captive silicon. *(latest-alpha + refresh)*",
+      "falsifier": "NVDA's platform integration (CUDA + NVLink + networking) keeps custom silicon niche and merchant-compute concentration holds, OR custom-silicon programs stall technically. (per `_thesis.md` \"what would prove this wrong\" #8)"
+    },
+    {
+      "source": "forward-edge-tracker",
+      "title": "[[AAOI]] \u2014 market prices a winner; the structure is a fragile assembler (inverse divergence)",
+      "last_moved": "2026-06-09",
+      "days_since": 11,
+      "review_due": false,
+      "has_catalyst": true,
+      "has_falsifier": true,
+      "temporal_markers": [],
+      "catalyst": "merchant **laser / ELS revenue** appearing in a 10-Q \u2014 the in-house InP laser becoming a standalone CPO/ELS product (a Layer-5 \u2192 Layer-4 tier-upgrade), so far evidenced only at conference (OFC 25dBm ELSFP + a live 6.4T on-board-optics demo; a ~350% InP-fab expansion to 2027). *(latest-alpha + the next refresh feed this)*",
+      "falsifier": "that merchant laser/ELS line becomes material AND AAOI rides CPO as a *laser supplier* rather than a displaced *module maker* \u2014 re-rating it toward a differentiated Layer-4 component-with-IP and vindicating the \"winner\" framing. (Conversely the vault view is confirmed if CPO eats the pluggable core while merchant laser stays ~0% and dilution continues \u2014 per [[AAOI]] Open questions #4 / #5 / #6.)"
+    },
+    {
+      "source": "forward-edge-tracker",
+      "title": "Investor-access lens \u2014 the strongest chokepoints are ownable",
+      "last_moved": "2026-06-09",
+      "days_since": 11,
+      "review_due": false,
+      "has_catalyst": true,
+      "has_falsifier": true,
+      "temporal_markers": [],
+      "catalyst": "a first sizable *confirmed* humanoid OEM order landing at a chokepoint supplier; Chinese suppliers breaking out humanoid/robot revenue; a private name listing (e.g. Unitree STAR IPO) that redraws the access map. *(latest-alpha + refresh)*",
+      "falsifier": "humanoid revenue at the cross-over names stays a rounding error and they revert to their primary theses (#9), OR the magnet/reducer chokepoints de-risk \u2014 China relaxes rare-earth controls, magnet-free motors advance, precision-grinding capacity scales and compresses lead times (#4 / #5). (per `_thesis-humanoid-robot.md` \"what would prove this wrong\")"
+    },
+    {
+      "source": "forward-edge-tracker",
+      "title": "Order-vs-capacity gamble \u2014 capacity built ahead of confirmed demand",
+      "last_moved": "2026-06-09",
+      "days_since": 11,
+      "review_due": false,
+      "has_catalyst": true,
+      "has_falsifier": true,
+      "temporal_markers": [],
+      "catalyst": "the first sizable *confirmed* OEM orders (validates the bet) vs. continued absence into H2 2026 (signals overcapacity) \u2014 the order-vs-capacity gap is the testable claim. *(latest-alpha + refresh)*",
+      "falsifier": "confirmed orders + proven viability arrive on schedule and the bet pays (consensus right); OR \u2014 the larger risk \u2014 general-purpose viability stays unproven and orders don't land by H2 2026, forcing margin collapse (#1 / #2, the biggest falsifiers). (per `_thesis-humanoid-robot.md` \"what would prove this wrong\")"
+    },
+    {
+      "source": "forward-edge-tracker",
+      "title": "Chokepoints > platforms (value-capture inversion)",
+      "last_moved": "2026-06-09",
+      "days_since": 11,
+      "review_due": false,
+      "has_catalyst": true,
+      "has_falsifier": true,
+      "temporal_markers": [],
+      "catalyst": "program-of-record awards naming chokepoint suppliers; magnet/seeker sole-source disclosures; the drone unit-cost trajectory toward the $2k ceiling. *(latest-alpha + refresh)*",
+      "falsifier": "airframe makers retain pricing power or vertically integrate the chokepoints (platforms *don't* commoditize), OR the best capability keeps flowing to private players (Anduril / Shield AI / Neros) so the public chokepoint names never capture the economics. (per `_thesis-defense-drones.md` \"what would prove this wrong\" #2 / #8)"
+    },
+    {
+      "source": "forward-edge-tracker",
+      "title": "FY2027 budget surge is a request, not enacted law",
+      "last_moved": "2026-06-09",
+      "days_since": 11,
+      "review_due": false,
+      "has_catalyst": true,
+      "has_falsifier": true,
+      "temporal_markers": [
+        "FY2027",
+        "November 2026"
+      ],
+      "catalyst": "the November 2026 midterm outcome; FY2027 reconciliation passage or failure; enacted-vs-requested line-item conversion.",
+      "falsifier": "a clean FY2027 reconciliation passage converts the request into law (the caution resolves; consensus was right on magnitude) \u2014 OR, the risk this entry flags, a divided chamber blocks the surge (per `_thesis-defense-drones.md` \"what would prove this wrong\" #1, the single biggest falsifier)."
+    },
+    {
+      "source": "what-could-go-wrong",
+      "title": "Hyperscaler capex cycle turn",
+      "last_checked": "2026-06-12",
+      "days_since": 8,
+      "review_due": false,
+      "fired": false,
+      "partial": false,
+      "temporal_markers": [],
+      "tripwire": "any two of the home page's six disconfirming signals firing in the same period \u2014 capex guidance cut at a Big-4 payer is the anchor signal.",
+      "status": "NOT FIRED. 2026 guidance intact at primary \u2014 Big-4 aggregate ~$640\u2013720B; MSFT ~$190B CY2026 and \"capacity-constrained through at least the end of the fiscal year\" (MSFT Q3 FY2026 call). The bear mechanism (telecom-bubble analogy, earnings-math gap) is named at Tier 3 (video-intel notes 2026-03-16 + "
+    },
+    {
+      "source": "what-could-go-wrong",
+      "title": "AI demand proves non-durable (the monetization gap never closes)",
+      "last_checked": "2026-06-12",
+      "days_since": 8,
+      "review_due": false,
+      "fired": false,
+      "partial": false,
+      "temporal_markers": [],
+      "tripwire": "consumption-metered AI revenue lines (cloud, data, observability, security) decelerating together; the productivity-seat leg failing at 2025-cohort renewals; clean separate AI revenue lines still absent while capex compounds.",
+      "status": "NOT FIRED. The consumption leg is growing at primary (Azure +40%, Snowflake +34%, Datadog +28% per the theme page's anchor); the seat leg remains unproven \u2014 that split is the page's live verdict, not a tripwire event. Gap-shape mechanisms (Bain ~$800B shortfall; model commoditization / token-price d"
+    },
+    {
+      "source": "what-could-go-wrong",
+      "title": "Inference/compute efficiency compresses demand",
+      "last_checked": "2026-06-12",
+      "days_since": 8,
+      "review_due": false,
+      "fired": false,
+      "partial": false,
+      "temporal_markers": [],
+      "tripwire": "GPU utilization tooling (virtualization, fractional allocation \u2014 DRA/MIG-class) cited at a primary venue as a reason to moderate capex; enterprise fleet utilization rising from the ~5% range toward 30%+ in credible telemetry; a hyperscaler framing efficiency as a substitute for new builds rather than a complement.",
+      "status": "NOT FIRED. Mechanisms named at Tier 3 only (the 30\u201340% cluster-utilization claim and the efficiency-stack inventory, video-intel 2026-03-16). Hyperscalers currently frame the constraint as supply, not efficiency (MSFT Q3 FY2026 call)."
+    },
+    {
+      "source": "what-could-go-wrong",
+      "title": "The power constraint resolves faster than expected",
+      "last_checked": "2026-06-12",
+      "days_since": 8,
+      "review_due": false,
+      "fired": false,
+      "partial": false,
+      "temporal_markers": [],
+      "tripwire": "transformer lead times normalizing from ~4 years toward pre-2022 norms at primary disclosures; interconnection queues clearing; the behind-the-meter premium collapsing ([[BTM-grid-bypass-workaround]]).",
+      "status": "NOT FIRED. The constraint is still binding at primary \u2014 chips idle for lack of power (Nadella, MSFT Q3 FY2026 call), ~50% of planned 2026 US builds delayed/cancelled per the thesis baseline."
+    },
+    {
+      "source": "what-could-go-wrong",
+      "title": "NVIDIA circular-financing unwind",
+      "last_checked": "2026-06-12",
+      "days_since": 8,
+      "review_due": false,
+      "fired": false,
+      "partial": false,
+      "temporal_markers": [],
+      "tripwire": "a backstopped counterparty (CRWV/NBIS-class neocloud) entering financial distress; impairment or write-down of commitment instruments in NVDA filings; a lease backstop actually drawn (the [[AVGO]] $29B max AI-rack class).",
+      "status": "NOT FIRED. All instruments performing per latest primary sources; the Lucent-style vendor-financing analogy is named at Tier 3 (video-intel 2026-03-24), not evidenced at primary."
+    },
+    {
+      "source": "what-could-go-wrong",
+      "title": "Financing-structure / credit shock",
+      "last_checked": "2026-06-12",
+      "days_since": 8,
+      "review_due": false,
+      "fired": false,
+      "partial": false,
+      "temporal_markers": [],
+      "tripwire": "a failed or pulled financing at a major datacenter developer or neocloud; spreads on AI-datacenter debt widening sharply (instrumented at [[AI-credit-spread-watch]]); an SPV impairment or lease default surfacing in primary disclosures; a hyperscaler citing cost of capital as a reason to slow builds.",
+      "status": "NOT FIRED. Financing markets remain open per the home page's baseline \u2014 the documented raises and structures are completing on schedule."
+    },
+    {
+      "source": "what-could-go-wrong",
+      "title": "Photonics as the first casualty of a capex turn",
+      "last_checked": "2026-06-12",
+      "days_since": 8,
+      "review_due": false,
+      "fired": false,
+      "partial": false,
+      "temporal_markers": [],
+      "tripwire": "optics/transceiver order cuts or push-outs at two or more vault photonics canonicals in the same quarter without a share-shift explanation; hyperscaler optics-attach guidance falling.",
+      "status": "NOT FIRED. Order books and NVDA-ecosystem commitments intact at the latest refreshes; the telecom-casualty framing is named at Tier 3 (video-intel 2026-03-24)."
+    },
+    {
+      "source": "what-could-go-wrong",
+      "title": "Taiwan / advanced-node concentration event",
+      "last_checked": "2026-06-12",
+      "days_since": 8,
+      "review_due": false,
+      "fired": false,
+      "partial": false,
+      "temporal_markers": [],
+      "tripwire": "export-control or blockade-class policy events restricting advanced-node/CoWoS access; cross-strait disruption signals at observable mechanisms (shipping, insurance, fab-utilization disclosures); overseas-fab timelines slipping while concentration persists.",
+      "status": "NOT FIRED. Concentration remains the documented baseline; overseas expansion proceeding per the home page's last refresh."
+    },
+    {
+      "source": "what-could-go-wrong",
+      "title": "HBM/memory cycle rollover",
+      "last_checked": "2026-06-12",
+      "days_since": 8,
+      "review_due": false,
+      "fired": false,
+      "partial": false,
+      "temporal_markers": [],
+      "tripwire": "HBM supply language shifting from sold-out/prepaid to spot/oversupply at [[MU]] + peer primary disclosures; pricing concessions or capacity-ramp guidance outrunning demand commitments.",
+      "status": "NOT FIRED. Sold-out posture intact at the latest memory-domain refreshes."
+    },
+    {
+      "source": "what-could-go-wrong",
+      "title": "The enacted-vs-requested budget gap",
+      "last_checked": "2026-06-12",
+      "days_since": 8,
+      "review_due": false,
+      "fired": false,
+      "partial": false,
+      "temporal_markers": [
+        "FY2027"
+      ],
+      "tripwire": "FY2027 DAWG request materially cut in appropriations; continuing resolutions freezing new drone line items; program-of-record cancellations at primary venues.",
+      "status": "NOT FIRED. FY2025 reconciliation funding is enacted law; FY2027 remains a request \u2014 the thesis already weights only the former."
+    },
+    {
+      "source": "what-could-go-wrong",
+      "title": "De-escalation \u2014 the defense demand engine fades",
+      "last_checked": "2026-06-12",
+      "days_since": 8,
+      "review_due": false,
+      "fired": false,
+      "partial": false,
+      "temporal_markers": [
+        "FY2028"
+      ],
+      "tripwire": "a durable ceasefire/settlement at policy venues; European defense-budget retrenchment (NATO spending targets walked back); the FY2028 US request shrinking unmanned-systems lines; export-order contraction at primary disclosures.",
+      "status": "NOT FIRED. No settlement-class event; European rearmament direction and US drone-budget momentum intact per the thesis baseline."
+    },
+    {
+      "source": "what-could-go-wrong",
+      "title": "Blue UAS exemption expiry (policy-grade chokepoint decay)",
+      "last_checked": "2026-06-12",
+      "days_since": 8,
+      "review_due": false,
+      "fired": false,
+      "partial": false,
+      "temporal_markers": [
+        "FY2027",
+        "January 1, 2027"
+      ],
+      "tripwire": "date-certain \u2014 the Blue UAS exemption expires January 1, 2027; watch for lapse, extension, or permanence in the FY2027 NDAA cycle. Any outcome re-prices the compliance-moat names.",
+      "status": "NOT FIRED \u2014 event pending; no legislative action recorded at primary as of last check."
+    },
+    {
+      "source": "what-could-go-wrong",
+      "title": "Rare-earth/magnet chokepoint resolution",
+      "last_checked": "2026-06-12",
+      "days_since": 8,
+      "review_due": false,
+      "fired": false,
+      "partial": false,
+      "temporal_markers": [],
+      "tripwire": "China export-control relaxation at policy venues; non-China separation/magnet capacity reaching volumes that end allocation behavior; OEM design-wins for magnet-free motor architectures at primary disclosures.",
+      "status": "NOT FIRED. Export-control regime and non-China scarcity intact per the chokepoint page's last refresh."
+    },
+    {
+      "source": "what-could-go-wrong",
+      "title": "Humanoid timing/magnitude disappointment",
+      "last_checked": "2026-06-12",
+      "days_since": 8,
+      "review_due": false,
+      "fired": false,
+      "partial": false,
+      "temporal_markers": [],
+      "tripwire": "flagship OEM programs (Optimus-class) slipping by years at primary venues; the cohort-wide humanoid_tier trigger (first *sized* humanoid revenue at any cohort name) still unfired well past OEM-stated production windows; **the order-vs-capacity gamble busting** \u2014 the 2H2026 confirmed-OEM-order window passing while built-out Chinese supplier capacity (100k\u20131M-unit class) sits idle, turning would-be ",
+      "status": "NOT FIRED \u2014 and expected at this stage: no cohort name has sized humanoid revenue yet, which is why the cohort is theme-anchored rather than tiered. This entry fires on *disappointment against stated timelines*, not on the present absence."
+    },
+    {
+      "source": "what-could-go-wrong",
+      "title": "China-access policy risk",
+      "last_checked": "2026-06-12",
+      "days_since": 8,
+      "review_due": false,
+      "fired": false,
+      "partial": false,
+      "temporal_markers": [],
+      "tripwire": "policy events restricting foreign participation in A-shares; sanctions touching cohort names; cross-border settlement/custody disruptions at observable mechanisms.",
+      "status": "NOT FIRED. Access routes open per the home page's baseline."
+    },
+    {
+      "source": "what-could-go-wrong",
+      "title": "Architecture shakeout \u2014 or capacity scaling \u2014 erodes a tracked chokepoint layer",
+      "last_checked": "2026-06-12",
+      "days_since": 8,
+      "review_due": false,
+      "fired": false,
+      "partial": false,
+      "temporal_markers": [],
+      "tripwire": "(a) OEM architecture decisions at primary/Tier-3 venues that strand a tracked layer; a GS-class re-scoring of layer certainty plus design-win evidence pointing one route. (b) Grinding-machine capacity-expansion disclosures plus sustained price cuts at reducer/screw makers *without* share loss \u2014 margin compression at stable share is the capacity-erosion signature.",
+      "status": "NOT FIRED. Architecture remains contested and reducer pricing pressure is documented but share-linked per the home pages \u2014 neither erosion signature is clean yet."
+    },
+    {
+      "source": "forward-edge-tracker",
+      "title": "[[FCEL]] \u2014 market now prices the data-center contract before it exists (inverse divergence, 2nd instance)",
+      "last_moved": "2026-06-13",
+      "days_since": 7,
+      "review_due": false,
+      "has_catalyst": true,
+      "has_falsifier": true,
+      "temporal_markers": [
+        "December",
+        "FY2026",
+        "October 31",
+        "Q3 FY2026",
+        "Q4",
+        "September",
+        "fiscal 2026"
+      ],
+      "catalyst": "management's own dated test \u2014 convert submitted proposals into contracted backlog **within fiscal 2026 (by October 31)**; interim read at the Q3 FY2026 report (~September); the Q4 report (~December) is pass/fail. *(latest-alpha feeds this; the 2026-06-13 run found no contract anywhere in the 90-day window)*",
+      "falsifier": "a signed, material data-center contract (named counterparty or sized capacity) by fiscal year-end with backlog turning up \u2014 the conversion is real, the cautious read was wrong, and FCEL moves onto the BE trajectory test. Conversely the vault view is confirmed if FY2026 closes with the pipeline still unconverted while ATM dilution continues \u2014 at which point \"next Bloom\" was a narrative, not a thesi"
+    },
+    {
+      "source": "forward-edge-tracker",
+      "title": "AI financing \u2014 market reads the mega-deals as demand proof; the funding regime already flipped",
+      "last_moved": "2026-06-13",
+      "days_since": 7,
+      "review_due": false,
+      "has_catalyst": true,
+      "has_falsifier": true,
+      "temporal_markers": [
+        "June 2026",
+        "Q3 FY2026"
+      ],
+      "catalyst": "AVGO Q3 FY2026 10-Q backstop ceiling (~Sept); CRWV vs S&P's FFO/debt-12% threshold; the BIS-style AI-vs-non-AI spread differential opening; any first drawn/impaired/pulled structure.",
+      "falsifier": "AI earnings arrive on schedule and FCF climbs back above capex (the flip reverses \u2014 financing was bridge, not crutch); or a full GPU depreciation cycle passes with credit losses near zero (the lenders were right). Honest counterweight already on record: as of June 2026 NOTHING has broken \u2014 no drawn backstop, no impairment, no failed financing."
+    },
+    {
+      "source": "forward-edge-tracker",
+      "title": "\"The bottleneck game is over\" \u2014 crowding vs. durability (a counterview to this page's own method)",
+      "last_moved": "2026-06-13",
+      "days_since": 7,
+      "review_due": false,
+      "has_catalyst": true,
+      "has_falsifier": true,
+      "temporal_markers": [],
+      "catalyst": "divergence at refreshes between Framework 12 verdict classes \u2014 durability-graded names holding pricing power and extended lead times through a consolidation while shortage-cyclical names mean-revert (the memory cycle clock and the [[AAOI]]/[[FCEL]] inverse entries are live test cases of exactly this split).",
+      "falsifier": "broad, *simultaneous* supply normalization \u2014 lead times compressing across power, photonics, and memory together while demand holds \u2014 would mean the constraints genuinely resolved and bottleneck analysis is over structurally, not just tactically. Conversely, if the next two quarters of refreshes show durability-graded names extending backlogs while crowded shortage names roll, the spotting-vs-grad"
+    },
+    {
+      "source": "forward-edge-tracker",
+      "title": "Inference sustains the chokepoints \u2014 market reads the inference shift as relief",
+      "last_moved": "2026-06-16",
+      "days_since": 4,
+      "review_due": false,
+      "has_catalyst": true,
+      "has_falsifier": true,
+      "temporal_markers": [],
+      "catalyst": "a hyperscaler breaking out inference capex / inference-rack volumes separately from training; HBM4/4E/5 adoption tracking inference deployment; a first *disclosed* per-vendor inference-ASIC revenue figure. *(latest-alpha + refresh feed these)*",
+      "falsifier": "KV-cache compression advances fast enough to *reverse* (not just flatten) the memory-demand slope, OR the inference/training workload mix equalizes and memory bandwidth stops being the binding constraint (frontier inference disperses to edge/client), OR inference capex peaks before ~2028 and training-cycle-completion relief dominates. (per [[training-to-inference-shift]] \"What this page does NOT c"
+    },
+    {
+      "source": "forward-edge-tracker",
+      "title": "Memory shortage \u2014 market prices the boom, not the cycle clock",
+      "last_moved": "2026-06-19",
+      "days_since": 1,
+      "review_due": false,
+      "has_catalyst": true,
+      "has_falsifier": true,
+      "temporal_markers": [
+        "June 25, 2026",
+        "Q3",
+        "Q3 FY2026",
+        "Q4"
+      ],
+      "catalyst": "MU Q3 FY2026 (~June 25, 2026) pricing/bit-growth language; **both top MLCC makers' full-year actuals now IN** ([[MURATA]] #1 S169 + [[TAIYO]] #3 S170: server-capacitor +85-90% confirmed, the \"no industry-wide MLCC hike\" double-confirmed, prices still falling \u2014 the MLCC half of this entry is primary-grounded at both ends of the oligopoly, and [[MLCC-oligopoly]] is now a canonical chokepoint); Trend",
+      "falsifier": "contract prices keep rising into 2027 with shipment forecasts *improving* (demand absorbing the tax) \u2014 then the long-runway consensus was right and the cycle-clock read was early. Conversely confirmed if contract prices roll while double-booked channel inventory unwinds. (per [[memory-shortage-winners-losers]] falsifiers #1/#2/#4)"
+    }
+  ]
+}

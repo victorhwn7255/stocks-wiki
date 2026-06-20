@@ -214,9 +214,10 @@ def activity_snapshot() -> str:
 
 
 def _run_py_alive() -> bool:
-    """True if a research run.py process is still running."""
+    """True if a research run is still going — the overnight run.py OR a manual
+    research_loop.py resume (matches both so --until-done is resume-aware)."""
     try:
-        r = subprocess.run(["pgrep", "-f", "automation/scripts/run.py"],
+        r = subprocess.run(["pgrep", "-f", "research_loop|automation/scripts/run.py"],
                            capture_output=True, text=True, timeout=10)
         return bool(r.stdout.strip())
     except Exception:                          # noqa: BLE001
