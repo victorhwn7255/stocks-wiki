@@ -11,10 +11,14 @@
             "id": "b48970a1268f3477",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "raw/research/reverse-DCF-research.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "reverse-DCF-research"
             }
           }
         ]
