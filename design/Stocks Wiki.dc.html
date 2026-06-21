@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0a0e15; --sidebar:#0c121b; --surface:#121a26; --surface-2:#18212f; --inset:#0d141e;
+  --border:#212b3b; --border-2:#2c3848;
+  --text:#e8ecf3; --text-2:#94a1b4; --text-3:#5c6a7e;
+  --accent:#56c7ff; --accent-ink:#06090f; --accent-dim:rgba(86,199,255,.13);
+  --up:#46c266; --down:#f2645a;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px rgba(0,0,0,.28);
+}
+[data-theme=light]{
+  --bg:#eceff3; --sidebar:#e6eaf0; --surface:#ffffff; --surface-2:#f4f6f9; --inset:#f0f3f7;
+  --border:#dce1e9; --border-2:#c8d0db;
+  --text:#15202e; --text-2:#566375; --text-3:#8a98a8;
+  --accent:#0e7fc1; --accent-ink:#ffffff; --accent-dim:rgba(14,127,193,.10);
+  --up:#1f9d4d; --down:#d6453c;
+  --shadow:0 1px 2px rgba(20,30,50,.06),0 10px 26px rgba(20,30,50,.07);
+}
+[data-accent=violet]{--accent:#a98bf5;--accent-dim:rgba(169,139,245,.14)}
+[data-accent=amber]{--accent:#e0a93b;--accent-dim:rgba(224,169,59,.14);--accent-ink:#1a1206}
+[data-accent=green]{--accent:#46c266;--accent-dim:rgba(70,194,102,.14);--accent-ink:#06140a}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{background:var(--bg)}
+::selection{background:var(--accent-dim)}
+#app *::-webkit-scrollbar{width:10px;height:10px}
+#app *::-webkit-scrollbar-thumb{background:var(--border-2);border-radius:6px;border:2px solid transparent;background-clip:padding-box}
+#app *::-webkit-scrollbar-track{background:transparent}
+@keyframes fadeUp{from{transform:translateY(7px)}to{transform:none}}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@keyframes pulseRing{0%{opacity:.5}50%{opacity:1}100%{opacity:.5}}
+#topbar{display:none}
+@media(max-width:900px){
+  #app{grid-template-columns:1fr!important}
+  #sidebar{position:fixed!important;top:0;left:0;bottom:0;z-index:60;width:284px!important;transform:translateX(-101%);transition:transform .22s ease;box-shadow:0 0 40px rgba(0,0,0,.5)}
+  #app[data-nav-open='1'] #sidebar{transform:translateX(0)}
+  #scrim{background:rgba(4,7,12,.55);z-index:55}
+  #app[data-nav-open='1'] #scrim{display:block!important}
+  #topbar{display:flex!important}
+  #rail{display:none!important}
+  #main{padding:0 0 80px 0!important}
+}
+@media(max-width:640px){
+  #homeStats{grid-template-columns:repeat(2,1fr)!important}
+  #thesisGrid{grid-template-columns:1fr!important}
+}
+</style>
+</helmet>
+
+<div id="app" data-theme="{{ theme }}" data-accent="{{ accent }}" data-nav-open="{{ navOpenAttr }}" style="display:grid;grid-template-columns:284px 1fr;min-height:100vh;font-family:'IBM Plex Sans',system-ui,sans-serif;color:var(--text);background:var(--bg);-webkit-font-smoothing:antialiased;letter-spacing:.1px">
+
+  <div id="scrim" onClick="{{ closeNav }}" style="display:none;position:fixed;inset:0"></div>
+
+  <!-- ============ SIDEBAR ============ -->
+  <aside id="sidebar" style="background:var(--sidebar);border-right:1px solid var(--border);display:flex;flex-direction:column;height:100vh;position:sticky;top:0">
+    <div style="padding:18px 18px 14px 18px;border-bottom:1px solid var(--border)">
+      <div onClick="{{ goHome }}" style="display:flex;align-items:center;gap:10px;cursor:pointer">
+        <div style="width:26px;height:26px;border-radius:7px;background:var(--accent);display:flex;align-items:center;justify-content:center;flex:none;box-shadow:0 0 0 1px var(--border-2)">
+          <svg width="15" height="15" viewBox="0 0 16 16" fill="none"><path d="M2 11.5L6 6.5L9 9.5L14 3.5" stroke="var(--accent-ink)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="14" cy="3.5" r="1.6" fill="var(--accent-ink)"/></svg>
+        </div>
+        <div style="line-height:1.1">
+          <div style="font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:13.5px;letter-spacing:.6px">STOCKS<span style="color:var(--text-3)">·</span>WIKI</div>
+          <div style="font-size:10px;color:var(--text-3);letter-spacing:.4px;margin-top:2px">research vault · 132 pages</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- search -->
+    <div style="padding:14px 14px 8px 14px;position:relative">
+      <div style="display:flex;align-items:center;gap:8px;background:var(--inset);border:1px solid var(--border);border-radius:9px;padding:8px 10px">
+        <svg width="14" height="14" viewBox="0 0 16 16" fill="none" style="flex:none"><circle cx="7" cy="7" r="4.5" stroke="var(--text-3)" stroke-width="1.5"/><path d="M11 11L14 14" stroke="var(--text-3)" stroke-width="1.5" stroke-linecap="round"/></svg>
+        <input value="{{ q }}" onInput="{{ onQuery }}" placeholder="Search titles, tickers…" style="flex:1;background:transparent;border:none;outline:none;color:var(--text);font-family:'IBM Plex Sans',sans-serif;font-size:13px;min-width:0"/>
+        <kbd style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--text-3);border:1px solid var(--border);border-radius:4px;padding:1px 5px">/</kbd>
+      </div>
+      <sc-if value="{{ showResults }}" hint-placeholder-val="{{ false }}">
+        <div style="position:absolute;left:14px;right:14px;top:48px;z-index:30;background:var(--surface);border:1px solid var(--border-2);border-radius:10px;box-shadow:var(--shadow);overflow:hidden;animation:fadeUp .14s ease">
+          <sc-for list="{{ results }}" as="r" hint-placeholder-count="3">
+            <div onClick="{{ r.onClick }}" style="display:flex;align-items:center;gap:9px;padding:9px 11px;cursor:pointer;border-bottom:1px solid var(--border-soft,rgba(255,255,255,.03))" style-hover="background:var(--accent-dim)">
+              <span style="font-family:'IBM Plex Mono',monospace;font-size:9px;padding:2px 5px;border-radius:4px;background:var(--inset);color:var(--text-2);text-transform:uppercase;letter-spacing:.4px;flex:none">{{ r.type }}</span>
+              <span style="font-size:12.5px;color:var(--text);overflow:hidden;text-overflow:ellipsis;white-space:nowrap">{{ r.title }}</span>
+            </div>
+          </sc-for>
+          <sc-if value="{{ noResults }}" hint-placeholder-val="{{ false }}">
+            <div style="padding:12px;font-size:12px;color:var(--text-3)">No matches.</div>
+          </sc-if>
+        </div>
+      </sc-if>
+    </div>
+
+    <!-- domain filter -->
+    <div style="padding:6px 14px 12px 14px">
+      <div style="font-size:9.5px;text-transform:uppercase;letter-spacing:.8px;color:var(--text-3);margin:0 2px 7px 2px;font-family:'IBM Plex Mono',monospace">Thesis domain</div>
+      <div style="display:flex;gap:5px;flex-wrap:wrap">
+        <sc-for list="{{ domains }}" as="d" hint-placeholder-count="4">
+          <button onClick="{{ d.onClick }}" style="{{ d.style }}" style-hover="border-color:var(--border-2)">
+            <span style="width:7px;height:7px;border-radius:50%;background:{{ d.dot }};display:inline-block;flex:none"></span>{{ d.label }}
+          </button>
+        </sc-for>
+      </div>
+    </div>
+
+    <!-- nav groups -->
+    <nav style="flex:1;overflow-y:auto;padding:4px 8px 24px 8px">
+      <sc-for list="{{ navGroups }}" as="g" hint-placeholder-count="6">
+        <div style="margin-top:12px">
+          <div style="display:flex;align-items:center;justify-content:space-between;padding:4px 8px;margin-bottom:2px">
+            <span style="font-size:10px;text-transform:uppercase;letter-spacing:.7px;color:var(--text-3);font-family:'IBM Plex Mono',monospace;font-weight:500">{{ g.label }}</span>
+            <span style="font-size:10px;font-family:'IBM Plex Mono',monospace;color:var(--text-3)">{{ g.count }}</span>
+          </div>
+          <sc-for list="{{ g.items }}" as="it" hint-placeholder-count="4">
+            <a onClick="{{ it.onClick }}" style="{{ it.style }}" style-hover="background:var(--surface-2)">
+              <span style="width:6px;height:6px;border-radius:50%;background:{{ it.dot }};flex:none;opacity:{{ it.dotOpacity }}"></span>
+              <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">{{ it.title }}</span>
+              <sc-if value="{{ it.tick }}" hint-placeholder-val="{{ false }}"><span style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--text-3)">{{ it.tick }}</span></sc-if>
+            </a>
+          </sc-for>
+        </div>
+      </sc-for>
+    </nav>
+
+    <div style="padding:11px 16px;border-top:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;gap:8px">
+      <button onClick="{{ toggleTheme }}" style="display:flex;align-items:center;gap:7px;background:var(--inset);border:1px solid var(--border);color:var(--text-2);border-radius:8px;padding:6px 10px;font-size:11px;cursor:pointer;font-family:'IBM Plex Mono',monospace" style-hover="border-color:var(--border-2);color:var(--text)">
+        {{ themeIcon }}<span>{{ themeLabel }}</span>
+      </button>
+      <span style="font-size:9.5px;color:var(--text-3);font-family:'IBM Plex Mono',monospace">v · 2026.06</span>
+    </div>
+  </aside>
+
+  <!-- ============ MAIN ============ -->
+  <div id="main" style="min-width:0;display:flex;flex-direction:column">
+
+    <!-- mobile topbar -->
+    <div id="topbar" style="position:sticky;top:0;z-index:40;align-items:center;gap:12px;padding:11px 14px;background:var(--sidebar);border-bottom:1px solid var(--border)">
+      <button onClick="{{ openNav }}" style="background:transparent;border:none;cursor:pointer;padding:2px;display:flex" aria-label="menu">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M3 5h14M3 10h14M3 15h14" stroke="var(--text)" stroke-width="1.7" stroke-linecap="round"/></svg>
+      </button>
+      <span style="font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:12.5px;letter-spacing:.5px">STOCKS·WIKI</span>
+    </div>
+
+    <!-- ===== HOME ===== -->
+    <sc-if value="{{ isHome }}" hint-placeholder-val="{{ true }}">
+    <main style="padding:34px 40px 90px 40px;max-width:1180px;width:100%;margin:0 auto">
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.8px;text-transform:uppercase;color:var(--accent);margin-bottom:9px">Investment-research vault</div>
+      <h1 style="font-size:30px;font-weight:600;margin:0 0 8px 0;letter-spacing:-.4px;line-height:1.15">Three theses, one supply-chain map.</h1>
+      <p style="font-size:15px;color:var(--text-2);margin:0 0 26px 0;max-width:640px;line-height:1.55">Where value is captured along the AI-datacenter, defense, and humanoid value chains — graded by how durable each chokepoint is. <span style="color:var(--text-3)">Describes structure; never recommends.</span></p>
+
+      <!-- stat strip -->
+      <div id="homeStats" style="display:grid;grid-template-columns:repeat(6,1fr);gap:1px;background:var(--border);border:1px solid var(--border);border-radius:12px;overflow:hidden;margin-bottom:30px">
+        <sc-for list="{{ stats }}" as="s" hint-placeholder-count="6">
+          <div style="background:var(--surface);padding:15px 16px">
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:23px;font-weight:600;color:var(--text)">{{ s.n }}</div>
+            <div style="font-size:11px;color:var(--text-2);margin-top:3px">{{ s.label }}</div>
+          </div>
+        </sc-for>
+      </div>
+
+      <!-- thesis domains -->
+      <div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:12px">
+        <h2 style="font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.7px;color:var(--text-2);font-family:'IBM Plex Mono',monospace;margin:0">Thesis domains</h2>
+      </div>
+      <div id="thesisGrid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:34px">
+        <sc-for list="{{ theses }}" as="t" hint-placeholder-count="3">
+          <div onClick="{{ t.onClick }}" style="background:var(--surface);border:1px solid var(--border);border-radius:13px;padding:20px;cursor:pointer;transition:border-color .15s,transform .15s" style-hover="border-color:var(--border-2);transform:translateY(-2px)">
+            <div style="display:flex;align-items:center;gap:9px;margin-bottom:13px">
+              <div style="width:34px;height:34px;border-radius:9px;background:{{ t.tint }};display:flex;align-items:center;justify-content:center;color:{{ t.color }}">{{ t.icon }}</div>
+              <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.5px;color:{{ t.color }};text-transform:uppercase">{{ t.tag }}</span>
+            </div>
+            <div style="font-size:16px;font-weight:600;margin-bottom:6px;line-height:1.25">{{ t.title }}</div>
+            <div style="font-size:12.5px;color:var(--text-2);line-height:1.5;margin-bottom:14px">{{ t.desc }}</div>
+            <div style="display:flex;gap:14px;font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--text-3)">
+              <span><span style="color:var(--text)">{{ t.companies }}</span> co.</span>
+              <span><span style="color:var(--text)">{{ t.chokepoints }}</span> chokepoints</span>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+
+      <div style="display:grid;grid-template-columns:1.3fr 1fr;gap:22px">
+        <!-- recently updated -->
+        <div>
+          <h2 style="font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.7px;color:var(--text-2);font-family:'IBM Plex Mono',monospace;margin:0 0 12px 0">Recently updated</h2>
+          <div style="background:var(--surface);border:1px solid var(--border);border-radius:12px;overflow:hidden">
+            <sc-for list="{{ recent }}" as="r" hint-placeholder-count="6">
+              <div onClick="{{ r.onClick }}" style="display:flex;align-items:center;gap:12px;padding:12px 15px;border-bottom:1px solid var(--border);cursor:pointer" style-hover="background:var(--surface-2)">
+                <span style="width:7px;height:7px;border-radius:50%;background:{{ r.dot }};flex:none"></span>
+                <span style="flex:1;font-size:13px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">{{ r.title }}</span>
+                <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;text-transform:uppercase;letter-spacing:.3px;color:var(--text-3);border:1px solid var(--border);border-radius:4px;padding:1px 6px;flex:none">{{ r.type }}</span>
+                <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--text-3);flex:none">{{ r.date }}</span>
+              </div>
+            </sc-for>
+          </div>
+        </div>
+
+        <!-- chokepoint leaderboard mini -->
+        <div>
+          <div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:12px">
+            <h2 style="font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.7px;color:var(--text-2);font-family:'IBM Plex Mono',monospace;margin:0">Top chokepoints</h2>
+            <button onClick="{{ goStructure }}" style="background:transparent;border:none;color:var(--accent);font-size:11px;cursor:pointer;font-family:'IBM Plex Mono',monospace;padding:0">view board →</button>
+          </div>
+          <div style="background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:6px">
+            <sc-for list="{{ topChokepoints }}" as="c" hint-placeholder-count="5">
+              <div onClick="{{ c.onClick }}" style="display:flex;align-items:center;gap:10px;padding:9px 9px;border-radius:8px;cursor:pointer" style-hover="background:var(--surface-2)">
+                <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--text-3);width:16px;flex:none">{{ c.rank }}</span>
+                <span style="flex:1;font-size:12.5px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">{{ c.name }}</span>
+                <span style="width:10px;height:10px;border-radius:3px;background:{{ c.gradeColor }};flex:none" title="{{ c.gradeLabel }}"></span>
+              </div>
+            </sc-for>
+          </div>
+          <div style="display:flex;gap:13px;margin-top:11px;padding:0 4px;flex-wrap:wrap">
+            <sc-for list="{{ gradeLegend }}" as="gl" hint-placeholder-count="3">
+              <span style="display:flex;align-items:center;gap:6px;font-size:10.5px;color:var(--text-3)"><span style="width:9px;height:9px;border-radius:3px;background:{{ gl.color }}"></span>{{ gl.label }}</span>
+            </sc-for>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top:38px;font-size:11px;color:var(--text-3);border-top:1px solid var(--border);padding-top:16px;line-height:1.5">
+        This is a research and knowledge tool — structural analysis of where value sits and how durable each moat is. It is <strong style="color:var(--text-2);font-weight:600">not investment advice</strong>: no buy/sell calls, no price targets, no position sizing.
+      </div>
+    </main>
+    </sc-if>
+
+    <!-- ===== COMPANY (NVDA) ===== -->
+    <sc-if value="{{ isCompany }}" hint-placeholder-val="{{ false }}">
+    <div style="display:grid;grid-template-columns:1fr 270px;gap:0">
+      <main style="min-width:0;padding:30px 38px 90px 38px;max-width:840px;justify-self:end;width:100%">
+        <!-- breadcrumb -->
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--text-3);margin-bottom:16px">
+          <span onClick="{{ goHome }}" style="cursor:pointer" style-hover="color:var(--accent)">home</span> / <span style="color:var(--text-2)">companies</span> / <span style="color:var(--text-2)">NVDA</span>
+        </div>
+
+        <!-- header -->
+        <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:12px">
+          <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.5px;text-transform:uppercase;background:var(--accent-dim);color:var(--accent);border:1px solid var(--accent);padding:3px 8px;border-radius:5px">company</span>
+          <span style="display:inline-flex;align-items:center;gap:6px;font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--text-2);border:1px solid var(--border-2);border-radius:5px;padding:2px 8px"><svg width="11" height="11" viewBox="0 0 12 12"><path d="M2 9.5 5 4.5 7.5 7 11 1.5" stroke="var(--up)" stroke-width="1.4" fill="none" stroke-linecap="round"/></svg>NVDA</span>
+          <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--text-3)">updated 2026-05-24</span>
+        </div>
+        <h1 style="font-size:27px;font-weight:600;margin:0 0 4px 0;letter-spacing:-.3px">NVIDIA Corporation</h1>
+        <div style="font-size:14px;color:var(--text-2);margin-bottom:18px">The platform definer of the AI compute supply chain.</div>
+
+        <!-- badge bar: layer + tiers -->
+        <div style="display:flex;gap:10px;flex-wrap:wrap;background:var(--surface);border:1px solid var(--border);border-radius:11px;padding:13px 15px;margin-bottom:26px">
+          <sc-for list="{{ nvdaBadges }}" as="b" hint-placeholder-count="2">
+            <div style="display:flex;align-items:center;gap:10px;padding-right:14px;border-right:1px solid var(--border)">
+              <div style="{{ b.box }}">{{ b.code }}</div>
+              <div style="line-height:1.25">
+                <div style="font-size:12px;font-weight:600;color:var(--text)">{{ b.label }}</div>
+                <div style="font-size:10.5px;color:var(--text-3)">{{ b.sub }}</div>
+              </div>
+            </div>
+          </sc-for>
+          <div style="display:flex;align-items:center;gap:7px;font-size:11px;color:var(--text-2)">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--text-3)">most central →</span>
+          </div>
+        </div>
+
+        <!-- Thesis role -->
+        <h2 id="role" style="font-size:14px;font-weight:600;text-transform:uppercase;letter-spacing:.6px;color:var(--accent);font-family:'IBM Plex Mono',monospace;margin:0 0 11px 0;scroll-margin-top:20px">Thesis role</h2>
+        <p style="font-size:14.5px;line-height:1.65;color:var(--text);margin:0 0 13px 0">NVDA occupies <strong style="font-weight:600">Layer 1 (platform definer)</strong> in the value-capture framework and <strong style="font-weight:600">Photonics Tier 1 (structural chokepoint)</strong>. Its architecture (CUDA, NVLink, Spectrum-X) and product cadence (Blackwell → Vera Rubin) set the pace for the entire ecosystem.</p>
+        <p style="font-size:14.5px;line-height:1.65;color:var(--text);margin:0 0 13px 0">NVDA is "platform-integrated," not vertically integrated. It owns the platform layer but depends on {{ lkTSM }} at the physical manufacturing layer for leading-edge logic and advanced packaging ({{ lkCoWoS }}). This dependency is the single most important cross-company dynamic in the thesis: the Layer 1 platform definer cannot route around the Layer 2 infrastructure provider.</p>
+
+        <!-- callout -->
+        <div style="display:flex;gap:12px;background:var(--surface-2);border:1px solid var(--border);border-radius:10px;padding:14px 16px;margin:18px 0">
+          <svg width="16" height="16" viewBox="0 0 16 16" style="flex:none;margin-top:2px"><circle cx="8" cy="8" r="7" stroke="var(--accent)" stroke-width="1.3" fill="none"/><path d="M8 7.2v4M8 4.8v.01" stroke="var(--accent)" stroke-width="1.6" stroke-linecap="round"/></svg>
+          <div style="font-size:13px;line-height:1.55;color:var(--text)">Non-GAAP gross margin of <strong>75.2%</strong> is the highest among thesis holdings — consistent with Layer 1 platform-definer economics. That both the platform definer and {{ lkTSM }} (66.2%) capture exceptional margins is evidence of <em>multi-layer</em> value capture in a supply-constrained market.</div>
+        </div>
+
+        <!-- Financial snapshot + wide table -->
+        <h2 id="fin" style="font-size:14px;font-weight:600;text-transform:uppercase;letter-spacing:.6px;color:var(--accent);font-family:'IBM Plex Mono',monospace;margin:26px 0 6px 0;scroll-margin-top:20px">Financial snapshot</h2>
+        <div style="font-size:12px;color:var(--text-3);margin-bottom:13px;font-family:'IBM Plex Mono',monospace">Q1 FY2027 · period ending 2026-04-26</div>
+
+        <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:18px">
+          <sc-for list="{{ nvdaKpis }}" as="k" hint-placeholder-count="4">
+            <div style="background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:12px 13px">
+              <div style="font-size:10.5px;color:var(--text-3);text-transform:uppercase;letter-spacing:.4px;margin-bottom:5px">{{ k.label }}</div>
+              <div style="font-family:'IBM Plex Mono',monospace;font-size:18px;font-weight:600">{{ k.val }}</div>
+              <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;margin-top:3px;color:{{ k.deltaColor }}">{{ k.delta }}</div>
+            </div>
+          </sc-for>
+        </div>
+
+        <div style="font-size:12.5px;color:var(--text-2);margin-bottom:8px">New segmentation framework (Q1 FY2027 call):</div>
+        <div style="border:1px solid var(--border);border-radius:11px;overflow:hidden;margin-bottom:8px">
+          <div style="overflow-x:auto">
+            <table style="border-collapse:collapse;width:100%;min-width:620px;font-size:13px">
+              <thead>
+                <tr style="background:var(--surface-2)">
+                  <th style="text-align:left;padding:10px 14px;font-family:'IBM Plex Mono',monospace;font-size:10.5px;text-transform:uppercase;letter-spacing:.4px;color:var(--text-3);font-weight:500;border-bottom:1px solid var(--border)">Platform</th>
+                  <th style="text-align:left;padding:10px 14px;font-family:'IBM Plex Mono',monospace;font-size:10.5px;text-transform:uppercase;letter-spacing:.4px;color:var(--text-3);font-weight:500;border-bottom:1px solid var(--border)">Sub-market</th>
+                  <th style="text-align:right;padding:10px 14px;font-family:'IBM Plex Mono',monospace;font-size:10.5px;text-transform:uppercase;letter-spacing:.4px;color:var(--text-3);font-weight:500;border-bottom:1px solid var(--border)">Revenue</th>
+                  <th style="text-align:right;padding:10px 14px;font-family:'IBM Plex Mono',monospace;font-size:10.5px;text-transform:uppercase;letter-spacing:.4px;color:var(--text-3);font-weight:500;border-bottom:1px solid var(--border)">QoQ</th>
+                  <th style="text-align:left;padding:10px 14px;font-family:'IBM Plex Mono',monospace;font-size:10.5px;text-transform:uppercase;letter-spacing:.4px;color:var(--text-3);font-weight:500;border-bottom:1px solid var(--border)">Scope</th>
+                </tr>
+              </thead>
+              <tbody>
+                <sc-for list="{{ segRows }}" as="row" hint-placeholder-count="4">
+                  <tr style="{{ row.trStyle }}">
+                    <td style="padding:11px 14px;border-bottom:1px solid var(--border);font-weight:600;color:var(--text)">{{ row.platform }}</td>
+                    <td style="padding:11px 14px;border-bottom:1px solid var(--border);color:var(--text-2)">{{ row.sub }}</td>
+                    <td style="padding:11px 14px;border-bottom:1px solid var(--border);text-align:right;font-family:'IBM Plex Mono',monospace;font-weight:600">{{ row.rev }}</td>
+                    <td style="padding:11px 14px;border-bottom:1px solid var(--border);text-align:right;font-family:'IBM Plex Mono',monospace;color:{{ row.qoqColor }}">{{ row.qoq }}</td>
+                    <td style="padding:11px 14px;border-bottom:1px solid var(--border);color:var(--text-3);font-size:12px">{{ row.scope }}</td>
+                  </tr>
+                </sc-for>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div style="font-size:11px;color:var(--text-3);margin-bottom:22px;font-style:italic">Total $81.4B + $0.6B other. SEC 10-Q still reports Compute &amp; Networking + Graphics — a venue-asymmetric disclosure split.</div>
+
+        <!-- Supply chain -->
+        <h2 id="supply" style="font-size:14px;font-weight:600;text-transform:uppercase;letter-spacing:.6px;color:var(--accent);font-family:'IBM Plex Mono',monospace;margin:26px 0 11px 0;scroll-margin-top:20px">Supply-chain dependencies</h2>
+        <p style="font-size:14.5px;line-height:1.65;margin:0 0 13px 0">NVDA never names {{ lkTSM }} in earnings calls — mutual non-naming consistent with Layer 1 / Layer 2 reciprocity. Total supply (inventory + purchase commitments + prepaids) reached <strong>$145B</strong>. The $2B equity investments in {{ lkCOHR }} and {{ lkLITE }} vertically secure the laser supply chain for the photonics roadmap, part of the broader {{ lkPlatform }} pattern.</p>
+
+        <!-- Open questions -->
+        <h2 id="oq" style="font-size:14px;font-weight:600;text-transform:uppercase;letter-spacing:.6px;color:var(--accent);font-family:'IBM Plex Mono',monospace;margin:26px 0 11px 0;scroll-margin-top:20px">Open questions</h2>
+        <ol style="margin:0;padding:0;list-style:none;counter-reset:oq">
+          <sc-for list="{{ openQs }}" as="oq" hint-placeholder-count="3">
+            <li style="display:flex;gap:13px;padding:11px 0;border-bottom:1px solid var(--border)">
+              <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--accent);flex:none;width:20px">{{ oq.n }}</span>
+              <span style="font-size:13.5px;line-height:1.55;color:var(--text)">{{ oq.text }}</span>
+            </li>
+          </sc-for>
+        </ol>
+
+        <div style="margin-top:30px;font-size:11px;color:var(--text-3);border-top:1px solid var(--border);padding-top:14px;line-height:1.5">Tier &amp; layer badges describe where value sits and how durable the moat is — never a verdict to act on. Research, not advice.</div>
+      </main>
+
+      <!-- right rail -->
+      <aside id="rail" style="padding:30px 22px 60px 22px;border-left:1px solid var(--border);position:sticky;top:0;height:100vh;overflow-y:auto">
+        <div style="font-size:10px;text-transform:uppercase;letter-spacing:.7px;color:var(--text-3);font-family:'IBM Plex Mono',monospace;margin-bottom:10px">On this page</div>
+        <div style="display:flex;flex-direction:column;gap:1px;margin-bottom:26px">
+          <sc-for list="{{ nvdaToc }}" as="t" hint-placeholder-count="4">
+            <a href="{{ t.href }}" style="font-size:12.5px;color:var(--text-2);text-decoration:none;padding:4px 0" style-hover="color:var(--accent)">{{ t.label }}</a>
+          </sc-for>
+        </div>
+
+        <div style="font-size:10px;text-transform:uppercase;letter-spacing:.7px;color:var(--text-3);font-family:'IBM Plex Mono',monospace;margin-bottom:10px;display:flex;align-items:center;gap:7px"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M5 3.5 3 5.5a2 2 0 0 0 2.8 2.8l1-1M7 8.5l2-2a2 2 0 0 0-2.8-2.8l-1 1" stroke="var(--text-3)" stroke-width="1.2" stroke-linecap="round"/></svg>Linked from <span style="color:var(--text-2)">{{ backlinkCount }}</span></div>
+        <div style="display:flex;flex-direction:column;gap:6px">
+          <sc-for list="{{ backlinks }}" as="b" hint-placeholder-count="5">
+            <a onClick="{{ b.onClick }}" style="display:flex;align-items:center;gap:8px;background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:8px 10px;cursor:pointer;text-decoration:none" style-hover="border-color:var(--border-2);background:var(--surface-2)">
+              <span style="width:6px;height:6px;border-radius:50%;background:{{ b.dot }};flex:none"></span>
+              <span style="flex:1;font-size:12px;color:var(--text);overflow:hidden;text-overflow:ellipsis;white-space:nowrap">{{ b.title }}</span>
+              <span style="font-family:'IBM Plex Mono',monospace;font-size:9px;text-transform:uppercase;color:var(--text-3);flex:none">{{ b.type }}</span>
+            </a>
+          </sc-for>
+        </div>
+      </aside>
+    </div>
+    </sc-if>
+
+    <!-- ===== CHOKEPOINT (HALEU) ===== -->
+    <sc-if value="{{ isChokepoint }}" hint-placeholder-val="{{ false }}">
+    <div style="display:grid;grid-template-columns:1fr 270px;gap:0">
+      <main style="min-width:0;padding:30px 38px 90px 38px;max-width:840px;justify-self:end;width:100%">
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--text-3);margin-bottom:16px">
+          <span onClick="{{ goHome }}" style="cursor:pointer" style-hover="color:var(--accent)">home</span> / <span style="color:var(--text-2)">chokepoints</span> / <span style="color:var(--text-2)">HALEU fuel chain</span>
+        </div>
+
+        <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:12px">
+          <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.5px;text-transform:uppercase;background:rgba(232,93,110,.13);color:#e8657a;border:1px solid #e8657a;padding:3px 8px;border-radius:5px">chokepoint</span>
+          <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--text-3)">updated 2026-06-14</span>
+        </div>
+        <h1 style="font-size:27px;font-weight:600;margin:0 0 4px 0;letter-spacing:-.3px">HALEU fuel-chain chokepoint</h1>
+        <div style="font-size:14px;color:var(--text-2);margin-bottom:18px">The single most underappreciated chokepoint in the AI-datacenter power supply chain.</div>
+
+        <!-- severity + grade header -->
+        <div style="display:flex;gap:13px;flex-wrap:wrap;margin-bottom:14px">
+          <div style="background:var(--surface);border:1px solid var(--border);border-radius:11px;padding:14px 16px;flex:1;min-width:210px">
+            <div style="font-size:10px;text-transform:uppercase;letter-spacing:.5px;color:var(--text-3);margin-bottom:8px;font-family:'IBM Plex Mono',monospace">Severity (HALEU enrichment)</div>
+            <div style="display:flex;align-items:center;gap:11px">
+              <div style="display:flex;gap:4px">
+                <sc-for list="{{ sevPips }}" as="p" hint-placeholder-count="5"><span style="width:13px;height:22px;border-radius:3px;background:{{ p.fill }}"></span></sc-for>
+              </div>
+              <div><span style="font-family:'IBM Plex Mono',monospace;font-size:20px;font-weight:600;color:#e8657a">5</span><span style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:var(--text-3)">/5</span></div>
+            </div>
+            <div style="font-size:12px;color:var(--text);margin-top:8px;font-weight:600">Acute &amp; Binding</div>
+          </div>
+          <div style="background:var(--surface);border:1px solid var(--border);border-radius:11px;padding:14px 16px;flex:1;min-width:210px">
+            <div style="font-size:10px;text-transform:uppercase;letter-spacing:.5px;color:var(--text-3);margin-bottom:8px;font-family:'IBM Plex Mono',monospace">Chokepoint quality</div>
+            <div style="display:flex;align-items:center;gap:9px">
+              <span style="width:14px;height:14px;border-radius:4px;background:#e8657a;flex:none"></span>
+              <span style="font-size:14px;font-weight:600">Physics / yield-grade</span>
+            </div>
+            <div style="font-size:12px;color:var(--text-3);margin-top:8px">Hardest to replicate — sole NRC-licensed Western producer.</div>
+          </div>
+        </div>
+
+        <!-- ticker chips -->
+        <div style="display:flex;align-items:center;gap:7px;flex-wrap:wrap;margin-bottom:26px">
+          <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;text-transform:uppercase;letter-spacing:.4px;color:var(--text-3)">Related</span>
+          <sc-for list="{{ haleuTickers }}" as="t" hint-placeholder-count="6">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--text-2);border:1px solid var(--border-2);border-radius:5px;padding:2px 8px">{{ t }}</span>
+          </sc-for>
+        </div>
+
+        <h2 id="cid" style="font-size:14px;font-weight:600;text-transform:uppercase;letter-spacing:.6px;color:#e8657a;font-family:'IBM Plex Mono',monospace;margin:0 0 11px 0;scroll-margin-top:20px">Chokepoint identification</h2>
+        <p style="font-size:14.5px;line-height:1.65;margin:0 0 13px 0">HALEU enrichment is the binding 5/5 constraint at the upstream nuclear fuel chain. The sole NRC-licensed Western producer is {{ lkLEU }}, operating the AC100M centrifuge cascade at Piketon, Ohio — current capacity ~900 kg/yr against DOE projected demand of 40 MTU/yr by 2030. The current-capacity gap is approximately <strong>~44×</strong> by 2030.</p>
+
+        <div style="display:flex;gap:12px;background:var(--surface-2);border:1px solid var(--border);border-radius:10px;padding:14px 16px;margin:18px 0">
+          <div style="font-size:13px;line-height:1.55;color:var(--text)"><strong>Sequential dependency.</strong> Mining → conversion → enrichment → deconversion → fabrication. The 5/5 binding enrichment constraint propagates restricted demand back through every upstream layer — making the whole chain investment-relevant, not just the chokepoint itself.</div>
+        </div>
+
+        <h2 id="chain" style="font-size:14px;font-weight:600;text-transform:uppercase;letter-spacing:.6px;color:#e8657a;font-family:'IBM Plex Mono',monospace;margin:26px 0 12px 0;scroll-margin-top:20px">Six-layer fuel chain</h2>
+        <div style="display:flex;flex-direction:column;gap:7px;margin-bottom:24px">
+          <sc-for list="{{ fuelChain }}" as="f" hint-placeholder-count="6">
+            <div style="display:flex;align-items:center;gap:13px;background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:11px 14px;{{ f.highlight }}">
+              <div style="flex:1;min-width:0">
+                <div style="font-size:13.5px;font-weight:600;color:var(--text)">{{ f.layer }}</div>
+                <div style="font-size:11.5px;color:var(--text-3);margin-top:2px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">{{ f.source }}</div>
+              </div>
+              <div style="display:flex;gap:3px;flex:none">
+                <sc-for list="{{ f.pips }}" as="p" hint-placeholder-count="5"><span style="width:9px;height:18px;border-radius:2px;background:{{ p.fill }}"></span></sc-for>
+              </div>
+              <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:{{ f.scoreColor }};width:30px;text-align:right;flex:none;font-weight:600">{{ f.score }}</div>
+            </div>
+          </sc-for>
+        </div>
+
+        <h2 id="comp" style="font-size:14px;font-weight:600;text-transform:uppercase;letter-spacing:.6px;color:#e8657a;font-family:'IBM Plex Mono',monospace;margin:26px 0 12px 0;scroll-margin-top:20px">Western competition status</h2>
+        <div style="border:1px solid var(--border);border-radius:11px;overflow:hidden;margin-bottom:8px">
+          <div style="overflow-x:auto">
+            <table style="border-collapse:collapse;width:100%;min-width:560px;font-size:13px">
+              <thead><tr style="background:var(--surface-2)">
+                <th style="text-align:left;padding:10px 14px;font-family:'IBM Plex Mono',monospace;font-size:10.5px;text-transform:uppercase;letter-spacing:.4px;color:var(--text-3);font-weight:500;border-bottom:1px solid var(--border)">Competitor</th>
+                <th style="text-align:left;padding:10px 14px;font-family:'IBM Plex Mono',monospace;font-size:10.5px;text-transform:uppercase;letter-spacing:.4px;color:var(--text-3);font-weight:500;border-bottom:1px solid var(--border)">Timeline</th>
+                <th style="text-align:left;padding:10px 14px;font-family:'IBM Plex Mono',monospace;font-size:10.5px;text-transform:uppercase;letter-spacing:.4px;color:var(--text-3);font-weight:500;border-bottom:1px solid var(--border)">Status</th>
+              </tr></thead>
+              <tbody>
+                <sc-for list="{{ competitors }}" as="c" hint-placeholder-count="4">
+                  <tr style="{{ c.trStyle }}">
+                    <td style="padding:11px 14px;border-bottom:1px solid var(--border);font-weight:600">{{ c.name }}</td>
+                    <td style="padding:11px 14px;border-bottom:1px solid var(--border);color:var(--text-2);font-size:12px">{{ c.timeline }}</td>
+                    <td style="padding:11px 14px;border-bottom:1px solid var(--border)"><span style="font-family:'IBM Plex Mono',monospace;font-size:10px;padding:2px 7px;border-radius:4px;background:{{ c.statusBg }};color:{{ c.statusFg }}">{{ c.status }}</span></td>
+                  </tr>
+                </sc-for>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div style="font-size:11px;color:var(--text-3);margin-bottom:22px;font-style:italic">Centrus's operating Phase II + funded Phase III head-start (3–5 yrs) is intact; all three new entrants remain pre-NRC-license.</div>
+
+        <div style="margin-top:24px;font-size:11px;color:var(--text-3);border-top:1px solid var(--border);padding-top:14px;line-height:1.5">Severity scores describe how binding a constraint is and how durable the moat — never a verdict to act on. Research, not advice.</div>
+      </main>
+
+      <aside id="rail" style="padding:30px 22px 60px 22px;border-left:1px solid var(--border);position:sticky;top:0;height:100vh;overflow-y:auto">
+        <div style="font-size:10px;text-transform:uppercase;letter-spacing:.7px;color:var(--text-3);font-family:'IBM Plex Mono',monospace;margin-bottom:10px">On this page</div>
+        <div style="display:flex;flex-direction:column;gap:1px;margin-bottom:26px">
+          <sc-for list="{{ haleuToc }}" as="t" hint-placeholder-count="4">
+            <a href="{{ t.href }}" style="font-size:12.5px;color:var(--text-2);text-decoration:none;padding:4px 0" style-hover="color:#e8657a">{{ t.label }}</a>
+          </sc-for>
+        </div>
+        <div style="font-size:10px;text-transform:uppercase;letter-spacing:.7px;color:var(--text-3);font-family:'IBM Plex Mono',monospace;margin-bottom:10px">Linked from <span style="color:var(--text-2)">{{ haleuBacklinkCount }}</span></div>
+        <div style="display:flex;flex-direction:column;gap:6px">
+          <sc-for list="{{ haleuBacklinks }}" as="b" hint-placeholder-count="4">
+            <a onClick="{{ b.onClick }}" style="display:flex;align-items:center;gap:8px;background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:8px 10px;cursor:pointer;text-decoration:none" style-hover="border-color:var(--border-2);background:var(--surface-2)">
+              <span style="width:6px;height:6px;border-radius:50%;background:{{ b.dot }};flex:none"></span>
+              <span style="flex:1;font-size:12px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">{{ b.title }}</span>
+              <span style="font-family:'IBM Plex Mono',monospace;font-size:9px;text-transform:uppercase;color:var(--text-3);flex:none">{{ b.type }}</span>
+            </a>
+          </sc-for>
+        </div>
+      </aside>
+    </div>
+    </sc-if>
+
+    <!-- ===== STRUCTURE ===== -->
+    <sc-if value="{{ isStructure }}" hint-placeholder-val="{{ false }}">
+    <main style="padding:30px 40px 90px 40px;max-width:1120px;width:100%;margin:0 auto">
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.8px;text-transform:uppercase;color:var(--accent);margin-bottom:8px">Structure visualizations</div>
+      <h1 style="font-size:25px;font-weight:600;margin:0 0 6px 0;letter-spacing:-.3px">Make the hidden structure visible</h1>
+      <p style="font-size:14px;color:var(--text-2);margin:0 0 20px 0;max-width:620px;line-height:1.55">The vault's most valuable layer is its structure. Three views surface it: a durability-ranked board, the value-capture map, and the wikilink graph.</p>
+
+      <div style="display:flex;gap:4px;background:var(--inset);border:1px solid var(--border);border-radius:10px;padding:4px;margin-bottom:22px;width:max-content;max-width:100%;overflow-x:auto">
+        <sc-for list="{{ vizTabs }}" as="v" hint-placeholder-count="3">
+          <button onClick="{{ v.onClick }}" style="{{ v.style }}">{{ v.label }}</button>
+        </sc-for>
+      </div>
+
+      <!-- LEADERBOARD -->
+      <sc-if value="{{ isLeaderboard }}" hint-placeholder-val="{{ true }}">
+      <div>
+        <div style="display:flex;gap:16px;flex-wrap:wrap;margin-bottom:16px">
+          <sc-for list="{{ gradeLegend }}" as="gl" hint-placeholder-count="3">
+            <span style="display:flex;align-items:center;gap:7px;font-size:12px;color:var(--text-2)"><span style="width:11px;height:11px;border-radius:3px;background:{{ gl.color }}"></span>{{ gl.label }}<span style="color:var(--text-3);font-size:11px">{{ gl.note }}</span></span>
+          </sc-for>
+        </div>
+        <div style="background:var(--surface);border:1px solid var(--border);border-radius:13px;overflow:hidden">
+          <sc-for list="{{ leaderboard }}" as="l" hint-placeholder-count="8">
+            <div onClick="{{ l.onClick }}" style="display:flex;align-items:center;gap:15px;padding:13px 18px;border-bottom:1px solid var(--border);cursor:{{ l.cursor }}" style-hover="background:var(--surface-2)">
+              <span style="font-family:'IBM Plex Mono',monospace;font-size:14px;color:var(--text-3);width:22px;flex:none;text-align:right">{{ l.rank }}</span>
+              <div style="width:4px;height:34px;border-radius:3px;background:{{ l.gradeColor }};flex:none"></div>
+              <div style="flex:1;min-width:0">
+                <div style="font-size:14px;font-weight:600;color:var(--text);overflow:hidden;text-overflow:ellipsis;white-space:nowrap">{{ l.name }}</div>
+                <div style="font-size:11.5px;color:var(--text-3);margin-top:2px">{{ l.gradeLabel }} · {{ l.tickers }}</div>
+              </div>
+              <div style="width:140px;flex:none;display:none" class="lbBar"></div>
+              <div style="width:120px;flex:none">
+                <div style="height:7px;border-radius:4px;background:var(--inset);overflow:hidden"><div style="height:100%;width:{{ l.barW }};background:{{ l.gradeColor }};border-radius:4px"></div></div>
+              </div>
+              <span style="width:9px;height:9px;border-radius:50%;background:{{ l.domainDot }};flex:none" title="{{ l.domainLabel }}"></span>
+            </div>
+          </sc-for>
+        </div>
+        <div style="font-size:11.5px;color:var(--text-3);margin-top:13px;line-height:1.5">Ranked by <strong style="color:var(--text-2)">durability</strong>, not size: physics/yield-grade moats (hardest to replicate) above precision-manufacturing above integration/assembly (easiest to compete away). Dot = thesis domain.</div>
+      </div>
+      </sc-if>
+
+      <!-- VALUE-CHAIN MAP -->
+      <sc-if value="{{ isLayerMap }}" hint-placeholder-val="{{ false }}">
+      <div>
+        <div style="display:flex;flex-direction:column;gap:8px">
+          <sc-for list="{{ layerMap }}" as="L" hint-placeholder-count="6">
+            <div style="display:flex;gap:0;background:var(--surface);border:1px solid var(--border);border-radius:11px;overflow:hidden">
+              <div style="padding:13px 16px;display:flex;align-items:center;gap:16px;flex:1;min-width:0;flex-wrap:wrap">
+                <div style="display:flex;align-items:center;gap:12px;width:230px;flex:none">
+                  <div style="width:42px;height:42px;border-radius:10px;background:{{ L.tint }};color:{{ L.color }};display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:15px;flex:none">{{ L.code }}</div>
+                  <div style="line-height:1.25">
+                    <div style="font-size:13.5px;font-weight:600;color:var(--text)">{{ L.title }}</div>
+                    <div style="font-size:11px;color:var(--text-3)">{{ L.sub }}</div>
+                  </div>
+                </div>
+                <div style="display:flex;gap:6px;flex-wrap:wrap;flex:1">
+                  <sc-for list="{{ L.companies }}" as="co" hint-placeholder-count="4">
+                    <span onClick="{{ co.onClick }}" style="font-family:'IBM Plex Mono',monospace;font-size:11.5px;padding:3px 9px;border-radius:6px;background:var(--inset);border:1px solid var(--border);color:var(--text-2);cursor:{{ co.cursor }}" style-hover="border-color:{{ L.color }};color:var(--text)">{{ co.t }}</span>
+                  </sc-for>
+                </div>
+              </div>
+            </div>
+          </sc-for>
+        </div>
+        <div style="font-size:11.5px;color:var(--text-3);margin-top:14px;line-height:1.5">Value-capture layers 1–6: where a company sits in the chain. <strong style="color:var(--text-2)">Layer 1</strong> = the platform owner (NVDA); <strong style="color:var(--text-2)">Layer 6</strong> = raw materials. Color reads cool→warm as you descend from refined platform to raw substrate.</div>
+      </div>
+      </sc-if>
+
+      <!-- GRAPH -->
+      <sc-if value="{{ isGraph }}" hint-placeholder-val="{{ false }}">
+      <div>
+        <div style="background:var(--surface);border:1px solid var(--border);border-radius:13px;padding:8px;position:relative">
+          <svg viewBox="0 0 900 540" style="width:100%;height:auto;display:block">
+            <sc-for list="{{ graphEdges }}" as="e" hint-placeholder-count="10">
+              <line x1="{{ e.x1 }}" y1="{{ e.y1 }}" x2="{{ e.x2 }}" y2="{{ e.y2 }}" stroke="var(--border-2)" stroke-width="{{ e.w }}"></line>
+            </sc-for>
+            <sc-for list="{{ graphNodes }}" as="n" hint-placeholder-count="10">
+              <g onClick="{{ n.onClick }}" style="cursor:{{ n.cursor }}">
+                <circle cx="{{ n.x }}" cy="{{ n.y }}" r="{{ n.r }}" fill="{{ n.fill }}" stroke="{{ n.stroke }}" stroke-width="1.5" style-hover="filter:brightness(1.25)"></circle>
+                <text x="{{ n.x }}" y="{{ n.ty }}" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="{{ n.fs }}" font-weight="{{ n.fw }}" fill="{{ n.textFill }}">{{ n.label }}</text>
+              </g>
+            </sc-for>
+          </svg>
+        </div>
+        <div style="display:flex;gap:16px;flex-wrap:wrap;margin-top:13px">
+          <sc-for list="{{ graphLegend }}" as="gl" hint-placeholder-count="4">
+            <span style="display:flex;align-items:center;gap:7px;font-size:12px;color:var(--text-2)"><span style="width:11px;height:11px;border-radius:50%;background:{{ gl.color }}"></span>{{ gl.label }}</span>
+          </sc-for>
+        </div>
+        <div style="font-size:11.5px;color:var(--text-3);margin-top:8px;line-height:1.5">The connection graph centred on <strong style="color:var(--text-2)">NVDA</strong>: each edge is a [[wikilink]]. Node size reflects backlink count. Click a built node to navigate.</div>
+      </div>
+      </sc-if>
+    </main>
+    </sc-if>
+
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1280,&quot;height&quot;:860},&quot;defaultTheme&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;dark&quot;,&quot;light&quot;],&quot;default&quot;:&quot;dark&quot;,&quot;tsType&quot;:&quot;'dark'|'light'&quot;},&quot;accent&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;cyan&quot;,&quot;violet&quot;,&quot;amber&quot;,&quot;green&quot;],&quot;default&quot;:&quot;cyan&quot;,&quot;tsType&quot;:&quot;string&quot;},&quot;researchFooter&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;}}">
+class Component extends DCLogic {
+  state = { route:'home', active:'', domain:'all', q:'', viz:'leaderboard', theme:null, navOpen:false };
+
+  // ---- encoding palettes (data-driven colors, theme-independent) ----
+  DOM = { ai:'#56c7ff', defense:'#d2b357', humanoid:'#a98bf5', materials:'#dd8a4f', none:'#5c6a7e' };
+  GRADE = {
+    physics:{label:'Physics / yield-grade', note:'hardest', c:'#e8657a'},
+    precision:{label:'Precision-manufacturing', note:'', c:'#e0a93b'},
+    integration:{label:'Integration / assembly', note:'easiest', c:'#56b6e0'},
+  };
+  SEV = ['#3a4658','#4f9d6b','#c9b14a','#e0973f','#e0743f','#e8525c']; // index = score
+  LAYER = ['#bfe0ff','#79cfe6','#5fc2a4','#d6b46a','#cf8a4e','#9c6240'];
+
+  hexA(hex,a){const n=parseInt(hex.slice(1),16);return `rgba(${n>>16&255},${n>>8&255},${n&255},${a})`;}
+
+  go(route, active){ return ()=>this.setState({route, active:active||'', navOpen:false, q:'' }); }
+
+  // ---- nav data ----
+  NAV = [
+    {label:'Companies', count:84, items:[
+      {title:'NVDA — NVIDIA', tick:'NVDA', domain:'ai', route:'company'},
+      {title:'TSM — TSMC', tick:'TSM', domain:'ai'},
+      {title:'Micron', tick:'MU', domain:'ai'},
+      {title:'AEHR Test Systems', tick:'AEHR', domain:'ai'},
+      {title:'Coherent', tick:'COHR', domain:'ai'},
+      {title:'Centrus Energy', tick:'LEU', domain:'ai'},
+      {title:'BWX Technologies', tick:'BWXT', domain:'defense'},
+      {title:'MP Materials', tick:'MP', domain:'humanoid'},
+      {title:'Harmonic Drive', tick:'6324', domain:'humanoid'},
+    ]},
+    {label:'Chokepoints', count:15, items:[
+      {title:'HALEU fuel chain', domain:'ai', route:'chokepoint'},
+      {title:'HBM oligopoly', domain:'ai'},
+      {title:'TSMC-CoWoS packaging', domain:'ai'},
+      {title:'CPO integration', domain:'ai'},
+      {title:'Rare-earth magnet', domain:'humanoid'},
+    ]},
+    {label:'Themes', count:23, items:[
+      {title:'Humanoid robot value chain', domain:'humanoid'},
+      {title:'Memory shortage winners & losers', domain:'ai'},
+      {title:'Neocloud moat durability', domain:'ai'},
+      {title:'Drone-platform commoditization', domain:'defense'},
+    ]},
+    {label:'Trackers', count:6, items:[
+      {title:'Short-interest tracker', domain:'none'},
+      {title:'Forward-edge tracker', domain:'none'},
+      {title:'Credit-spread watch', domain:'none'},
+    ]},
+    {label:'Relationships', count:1, items:[
+      {title:'Company relationships', domain:'none'},
+    ]},
+    {label:'Thesis', count:3, items:[
+      {title:'AI-datacenter supply chain', domain:'ai'},
+      {title:'Defense & Drones', domain:'defense'},
+      {title:'Humanoid Robots', domain:'humanoid'},
+    ]},
+  ];
+
+  SEARCH = null;
+  buildSearch(){
+    if(this.SEARCH) return this.SEARCH;
+    const idx=[];
+    this.NAV.forEach(g=>g.items.forEach(it=>idx.push({title:it.title, type:g.label.replace(/s$/,''), route:it.route, tick:it.tick})));
+    this.SEARCH=idx; return idx;
+  }
+
+  renderVals(){
+    const s=this.state;
+    const theme = s.theme || this.props.defaultTheme || 'dark';
+    const accent = this.props.accent || 'cyan';
+    const DOM=this.DOM, hexA=this.hexA.bind(this);
+
+    // route flags
+    const route=s.route;
+    const goHome=this.go('home'), goStructure=()=>this.setState({route:'structure',navOpen:false,q:''});
+    const goCompany=this.go('company','NVDA — NVIDIA'), goChokepoint=this.go('chokepoint','HALEU fuel chain');
+
+    // domain filter chips
+    const domDefs=[{k:'all',label:'All',dot:'var(--text-3)'},{k:'ai',label:'AI-DC',dot:DOM.ai},{k:'defense',label:'Defense',dot:DOM.defense},{k:'humanoid',label:'Humanoid',dot:DOM.humanoid}];
+    const domains=domDefs.map(d=>{
+      const on=s.domain===d.k;
+      return {label:d.label, dot:d.dot, onClick:()=>this.setState({domain:d.k}),
+        style:`display:inline-flex;align-items:center;gap:6px;font-family:'IBM Plex Mono',monospace;font-size:11px;padding:5px 9px;border-radius:7px;cursor:pointer;border:1px solid ${on?'var(--border-2)':'var(--border)'};background:${on?'var(--surface-2)':'transparent'};color:${on?'var(--text)':'var(--text-2)'}`};
+    });
+
+    // nav groups w/ active + domain filter
+    const filt=s.domain;
+    const navGroups=this.NAV.map(g=>({
+      label:g.label, count:g.count,
+      items:g.items.map(it=>{
+        const dim = filt!=='all' && it.domain!==filt && it.domain!=='none';
+        const isActive = s.active===it.title;
+        const dot = DOM[it.domain]||DOM.none;
+        const onClick = it.route==='company'?goCompany : it.route==='chokepoint'?goChokepoint
+          : ()=>this.setState({route: it.route||'stub', active:it.title, navOpen:false, q:''});
+        return {title:it.title, tick:it.tick, dot, dotOpacity: dim?0.3:1,
+          onClick: it.route ? onClick : ()=>this.setState({active:it.title, navOpen:false}),
+          style:`display:flex;align-items:center;gap:9px;padding:7px 9px;border-radius:7px;cursor:pointer;text-decoration:none;font-size:13px;color:${isActive?'var(--text)':'var(--text-2)'};background:${isActive?'var(--accent-dim)':'transparent'};opacity:${dim?0.4:1};margin:1px 0`};
+      })
+    }));
+
+    // search
+    const q=(s.q||'').trim().toLowerCase();
+    const showResults=q.length>0;
+    let results=[]; let noResults=false;
+    if(showResults){
+      results=this.buildSearch().filter(r=>r.title.toLowerCase().includes(q)||(r.tick||'').toLowerCase().includes(q)).slice(0,7)
+        .map(r=>({title:r.title, type:r.type, onClick: r.route==='company'?goCompany : r.route==='chokepoint'?goChokepoint : ()=>this.setState({active:r.title,q:'',navOpen:false})}));
+      noResults=results.length===0;
+    }
+
+    // ---- HOME data ----
+    const stats=[{n:'132',label:'pages'},{n:'84',label:'companies'},{n:'15',label:'chokepoints'},{n:'23',label:'themes'},{n:'6',label:'trackers'},{n:'3',label:'theses'}];
+    const theses=[
+      {tag:'AI Datacenter',color:DOM.ai,tint:hexA(DOM.ai,.13),title:'AI-datacenter supply chain',desc:'Compute, memory, photonics, power, equipment & materials — the core chokepoints.',companies:'62',chokepoints:'11',onClick:goStructure,
+        icon:this.svg('M3 7h10M3 11h10M5 3v10M11 3v10', DOM.ai)},
+      {tag:'Defense & Drones',color:DOM.defense,tint:hexA(DOM.defense,.13),title:'Defense & Drones',desc:'Unmanned systems and the value chain behind autonomous defense.',companies:'14',chokepoints:'2',onClick:goStructure,
+        icon:this.svg('M8 2l5 3v4l-5 5-5-5V5z', DOM.defense)},
+      {tag:'Humanoid Robots',color:DOM.humanoid,tint:hexA(DOM.humanoid,.13),title:'Humanoid robots',desc:'The embodied-AI value chain: actuators, reducers, sensors, magnets.',companies:'8',chokepoints:'2',onClick:goStructure,
+        icon:this.svg('M8 2.5a1.5 1.5 0 110 3 1.5 1.5 0 010-3zM5 7h6v4H5zM6 11v2.5M10 11v2.5', DOM.humanoid)},
+    ];
+    const recent=[
+      {title:'HALEU fuel chain', type:'chokepoint', date:'06-14', dot:DOM.ai, onClick:goChokepoint},
+      {title:'Humanoid robot value chain', type:'theme', date:'06-08', dot:DOM.humanoid, onClick:goStructure},
+      {title:'NVDA — NVIDIA', type:'company', date:'05-24', dot:DOM.ai, onClick:goCompany},
+      {title:'HBM oligopoly', type:'chokepoint', date:'05-22', dot:DOM.ai, onClick:goStructure},
+      {title:'Memory shortage winners & losers', type:'theme', date:'05-18', dot:DOM.ai, onClick:()=>{}},
+      {title:'Forward-edge tracker', type:'tracker', date:'05-15', dot:DOM.none, onClick:()=>{}},
+    ];
+    const LB=this.leaderboardData(goChokepoint);
+    const topChokepoints=LB.slice(0,5).map((l,i)=>({rank:i+1, name:l.name, gradeColor:l.gradeColor, gradeLabel:l.gradeLabel, onClick:l.onClick}));
+    const gradeLegend=Object.values(this.GRADE).map(g=>({label:g.label, note:g.note?`(${g.note})`:'', color:g.c}));
+
+    // ---- COMPANY (NVDA) ----
+    const wl=(label,resolved,onClick)=>({label,resolved,onClick});
+    const lk=(text,onClick,resolved=true)=>this.wikilink(text,resolved,onClick);
+    const nvdaBadges=[
+      {code:'L1', label:'Layer 1', sub:'Platform definer', box:`width:42px;height:42px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:15px;background:${hexA(this.LAYER[0],.16)};color:${this.LAYER[0]};border:1px solid ${hexA(this.LAYER[0],.5)}`},
+      {code:'PHO·1', label:'Photonics Tier 1', sub:'Structural chokepoint', box:`padding:0 11px;height:42px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:14px;background:${hexA(DOM.ai,.9)};color:#06090f;border:1px solid ${DOM.ai}`},
+    ];
+    const nvdaKpis=[
+      {label:'Revenue', val:'$82B', delta:'+85% YoY', deltaColor:'var(--up)'},
+      {label:'Data Center', val:'$75B', delta:'+92% YoY', deltaColor:'var(--up)'},
+      {label:'Gross margin', val:'75.0%', delta:'non-GAAP', deltaColor:'var(--text-3)'},
+      {label:'Free cash flow', val:'$49B', delta:'record qtr', deltaColor:'var(--up)'},
+    ];
+    const segRows=[
+      {platform:'Data Center', sub:'Hyperscale', rev:'$38B', qoq:'+12%', qoqColor:'var(--up)', scope:'Public cloud + consumer internet'},
+      {platform:'Data Center', sub:'ACIE', rev:'$37B', qoq:'+31%', qoqColor:'var(--up)', scope:'AI Clouds + Industrial + Enterprise'},
+      {platform:'Edge Computing', sub:'—', rev:'$6.4B', qoq:'+10%', qoqColor:'var(--up)', scope:'PCs, gaming, robotics, automotive'},
+    ].map((r,i)=>({...r, trStyle:`background:${i%2?'var(--inset)':'transparent'}`}));
+    const openQs=[
+      {n:'01', text:'COUP vs. COUPE naming — is "COUP" NVDA branding for the TSMC-developed packaging, or a distinct product reference?'},
+      {n:'02', text:'Coherent / Lumentum March investments not named at Q1 FY2027 — does the supply-chain non-naming pattern hold at the next disclosure venue?'},
+      {n:'03', text:'Venue-specific CPO disclosure persistence — confirmed durable: zero CPO mentions in earnings calls, full treatment at GTC.'},
+    ];
+    const nvdaToc=[{label:'Thesis role',href:'#role'},{label:'Financial snapshot',href:'#fin'},{label:'Supply-chain dependencies',href:'#supply'},{label:'Open questions',href:'#oq'}];
+    const blDot=(d)=>DOM[d]||DOM.none;
+    const backlinks=[
+      {title:'TSM — TSMC', type:'company', dot:blDot('ai'), onClick:()=>{}},
+      {title:'HBM oligopoly', type:'chokepoint', dot:blDot('ai'), onClick:()=>{}},
+      {title:'TSMC-CoWoS packaging', type:'chokepoint', dot:blDot('ai'), onClick:()=>{}},
+      {title:'CPO platform battle', type:'theme', dot:blDot('ai'), onClick:()=>{}},
+      {title:'Humanoid robot value chain', type:'theme', dot:blDot('humanoid'), onClick:goStructure},
+      {title:'AI-demand durability', type:'theme', dot:blDot('ai'), onClick:()=>{}},
+      {title:'NVDA platform integration', type:'theme', dot:blDot('ai'), onClick:()=>{}},
+    ];
+
+    // ---- CHOKEPOINT (HALEU) ----
+    const sevPips=[1,2,3,4,5].map(i=>({fill: this.SEV[5] && i<=5 ? this.SEV[5] : '' , fill2:''})).map((_,i)=>({fill:this.SEV[5]})); // all 5 filled red
+    const haleuTickers=['LEU','BWXT','CCJ','BE','GEV','CEG'];
+    const chain=[
+      {layer:'Mining', score:3, source:'CCJ — Cigar Lake, McArthur River, Inkai JV'},
+      {layer:'Conversion', score:4, source:'CCJ — Port Hope; Canadian sole-source UF₆'},
+      {layer:'LEU enrichment', score:4, source:'Centrus + URENCO + Orano oligopoly'},
+      {layer:'HALEU enrichment', score:5, source:'LEU — sole NRC-licensed Western enricher · ANCHOR', anchor:true},
+      {layer:'Deconversion', score:4, source:'BWXT — DOE program; LEU-Oklo JV (Mar 2026)'},
+      {layer:'Fabrication', score:3, source:'BWXT — TRISO; Kairos → Google end-customer'},
+    ];
+    const fuelChain=chain.map(f=>({
+      layer:f.layer, source:f.source, score:f.score+'/5', scoreColor:this.SEV[f.score],
+      highlight: f.anchor?`border-color:${hexA('#e8657a',.55)};box-shadow:0 0 0 1px ${hexA('#e8657a',.35)} inset`:'',
+      pips:[1,2,3,4,5].map(i=>({fill: i<=f.score?this.SEV[f.score]:'var(--inset)'})),
+    }));
+    const competitors=[
+      {name:'Centrus (LEU)', timeline:'Phase II live · Phase III 2029', status:'OPERATIONAL', tone:'op'},
+      {name:'URENCO USA', timeline:'HALEU FID pending', status:'PRE-FID', tone:'pend'},
+      {name:'Orano · Project IKE', timeline:'Production 2030+', status:'FUNDED', tone:'fund'},
+      {name:'General Matter', timeline:'Paducah site · 2030+', status:'PRE-LICENSE', tone:'pend'},
+    ].map((c,i)=>{
+      const map={op:['rgba(70,194,102,.14)','var(--up)'],fund:['rgba(224,169,59,.14)','#e0a93b'],pend:[hexA('#e8657a',.13),'#e8657a']};
+      return {...c, trStyle:`background:${i%2?'var(--inset)':'transparent'}`, statusBg:map[c.tone][0], statusFg:map[c.tone][1]};
+    });
+    const haleuToc=[{label:'Chokepoint identification',href:'#cid'},{label:'Six-layer fuel chain',href:'#chain'},{label:'Western competition',href:'#comp'}];
+    const haleuBacklinks=[
+      {title:'LEU — Centrus', type:'company', dot:blDot('ai'), onClick:()=>{}},
+      {title:'BWXT', type:'company', dot:blDot('defense'), onClick:()=>{}},
+      {title:'Commodity supercycle', type:'theme', dot:blDot('ai'), onClick:()=>{}},
+      {title:'China exposure', type:'theme', dot:blDot('ai'), onClick:()=>{}},
+    ];
+
+    // ---- STRUCTURE ----
+    const vizDefs=[{k:'leaderboard',label:'Chokepoint board'},{k:'layermap',label:'Value-chain map'},{k:'graph',label:'Connection graph'}];
+    const vizTabs=vizDefs.map(v=>{
+      const on=s.viz===v.k;
+      return {label:v.label, onClick:()=>this.setState({viz:v.k}),
+        style:`font-family:'IBM Plex Sans',sans-serif;font-size:13px;font-weight:${on?600:500};padding:7px 14px;border-radius:7px;cursor:pointer;border:none;white-space:nowrap;background:${on?'var(--surface)':'transparent'};color:${on?'var(--text)':'var(--text-2)'};box-shadow:${on?'var(--shadow)':'none'}`};
+    });
+    const leaderboard=LB;
+    const layerMap=this.layerMapData(goCompany, goChokepoint);
+    const graph=this.graphData(goCompany);
+
+    return {
+      theme, accent, navOpenAttr: s.navOpen?'1':'0',
+      goHome, goStructure, openNav:()=>this.setState({navOpen:true}), closeNav:()=>this.setState({navOpen:false}),
+      toggleTheme:()=>this.setState({theme: theme==='dark'?'light':'dark'}),
+      themeLabel: theme==='dark'?'LIGHT':'DARK',
+      themeIcon: theme==='dark'? this.iconSun() : this.iconMoon(),
+      q:s.q, onQuery:(e)=>this.setState({q:e.target.value}),
+      showResults, results, noResults,
+      domains, navGroups, stats, theses, recent, topChokepoints, gradeLegend,
+      isHome: route==='home'||route==='stub', isCompany: route==='company', isChokepoint: route==='chokepoint', isStructure: route==='structure',
+      // company
+      nvdaBadges, nvdaKpis, segRows, openQs, nvdaToc, backlinks, backlinkCount: backlinks.length,
+      lkTSM: lk('TSM',()=>{}), lkCoWoS: lk('TSMC-CoWoS',()=>{}), lkCOHR: lk('Coherent',()=>{}), lkLITE: lk('Lumentum',()=>{}), lkPlatform: lk('NVDA-platform-integration',()=>{}),
+      // chokepoint
+      sevPips, haleuTickers, fuelChain, competitors, haleuToc, haleuBacklinks, haleuBacklinkCount: haleuBacklinks.length,
+      lkLEU: lk('Centrus',()=>{}),
+      // structure
+      vizTabs, isLeaderboard: s.viz==='leaderboard', isLayerMap: s.viz==='layermap', isGraph: s.viz==='graph',
+      leaderboard, layerMap, ...graph,
+    };
+  }
+
+  // wikilink renderer (returns a React element)
+  wikilink(text, resolved, onClick){
+    const style = resolved
+      ? {color:'var(--accent)', cursor:'pointer', borderBottom:'1px dotted var(--accent)', textDecoration:'none', fontWeight:500}
+      : {color:'var(--text-3)', cursor:'not-allowed', borderBottom:'1px dashed var(--border-2)', opacity:.7};
+    return React.createElement('a', {style, onClick: resolved?onClick:undefined, title: resolved?'wikilink':'forward-reference (page not yet created)'}, text);
+  }
+
+  svg(d,color){ return React.createElement('svg',{width:17,height:17,viewBox:'0 0 16 16',fill:'none'},React.createElement('path',{d,stroke:color,strokeWidth:1.4,strokeLinecap:'round',strokeLinejoin:'round'})); }
+  iconSun(){ return React.createElement('svg',{width:13,height:13,viewBox:'0 0 16 16',fill:'none'},React.createElement('circle',{cx:8,cy:8,r:3,stroke:'currentColor',strokeWidth:1.3}),React.createElement('path',{d:'M8 1v1.6M8 13.4V15M15 8h-1.6M2.6 8H1M12.9 3.1l-1.1 1.1M4.2 11.8l-1.1 1.1M12.9 12.9l-1.1-1.1M4.2 4.2L3.1 3.1',stroke:'currentColor',strokeWidth:1.3,strokeLinecap:'round'})); }
+  iconMoon(){ return React.createElement('svg',{width:13,height:13,viewBox:'0 0 16 16',fill:'none'},React.createElement('path',{d:'M13.5 9.5A5.5 5.5 0 0 1 6.5 2.5a5.5 5.5 0 1 0 7 7z',stroke:'currentColor',strokeWidth:1.3,strokeLinejoin:'round'})); }
+
+  leaderboardData(goChokepoint){
+    const G=this.GRADE, DOM=this.DOM;
+    const rows=[
+      {name:'HALEU enrichment', grade:'physics', dur:99, domain:'ai', tickers:'LEU', route:'chokepoint'},
+      {name:'HBM oligopoly', grade:'physics', dur:95, domain:'ai', tickers:'MU · SK Hynix'},
+      {name:'InP / laser substrate supply', grade:'physics', dur:90, domain:'ai', tickers:'COHR · LITE'},
+      {name:'Rare-earth magnet substrate', grade:'physics', dur:88, domain:'humanoid', tickers:'MP'},
+      {name:'TSMC-CoWoS advanced packaging', grade:'precision', dur:80, domain:'ai', tickers:'TSM'},
+      {name:'Harmonic reduction gears', grade:'precision', dur:74, domain:'humanoid', tickers:'6324'},
+      {name:'Planetary roller screw', grade:'precision', dur:70, domain:'humanoid', tickers:'601100'},
+      {name:'Optical DSP / PHY supply', grade:'precision', dur:64, domain:'ai', tickers:'MRVL · AVGO'},
+      {name:'CPO integration', grade:'integration', dur:48, domain:'ai', tickers:'NVDA · AVGO'},
+      {name:'Actuator assembly', grade:'integration', dur:40, domain:'humanoid', tickers:'SANHUA · TUOPU'},
+    ];
+    return rows.map((r,i)=>({
+      rank:i+1, name:r.name, gradeColor:G[r.grade].c, gradeLabel:G[r.grade].label, tickers:r.tickers,
+      barW:r.dur+'%', domainDot:DOM[r.domain], domainLabel:r.domain,
+      cursor: r.route?'pointer':'default', onClick: r.route==='chokepoint'?goChokepoint:()=>{},
+    }));
+  }
+
+  layerMapData(goCompany, goChokepoint){
+    const L=this.LAYER, hexA=this.hexA.bind(this);
+    const defs=[
+      {code:'L1', title:'Platform definer', sub:'sets the architecture', companies:['NVDA','AVGO','MRVL','ANET']},
+      {code:'L2', title:'Infrastructure provider', sub:'leading-edge manufacturing', companies:['TSM','ASML']},
+      {code:'L3', title:'Subsystems & modules', sub:'memory, optics, networking', companies:['MU','COHR','LITE','CRDO']},
+      {code:'L4', title:'Specialized materials', sub:'enrichment, magnets, power', companies:['LEU','BWXT','MP','BE']},
+      {code:'L5', title:'Process & equipment', sub:'tools that gate capacity', companies:['AEHR','CCJ']},
+      {code:'L6', title:'Raw materials', sub:'the geological substrate', companies:['Uranium','Rare earths','Gallium']},
+    ];
+    return defs.map((d,i)=>({
+      code:d.code, title:d.title, sub:d.sub, color:L[i], tint:hexA(L[i],.15),
+      companies:d.companies.map(t=>({t, cursor: t==='NVDA'?'pointer':'default', onClick: t==='NVDA'?goCompany:(t==='LEU'?goChokepoint:()=>{})})),
+    }));
+  }
+
+  graphData(goCompany){
+    const DOM=this.DOM, hexA=this.hexA.bind(this);
+    const cx=450, cy=270;
+    const ring1=[
+      {id:'TSM',d:'ai',type:'company',bl:5},{id:'HBM-oligopoly',d:'ai',type:'choke',bl:4},
+      {id:'TSMC-CoWoS',d:'ai',type:'choke',bl:4},{id:'ARM',d:'ai',type:'company',bl:3},
+      {id:'AMD',d:'ai',type:'company',bl:3},{id:'MRVL',d:'ai',type:'company',bl:3},
+      {id:'COHR',d:'ai',type:'company',bl:3},{id:'humanoid-VC',d:'humanoid',type:'theme',bl:4},
+    ];
+    const ring2=[
+      {id:'AVGO',d:'ai',type:'company',bl:2},{id:'CPO-battle',d:'ai',type:'theme',bl:3},
+      {id:'LITE',d:'ai',type:'company',bl:2},{id:'AI-demand',d:'ai',type:'theme',bl:3},
+      {id:'MP',d:'humanoid',type:'company',bl:3},{id:'CSCO',d:'ai',type:'company',bl:2},
+    ];
+    const nodes=[]; const pos={};
+    const center={id:'NVDA',d:'ai',type:'company',bl:7,x:cx,y:cy};
+    pos['NVDA']=center; nodes.push(center);
+    ring1.forEach((n,i)=>{const a=(i/ring1.length)*Math.PI*2 - Math.PI/2; const x=cx+Math.cos(a)*155, y=cy+Math.sin(a)*135; pos[n.id]={...n,x,y}; nodes.push(pos[n.id]);});
+    ring2.forEach((n,i)=>{const a=(i/ring2.length)*Math.PI*2 - Math.PI/2 + 0.4; const x=cx+Math.cos(a)*250, y=cy+Math.sin(a)*210; pos[n.id]={...n,x,y}; nodes.push(pos[n.id]);});
+
+    const labels={'TSM':'TSM','HBM-oligopoly':'HBM','TSMC-CoWoS':'CoWoS','ARM':'ARM','AMD':'AMD','MRVL':'MRVL','COHR':'COHR','humanoid-VC':'Humanoid','AVGO':'AVGO','CPO-battle':'CPO','LITE':'LITE','AI-demand':'Demand','MP':'MP','CSCO':'CSCO','NVDA':'NVDA'};
+    const edges=[
+      ['NVDA','TSM'],['NVDA','HBM-oligopoly'],['NVDA','TSMC-CoWoS'],['NVDA','ARM'],['NVDA','AMD'],['NVDA','MRVL'],['NVDA','COHR'],['NVDA','humanoid-VC'],
+      ['NVDA','AVGO'],['NVDA','CPO-battle'],['NVDA','LITE'],['NVDA','AI-demand'],
+      ['TSM','TSMC-CoWoS'],['TSM','CPO-battle'],['COHR','LITE'],['HBM-oligopoly','MP'],['MRVL','AVGO'],['humanoid-VC','MP'],['ARM','AMD'],
+    ];
+    const typeColor={company:DOM.ai, choke:'#e8657a', theme:'#7d8aa0'};
+    const graphNodes=nodes.map(n=>{
+      const r = n.id==='NVDA'?30 : 9+n.bl*2.2;
+      const dcol = n.d==='humanoid'?DOM.humanoid : (n.type==='choke'?'#e8657a': DOM.ai);
+      const built = n.id==='NVDA';
+      return {x:n.x, y:n.y, r, ty:n.y+r+13, fs: n.id==='NVDA'?13:10.5, fw:n.id==='NVDA'?600:500,
+        fill: hexA(dcol, n.id==='NVDA'?.95:.16), stroke: dcol, textFill:'var(--text-2)', label:labels[n.id]||n.id,
+        cursor: built?'pointer':'default', onClick: built?goCompany:()=>{}};
+    });
+    // NVDA label inside
+    graphNodes[0].ty = cy+4; graphNodes[0].textFill='#06090f';
+    const graphEdges=edges.map(([a,b])=>{const p=pos[a],q=pos[b]; if(!p||!q) return null; return {x1:p.x,y1:p.y,x2:q.x,y2:q.y, w: (a==='NVDA'||b==='NVDA')?1.4:0.8};}).filter(Boolean);
+    const graphLegend=[{label:'AI-datacenter',color:DOM.ai},{label:'Humanoid',color:DOM.humanoid},{label:'Chokepoint',color:'#e8657a'},{label:'Theme',color:'#7d8aa0'}];
+    return {graphNodes, graphEdges, graphLegend};
+  }
+}
+</script>
+</body>
+</html>

@@ -1,7 +1,7 @@
 ---
 type: tracker
 tickers: [CRWV, ORCL, MSFT, AVGO, NVDA, NBIS, CORZ]
-last_updated: 2026-06-15
+last_updated: 2026-06-21
 ---
 
 # AI Credit Spread Watch — the cycle's fuel gauge
@@ -9,6 +9,16 @@ last_updated: 2026-06-15
 **What this tracks:** the gap between what AI-related borrowers pay to borrow and what ordinary, comparable borrowers pay — the earliest observable signal that the credit market funding the AI build-out is changing its mind. **Why it works:** the build-out is now credit-funded (big-five free cash flow is below capex; ~$1.5T of 2025-28 capex needs outside money — see [[AI-buildout-who-holds-the-risk]]), so the capex cycle cannot outlive its financing, and lenders reprice before equity holders do (all downside, no dream). In 2000, telecom bond spreads blew out months before the stocks broke. **Today's baseline reading is itself the finding: the gap is ~zero** — the BIS measured AI private-credit loans at 6.2pp spread vs 6.1pp for comparable non-AI loans (Bulletin 120, Jan 2026), while S&P's own models assign 70-90% loss-given-default to neocloud unsecured debt. One of the two markets is wrong; this page watches which one folds.
 
 **Discipline:** describe-don't-recommend — this page reports dial readings, never buy/sell. Readings carry their as-of date; a dial is only as good as its last check. Per the tracker freshness rule, any session that touches a financing signal (a new facility's pricing, a rating action, a backstop restatement) updates the affected row same-session.
+
+## The rate-side twin: the discount rate on AI equity (Tier-3 macro backdrop — context, not a dial)
+
+This page tracks the **credit spread** — the *risk premium* AI borrowers pay (the debt side). Its twin is the **long-end Treasury yield** — the *risk-free discount rate* on long-duration AI **equity** (the rate side). Together they are the two halves of the cost of capital for the AI complex. The note below is backdrop for *why* the rate side matters; it is **not a tracked dial** — the primary-grounded spread readings above stay the canonical signal.
+
+**The framing (Tier 3 — Goldman macro desk, video-intel 2026-06-18 + 2026-06-19; cite, don't treat as fact).** AI/big-tech are long-duration assets — most of their value is far-future cash flow, so they are priced off the **long end**, not the Fed's short rate. The counterintuitive consequence: a *credibly hawkish* Fed can **lower** the long end by killing the inflation-risk premium, which *supports* AI valuations. Evidence cited: the 30-yr yield trended **down** after the hawkish June 2026 FOMC (new chair Warsh) — the hawkish move lowered the long end, it didn't raise it.
+
+**The equity-side tripwire.** The risk is the inverse of hawkishness: a Fed seen as **politicized / losing inflation credibility** → the long end **de-anchors (spikes)** → the discount rate on far-future AI profits jumps → long-duration valuations compress. This is the equity-side analogue of the credit-spread blowout this page tracks on the debt side — both are the cost of capital for the AI complex repricing. **A spiking long-end yield and a widening AI credit spread firing together = the cost-of-capital turn from both sides at once.** Band caveat: this is *moderate, credible* hawkishness (the desk's base case is the Fed on hold) — a soft/dovish Fed *and* an over-tight Fed are both worse than the on-hold middle.
+
+**Discipline:** Tier-3 macro framing (cite, don't treat as fact); describe-don't-recommend — no rate forecast, no price target, no buy/sell.
 
 ## The four layers (instruments + how to read them)
 
@@ -76,6 +86,7 @@ The vault's full early-warning system for the AI capex cycle, one row per ending
 
 ## Change log
 
+- **2026-06-21 (S167 — rate-side twin / discount-rate backdrop):** Added a Tier-3 macro-backdrop subsection — the long-end Treasury yield as the equity-side twin of the credit spread (the discount rate on long-duration AI), from the GS macro-desk video-intel (2026-06-18 + 2026-06-19): a credibly-hawkish Fed anchors the long end and *supports* AI valuations; the equity-side tripwire is a politicized-Fed long-end spike (firing alongside a credit-spread blowout = the cost-of-capital turn from both sides). Context, not a new dial; no data/frontmatter change beyond last_updated. last_updated 2026-06-15 → 2026-06-21.
 - **2026-06-15 (S162 — CORZ added):** Added [[CORZ]] (Core Scientific) as a new **host-layer** credit name — the $3.3B 7.75% CoreWeave project bond (secured/lockbox) + the 0%/3% public convertibles — as a Layer-2 instrument row + dial 8 (⚪ unread). From the CORZ first-canonical ingest per the §3.20 freshness obligation; no yield invented here — the actual TRACE reading is a `/spread-watch` follow-up. +CORZ ticker.
 - **2026-06-13 (run #2 addendum):** Dial 7 added — primary-market behavior (new-issue concessions / failed takedowns), the historically-earliest crack, named with a 12-18-month clock + 2027 squeeze point by a GS rates-desk co-head (video-intel 2026-06-12, Tier 3); the "~Q1 2026 private-credit repricing" precursor logged as an unverified lead. Instrument-selection logic + ORCL-🟡 expansion trigger also documented (Vic question).
 - **2026-06-13 (run #2, same day):** Layer-4 check (was due, Jan-2026 row): dial 1 updated from BIS QR March 2026 — loan-spread parity RE-CONFIRMED; new color: hyperscaler CDS rising (especially lower-rated — the first differentiated AI pricing, at the CDS layer), BDC −10%/NAV discounts deepening (private-credit stress proxy), SaaS $500B direct-loan adjacency. Controls unchanged (HY 2.80 / IG 0.75, 06-10). Dials 2/4 flagged stale — need manual FINRA readings.

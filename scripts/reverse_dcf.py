@@ -163,6 +163,46 @@ def closed_form_g(ev, fcff, wacc):
     return (ev * wacc - fcff) / (ev + fcff)
 
 
+def _implied_headline(cfg):
+    """The single implied-growth number for a cfg (g for fcff, CAGR for revenue), or None if
+    the price isn't bracketed. Used for lever-sensitivity ("how much each input bends the answer")."""
+    wacc, tw, tg, h = cfg["wacc"], cfg.get("terminal_wacc"), cfg["terminal_g"], int(cfg["horizon"])
+    if tg >= wacc:
+        return None
+    ev_t = cfg["market_cap"] + cfg.get("net_debt", 0.0)
+    if cfg["path"] == "fcff":
+        if not cfg.get("fcff") or cfg["fcff"] <= 0:
+            return None
+        return solve(lambda x: ev_from_growth_fcff(x, cfg["fcff"], wacc, tg, h, tw)[0], -0.50, 1.50, ev_t)
+    g1 = solve(lambda x: ev_from_revenue_path(
+        x, revenue0=cfg["revenue"], cur_margin=cfg.get("current_margin", 0.0),
+        terminal_margin=cfg["terminal_margin"], sales_to_capital=cfg["sales_to_capital"],
+        tax=cfg.get("tax", 0.25), wacc=wacc, term_g=tg, horizon=h, term_wacc=tw)[0], -0.20, 1.00, ev_t)
+    if g1 is None:
+        return None
+    return ev_from_revenue_path(
+        g1, revenue0=cfg["revenue"], cur_margin=cfg.get("current_margin", 0.0),
+        terminal_margin=cfg["terminal_margin"], sales_to_capital=cfg["sales_to_capital"],
+        tax=cfg.get("tax", 0.25), wacc=wacc, term_g=tg, horizon=h, term_wacc=tw)[5]   # the CAGR
+
+
+def lever_sensitivity(cfg, base_headline):
+    """Rank the inputs by how much each BENDS the implied-growth answer — the quantified
+    'what the verdict hinges on'. Returns [(lever, delta_per_bump, bump_label), …] desc."""
+    levers = []
+    def bump(key, delta, label):
+        c = dict(cfg); c[key] = cfg.get(key, 0) + delta
+        v = _implied_headline(c)
+        if v is not None and base_headline is not None:
+            levers.append((label, abs(v - base_headline), f"{label} ±{abs(delta)*100:g}pt"))
+    bump("wacc", 0.01, "WACC")
+    bump("terminal_g", 0.01, "terminal growth")
+    if cfg["path"] == "revenue":
+        bump("terminal_margin", 0.05, "terminal margin")   # the dominant lever for pre-profit names
+    levers.sort(key=lambda x: x[1], reverse=True)
+    return levers
+
+
 # ── orchestration ────────────────────────────────────────────────────────────
 def run(cfg):
     out = {"inputs": cfg, "warnings": [], "guards": []}
@@ -263,6 +303,29 @@ def run(cfg):
         out["warnings"].append("pass --revenue to enable the base-rate plausibility score "
                                "(buckets the implied growth against history by company size).")
 
+    # --- "What must be true" — the organizing framing: for the price to make sense, X must ___ ---
+    who = cfg.get("name", "this business")
+    musts = []
+    base_hl = out.get("implied_revenue_cagr") if cfg["path"] == "revenue" else out.get("implied_growth")
+    if cfg["path"] == "fcff":
+        musts.append(f"grow free cash flow ~{out['implied_growth']*100:.1f}%/yr for {horizon} years "
+                     f"(then {term_g:.1%} forever) — while sustaining the margins/returns behind the FCFF base")
+    else:
+        musts.append(f"grow revenue ~{out['implied_initial_growth']*100:.0f}%/yr fading down "
+                     f"(≈{out['implied_revenue_cagr']*100:.0f}% over {horizon}y)")
+        musts.append(f"AND expand its operating margin to ~{cfg['terminal_margin']:.0%} at maturity")
+    if out.get("base_rate"):
+        br = out["base_rate"]
+        musts.append(f"clear the history bar: a {br['growth_real']*100:.0f}% real growth for a "
+                     f"{br['size_bucket']}-sales company was done by only ≈{br['fraction_achieving']*100:.1f}% "
+                     f"of firms ever → {br['verdict']}")
+    levers = lever_sensitivity(cfg, base_hl) if base_hl is not None else []
+    out["what_must_be_true"] = {
+        "who": who, "musts": musts,
+        "levers": [(lab, d) for (lab, d, _) in levers],
+        "top_lever": (levers[0] if levers else None),
+    }
+
     # --- sensitivity: implied growth across WACC × terminal-g (fcff path) ---
     if cfg["path"] == "fcff":
         grid = {}
@@ -287,6 +350,16 @@ def _print(out):
         return
     print("── Reverse DCF — market-implied expectations ──")
     print(f"EV (market cap + net debt): {hmoney(out['ev_target'])}")
+    # the organizing framing FIRST — "for the price to make sense, X must ___"
+    wmbt = out.get("what_must_be_true")
+    if wmbt and wmbt["musts"]:
+        print(f"\n★ For the price to make sense, {wmbt['who']} must:")
+        for i, m in enumerate(wmbt["musts"], 1):
+            print(f"   {i}. {m}")
+        if wmbt.get("top_lever"):
+            lab, d, blab = wmbt["top_lever"]
+            print(f"   ↳ the answer hinges most on the {lab} ({blab} moves the implied growth ~{d*100:.1f}pt); "
+                  "it is a conditional read, not a fact.")
     print()
     print("→ " + out["headline_growth"])
     print("→ " + out["headline_bakedin"])
@@ -334,7 +407,7 @@ def main():
 
     if args.json:
         cfg = json.loads(args.json)
-        cfg = {k: (num(v) if k not in ("path",) else v) for k, v in cfg.items()}
+        cfg = {k: (num(v) if k not in ("path", "name") else v) for k, v in cfg.items()}
     else:
         cfg = {
             "path": args.path,

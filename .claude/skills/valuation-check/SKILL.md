@@ -20,10 +20,14 @@ Framing is **describe-don't-recommend**: *"the market is implying X — is that 
 
 ## When to invoke
 
-- `/valuation-check <TICKER> <market-cap>` (e.g. `/valuation-check NVDA 5.1T`).
+- `/valuation-check <TICKER> <market-cap> [deep]` (e.g. `/valuation-check NVDA 5.1T`, or `/valuation-check NVDA 5.1T deep`).
 - "what's priced into X", "reverse DCF on X", "what growth is baked into X's price", "is X priced for perfection".
 
 **Market cap is REQUIRED and user-provided** — it needs a live share price, which isn't reliably auto-fetchable (do NOT auto-fetch). If the user omits it, ask for the current market cap (or price × shares) and stop until given. Optional overrides: WACC, horizon, terminal g.
+
+**The organizing question (lead everything with it).** Every run answers one question in plain words: **"For the price to make sense, what does `<TICKER>` have to BECOME?"** The engine emits this as a `★ For the price to make sense, X must:` block — the ranked list of what must be true (the growth, the margin, clearing the history bar) plus the lever the answer hinges on most. That block leads the note AND the chat summary. It is the whole point — never bury it under the mechanics.
+
+**Depth flag.** Default = the 2-agent run (extract+compute → adversarial verify). Add `deep` to turn on a **3rd red-team pass** (Step 3.5) for thesis-critical names — an agent that ONLY tries to find the most defensible inputs that would FLIP the verdict before you conclude.
 
 Not for: a buy/sell call, a fair-value point estimate, a primary-source ingest, or any name where reverse DCF is the wrong tool (see the weak-fit flags below).
 
@@ -39,32 +43,37 @@ Spawn a sub-agent (Agent tool) to assemble clean inputs and run the engine. Its 
 - **Choose the path:** `fcff` for a profitable, positive-FCF name; `revenue` (revenue × normalized-future-margin) for a pre-profit name (e.g. NVTS/CRWV).
 - Assemble inputs: market_cap (user), net_debt (debt − cash; negative = net cash), **current revenue** (for the base-rate size bucket), shares; and for `fcff`: latest TTM/normalized **FCFF** (SBC **expensed**, NOT added back — use FCF already net of SBC); for `revenue`: current operating margin, a **normalized terminal margin** (benchmark mature sector peers — Damodaran sector margins in the research ref), sales-to-capital (~2–3), tax.
 - **Pick a defensible WACC** from the reference bands (large-cap stable 7–9%, growth 9–12%) by the company's size/sector/leverage, or CAPM if the page gives a beta — and STATE it (Agent 2 will challenge it; the engine's sensitivity table already flexes ±1%).
-- Run the engine via `--json` (cleanest):
+- Run the engine via `--json` (cleanest) — **always pass `"name":"<TICKER>"`** so the engine leads with the "For the price to make sense, `<TICKER>` must ___" framing:
   ```bash
-  python scripts/reverse_dcf.py --json '{"path":"fcff","market_cap":"5.1T","net_debt":"-50B","fcff":"120B","revenue":"200B","wacc":0.09,"terminal_g":0.03,"horizon":10}'
+  python scripts/reverse_dcf.py --json '{"name":"NVDA","path":"fcff","market_cap":"5.1T","net_debt":"-50B","fcff":"120B","revenue":"200B","wacc":0.09,"terminal_g":0.03,"horizon":10}'
   ```
-  (Passing `revenue` auto-enables the base-rate plausibility block.)
-- Return: the engine output + **every input choice with its rationale + source** (so Agent 2 can audit it). Flag if reverse DCF is a **weak fit** here — cyclical at peak/trough (use normalized earnings), bank/financial (FCFF undefined → flag, don't force), holdco (sum-of-parts), distressed.
+  (Passing `revenue` auto-enables the base-rate block; the engine also emits the `★ what-must-be-true` block + the ranked lever sensitivity.)
+- Return: the engine output (incl. the `★ what-must-be-true` block) + **every input choice with its rationale + source** (so Agent 2 can audit it). Flag if reverse DCF is a **weak fit** here — cyclical at peak/trough (use normalized earnings), bank/financial (FCFF undefined → flag, don't force), holdco (sum-of-parts), distressed.
 
 ### 3 — Agent 2: Verify + Assess (the adversarial agent)
 Spawn a second sub-agent to check Agent 1, not echo it. Its brief:
 - **Adversarially re-check each input against the filing:** is the FCFF normalized (one-offs stripped, SBC expensed)? Is the terminal margin defensible vs mature peers, not best-in-class? Is the WACC reasonable? Is the path right? Correct anything wrong and note it.
 - **Judge plausibility** using the engine's **base-rate block** (the implied growth's historical percentile by size) + a TAM/history sanity check — is the implied growth "common / aggressive / priced-for-perfection / no precedent"?
 - **Build bull / base / bear** by re-running `reverse_dcf.py` with the **2–3 highest-sensitivity drivers** varied (revenue CAGR, terminal margin, CAP/horizon, occasionally WACC) — report each scenario's implied growth + Z/W + base-rate verdict. Keep the terminal disciplined (ROIC→WACC) so scenarios don't diverge through the terminal back door.
-- Return the verification verdict (what held up / what it corrected) + the scenario table.
+- **Sharpen the "what must be true" list** — for each must in the engine's `★` block, add the qualitative color from the filings: is the required margin one the company has *never hit*? Is the required growth one *no peer its size achieved*? That plain-language "what would have to be true" is the headline deliverable.
+- Return the verification verdict (what held up / what it corrected) + the sharpened what-must-be-true list + the scenario table.
+
+### 3.5 — Agent 3: Red-team (ONLY when `deep`)
+If the user passed `deep`, spawn a third agent whose ONLY job is to **try to flip the verdict**: find the most *defensible* set of inputs (the genuine bull case — a higher-but-arguable terminal margin, a normalized-up cash flow, a lower WACC) that would make the price look reasonable, and run them. Then report honestly: does the verdict survive the strongest fair attack, or does it flip? This guards against a confident-but-fragile conclusion on thesis-critical names. Return: the strongest steelman inputs + whether the verdict held.
 
 ### 4 — Write the note (the skill does this single write)
 `raw/notes/valuation-check/<RUN_DATE>_<TICKER>_valuation-check.md`:
 1. **Header** — run date, ticker, market cap used, the one-paragraph "what this is" boundary (Tier-3 reverse-DCF discovery; not canon; not a fair-value/buy-sell).
-2. **The two headlines** — *"the market is pricing in ~X% growth for Y years"* + *"the price bakes in ≈$Z explicit + $W terminal (TV% of value)"*.
-3. **Price decomposition** — no-growth value vs growth premium (PVGO %).
-4. **Plausibility** — the base-rate percentile + verdict (the killer line); the sensitivity table.
-5. **Bull / base / bear** — the scenario table (implied growth + plausibility per case).
-6. **Assumptions + Agent-2 verification** — the full input set (outputs are conditional on it), what Agent 2 corrected, and the weak-fit caveat if any.
-7. **Sources** — wiki snapshot + filing used.
+2. **★ For the price to make sense, `<TICKER>` must become ___** — LEAD with this. The ranked what-must-be-true list (the growth, the margin, clearing the history bar), each with Agent-2's plain-language color ("a margin it has never hit"; "growth no peer its size achieved") + the lever the answer hinges on most.
+3. **The two headlines** — *"the market is pricing in ~X% growth for Y years"* + *"the price bakes in ≈$Z explicit + $W terminal (TV% of value)"*.
+4. **Price decomposition** — no-growth value vs growth premium (PVGO %).
+5. **Plausibility** — the base-rate percentile + verdict (the killer line); the sensitivity table.
+6. **Bull / base / bear** — the scenario table (implied growth + plausibility per case); + the red-team verdict if `deep` (did it survive the strongest fair attack?).
+7. **Assumptions + Agent-2 verification** — the full input set (outputs are conditional on it), what Agent 2 corrected, and the weak-fit caveat if any.
+8. **Sources** — wiki snapshot + filing used.
 
 ### 5 — Report to the user (chat)
-Lead with the **two headline lines**, then the **plausibility verdict** (priced-for-perfection? common?), then **bull/base/bear** in one line each, then where it saved. Plain language. End by reminding once that this is discovery-only and implied-expectations-only — it says what the market is betting on and how rare that is, NOT whether to buy.
+**Lead with the framing in plain words:** *"For the price to make sense, `<TICKER>` would have to become ___"* — then the ranked what-must-be-true list (growth + margin + how rare that is), then **bull/base/bear** in one line each (+ the red-team result if `deep`), then where it saved. Plain language. End by reminding once that this is discovery-only and implied-expectations-only — it says what the market is betting on and how rare that is, NOT whether to buy.
 
 ## Disciplines
 
