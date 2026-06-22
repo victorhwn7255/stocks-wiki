@@ -15,7 +15,7 @@
 The more independent sources land on the same thesis-relevant claim, the more it's worth checking. "Vault:" states where our primary-grounded analysis already stands.
 
 ### A1. Value accrues UPSTREAM to the chokepoints — not the app/hyperscaler layer ★ strongest convergence
-- **Sources (6+):** nico-alpha optical 05-08 ("grab the bottlenecks") · Baker 05-20 ("AI destroyed trillions at the app layer; profits go to energy/chips/models") · invest-like-the-best 06-09 ("decommoditization of hardware — commodity suppliers become spec-locked") · Maverick 06-18 ("bottleneck migrates upstream to obscure Japanese materials") · Goldman macro 06-19 (the "wedge": semis/memory *receive* the checks, hyperscalers *cut* them) · Eisman/Rasgon 06-08 ("playing bottlenecks") · Compound/Zezas 06-19 (the broadening is *already happening* — Mag-7 ~flat YTD, equal-weight tech +39%).
+- **Sources (6+):** nico-alpha optical 05-08 ("grab the bottlenecks") · Baker 05-20 ("AI destroyed trillions at the app layer; profits go to energy/chips/models") · invest-like-the-best 06-09 ("decommoditization of hardware — commodity suppliers become spec-locked") · Maverick 06-18 ("bottleneck migrates upstream to obscure Japanese materials") · Goldman macro 06-19 (the "wedge": semis/memory *receive* the checks, hyperscalers *cut* them) · Eisman/Rasgon 06-08 ("playing bottlenecks") · Compound/Zezas 06-19 (the broadening is *already happening* — Mag-7 ~flat YTD, equal-weight tech +39%) · Basis Points 06-19 (retail, strongest-worded: "Mag-7 = the **lag-7**," the piggy-bank for the capex+memory winners).
 - **Vault:** this *is* the founding thesis — hyperscalers coded `layer: outside`; value migrates upstream (Framework 11.12; S166 [[pcb-interconnect-substrate-chokepoint]]). **External validation, not new content.** The market pricing it (the wedge) is the strongest confirmation.
 
 ### A2. Power/energy is the binding constraint
@@ -25,6 +25,7 @@ The more independent sources land on the same thesis-relevant claim, the more it
 ### A3. Memory/HBM is the bottleneck after GPUs
 - **Sources (6):** Reiner Pope 04-29 ("hyperscalers ~50% of 2026 capex on memory"; inference is memory-bandwidth-bound) · nico-alpha MLCC 06-07 (GPU→memory→MLCC stack) · Eisman/Rasgon 06-08 (MU +100%) · Maverick 06-18 (long memory; "maniacal focus on the next bottleneck — memory") · Goldman macro 06-19 ("memory trading incredibly well") · invest-like-the-best 06-09 (HBM in the decommoditization list).
 - **Vault:** [[HBM-oligopoly]] chokepoint; [[memory-shortage-winners-losers]]; [[MU]]/[[SNDK]]. Validation. (Capacity-discipline caveat → see B5.)
+- **Counterpoint (Basis Points 06-19):** first feed source to flag a *memory-efficiency* demand-risk — systems being designed to use *less* memory per box (Jensen/NVDA; Cisco networking hardware) — which **directly contradicts** Reiner-Pope 04-29 ("KV-cache makes memory demand relentless"). A genuine falsifier angle to test at the next MU/SNDK/HBM refresh (is per-system memory content rising, or being engineered down?).
 
 ### A4. The capex-vs-revenue / ROI gap is the central risk
 - **Sources (5):** M12/Alan Du 03-16 ("$800B–1T revenue needed in 3–5 yr; utilization 30–40%") · invest-like-the-best 03-24 ("AI capex bubble ends badly — telecom again") · Eisman/Rasgon 06-08 ("what ends it: AI ROI disappointing") · Maverick 06-18 (the "air pocket" in the training→application handoff) · Dan Ives 06-10 ("do the use cases work / is the spend net").
@@ -60,7 +61,7 @@ Two credible Tier-3 sources disagreeing on the same fact is the highest-value si
 
 ### B2. Application/software layer — short it, or incumbent's-game-to-lose?
 - **Short side:** Baker 05-20 + invest-like-the-best 06-09 (net short software; "AI destroyed trillions at the app layer; budget goes to tokens, not seats").
-- **Long side:** invest-like-the-best 03-24 (software's moat = distribution; "incumbent's game to lose") + M12/Alan Du 03-16 ("context is king") + Dan Ives 06-10 (Palantir the unreplicable "intermediary") + Compound/Zezas 06-19 (MS: "harder fundamentally AND value being created"; "not a buyer of everyone-writes-their-own-software" → a moat survives).
+- **Long side:** invest-like-the-best 03-24 (software's moat = distribution; "incumbent's game to lose") + M12/Alan Du 03-16 ("context is king") + Dan Ives 06-10 (Palantir the unreplicable "intermediary") + Compound/Zezas 06-19 (MS: "harder fundamentally AND value being created"; "not a buyer of everyone-writes-their-own-software" → a moat survives) + Basis Points 06-19 (retail: ERP/CRM lock-in — SOC2, 5-yr contracts — makes SaaS structurally sticky, "the new PayPal"; Amit's bear counter = the de-rate is "structural, PMs need rate-cut clarity").
 - **Swing vote:** Maverick 06-18 — value swings *back downstream* to app/integration/CPUs/databases.
 - **Vault:** [[software-AI-moat-durability]] holds the bifurcated middle — consumption-infra/data/security validated; productivity-*seat* unproven. Unresolved; high-value to watch.
 

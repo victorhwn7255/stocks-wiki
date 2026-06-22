@@ -139,9 +139,11 @@ def preprocess_md(body):
     (2) insert the blank line the tables extension needs before a TABLE that abuts a paragraph
         (a `**Lead-in:**` directly above the header row, else the table leaks as literal pipes);
     (3) escape a DANGLING leading single-* footnote marker (no partner '*') so it doesn't open a
-        stray <em> that mis-pairs with a later **bold**."""
+        stray <em> that mis-pairs with a later **bold**;
+    (4) the vault indents nested bullets by 2 spaces but python-markdown needs 4 to nest, so
+        double the leading indent of an indented list item (2→4, 4→8, …) — else sub-bullets flatten."""
     lines = body.splitlines()
-    out, fence = [], False
+    out, fence, doubled = [], False, set()   # `doubled` = original indices whose indent we grew
     for i, line in enumerate(lines):
         if line.lstrip().startswith("```"):
             fence = not fence
@@ -157,6 +159,20 @@ def preprocess_md(body):
                 out.append("")
             if FOOTNOTE_RE.match(line) and line.replace("**", "").count("*") == 1:
                 line = "\\" + line
+            # (4) double an indented list item's indent — but ONLY when it genuinely continues a
+            #     list (a shallower list-item parent, or a doubled same-level sibling). Doubling a
+            #     stray indented bullet that follows a paragraph would make an indented code block.
+            mi = re.match(r"^( +)([-*+]|\d+[.)])\s", line)
+            if mi:
+                n = len(mi.group(1))
+                pj = i - 1
+                while pj >= 0 and not lines[pj].strip():
+                    pj -= 1
+                pl = lines[pj] if pj >= 0 else ""
+                pind = len(pl) - len(pl.lstrip(" "))
+                if (LIST_RE.match(pl) and pind < n) or (pj in doubled and pind == n):
+                    line = " " * (2 * n) + line[n:]
+                    doubled.add(i)
         out.append(line)
     return "\n".join(out)
 
