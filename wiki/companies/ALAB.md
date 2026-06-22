@@ -10,7 +10,7 @@ last_updated: 2026-05-11
 
 ## Thesis role
 
-Layer 3 specialized designer — the second Layer 3 company page in the vault alongside [[MRVL]]. ALAB designs connectivity silicon (PCIe/CXL retimers, Ethernet cable modules, CXL memory controllers) and AI fabric switches (Scorpio) for hyperscaler data center customers. Fabless model; sole IC fabrication partner is [[TSM]] (ALAB 10-K FY2025).
+Layer 3 specialized designer — the second Layer 3 company page in the vault alongside [[MRVL]]. ALAB designs connectivity silicon (PCIe/CXL retimers, Ethernet cable modules, CXL memory controllers) and AI fabric switches (Scorpio) for hyperscaler data center customers. Fabless model; sole IC fabrication partner is [[TSM]] (ALAB 10-K FY2025). See [[CXL-memory-disaggregation]] for the cross-vault read: ALAB is the closest listed CXL proxy, but its CXL/Leo line is immaterial today (management: "a small part… today") — its durable franchise is the PCIe retimer/switch layer (Aries/Scorpio), so "pure-play CXL" is a labeling artifact (the access-vs-durability inversion).
 
 **CPO platform contestant.** One of five named contestants in [[CPO-platform-battle]] via Scorpio X-Series scale-up switching and the aiXscale photonics acquisition (November 2025). Unlike [[MRVL]]'s commercially aggressive CPO framing ($500M/$1B revenue targets) and [[AVGO]]'s active dismissal ("bright, shiny objects"), Mohan positions ALAB in a phased-coexistence framework: copper and optical "coexisting from a system standpoint" with scale-up optical in 2028 (ALAB Q4 FY2025 call). See [[CPO-platform-battle]] for Mohan's phased-coexistence perspective and the three-way scale-up technology disagreement.
 
@@ -198,6 +198,21 @@ New warrant (February 2026, filed as 8-K): 3.3M shares, $6.5B in revenue milesto
 **10-Q Q1 FY2026 (Tier 1, period ending March 31, 2026; Session 55 refresh).** Five customers exceeded 10% billing-address concentration: A 29% (vs 20% FY2025) / B 21% (vs 20%) / C 16% (vs 17%) / D 12% (vs 16%) / E 12% (vs 11%) — totaling 90% (vs 84% FY2025). Customer A consolidation from 20% → 29% is the most material billing-address shift since IPO. Customer F dropped below 10% (was 19% Q1 FY2025 comparative). Revenue $308.4M (+93% YoY / +14% QoQ); $74.6M cash from operations offset by $74.6M cash for acquisitions (Israel Design Center close). Singular reporting segment preserved. Q1 FY2026 10-Q precedes Q1 FY2026 call by one day; per Section 3.4 Tier 1/Tier 2 framing alignment check, customer concentration table is Tier 1 only (call did not address billing-address customer concentration). No additional 10-K material weakness disclosure at Q1 FY2026; monitor for resolution.
 
 **Q1 FY2026 earnings call (Tier 2, May 5, 2026; Session 55 refresh).** First earnings call with new CFO Desmond Lynch (replacing Tate; previously announced succession). Strategically substantive content extending beyond S14 baseline: (a) NVLink Fusion A1 mode evidence substantively strengthens (multiple-customer engagement + NVIDIA-collaboration design win + revenue 2027+); (b) Microsoft Azure named at primary as Leo CXL hyperscaler — first non-Amazon hyperscaler naming; (c) KV cache offload as second custom hyperscaler design win (additional new hyperscaler); (d) Xscale (renamed from aiXscale) + Israel Design Center fully integrated; (e) optical roadmap commercial revenue 2027 via high-density detachable reusable fiber connectors precedes NPO 2027 + CPO 2028; (f) silicon dollar content >$1,000 per XPU verified at primary first-quantification; (g) UALink 2.2 specification April 2026 publication formalizes in-network compute chiplets + 200 gig performance. Custom solutions positioned as "new multi-billion dollar market opportunity" per Gajendra. ~16 analysts on call; zero asked about >70% end-customer concentration risk despite same-quarter 10-Q showing Customer A consolidation 20% → 29% — analyst silence pattern from S14 Q4 FY2025 baseline persists across two consecutive calls (running observation per Section 3.4-equivalent for analyst-silence-as-signal). Management tone consistent with Q4 FY2025 — confident, substantive, no CEO combativeness observed.
+
+<!-- LATEST-ALPHA:START -->
+## ⚠️ Latest alpha — unverified, between-filings (as of 2026-06-22)
+
+*Tier 3/4 discovery — NOT canonical. Recent 8-K / conference / news, to verify at the next primary source. Full detail + sources: [discovery note](../../raw/notes/latest-alpha/2026-06-22_ALAB_recent-developments.md). Items graduate into canon (or are pruned) at the next 10-Q/10-K ingest.*
+
+- **Scorpio X-Series 320-lane AI scale-up fabric switch — launch + initial shipments** (Computex / IR, May 2026) — Tier 2/4 · the real new driver, and it's **PCIe / AI-fabric, not CXL** (reinforces [[CXL-memory-disaggregation]]: PCIe is the engine, CXL/Leo still optionality). `[verify: Scorpio revenue contribution at next 10-Q + call]`
+- **Q2 FY2026 guide $355–365M (~+16–18% QoQ), GAAP EPS ~$0.44–0.46** (Q1 release, May 6) — Tier 2 · forward, post-period; sequential acceleration off +93%-YoY Q1. `[verify: Q2 actuals vs guide at Q2 10-Q ~Aug]`
+- **Taiwan operations + Cloud-Scale Interop Lab expansion** (IR PR, early June) — Tier 4 · capacity/ecosystem signal supporting the fabric ramp. `[verify: any named-win conversion at next call]`
+- **Honest counterweight — concentration unchanged:** nothing this window narrowed the FY2025 10-K concentration (one end-customer >70%, top-three ~86%) — still the dominant risk. `[verify: top-customer % at next 10-Q]`
+- **(already in canon)** Q1 FY2026 10-Q (May 6, rev $308.4M) — absorbed; page updated May 11. Annual-meeting 8-K (Jun 4) = routine governance, not thesis-material.
+- Related: [[CXL-memory-disaggregation]] [[MRVL]] [[TSM]] (PCIe/fabric franchise; CXL context; sole fab partner)
+
+*Signal only (not weighted): post-earnings PT-hike cluster (Barclays $200 / Citi $245 / Jefferies $270 / MS $240 / Evercore $297) + **Nasdaq-100 inclusion June 22** = passive-flow tailwind, not fundamentals.*
+<!-- LATEST-ALPHA:END -->
 
 ## Change log
 

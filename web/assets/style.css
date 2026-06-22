@@ -120,6 +120,20 @@ a{color:inherit;text-decoration:none}
 .pill.tk{color:var(--text-2)}
 .pill.tk .ar{color:var(--up)}
 .updated{font-size:10.5px;color:var(--text-3)}
+.pill-count{font-size:10.5px;color:var(--text-3);letter-spacing:.3px}
+.doc-note{font-size:9.5px;letter-spacing:.5px;text-transform:uppercase;color:var(--text-3);margin-left:auto}
+.page-pattern{font-size:12px;color:var(--text-3);letter-spacing:.3px;margin:0 0 10px}
+
+/* theme / chokepoint / tracker "member companies" strip */
+.members{border:1px solid var(--border);background:var(--surface);padding:11px 13px;margin-bottom:22px}
+.members .lab{font-size:9.5px;letter-spacing:.6px;color:var(--text-3);text-transform:uppercase;margin:0 0 9px}
+.members .lab-sub{text-transform:none;letter-spacing:0;color:var(--text-3);opacity:.85}
+.member-chips{display:flex;flex-wrap:wrap;gap:6px}
+.mchip{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--border);background:var(--inset);padding:4px 8px;font-size:11.5px;color:var(--text-2)}
+.mchip:hover{border-color:var(--border-2);color:var(--text)}
+.mchip .dot{width:7px;height:7px;flex:none}
+.mchip.dead{color:var(--text-3);border-style:dashed;cursor:default}
+.mchip.dead .dot{background:var(--text-3)}
 .page-title{font-size:27px;font-weight:600;margin:2px 0 4px;letter-spacing:.2px}
 .page-sub{font-size:14px;color:var(--text-2);margin-bottom:16px;font-style:italic}
 .page-sub strong{font-style:normal}

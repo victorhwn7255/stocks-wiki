@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="page-2col">
+  <div class="page-main">
+    <div class="crumb"><a href="{{ rel }}index.html">home</a> / <a href="{{ rel }}index.html#{{ page.group }}">{{ page.group }}</a> / {{ page.slug }}</div>
+
+    <div class="head-row">
+      <span class="pill pill-theme" style="border-color:{{ page.accent_hex }};color:{{ page.accent_hex }}">{{ page.pill }}</span>
+      {% if page.members %}<span class="pill-count">{{ page.members|length }} companies</span>{% endif %}
+      {% if page.last_updated %}<span class="updated">updated {{ page.last_updated }}</span>{% endif %}
+    </div>
+
+    <h1 class="page-title">{{ page.title }}</h1>
+    {% if page.pattern %}<div class="page-pattern">pattern · {{ page.pattern }}</div>{% endif %}
+    {% if page.subtitle_html %}<div class="page-sub">{{ page.subtitle_html | safe }}</div>{% endif %}
+
+    {% if page.members %}
+    {% set live = page.members | selectattr('out') | list | length %}
+    <div class="members">
+      <div class="lab">{{ page.members_label }}{% if live < page.members|length %} <span class="lab-sub">({{ live }} of {{ page.members|length }} with pages)</span>{% endif %}</div>
+      <div class="member-chips">
+        {% for m in page.members %}
+        {% if m.out %}<a class="mchip" href="{{ rel }}{{ m.out }}"><span class="dot" style="background:{{ m.hex }}"></span>{{ m.tk }}</a>
+        {% else %}<span class="mchip dead" title="no page yet"><span class="dot"></span>{{ m.tk }}</span>{% endif %}
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
+
+    <div class="prose">{{ page.body_html | safe }}</div>
+    <div class="disclaimer">Research tool — describes structure, not advice. No buy/sell calls, no price targets, no position sizing.</div>
+  </div>
+
+  <aside class="rail">
+    {% if page.toc %}
+    <div class="lab">On this page</div>
+    <div class="toc">{% for h in page.toc %}<a href="#{{ h.id }}">{{ h.text }}</a>{% endfor %}</div>
+    {% endif %}
+    <div class="bl">
+      <div class="lab">Linked from {{ page.backlinks|length }}</div>
+      {% for b in page.backlinks %}
+      <a class="bl-chip" href="{{ rel }}{{ b.out }}"><span class="dot" style="background:{{ b.domain_hex }}"></span>{{ b.title }}<span class="tag">{{ b.type }}</span></a>
+      {% else %}<div style="font-size:11px;color:var(--text-3)">No inbound links yet.</div>{% endfor %}
+    </div>
+  </aside>
+</div>
+{% endblock %}

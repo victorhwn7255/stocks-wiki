@@ -39,6 +39,16 @@ def sources():
     return s
 
 
+def raw_tickers(path):
+    """Read the inline `tickers: [A, B, C]` list straight from the frontmatter text. Avoids
+    PyYAML (YAML 1.1) coercing a ticker like ON / NO / YES / Y / N into a boolean (e.g. ON→True→
+    'TRUE'). Falls back to the parsed list for block-style frontmatter."""
+    m = re.search(r"^tickers:\s*\[([^\]]*)\]", path.read_text(), re.M)
+    if not m:
+        return None
+    return [t.strip().strip('"\'') for t in m.group(1).split(",") if t.strip()]
+
+
 AI_TIERS = ("photonics_tier", "energy_power_tier", "equipment_tier", "materials_tier", "memory_tier")
 
 
@@ -97,7 +107,8 @@ MD_EXT = ["tables", "fenced_code", "sane_lists"]
 
 
 def resolve_wikilinks(text, slugmap, rel):
-    """[[Target]] / [[Target|alias]] → an <a> link (amber if resolved, dimmed if a forward-ref)."""
+    """[[Target]] / [[Target|alias]] → an <a> link (amber if resolved, dimmed if a forward-ref).
+    Code regions are masked first so a [[link]] inside `backticks` or a fenced block stays literal."""
     def repl(m):
         target, alias = m.group(1).strip(), (m.group(2) or "").strip()
         label = alias or target
@@ -105,29 +116,48 @@ def resolve_wikilinks(text, slugmap, rel):
         if out:
             return f'<a class="wl" href="{rel}{out}">{label}</a>'
         return f'<a class="wl dead" title="forward-reference (page not yet created)">{label}</a>'
-    return WL.sub(repl, text)
+    stash = []
+    def mask(m):
+        stash.append(m.group(0))
+        return f"\x00{len(stash) - 1}\x00"
+    text = re.sub(r"```.*?```", mask, text, flags=re.S)   # fenced code first
+    text = re.sub(r"`[^`\n]*`", mask, text)               # then inline code
+    text = WL.sub(repl, text)
+    return re.sub(r"\x00(\d+)\x00", lambda m: stash[int(m.group(1))], text)
+
+
+def _is_table_sep(s):
+    """A markdown table separator row, e.g. |---|---| or | :-- | --: |."""
+    s = s.strip()
+    return bool(s) and "|" in s and "-" in s and bool(re.match(r"^[\s|:-]+$", s))
 
 
 def preprocess_md(body):
-    """Two canon-safe line fixes before markdown (both skip fenced code):
-    (1) sane_lists needs a blank line before a list that abuts a paragraph — the vault writes
-        `**Lead-in:**` directly above its bullets, so the markers leak as literal '- ' / '1.' text.
-    (2) a leading single-* footnote marker (e.g. `*FY2025 COGS …`) opens a stray <em> that
-        mis-pairs with a later **bold**; escape it so the '*' stays literal. Skip a *fully
-        italic-wrapped* line (ends with '*') and '** bold' lead-ins (handled by FOOTNOTE_RE)."""
-    out, prev, fence = [], "", False
-    for line in body.splitlines():
+    """Canon-safe line fixes before markdown (all skip fenced code):
+    (1) insert the blank line sane_lists needs before a LIST that abuts a paragraph — the vault
+        writes `**Lead-in:**` directly above its bullets, so markers leak as literal '- ' text;
+    (2) insert the blank line the tables extension needs before a TABLE that abuts a paragraph
+        (a `**Lead-in:**` directly above the header row, else the table leaks as literal pipes);
+    (3) escape a DANGLING leading single-* footnote marker (no partner '*') so it doesn't open a
+        stray <em> that mis-pairs with a later **bold**."""
+    lines = body.splitlines()
+    out, fence = [], False
+    for i, line in enumerate(lines):
         if line.lstrip().startswith("```"):
             fence = not fence
-            out.append(line); prev = line; continue
+            out.append(line); continue
         if not fence:
-            if LIST_RE.match(line) and prev.strip() and not LIST_RE.match(prev):
+            prev = lines[i - 1] if i > 0 else ""
+            nxt = lines[i + 1] if i + 1 < len(lines) else ""
+            prev_set = prev.strip()
+            is_table_head = ("|" in line) and _is_table_sep(nxt)
+            if LIST_RE.match(line) and prev_set and not LIST_RE.match(prev):
                 out.append("")
-            # escape a DANGLING leading footnote '*' (no partner '*' to close it) so it doesn't
-            # open a stray <em>; leave real italic spans (which have a closing '*') alone.
-            elif FOOTNOTE_RE.match(line) and line.replace("**", "").count("*") == 1:
+            elif is_table_head and prev_set and not LIST_RE.match(prev) and "|" not in prev:
+                out.append("")
+            if FOOTNOTE_RE.match(line) and line.replace("**", "").count("*") == 1:
                 line = "\\" + line
-        out.append(line); prev = line
+        out.append(line)
     return "\n".join(out)
 
 
@@ -196,10 +226,17 @@ def index_pages():
             title, sub, rest = title_and_body(body)
             out = f"{gkey}/{slug}.html"
             wl = [t for (t, _a) in WL.findall(body)]
+            dom = domain_of(fm, body)
+            # thesis/framework docs have no frontmatter — the slug names the domain authoritatively
+            # (the defense/humanoid docs mention AI terms in prose, so don't trust the body here)
+            if ptype in ("thesis", "framework"):
+                sl = slug.lower()
+                dom = ("def" if ("defense" in sl or "drone" in sl) else
+                       "hum" if ("humanoid" in sl or "robot" in sl) else "ai")
             pages[slug] = {"slug": slug, "type": ptype, "group": gkey, "path": p,
                            "title": title or slug, "subtitle": sub, "body": rest,
-                           "fm": fm, "tickers": vp.extract_tickers_from_frontmatter(fm),
-                           "last_updated": vp.get_last_updated(fm), "domain": domain_of(fm, body),
+                           "fm": fm, "tickers": raw_tickers(p) or vp.extract_tickers_from_frontmatter(fm),
+                           "last_updated": vp.get_last_updated(fm), "domain": dom,
                            "out": out, "wikilinks": wl}
             slugmap[slug] = out
     # backlinks
@@ -326,12 +363,27 @@ def main():
         subtitle_html = render_inline(r["subtitle"], slugmap, rel)
         bl = [{"title": pages[s]["title"][:34], "type": pages[s]["type"], "out": pages[s]["out"],
                "domain_hex": DOMAIN_HEX[pages[s]["domain"]]} for s in sorted(set(r["backlinks"]))]
-        ctx = dict(shared, rel=rel, route_label=(r["tickers"][0] + " US" if r["tickers"] else r["slug"]),
+        # member tickers (themes/chokepoints/trackers list companies) → links to their pages
+        members = []
+        for tk in (r["tickers"] if r["type"] != "company" else []):
+            mp = pages.get(tk) or pages.get(str(tk).upper())
+            if mp and mp["type"] == "company":
+                members.append({"tk": tk, "out": mp["out"], "hex": DOMAIN_HEX[mp["domain"]]})
+            else:
+                members.append({"tk": tk, "out": None, "hex": DOMAIN_HEX["none"]})
+        route_label = (r["tickers"][0] + " US" if r["type"] == "company" and r["tickers"] else r["slug"])
+        ctx = dict(shared, rel=rel, route_label=route_label,
                    route_kind={"company": "equity", "chokepoint": "chokepoint"}.get(r["type"], r["type"]),
                    fkey={"company": "company", "chokepoint": "chokepoint"}.get(r["type"], "home"),
                    page=dict(r, badges=badges_for(r["fm"], r["domain"]), body_html=body_html,
-                             subtitle_html=subtitle_html, toc=toc, backlinks=bl))
-        tpl = {"company": "company.html"}.get(r["type"], "company.html")  # phase 1: company template
+                             subtitle_html=subtitle_html, toc=toc, backlinks=bl, members=members,
+                             accent_hex=("#ff4d42" if r["type"] == "chokepoint" else DOMAIN_HEX[r["domain"]]),
+                             pill=r["type"].upper(), pattern=r["fm"].get("pattern"),
+                             members_label={"theme": "Companies in this theme", "chokepoint": "Companies exposed",
+                                            "relationship": "Companies in this relationship"}.get(r["type"], "Companies")))
+        tpl = {"company": "company.html", "theme": "theme.html", "relationship": "theme.html",
+               "chokepoint": "theme.html", "thesis": "document.html",
+               "framework": "document.html"}.get(r["type"], "company.html")
         html = env.get_template(tpl).render(**ctx)
         op = dist / r["out"]; op.parent.mkdir(parents=True, exist_ok=True); op.write_text(html)
 
