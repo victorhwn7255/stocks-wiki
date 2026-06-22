@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en" data-theme="dark" data-accent="amber">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{{ page.title }} · Stocks Wiki</title>
+<link rel="stylesheet" href="{{ rel }}assets/fonts.css">
+<link rel="stylesheet" href="{{ rel }}assets/style.css">
+</head>
+<body>
+<div id="app">
+
+  <!-- ── SIDEBAR ─────────────────────────────────────────────────── -->
+  <aside class="sb">
+    <a class="sb-brand" href="{{ rel }}index.html">
+      <span class="sb-logo"><svg viewBox="0 0 24 24"><polyline points="3,17 9,11 13,15 21,6"/><polyline points="15,6 21,6 21,12"/></svg></span>
+      <span><div class="sb-wm">STOCKS·WIKI</div><div class="sb-sub">research vault · {{ total }} pages</div></span>
+    </a>
+
+    <div class="sb-search">
+      <div class="well">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><line x1="16" y1="16" x2="21" y2="21"/></svg>
+        <input id="search" type="text" placeholder="Search titles, tickers…" autocomplete="off">
+        <kbd>/</kbd>
+      </div>
+      <div class="sb-results" id="search-results"></div>
+    </div>
+
+    <div class="sb-filter">
+      <div class="lab">Thesis Domain</div>
+      <div class="sb-chips" id="domain-chips">
+        <button class="chip on" data-domain="all"><span class="sq" style="background:var(--d-none)"></span>All</button>
+        <button class="chip" data-domain="ai"><span class="sq" style="background:var(--d-ai)"></span>AI-DC</button>
+        <button class="chip" data-domain="def"><span class="sq" style="background:var(--d-def)"></span>Defense</button>
+        <button class="chip" data-domain="hum"><span class="sq" style="background:var(--d-hum)"></span>Humanoid</button>
+      </div>
+    </div>
+
+    <nav class="sb-nav">
+      {% for g in nav_groups %}
+      <div class="nav-grp">
+        <div class="hd"><span>{{ g.label }}</span><span>{{ g['items']|length }}</span></div>
+        {% for it in g['items'] %}
+        <a class="nav-i {{ 'on' if it.slug == page.slug else '' }}" href="{{ rel }}{{ it.out }}" data-domain="{{ it.domain }}">
+          <span class="dot" style="background:{{ it.domain_hex }}"></span>
+          <span class="t">{{ it.title }}</span>
+          {% if it.ticker %}<span class="tk">{{ it.ticker }}</span>{% endif %}
+        </a>
+        {% endfor %}
+      </div>
+      {% endfor %}
+    </nav>
+
+    <div class="sb-foot">
+      <button id="theme-toggle"><svg id="theme-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="4"/><line x1="12" y1="20" x2="12" y2="23"/><line x1="1" y1="12" x2="4" y2="12"/><line x1="20" y1="12" x2="23" y2="12"/></svg><span id="theme-label">DARK</span></button>
+      <span>v · 2026.06</span>
+    </div>
+  </aside>
+
+  <!-- ── MAIN ────────────────────────────────────────────────────── -->
+  <div class="main">
+    <header class="term">
+      <div class="t-cmd">
+        <div class="ctx"><span class="sq"></span><span class="lab">{{ route_label }}</span><span class="kind">/ {{ route_kind }}</span></div>
+        <span class="div">│</span><span class="prompt">›</span>
+        <input id="cmd" type="text" placeholder="ENTER TICKER OR PAGE — e.g. NVDA, HALEU, STRUCTURE">
+        <span class="cursor"></span>
+        <button class="go" id="go">&lt;GO&gt;</button>
+        <div class="meta hide-sm"><span class="live"></span><span id="clock">--:--:--</span><span class="u">UTC</span></div>
+      </div>
+      <div class="t-tape"><div class="tape-row" id="tape">{% for t in tape_items %}<span class="c"><span class="tk">{{ t.tk }}</span><span style="color:{{ t.hex }}">{{ t.meta }}</span></span>{% endfor %}{% for t in tape_items %}<span class="c"><span class="tk">{{ t.tk }}</span><span style="color:{{ t.hex }}">{{ t.meta }}</span></span>{% endfor %}</div></div>
+      <div class="t-fkeys">
+        <a class="fkey f1 {{ 'on' if fkey=='home' }}" href="{{ rel }}index.html"><span class="k">F1</span>HOME</a>
+        <a class="fkey f2 {{ 'on' if fkey=='company' }}" href="{{ rel }}index.html#companies"><span class="k">F2</span>COMPANY</a>
+        <a class="fkey f3 {{ 'on' if fkey=='chokepoint' }}" href="{{ rel }}index.html#chokepoints"><span class="k">F3</span>CHOKEPOINT</a>
+        <a class="fkey f4 {{ 'on' if fkey=='structure' }}" href="{{ rel }}structure.html"><span class="k">F4</span>STRUCTURE</a>
+        <span class="tagline hide-sm">RESEARCH · NOT ADVICE</span>
+      </div>
+    </header>
+
+    <main class="screen">{% block content %}{% endblock %}</main>
+  </div>
+</div>
+<script>window.SEARCH_URL="{{ rel }}search-index.json";</script>
+<script src="{{ rel }}assets/app.js"></script>
+</body>
+</html>

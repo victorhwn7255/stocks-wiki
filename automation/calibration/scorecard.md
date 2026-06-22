@@ -20,3 +20,4 @@ falsifier/catalyst/tripwire **resolves** — review-due (30d+ stale) or a watch-
 | Date | Scored | RIGHT | WRONG | PARTIAL | STILL-OPEN | Accuracy | Note |
 |---|---|---|---|---|---|---|---|
 | 2026-06-17 | 0 | 0 | 0 | 0 | 0 | n/a | Baseline run. 28 calls tracked (12 fwd-edge + 16 risk); 0 review-due, 0 fired, no watch-date arrived. Nearest catalyst MU Q3 FY2026 (~Jun 25). |
+| 2026-06-22 | 0 | 0 | 0 | 0 | 0 | n/a | No-score. 28 calls tracked (12 fwd-edge + 16 risk); 0 review-due (oldest 13d), 0 fired, no watch-date arrived. MU Q3 (~Jun 25) now 3d out. IBIDEN/MURATA/TAIYO sources already absorbed in S168–S170. |

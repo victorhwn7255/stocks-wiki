@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="page-2col">
+  <div class="page-main">
+    <div class="crumb"><a href="{{ rel }}index.html">home</a> / <a href="{{ rel }}index.html#companies">companies</a> / {{ page.slug }}</div>
+
+    <div class="head-row">
+      <span class="pill">COMPANY</span>
+      {% for tk in page.tickers %}<span class="pill tk"><span class="ar">▲</span> {{ tk }}</span>{% endfor %}
+      {% if page.last_updated %}<span class="updated">updated {{ page.last_updated }}</span>{% endif %}
+    </div>
+
+    <h1 class="page-title">{{ page.title }}</h1>
+    {% if page.subtitle_html %}<div class="page-sub">{{ page.subtitle_html | safe }}</div>{% endif %}
+
+    {% if page.badges %}
+    <div class="badge-bar">
+      {% for b in page.badges %}
+      <div class="badge-cell">
+        <span class="bdg" style="{{ b.style }}">{{ b.text }}</span>
+        <span class="bdg-lab"><b>{{ b.label }}</b>{% if b.sub %} / {{ b.sub }}{% endif %}</span>
+      </div>
+      {% endfor %}
+    </div>
+    {% endif %}
+
+    <div class="prose">{{ page.body_html | safe }}</div>
+    <div class="disclaimer">Research tool — describes structure, not advice. No buy/sell calls, no price targets, no position sizing.</div>
+  </div>
+
+  <aside class="rail">
+    {% if page.toc %}
+    <div class="lab">On this page</div>
+    <div class="toc">{% for h in page.toc %}<a href="#{{ h.id }}">{{ h.text }}</a>{% endfor %}</div>
+    {% endif %}
+    <div class="bl">
+      <div class="lab">Linked from {{ page.backlinks|length }}</div>
+      {% for b in page.backlinks %}
+      <a class="bl-chip" href="{{ rel }}{{ b.out }}"><span class="dot" style="background:{{ b.domain_hex }}"></span>{{ b.title }}<span class="tag">{{ b.type }}</span></a>
+      {% else %}<div style="font-size:11px;color:var(--text-3)">No inbound links yet.</div>{% endfor %}
+    </div>
+  </aside>
+</div>
+{% endblock %}

@@ -122,7 +122,7 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` Section 3
 
 | Page | Related Tickers | Last Updated |
 |------|-----------------|--------------|
-| [AI-demand-durability](wiki/themes/AI-demand-durability.md) | TSM, NVDA, LITE, COHR, AEHR, ONTO, AAOI, MRVL, AVGO, AXTI, VECO, ALAB, GLW, FN, VRT, CEG, CSCO, ENS, MSFT, GOOGL, AMZN, META, ORCL, CRWV, NBIS | 2026-06-03 |
+| [AI-demand-durability](wiki/themes/AI-demand-durability.md) | TSM, NVDA, LITE, COHR, AEHR, ONTO, AAOI, MRVL, AVGO, AXTI, VECO, ALAB, GLW, FN, VRT, CEG, CSCO, ENS, MSFT, GOOGL, AMZN, META, ORCL, CRWV, NBIS | 2026-06-22 |
 | [CPO-platform-battle](wiki/themes/CPO-platform-battle.md) | NVDA, TSM, AVGO, MRVL, ALAB, CSCO, LITE, COHR, AEHR, ONTO, AAOI, COHU, AXTI, VECO | 2026-05-29 |
 | [datacenter-photonics-supply-chain](wiki/themes/datacenter-photonics-supply-chain.md) | NVDA, TSM, AVGO, MRVL, ALAB, CSCO, COHR, LITE, AAOI, AEHR, ONTO, COHU, AXTI, VECO, GLW, FN, VRT, SOI | 2026-05-29 |
 | [hyperscaler-custom-ASIC](wiki/themes/hyperscaler-custom-ASIC.md) | ALAB, AAOI, MRVL, AVGO, NVDA, FN, CSCO, MSFT, GOOGL, AMZN, META, ORCL | 2026-06-03 |

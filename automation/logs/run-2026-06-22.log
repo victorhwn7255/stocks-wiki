@@ -1,0 +1,12 @@
+
+=== run 2026-06-22T023003 ===
+  hygiene: ok
+  calibration: ok
+  connections: ok
+  patterns: ok
+  freshness: ok
+  actions: 4
+    - 🔴 HYGIENE FAIL — a hard defect (index-sync / frontmatter). See Hygiene.
+    - ⚠️ unresolved wikilinks: [[CMI]], [[Canonical]], [[QCOM]] — forward-link or typo (check).
+    - 🔴 index out of sync with disk — run build_index.py (human-gated).
+    - 📥 new filings available to ingest — see Discovery › Freshness.

@@ -1,7 +1,7 @@
 ---
 type: theme
 tickers: [TSM, NVDA, LITE, COHR, AEHR, ONTO, AAOI, MRVL, AVGO, AXTI, VECO, ALAB, GLW, FN, VRT, CEG, CSCO, ENS, MSFT, GOOGL, AMZN, META, ORCL, CRWV, NBIS, INOD]
-last_updated: 2026-06-05
+last_updated: 2026-06-22
 ---
 
 # AI Demand Durability
@@ -359,6 +359,18 @@ Based on evidence accumulated so far (will expand as more sources are ingested):
 
 **A hyperscaler-CEO framing of permanence (Tier 2, own-book).** MSFT CEO Satya Nadella's June 2026 Microsoft essay argues enterprise AI becomes embedded, compounding firm-owned IP — a "learning loop" (private evals + RL + queryable knowledge base) that, if it holds, converts AI spend from a discretionary experiment into structural, recurring demand. Directionally supportive of demand durability, but it is the vendor's own argument (aligned incentive) and a claim about *permanence* — the verification is whether the loop shows up as durable enterprise revenue/retention ([[software-AI-moat-durability]]), not a fresh primary demand signal.
 
+### Adopter-side ROI evidence (Tier 3, as-of Q1 2026)
+
+A read from the *adopter* side — companies deploying AI in their own operations, not the supply chain selling it — and so a demand-validation signal for the very capex this page tracks. It extends Structural demand drivers #5 (hyperscaler ROI) and #7 (application-layer monetization) by widening the lens from a single hyperscaler's ad model to the broad market of AI users. **Everything below is Tier 3 (Morgan Stanley research + FactSet transcript data) — cite, don't treat as vault fact.**
+
+- **Adopter-cohort delta.** Morgan Stanley maps its ~3,400 covered names as AI enabler / adopter / beneficiary; the measurable-result *adopters* saw average EBITDA expand roughly **2× faster than non-adopters** from 2024 to 2025 (MS research, Tier 3). Flag explicitly: this is MS's own proprietary model plus a counterfactual (what non-adopters would have done) — MS's construct, not reproducible at primary, not vault fact.
+- **Trend line (the more durable read).** The share of companies reporting *tangible, quantifiable* AI benefits is rising: S&P 500 quantifiable-AI-benefit mentions went from ~13% to ~25% (Q1 2025 → Q1 2026), and MS-covered adopters from ~16% to ~30% (MS research, Tier 3). The re-runnable, semi-public substrate underneath this is the **FactSet AI-mention series** — ~306 S&P 500 calls citing AI in Q3 2025, ~337 in the Mar–Jun 2026 window — so the *trend* is checkable each quarter even though the proprietary 2×-EBITDA figure is not.
+- **MS forward estimate (Tier-3 forecast, context only).** MS estimates AI contributes ~**+30bp** to S&P 500 net margin in 2026 and ~**+50bp** in 2027 (MS research, Tier 3) — a forecast, recorded as context, not evidence.
+- **Honest counterweight (same breath).** This signal *softens* but does not *close* the monetization skepticism this page already tracks. MIT-NANDA's finding that ~**95% of enterprise AI pilots show no measurable P&L impact** still stands (see [[AI-implementation-deployment-layer]], lane falsifiers #4–#5), and the capex-vs-revenue *timing* risk — capex deployed faster than value is captured, the "air pocket" the hyperscaler-CAPEX subsections above each flag — is unresolved. Honest read: adopter returns are *beginning* to show up broadly, which **weakens disconfirming signal #4 (consumer/enterprise AI monetization failure) without retiring it**.
+- **Refresh cadence.** Tier 3 — refreshed only when MS / FactSet republish, surfaced through the discovery layer (`/latest-alpha` / `/research-loop` / a video- or twitter-intel pass). It is **not** propagated by any vault company ingest, which is why it lives here as a dated note rather than as a tracker entry.
+
+Cross-reference [[software-AI-moat-durability]] — the company-level monetization scorecard that is the bottom-up counterpart to this broad-market, top-down read.
+
 ## Disconfirming signals to watch
 
 Evidence that would weaken the demand durability thesis:
@@ -418,3 +430,4 @@ Evidence that would weaken the demand durability thesis:
 - **2026-06-05 (S135 — [[AI-data-supply-chain]] theme + [[INOD]] ingest cross-link):** Added a Cross-references bullet for the new demand-side AI-*data* sibling theme — the data wall as a demand-side constraint + AI-data spend as the recipient side of frontier-lab budgets; INOD +54% YoY (Q1 2026) as a distinct non-hardware demand read (a services/data signal, not a supply-side convergence position). Added INOD to tickers. last_updated 2026-06-03 → 2026-06-05.
 - **2026-06-16 (Tier-2 cross-read):** Added a permanence-framing note after Structural-demand-driver #7 — MSFT CEO Nadella's June 2026 "learning loop" essay as a Tier-2 / own-book argument that embedded enterprise-AI IP converts AI spend from discretionary to structural; flagged not a primary demand signal (verification cross-linked to [[software-AI-moat-durability]]). No frontmatter change; last_updated unchanged.
 - **2026-06-21 (S167 — [[AI-credit-spread-watch]] rate-side cross-link):** Added a Cross-references bullet to the new cost-of-capital / discount-rate backdrop on [[AI-credit-spread-watch]] (Tier-3 GS-macro framing: a credibly-hawkish Fed anchors the long end → supports long-duration AI valuations; tripwire = politicized-Fed long-end spike). Nav cross-ref only; no content/ticker change; last_updated unchanged.
+- **2026-06-22 (S167 — adopter-side ROI signal folded in):** Added an "Adopter-side ROI evidence (Tier 3, as-of Q1 2026)" subsection (before Disconfirming signals) — MS/FactSet adopter-vs-non-adopter EBITDA + rising quantifiable-AI-benefit share + MS net-margin forecast, as a demand-validation signal extending drivers #5/#7 and weakening (not retiring) disconfirming signal #4. Folded in per the S167 evaluation rather than as a standalone page/tracker (proprietary Tier-3, fails the cross-vault/propagation tests); MIT-NANDA ~95%-no-P&L counterweight kept in the same breath; describe-don't-recommend, no names-to-own. No ticker change; last_updated 2026-06-05 → 2026-06-22.

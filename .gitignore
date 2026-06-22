@@ -27,3 +27,6 @@ automation/digests/
 automation/prompts/
 # Research-loop transient working dirs (state + findings per run)
 automation/research-runs/
+
+# Generated website (build artifact — regenerate with `python web/build.py`)
+web/dist/
