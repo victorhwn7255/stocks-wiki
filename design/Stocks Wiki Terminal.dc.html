@@ -17,7 +17,7 @@
   --border:#272d34; --border-2:#3b434c;
   --text:#e8eaec; --text-2:#99a0a8; --text-3:#646c75;
   --accent:#f7a21b; --accent-ink:#000000; --accent-dim:rgba(247,162,27,.15);
-  --up:#4defc4; --down:#ff4d42;
+  --up:#4defc4; --down:#ff4d42; --calm:#646c75; --watch:#f7a21b;
   --shadow:none;
 }
 [data-theme=light]{
@@ -25,7 +25,7 @@
   --border:#ddd6c7; --border-2:#c8bfab;
   --text:#1c1a14; --text-2:#5d5747; --text-3:#8f8773;
   --accent:#b56a00; --accent-ink:#ffffff; --accent-dim:rgba(181,106,0,.12);
-  --up:#0f8a5f; --down:#cc3a30;
+  --up:#0f8a5f; --down:#cc3a30; --calm:#8f8773; --watch:#b56a00;
   --shadow:none;
 }
 [data-accent=blue]{--accent:#2f9bff;--accent-ink:#001020;--accent-dim:rgba(47,155,255,.16)}
@@ -42,6 +42,7 @@ body{background:var(--bg)}
 #app *::-webkit-scrollbar-track{background:transparent}
 @keyframes fadeUp{from{transform:translateY(7px)}to{transform:none}}
 @keyframes blink{0%,48%{opacity:1}49%,100%{opacity:0}}
+@keyframes lamp{0%,100%{opacity:.55}50%{opacity:1}}
 @keyframes tape{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 .navtoggle{display:none!important}
 @media(max-width:900px){
@@ -53,10 +54,20 @@ body{background:var(--bg)}
   .navtoggle{display:flex!important}
   #rail{display:none!important}
   #fkeys{overflow-x:auto!important}
+  #dialGrid{grid-template-columns:repeat(2,1fr)!important}
+  #layerStack{grid-template-columns:1fr!important}
 }
 @media(max-width:640px){
   #homeStats{grid-template-columns:repeat(2,1fr)!important}
   #thesisGrid{grid-template-columns:1fr!important}
+  #dialGrid{grid-template-columns:1fr!important}
+  #siPanels{grid-template-columns:1fr!important}
+  #siIntel{grid-template-columns:1fr!important}
+  #capexStats{grid-template-columns:repeat(2,1fr)!important}
+  #capexSig{grid-template-columns:1fr!important}
+  #capexDyn{grid-template-columns:1fr!important}
+  #chinaKey{grid-template-columns:1fr!important}
+  .feSplit{grid-template-columns:1fr!important}
   .hide-sm{display:none!important}
 }
 </style>
@@ -118,8 +129,9 @@ body{background:var(--bg)}
     <nav style="flex:1;overflow-y:auto;padding:4px 8px 24px 8px">
       <sc-for list="{{ navGroups }}" as="g" hint-placeholder-count="6">
         <div style="margin-top:12px">
-          <div style="display:flex;align-items:center;justify-content:space-between;padding:4px 8px;margin-bottom:2px">
-            <span style="font-size:10px;text-transform:uppercase;letter-spacing:.7px;color:var(--text-3);font-family:'IBM Plex Mono',monospace;font-weight:500">{{ g.label }}</span>
+          <div onClick="{{ g.onToggle }}" style="display:flex;align-items:center;gap:7px;padding:5px 8px;margin-bottom:2px;cursor:pointer" style-hover="background:var(--surface-2)">
+            <span style="font-size:8px;color:var(--text-3);width:8px;flex:none">{{ g.chevron }}</span>
+            <span style="flex:1;font-size:10px;text-transform:uppercase;letter-spacing:.7px;color:var(--text-2);font-family:'IBM Plex Mono',monospace;font-weight:600">{{ g.label }}</span>
             <span style="font-size:10px;font-family:'IBM Plex Mono',monospace;color:var(--text-3)">{{ g.count }}</span>
           </div>
           <sc-for list="{{ g.items }}" as="it" hint-placeholder-count="4">
@@ -182,7 +194,7 @@ body{background:var(--bg)}
       <div id="fkeys" style="display:flex;align-items:center;height:30px;border-bottom:1px solid var(--border);background:#000">
         <sc-for list="{{ fkeys }}" as="fk" hint-placeholder-count="4">
           <button onClick="{{ fk.onClick }}" style="{{ fk.style }}" style-hover="background:var(--surface-2)">
-            <span style="{{ fk.keyStyle }}">{{ fk.k }}</span><span style="letter-spacing:.5px">{{ fk.label }}</span>
+            <span style="width:7px;height:7px;background:{{ fk.dot }};flex:none;display:inline-block"></span><span style="letter-spacing:.5px">{{ fk.label }}</span>
           </button>
         </sc-for>
         <span style="flex:1"></span>
@@ -270,6 +282,32 @@ body{background:var(--bg)}
       <div style="margin-top:38px;font-size:11px;color:var(--text-3);border-top:1px solid var(--border);padding-top:16px;line-height:1.5">
         This is a research and knowledge tool — structural analysis of where value sits and how durable each moat is. It is <strong style="color:var(--text-2);font-weight:600">not investment advice</strong>: no buy/sell calls, no price targets, no position sizing.
       </div>
+    </main>
+    </sc-if>
+
+    <!-- ===== SECTION INDEX ===== -->
+    <sc-if value="{{ isSection }}" hint-placeholder-val="{{ false }}">
+    <main style="padding:34px 40px 90px 40px;max-width:1180px;width:100%;margin:0 auto">
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--text-3);margin-bottom:14px">
+        <span onClick="{{ goHome }}" style="cursor:pointer" style-hover="color:var(--accent)">home</span> / <span style="color:var(--text-2)">{{ sectionSlug }}</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:12px;margin-bottom:6px;flex-wrap:wrap">
+        <span style="width:11px;height:11px;background:{{ sectionColor }};flex:none"></span>
+        <h1 style="font-size:25px;font-weight:600;margin:0;letter-spacing:-.3px">{{ sectionTitle }}</h1>
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:var(--text-3)">{{ sectionCount }}</span>
+      </div>
+      <p style="font-size:13.5px;line-height:1.6;color:var(--text-2);max-width:720px;margin:6px 0 22px 0">{{ sectionDesc }}</p>
+      <div id="sectionGrid" style="display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--border);border:1px solid var(--border)">
+        <sc-for list="{{ sectionItems }}" as="it" hint-placeholder-count="8">
+          <div onClick="{{ it.onClick }}" style="background:var(--surface);padding:13px 16px;display:flex;align-items:center;gap:12px;cursor:{{ it.cursor }}" style-hover="background:var(--surface-2)">
+            <span style="width:7px;height:7px;background:{{ it.dot }};flex:none;opacity:{{ it.dotOpacity }}"></span>
+            <span style="flex:1;font-size:13.5px;color:{{ it.titleColor }};overflow:hidden;text-overflow:ellipsis;white-space:nowrap">{{ it.title }}</span>
+            <sc-if value="{{ it.tick }}" hint-placeholder-val="{{ false }}"><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--text-3)">{{ it.tick }}</span></sc-if>
+            <span style="font-size:9px;letter-spacing:.4px;text-transform:uppercase;color:{{ it.tagColor }};border:1px solid {{ it.tagBorder }};padding:1px 5px;{{ it.tagShow }}">{{ it.tag }}</span>
+          </div>
+        </sc-for>
+      </div>
+      <div style="font-size:10.5px;color:var(--text-3);border-top:1px solid var(--border);padding-top:13px;margin-top:22px;line-height:1.5">{{ sectionNote }} <strong style="color:var(--text-2)">Research, not advice.</strong></div>
     </main>
     </sc-if>
 
@@ -613,12 +651,490 @@ body{background:var(--bg)}
     </main>
     </sc-if>
 
+    <!-- ===== TRACKER: AI CREDIT SPREAD WATCH ===== -->
+    <sc-if value="{{ isCreditSpread }}" hint-placeholder-val="{{ false }}">
+    <main style="padding:30px 40px 90px 40px;max-width:1180px;width:100%;margin:0 auto">
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--text-3);margin-bottom:14px">
+        <span onClick="{{ goHome }}" style="cursor:pointer" style-hover="color:var(--accent)">home</span> / <span style="color:var(--text-2)">trackers</span> / <span style="color:var(--text-2)">AI credit spread watch</span>
+      </div>
+      <div style="display:flex;align-items:flex-start;gap:14px;flex-wrap:wrap;margin-bottom:6px">
+        <h1 style="font-size:25px;font-weight:600;margin:0;letter-spacing:-.3px;line-height:1.15">AI Credit Spread Watch</h1>
+        <span style="font-size:11px;color:var(--text-3);border:1px solid var(--border-2);padding:3px 8px;margin-top:5px;white-space:nowrap">the cycle's fuel gauge</span>
+      </div>
+      <p style="font-size:13.5px;line-height:1.6;color:var(--text-2);max-width:760px;margin:6px 0 22px 0">The gap between what AI-related borrowers pay to borrow and what comparable ordinary borrowers pay — the earliest observable signal that the credit market funding the build-out is changing its mind. <span style="color:var(--text-3)">Today's baseline reading is itself the finding: the gap is ~zero.</span></p>
+
+      <!-- verdict banner -->
+      <div style="display:flex;align-items:stretch;border:1px solid var(--border-2);background:var(--surface);margin-bottom:24px;flex-wrap:wrap">
+        <div style="display:flex;align-items:center;gap:13px;padding:16px 20px;border-right:1px solid var(--border);flex:1;min-width:280px">
+          <span style="width:13px;height:13px;background:var(--calm);flex:none;box-shadow:0 0 0 4px rgba(100,108,117,.18)"></span>
+          <div>
+            <div style="font-size:9.5px;letter-spacing:.7px;color:var(--text-3);text-transform:uppercase">Composite signal</div>
+            <div style="font-size:16px;font-weight:600;color:var(--text);margin-top:3px">GAP ~ZERO · NO DIAL CONFIRMED</div>
+          </div>
+        </div>
+        <div style="display:flex;align-items:center;gap:26px;padding:16px 20px;flex-wrap:wrap">
+          <div><div style="font-size:9.5px;letter-spacing:.6px;color:var(--text-3);text-transform:uppercase">AI loan spread</div><div style="font-size:18px;font-weight:600;margin-top:2px">6.2<span style="font-size:11px;color:var(--text-3)">pp</span></div></div>
+          <div style="font-size:18px;color:var(--text-3);align-self:flex-end">vs</div>
+          <div><div style="font-size:9.5px;letter-spacing:.6px;color:var(--text-3);text-transform:uppercase">Non-AI comparable</div><div style="font-size:18px;font-weight:600;margin-top:2px">6.1<span style="font-size:11px;color:var(--text-3)">pp</span></div></div>
+          <div><div style="font-size:9.5px;letter-spacing:.6px;color:var(--text-3);text-transform:uppercase">Differential</div><div style="font-size:18px;font-weight:600;margin-top:2px;color:var(--up)">+0.1<span style="font-size:11px;color:var(--text-3)">pp</span></div></div>
+        </div>
+      </div>
+
+      <!-- reading rule -->
+      <div style="display:flex;gap:12px;background:var(--surface-2);border:1px solid var(--border);padding:13px 16px;margin-bottom:26px">
+        <span style="color:var(--accent);font-weight:600;flex:none">!</span>
+        <div style="font-size:12.5px;line-height:1.55;color:var(--text)"><strong style="color:var(--accent);font-weight:600">Reading rule.</strong> One dial widening = noise. The signal = the <strong>AI instruments widening while the Layer-1 control series stay calm</strong>, confirmed on a second dial. One market is wrong; this page watches which one folds.</div>
+      </div>
+
+      <!-- dial board -->
+      <div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:12px;gap:14px;flex-wrap:wrap">
+        <h2 style="font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.6px;color:var(--accent);margin:0">Dial board · 9 instruments</h2>
+        <div style="display:flex;gap:13px;flex-wrap:wrap" class="hide-sm">
+          <sc-for list="{{ csLegend }}" as="lg" hint-placeholder-count="4">
+            <span style="display:flex;align-items:center;gap:6px;font-size:10.5px;color:var(--text-3)"><span style="width:9px;height:9px;background:{{ lg.c }}"></span>{{ lg.label }}</span>
+          </sc-for>
+        </div>
+      </div>
+      <div id="dialGrid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border:1px solid var(--border);margin-bottom:30px">
+        <sc-for list="{{ csDials }}" as="d" hint-placeholder-count="9">
+          <div style="background:var(--surface);padding:14px 15px;display:flex;flex-direction:column;gap:9px;min-height:150px">
+            <div style="display:flex;align-items:center;justify-content:space-between">
+              <span style="font-size:10px;color:var(--text-3);letter-spacing:.5px">DIAL {{ d.n }}</span>
+              <span style="display:flex;align-items:center;gap:6px">
+                <span style="font-size:9px;letter-spacing:.4px;text-transform:uppercase;color:{{ d.statusColor }}">{{ d.statusLabel }}</span>
+                <span style="width:11px;height:11px;background:{{ d.statusColor }};flex:none;{{ d.lampAnim }}"></span>
+              </span>
+            </div>
+            <div style="font-size:12.5px;font-weight:600;color:var(--text);line-height:1.3">{{ d.dial }}</div>
+            <div style="font-size:11.5px;color:var(--text-2);line-height:1.5;flex:1">{{ d.reading }}</div>
+            <div style="display:flex;align-items:center;justify-content:space-between;border-top:1px solid var(--border);padding-top:7px">
+              <span style="font-size:10px;color:var(--text-3)">{{ d.asof }}</span>
+              <span style="font-size:9px;letter-spacing:.4px;padding:1px 5px;color:{{ d.flagColor }};border:1px solid {{ d.flagColor }};{{ d.flagShow }}">{{ d.flag }}</span>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+
+      <!-- instrument stack -->
+      <h2 style="font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.6px;color:var(--accent);margin:0 0 12px 0">The four-layer instrument stack</h2>
+      <div id="layerStack" style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:30px">
+        <sc-for list="{{ csLayers }}" as="L" hint-placeholder-count="4">
+          <div style="background:var(--surface);border:1px solid var(--border);padding:14px 16px">
+            <div style="display:flex;align-items:center;gap:9px;margin-bottom:8px">
+              <span style="font-size:11px;font-weight:600;color:#000;background:{{ L.tagBg }};padding:2px 7px;letter-spacing:.4px">{{ L.tag }}</span>
+              <span style="font-size:12.5px;font-weight:600;color:var(--text)">{{ L.title }}</span>
+            </div>
+            <div style="font-size:11.5px;color:var(--text-2);line-height:1.55">{{ L.desc }}</div>
+          </div>
+        </sc-for>
+      </div>
+
+      <!-- cycle-turn dashboard -->
+      <div style="display:flex;align-items:baseline;gap:10px;margin-bottom:5px;flex-wrap:wrap">
+        <h2 style="font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.6px;color:var(--accent);margin:0">Cycle-turn dashboard</h2>
+        <span style="font-size:11px;color:var(--text-3)">this page is 1 of 5 dials</span>
+      </div>
+      <p style="font-size:12px;color:var(--text-3);margin:0 0 12px 0;line-height:1.5">Two or more rows flashing together = the turn. One alone = investigate, don't conclude.</p>
+      <div style="border:1px solid var(--border);margin-bottom:14px">
+        <sc-for list="{{ csCycle }}" as="c" hint-placeholder-count="5">
+          <div style="display:flex;align-items:center;gap:14px;padding:11px 16px;border-bottom:1px solid var(--border);background:{{ c.bg }}">
+            <span style="width:9px;height:9px;background:{{ c.dot }};flex:none"></span>
+            <span style="flex:1;font-size:12.5px;color:var(--text);min-width:0">{{ c.ending }}</span>
+            <span class="hide-sm" style="font-size:11.5px;color:var(--text-2);width:230px;flex:none;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">{{ c.dial }}</span>
+            <span style="font-size:10px;letter-spacing:.4px;text-transform:uppercase;color:{{ c.homeColor }};width:84px;flex:none;text-align:right">{{ c.home }}</span>
+          </div>
+        </sc-for>
+      </div>
+
+      <div style="font-size:10.5px;color:var(--text-3);border-top:1px solid var(--border);padding-top:13px;margin-top:24px;line-height:1.5">Dial readings carry their as-of date; a dial is only as good as its last check. This page reports dial readings, never buy/sell — describe, don't recommend. <strong style="color:var(--text-2)">Research, not advice.</strong></div>
+    </main>
+    </sc-if>
+
+    <!-- ===== TRACKER: SHORT INTEREST ===== -->
+    <sc-if value="{{ isShortInterest }}" hint-placeholder-val="{{ false }}">
+    <main style="padding:30px 40px 90px 40px;max-width:1180px;width:100%;margin:0 auto">
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--text-3);margin-bottom:14px">
+        <span onClick="{{ goHome }}" style="cursor:pointer" style-hover="color:var(--accent)">home</span> / <span style="color:var(--text-2)">trackers</span> / <span style="color:var(--text-2)">short-interest watch</span>
+      </div>
+      <div style="display:flex;align-items:flex-start;gap:14px;flex-wrap:wrap;margin-bottom:6px">
+        <h1 style="font-size:25px;font-weight:600;margin:0;letter-spacing:-.3px;line-height:1.15">Short Interest Watch</h1>
+        <span style="font-size:11px;color:var(--text-3);border:1px solid var(--border-2);padding:3px 8px;margin-top:5px;white-space:nowrap">consensus skepticism, quantified</span>
+      </div>
+      <p style="font-size:13.5px;line-height:1.6;color:var(--text-2);max-width:780px;margin:6px 0 18px 0">How hard the market is betting against each name, crossed against the vault's own conviction. The intel falls out of two cases: where the crowd <strong style="color:var(--up)">agrees</strong> with a vault caution, and where it <strong style="color:var(--watch)">disagrees</strong> with a vault thesis — an inverse divergence to stress-test.</p>
+
+      <!-- settlement banner -->
+      <div style="display:flex;align-items:center;gap:18px;flex-wrap:wrap;border:1px solid var(--border-2);background:var(--surface);padding:12px 16px;margin-bottom:14px">
+        <div style="display:flex;align-items:center;gap:9px"><span style="width:8px;height:8px;background:var(--up);display:inline-block;animation:lamp 1.6s ease-in-out infinite"></span><span style="font-size:12px;color:var(--text);font-weight:600">FINRA consolidated short interest</span></div>
+        <span style="font-size:11.5px;color:var(--text-2)">settlement <span style="color:var(--text)">2026-05-29</span></span>
+        <span style="font-size:11.5px;color:var(--text-2)">70 / 70 vault names</span>
+        <span style="font-size:10px;letter-spacing:.4px;text-transform:uppercase;color:var(--text-3);border:1px solid var(--border-2);padding:2px 7px">Tier-4 sentiment · ~1–2wk lag</span>
+      </div>
+
+      <!-- reading rule -->
+      <div style="display:flex;gap:12px;background:var(--surface-2);border:1px solid var(--border);padding:13px 16px;margin-bottom:24px">
+        <span style="color:var(--accent);font-weight:600;flex:none">!</span>
+        <div style="font-size:12.5px;line-height:1.55;color:var(--text)"><strong style="color:var(--accent);font-weight:600">Reading rule.</strong> The signal is the outliers and the movers, never the levels on low-short mega-caps. <strong style="color:var(--up)">CONFIRM</strong> = heavy short on a name the vault is already cautious on (bears agree). <strong style="color:var(--watch)">CHALLENGE</strong> = heavy short on a name the vault is bullish on — an inverse divergence, the highest-value item. Notable ≥ 8% · crowded ≥ 5 days-to-cover · mover ± 15%.</div>
+      </div>
+
+      <!-- screener table -->
+      <h2 style="font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.6px;color:var(--accent);margin:0 0 11px 0">Most shorted · ≥ 8% of shares outstanding</h2>
+      <div style="border:1px solid var(--border);overflow:hidden;margin-bottom:8px">
+        <div style="overflow-x:auto">
+          <table style="border-collapse:collapse;width:100%;min-width:720px;font-size:12.5px">
+            <thead><tr style="background:var(--surface-2)">
+              <th onClick="{{ onSortTk }}" style="text-align:left;padding:9px 14px;font-size:10px;text-transform:uppercase;letter-spacing:.4px;color:var(--text-3);font-weight:500;border-bottom:1px solid var(--border);cursor:pointer">Ticker{{ arrTk }}</th>
+              <th style="text-align:right;padding:9px 14px;font-size:10px;text-transform:uppercase;letter-spacing:.4px;color:var(--text-3);font-weight:500;border-bottom:1px solid var(--border)">Short int</th>
+              <th onClick="{{ onSortPct }}" style="text-align:right;padding:9px 14px;font-size:10px;text-transform:uppercase;letter-spacing:.4px;color:var(--text-3);font-weight:500;border-bottom:1px solid var(--border);cursor:pointer">% out{{ arrPct }}</th>
+              <th onClick="{{ onSortDtc }}" style="text-align:right;padding:9px 14px;font-size:10px;text-transform:uppercase;letter-spacing:.4px;color:var(--text-3);font-weight:500;border-bottom:1px solid var(--border);cursor:pointer">Days-cover{{ arrDtc }}</th>
+              <th onClick="{{ onSortChg }}" style="text-align:right;padding:9px 14px;font-size:10px;text-transform:uppercase;letter-spacing:.4px;color:var(--text-3);font-weight:500;border-bottom:1px solid var(--border);cursor:pointer">Δ prior{{ arrChg }}</th>
+              <th style="text-align:left;padding:9px 14px;font-size:10px;text-transform:uppercase;letter-spacing:.4px;color:var(--text-3);font-weight:500;border-bottom:1px solid var(--border)">Vault read</th>
+              <th style="text-align:left;padding:9px 14px;font-size:10px;text-transform:uppercase;letter-spacing:.4px;color:var(--text-3);font-weight:500;border-bottom:1px solid var(--border)">Thesis</th>
+            </tr></thead>
+            <tbody>
+              <sc-for list="{{ siRows }}" as="r" hint-placeholder-count="12">
+                <tr style-hover="background:var(--surface-2)">
+                  <td style="padding:9px 14px;border-bottom:1px solid var(--border);font-weight:600"><span style="display:inline-flex;align-items:center;gap:8px"><span style="width:7px;height:7px;background:{{ r.dot }};display:inline-block;flex:none"></span>{{ r.tk }}</span></td>
+                  <td style="padding:9px 14px;border-bottom:1px solid var(--border);text-align:right;color:var(--text-2)">{{ r.si }}</td>
+                  <td style="padding:9px 14px;border-bottom:1px solid var(--border);text-align:right;font-weight:600">{{ r.pct }}</td>
+                  <td style="padding:9px 14px;border-bottom:1px solid var(--border);text-align:right;{{ r.crowded }}">{{ r.dtc }}</td>
+                  <td style="padding:9px 14px;border-bottom:1px solid var(--border);text-align:right;color:{{ r.chgColor }}">{{ r.chg }}</td>
+                  <td style="padding:9px 14px;border-bottom:1px solid var(--border)"><span style="font-size:9.5px;letter-spacing:.4px;padding:2px 7px;border:1px solid {{ r.readColor }};color:{{ r.readColor }};{{ r.readShow }}">{{ r.read }}</span></td>
+                  <td style="padding:9px 14px;border-bottom:1px solid var(--border);color:var(--text-3);font-size:11.5px">{{ r.thesis }}</td>
+                </tr>
+              </sc-for>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div style="font-size:11px;color:var(--text-3);font-style:italic;margin-bottom:26px">% is shares-outstanding basis (runs lower than the float % traders quote). Click a numeric header to re-sort. The other 37 vault names sit below all thresholds.</div>
+
+      <!-- crowded + movers -->
+      <div id="siPanels" style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin-bottom:30px">
+        <div>
+          <h3 style="font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.5px;color:var(--text-2);margin:0 0 9px 0">Most crowded · DTC ≥ 4</h3>
+          <div style="background:var(--surface);border:1px solid var(--border)">
+            <sc-for list="{{ siCrowded }}" as="c" hint-placeholder-count="9">
+              <div style="display:flex;align-items:center;justify-content:space-between;padding:7px 12px;border-bottom:1px solid var(--border)"><span style="font-size:12px;font-weight:600">{{ c.t }}</span><span style="font-size:12px;color:var(--watch);font-weight:600">{{ c.v }}</span></div>
+            </sc-for>
+          </div>
+        </div>
+        <div>
+          <h3 style="font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.5px;color:var(--down);margin:0 0 9px 0">Skepticism building</h3>
+          <div style="background:var(--surface);border:1px solid var(--border)">
+            <sc-for list="{{ siUp }}" as="m" hint-placeholder-count="6">
+              <div style="display:flex;align-items:center;justify-content:space-between;padding:7px 12px;border-bottom:1px solid var(--border)"><span style="font-size:12px;font-weight:600">{{ m.t }}</span><span style="font-size:12px;color:var(--down)">{{ m.v }}</span></div>
+            </sc-for>
+          </div>
+        </div>
+        <div>
+          <h3 style="font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.5px;color:var(--up);margin:0 0 9px 0">Bears covering</h3>
+          <div style="background:var(--surface);border:1px solid var(--border)">
+            <sc-for list="{{ siDown }}" as="m" hint-placeholder-count="6">
+              <div style="display:flex;align-items:center;justify-content:space-between;padding:7px 12px;border-bottom:1px solid var(--border)"><span style="font-size:12px;font-weight:600">{{ m.t }}</span><span style="font-size:12px;color:var(--up)">{{ m.v }}</span></div>
+            </sc-for>
+          </div>
+        </div>
+      </div>
+
+      <!-- intel -->
+      <h2 style="font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.6px;color:var(--accent);margin:0 0 12px 0">Intel — crowd vs. vault</h2>
+      <div id="siIntel" style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:24px">
+        <div style="background:var(--surface);border:1px solid var(--border);padding:15px 17px">
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:11px"><span style="width:9px;height:9px;background:var(--up)"></span><span style="font-size:12px;font-weight:600;color:var(--up);letter-spacing:.3px">CROWD AGREES · skepticism confirmed</span></div>
+          <div style="display:flex;flex-direction:column;gap:10px">
+            <sc-for list="{{ siConfirm }}" as="x" hint-placeholder-count="4">
+              <div style="font-size:12px;line-height:1.5;color:var(--text-2)"><strong style="color:var(--text)">{{ x.tk }}</strong> — {{ x.note }}</div>
+            </sc-for>
+          </div>
+        </div>
+        <div style="background:var(--surface);border:1px solid var(--border);padding:15px 17px">
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:11px"><span style="width:9px;height:9px;background:var(--watch)"></span><span style="font-size:12px;font-weight:600;color:var(--watch);letter-spacing:.3px">CROWD DISAGREES · inverse divergence</span></div>
+          <div style="display:flex;flex-direction:column;gap:10px">
+            <sc-for list="{{ siChallenge }}" as="x" hint-placeholder-count="4">
+              <div style="font-size:12px;line-height:1.5;color:var(--text-2)"><strong style="color:var(--text)">{{ x.tk }}</strong> — {{ x.note }}</div>
+            </sc-for>
+          </div>
+        </div>
+      </div>
+
+      <div style="font-size:10.5px;color:var(--text-3);border-top:1px solid var(--border);padding-top:13px;line-height:1.5">A heavy short is a question to investigate, never a verdict and never a trade signal. Positioning ≠ outcome — the shorts are often right, often wrong. <strong style="color:var(--text-2)">Research, not advice.</strong></div>
+    </main>
+    </sc-if>
+
+    <!-- ===== TRACKER: WHAT COULD GO WRONG ===== -->
+    <sc-if value="{{ isRisk }}" hint-placeholder-val="{{ false }}">
+    <main style="padding:30px 40px 90px 40px;max-width:1080px;width:100%;margin:0 auto">
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--text-3);margin-bottom:14px">
+        <span onClick="{{ goHome }}" style="cursor:pointer" style-hover="color:var(--accent)">home</span> / <span style="color:var(--text-2)">trackers</span> / <span style="color:var(--text-2)">what could go wrong</span>
+      </div>
+      <div style="display:flex;align-items:flex-start;gap:14px;flex-wrap:wrap;margin-bottom:6px">
+        <h1 style="font-size:25px;font-weight:600;margin:0;letter-spacing:-.3px;line-height:1.15">What Could Go Wrong</h1>
+        <span style="font-size:11px;color:var(--text-3);border:1px solid var(--border-2);padding:3px 8px;margin-top:5px;white-space:nowrap">vault-level risk register</span>
+      </div>
+      <p style="font-size:13.5px;line-height:1.6;color:var(--text-2);max-width:760px;margin:6px 0 20px 0">The single place that tracks the factors that could make the three theses wrong. Each risk links its canonical home and adds only what is new here: the observable <strong>tripwire</strong> and its current status. Tripwires are mechanisms — guidance cuts, lead-time normalization, policy events — <strong>never price or valuation</strong>.</p>
+
+      <!-- status banner -->
+      <div style="display:flex;align-items:center;gap:16px;border:1px solid var(--up);background:rgba(77,239,196,.06);padding:16px 20px;margin-bottom:22px;flex-wrap:wrap">
+        <span style="width:13px;height:13px;background:var(--up);flex:none;box-shadow:0 0 0 4px rgba(77,239,196,.16)"></span>
+        <div style="flex:1;min-width:200px">
+          <div style="font-size:9.5px;letter-spacing:.7px;color:var(--text-3);text-transform:uppercase">System status</div>
+          <div style="font-size:17px;font-weight:600;color:var(--text);margin-top:3px">ALL TRIPWIRES NOMINAL</div>
+        </div>
+        <div style="text-align:right"><div style="font-family:'IBM Plex Mono',monospace;font-size:26px;font-weight:600;color:var(--up)">{{ riskFired }}<span style="color:var(--text-3);font-size:16px"> / {{ riskTotal }}</span></div><div style="font-size:10px;color:var(--text-3);letter-spacing:.4px">FIRED · as of 2026-06-12</div></div>
+      </div>
+
+      <!-- groups -->
+      <sc-for list="{{ riskGroups }}" as="g" hint-placeholder-count="3">
+        <div style="display:flex;align-items:center;gap:10px;margin:22px 0 10px 0">
+          <span style="width:9px;height:9px;background:{{ g.color }};flex:none"></span>
+          <h2 style="font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.6px;color:var(--text);margin:0">{{ g.domain }}</h2>
+          <span style="font-size:10.5px;color:var(--text-3)">{{ g.count }}</span>
+          <span style="flex:1;height:1px;background:var(--border)"></span>
+        </div>
+        <div style="border:1px solid var(--border)">
+          <sc-for list="{{ g.entries }}" as="e" hint-placeholder-count="4">
+            <div style="display:flex;align-items:flex-start;gap:14px;padding:13px 16px;border-bottom:1px solid var(--border);background:var(--surface)">
+              <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--text-3);width:18px;flex:none;padding-top:2px">{{ e.n }}</span>
+              <div style="flex:1;min-width:0">
+                <div style="font-size:13.5px;font-weight:600;color:var(--text);margin-bottom:3px">{{ e.title }}</div>
+                <div style="font-size:11.5px;line-height:1.5;color:var(--text-3)"><span style="color:var(--text-2)">Tripwire:</span> {{ e.tw }}</div>
+                <div style="font-size:10px;color:var(--text-3);margin-top:5px">canonical home · <span style="color:var(--accent)">{{ e.home }}</span></div>
+              </div>
+              <span style="display:flex;align-items:center;gap:7px;flex:none;padding-top:2px">
+                <span style="font-size:9.5px;letter-spacing:.4px;text-transform:uppercase;color:{{ e.statusColor }};font-weight:600">{{ e.statusLabel }}</span>
+                <span style="width:10px;height:10px;background:{{ e.statusColor }};flex:none;{{ e.lamp }}"></span>
+              </span>
+            </div>
+          </sc-for>
+        </div>
+      </sc-for>
+
+      <div style="font-size:11px;color:var(--text-3);border-top:1px solid var(--border);padding-top:13px;margin-top:22px;line-height:1.55">All 32 thesis falsifiers reconcile to these 16 entries (verified 2026-06-12, S154). Tier discipline: Tier 3/4 sources may <em>name</em> a risk mechanism; only primary sources <em>fire</em> a tripwire. <strong style="color:var(--text-2)">Research, not advice.</strong></div>
+    </main>
+    </sc-if>
+
+    <!-- ===== TRACKER: HYPERSCALER CAPEX ===== -->
+    <sc-if value="{{ isCapex }}" hint-placeholder-val="{{ false }}">
+    <main style="padding:30px 40px 90px 40px;max-width:1180px;width:100%;margin:0 auto">
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--text-3);margin-bottom:14px">
+        <span onClick="{{ goHome }}" style="cursor:pointer" style-hover="color:var(--accent)">home</span> / <span style="color:var(--text-2)">trackers</span> / <span style="color:var(--text-2)">hyperscaler capex</span>
+      </div>
+      <div style="display:flex;align-items:flex-start;gap:14px;flex-wrap:wrap;margin-bottom:6px">
+        <h1 style="font-size:25px;font-weight:600;margin:0;letter-spacing:-.3px;line-height:1.15">Hyperscaler AI-Datacenter Capex</h1>
+        <span style="font-size:11px;color:var(--text-3);border:1px solid var(--border-2);padding:3px 8px;margin-top:5px;white-space:nowrap">the payer / spender tracker</span>
+      </div>
+      <p style="font-size:13.5px;line-height:1.6;color:var(--text-2);max-width:780px;margin:6px 0 20px 0">The whole chokepoint thesis is downstream of one number: how much the hyperscalers spend building AI datacenters. If that capex keeps growing the constraints stay binding; if it plateaus, capacity catches up and structural positions erode. Six core payers + a two-neocloud rent-side pair.</p>
+
+      <!-- aggregate band -->
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border);border:1px solid var(--border);margin-bottom:24px" id="capexStats">
+        <sc-for list="{{ capexStats }}" as="s" hint-placeholder-count="4">
+          <div style="background:var(--surface);padding:14px 16px">
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:20px;font-weight:600;color:var(--text)">{{ s.n }}</div>
+            <div style="font-size:10.5px;color:var(--text-2);margin-top:4px;line-height:1.4">{{ s.l }}</div>
+          </div>
+        </sc-for>
+      </div>
+
+      <!-- matrix -->
+      <h2 style="font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.6px;color:var(--accent);margin:0 0 11px 0">The payer comparison</h2>
+      <div style="border:1px solid var(--border);overflow:hidden;margin-bottom:8px">
+        <div style="overflow-x:auto">
+          <table style="border-collapse:collapse;width:100%;min-width:860px;font-size:12.5px">
+            <thead><tr style="background:var(--surface-2)">
+              <th style="text-align:left;padding:9px 14px;font-size:10px;text-transform:uppercase;letter-spacing:.4px;color:var(--text-3);font-weight:500;border-bottom:1px solid var(--border)">Payer</th>
+              <th style="text-align:left;padding:9px 14px;font-size:10px;text-transform:uppercase;letter-spacing:.4px;color:var(--text-3);font-weight:500;border-bottom:1px solid var(--border)">FY2026 guidance</th>
+              <th style="text-align:right;padding:9px 14px;font-size:10px;text-transform:uppercase;letter-spacing:.4px;color:var(--text-3);font-weight:500;border-bottom:1px solid var(--border)">Latest-Q</th>
+              <th style="text-align:left;padding:9px 14px;font-size:10px;text-transform:uppercase;letter-spacing:.4px;color:var(--text-3);font-weight:500;border-bottom:1px solid var(--border)">In-house silicon</th>
+              <th style="text-align:left;padding:9px 14px;font-size:10px;text-transform:uppercase;letter-spacing:.4px;color:var(--text-3);font-weight:500;border-bottom:1px solid var(--border)">Backlog / RPO</th>
+              <th style="text-align:left;padding:9px 14px;font-size:10px;text-transform:uppercase;letter-spacing:.4px;color:var(--text-3);font-weight:500;border-bottom:1px solid var(--border)">Funding note</th>
+            </tr></thead>
+            <tbody>
+              <sc-for list="{{ capexRows }}" as="r" hint-placeholder-count="7">
+                <tr style="background:{{ r.trBg }}">
+                  <td style="padding:10px 14px;border-bottom:1px solid var(--border);font-weight:600"><span style="display:inline-flex;align-items:center;gap:9px"><span style="width:3px;height:22px;background:{{ r.kindColor }};display:inline-block;flex:none"></span><span>{{ r.p }}</span><span style="font-size:8.5px;letter-spacing:.4px;color:{{ r.kindColor }};border:1px solid {{ r.kindColor }};padding:1px 4px">{{ r.kindLabel }}</span></span></td>
+                  <td style="padding:10px 14px;border-bottom:1px solid var(--border)"><div style="font-weight:600">{{ r.g }}</div><div style="font-size:9px;letter-spacing:.4px;color:{{ r.styleColor }};margin-top:2px">{{ r.styleLabel }}</div></td>
+                  <td style="padding:10px 14px;border-bottom:1px solid var(--border);text-align:right"><div style="font-family:'IBM Plex Mono',monospace;font-weight:600">{{ r.q }}</div><div style="font-size:10px;color:var(--up);margin-top:2px">{{ r.qd }}</div></td>
+                  <td style="padding:10px 14px;border-bottom:1px solid var(--border);color:var(--text-2)">{{ r.si }}</td>
+                  <td style="padding:10px 14px;border-bottom:1px solid var(--border);font-family:'IBM Plex Mono',monospace;color:var(--text-2)">{{ r.bk }}</td>
+                  <td style="padding:10px 14px;border-bottom:1px solid var(--border);color:var(--text-3);font-size:11.5px">{{ r.note }}</td>
+                </tr>
+              </sc-for>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div style="display:flex;gap:16px;margin-bottom:30px;flex-wrap:wrap">
+        <span style="display:flex;align-items:center;gap:7px;font-size:11px;color:var(--text-3)"><span style="width:9px;height:9px;background:#2f9bff"></span>BUILD · hyperscaler</span>
+        <span style="display:flex;align-items:center;gap:7px;font-size:11px;color:var(--text-3)"><span style="width:9px;height:9px;background:#ff8a3c"></span>RENT · neocloud (the canary)</span>
+      </div>
+
+      <!-- disconfirming signals -->
+      <div style="display:flex;align-items:baseline;gap:10px;margin-bottom:5px;flex-wrap:wrap">
+        <h2 style="font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.6px;color:var(--accent);margin:0">Disconfirming signals</h2>
+        <span style="font-size:11px;color:var(--text-3)">any two together = the cycle is turning</span>
+      </div>
+      <p style="font-size:12px;color:var(--text-3);margin:0 0 12px 0">Current status: none observed — all seven payers raised or maintained 2026 capex.</p>
+      <div id="capexSig" style="display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border:1px solid var(--border);margin-bottom:30px">
+        <sc-for list="{{ capexSignals }}" as="sg" hint-placeholder-count="6">
+          <div style="background:var(--surface);padding:13px 15px;display:flex;flex-direction:column;gap:8px;min-height:74px">
+            <div style="display:flex;align-items:center;justify-content:space-between;gap:8px">
+              <span style="font-size:9px;letter-spacing:.4px;text-transform:uppercase;color:var(--up)">none observed</span>
+              <span style="width:9px;height:9px;background:var(--up);flex:none"></span>
+            </div>
+            <div style="font-size:12.5px;color:var(--text);line-height:1.35">{{ sg.t }}</div>
+            <span style="font-size:8.5px;letter-spacing:.4px;text-transform:uppercase;color:var(--watch);border:1px solid var(--watch);padding:1px 5px;align-self:flex-start;{{ sg.canaryShow }}">most sensitive</span>
+          </div>
+        </sc-for>
+      </div>
+
+      <!-- cross-cutting dynamics -->
+      <h2 style="font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.6px;color:var(--accent);margin:0 0 12px 0">Visible only when read together</h2>
+      <div id="capexDyn" style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:24px">
+        <sc-for list="{{ capexDyn }}" as="d" hint-placeholder-count="4">
+          <div style="background:var(--surface);border:1px solid var(--border);padding:13px 16px">
+            <div style="font-size:12.5px;font-weight:600;color:var(--text);margin-bottom:5px">{{ d.h }}</div>
+            <div style="font-size:11.5px;color:var(--text-2);line-height:1.5">{{ d.d }}</div>
+          </div>
+        </sc-for>
+      </div>
+
+      <div style="font-size:10.5px;color:var(--text-3);border-top:1px solid var(--border);padding-top:13px;line-height:1.5">Demand-side page — the hyperscalers fund the chokepoints; they capture no supply-side rent. Figures are guides, not contracts, paired with their firmness caveats. <strong style="color:var(--text-2)">Research, not advice.</strong></div>
+    </main>
+    </sc-if>
+
+    <!-- ===== TRACKER: FORWARD-EDGE ===== -->
+    <sc-if value="{{ isForwardEdge }}" hint-placeholder-val="{{ false }}">
+    <main style="padding:30px 40px 90px 40px;max-width:1180px;width:100%;margin:0 auto">
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--text-3);margin-bottom:14px">
+        <span onClick="{{ goHome }}" style="cursor:pointer" style-hover="color:var(--accent)">home</span> / <span style="color:var(--text-2)">trackers</span> / <span style="color:var(--text-2)">forward-edge tracker</span>
+      </div>
+      <div style="display:flex;align-items:flex-start;gap:14px;flex-wrap:wrap;margin-bottom:6px">
+        <h1 style="font-size:25px;font-weight:600;margin:0;letter-spacing:-.3px;line-height:1.15">Forward-Edge Tracker</h1>
+        <span style="font-size:11px;color:var(--text-3);border:1px solid var(--border-2);padding:3px 8px;margin-top:5px;white-space:nowrap">consensus vs. vault view</span>
+      </div>
+      <p style="font-size:13.5px;line-height:1.6;color:var(--text-2);max-width:780px;margin:6px 0 18px 0">Where the vault’s structural read differs from what the market is pricing — plus the catalyst that would force a re-rate and the falsifier that would prove the vault wrong. The edge is not being first on news; it’s a better structural read of public information. <strong>Every entry carries a catalyst AND a falsifier.</strong></p>
+
+      <div style="display:flex;gap:4px;background:var(--inset);border:1px solid var(--border);padding:4px;margin-bottom:20px;width:max-content;max-width:100%;overflow-x:auto">
+        <sc-for list="{{ feTabs }}" as="t" hint-placeholder-count="4">
+          <button onClick="{{ t.onClick }}" style="{{ t.style }}">{{ t.l }}</button>
+        </sc-for>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:12px">
+        <sc-for list="{{ feCards }}" as="c" hint-placeholder-count="6">
+          <div style="background:var(--surface);border:1px solid var(--border);padding:16px 18px">
+            <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:13px">
+              <span style="width:8px;height:8px;background:{{ c.dotColor }};flex:none"></span>
+              <span style="flex:1;font-size:13px;font-weight:600;color:var(--text);min-width:120px">{{ c.subj }}</span>
+              <span style="font-size:8.5px;letter-spacing:.4px;text-transform:uppercase;color:var(--down);border:1px solid var(--down);padding:1px 6px;{{ c.invShow }}">inverse divergence</span>
+              <span style="font-size:8.5px;letter-spacing:.4px;text-transform:uppercase;color:{{ c.durColor }};border:1px solid {{ c.durColor }};padding:1px 6px">{{ c.durLabel }}</span>
+            </div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border);border:1px solid var(--border);margin-bottom:12px" class="feSplit">
+              <div style="background:var(--inset);padding:12px 14px">
+                <div style="font-size:9px;letter-spacing:.5px;text-transform:uppercase;color:var(--text-3);margin-bottom:6px">Consensus</div>
+                <div style="font-size:12px;line-height:1.55;color:var(--text-2)">{{ c.consensus }}</div>
+              </div>
+              <div style="background:var(--surface);padding:12px 14px">
+                <div style="font-size:9px;letter-spacing:.5px;text-transform:uppercase;color:var(--accent);margin-bottom:6px">Vault view</div>
+                <div style="font-size:12px;line-height:1.55;color:var(--text)">{{ c.vault }}</div>
+              </div>
+            </div>
+            <div style="display:flex;gap:18px;flex-wrap:wrap">
+              <div style="flex:1;min-width:220px"><span style="font-size:9px;letter-spacing:.5px;text-transform:uppercase;color:var(--up)">Catalyst →</span> <span style="font-size:11.5px;color:var(--text-2);line-height:1.5">{{ c.cat }}</span></div>
+              <div style="flex:1;min-width:220px"><span style="font-size:9px;letter-spacing:.5px;text-transform:uppercase;color:var(--down)">Falsifier →</span> <span style="font-size:11.5px;color:var(--text-2);line-height:1.5">{{ c.fal }}</span></div>
+            </div>
+            <div style="font-size:10px;color:var(--text-3);margin-top:10px">last moved · {{ c.mv }}</div>
+          </div>
+        </sc-for>
+      </div>
+
+      <div style="font-size:10.5px;color:var(--text-3);border-top:1px solid var(--border);padding-top:13px;margin-top:22px;line-height:1.5">“Consensus” is described as a structural narrative or observable mechanism — never price, market cap, or analyst targets. If the vault view is weak or consensus is right, it says so. <strong style="color:var(--text-2)">Research, not advice.</strong></div>
+    </main>
+    </sc-if>
+
+    <!-- ===== TRACKER: CHINA / TAIWAN EXPOSURE ===== -->
+    <sc-if value="{{ isChina }}" hint-placeholder-val="{{ false }}">
+    <main style="padding:30px 40px 90px 40px;max-width:1180px;width:100%;margin:0 auto">
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--text-3);margin-bottom:14px">
+        <span onClick="{{ goHome }}" style="cursor:pointer" style-hover="color:var(--accent)">home</span> / <span style="color:var(--text-2)">trackers</span> / <span style="color:var(--text-2)">china &amp; taiwan exposure</span>
+      </div>
+      <div style="display:flex;align-items:flex-start;gap:14px;flex-wrap:wrap;margin-bottom:6px">
+        <h1 style="font-size:25px;font-weight:600;margin:0;letter-spacing:-.3px;line-height:1.15">China &amp; Taiwan Exposure</h1>
+        <span style="font-size:11px;color:var(--text-3);border:1px solid var(--border-2);padding:3px 8px;margin-top:5px;white-space:nowrap">geopolitical-concentration map</span>
+      </div>
+      <p style="font-size:13.5px;line-height:1.6;color:var(--text-2);max-width:790px;margin:6px 0 18px 0">A vault-wide map spanning both thesis domains. Two structural facts organize it: the concentration is <strong>correlated, not diversifiable</strong> (Taiwan logic + Korea memory + China materials move together), and <strong>direction matters more than magnitude</strong> — China is a supply risk, a lost demand market, a demand driver, and a revenue exposure all at once.</p>
+
+      <div style="display:flex;gap:4px;background:var(--inset);border:1px solid var(--border);padding:4px;margin-bottom:18px;width:max-content;max-width:100%;overflow-x:auto">
+        <sc-for list="{{ chinaTabs }}" as="t" hint-placeholder-count="3">
+          <button onClick="{{ t.onClick }}" style="{{ t.style }}">{{ t.l }}</button>
+        </sc-for>
+      </div>
+
+      <!-- heatmap -->
+      <div style="border:1px solid var(--border);overflow:hidden;margin-bottom:10px">
+        <div style="overflow-x:auto">
+          <table style="border-collapse:collapse;width:100%;min-width:820px;font-size:12.5px">
+            <thead><tr style="background:var(--surface-2)">
+              <th style="text-align:left;padding:9px 14px;font-size:10px;text-transform:uppercase;letter-spacing:.4px;color:var(--text-3);font-weight:500;border-bottom:1px solid var(--border)">Name</th>
+              <th style="text-align:left;padding:9px 10px;font-size:10px;text-transform:uppercase;letter-spacing:.4px;color:var(--text-3);font-weight:500;border-bottom:1px solid var(--border)">Mag</th>
+              <th colspan="8" style="text-align:center;padding:9px 10px;font-size:10px;text-transform:uppercase;letter-spacing:.4px;color:var(--text-3);font-weight:500;border-bottom:1px solid var(--border)">Exposure axes · A–H</th>
+              <th style="text-align:left;padding:9px 14px;font-size:10px;text-transform:uppercase;letter-spacing:.4px;color:var(--text-3);font-weight:500;border-bottom:1px solid var(--border)">Evidence</th>
+            </tr></thead>
+            <tbody>
+              <sc-for list="{{ chinaRows }}" as="r" hint-placeholder-count="12">
+                <tr style-hover="background:var(--surface-2)">
+                  <td style="padding:9px 14px;border-bottom:1px solid var(--border);font-weight:600">{{ r.tk }}</td>
+                  <td style="padding:9px 10px;border-bottom:1px solid var(--border)"><span style="font-size:8.5px;letter-spacing:.4px;color:{{ r.magColor }};border:1px solid {{ r.magColor }};padding:1px 5px">{{ r.mag }}</span></td>
+                  <sc-for list="{{ r.cells }}" as="cell" hint-placeholder-count="8">
+                    <td style="padding:9px 3px;border-bottom:1px solid var(--border);text-align:center"><span style="width:15px;height:15px;background:{{ cell.bg }};display:inline-block"></span></td>
+                  </sc-for>
+                  <td style="padding:9px 14px;border-bottom:1px solid var(--border);color:var(--text-3);font-size:11px;min-width:240px">{{ r.note }}</td>
+                </tr>
+              </sc-for>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- axis key + magnitude legend -->
+      <div id="chinaKey" style="display:grid;grid-template-columns:2fr 1fr;gap:18px;margin-bottom:28px">
+        <div>
+          <div style="font-size:10px;text-transform:uppercase;letter-spacing:.5px;color:var(--text-3);margin-bottom:8px">The eight axes</div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:4px 18px">
+            <sc-for list="{{ chinaAxisKey }}" as="a" hint-placeholder-count="8">
+              <div style="font-size:11.5px;color:var(--text-2)"><span style="font-family:'IBM Plex Mono',monospace;color:var(--text);font-weight:600;width:16px;display:inline-block">{{ a.k }}</span>{{ a.d }}</div>
+            </sc-for>
+          </div>
+        </div>
+        <div>
+          <div style="font-size:10px;text-transform:uppercase;letter-spacing:.5px;color:var(--text-3);margin-bottom:8px">Magnitude</div>
+          <div style="display:flex;flex-direction:column;gap:5px">
+            <sc-for list="{{ chinaMagLegend }}" as="m" hint-placeholder-count="4">
+              <span style="display:flex;align-items:center;gap:8px;font-size:11.5px;color:var(--text-2)"><span style="width:13px;height:13px;background:{{ m.c }}"></span>{{ m.l }}</span>
+            </sc-for>
+          </div>
+        </div>
+      </div>
+
+      <!-- no-exposure hedge -->
+      <h2 style="font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.6px;color:var(--accent);margin:0 0 5px 0">The structural hedge</h2>
+      <p style="font-size:12px;color:var(--text-3);margin:0 0 11px 0;line-height:1.5">Naming what <em>isn’t</em> China-exposed is itself a finding — the natural hedge against the correlated cluster (software/cloud demand-side + domestic energy).</p>
+      <div style="display:flex;gap:7px;flex-wrap:wrap;margin-bottom:24px">
+        <sc-for list="{{ chinaHedge }}" as="h" hint-placeholder-count="10">
+          <span style="font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:var(--up);border:1px solid var(--border-2);padding:3px 9px">{{ h }}</span>
+        </sc-for>
+      </div>
+
+      <div style="font-size:10.5px;color:var(--text-3);border-top:1px solid var(--border);padding-top:13px;line-height:1.5">An index into the company pages, not a re-derivation. Concentration figures are Tier-3 (verify at primary); several “China revenue” figures are ship-to/billing-address routing, not end-demand. <strong style="color:var(--text-2)">Research, not advice.</strong></div>
+    </main>
+    </sc-if>
+
   </div>
 </div>
 </x-dc>
 <script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1280,&quot;height&quot;:860},&quot;defaultTheme&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;dark&quot;,&quot;light&quot;],&quot;default&quot;:&quot;dark&quot;,&quot;tsType&quot;:&quot;'dark'|'light'&quot;},&quot;accent&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;amber&quot;,&quot;blue&quot;,&quot;teal&quot;,&quot;red&quot;],&quot;default&quot;:&quot;amber&quot;,&quot;tsType&quot;:&quot;string&quot;},&quot;researchFooter&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;}}">
 class Component extends DCLogic {
-  state = { route:'home', active:'', domain:'all', q:'', viz:'leaderboard', theme:null, navOpen:false, cmd:'', now:Date.now() };
+  state = { route:'home', active:'', domain:'all', q:'', viz:'leaderboard', theme:null, navOpen:false, cmd:'', now:Date.now(), section:'', collapsed:{}, siSort:'pct', siDir:'desc', feDomain:'all', chinaDomain:'all' };
 
   componentDidMount(){ this._clk = setInterval(()=>this.setState({now:Date.now()}), 1000); }
   componentWillUnmount(){ clearInterval(this._clk); }
@@ -629,7 +1145,19 @@ class Component extends DCLogic {
     const set=(o)=>this.setState(Object.assign({cmd:'',navOpen:false,q:''},o));
     if(/^(nvda|nvidia)/.test(raw)) return set({route:'company',active:'NVDA — NVIDIA'});
     if(/^(haleu|leu|centrus)/.test(raw)) return set({route:'chokepoint',active:'HALEU fuel chain'});
+    if(/(spread|credit|fuel|dial)/.test(raw)) return set({route:'creditspread',active:'AI credit spread watch'});
+    if(/(short.?interest|^short|crowd)/.test(raw)) return set({route:'shortinterest',active:'Short-interest tracker'});
+    if(/(forward.?edge|consensus|divergence)/.test(raw)) return set({route:'forwardedge',active:'Forward-edge tracker'});
+    if(/(capex|hyperscaler|payer|spender)/.test(raw)) return set({route:'capex',active:'Hyperscaler capex'});
+    if(/(china|taiwan|exposure|geopolit)/.test(raw)) return set({route:'china',active:'China & Taiwan exposure'});
+    if(/(wrong|risk|tripwire|register)/.test(raw)) return set({route:'risk',active:'What could go wrong'});
     if(/^(home|menu|hub)/.test(raw)) return set({route:'home',active:''});
+    if(/^companies/.test(raw)) return set({route:'section',section:'Companies'});
+    if(/^chokepoints/.test(raw)) return set({route:'section',section:'Chokepoints'});
+    if(/^themes/.test(raw)) return set({route:'section',section:'Themes'});
+    if(/^trackers/.test(raw)) return set({route:'section',section:'Trackers'});
+    if(/^(thesis|theses)/.test(raw)) return set({route:'section',section:'Thesis'});
+    if(/^frameworks/.test(raw)) return set({route:'section',section:'Frameworks'});
     if(/(graph|network|connection)/.test(raw)) return set({route:'structure',viz:'graph'});
     if(/(map|layer)/.test(raw)) return set({route:'structure',viz:'layermap'});
     if(/(board|leader|choke|struct|analy)/.test(raw)) return set({route:'structure',viz:'leaderboard'});
@@ -680,17 +1208,27 @@ class Component extends DCLogic {
       {title:'Drone-platform commoditization', domain:'defense'},
     ]},
     {label:'Trackers', count:6, items:[
-      {title:'Short-interest tracker', domain:'none'},
-      {title:'Forward-edge tracker', domain:'none'},
-      {title:'Credit-spread watch', domain:'none'},
-    ]},
-    {label:'Relationships', count:1, items:[
-      {title:'Company relationships', domain:'none'},
+      {title:'AI credit spread watch', domain:'ai', route:'creditspread'},
+      {title:'Short-interest tracker', domain:'none', route:'shortinterest'},
+      {title:'Forward-edge tracker', domain:'none', route:'forwardedge'},
+      {title:'Hyperscaler capex', domain:'ai', route:'capex'},
+      {title:'China & Taiwan exposure', domain:'none', route:'china'},
+      {title:'What could go wrong', domain:'none', route:'risk'},
     ]},
     {label:'Thesis', count:3, items:[
       {title:'AI-datacenter supply chain', domain:'ai'},
       {title:'Defense & Drones', domain:'defense'},
       {title:'Humanoid Robots', domain:'humanoid'},
+    ]},
+    {label:'Frameworks', count:14, items:[
+      {title:'F10 · CAPEX flow', domain:'ai'},
+      {title:'F11 · Geopolitical concentration', domain:'none'},
+      {title:'F12 · Durability classes', domain:'ai'},
+      {title:'D5 · China-pacing demand', domain:'defense'},
+      {title:'D6 · Financial-quality screen', domain:'defense'},
+    ]},
+    {label:'Relationships', count:1, items:[
+      {title:'Company relationships', domain:'none'},
     ]},
   ];
 
@@ -712,6 +1250,8 @@ class Component extends DCLogic {
     const route=s.route;
     const goHome=this.go('home'), goStructure=()=>this.setState({route:'structure',navOpen:false,q:''});
     const goCompany=this.go('company','NVDA — NVIDIA'), goChokepoint=this.go('chokepoint','HALEU fuel chain');
+    const goCreditSpread=()=>this.setState({route:'creditspread',active:'AI credit spread watch',navOpen:false,q:''});
+    const secLabel = s.section||'Companies';
 
     // domain filter chips
     const domDefs=[{k:'all',label:'All',dot:'var(--text-3)'},{k:'ai',label:'AI-DC',dot:DOM.ai},{k:'defense',label:'Defense',dot:DOM.defense},{k:'humanoid',label:'Humanoid',dot:DOM.humanoid}];
@@ -721,21 +1261,25 @@ class Component extends DCLogic {
         style:`display:inline-flex;align-items:center;gap:6px;font-family:'IBM Plex Mono',monospace;font-size:11px;padding:5px 9px;border-radius:7px;cursor:pointer;border:1px solid ${on?'var(--border-2)':'var(--border)'};background:${on?'var(--surface-2)':'transparent'};color:${on?'var(--text)':'var(--text-2)'}`};
     });
 
-    // nav groups w/ active + domain filter
+    // nav groups w/ active + domain filter + collapse
     const filt=s.domain;
-    const navGroups=this.NAV.map(g=>({
-      label:g.label, count:g.count,
-      items:g.items.map(it=>{
+    const collapsed=s.collapsed||{};
+    const navGroups=this.NAV.map(g=>{
+      const isCol=!!collapsed[g.label];
+      return {
+      label:g.label, count:g.count, chevron: isCol?'▸':'▾', onToggle: ()=>this.setState({collapsed:Object.assign({},collapsed,{[g.label]:!isCol})}),
+      items:isCol?[]:g.items.map(it=>{
         const dim = filt!=='all' && it.domain!==filt && it.domain!=='none';
         const isActive = s.active===it.title;
         const dot = DOM[it.domain]||DOM.none;
-        const onClick = it.route==='company'?goCompany : it.route==='chokepoint'?goChokepoint
+        const onClick = it.route==='company'?goCompany : it.route==='chokepoint'?goChokepoint : it.route==='creditspread'?goCreditSpread
           : ()=>this.setState({route: it.route||'stub', active:it.title, navOpen:false, q:''});
         return {title:it.title, tick:it.tick, dot, dotOpacity: dim?0.3:1,
           onClick: it.route ? onClick : ()=>this.setState({active:it.title, navOpen:false}),
-          style:`display:flex;align-items:center;gap:9px;padding:7px 9px;border-radius:7px;cursor:pointer;text-decoration:none;font-size:13px;color:${isActive?'var(--text)':'var(--text-2)'};background:${isActive?'var(--accent-dim)':'transparent'};opacity:${dim?0.4:1};margin:1px 0`};
+          style:`display:flex;align-items:center;gap:9px;padding:7px 9px 7px 19px;border-radius:7px;cursor:pointer;text-decoration:none;font-size:13px;color:${isActive?'var(--text)':'var(--text-2)'};background:${isActive?'var(--accent-dim)':'transparent'};opacity:${dim?0.4:1};margin:1px 0`};
       })
-    }));
+      };
+    });
 
     // search
     const q=(s.q||'').trim().toLowerCase();
@@ -758,6 +1302,7 @@ class Component extends DCLogic {
         icon:this.svg('M8 2.5a1.5 1.5 0 110 3 1.5 1.5 0 010-3zM5 7h6v4H5zM6 11v2.5M10 11v2.5', DOM.humanoid)},
     ];
     const recent=[
+      {title:'AI credit spread watch', type:'tracker', date:'06-21', dot:DOM.ai, onClick:goCreditSpread},
       {title:'HALEU fuel chain', type:'chokepoint', date:'06-14', dot:DOM.ai, onClick:goChokepoint},
       {title:'Humanoid robot value chain', type:'theme', date:'06-08', dot:DOM.humanoid, onClick:goStructure},
       {title:'NVDA — NVIDIA', type:'company', date:'05-24', dot:DOM.ai, onClick:goCompany},
@@ -848,12 +1393,37 @@ class Component extends DCLogic {
     const layerMap=this.layerMapData(goCompany, goChokepoint);
     const graph=this.graphData(goCompany);
 
+    const cs=this.creditSpreadData();
+
+    // ---- SECTION INDEX ----
+    const secGroup=this.NAV.find(g=>g.label===secLabel)||this.NAV[0];
+    const SEC_META={
+      Companies:{color:DOM.ai, desc:'One page per public company — the richest pages, each graded by value-capture layer and per-domain tier scores.', note:'Showing the built sample; 84 company pages in the full vault.'},
+      Chokepoints:{color:'#ff4d42', desc:'Supply-chain bottlenecks graded by durability — physics/yield-grade (hardest to replicate) down to integration/assembly (easiest to compete away).', note:'15 chokepoint analyses in the full vault.'},
+      Themes:{color:'#a98bf5', desc:'Cross-cutting dynamics that span multiple companies and chokepoints.', note:'23 theme pages in the full vault.'},
+      Trackers:{color:'#ff8a3c', desc:'Living status pages — dial boards, screeners and registers refreshed as new readings land.', note:'6 trackers in the full vault. Credit-spread watch is live; the rest are queued.'},
+      Thesis:{color:DOM.humanoid, desc:'The three top-level investment theses the whole vault is organized around.', note:''},
+      Frameworks:{color:'#7d8aa0', desc:'The analytical scaffolding — value-capture layers, durability classes, the CAPEX-flow map, the geopolitical-concentration model.', note:'Referenced across the vault.'},
+      Relationships:{color:DOM.none, desc:'Pairwise company relationships.', note:''},
+    };
+    const secMeta=SEC_META[secLabel]||SEC_META.Companies;
+    const sectionItems=secGroup.items.map(it=>{
+      const built = !!it.route;
+      const onClick = it.route==='company'?goCompany : it.route==='chokepoint'?goChokepoint : it.route==='creditspread'?goCreditSpread : (it.route?(()=>this.setState({route:it.route,active:it.title,navOpen:false,q:''})):(()=>{}));
+      return {title:it.title, tick:it.tick, dot:DOM[it.domain]||DOM.none, dotOpacity:built?1:0.55,
+        cursor:built?'pointer':'default', onClick,
+        titleColor:built?'var(--text)':'var(--text-2)',
+        tag:'live', tagColor:'var(--up)', tagBorder:'var(--up)', tagShow: built?'':'display:none'};
+    });
+    const sectionTitle=secLabel, sectionSlug=secLabel.toLowerCase(), sectionCount=secGroup.count+' pages', sectionColor=secMeta.color, sectionDesc=secMeta.desc, sectionNote=secMeta.note;
+
     // ---- TERMINAL HEADER ----
     const d2=n=>String(n).padStart(2,'0');
     const dt=new Date(s.now||Date.now());
     const clock=`${d2(dt.getUTCHours())}:${d2(dt.getUTCMinutes())}:${d2(dt.getUTCSeconds())}`;
-    const RL={home:['HOME','vault'],stub:['HOME','vault'],company:['NVDA US','equity'],chokepoint:['HALEU','chokepoint'],structure:['STRUCTURE','analytics']};
-    const routeLabel=(RL[route]||RL.home)[0], routeKind=(RL[route]||RL.home)[1];
+    const RL={home:['HOME','vault'],stub:['HOME','vault'],company:['NVDA US','equity'],chokepoint:['HALEU','chokepoint'],structure:['STRUCTURE','analytics'],creditspread:['SPREAD-WATCH','tracker'],shortinterest:['SHORT-INT','tracker'],forwardedge:['FWD-EDGE','tracker'],capex:['CAPEX','tracker'],china:['CHINA/TWN','tracker'],risk:['RISK-REG','tracker']};
+    const routeLabel = route==='section' ? secLabel.toUpperCase() : (RL[route]||RL.home)[0];
+    const routeKind = route==='section' ? 'index' : (RL[route]||RL.home)[1];
     const tapeBase=[
       {t:'NVDA',m:'L1·PHO1',c:DOM.ai},{t:'TSM',m:'L2',c:DOM.ai},{t:'HALEU',m:'SEV 5/5',c:'#ff4d42'},
       {t:'HBM',m:'PHYS-GRADE',c:'#ff4d42'},{t:'MP',m:'MAT1·HUM',c:DOM.humanoid},{t:'CoWoS',m:'PRECISION',c:'#f7a21b'},
@@ -862,15 +1432,24 @@ class Component extends DCLogic {
       {t:'AVGO',m:'CTRL-POINT',c:DOM.ai},{t:'OPEN-Q',m:'12 ACTIVE',c:'#f7a21b'},{t:'VAULT',m:'132 PAGES',c:'#f7a21b'},
     ];
     const tape=tapeBase.concat(tapeBase);
-    const fkDefs=[
-      {k:'F1',label:'HOME',color:'#f7a21b',go:()=>this.setState({route:'home',active:'',navOpen:false}),on:route==='home'||route==='stub'},
-      {k:'F2',label:'COMPANY',color:DOM.ai,go:goCompany,on:route==='company'},
-      {k:'F3',label:'CHOKEPOINT',color:'#ff4d42',go:goChokepoint,on:route==='chokepoint'},
-      {k:'F4',label:'STRUCTURE',color:DOM.humanoid,go:goStructure,on:route==='structure'},
+    const sectionOf={home:'',stub:'',company:'Companies',chokepoint:'Chokepoints',creditspread:'Trackers',shortinterest:'Trackers',forwardedge:'Trackers',capex:'Trackers',china:'Trackers',risk:'Trackers'};
+    const activeSection = route==='section' ? secLabel : (sectionOf[route]!==undefined?sectionOf[route]:'');
+    const tabDefs=[
+      {label:'HOME', group:null, color:'var(--accent)'},
+      {label:'COMPANIES', group:'Companies', color:DOM.ai},
+      {label:'CHOKEPOINTS', group:'Chokepoints', color:'#ff4d42'},
+      {label:'THEMES', group:'Themes', color:'#a98bf5'},
+      {label:'TRACKERS', group:'Trackers', color:'#ff8a3c'},
+      {label:'THESIS', group:'Thesis', color:DOM.humanoid},
+      {label:'FRAMEWORKS', group:'Frameworks', color:'#7d8aa0'},
     ];
-    const fkeys=fkDefs.map(f=>({k:f.k,label:f.label,onClick:f.go,
-      style:`display:flex;align-items:center;gap:7px;height:30px;padding:0 13px;background:${f.on?'var(--surface-2)':'transparent'};border:none;border-right:1px solid var(--border);cursor:pointer;font-size:11px;font-weight:500;letter-spacing:.3px;color:${f.on?'var(--text)':'var(--text-2)'}`,
-      keyStyle:`background:${f.color};color:#000;font-size:9px;font-weight:700;padding:2px 5px;letter-spacing:.3px`}));
+    const fkeys=tabDefs.map(t=>{
+      const on = t.group ? (activeSection===t.group) : (route==='home'||route==='stub');
+      return {label:t.label, dot:t.color,
+        onClick: t.group ? (()=>this.setState({route:'section',section:t.group,active:'',navOpen:false,q:'',collapsed:Object.assign({},this.state.collapsed,{[t.group]:false})}))
+                          : (()=>this.setState({route:'home',active:'',navOpen:false,q:''})),
+        style:`display:flex;align-items:center;gap:7px;height:30px;padding:0 12px;background:${on?'var(--surface-2)':'transparent'};border:none;border-right:1px solid var(--border);cursor:pointer;font-size:10.5px;font-weight:${on?600:500};letter-spacing:.3px;white-space:nowrap;color:${on?'var(--text)':'var(--text-2)'}`};
+    });
 
     return {
       theme, accent, navOpenAttr: s.navOpen?'1':'0',
@@ -883,6 +1462,13 @@ class Component extends DCLogic {
       domains, navGroups, stats, theses, recent, topChokepoints, gradeLegend,
       cmd:s.cmd, onCmd:(e)=>this.setState({cmd:e.target.value}), onCmdKey:(e)=>{ if(e.key==='Enter') this.runCommand(); }, runGo:()=>this.runCommand(), clock, tape, fkeys, routeLabel, routeKind,
       isHome: route==='home'||route==='stub', isCompany: route==='company', isChokepoint: route==='chokepoint', isStructure: route==='structure',
+      isCreditSpread: route==='creditspread', ...cs,
+      isShortInterest: route==='shortinterest', ...this.shortInterestData(),
+      isRisk: route==='risk', ...this.riskData(),
+      isCapex: route==='capex', ...this.capexData(),
+      isForwardEdge: route==='forwardedge', ...this.forwardEdgeData(),
+      isChina: route==='china', ...this.chinaData(),
+      isSection: route==='section', sectionTitle, sectionSlug, sectionCount, sectionColor, sectionDesc, sectionItems, sectionNote,
       // company
       nvdaBadges, nvdaKpis, segRows, openQs, nvdaToc, backlinks, backlinkCount: backlinks.length,
       lkTSM: lk('TSM',()=>{}), lkCoWoS: lk('TSMC-CoWoS',()=>{}), lkCOHR: lk('Coherent',()=>{}), lkLITE: lk('Lumentum',()=>{}), lkPlatform: lk('NVDA-platform-integration',()=>{}),
@@ -984,6 +1570,239 @@ class Component extends DCLogic {
     const graphEdges=edges.map(([a,b])=>{const p=pos[a],q=pos[b]; if(!p||!q) return null; return {x1:p.x,y1:p.y,x2:q.x,y2:q.y, w: (a==='NVDA'||b==='NVDA')?1.4:0.8};}).filter(Boolean);
     const graphLegend=[{label:'AI-datacenter',color:DOM.ai},{label:'Humanoid',color:DOM.humanoid},{label:'Chokepoint',color:'#ff4d42'},{label:'Theme',color:'#7d8aa0'}];
     return {graphNodes, graphEdges, graphLegend};
+  }
+
+  chinaData(){
+    const f=this.state.chinaDomain||'all';
+    const AXES=['A','B','C','D','E','F','G','H'];
+    const MAG={Ultra:'#ff4d42',High:'#ff8a3c',Med:'#f7a21b',Low:'#646c75'};
+    const raw=[
+      {tk:'TSM',dom:'ai',axes:'CH',mag:'Ultra',note:'Apex node — Taiwan-only leading-edge logic + CoWoS; every fabless AI name depends on it.'},
+      {tk:'NVDA',dom:'ai',axes:'ABDEFH',mag:'High',note:'China datacenter compute effectively zeroed; multi-$B H20 write-downs; TSMC CoWoS dependency.'},
+      {tk:'AVGO',dom:'ai',axes:'AC',mag:'High',note:'95% TSMC wafer dependency — the most explicit in the vault; Taiwan revenue crossed 10%.'},
+      {tk:'AMD',dom:'ai',axes:'CD',mag:'High',note:'TSMC sole-source advanced nodes; MI308 China export-control $440M net charge.'},
+      {tk:'MRVL',dom:'ai',axes:'CFH',mag:'High',note:'Taiwan revenue 3%→20% in two years (TSMC CoWoS custom ASIC).'},
+      {tk:'MU',dom:'ai',axes:'BCFH',mag:'High',note:'HBM on TSMC CoWoS; CXMT/YMTC Chinese competitors; Taiwan Tongluo acquisition.'},
+      {tk:'AAOI',dom:'ai',axes:'ABCDE',mag:'High',note:'~50–60% China revenue (Ningbo assembly) + ~38% Taiwan components; tariff drag.'},
+      {tk:'AXTI',dom:'ai',axes:'BEH',mag:'High',note:'100% of manufacturing in China; China added InP substrates to its export-control list.'},
+      {tk:'ONTO',dom:'ai',axes:'ABCEFH',mag:'High',note:'China revenue ~17%→~7% on controls; YMTC ~14% of 9-mo revenue (restricted Chinese NAND).'},
+      {tk:'ON',dom:'ai',axes:'ABH',mag:'High',note:'US 51% / China 28% — the most transparent geographic split; IDM; China-competition margin pressure.'},
+      {tk:'LITE',dom:'ai',axes:'AD',mag:'Med',note:'Huawei lost (export controls); China revenue growth is contract-manufacturer routing.'},
+      {tk:'COHR',dom:'ai',axes:'AD',mag:'Med',note:'Huawei shipments stopped early 2025; China ~12%; BIS/DOJ investigations.'},
+      {tk:'MP',dom:'defense',axes:'ABEFH',mag:'High',note:'Only scaled US rare-earth producer; ceased China sales Jul 2025. Reshoring inverse — escalation helps it.'},
+      {tk:'TDY',dom:'defense',axes:'ABEFGH',mag:'High',note:'Rare-earth + germanium + gallium restrictions; the chokepoint-consumer paradox (owns EO/IR, squeezed upstream).'},
+      {tk:'LSCC',dom:'defense',axes:'ACDE',mag:'High',note:'64% Greater China revenue — a “trusted-defense” name that is majority-China-revenue; fabless on TSMC.'},
+      {tk:'AMPX',dom:'defense',axes:'ABEH',mag:'High',note:'Battery materials sourced primarily from China; silicon-anode IP from Berzelius (Nanjing).'},
+      {tk:'AVAV',dom:'defense',axes:'BFG',mag:'Med',note:'Rare-earth motors/batteries China-sourced; on China’s export-control list; China-pacing demand driver.'},
+      {tk:'KTOS',dom:'defense',axes:'G',mag:'Low',note:'The clean case — China as adversary-demand only; rare-earth dependence inferable, not disclosed.'},
+    ];
+    const chinaRows=raw.filter(r=>f==='all'||r.dom===f).map(r=>({
+      tk:r.tk, note:r.note, mag:r.mag.toUpperCase(), magColor:MAG[r.mag],
+      cells:AXES.map(a=>({ bg: r.axes.indexOf(a)>=0 ? MAG[r.mag] : 'var(--inset)' }))
+    }));
+    const chinaAxisKey=[{k:'A',d:'China revenue'},{k:'B',d:'Supply / sourcing'},{k:'C',d:'Taiwan-fab / China-assembly'},{k:'D',d:'Outbound export-control'},{k:'E',d:'Inbound export-control'},{k:'F',d:'Chinese competitor'},{k:'G',d:'Adversary-demand (defense)'},{k:'H',d:'China operations'}];
+    const chinaMagLegend=[{l:'Ultra',c:'#ff4d42'},{l:'High',c:'#ff8a3c'},{l:'Med',c:'#f7a21b'},{l:'Low',c:'#646c75'}];
+    const chinaHedge=['MSFT','GOOGL','META','ORCL','NBIS','CRWV','BE','CCJ','CEG','LEU','FLNC','VRT','INOD'];
+    const tabDefs=[{k:'all',l:'ALL'},{k:'ai',l:'AI DATACENTER'},{k:'defense',l:'DEFENSE'}];
+    const chinaTabs=tabDefs.map(t=>{ const on=f===t.k; return {l:t.l, onClick:()=>this.setState({chinaDomain:t.k}),
+      style:`font-size:11px;font-weight:${on?600:500};padding:7px 14px;cursor:pointer;border:1px solid ${on?'var(--border-2)':'transparent'};white-space:nowrap;letter-spacing:.3px;background:${on?'var(--surface-2)':'transparent'};color:${on?'var(--accent)':'var(--text-2)'}`};});
+    return {chinaRows, chinaAxisKey, chinaMagLegend, chinaHedge, chinaTabs};
+  }
+
+  forwardEdgeData(){    const s=this.state, DOM=this.DOM, f=s.feDomain||'all';
+    const DUR={high:['DURABILITY HIGH','var(--up)'], med:['DURABILITY MED','var(--watch)'], low:['CONTINGENT','#7d8aa0']};
+    const all=[
+      {dom:'ai',subj:'ETN · VRT · GEV · transformers',dur:'high',inv:false,c:'The build-out is priced as a compute story — NVDA and the chip chain are where value and constraint sit; power/electrical is treated as late-cycle adjacent infra.',v:'The binding 2026 constraint shifted from compute to power — ~50% of planned US builds delayed/cancelled on power, transformers at 120–210-week lead times; durable pricing power sits with under-covered power-equipment owners.',cat:'Hyperscaler capex naming power as the gating item; interconnection-queue data; a power-equipment lead-time disclosure.',fal:'New transformer capacity / interconnection acceleration resolves the constraint, OR hyperscaler capex decelerates broadly.',mv:'2026-06-09'},
+      {dom:'ai',subj:'TSM · AVGO · MRVL · ALAB vs NVDA',dur:'high',inv:false,c:'The market prices NVDA as capturing the bulk of AI-compute capex behind a durable, widening moat.',v:'Hyperscaler captive silicon redirects capex toward Layer-2 manufacturing (TSM) and Layer-3 designers — TSM is the more durable beneficiary regardless of which compute brand wins the share war.',cat:'Custom-ASIC ramp disclosures (TPU / Trainium / MTIA / Maia); NVDA datacenter-share trajectory; TSM advanced-packaging allocation.',fal:'CUDA + NVLink keeps custom silicon niche and merchant-compute concentration holds, OR ASIC programs stall technically.',mv:'2026-06-09'},
+      {dom:'ai',subj:'AAOI',dur:'low',inv:true,c:'Priced as a core US AI-optics winner — 800G/1.6T ramp, hyperscaler orders, raised >$1.1B guide, laser/CPO optionality.',v:'AAOI assembles the exact pluggable form factor CPO is designed to displace — minimally differentiated, extreme customer concentration, loss-making and dilutive; the bull catalysts are already in the price.',cat:'Merchant laser / ELS revenue appearing in a 10-Q — the in-house InP laser becoming a standalone product (a Layer-5 → Layer-4 tier-upgrade).',fal:'That laser line becomes material AND AAOI rides CPO as a laser supplier rather than a displaced module maker.',mv:'2026-06-09'},
+      {dom:'ai',subj:'FCEL',dur:'low',inv:true,c:'Post-Q2 the narrative flipped bullish — a significant data-center contract before fiscal year-end treated as the expected outcome; “the next Bloom Energy.”',v:'Order-vs-capacity applied to FCEL says conversion is an open question — 4 GW is submitted proposals while contracted backlog FELL 9%, funded by ATM equity, with a structural capacity chicken-and-egg.',cat:'Convert submitted proposals into contracted backlog within fiscal 2026 (by Oct 31); the Q3 report is the interim read.',fal:'A signed, material data-center contract by fiscal year-end with backlog turning up.',mv:'2026-06-13'},
+      {dom:'ai',subj:'MU · SNDK · memory-tax victims',dur:'med',inv:false,c:'Memory tightness read as a long-runway bull story — talk of the rally extending “past 2028”; the shipment damage treated as a side note.',v:'The same mechanism is already running the bust sequence — the spot-vs-contract divergence (DDR5 spot cracked ~30% while contract rose +50–63%), MLCC double-booking, the 2017–18 precedent. The shortage is real AND demand-destroying.',cat:'MU Q3 pricing/bit-growth; both MLCC makers’ actuals (boom-but-no-hike, double-confirmed); the contract-price rollover.',fal:'Contract prices keep rising into 2027 with shipment forecasts improving (demand absorbing the tax).',mv:'2026-06-19'},
+      {dom:'ai',subj:'AVGO · NVDA · CRWV · NBIS · ORCL',dur:'low',inv:false,c:'Every mega-deal headline is read as proof of insatiable AI demand; the financing is treated as plumbing; lenders price AI credit identically to non-AI.',v:'The funding regime flipped — big-five FCF is below capex, ~$1.5T needs outside capital; AVGO carries a $29B backstop, NVDA part-funds its buyers, a ~$40B circularity premium. One of the two markets is mispricing.',cat:'AVGO Q3 backstop ceiling; CRWV vs S&P’s FFO/debt threshold; the AI-vs-non-AI spread differential opening.',fal:'AI earnings arrive and FCF climbs back above capex, OR a full depreciation cycle passes with credit losses near zero.',mv:'2026-06-13'},
+      {dom:'ai',subj:'the chokepoint roster · meta-entry',dur:'med',inv:false,c:'A named counterview (Gavin Baker, Bg2): “finding the next bottleneck — that was the last game. That game is over.” Scarcity narratives treated as exhausted as a source of edge.',v:'The discovery alpha may be gone — but “bottleneck” conflates shortage-cyclical names with durability-graded chokepoints. The game that ended is spotting; the game that remains is grading.',cat:'Durability-graded names holding pricing power through a consolidation while shortage-cyclical names mean-revert.',fal:'Broad, simultaneous supply normalization across power, photonics and memory while demand holds.',mv:'2026-06-13'},
+      {dom:'ai',subj:'HBM · NVDA · MU · TSM (CoWoS)',dur:'high',inv:false,c:'The training→inference shift read as relief — inference is the lighter, distributable workload that loosens the datacenter constraint; edge/on-device pulls demand off the datacenter.',v:'Inference is memory-bandwidth-bound, so the shift SUSTAINS the chokepoints — HBM demand surges, racks hit ~370 kW, optics converge on CPO. Edge is a false dawn for frontier inference.',cat:'A hyperscaler breaking out inference capex/rack volumes; HBM4/4E adoption tracking inference; a first per-vendor inference-ASIC revenue figure.',fal:'KV-cache compression reverses (not just flattens) the memory-demand slope, OR frontier inference disperses to edge.',mv:'2026-06-16'},
+      {dom:'humanoid',subj:'HARMONIC · SANHUA/TUOPU · MP · NOVT/VPG',dur:'high',inv:false,c:'Read through a US-only book, the best humanoid chokepoints are private or Chinese — “the strongest chokepoints have the worst US-listed access.”',v:'With US + foreign + China A-share reach that access constraint largely dissolves — the strongest chokepoints are directly reachable, so the operative ranking is chokepoint-quality + business health, not the listing flag.',cat:'A first sizable confirmed humanoid OEM order at a chokepoint supplier; Chinese suppliers breaking out humanoid revenue; a private name listing.',fal:'Humanoid revenue at the cross-over names stays a rounding error, OR the magnet/reducer chokepoints de-risk.',mv:'2026-06-09'},
+      {dom:'humanoid',subj:'SANHUA · TUOPU · HARMONIC · HENGLI',dur:'med',inv:false,c:'The Chinese suppliers’ aggressive capacity build-out is read as validation that humanoid demand is real and imminent.',v:'That capacity was built largely without binding orders — a supply-side bet. If sizable confirmed OEM orders don’t land, the supply side faces margin pressure, not a ramp. Lead with “early-innings optionality,” not “current revenue.”',cat:'The first sizable confirmed OEM orders (Optimus Gen-3 / Figure BotQ) vs continued absence into H2 2026.',fal:'Confirmed orders + proven viability arrive on schedule and the bet pays.',mv:'2026-06-09'},
+      {dom:'defense',subj:'MP · LSCC · TDY vs AVAV · KTOS',dur:'high',inv:false,c:'Defense/drone spending is surging → the public drone-makers (AVAV, KTOS) and diversified primes capture the value.',v:'Value concentrates at the structural chokepoints the supply chain can’t route around — magnets, secure chips, seekers, autonomy — NOT the platform layer, which the Pentagon is deliberately commoditizing toward a ~$2,000 one-way-attack-drone ceiling.',cat:'Program-of-record awards naming chokepoint suppliers; magnet/seeker sole-source disclosures; the drone unit-cost trajectory.',fal:'Airframe makers retain pricing power or vertically integrate the chokepoints, OR the best capability keeps flowing to private players.',mv:'2026-06-09'},
+      {dom:'defense',subj:'AVAV · KTOS · MP · LSCC · TDY',dur:'low',inv:false,c:'The headline FY2027 defense-budget surge is priced as a near-certain, already-in-motion multi-year tailwind.',v:'Only the FY2025 reconciliation (~$156.2B) is enacted law; the FY2027 surge (~$54.6B DAWG, ~98% reconciliation-funded) is a request, contingent on the Nov 2026 midterms. Direction is structural; magnitude is a political bet.',cat:'The Nov 2026 midterm outcome; FY2027 reconciliation passage or failure; enacted-vs-requested line-item conversion.',fal:'A clean FY2027 reconciliation passage converts the request into law (consensus right on magnitude).',mv:'2026-06-09'},
+    ];
+    const domColor=(d)=> d==='ai'?DOM.ai : d==='humanoid'?DOM.humanoid : '#f7a21b';
+    const feCards=all.filter(c=>f==='all'||c.dom===f).map(c=>({
+      subj:c.subj, consensus:c.c, vault:c.v, cat:c.cat, fal:c.fal, mv:c.mv,
+      durLabel:DUR[c.dur][0], durColor:DUR[c.dur][1], dotColor:domColor(c.dom),
+      invShow:c.inv?'':'display:none'
+    }));
+    const tabDefs=[{k:'all',l:'ALL'},{k:'ai',l:'AI'},{k:'humanoid',l:'HUMANOID'},{k:'defense',l:'DEFENSE'}];
+    const feTabs=tabDefs.map(t=>{
+      const on=f===t.k;
+      return {l:t.l, onClick:()=>this.setState({feDomain:t.k}),
+        style:`font-size:11px;font-weight:${on?600:500};padding:7px 14px;cursor:pointer;border:1px solid ${on?'var(--border-2)':'transparent'};white-space:nowrap;letter-spacing:.3px;background:${on?'var(--surface-2)':'transparent'};color:${on?'var(--accent)':'var(--text-2)'}`};
+    });
+    return {feCards, feTabs};
+  }
+
+  capexData(){    const DOM=this.DOM;
+    const rows=[
+      {p:'MSFT', kind:'build', g:'~$190B CY26', gstyle:'point', q:'$30.9B', qd:'+85% YoY', si:'Maia 200 + Cobalt', bk:'RPO $633B', note:'cleanest reported NI'},
+      {p:'GOOGL', kind:'build', g:'$180–190B', gstyle:'range', q:'$35.7B', qd:'+107% YoY', si:'TPU 8t/8i + Axion', bk:'Cloud $462B', note:'+$80B equity raise (Jun)'},
+      {p:'AMZN', kind:'build', g:'qualitative', gstyle:'soft', q:'$43.2B', qd:'+73% YoY', si:'Trainium', bk:'AWS $364B', note:'Anthropic +$15.6B mark'},
+      {p:'META', kind:'build', g:'$125–145B', gstyle:'range', q:'$19.8B', qd:'+45% YoY', si:'MTIA / Broadcom', bk:'— ad-driven', note:'memory-driven raise'},
+      {p:'ORCL', kind:'build', g:'$50B envelope', gstyle:'deferred', q:'$39.2B 9mo', qd:'+223%', si:'none · merchant', bk:'RPO $552.6B', note:'off-B/S financing'},
+      {p:'CRWV', kind:'rent', g:'$31–35B', gstyle:'range', q:'$6.8B', qd:'~2.7× rev', si:'none · merchant', bk:'$99.4B', note:'net LOSS · debt-funded'},
+      {p:'NBIS', kind:'rent', g:'$20–25B', gstyle:'range', q:'$2.5B', qd:'~7–8× rev', si:'none · merchant', bk:'MSFT + Meta', note:'net LOSS · $9.3B cash'},
+    ];
+    const STYLE={range:['RANGE','var(--up)'],point:['POINT','var(--up)'],soft:['QUALITATIVE','var(--watch)'],deferred:['DEFERRED','var(--watch)']};
+    const capexRows=rows.map((r,i)=>({
+      p:r.p, g:r.g, q:r.q, qd:r.qd, si:r.si, bk:r.bk, note:r.note,
+      kindColor:r.kind==='rent'?'#ff8a3c':DOM.ai, kindLabel:r.kind==='rent'?'RENT':'BUILD',
+      styleLabel:STYLE[r.gstyle][0], styleColor:STYLE[r.gstyle][1],
+      trBg:i%2?'var(--inset)':'transparent'
+    }));
+    const capexStats=[
+      {n:'$640–720B', l:'Big-4 2026 capex · primary-sourced'},
+      {n:'~$700–770B', l:'incl. ORCL (extends, doesn’t sum)'},
+      {n:'~$830B', l:'top-9 global CSPs · Tier-3'},
+      {n:'~94%', l:'of operating cash flow consumed'},
+    ];
+    const capexSignals=[
+      {t:'Capex cut / plateau', canary:false},{t:'Deceleration in the raises', canary:false},{t:'Guidance-firmness retreat', canary:false},
+      {t:'Return failing to converge', canary:false},{t:'Neocloud refi failure / covenant breach', canary:true},{t:'HBM / memory price collapse', canary:false},
+    ].map(x=>({t:x.t, canary:x.canary, canaryShow:x.canary?'':'display:none'}));
+    const capexDyn=[
+      {h:'Memory-pricing cost-push', d:'META named memory pricing as the dominant driver of its raise — some 2026 increases are cost inflation, not capacity.'},
+      {h:'In-house silicon as a lever', d:'Four of seven build captive accelerators (Trainium / TPU / MTIA / Maia); ORCL, CRWV, NBIS are merchant-NVIDIA only.'},
+      {h:'The circularity', d:'NVIDIA invests in the customers who buy its chips — $2B into CRWV and $2B+warrant into NBIS, both primary-confirmed.'},
+      {h:'Financing shift: cash → debt → off-B/S', d:'~$121B of 2025 hyperscaler bonds; SPVs (Meta Hyperion, Alphabet VIEs, Oracle vendor debt) increasingly understate true leverage.'},
+    ];
+    return {capexRows, capexStats, capexSignals, capexDyn};
+  }
+
+  riskData(){    const DOM=this.DOM;
+    const mk=(n,title,tw,home,st)=>({n:String(n).padStart(2,'0'),title,tw,home,st:st||'nominal'});
+    const groups=[
+      {domain:'AI datacenter supply chain', color:DOM.ai, entries:[
+        mk(1,'Hyperscaler capex cycle turn','Any two of the capex page’s six disconfirming signals firing in the same period — a Big-4 guidance cut is the anchor.','hyperscaler-capex'),
+        mk(2,'AI demand proves non-durable','Consumption-metered AI revenue lines decelerating together; the productivity-seat leg failing at 2025-cohort renewals.','AI-demand-durability'),
+        mk(3,'Inference / compute efficiency compresses demand','GPU-utilization tooling cited at a primary venue to moderate capex; fleet utilization rising ~5%→30%+.','_thesis'),
+        mk(4,'Power constraint resolves faster than expected','Transformer lead times normalizing from ~4yr toward pre-2022; interconnection queues clearing; BTM premium collapsing.','transformer-supply'),
+        mk(5,'NVIDIA circular-financing unwind','A backstopped neocloud entering distress; impairment of commitment instruments; a lease backstop drawn (AVGO $29B class).','AI-buildout-who-holds-the-risk'),
+        mk(6,'Financing-structure / credit shock','A failed or pulled datacenter/neocloud financing; AI-DC debt spreads widening sharply (→ spread-watch); an SPV impairment.','AI-buildout-who-holds-the-risk'),
+        mk(7,'Photonics as first casualty of a capex turn','Optics/transceiver order cuts or push-outs at 2+ vault photonics names in one quarter without a share-shift explanation.','datacenter-photonics-supply-chain'),
+        mk(8,'Taiwan / advanced-node concentration event','Export-control or blockade-class events restricting advanced-node / CoWoS access; cross-strait disruption signals.','overseas-fab-expansion'),
+        mk(9,'HBM / memory cycle rollover','HBM supply language shifting from sold-out/prepaid to spot/oversupply at MU + peer primary disclosures.','HBM-oligopoly'),
+      ]},
+      {domain:'Defense & Drones', color:'#f7a21b', entries:[
+        mk(10,'The enacted-vs-requested budget gap','FY2027 DAWG request materially cut in appropriations; CRs freezing new drone line items; program cancellations.','_thesis-defense-drones'),
+        mk(11,'De-escalation — demand engine fades','A durable ceasefire/settlement; European defense-budget retrenchment; FY2028 request shrinking unmanned-systems lines.','_thesis-defense-drones'),
+        mk(12,'Blue UAS exemption expiry','Date-certain — the Blue UAS exemption expires Jan 1, 2027. Watch lapse / extension / permanence in the FY2027 NDAA cycle.','_thesis-defense-drones','pending'),
+        mk(13,'Rare-earth / magnet chokepoint resolution','China export-control relaxation; non-China magnet capacity ending allocation behavior; magnet-free motor design-wins.','rare-earth-magnet-chokepoint'),
+      ]},
+      {domain:'Humanoid Robots', color:DOM.humanoid, entries:[
+        mk(14,'Humanoid timing / magnitude disappointment','Flagship OEM programs (Optimus-class) slipping by years; the order-vs-capacity gamble busting as the 2H2026 order window passes.','_thesis-humanoid-robot'),
+        mk(15,'China-access policy risk','Policy restricting foreign participation in A-shares; sanctions touching cohort names; cross-border settlement/custody disruption.','china-exposure'),
+        mk(16,'Architecture shakeout / capacity scaling','OEM architecture decisions stranding a tracked layer; grinding-capacity expansion + sustained reducer/screw price cuts without share loss.','humanoid-robot-value-chain'),
+      ]},
+    ];
+    const STAT={nominal:{c:'var(--up)',label:'NOT FIRED'}, pending:{c:'var(--watch)',label:'PENDING'}, fired:{c:'var(--down)',label:'FIRED'}};
+    const riskGroups=groups.map(g=>({domain:g.domain, color:g.color, count:g.entries.length+' entries', entries:g.entries.map(e=>({
+      n:e.n, title:e.title, tw:e.tw, home:e.home,
+      statusColor:STAT[e.st].c, statusLabel:STAT[e.st].label,
+      lamp: e.st!=='nominal' ? 'animation:lamp 1.4s ease-in-out infinite' : ''
+    }))}));
+    return {riskGroups, riskFired:'0', riskTotal:'16'};
+  }
+
+  shortInterestData(){    const s=this.state, DOM=this.DOM;
+    const READ={CONFIRM:'var(--up)', CHALLENGE:'var(--watch)'};
+    const raw=[
+      {tk:'LEU',si:'4.2M',pct:30.39,dtc:5.17,chg:-2.13,read:'CHALLENGE',thesis:'HALEU enrichment chokepoint',dom:'ai'},
+      {tk:'CORZ',si:'71.9M',pct:22.6,dtc:5.42,chg:12.15,read:'CONFIRM',thesis:'AI-datacenter host / landlord',dom:'ai'},
+      {tk:'NVTS',si:'36.1M',pct:19.68,dtc:1.05,chg:-6.11,read:'CONFIRM',thesis:'power semis (800V DC)',dom:'ai'},
+      {tk:'AMPX',si:'25.6M',pct:18.1,dtc:2.35,chg:12.98,read:'',thesis:'defense Si-anode batteries',dom:'defense'},
+      {tk:'NBIS',si:'44.3M',pct:17.51,dtc:2.56,chg:-1.78,read:'CONFIRM',thesis:'neocloud (GPU renter)',dom:'ai'},
+      {tk:'MP',si:'28.1M',pct:15.78,dtc:4.00,chg:2.27,read:'CHALLENGE',thesis:'rare-earth-magnet chokepoint',dom:'humanoid'},
+      {tk:'COHU',si:'7.2M',pct:15.31,dtc:4.52,chg:12.55,read:'',thesis:'semi test (counterpoint)',dom:'ai'},
+      {tk:'LITE',si:'10.2M',pct:13.14,dtc:1.93,chg:11.68,read:'CHALLENGE',thesis:'photonics / CPO laser',dom:'ai'},
+      {tk:'AEHR',si:'4.1M',pct:13.04,dtc:1.77,chg:-14.31,read:'',thesis:'advanced-packaging test',dom:'ai'},
+      {tk:'AAOI',si:'10.0M',pct:12.51,dtc:1.00,chg:7.53,read:'CONFIRM',thesis:'transceiver assembler',dom:'ai'},
+      {tk:'NOVT',si:'4.2M',pct:11.86,dtc:10.01,chg:-1.51,read:'CHALLENGE',thesis:'humanoid sensor / datacenter',dom:'humanoid'},
+      {tk:'AXTI',si:'7.3M',pct:11.15,dtc:1.00,chg:-11.69,read:'',thesis:'InP substrates',dom:'ai'},
+      {tk:'VECO',si:'6.2M',pct:10.16,dtc:6.09,chg:1.38,read:'',thesis:'semi equipment',dom:'ai'},
+      {tk:'BE',si:'28.6M',pct:10.04,dtc:2.74,chg:-1.52,read:'',thesis:'fuel cells / BTM power',dom:'ai'},
+      {tk:'VPG',si:'1.2M',pct:9.58,dtc:1.51,chg:31.72,read:'CONFIRM',thesis:'humanoid force/torque sensor',dom:'humanoid'},
+      {tk:'AVAV',si:'4.6M',pct:9.23,dtc:3.03,chg:-0.30,read:'CHALLENGE',thesis:'defense drones',dom:'defense'},
+      {tk:'OUST',si:'5.9M',pct:9.23,dtc:1.00,chg:-4.79,read:'CONFIRM',thesis:'lidar / Physical-AI sensing',dom:'humanoid'},
+      {tk:'POWI',si:'4.6M',pct:8.20,dtc:2.61,chg:14.10,read:'',thesis:'power semis',dom:'ai'},
+    ];
+    const key=s.siSort||'pct', dir=s.siDir||'desc';
+    const cmp=(a,b)=>{ if(key==='tk'){ return dir==='desc' ? (a.tk<b.tk?1:-1) : (a.tk<b.tk?-1:1); } return dir==='desc' ? b[key]-a[key] : a[key]-b[key]; };
+    const siRows=[...raw].sort(cmp).map(r=>({
+      tk:r.tk, si:r.si, pct:r.pct.toFixed(2)+'%', dtc:r.dtc.toFixed(2), chg:(r.chg>0?'+':'')+r.chg.toFixed(2)+'%',
+      chgColor: r.chg>0?'var(--down)':(r.chg<0?'var(--up)':'var(--text-3)'),
+      crowded: r.dtc>=5 ? 'color:var(--watch);font-weight:600' : '',
+      read:r.read||'—', readColor:READ[r.read]||'var(--text-3)', readShow:r.read?'':'border-color:transparent;background:transparent',
+      thesis:r.thesis, dot:DOM[r.dom]||DOM.none,
+      pctBarW:Math.min(100,(r.pct/30.39)*100)+'%'
+    }));
+    const setSort=(k)=>()=>this.setState({siSort:k, siDir:(s.siSort===k&&s.siDir==='desc')?'asc':'desc'});
+    const arr=(k)=> (s.siSort||'pct')===k ? ((s.siDir||'desc')==='desc'?' ▾':' ▴') : '';
+    const siCrowded=[{t:'NOVT',v:'10.01'},{t:'MRCY',v:'7.73'},{t:'VECO',v:'6.09'},{t:'CORZ',v:'5.42'},{t:'LEU',v:'5.17'},{t:'AAON',v:'4.74'},{t:'COHU',v:'4.52'},{t:'TDY',v:'4.15'},{t:'MP',v:'4.00'}];
+    const siUp=[{t:'ONTO',v:'+78.5%'},{t:'VPG',v:'+31.7%'},{t:'PLAB',v:'+26.6%'},{t:'NVT',v:'+17.9%'},{t:'MPWR',v:'+17.4%'},{t:'LSCC',v:'+16.7%'}];
+    const siDown=[{t:'AEHR',v:'-14.3%'},{t:'AAON',v:'-13.2%'},{t:'ENS',v:'-12.9%'},{t:'MOD',v:'-12.2%'},{t:'AXTI',v:'-11.7%'},{t:'KTOS',v:'-11.0%'}];
+    const siConfirm=[
+      {tk:'CORZ', note:'22.6% + rising — the crowd prices the 100%-CoreWeave concentration the vault flags as thesis = risk.'},
+      {tk:'NBIS', note:'17.5% — a GPU-renting price-taker holding no chokepoint; shorts agree with the neocloud-fragility read.'},
+      {tk:'NVTS', note:'19.7% — vault honest-verdict already flags FY25 revenue −45% / widening loss; low DTC (easy to cover).'},
+      {tk:'AAOI', note:'12.5% — confirms the “structurally fragile assembler” read; a camp is NOT pricing a winner.'},
+    ];
+    const siChallenge=[
+      {tk:'LEU', note:'30.4% — the loudest disagreement in the vault. Shorts press pre-revenue dilution + moat shelf-life vs sole-licensed HALEU. → /bear-case LEU'},
+      {tk:'MP', note:'15.8% — DoD-dependence / China-dumping / rich pre-scale magnet ramp vs the only scaled US rare-earth producer.'},
+      {tk:'NOVT', note:'11.9%, 10.0 DTC (most-crowded) — shorts press that humanoid+datacenter are still a sliver of a medical/industrial compounder.'},
+      {tk:'AVAV', note:'9.2% — lumpy procurement / Blue Halo integration vs the AeroVironment drone thesis.'},
+    ];
+    return {siRows, siCrowded, siUp, siDown, siConfirm, siChallenge,
+      onSortTk:setSort('tk'), onSortPct:setSort('pct'), onSortDtc:setSort('dtc'), onSortChg:setSort('chg'),
+      arrTk:arr('tk'), arrPct:arr('pct'), arrDtc:arr('dtc'), arrChg:arr('chg')};
+  }
+
+  creditSpreadData(){    const STAT={calm:{c:'var(--calm)',label:'calm'},easing:{c:'var(--up)',label:'easing'},watch:{c:'var(--watch)',label:'watch'},fired:{c:'var(--down)',label:'fired'}};
+    const csLegend=[
+      {label:'calm / baseline',c:'var(--calm)'},{label:'easing',c:'var(--up)'},
+      {label:'widening — watch',c:'var(--watch)'},{label:'gap open + confirmed',c:'var(--down)'},
+    ];
+    const raw=[
+      {n:'0', st:'calm', dial:'Layer-1 controls (FRED)', reading:'HY OAS 2.80pp (+0.01/1m, −0.29/3m) · IG OAS 0.75pp — both historically very tight; the control group itself shows broad credit complacency.', asof:'2026-06-10', flag:''},
+      {n:'1', st:'calm', dial:'AI-vs-non-AI private-credit spread (BIS)', reading:'6.2 vs 6.1pp — gap ~zero, re-confirmed in BIS QR Mar 2026. New color: hyperscaler CDS rising (esp. lower-rated) — first differentiated pricing.', asof:'Mar 2026', flag:'WATCH'},
+      {n:'2', st:'calm', dial:'CRWV unsecured 2031 yield vs HY index', reading:'~11.5% reported vs HY 2.80pp — raw gap ~+8.7pp. Coupon 9.75% confirmed.', asof:'~Q1 2026', flag:'STALE >45d'},
+      {n:'3', st:'calm', dial:'CRWV secured-vs-unsecured gap', reading:'~340bp+ (SPV ~5.9% fixed vs unsecured). The secured leg widening = doubting the contracts themselves — the loud alarm.', asof:'Mar 2026', flag:''},
+      {n:'4', st:'calm', dial:'ORCL-vs-MSFT bond gap', reading:'Not yet read. The investment-grade "AI-leverage premium": debt-funded builder vs cash-rich payer. Turning 🟡 here adds META/AMZN pairs.', asof:'—', flag:'UNREAD'},
+      {n:'5', st:'calm', dial:'Latest new-issue pricing', reading:'CRWV DDTL 4.0 at SOFR+2.25% / ~5.9% fixed (A3). Rising pricing deal-over-deal = the differential opening in real time.', asof:'Mar 31 2026', flag:''},
+      {n:'6', st:'easing', dial:'Rating actions', reading:'S&P CRWV outlook → POSITIVE (B+ affirmed); thresholds FFO/debt 12% · CFO/debt 10%. Improving, honestly noted.', asof:'Apr 9 2026', flag:''},
+      {n:'7', st:'calm', dial:'Primary-market behavior', reading:'New-issue concessions / failed takedowns — the historically earliest crack. GS desk clock: 12–18mo away, 2027 squeeze point. Currently quiet.', asof:'Jun 12 2026', flag:''},
+      {n:'8', st:'calm', dial:'CORZ host-layer credit', reading:'$3.3B 7.75% CoreWeave project bond (secured/lockbox) + 0%/3% converts. NEW host-layer name — needs first manual FINRA/TRACE read.', asof:'2026-06-15', flag:'UNREAD'},
+    ];
+    const csDials=raw.map(d=>{
+      const st=STAT[d.st];
+      const isStale=d.flag.indexOf('STALE')>=0;
+      const flagColor=isStale?'var(--down)':(d.flag==='UNREAD'?'var(--text-3)':'var(--watch)');
+      return {n:d.n, dial:d.dial, reading:d.reading, asof:d.asof, statusColor:st.c, statusLabel:st.label,
+        lampAnim:(d.st==='watch'||d.st==='fired')?'animation:lamp 1.4s ease-in-out infinite':'',
+        flag:d.flag, flagColor, flagShow:d.flag?'':'display:none'};
+    });
+    const csLayers=[
+      {tag:'L1', tagBg:'var(--text-3)', title:'The baseline (FRED, free, daily)', desc:'BAMLH0A0HYM2 high-yield OAS + BAMLC0A0CM investment-grade OAS — risky vs safe borrowers in general. The control group: AI stress only signals when AI instruments widen relative to these.'},
+      {tag:'L2', tagBg:'var(--up)', title:'The AI side (the real dial)', desc:'CRWV 9.75% 2031 unsecured · CRWV secured-vs-unsecured · ORCL-vs-MSFT matched maturity · CORZ project bond + converts. Three probes, weakest-link order: neocloud → leveraged hyperscaler → fortress names last.'},
+      {tag:'L3', tagBg:'var(--watch)', title:'Deal-by-deal new-issue pricing', desc:'Every financing discloses its rate — rising pricing deal-over-deal is the differential opening in real time. The earliest crack is new-deal behavior: concessions appearing, failed takedowns.'},
+      {tag:'L4', tagBg:'#2f9bff', title:'The referees (the only private view)', desc:'BIS Quarterly Review / Bulletins, IMF GFSR, FSB. Private credit marks slowly — these periodic docs are the only window into the $800B channel public proxies can’t see. Known blind spot: it can deteriorate quietly.'},
+    ];
+    const csCycle=[
+      {ending:'Financing-led — credit reprices, builds stop', dial:'the spread differential (this page)', home:'HERE', homeColor:'var(--accent)', dot:'var(--accent)', bg:'var(--accent-dim)'},
+      {ending:'Voluntary-cut — hyperscalers blink', dial:'capex guidance + "any two = turn"', home:'CAPEX', homeColor:'var(--text-3)', dot:'var(--calm)', bg:'transparent'},
+      {ending:'Demand-led — consumer breaks first', dial:'memory spot-vs-contract divergence', home:'MEMORY', homeColor:'var(--text-3)', dot:'var(--calm)', bg:'transparent'},
+      {ending:'Counterparty-led — a frontier lab stumbles', dial:'AVGO backstop ceiling + impairment', home:'WHO-RISK', homeColor:'var(--text-3)', dot:'var(--calm)', bg:'transparent'},
+      {ending:'Any of the above', dial:'risk-register tripwires (5 + 6)', home:'WHAT-WRONG', homeColor:'var(--text-3)', dot:'var(--calm)', bg:'transparent'},
+    ];
+    return {csLegend, csDials, csLayers, csCycle};
   }
 }
 </script>

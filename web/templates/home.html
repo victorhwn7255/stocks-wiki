@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="home">
+  <div class="eyebrow">{{ home.eyebrow }}</div>
+  <h1 class="hero-h1">{{ home.hero }}</h1>
+  <p class="hero-lede">{{ home.lede }}</p>
+
+  <div class="stat-strip">
+    <div class="stat"><div class="n">{{ stat_total }}</div><div class="l">pages</div></div>
+    <div class="stat"><div class="n">{{ counts.companies }}</div><div class="l">companies</div></div>
+    <div class="stat"><div class="n">{{ counts.chokepoints }}</div><div class="l">chokepoints</div></div>
+    <div class="stat"><div class="n">{{ counts.themes }}</div><div class="l">themes</div></div>
+    <div class="stat"><div class="n">{{ counts.trackers }}</div><div class="l">trackers</div></div>
+    <div class="stat"><div class="n">{{ counts.thesis }}</div><div class="l">theses</div></div>
+  </div>
+
+  <div class="thesis-cards">
+    {% for d in home.thesis_domains %}
+    <a class="th-card" href="{{ rel }}{{ 'companies/index.html' }}" data-domain="{{ d.key }}">
+      <span class="th-icon" style="background:{{ d.color }}1f;border-color:{{ d.color }}"><span class="sq" style="background:{{ d.color }}"></span></span>
+      <div class="th-tag" style="color:{{ d.color }}">{{ d.tag }}</div>
+      <div class="th-title">{{ d.title }}</div>
+      <div class="th-desc">{{ d.desc }}</div>
+      <div class="th-foot">{{ d.companies }} co. · {{ d.chokepoints }} chokepoints</div>
+    </a>
+    {% endfor %}
+  </div>
+
+  <div class="home-lower">
+    <div class="panel recent">
+      <div class="p-hd">Recently updated</div>
+      {% for r in recent %}
+      {% if r.out %}<a class="recent-row" href="{{ rel }}{{ r.out }}">{% else %}<div class="recent-row">{% endif %}
+        <span class="dot" style="background:{{ r.hex }}"></span>
+        <span class="t">{{ r.title }}</span>
+        <span class="tag">{{ r.type }}</span>
+        <span class="date">{{ r.date }}</span>
+      {% if r.out %}</a>{% else %}</div>{% endif %}
+      {% endfor %}
+    </div>
+
+    <div class="panel board">
+      <div class="p-hd">Top chokepoints <a class="more" href="{{ rel }}chokepoints/index.html">view all →</a></div>
+      {% for b in board %}
+      {% if b.out %}<a class="board-row" href="{{ rel }}{{ b.out }}">{% else %}<div class="board-row">{% endif %}
+        <span class="rk">{{ loop.index }}</span>
+        <span class="sw" style="background:{{ b.color }}"></span>
+        <span class="t">{{ b.name }}</span>
+        <span class="dur">{{ b.dur }}</span>
+      {% if b.out %}</a>{% else %}</div>{% endif %}
+      {% endfor %}
+      <div class="grade-legend">
+        {% for k, g in grade_legend.items() %}<span class="gl"><span class="sw" style="background:{{ g.color }}"></span>{{ g.label }}</span>{% endfor %}
+      </div>
+    </div>
+  </div>
+
+  <div class="disclaimer">Not investment advice — no buy/sell calls, no price targets, no position sizing. The vault describes structure; it never recommends.</div>
+</div>
+{% endblock %}

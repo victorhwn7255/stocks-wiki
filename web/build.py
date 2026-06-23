@@ -14,6 +14,7 @@ Usage:
 import argparse, json, re, shutil, sys
 from html import unescape
 from pathlib import Path
+import yaml  # noqa: E402  (present via vault tooling)
 
 WEB = Path(__file__).resolve().parent
 ROOT = WEB.parent
@@ -319,6 +320,291 @@ def audit(ticker, as_json=False):
     return 0
 
 
+# ── site presentation data + tracker parsers ──────────────────────────────
+SECTION_COLOR = {"companies": "#2f9bff", "chokepoints": "#ff4d42", "themes": "#a98bf5",
+                 "trackers": "#ff8a3c", "thesis": "#4defc4", "frameworks": "#7d8aa0",
+                 "relationships": "#f7a21b", "home": "#f7a21b"}
+# the top-bar section tabs (label, group-key) — HOME first, then the content sections
+SECTION_TABS = [("HOME", "home"), ("COMPANIES", "companies"), ("CHOKEPOINTS", "chokepoints"),
+                ("THEMES", "themes"), ("TRACKERS", "trackers"), ("THESIS", "thesis"),
+                ("FRAMEWORKS", "frameworks")]
+DATE_RE = re.compile(r"(20\d\d)-(\d\d)-(\d\d)")
+MONTHS = {m: i + 1 for i, m in enumerate(
+    ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"])}
+
+
+def load_site():
+    p = WEB / "data" / "site.yaml"
+    return yaml.safe_load(p.read_text()) if p.exists() else {}
+
+
+def freshness_flag(asof, stale_days, today):
+    """From an 'as of' string → (flag_text, flag_class). Honors the vault's never-hide-stale rule."""
+    if not asof or asof.strip() in ("—", "(not yet read)", ""):
+        return ("UNREAD", "unread")
+    m = DATE_RE.search(asof)
+    if m:
+        y, mo, d = (int(x) for x in m.groups())
+    else:
+        m2 = re.search(r"([A-Z][a-z]{2})[a-z]*\.?\s+(\d{1,2}),?\s+(20\d\d)", asof)  # "Mar 31, 2026"
+        if not m2:
+            return ("", "")
+        mo = MONTHS.get(m2.group(1), 1); d = int(m2.group(2)); y = int(m2.group(3))
+    age = (today - (y * 365 + mo * 30 + d))            # cheap day-ish delta; exactness not needed
+    if age > stale_days:
+        return (f"STALE >{stale_days}d", "stale")
+    return ("", "")
+
+
+def _status_state(text):
+    """Map a register/dial status phrase → (LABEL, state-class). state ∈ calm|nominal|watch|fired."""
+    t = text.upper()
+    if "FIRED" in t and "NOT FIRED" not in t:
+        return ("FIRED", "fired")
+    if "PENDING" in t:
+        return ("PENDING", "watch")
+    if "NOT FIRED" in t or "NOMINAL" in t:
+        return ("NOT FIRED", "nominal")
+    return ("—", "calm")
+
+
+WCGW_DOMAIN = {"ai datacenter supply chain": "ai", "defense & drones": "def", "humanoid robots": "hum"}
+
+
+def parse_wcgw(body, slugmap, rel):
+    """what-could-go-wrong → the tripwire register grouped by domain."""
+    entries, domain, cur = [], "ai", None
+    for line in body.splitlines():
+        m2 = re.match(r"^## (.+)", line)
+        if m2:
+            domain = WCGW_DOMAIN.get(re.sub(r"<[^>]+>", "", m2.group(1)).strip().lower(), domain)
+            continue
+        m3 = re.match(r"^### (\d+)\.\s+(.+)", line)
+        if m3:
+            cur = {"n": m3.group(1).zfill(2), "domain": domain, "title": _md_text(m3.group(2)),
+                   "tripwire": "", "home": "", "home_out": None, "status": "NOT FIRED", "state": "nominal"}
+            entries.append(cur); continue
+        if not cur:
+            continue
+        mh = re.match(r"^- \*\*Canonical home:\*\*\s+(.+)", line)
+        if mh:
+            wl = WL.search(mh.group(1))
+            if wl:
+                cur["home"] = wl.group(1)
+                o = slugmap.get(wl.group(1)) or slugmap.get(wl.group(1).upper())
+                cur["home_out"] = (rel + o) if o else None
+            else:
+                # plain-text home (e.g. a `wiki/_thesis.md` code path) — keep the label, no link
+                mc = re.search(r"`([^`]+)`", mh.group(1))
+                cur["home"] = (mc.group(1) if mc else _md_text(mh.group(1)).split("(")[0].strip())[:60]
+            continue
+        mt = re.match(r"^- \*\*Tripwire:\*\*\s+(.+)", line)
+        if mt:
+            txt = _md_text(mt.group(1))
+            cur["tripwire"] = (txt[:300].rstrip() + "…") if len(txt) > 300 else txt
+            continue
+        ms = re.match(r"^- \*\*Status:\*\*\s+(.+)", line)
+        if ms:
+            cur["status"], cur["state"] = _status_state(ms.group(1))
+    order = [("ai", "AI datacenter supply chain"), ("def", "Defense & Drones"), ("hum", "Humanoid Robots")]
+    groups = [{"key": k, "label": lab, "color": DOMAIN_HEX[k],
+               "entries": [e for e in entries if e["domain"] == k]} for k, lab in order]
+    return {"kind": "register", "groups": [g for g in groups if g["entries"]],
+            "fired": sum(1 for e in entries if e["state"] == "fired"), "total": len(entries)}
+
+
+def _cells(line):
+    return [c.strip() for c in line.strip().strip("|").split("|")]
+
+
+def _md_text(s):
+    """Markdown → plain compact text: drop **/*/`, [[Target|alias]] → alias-or-target."""
+    s = WL.sub(lambda m: (m.group(2) or m.group(1)).strip(), s)
+    return re.sub(r"\*\*|\*|`", "", s).strip()
+
+
+def _emoji_state(status):
+    """spread-watch status emoji → state class. ⚪ calm · 🟢 nominal · 🟡 watch · 🔴 fired."""
+    if "🔴" in status:
+        return "fired"
+    if "🟡" in status:
+        return "watch"
+    if "🟢" in status:
+        return "nominal"
+    return "calm"
+
+
+def _dial_flag(status, asof, stale_days, today):
+    t = status.upper()
+    if "STALE" in t:
+        return (f"STALE >{stale_days}d", "stale")
+    if "NOT YET READ" in t or "UNREAD" in t or "NEEDS FIRST" in t or asof.strip() in ("—", ""):
+        return ("UNREAD", "unread")
+    return freshness_flag(asof, stale_days, today)
+
+
+def parse_spread(body, slugmap, rel, stale_days, today):
+    """AI-credit-spread-watch → the 9-dial board."""
+    dials, in_tbl = [], False
+    for line in body.splitlines():
+        if line.startswith("## Current readings"):
+            in_tbl = True; continue
+        if in_tbl and line.startswith("## "):
+            break
+        if in_tbl and line.startswith("|"):
+            c = _cells(line)
+            if len(c) >= 5 and c[0].isdigit():
+                status = c[4]
+                flag, fcls = _dial_flag(status, c[3], stale_days, today)
+                dials.append({"n": c[0], "name": _md_text(c[1]),
+                              "reading": render_inline(c[2], slugmap, rel),
+                              "asof": _md_text(c[3]), "status": _md_text(status).lstrip("⚪🟢🟡🔴 ").strip(),
+                              "state": _emoji_state(status), "flag": flag, "fcls": fcls})
+    return {"kind": "dials", "dials": dials}
+
+
+def parse_short(body, slugmap, rel, stale_days, today):
+    """short-interest → the sortable screener (from the fenced auto-refresh table)."""
+    rows = []
+    for line in body.splitlines():
+        if not line.startswith("|"):
+            continue
+        c = _cells(line)
+        if len(c) >= 7 and c[0] not in ("ticker", "---") and not c[0].startswith("---"):
+            tk = _md_text(c[0])
+            if not re.match(r"^[A-Z]{1,6}$", tk):
+                continue
+            read = _md_text(c[5]).upper()
+            vstate = "confirm" if "CONFIRM" in read else "challenge" if "CHALLENGE" in read else "none"
+            try:
+                pct = float(re.sub(r"[^\d.]", "", c[2]) or 0)
+            except ValueError:
+                pct = 0.0
+            try:
+                dtc = float(re.sub(r"[^\d.]", "", c[3]) or 0)
+            except ValueError:
+                dtc = 0.0
+            delta = _md_text(c[4])
+            rising = delta.startswith("+")
+            mp = slugmap.get(tk)
+            rows.append({"ticker": tk, "out": (rel + mp) if mp else None, "shortInt": _md_text(c[1]),
+                         "pctOut": c[2].replace("**", "").strip(), "pct": pct, "dtc": dtc,
+                         "daysCover": _md_text(c[3]), "delta": delta, "rising": rising,
+                         "vaultRead": read if vstate != "none" else "—", "vstate": vstate,
+                         "thesis": _md_text(c[6])})
+    rows.sort(key=lambda r: r["pct"], reverse=True)
+    return {"kind": "screener", "rows": rows}
+
+
+def parse_capex(body, slugmap, rel, stale_days, today):
+    """hyperscaler-capex → the 7-payer matrix."""
+    rows = []
+    for line in body.splitlines():
+        if not line.startswith("| [["):
+            continue
+        c = _cells(line)
+        if len(c) < 7:
+            continue
+        wl = WL.search(c[0])
+        tk = wl.group(1) if wl else _md_text(c[0]).split()[0]
+        kind = "RENT" if tk in ("CRWV", "NBIS") else "BUILD"
+        mp = slugmap.get(tk)
+        rows.append({"payer": tk, "out": (rel + mp) if mp else None, "kind": kind,
+                     "fy25": _md_text(c[1]), "guidance": _md_text(c[2]), "latestQ": _md_text(c[3]),
+                     "style": _md_text(c[4]), "silicon": _md_text(c[5]), "backlog": _md_text(c[6]),
+                     "note": _md_text(c[7]) if len(c) > 7 else ""})
+    return {"kind": "matrix", "rows": rows}
+
+
+CHINA_MAG = {"ultra": "#ff4d42", "high": "#ff8a3c", "med": "#f7a21b", "medium": "#f7a21b", "low": "#7d8aa0"}
+
+
+def parse_china(body, slugmap, rel, stale_days, today):
+    """china-exposure → the 8-axis (A–H) heatmap."""
+    rows, AXES = [], list("ABCDEFGH")
+    for line in body.splitlines():
+        if not line.startswith("| [["):
+            continue
+        c = _cells(line)
+        if len(c) < 4:
+            continue
+        tk = _md_text(c[0])
+        # axes cell = comma/space-separated single letters (A–H); a parenthetical note like
+        # "(none-direct)" is NOT axes — only count standalone A–H tokens.
+        have = set(t for t in re.split(r"[,\s]+", _md_text(c[1]).upper()) if re.fullmatch(r"[A-H]", t))
+        magfull = _md_text(c[2]).lower()
+        magword = re.match(r"\s*([a-z-]+)", magfull)
+        mag = magword.group(1) if magword else magfull   # "high (domiciled)" → "high"; "low-med" → "low-med"
+        color = CHINA_MAG.get(mag, CHINA_MAG.get(mag.split("-")[0], "#646c75"))
+        mp = slugmap.get(tk)
+        rows.append({"ticker": tk, "out": (rel + mp) if mp else None, "mag": magfull.upper(), "color": color,
+                     "cells": [{"ax": a, "on": a in have} for a in AXES],
+                     "evidence": _md_text(c[3])[:200]})
+    return {"kind": "heatmap", "rows": rows,
+            "axis_key": [("A", "China revenue"), ("B", "Supply / sourcing"), ("C", "Taiwan-fab / China-assembly"),
+                         ("D", "Outbound export-control"), ("E", "Inbound export-control"), ("F", "Chinese competitor"),
+                         ("G", "Adversary-demand (defense)"), ("H", "China operations")],
+            "legend": [("ULTRA", "#ff4d42"), ("HIGH", "#ff8a3c"), ("MED", "#f7a21b"), ("LOW", "#7d8aa0")]}
+
+
+FE_DOMAIN = {"ai datacenter": "ai", "humanoid robots": "hum", "defense & drones": "def"}
+
+
+def parse_forward(body, slugmap, rel, stale_days, today):
+    """forward-edge → the 12 consensus-vs-vault cards."""
+    cards, domain, cur = [], None, None
+
+    def flush():
+        if cur and cur.get("consensus") and cur.get("vaultView"):
+            cards.append(cur)
+    for line in body.splitlines():
+        m2 = re.match(r"^## (.+)", line)
+        if m2:
+            flush(); cur = None
+            domain = FE_DOMAIN.get(re.sub(r"<[^>]+>", "", m2.group(1)).strip().lower())
+            continue
+        if domain is None:
+            continue
+        m3 = re.match(r"^### (.+)", line)
+        if m3:
+            flush()
+            title = _md_text(m3.group(1))
+            cur = {"domain": domain, "title": title, "subjects": "", "durability": "",
+                   "inverse": "inverse div" in m3.group(1).lower(), "consensus": "", "vaultView": "",
+                   "catalyst": "", "falsifier": "", "lastMoved": "", "hex": DOMAIN_HEX[domain]}
+            continue
+        if not cur:
+            continue
+        ms = re.match(r"^\*\*Subjects?:\*\*\s+(.+)", line)
+        if ms:
+            parts = re.split(r"—\s*\*\*Durability:\*\*", ms.group(1))
+            cur["subjects"] = _md_text(parts[0])
+            if len(parts) > 1:
+                cur["durability"] = _md_text(parts[1])
+            continue
+        for key, lab in (("consensus", "Consensus"), ("vaultView", "Vault view"),
+                         ("catalyst", "Catalyst"), ("falsifier", "Falsifier"), ("lastMoved", "Last moved")):
+            mm = re.match(r"^- \*\*" + lab + r"[^:*]*:?\*\*[:\s]+(.+)", line)
+            if mm:
+                cur[key] = _md_text(mm.group(1))[:300]
+                break
+    flush()
+    return {"kind": "cards", "cards": cards,
+            "counts": {d: sum(1 for c in cards if c["domain"] == d) for d in ("ai", "hum", "def")}}
+
+
+def tracker_hero(slug, body, slugmap, rel, stale_days, today):
+    """Dispatch to the per-tracker parser. Unknown slug → None (prose-only fallback)."""
+    fn = {"what-could-go-wrong": parse_wcgw, "AI-credit-spread-watch": parse_spread,
+          "short-interest": parse_short, "hyperscaler-capex": parse_capex,
+          "china-exposure": parse_china, "forward-edge-tracker": parse_forward}.get(slug)
+    if not fn:
+        return None
+    if fn is parse_wcgw:
+        return fn(body, slugmap, rel)
+    return fn(body, slugmap, rel, stale_days, today)
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--only", help="build just one page by slug (e.g. NVDA)")
@@ -330,6 +616,15 @@ def main():
 
     dist = WEB / "dist"
     pages, slugmap, src = index_pages()
+    SITE = load_site()
+    from datetime import date as _date
+    _t = _date.today()
+    today_int = _t.year * 365 + _t.month * 30 + _t.day
+    stale_days = (SITE.get("freshness") or {}).get("stale_days", 45)
+    counts = {g: len(src.get(g, [])) for g, _l, _t2 in GROUP_ORDER}
+    section_tabs = [{"label": lab, "key": k, "color": SECTION_COLOR[k],
+                     "out": ("index.html" if k == "home" else f"{k}/index.html"),
+                     "count": counts.get(k)} for lab, k in SECTION_TABS]
 
     # nav groups + search index
     nav_groups, search = [], []
@@ -363,7 +658,8 @@ def main():
 
     # ── render ──
     env = Environment(loader=FileSystemLoader(str(WEB / "templates")), autoescape=select_autoescape(["html"]))
-    shared = {"nav_groups": nav_groups, "tape_items": tape, "total": len(pages)}
+    shared = {"nav_groups": nav_groups, "tape_items": tape, "total": len(pages),
+              "section_tabs": section_tabs}
 
     def rel_for(out):                # ../ depth from a page to dist root
         return "../" * out.count("/")
@@ -388,20 +684,57 @@ def main():
             else:
                 members.append({"tk": tk, "out": None, "hex": DOMAIN_HEX["none"]})
         route_label = (r["tickers"][0] + " US" if r["type"] == "company" and r["tickers"] else r["slug"])
-        ctx = dict(shared, rel=rel, route_label=route_label,
+        accent = {"chokepoint": "#ff4d42", "tracker": SECTION_COLOR["trackers"]}.get(r["type"], DOMAIN_HEX[r["domain"]])
+        page = dict(r, badges=badges_for(r["fm"], r["domain"]), body_html=body_html,
+                    subtitle_html=subtitle_html, toc=toc, backlinks=bl, members=members, accent_hex=accent,
+                    pill=r["type"].upper(), pattern=r["fm"].get("pattern"), active_tab=r["group"],
+                    members_label={"theme": "Companies in this theme", "chokepoint": "Companies exposed",
+                                   "tracker": "Tickers tracked",
+                                   "relationship": "Companies in this relationship"}.get(r["type"], "Companies"))
+        if r["type"] == "tracker":
+            page["meta"] = (SITE.get("trackers") or {}).get(r["slug"], {})
+            page["hero"] = tracker_hero(r["slug"], r["body"], slugmap, rel, stale_days, today_int)
+        ctx = dict(shared, rel=rel, route_label=route_label, active_tab=r["group"],
                    route_kind={"company": "equity", "chokepoint": "chokepoint"}.get(r["type"], r["type"]),
-                   fkey={"company": "company", "chokepoint": "chokepoint"}.get(r["type"], "home"),
-                   page=dict(r, badges=badges_for(r["fm"], r["domain"]), body_html=body_html,
-                             subtitle_html=subtitle_html, toc=toc, backlinks=bl, members=members,
-                             accent_hex=("#ff4d42" if r["type"] == "chokepoint" else DOMAIN_HEX[r["domain"]]),
-                             pill=r["type"].upper(), pattern=r["fm"].get("pattern"),
-                             members_label={"theme": "Companies in this theme", "chokepoint": "Companies exposed",
-                                            "relationship": "Companies in this relationship"}.get(r["type"], "Companies")))
+                   page=page)
         tpl = {"company": "company.html", "theme": "theme.html", "relationship": "theme.html",
-               "chokepoint": "theme.html", "thesis": "document.html",
-               "framework": "document.html"}.get(r["type"], "company.html")
+               "chokepoint": "theme.html", "thesis": "document.html", "framework": "document.html",
+               "tracker": "tracker.html"}.get(r["type"], "company.html")
         html = env.get_template(tpl).render(**ctx)
         op = dist / r["out"]; op.parent.mkdir(parents=True, exist_ok=True); op.write_text(html)
+
+    # ── Home (dist/index.html) + section-index pages (dist/<group>/index.html) ──
+    if not args.only:
+        home = SITE.get("home", {})
+        # resolve recently-updated + chokepoint-board links to built out-paths
+        recent = []
+        for it in home.get("recently_updated", []):
+            mp = pages.get(it["slug"])
+            recent.append(dict(it, out=("" if not mp else mp["out"]),
+                               hex=DOMAIN_HEX.get({"company": "ai"}.get(it["type"], "none")) if not mp else DOMAIN_HEX[mp["domain"]]))
+        GRADE_HEX = {"physics": "#ff4d42", "precision": "#f7a21b", "integration": "#2f9bff"}
+        board = []
+        for b in (SITE.get("chokepoint_board") or []):
+            mp = pages.get(b["slug"])
+            board.append(dict(b, out=(mp["out"] if mp else ""), color=GRADE_HEX.get(b["grade"], "#646c75")))
+        grade_legend = {"physics": {"color": "#ff4d42", "label": "Physics / yield-grade — hardest"},
+                        "precision": {"color": "#f7a21b", "label": "Precision-manufacturing — middle"},
+                        "integration": {"color": "#2f9bff", "label": "Integration / assembly — easiest"}}
+        html = env.get_template("home.html").render(
+            **dict(shared, rel="", route_label="HOME", route_kind="vault", active_tab="home",
+                   home=home, stat_total=len(pages), counts=counts, recent=recent,
+                   board=board, grade_legend=grade_legend))
+        (dist / "index.html").write_text(html)
+        for gkey, label, ptype in GROUP_ORDER:
+            sitems = [{"slug": pages[p.stem]["slug"], "title": pages[p.stem]["title"], "out": pages[p.stem]["out"],
+                       "hex": DOMAIN_HEX[pages[p.stem]["domain"]], "ticker": (pages[p.stem]["tickers"][0] if pages[p.stem]["tickers"] else "")}
+                      for p in src[gkey]]
+            smeta = (SITE.get("sections") or {}).get(gkey, {})
+            html = env.get_template("section-index.html").render(
+                **dict(shared, rel="../", route_label=label.upper(), route_kind="index", active_tab=gkey,
+                       sec_key=gkey, sec_label=label, sec_color=SECTION_COLOR.get(gkey, "#f7a21b"),
+                       sec_desc=smeta.get("desc", ""), sec_count=len(sitems), sec_items=sitems))
+            (dist / gkey / "index.html").write_text(html)
 
     # assets + search index
     adst = dist / "assets"; adst.mkdir(parents=True, exist_ok=True)

@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="sec-index">
+  <div class="crumb"><a href="{{ rel }}index.html">home</a> / {{ sec_key }}</div>
+  <div class="sec-head">
+    <span class="sec-dot" style="background:{{ sec_color }}"></span>
+    <h1 class="sec-h1">{{ sec_label }}</h1>
+    <span class="sec-ct">{{ sec_count }}</span>
+  </div>
+  {% if sec_desc %}<p class="sec-desc">{{ sec_desc }}</p>{% endif %}
+
+  <div class="sec-grid">
+    {% for it in sec_items %}
+    <a class="sec-card" href="{{ rel }}{{ it.out }}">
+      <span class="dot" style="background:{{ it.hex }}"></span>
+      <span class="t">{{ it.title }}</span>
+      {% if it.ticker %}<span class="tk">{{ it.ticker }}</span>{% endif %}
+      <span class="live">LIVE</span>
+    </a>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}

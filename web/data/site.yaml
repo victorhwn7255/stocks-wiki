@@ -1,0 +1,89 @@
+# site.yaml — curated PRESENTATION data for the website (NON-CANON, not in index.md/log.md).
+# Holds the analytical/curated bits that are NOT in the Markdown frontmatter: chokepoint
+# durability scores, thesis-domain copy+counts, the Home lists, per-tracker presentation
+# metadata, and the freshness rule. Seeded from design/TRACKERS.md + design/README.md.
+# Edit here to tune the viz; the build reads it. (The long-flagged structure.yaml gap.)
+
+freshness:
+  stale_days: 45            # a reading older than this gets a red "STALE >45d" flag
+
+# ── section-index pages (one per top-bar tab) ──────────────────────────────
+# color = the section dot/header color (README "Section colors"); desc = 1-line.
+sections:
+  companies:     { color: "#2f9bff", desc: "Owners and suppliers across the three theses — value-capture layer + tier scores." }
+  chokepoints:   { color: "#ff4d42", desc: "The hard-to-replicate control points, ranked by durability grade." }
+  themes:        { color: "#a98bf5", desc: "Cross-cutting dynamics where the theses meet — the map between the pages." }
+  trackers:      { color: "#ff8a3c", desc: "Live instruments — the dials, screeners, and registers that move between filings." }
+  thesis:        { color: "#4defc4", desc: "The three foundational, human-authored thesis anchors." }
+  frameworks:    { color: "#7d8aa0", desc: "The analytical frameworks the vault reasons with." }
+  relationships: { color: "#f7a21b", desc: "Named relationships between entities." }
+
+# ── Home page ──────────────────────────────────────────────────────────────
+home:
+  eyebrow: "INVESTMENT-RESEARCH VAULT"
+  hero: "Three theses, one supply-chain map."
+  lede: "A Bloomberg-terminal reading layer over a personal research vault — value-capture layers, chokepoint-durability grades, and the wikilink graph made visible. Describes structure; never recommends."
+  thesis_domains:
+    - { key: ai,  color: "#2f9bff", tag: "AI DATACENTER", title: "AI Datacenter", desc: "Compute, memory, photonics, power, equipment & materials — the core chokepoints.", companies: 62, chokepoints: 11 }
+    - { key: def, color: "#f7a21b", tag: "DEFENSE & DRONES", title: "Defense & Drones", desc: "Unmanned systems and the value chain behind autonomous defense.", companies: 14, chokepoints: 2 }
+    - { key: hum, color: "#4defc4", tag: "HUMANOID ROBOTS", title: "Humanoid Robots", desc: "The embodied-AI value chain: actuators, reducers, sensors, magnets.", companies: 8, chokepoints: 2 }
+  # Recently-updated rows (the build can also auto-derive by last_updated; this fixes the
+  # designer's chosen order). slug+type let the build link them.
+  recently_updated:
+    - { title: "AI credit spread watch", type: tracker,    date: "06-21", slug: AI-credit-spread-watch }
+    - { title: "HALEU fuel chain",       type: chokepoint, date: "06-14", slug: HALEU-fuel-chokepoint }
+    - { title: "Humanoid robot value chain", type: theme,  date: "06-08", slug: humanoid-robot-value-chain }
+    - { title: "NVDA — NVIDIA",          type: company,    date: "05-24", slug: NVDA }
+    - { title: "HBM oligopoly",          type: chokepoint, date: "05-22", slug: HBM-oligopoly }
+    - { title: "Memory shortage winners & losers", type: theme, date: "05-18", slug: memory-shortage-winners-losers }
+    - { title: "Forward-edge tracker",   type: tracker,    date: "05-15", slug: forward-edge-tracker }
+
+# ── Chokepoint durability board (Home top-board + future Structure leaderboard) ──
+# durability % (ranked, NOT by size): physics > precision > integration. grade ∈ physics|precision|integration.
+chokepoint_board:
+  - { slug: HALEU-fuel-chokepoint,                 name: "HALEU enrichment",            grade: physics,     dur: 99 }
+  - { slug: HBM-oligopoly,                          name: "HBM oligopoly",               grade: physics,     dur: 92 }
+  - { slug: rare-earth-magnet-chokepoint,           name: "Rare-earth magnet substrate", grade: physics,     dur: 88 }
+  - { slug: InP-supply,                             name: "InP / laser substrate supply", grade: physics,    dur: 84 }
+  - { slug: TSMC-CoWoS,                             name: "TSMC-CoWoS advanced packaging", grade: precision, dur: 80 }
+  - { slug: pcb-interconnect-substrate-chokepoint,  name: "IC-substrate (ABF) supply",   grade: precision,   dur: 74 }
+  - { slug: MLCC-oligopoly,                         name: "MLCC oligopoly",              grade: precision,   dur: 68 }
+  - { slug: transformer-supply,                     name: "Grid transformer supply",     grade: precision,   dur: 62 }
+  - { slug: cpo-integration,                        name: "CPO integration",             grade: integration, dur: 52 }
+  - { slug: advanced-optical-packaging,             name: "Advanced optical packaging",  grade: integration, dur: 44 }
+
+# ── Per-tracker presentation metadata (tagline/standfirst/status-banner/reading-rule) ──
+# The DATA (dials, screener rows, heatmap cells, register entries) is parsed from each
+# tracker's .md body; this only holds the framing copy + the composite status the body
+# can't express cleanly.
+trackers:
+  AI-credit-spread-watch:
+    tagline: "the cycle's fuel gauge"
+    standfirst: "The gap between what AI-related borrowers pay and what comparable borrowers pay — the earliest observable signal of a financing-led end to the AI capex cycle."
+    status: { state: calm, label: "GAP ~ZERO · NO DIAL CONFIRMED", readings: ["AI loan spread 6.2pp", "non-AI 6.1pp", "differential +0.1pp"] }
+    reading_rule: "One dial widening = noise; the signal is the AI instruments widening while the Layer-1 controls stay calm, confirmed on a second dial."
+  short-interest:
+    tagline: "the crowd's positioning"
+    standfirst: "FINRA consolidated short interest across the vault, read for outliers and movers — not levels on low-short mega-caps. The data block is machine-refreshed; the prose is human-curated."
+    status: { state: nominal, label: "FINRA consolidated · 70/70 vault names", readings: ["settlement 2026-05-29", "Tier-4 sentiment", "~1–2wk lag"] }
+    reading_rule: "Signal is outliers & movers, not levels. CONFIRM = heavy short on a name the vault is cautious on; CHALLENGE = heavy short on a name the vault is bullish on (the high-value inverse divergence). Notable ≥ 8% · crowded ≥ 5 DTC · mover ± 15%."
+  forward-edge-tracker:
+    tagline: "consensus vs. vault view"
+    standfirst: "Where the vault's structural analysis differs from consensus — each entry pairs the consensus narrative with the vault view, a catalyst, and a falsifier. 'Consensus' is a structural narrative or observable mechanism, never price or analyst targets."
+    status: { state: nominal, label: "12 LIVE DIVERGENCES · 2 INVERSE", readings: ["AI 8", "Humanoid 2", "Defense 2"] }
+    reading_rule: "Every entry carries both a catalyst (what confirms it) and a falsifier (what kills it). An inverse divergence — the vault is LESS bullish than consensus — is the high-value flag."
+  hyperscaler-capex:
+    tagline: "the demand signal"
+    standfirst: "Projected AI-datacenter capex across the hyperscaler payers — the demand that feeds every chokepoint downstream. Tracks full-year guidance, raises/cuts, and the build-vs-rent split."
+    status: { state: nominal, label: "$640–720B BIG-4 2026", readings: ["~$700–770B incl. ORCL", "~$830B top-9 global", "~94% of OCF consumed"] }
+    reading_rule: "Watch the six disconfirming signals — any two firing together is the cycle turning. The neocloud-refi cell is the most sensitive canary."
+  china-exposure:
+    tagline: "the correlated risk"
+    standfirst: "China & Taiwan exposure across the vault on 8 axes — the risk is correlated, not diversifiable, and direction (inbound vs outbound control) matters more than magnitude. Concentration %s are Tier-3 — verify at primary; billing-address ≠ end-demand."
+    status: { state: watch, label: "CORRELATED · NOT DIVERSIFIABLE", readings: ["TSM = the apex node", "direction > magnitude"] }
+    reading_rule: "Naming what ISN'T exposed is itself the hedge. Direction matters more than magnitude — an inbound export-control hit reads differently from a China-revenue line."
+  what-could-go-wrong:
+    tagline: "the tripwire board"
+    standfirst: "Every thesis falsifier reconciled to one register entry, each with a canonical home and an observable tripwire. Tier 3/4 may NAME a risk; only primary sources FIRE a tripwire."
+    status: { state: nominal, label: "ALL TRIPWIRES NOMINAL", readings: ["0 / 16 FIRED", "as of 2026-06-12"] }
+    reading_rule: "A risk is only FIRED when a primary source confirms its tripwire condition — never on Tier-3/4 narrative alone. No price/valuation tripwires, ever."

@@ -1,0 +1,41 @@
+
+=== run 2026-06-23T023005 ===
+  hygiene: ok
+  calibration: ok
+  connections: ok
+  patterns: ok
+  freshness: ok
+  actions: 4
+    - 🔴 HYGIENE FAIL — a hard defect (index-sync / frontmatter). See Hygiene.
+    - ⚠️ unresolved wikilinks: [[CMI]], [[Canonical]], [[QCOM]] — forward-link or typo (check).
+    - 🔴 index out of sync with disk — run build_index.py (human-gated).
+    - 📥 new filings available to ingest — see Discovery › Freshness.
+
+  deep-research (loop):
+    scope ok (15 angles)
+      angle 1/15 Water intensity baselines per MW — gallo ..... ok
+      angle 2/15 Permit-denial and siting evidence — actu ..... ok
+      angle 3/15 Does the liquid-/immersion-cooling trans ..... ok
+      angle 4/15 Cooling-architecture roadmap by hypersca ..... ok
+      angle 5/15 Reclaimed/non-potable water siting as th ..... ok
+      angle 6/15 Closed-loop / zero-liquid-discharge equi ..... ok
+      angle 7/15 Atmospheric water generation economics — ..... ok
+      angle 8/15 Competitive map of AWG / sorbent players ..... ok
+      angle 9/15 Direct-to-chip and immersion cooling pur ..... ok
+      angle 10/15 Chokepoint-quality test on water — is sc ..... ok
+      angle 11/15 Regional/geographic concentration — whic ..... ok
+      angle 12/15 Regulatory & policy trajectory — water r ..... ok
+      angle 13/15 Demand sizing — water-related capex as a ..... ok
+      angle 14/15 Who captures value vs who just pays — ut ..... ok
+      angle 15/15 Falsifiers and bear case — evidence the  ..... ok
+      connection 1/10 companies-A            ..... ok
+      connection 2/10 companies-B            ..... ok
+      connection 3/10 themes-A               ..... ok
+      connection 4/10 themes-B               ..... ok
+      connection 5/10 chokepoints-confirm    ..... ok
+      connection 6/10 chokepoints-challenge  ..... ok
+      connection 7/10 trackers-relationships ..... ok
+      connection 8/10 thesis-frameworks      ..... ok
+      connection 9/10 prior-research         ..... FAILED (retries 1)
+      connection 10/10 coverage-gaps          ..... FAILED (retries 1)
+    throttled during connections — checkpointed; will resume on the next run

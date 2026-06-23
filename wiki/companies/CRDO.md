@@ -197,6 +197,21 @@ Customer concentration disclosure shows dramatic rotation YoY: Customer A (contr
 
 **Tier 1/Tier 2 framing gap monitoring.** 10-K customer concentration framing: "We derive the substantial majority of our revenue from a limited number of customers. We anticipate we will continue to derive a significant portion of our revenue from a limited number of customers for the foreseeable future." Q3 FY2026 call narrative: customer broadening with 3-4 customers >10%. Both filings aligned at Q3 FY2026 — the broadening narrative is consistent with 10-Q customer rotation table data. No framing gap observed.
 
+<!-- LATEST-ALPHA:START -->
+## ⚠️ Latest alpha — unverified, between-filings (as of 2026-06-22)
+
+*Tier 3/4 discovery — NOT canonical. Recent 8-K / 10-K / news, to verify at the next primary source. Full detail + sources: [discovery note](../../raw/notes/latest-alpha/2026-06-22_CRDO_recent-developments.md). Items graduate into canon (or are pruned) at the next 10-Q/10-K ingest.*
+
+- **★ FY2026 10-K filed (period ended May 2, 2026) + Q4/full-year results — this is a REFRESH-INGEST cue, not just alpha** (10-K, 2026-06-15; 8-K, 2026-06-01) — Tier 1 · the page is anchored at Q3 FY2026, so a full quarter + the annual report are uncovered. `[verify: ingest 10-K + Q4 call via the two-stop]`
+- **Record Q4 rev $437M (+157% YoY); FY2026 >$1.3B (3x), non-GAAP NI $662M (5x+)** (8-K/call, 2026-06-01) — Tier 1/2 · replaces the Q3-anchored snapshot. `[verify: actuals at 10-K]`
+- **FY2027 guide +80%+ YoY, led by a $600M+ optical ramp** (DSP + SIFO PIX + ZeroFlap) (call, 2026-06-01) — Tier 2 · bull driver AND a new single-product concentration vector. `[verify: optical-line breakdown + assumptions at call]`
+- **Two acquisitions: Dust Photonics (silicon photonics) + CoMira Solutions (protocol-IP team, Mar 2 2026)** — Tier 2/4 · pushes up the optical/CPO stack. ⚠️ CoMira is REAL and DISTINCT from the **Hyperlume** (MicroLED) deal already in canon — keep them separate at ingest. `[verify: deal terms at 10-K]`
+- **Honest counterweight — concentration unchanged** (Tier 1) · Q3 baseline ~87% top-two customers; the optical ramp may re-concentrate by product even as customers broaden. `[verify: FY2026 10-K concentration tables]`
+- Related: [[MRVL]] [[AVGO]] (optical DSP/PHY peers) · [[cpo-integration]] [[CXL-memory-disaggregation]] (silicon-photonics move + PCIe-retimer franchise)
+
+*Signal only (not weighted): high-expectations valuation — 51%+ net margin, 3x growth, guiding +80% again = low margin for error.*
+<!-- LATEST-ALPHA:END -->
+
 ## Change log
 
 - **2026-04-28 (Session 27 paired ingest with [[ANET]]):** Created from three sources: CRDO 10-K FY2025 (Tier 1, fiscal year ended May 3, 2025), CRDO 10-Q Q3 FY2026 (Tier 1, fiscal quarter ended January 31, 2026), CRDO Q3 FY2026 earnings call (Tier 2, March 2, 2026). First Layer 3 specialized designer DSP/PHY component company added since [[MRVL]] (Session 9) and [[AVGO]] (Session 10). Closes Chokepoint 2 (Optical DSP/PHY) third primary-source threshold per Session 25 hybrid architecture. Framework positioning confirmed: Layer 3 / photonics_tier 3 / Framework 2.6 bottleneck-tier with control-point aspirations (alongside [[MRVL]]). Confidence: MEDIUM-HIGH. Hyperlume acquisition naming corrected from kickoff "Comira" per primary source (CRDO Q3 FY2026 call) — kickoff hypothesis falsification documented; A6 8th pattern instance under (g) factual error scope. Customer concentration broadening trajectory documented (Customer A 67% FY2025 → 48% Q3 FY2026 contracting). Three new product categories (ZeroFlap optics, ALCs, OmniConnect / Weaver) detailed. Five-company control-point thread cross-reference includes [[ANET]] wikilink (Session 27 fifth-member completion). Structural co-location with [[ANET]] documented at Ethernet AI ecosystem level (no explicit reciprocal customer/supplier disclosure between CRDO and ANET — parallel-but-independent paired ingest per Stop 1 cross-company analytical product assessment).

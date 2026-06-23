@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>{{ page.title }} · Stocks Wiki</title>
+<title>{{ (page.title if page is defined and page else route_label) }} · Stocks Wiki</title>
 <link rel="stylesheet" href="{{ rel }}assets/fonts.css">
 <link rel="stylesheet" href="{{ rel }}assets/style.css">
 </head>
@@ -38,15 +38,18 @@
 
     <nav class="sb-nav">
       {% for g in nav_groups %}
-      <div class="nav-grp">
-        <div class="hd"><span>{{ g.label }}</span><span>{{ g['items']|length }}</span></div>
+      {% set gkey = g.label|lower %}
+      <div class="nav-grp {{ 'open' if gkey == active_tab else '' }}" data-grp="{{ gkey }}">
+        <button class="hd" type="button"><span class="chev">▾</span><span class="lab">{{ g.label }}</span><span class="ct">{{ g['items']|length }}</span></button>
+        <div class="nav-items">
         {% for it in g['items'] %}
-        <a class="nav-i {{ 'on' if it.slug == page.slug else '' }}" href="{{ rel }}{{ it.out }}" data-domain="{{ it.domain }}">
+        <a class="nav-i {{ 'on' if (page is defined and page and it.slug == page.slug) else '' }}" href="{{ rel }}{{ it.out }}" data-domain="{{ it.domain }}">
           <span class="dot" style="background:{{ it.domain_hex }}"></span>
           <span class="t">{{ it.title }}</span>
           {% if it.ticker %}<span class="tk">{{ it.ticker }}</span>{% endif %}
         </a>
         {% endfor %}
+        </div>
       </div>
       {% endfor %}
     </nav>
@@ -69,11 +72,12 @@
         <div class="meta hide-sm"><span class="live"></span><span id="clock">--:--:--</span><span class="u">UTC</span></div>
       </div>
       <div class="t-tape"><div class="tape-row" id="tape">{% for t in tape_items %}<span class="c"><span class="tk">{{ t.tk }}</span><span style="color:{{ t.hex }}">{{ t.meta }}</span></span>{% endfor %}{% for t in tape_items %}<span class="c"><span class="tk">{{ t.tk }}</span><span style="color:{{ t.hex }}">{{ t.meta }}</span></span>{% endfor %}</div></div>
-      <div class="t-fkeys">
-        <a class="fkey f1 {{ 'on' if fkey=='home' }}" href="{{ rel }}index.html"><span class="k">F1</span>HOME</a>
-        <a class="fkey f2 {{ 'on' if fkey=='company' }}" href="{{ rel }}index.html#companies"><span class="k">F2</span>COMPANY</a>
-        <a class="fkey f3 {{ 'on' if fkey=='chokepoint' }}" href="{{ rel }}index.html#chokepoints"><span class="k">F3</span>CHOKEPOINT</a>
-        <a class="fkey f4 {{ 'on' if fkey=='structure' }}" href="{{ rel }}structure.html"><span class="k">F4</span>STRUCTURE</a>
+      <div class="t-tabs">
+        {% for tb in section_tabs %}
+        <a class="s-tab {{ 'on' if tb.key == active_tab else '' }}" href="{{ rel }}{{ tb.out }}">
+          <span class="dot" style="background:{{ tb.color }}"></span>{{ tb.label }}{% if tb.count %}<span class="ct">{{ tb.count }}</span>{% endif %}
+        </a>
+        {% endfor %}
         <span class="tagline hide-sm">RESEARCH · NOT ADVICE</span>
       </div>
     </header>

@@ -1,0 +1,161 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="page-2col">
+  <div class="page-main tracker">
+    <div class="crumb"><a href="{{ rel }}index.html">home</a> / <a href="{{ rel }}trackers/index.html">trackers</a> / {{ page.slug }}</div>
+
+    <div class="head-row">
+      <span class="pill pill-tracker" style="border-color:{{ page.accent_hex }};color:{{ page.accent_hex }}">TRACKER</span>
+      {% if page.meta.tagline %}<span class="tagline-pill">{{ page.meta.tagline }}</span>{% endif %}
+      {% if page.last_updated %}<span class="updated">updated {{ page.last_updated }}</span>{% endif %}
+    </div>
+
+    <h1 class="page-title">{{ page.title }}</h1>
+    {% if page.meta.standfirst %}<p class="standfirst">{{ page.meta.standfirst }}</p>{% endif %}
+
+    {% if page.meta.status %}
+    <div class="status-banner state-{{ page.meta.status.state }}">
+      <span class="lamp"></span>
+      <span class="sb-label">{{ page.meta.status.label }}</span>
+      <span class="sb-readings">{% for r in page.meta.status.readings %}<span class="rd">{{ r }}</span>{% endfor %}</span>
+    </div>
+    {% endif %}
+
+    {% if page.meta.reading_rule %}
+    <div class="reading-rule"><span class="bang">!</span><span>{{ page.meta.reading_rule }}</span></div>
+    {% endif %}
+
+    {# ── HERO: tripwire register (what-could-go-wrong) ── #}
+    {% if page.hero and page.hero.kind == 'register' %}
+    <div class="register">
+      <div class="reg-banner state-{{ 'fired' if page.hero.fired else 'nominal' }}">
+        <span class="lamp"></span><b>{{ 'TRIPWIRE FIRED' if page.hero.fired else 'ALL TRIPWIRES NOMINAL' }}</b>
+        <span class="big">{{ page.hero.fired }} / {{ page.hero.total }} FIRED</span>
+      </div>
+      {% for g in page.hero.groups %}
+      <div class="reg-group">
+        <div class="reg-gh" style="color:{{ g.color }}"><span class="dot" style="background:{{ g.color }}"></span>{{ g.label }}<span class="ct">{{ g.entries|length }}</span></div>
+        {% for e in g.entries %}
+        <div class="reg-row state-{{ e.state }}">
+          <span class="reg-n">{{ e.n }}</span>
+          <div class="reg-body">
+            <div class="reg-title">{{ e.title }}</div>
+            {% if e.tripwire %}<div class="reg-trip"><span class="k">Tripwire:</span> {{ e.tripwire }}</div>{% endif %}
+            {% if e.home %}<div class="reg-home">canonical home · {% if e.home_out %}<a href="{{ e.home_out }}">{{ e.home }}</a>{% else %}{{ e.home }}{% endif %}</div>{% endif %}
+          </div>
+          <span class="reg-status state-{{ e.state }}"><span class="lamp"></span>{{ e.status }}</span>
+        </div>
+        {% endfor %}
+      </div>
+      {% endfor %}
+    </div>
+
+    {# ── HERO: 9-dial board (AI credit spread watch) ── #}
+    {% elif page.hero and page.hero.kind == 'dials' %}
+    <div class="dial-board">
+      {% for d in page.hero.dials %}
+      <div class="dial state-{{ d.state }}">
+        <div class="dial-hd"><span class="dn">DIAL {{ d.n }}</span><span class="lamp"></span><span class="dst">{{ d.status[:34] }}</span></div>
+        <div class="dial-name">{{ d.name }}</div>
+        <div class="dial-reading">{{ d.reading | safe }}</div>
+        <div class="dial-foot"><span class="asof">{{ d.asof }}</span>{% if d.flag %}<span class="flag {{ d.fcls }}">{{ d.flag }}</span>{% endif %}</div>
+      </div>
+      {% endfor %}
+    </div>
+
+    {# ── HERO: sortable screener (short interest) ── #}
+    {% elif page.hero and page.hero.kind == 'screener' %}
+    <div class="tbl-wrap"><table class="screener" id="screener">
+      <thead><tr>
+        <th data-k="ticker">Ticker</th><th data-k="shortInt">Short int</th>
+        <th class="sortable on" data-k="pct">% out</th><th class="sortable" data-k="dtc">Days-cover</th>
+        <th data-k="delta">Δ prior</th><th data-k="vaultRead">Vault read</th><th data-k="thesis">Thesis</th>
+      </tr></thead>
+      <tbody>
+      {% for r in page.hero.rows %}
+      <tr data-pct="{{ r.pct }}" data-dtc="{{ r.dtc }}">
+        <td class="tk">{% if r.out %}<a href="{{ r.out }}">{{ r.ticker }}</a>{% else %}{{ r.ticker }}{% endif %}</td>
+        <td class="num">{{ r.shortInt }}</td>
+        <td class="num">{{ r.pctOut }}</td>
+        <td class="num {{ 'crowded' if r.dtc >= 5 else '' }}">{{ r.daysCover }}</td>
+        <td class="num {{ 'rising' if r.rising else 'covering' }}">{{ r.delta }}</td>
+        <td><span class="vr vr-{{ r.vstate }}">{{ r.vaultRead }}</span></td>
+        <td class="th">{{ r.thesis }}</td>
+      </tr>
+      {% endfor %}
+      </tbody>
+    </table></div>
+
+    {# ── HERO: 7-payer matrix (hyperscaler capex) ── #}
+    {% elif page.hero and page.hero.kind == 'matrix' %}
+    <div class="tbl-wrap"><table class="matrix">
+      <thead><tr><th>Payer</th><th>FY2026 guidance</th><th>Latest-Q</th><th>In-house silicon</th><th>Backlog / RPO</th></tr></thead>
+      <tbody>
+      {% for r in page.hero.rows %}
+      <tr>
+        <td class="payer"><span class="kbar kind-{{ r.kind|lower }}"></span>{% if r.out %}<a href="{{ r.out }}">{{ r.payer }}</a>{% else %}{{ r.payer }}{% endif %} <span class="ktag kind-{{ r.kind|lower }}">{{ r.kind }}</span></td>
+        <td>{{ r.guidance }}</td><td class="num">{{ r.latestQ }}</td><td>{{ r.silicon }}</td><td class="num">{{ r.backlog }}</td>
+      </tr>
+      {% endfor %}
+      </tbody>
+    </table></div>
+
+    {# ── HERO: 8-axis heatmap (china & taiwan exposure) ── #}
+    {% elif page.hero and page.hero.kind == 'heatmap' %}
+    <div class="tbl-wrap"><table class="heatmap">
+      <thead><tr><th>Name</th><th>Mag</th>{% for a in ['A','B','C','D','E','F','G','H'] %}<th class="ax">{{ a }}</th>{% endfor %}<th>Evidence</th></tr></thead>
+      <tbody>
+      {% for r in page.hero.rows %}
+      <tr>
+        <td class="tk">{% if r.out %}<a href="{{ r.out }}">{{ r.ticker }}</a>{% else %}{{ r.ticker }}{% endif %}</td>
+        <td><span class="magb" style="background:{{ r.color }}1f;color:{{ r.color }};border-color:{{ r.color }}">{{ r.mag }}</span></td>
+        {% for c in r.cells %}<td class="hc"><span class="cell" style="background:{{ r.color if c.on else 'var(--inset)' }}"></span></td>{% endfor %}
+        <td class="ev">{{ r.evidence }}</td>
+      </tr>
+      {% endfor %}
+      </tbody>
+    </table></div>
+    <div class="axis-key">{% for a, lab in page.hero.axis_key %}<span class="ak"><b>{{ a }}</b> {{ lab }}</span>{% endfor %}</div>
+    <div class="mag-legend">{% for lab, col in page.hero.legend %}<span class="ml"><span class="sw" style="background:{{ col }}"></span>{{ lab }}</span>{% endfor %}</div>
+
+    {# ── HERO: consensus-vs-vault cards (forward edge) ── #}
+    {% elif page.hero and page.hero.kind == 'cards' %}
+    <div class="seg" id="fe-filter"><button class="on" data-f="all">ALL</button><button data-f="ai">AI</button><button data-f="hum">HUMANOID</button><button data-f="def">DEFENSE</button></div>
+    <div class="fe-cards">
+      {% for c in page.hero.cards %}
+      <div class="fe-card" data-domain="{{ c.domain }}">
+        <div class="fe-hd"><span class="dot" style="background:{{ c.hex }}"></span><span class="fe-title">{{ c.title }}</span>{% if c.inverse %}<span class="inv">INVERSE DIVERGENCE</span>{% endif %}</div>
+        {% if c.subjects %}<div class="fe-subj">{{ c.subjects }}{% if c.durability %} · <span class="dur">durability: {{ c.durability }}</span>{% endif %}</div>{% endif %}
+        <div class="fe-split">
+          <div class="fe-cons"><div class="l">Consensus</div>{{ c.consensus }}</div>
+          <div class="fe-vault"><div class="l">Vault view</div>{{ c.vaultView }}</div>
+        </div>
+        <div class="fe-foot">
+          {% if c.catalyst %}<div class="cat"><b>Catalyst →</b> {{ c.catalyst }}</div>{% endif %}
+          {% if c.falsifier %}<div class="fal"><b>Falsifier →</b> {{ c.falsifier }}</div>{% endif %}
+          {% if c.lastMoved %}<div class="lm">last moved · {{ c.lastMoved }}</div>{% endif %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    {% endif %}
+
+    {# ── supporting: the curated prose ── #}
+    <div class="prose tracker-prose">{{ page.body_html | safe }}</div>
+    <div class="disclaimer">Research, not advice — describes structure, never recommends. No buy/sell, no price targets, no position sizing.</div>
+  </div>
+
+  <aside class="rail">
+    {% if page.toc %}
+    <div class="lab">On this page</div>
+    <div class="toc">{% for h in page.toc %}<a href="#{{ h.id }}">{{ h.text }}</a>{% endfor %}</div>
+    {% endif %}
+    <div class="bl">
+      <div class="lab">Linked from {{ page.backlinks|length }}</div>
+      {% for b in page.backlinks %}
+      <a class="bl-chip" href="{{ rel }}{{ b.out }}"><span class="dot" style="background:{{ b.domain_hex }}"></span>{{ b.title }}<span class="tag">{{ b.type }}</span></a>
+      {% else %}<div style="font-size:11px;color:var(--text-3)">No inbound links yet.</div>{% endfor %}
+    </div>
+  </aside>
+</div>
+{% endblock %}

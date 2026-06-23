@@ -13,6 +13,10 @@
     try{localStorage.setItem('sw-theme',d);}catch(e){}
   });
   try{var st=localStorage.getItem('sw-theme');if(st){document.documentElement.setAttribute('data-theme',st);var l=document.getElementById('theme-label');l&&(l.textContent=st.toUpperCase());}}catch(e){}
+  // collapsible sidebar folders (VS-Code style) — header toggles its item list
+  document.querySelectorAll('.nav-grp .hd').forEach(function(h){
+    h.addEventListener('click',function(){h.parentNode.classList.toggle('open');});
+  });
   // domain filter (dim non-matching nav items)
   var chips=document.getElementById('domain-chips');
   chips&&chips.addEventListener('click',function(e){
@@ -23,6 +27,32 @@
       n.classList.toggle('dim', d!=='all' && n.getAttribute('data-domain')!==d);
     });
   });
+  // screener — sortable columns (% out / days-cover)
+  var scr=document.getElementById('screener');
+  if(scr){
+    scr.querySelectorAll('th.sortable').forEach(function(th){
+      th.addEventListener('click',function(){
+        var k=th.getAttribute('data-k'),asc=th.classList.contains('on')&&!th.classList.contains('asc');
+        scr.querySelectorAll('th').forEach(function(o){o.classList.remove('on','asc');});
+        th.classList.add('on');if(asc)th.classList.add('asc');
+        var tb=scr.tBodies[0],rows=[].slice.call(tb.rows);
+        rows.sort(function(a,b){var x=+a.getAttribute('data-'+k),y=+b.getAttribute('data-'+k);return asc?x-y:y-x;});
+        rows.forEach(function(r){tb.appendChild(r);});
+      });
+    });
+  }
+  // forward-edge — segmented domain filter
+  var fef=document.getElementById('fe-filter');
+  if(fef){
+    fef.addEventListener('click',function(e){
+      var b=e.target.closest('button');if(!b)return;
+      fef.querySelectorAll('button').forEach(function(x){x.classList.remove('on');});b.classList.add('on');
+      var f=b.getAttribute('data-f');
+      document.querySelectorAll('.fe-card').forEach(function(c){
+        c.classList.toggle('hide', f!=='all' && c.getAttribute('data-domain')!==f);
+      });
+    });
+  }
   // search index
   var IDX=[];
   fetch(window.SEARCH_URL).then(function(r){return r.json();}).then(function(j){IDX=j;}).catch(function(){});

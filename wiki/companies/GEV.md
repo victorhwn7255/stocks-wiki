@@ -458,6 +458,17 @@ Pattern: analyst silence on AI, SMR technical progress, and long-term demand sug
 
 **Cross-venue disclosure gap monitoring.** Q1 2026 disclosure consistent across 10-Q + earnings call. **NO cross-venue disclosure gap instance from GEV sources.** Convention count remains at 2 observations.
 
+<!-- LATEST-ALPHA:START -->
+## ⚠️ Latest alpha — unverified, between-filings (as of 2026-06-22)
+
+*Tier 3/4 discovery — NOT canonical. Recent news, to verify at the next primary source. Full detail + sources: [discovery note](../../raw/notes/twitter-intel/2026-06-22_wsj-bbg-gs_msft-cheaper-models-chevron-power.md). Items graduate into canon (or are pruned) at the next 10-Q/10-K/call ingest.*
+
+- **GEV named lead turbine supplier for "Project Kilby" — Chevron + Engine No. 1 gas plant powering a ~2.67 GW Microsoft West Texas data center** (news, 2026-06-22) — Tier 4 · *a majority of the power from GE Vernova turbines; seven 7HA units ordered; CAT supplies supplementary turbines.* Builds on the Jan-2025 Chevron / Engine No. 1 / GE Vernova "power foundries" partnership (up to 4 GW on 7HA turbines). First power 2028; Chevron FID by end-2026. `[verify: the seven-7HA order surfacing in GEV's datacenter backlog / named on the next earnings call (~late July Q2 2026)]`
+- **Honest nuance — still an *indirect* hyperscaler link** (Tier 4) · GEV's direct customer is Chevron/Engine No. 1, with Microsoft as end-customer — so this does **not** by itself trip GEV's Tier-2 promotion trigger (named hyperscaler customer). `[verify: whether GEV names the end-customer/project at primary]`
+- Related: [[BTM-grid-bypass-workaround]] (GEV Modality 3 — co-located/utility-scale gas generation) · [[MSFT]] · Chevron / Engine No. 1 / Project Kilby (off-vault)
+
+<!-- LATEST-ALPHA:END -->
+
 ## Change log
 
 - **2026-05-26 (in-place cross-vault adjacency note per Vic instruction; not counted as separate session):** 4-Tier-3-report power-semi sub-domain substantiation reinforces GEV utility-scale generation + Prolec GE transformer positioning at Tier 3 binding-constraint ranking per `raw/research/800VHDC-power-semis-for-AIDC.md` 8-bottleneck framework (#1 grid + #2 transformers + #5 on-site generation/gas turbines/SMRs binding scope; gas turbine backlogs through 2028+; SMR pipeline 25 GW → 45 GW conditional offtake April 2026). GEV cross-vault positioning at sub-domain commercial-inflection cycle UPSTREAM constraint-source preserved at Section 12 [[power-semis]] theme framing. S37 baseline ~70-session staleness flagged in Tier 3 refresh planning at S99+ priority decision. Cross-vault adjacency only; no content edits.

@@ -43,6 +43,7 @@ list rotates day by day).
 *(none yet — the first report lands after the next Tue–Sat 02:30 run)*
 
 ## Proposed by automation (for Vic to promote → Pending, or reject)
+- **Montage interconnect mix** — how much of the RMB 5.139B interconnect revenue is CXL (MXC) vs DDR5 RCD + PCIe retimers? (Reports flag the growth is the latter.) — open question on [[CXL-memory-disaggregation]], 2026-06-23
 - Is the **ARM + CAT + ENS + IBIDEN + MURATA** cluster an investable cross-vault chokepoint / theme, and who owns the value? — connection-finder cluster, 2026-06-20
 - **Copper** — does it warrant a vault page (the uncovered #4 chokepoint), and is the durable value the mine/lead-time or nothing investable? — open question on [[commodity-supercycle-chokepoints]], 2026-06-20
 - **AVGO backstop ceiling at the Q3 FY2026 10-Q (~September 2026).** Does $29B grow as later tranches deploy? Does any "drawn" or impairment language appear? (Shared trigger with [[what-could-go-wrong]] Entry 5.) — open question on [[AI-buildout-who-holds-the-risk]], 2026-06-17
