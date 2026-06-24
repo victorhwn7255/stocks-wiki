@@ -111,7 +111,7 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` Section 3
 | [cpo-integration](wiki/chokepoints/cpo-integration.md) | NVDA, AVGO, MRVL, CRDO, LITE, COHR, AAOI, TSM, FN, ALAB, ANET, TSEM, SIVE, SOI | 2026-05-29 |
 | [HALEU-fuel-chokepoint](wiki/chokepoints/HALEU-fuel-chokepoint.md) | LEU, BWXT, CCJ, BE, GEV, CEG | 2026-06-14 |
 | [BTM-grid-bypass-workaround](wiki/chokepoints/BTM-grid-bypass-workaround.md) | BE, FCEL, GEV, CAT, CEG, CORZ | 2026-06-15 |
-| [transformer-supply](wiki/chokepoints/transformer-supply.md) | ETN, GEV, NVDA, FLEX | 2026-05-29 |
+| [transformer-supply](wiki/chokepoints/transformer-supply.md) | ETN, GEV, NVDA, FLEX | 2026-06-24 |
 | [HBM-oligopoly](wiki/chokepoints/HBM-oligopoly.md) | ONTO, COHU, AEHR, TSM, MKSI, MU | 2026-05-29 |
 | [MLCC-oligopoly](wiki/chokepoints/MLCC-oligopoly.md) | NVDA, MURATA, TAIYO | 2026-06-19 |
 | [liquid-cooling](wiki/chokepoints/liquid-cooling.md) | VRT, ETN, NVT, MOD, FLEX, COHR, ANET, AAON, NVDA, SANHUA, TUOPU | 2026-06-06 |
