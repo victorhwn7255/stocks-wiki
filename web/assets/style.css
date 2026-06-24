@@ -434,3 +434,54 @@ th.sortable.asc.on::after{content:" ▴"}
   .dial-board{grid-template-columns:1fr}
   .axis-key{grid-template-columns:1fr}
 }
+
+/* ═══ Structure page — board · value-chain map · connection graph ═══ */
+.structure{max-width:1100px;margin:0 auto;animation:fadeUp .35s ease}
+.struct-h1{font-size:25px;font-weight:600;margin:8px 0 12px}
+.struct-tabs{margin:18px 0 16px}
+.struct-view{margin-bottom:18px}
+.struct-view.hide{display:none}
+.board-caption{font-size:12px;color:var(--text-3);margin-bottom:14px;line-height:1.5}
+.board-caption b{color:var(--text-2)}
+
+/* view 1: durability board */
+.dboard{border:1px solid var(--border)}
+.dboard-row{display:flex;align-items:center;gap:11px;padding:11px 13px;border-bottom:1px solid var(--border);font-size:13px}
+.dboard-row:last-child{border-bottom:0}
+.dboard-row:hover{background:var(--surface-2)}
+.dboard-row .rk{font-size:11px;color:var(--text-3);width:18px;font-variant-numeric:tabular-nums}
+.dboard-row .gbar{width:4px;height:22px;flex:none}
+.dboard-row .nm{flex:1;color:var(--text);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.dboard-row .grade{font-size:10px;text-transform:uppercase;letter-spacing:.4px;width:88px;text-align:right}
+.dboard-row .durtrack{width:120px;height:7px;background:var(--inset);flex:none;border:1px solid var(--border)}
+.dboard-row .durfill{display:block;height:100%}
+.dboard-row .durn{font-size:12px;color:var(--text-2);width:26px;text-align:right;font-variant-numeric:tabular-nums}
+.grade-legend.row{flex-direction:row;flex-wrap:wrap;gap:16px;padding:12px 2px}
+
+/* view 2: value-chain map */
+.lrow{display:flex;gap:12px;align-items:flex-start;background:var(--surface);border:1px solid var(--border);padding:12px 13px;margin-bottom:8px}
+.lbadge{font-size:13px;font-weight:700;padding:5px 9px;border:1px solid;flex:none;min-width:34px;text-align:center}
+.lbody{flex:1;min-width:0}
+.ltitle{font-size:12.5px;font-weight:600;text-transform:uppercase;letter-spacing:.4px;color:var(--text-2);margin-bottom:9px}
+.ltitle .lct{color:var(--text-3);font-weight:400;margin-left:5px}
+.lchips{display:flex;flex-wrap:wrap;gap:5px}
+.lchip{display:inline-flex;align-items:center;gap:5px;border:1px solid var(--border);background:var(--inset);padding:3px 7px;font-size:11px;color:var(--text-2)}
+.lchip:hover{border-color:var(--border-2);color:var(--text)}
+.lchip .dot{width:6px;height:6px;flex:none}
+
+/* view 3: connection graph */
+.graph-wrap{border:1px solid var(--border);background:var(--inset);overflow:hidden}
+#cgraph{display:block;width:100%;height:auto}
+.gedge{stroke:var(--border-2);stroke-width:1;stroke-opacity:.5}
+.gnode{cursor:pointer}
+.gnode circle{transition:fill-opacity .12s}
+.gnode:hover circle{fill-opacity:1}
+.gnode text{font-family:'IBM Plex Mono',monospace;pointer-events:none}
+.graph-legend{display:flex;flex-wrap:wrap;gap:14px;margin-top:10px;font-size:10px;color:var(--text-3)}
+.graph-legend .gl{display:flex;align-items:center;gap:6px}
+.graph-legend .sw{width:10px;height:10px}
+
+@media(max-width:640px){
+  .dboard-row .grade{display:none}
+  .dboard-row .durtrack{width:60px}
+}

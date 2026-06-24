@@ -1,7 +1,7 @@
 ---
 type: chokepoint
 tickers: [NVDA, AVGO, MRVL, CRDO, LITE, COHR, AAOI, TSM, FN, ALAB, ANET, TSEM, SIVE, SOI]
-last_updated: 2026-06-10
+last_updated: 2026-06-24
 ---
 
 # CPO integration
@@ -188,6 +188,8 @@ Per Murphy bifurcation thesis: scale-out CPO is "relatively limited" — pluggab
 ### CRDO — Layer 3 bottleneck-tier with control-point aspirations; OmniConnect MicroLED near-package optics displacement architecture
 
 [[CRDO]] is the only vault Layer 3 company positioning AGAINST CPO via alternative architecture. Cross-reference [[optical-dsp-phy-supply]] CRDO positioning section for full Cardinal DSP + ZeroFlap + OmniConnect mechanics.
+
+**FY2026 refresh (S171): CRDO's stance is no longer purely anti-CPO.** The **DustPhotonics** acquisition (silicon-photonics PIC; closed late-May 2026 — a post-year-end subsequent event) gives it a **"direct path to CPO and NPO architectures"** (Brennan, Q4 FY2026 call), with **initial CPO/NPO revenue expected FY2028** and the SiPho PIC integrated into the ZeroFlap platform. So CRDO now *straddles* the question — displacement via OmniConnect/MicroLED **AND** participation via SiPho — hybridizing the Layer-3 "displacement-claimant" profile below. See [[CRDO]].
 
 **OmniConnect / Weaver gearbox displacement framing.** Brennan Q3 FY2026 call: future OmniConnect gearboxes targeting "near package optics with MicroLED that will address the reliability, serviceability, and availability pitfalls of current CPO solutions" (rhetorical; over-claim mode CRDO-side displacement framing). Direct architectural challenge to CPO integration approach.
 
@@ -495,6 +497,7 @@ Three Layer 1 CPO timing scenarios preserved without forced winner attribution. 
 
 ## Change log
 
+- **2026-06-24 (S171 — [[CRDO]] FY2026 refresh propagation):** Updated the CRDO section — the FY2026 [[CRDO]] refresh shows its CPO stance **hybridizing**: the DustPhotonics SiPho-PIC acquisition (closed late-May 2026) adds a **"direct path to CPO and NPO architectures"** (initial revenue FY2028), so CRDO now straddles displacement (OmniConnect/MicroLED) AND participation (SiPho) rather than purely displacing. Layer-3 four-variant "displacement-claimant" profile noted as evolving. last_updated 2026-06-10 → 2026-06-24.
 - **2026-06-10 (S150):** Added Open questions 7 (hyperscaler route attributions — Google pluggable / Meta+Amazon NPO / NVDA CPO, Tier-3-attributed, verify at primary) + 8 (AMD/GlobalFoundries/SIVE non-NVIDIA CPO adoption vector — would loosen the NVDA-conditional demand framing). Both surfaced via April–May 2026 video intel notes; pre-registered as verification triggers, not facts.
 
 - **2026-05-29 (MRVL Q1 FY2027 refresh propagation):** Added "Q1 FY2027 update" to the MRVL per-company section: Celestial PPA finalized $3.5B + consolidated (framing gap narrowing); scale-up optics FY2028 to "more than double" the prior ~$150M outlook; 3rd-gen 6.4T light engine + "selected by 1 hyperscaler" for XPU scale-up; new Polariton plasmonics acquisition (>1 THz, 3.2T roadmap; call-only); NVIDIA's $2.0B convertible-preferred stake in MRVL + NVLink Fusion (second NVDA equity-plus-partnership at CPO scope; [[NVDA-platform-integration]] Mode 4); bifurcation → scale-across trifurcation. No tickers change (MRVL already a participant). last_updated 2026-05-28 → 2026-05-29.

@@ -25,6 +25,10 @@ from jinja2 import Environment, FileSystemLoader, select_autoescape  # noqa: E40
 
 DOMAIN_HEX = {"ai": "#2f9bff", "def": "#f7a21b", "hum": "#4defc4", "mat": "#ff8a3c", "none": "#646c75"}
 LAYER_SCALE = ["#5ab0ff", "#4defc4", "#9bd64f", "#f7a21b", "#ff7a3c", "#ff5a4a"]  # L1..L6
+LAYER_TITLES = ["Platform definers", "Foundry / fabrication", "Components / IP",
+                "Systems / equipment", "Infrastructure / power", "Raw materials"]
+GRAPH_HEX = {"ai": "#2f9bff", "def": "#f7a21b", "hum": "#4defc4", "mat": "#ff8a3c",
+             "choke": "#ff4d42", "theme": "#a98bf5", "tracker": "#ff8a3c", "none": "#646c75"}
 GROUP_ORDER = [("companies", "Companies", "company"), ("chokepoints", "Chokepoints", "chokepoint"),
                ("themes", "Themes", "theme"), ("trackers", "Trackers", "tracker"),
                ("relationships", "Relationships", "relationship"), ("thesis", "Thesis", "thesis"),
@@ -54,11 +58,15 @@ AI_TIERS = ("photonics_tier", "energy_power_tier", "equipment_tier", "materials_
 
 
 def layer_ints(layer):
-    """Layer can be an int (1), a straddle string ('1, 2'), or 'outside' — return the ints."""
+    """Layer can be an int (1), a comma straddle ('1, 2'), a hyphen RANGE ('4-6' = 4,5,6),
+    or 'outside' — return the ints. A hyphen range is inclusive (else '4-6' drops layer 5)."""
     if isinstance(layer, int):
         return [layer]
     if isinstance(layer, str):
-        return [int(x) for x in re.findall(r"\d+", layer)]
+        nums = [int(x) for x in re.findall(r"\d+", layer)]
+        if "-" in layer and len(nums) == 2 and nums[0] < nums[1]:
+            return list(range(nums[0], nums[1] + 1))
+        return nums
     return []
 
 
@@ -735,6 +743,65 @@ def main():
                        sec_key=gkey, sec_label=label, sec_color=SECTION_COLOR.get(gkey, "#f7a21b"),
                        sec_desc=smeta.get("desc", ""), sec_count=len(sitems), sec_items=sitems))
             (dist / gkey / "index.html").write_text(html)
+
+        # ── Structure page (dist/structure.html) — 3 views: board · layer map · graph ──
+        # View 1: chokepoint board (already resolved above as `board`, ranked by durability).
+        # View 2: value-chain map — group companies by layer 1–6.
+        layer_map = []
+        for L in range(1, 7):
+            chips = []
+            for slug, rec in pages.items():
+                if rec["type"] != "company":
+                    continue
+                if L in layer_ints(rec["fm"].get("layer")):
+                    tk = rec["tickers"][0] if rec["tickers"] else slug
+                    chips.append({"tk": tk, "out": rec["out"], "hex": DOMAIN_HEX[rec["domain"]]})
+            chips.sort(key=lambda c: c["tk"])
+            layer_map.append({"n": L, "color": LAYER_SCALE[L - 1],
+                              "title": LAYER_TITLES[L - 1], "chips": chips})
+        # View 3: connection graph — center on the highest-backlink node, 2 rings of neighbors.
+        deg = {s: len(set(r["backlinks"])) for s, r in pages.items()}
+        # every ranking carries the slug as a deterministic tiebreaker (set iteration order is
+        # hash-randomized per process, so degree-ties alone would make the build non-deterministic).
+        center = max(deg, key=lambda s: (deg[s], s)) if deg else "NVDA"
+        cset = set(pages[center]["wikilinks"]) | set(pages[center]["backlinks"])
+        ring1 = sorted([s for s in cset if s in pages and s != center],
+                       key=lambda s: (-deg.get(s, 0), s))[:11]
+        r1set = set(ring1)
+        cand2 = set()
+        for s in ring1:
+            cand2 |= set(pages[s]["wikilinks"]) | set(pages[s]["backlinks"])
+        ring2 = sorted([s for s in cand2 if s in pages and s != center and s not in r1set],
+                       key=lambda s: (-deg.get(s, 0), s))[:14]
+        placed = [center] + ring1 + ring2
+        pset = set(placed)
+        ringof = {center: 0, **{s: 1 for s in ring1}, **{s: 2 for s in ring2}}
+        DOM_OF_TYPE = {"chokepoint": "choke", "theme": "theme", "tracker": "tracker"}
+        gnodes = []
+        for s in placed:
+            r = pages[s]
+            dom = DOM_OF_TYPE.get(r["type"], r["domain"])
+            # companies → their own ticker; chokepoints/themes/trackers → their own slug
+            # (their tickers[0] is a RELATED company, which would mislabel + collide on the graph)
+            label = (r["tickers"][0] if r["type"] == "company" and r["tickers"] else s)
+            gnodes.append({"id": s, "label": label[:16],
+                           "ring": ringof[s], "deg": deg.get(s, 0), "type": r["type"],
+                           "hex": GRAPH_HEX.get(dom, DOMAIN_HEX.get(dom, "#646c75")),
+                           "out": r["out"]})
+        # keep the hub-and-spoke readable: draw an edge only if at least one endpoint is the
+        # center or ring1 — this drops the ring2↔ring2 cross-links that turn it into a hairball.
+        hub = {center} | r1set
+        gedges = []
+        seen_e = set()
+        for s in placed:                                  # placed is an ordered list (deterministic)
+            for t in sorted(set(pages[s]["wikilinks"])):  # sort targets so edge order is stable
+                if t in pset and t != s and (t, s) not in seen_e and (s in hub or t in hub):
+                    seen_e.add((s, t)); gedges.append({"a": s, "b": t})
+        html = env.get_template("structure.html").render(
+            **dict(shared, rel="", route_label="STRUCTURE", route_kind="analytics", active_tab="structure",
+                   board=board, grade_legend=grade_legend, layer_map=layer_map,
+                   graph={"nodes": gnodes, "edges": gedges, "center": center}))
+        (dist / "structure.html").write_text(html)
 
     # assets + search index
     adst = dist / "assets"; adst.mkdir(parents=True, exist_ok=True)

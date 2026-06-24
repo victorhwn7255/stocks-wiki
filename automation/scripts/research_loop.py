@@ -10,8 +10,13 @@ this runs a PACED loop of small, flat `claude -p` calls:
     scope (topic -> angles)  ->  per-angle research + verify (peak 2 at a time)  ->  synthesis
 
 Properties that make it headless-reliable:
-  - LOW CONCURRENCY (max_concurrent, default 2) + pacing  -> never bursts into the throttle.
-  - CHECKPOINT + RESUME via a per-run state.json          -> a throttle PAUSES, never wipes.
+  - LOW CONCURRENCY (max_concurrent, default 2) + pacing  -> never bursts into the concurrency throttle.
+  - WAIT-THROUGH the 5-hour Max usage cap (wait_through): on a usage-cap throttle it SLEEPS until
+    the cap resets and CONTINUES (the interactive behavior, headless), bounded by a hard deadline
+    (e.g. 06:00) -> the run COMPLETES in one go instead of spanning nights. `caffeinate` holds the
+    Mac awake for the whole run so a multi-hour wait can't die to sleep.
+  - CHECKPOINT + RESUME via a per-run state.json          -> crash-insurance + the deadline fallback
+    (if the cap can't clear before the deadline, it checkpoints and the next run resumes).
   - READ-ONLY AGENTS (Read/Grep/Glob/WebSearch/WebFetch)  -> every disk write is done by THIS
     runner, never by an agent; agents only emit text to stdout. No Write/Edit/Agent/Workflow.
   - GRACEFUL DEGRADATION                                   -> synthesis runs on whatever angles
@@ -25,12 +30,13 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import re
 import subprocess
 import sys
 import time
 from concurrent.futures import ThreadPoolExecutor
-from datetime import datetime
+from datetime import datetime, timedelta
 from pathlib import Path
 
 AUTOMATION = Path(__file__).resolve().parent.parent
@@ -43,9 +49,19 @@ RUNS_DIR = AUTOMATION / "research-runs"
 # single flat agent that cannot fan out a swarm.
 RESEARCH_TOOLS = "Read,Grep,Glob,WebSearch,WebFetch"
 
-# Throttle / rate-limit markers in claude output. On these we checkpoint + stop (resume later)
-# rather than burn retries — the 5-hour window resets and the next run continues.
+# Throttle / rate-limit markers in claude output. On these we WAIT for the 5-hour Max window to
+# reset and CONTINUE (the interactive-mode behavior, headless) — bounded by a hard wall-clock
+# deadline (_WAIT_DEADLINE, e.g. 06:00). We only checkpoint + stop if the deadline is reached
+# before the cap clears (the fallback) — never as the first move. (Old behavior: bail immediately
+# and resume next run; Vic, 2026-06-24: the run must COMPLETE in one go, not span nights.)
 _THROTTLE_MARKERS = ("session limit", "rate limit", "usage limit", "resets ")
+
+# --- Wait-through config (set by run(); module-level so every flat call site reads it) ---
+_WAIT_THROUGH = False                 # when True, sleep-through a usage cap instead of bailing
+_WAIT_DEADLINE: "datetime | None" = None  # hard wall-clock stop; past it we checkpoint + resume
+_LOG = (lambda *a, **k: None)         # run() points this at its logger
+_POLL_SECONDS = 600                   # if no reset time is parseable, re-probe every 10 min
+_RESET_BUFFER = 90                    # wait this many extra seconds past a parsed reset time
 
 # Fallback angle template (the vault's chokepoint-investability lens) if the scope call fails.
 _FALLBACK_ANGLES = [
@@ -76,6 +92,51 @@ def _throttled(text: str) -> bool:
     return any(m in low for m in _THROTTLE_MARKERS)
 
 
+def _parse_reset_dt(text: str, now: datetime) -> "datetime | None":
+    """Best-effort parse of a 'resets at <time>' clock time from a throttle message into the
+    NEXT wall-clock datetime that matches it. Returns None if nothing parseable (caller polls)."""
+    low = (text or "").lower()
+    m = re.search(r"reset[s]?\s*(?:at|by)?\s*(\d{1,2})(?::(\d{2}))?\s*(am|pm)?", low)
+    if not m:
+        return None
+    hh, mm, ap = int(m.group(1)), int(m.group(2) or 0), m.group(3)
+    if ap == "pm" and hh != 12:
+        hh += 12
+    if ap == "am" and hh == 12:
+        hh = 0
+    if hh > 23 or mm > 59:
+        return None
+    cand = now.replace(hour=hh, minute=mm, second=0, microsecond=0)
+    if cand <= now:
+        cand += timedelta(days=1)
+    return cand
+
+
+def _wait_for_reset(throttle_text: str) -> bool:
+    """A usage-cap throttle was hit. Sleep until the cap resets, then signal a retry — UNLESS the
+    hard deadline (_WAIT_DEADLINE) would be passed first, in which case give up so the caller
+    checkpoints and resumes next run. Returns True (slept → retry) or False (deadline forbids)."""
+    if not _WAIT_THROUGH or _WAIT_DEADLINE is None:
+        return False
+    now = _now()
+    if now >= _WAIT_DEADLINE:
+        _LOG(f"  usage cap hit at/after the {_WAIT_DEADLINE:%H:%M} deadline — checkpointing (resume next run)")
+        return False
+    reset_dt = _parse_reset_dt(throttle_text, now)
+    if reset_dt is not None and reset_dt > _WAIT_DEADLINE:
+        _LOG(f"  usage cap will not reset until ~{reset_dt:%H:%M}, past the {_WAIT_DEADLINE:%H:%M} "
+             f"deadline — checkpointing (resume next run)")
+        return False
+    wake = (reset_dt + timedelta(seconds=_RESET_BUFFER)) if reset_dt else (now + timedelta(seconds=_POLL_SECONDS))
+    wake = min(wake, _WAIT_DEADLINE)
+    secs = max(0, int((wake - now).total_seconds()))
+    snippet = " ".join((throttle_text or "").split())[:160]
+    _LOG(f"  usage cap hit — waiting {secs // 60}m{secs % 60:02d}s (until ~{wake:%H:%M}), then "
+         f"continuing | msg: {snippet}")
+    time.sleep(secs)
+    return _now() < _WAIT_DEADLINE
+
+
 # ---------------------------------------------------------------------------
 # One flat, read-only claude -p call
 # ---------------------------------------------------------------------------
@@ -87,8 +148,13 @@ def _claude(prompt: str, claude_bin: str, timeout: int) -> dict:
         p = subprocess.run(cmd, cwd=str(VAULT_ROOT), capture_output=True,
                            text=True, timeout=timeout)
         out, err = p.stdout or "", p.stderr or ""
-        return {"ok": p.returncode == 0 and bool(out.strip()),
-                "out": out, "err": err, "throttled": _throttled(out + err)}
+        ok = p.returncode == 0 and bool(out.strip())
+        # A throttle is ONLY a FAILED call. A successful, non-empty result is NEVER a throttle even if
+        # its CONTENT mentions "rate limit" / "usage limit" / "reset" — research angles legitimately
+        # discuss those words. (2026-06-24: angle 7's findings about share "reset" tripped a bogus
+        # 10-min wait-through on its OWN output — the real reason the loop kept looking 'stuck'.)
+        return {"ok": ok, "out": out, "err": err,
+                "throttled": (not ok) and _throttled(out + err)}
     except subprocess.TimeoutExpired:
         return {"ok": False, "out": "", "err": f"timeout {timeout}s", "throttled": False}
     except Exception as e:  # noqa: BLE001
@@ -96,22 +162,33 @@ def _claude(prompt: str, claude_bin: str, timeout: int) -> dict:
 
 
 def _call_with_retry(prompt: str, claude_bin: str, timeout: int, max_retries: int) -> dict:
-    """Backoff-retry a call on TRANSIENT failure. A hard throttle returns immediately
-    (don't waste retries — the caller checkpoints and stops to resume later).
-    Returns {ok, text, throttled, calls}."""
+    """Run a flat call, riding through throttles and retrying transient failures.
+    - USAGE-CAP throttle: sleep until the cap resets, then retry (bounded by _WAIT_DEADLINE).
+      Only if the deadline forbids waiting do we return throttled (caller checkpoints + resumes).
+    - TRANSIENT failure (empty / timeout / non-zero, not a throttle): backoff-retry up to max_retries.
+    Returns {ok, text, throttled, calls, err}. `err` carries the failure reason (live-logged) so a
+    failed angle/connection is never a mystery."""
     calls = 0
     backoff = 60
-    for attempt in range(max_retries + 1):
+    transient = 0
+    last_err = ""
+    while True:
         r = _claude(prompt, claude_bin, timeout)
         calls += 1
         if r["throttled"]:
-            return {"ok": False, "text": "", "throttled": True, "calls": calls}
+            if _wait_for_reset(r["out"] + r["err"]):
+                continue  # cap should be clear now — retry the SAME call, no retry budget spent
+            return {"ok": False, "text": "", "throttled": True, "calls": calls, "err": "usage cap (deadline reached)"}
         if r["ok"]:
-            return {"ok": True, "text": r["out"].strip(), "throttled": False, "calls": calls}
-        if attempt < max_retries:
+            return {"ok": True, "text": r["out"].strip(), "throttled": False, "calls": calls, "err": ""}
+        last_err = (r["err"] or "empty output / non-zero exit").strip().replace("\n", " ")
+        if transient < max_retries:
+            transient += 1
+            _LOG(f"  · transient fail ({last_err[:100]}) — retry {transient}/{max_retries} in {backoff}s")
             time.sleep(backoff)
             backoff = min(backoff * 3, 300)
-    return {"ok": False, "text": "", "throttled": False, "calls": calls}
+            continue
+        return {"ok": False, "text": "", "throttled": False, "calls": calls, "err": last_err}
 
 
 # ---------------------------------------------------------------------------
@@ -120,7 +197,7 @@ def _call_with_retry(prompt: str, claude_bin: str, timeout: int, max_retries: in
 def _scope(topic: str, claude_bin: str, timeout: int, max_retries: int) -> tuple[list[str], int]:
     prompt = (
         f"You are scoping a research plan. Topic:\n«{topic}»\n\n"
-        "Output ONLY a JSON array of EXACTLY 15 focused, DISTINCT, non-overlapping research angles a "
+        "Output ONLY a JSON array of EXACTLY 10 focused, DISTINCT, non-overlapping research angles a "
         "stock analyst would investigate to answer it (value chain, chokepoint quality, competitors, "
         "demand, who-captures-value, risks/falsifiers, etc.). "
         "Never pad with overlapping angles to hit the count; 15 means 15 genuinely distinct facets. "
@@ -134,7 +211,7 @@ def _scope(topic: str, claude_bin: str, timeout: int, max_retries: int) -> tuple
         return [], r["calls"]
     try:
         angles = [str(a).strip() for a in json.loads(m.group(0)) if str(a).strip()]
-        return angles[:15], r["calls"]
+        return angles[:10], r["calls"]
     except (json.JSONDecodeError, ValueError):
         return [], r["calls"]
 
@@ -146,15 +223,19 @@ def _angle_work(topic: str, angle: str, claude_bin: str, timeout: int,
         f"Research ONLY this angle of the topic «{topic}»:\n«{angle}»\n\n"
         "Do focused web searches (5-8 reputable sources; prefer primary/company/industry over "
         "blogs). Tag each claim Tier 3 (independent analysis) or Tier 4 (news). Write 300-500 "
-        "words of findings with inline source links. Output ONLY the findings markdown — no "
-        "preamble. Discovery-only: write nothing to disk."
+        "words of findings with inline source links. Be TWO-SIDED: for every load-bearing claim, "
+        "also surface the strongest DISCONFIRMING evidence or counter-case (don't write a one-sided "
+        "bull pitch). End with two lines: 'Key number:' (the single most load-bearing figure + its "
+        "source + a confidence tag high/med/low) and 'Falsifier:' (the concrete evidence that would "
+        "prove this angle's thesis WRONG). Output ONLY the findings markdown — no preamble. "
+        "Discovery-only: write nothing to disk."
     )
     r = _call_with_retry(research, claude_bin, timeout, max_retries)
     calls = r["calls"]
     if r["throttled"]:
-        return {"ok": False, "text": "", "throttled": True, "calls": calls}
+        return {"ok": False, "text": "", "throttled": True, "calls": calls, "err": r.get("err", "")}
     if not r["ok"]:
-        return {"ok": False, "text": "", "throttled": False, "calls": calls}
+        return {"ok": False, "text": "", "throttled": False, "calls": calls, "err": r.get("err", "")}
     text = r["text"]
     if verify:
         vprompt = (
@@ -174,11 +255,15 @@ def _angle_work(topic: str, angle: str, claude_bin: str, timeout: int,
 
 
 # ---------------------------------------------------------------------------
-# CONNECTIONS — 10 grounded agents tie the findings to the existing vault
-# (and surface what the vault is MISSING). Each greps its slice; honest-verdict.
+# CONNECTIONS — 8 grounded agents tie the findings to the existing vault canon.
+# Each greps its slice; honest-verdict. (Trimmed from 10: dropped prior-research +
+# coverage-gaps 2026-06-23 — the two weakest/heaviest agents, which were also the ones
+# repeatedly throttling at the end of the run. They cross-reference the research findings,
+# they don't produce research, so the report's depth is unaffected — only its breadth of
+# vault cross-linking narrows slightly.)
 # ---------------------------------------------------------------------------
 def _connection_specs(vault_root: Path) -> list[dict]:
-    """The fixed 10 connection-agent specs. Company/theme corpora are split in half
+    """The fixed 8 connection-agent specs. Company/theme corpora are split in half
     deterministically (sorted, halved) so the two agents in each pair cover different pages."""
     comps = sorted(p.stem for p in (vault_root / "wiki" / "companies").glob("*.md"))
     ch = len(comps) // 2
@@ -216,15 +301,6 @@ def _connection_specs(vault_root: Path) -> list[dict]:
                   "(raw/notes/frameworks*.md)",
          "lens": "does this FIT / EXTEND / CHALLENGE the vault's worldview — the thesis or the "
                  "analytical scaffolding (value-capture layers, chokepoint-quality gradient, tier frameworks)?"},
-        {"label": "prior-research", "dir": "raw/research/",
-         "scope": "the Tier-3 anchors and self-research reports under raw/research/ (incl. raw/research/self-research/)",
-         "lens": "do the findings OVERLAP / EXTEND / CONTRADICT any prior research already saved here?",
-         "tag": "Both sides are UNVERIFIED discovery material — tag EVERY link `discovery↔discovery "
-                "(unverified)`; it is weaker than a connection to canon."},
-        {"label": "coverage-gaps", "dir": "index.md + wiki/",
-         "scope": "the whole vault catalog (index.md) and all of wiki/",
-         "lens": "the ABSENCE check — which MAJOR entities/claims/sub-sectors in the findings have NO "
-                 "vault page anywhere → candidate NEW pages (companies, chokepoints, or themes the vault is missing)"},
     ]
 
 
@@ -253,7 +329,8 @@ def _connection_work(spec: dict, topic: str, angle_findings: str, claude_bin: st
     """One connection agent: a single grounded pass (no verify step). Returns {ok,text,throttled,calls}."""
     r = _call_with_retry(_connection_prompt(spec, topic, angle_findings),
                          claude_bin, timeout, max_retries)
-    return {"ok": r["ok"], "text": r["text"], "throttled": r["throttled"], "calls": r["calls"]}
+    return {"ok": r["ok"], "text": r["text"], "throttled": r["throttled"], "calls": r["calls"],
+            "err": r.get("err", "")}
 
 
 def _append_connection(findings_path: Path, label: str, text: str) -> None:
@@ -271,13 +348,17 @@ def _synthesize(topic: str, findings_md: str, claude_bin: str, timeout: int,
         f"notes (the `## Vault connection:` blocks):\n\n{findings_md}\n\n"
         "Synthesize them into a single cited report in this format:\n"
         "1. One-paragraph verdict (nuanced, CEO-brief style).\n"
-        "2. The value chain (downstream -> upstream).\n"
-        "3. The analysis by angle (who owns what, where the durable value sits).\n"
-        "4. Vault connections — consolidate the `## Vault connection:` blocks into ONE section: "
+        "2. Cross-angle insight — 2-3 SECOND-ORDER findings that only emerge when the angles are "
+        "read TOGETHER (a constraint in one angle that relieves/worsens another, a value shift one "
+        "tier up/down), and explicitly FLAG any CONTRADICTIONS between angles. This is the highest-"
+        "value section — do not skip it or pad it with single-angle restatements.\n"
+        "3. The value chain (downstream -> upstream).\n"
+        "4. The analysis by angle (who owns what, where the durable value sits).\n"
+        "5. Vault connections — consolidate the `## Vault connection:` blocks into ONE section: "
         "which existing vault pages the findings CONFIRM / CHALLENGE / EXTEND (MERGE duplicates "
-        "across lenses — one mention per page, not three), candidate NEW pages (coverage gaps), and "
-        "prior-research overlaps (keep the `discovery↔discovery (unverified)` tag). Don't concatenate.\n"
-        "5. 'What to verify at primary sources' — concrete, numbered leads.\n"
+        "across lenses — one mention per page, not three), and any candidate NEW pages the findings "
+        "imply the vault is missing. Don't concatenate.\n"
+        "6. 'What to verify at primary sources' — concrete, numbered leads.\n"
         "Open with a one-line Tier-3 disclaimer (discovery-only, web-sourced, verify before "
         "treating as canon). Output ONLY the report markdown — no preamble, no 'here is'."
     )
@@ -289,7 +370,54 @@ def _synthesize(topic: str, findings_md: str, claude_bin: str, timeout: int,
 # State + findings persistence (the resumability backbone)
 # ---------------------------------------------------------------------------
 def _run_dir(topic: str) -> Path:
-    return RUNS_DIR / f"{_stamp()}_{_slug(topic)}"
+    # TOPIC-keyed (NOT date-keyed) so an unfinished topic RESUMES across nights instead of
+    # restarting from scratch. The old `{date}_{slug}` defeated cross-night resume — a throttled
+    # 3:30am run left a 2026-06-24_<slug> checkpoint that the next night's 2026-06-25_<slug> dir
+    # never found, so every night started over. (Fixed 2026-06-24; the report file keeps its date.)
+    return RUNS_DIR / _slug(topic)
+
+
+# --- Per-run lock: keeps the 5:30 watchdog from colliding with a still-running 3:30 job ---
+def _pid_alive(pid: int) -> bool:
+    try:
+        os.kill(pid, 0)
+    except ProcessLookupError:
+        return False
+    except PermissionError:
+        return True          # exists, owned by another user
+    except Exception:        # noqa: BLE001
+        return True
+    return True
+
+
+def _acquire_lock(run_dir: Path, log) -> bool:
+    """Best-effort exclusive lock per run-dir. A lock whose pid is DEAD is stale (the holder exited
+    by any path — no explicit release needed) and is taken over. Returns False only if a LIVE
+    process already holds it (e.g. a 3:30 run still sleeping in wait-through)."""
+    run_dir.mkdir(parents=True, exist_ok=True)
+    lock = run_dir / ".lock"
+    if lock.exists():
+        try:
+            pid = int(lock.read_text().split()[0])
+        except Exception:    # noqa: BLE001
+            pid = 0
+        if pid and _pid_alive(pid):
+            log(f"another run (pid {pid}) is active on this topic — not starting a second")
+            return False
+    lock.write_text(f"{os.getpid()} {_now().isoformat()}\n")
+    return True
+
+
+def is_locked(run_dir: Path) -> bool:
+    """True iff a LIVE process holds the run-dir lock — the watchdog uses this to defer to a 3:30 run."""
+    lock = run_dir / ".lock"
+    if not lock.exists():
+        return False
+    try:
+        pid = int(lock.read_text().split()[0])
+    except Exception:        # noqa: BLE001
+        return False
+    return bool(pid and _pid_alive(pid))
 
 
 def _load_or_init(state_path: Path, topic: str, report_path: Path) -> dict:
@@ -332,12 +460,41 @@ def _chunks(seq: list, n: int):
 def run(topic: str, report_path: Path, *, claude_bin: str,
         max_agents: int = 60, max_concurrent: int = 2, pace_seconds: int = 30,
         per_call_timeout: int = 600, max_retries: int = 3, verify_each: bool = True,
+        wait_through: bool = False, deadline: "datetime | None" = None,
         dry_run: bool = False, log=print) -> dict:
     """Run the sequential research loop for one topic. Returns a result dict; writes the
-    report to report_path on success. Resumable: re-running continues from state.json."""
+    report to report_path on success.
+
+    wait_through + deadline: when wait_through is True, a 5-hour Max usage-cap throttle makes the
+    loop SLEEP until the cap resets and then CONTINUE (so the run completes in one go), bounded by
+    `deadline` (a hard wall-clock stop, e.g. 06:00). Only if the deadline is reached before the cap
+    clears does it checkpoint + stop. state.json still makes any run resumable (crash-insurance)."""
+    # Publish the wait-through config + logger for the flat call sites to read.
+    global _WAIT_THROUGH, _WAIT_DEADLINE, _LOG
+    _LOG = log
+    _WAIT_THROUGH = bool(wait_through) and not dry_run
+    _WAIT_DEADLINE = deadline if _WAIT_THROUGH else None
+
+    # Hold the Mac awake for the whole run so a multi-hour wait-for-reset can't die to sleep.
+    # `caffeinate -w <pid>` self-terminates when this process exits — no manual cleanup needed.
+    if _WAIT_THROUGH:
+        try:
+            subprocess.Popen(["caffeinate", "-is", "-w", str(os.getpid())])
+            log(f"caffeinate: holding the Mac awake until process exit"
+                + (f" (deadline ~{deadline:%H:%M})" if deadline else ""))
+        except Exception as e:  # noqa: BLE001  (macOS-only; degrade gracefully)
+            log(f"caffeinate unavailable ({e}) — relying on the Mac staying awake")
+
     run_dir = _run_dir(topic)
     state_path = run_dir / "state.json"
     findings_path = run_dir / "findings.md"
+
+    # Refuse to start if a live process already holds this topic's lock (the 5:30 watchdog must
+    # never run a second loop over a 3:30 run that is still alive). Stale locks are taken over.
+    if not dry_run and not _acquire_lock(run_dir, log):
+        return {"name": "research-loop", "executed": False, "ok": False, "locked": True,
+                "topic": topic, "note": "another run is active on this topic"}
+
     state = _load_or_init(state_path, topic, report_path)
     calls = 0
 
@@ -399,18 +556,19 @@ def run(topic: str, report_path: Path, *, claude_bin: str,
             else:
                 a["status"] = "failed"
                 a["retries"] += 1
-                log(f"  angle {a['id']}/{total} {a['name'][:40]} ..... FAILED (retries {a['retries']})")
+                a["error"] = (o.get("err") or "unknown").replace("\n", " ")[:200]
+                log(f"  angle {a['id']}/{total} {a['name'][:40]} ..... FAILED — {a['error'][:90]} (retries {a['retries']})")
             if o["throttled"]:
                 throttled = True
         _save(state, state_path)
         if throttled:
-            log("throttled — checkpointed; will resume on the next run")
+            log("usage cap could not clear before the deadline — checkpointed; resumes next run")
             return {"name": "research-loop", "executed": True, "ok": False,
                     "throttled": True, "topic": topic,
                     "done": sum(1 for a in state["angles"] if a["status"] == "done"), "total": total}
         time.sleep(pace_seconds)
 
-    # --- STEP 1.5: CONNECTIONS — tie the findings to the existing vault (10 grounded agents) ---
+    # --- STEP 1.5: CONNECTIONS — tie the findings to the existing vault (8 grounded agents) ---
     done = [a for a in state["angles"] if a["status"] == "done"]
     if not done:
         log("no angles succeeded — no report written")
@@ -427,7 +585,10 @@ def run(topic: str, report_path: Path, *, claude_bin: str,
     # connection blocks already appended on a prior resume), so they never see each other's output.
     angle_findings = findings_path.read_text(encoding="utf-8").split("## Vault connection:")[0]
     ncon = len(state["connections"])
-    pending_con = [c for c in state["connections"] if c["status"] != "done"]
+    # Resume-safety: if the spec list shrank between runs (e.g. an agent was dropped) a stored
+    # connection id may no longer map to a spec — skip those orphans instead of KeyError-crashing,
+    # so an in-flight run started under the old spec list still completes to synthesis.
+    pending_con = [c for c in state["connections"] if c["status"] != "done" and c["id"] in spec_by_id]
     for batch in _chunks(pending_con, max_concurrent):
         if calls + len(batch) > max_agents:
             log(f"agent budget {max_agents} reached during connections — stopping; resume next run")
@@ -448,12 +609,13 @@ def run(topic: str, report_path: Path, *, claude_bin: str,
             else:
                 c["status"] = "failed"
                 c["retries"] += 1
-                log(f"  connection {c['id']}/{ncon} {c['label']:<22} ..... FAILED (retries {c['retries']})")
+                c["error"] = (o.get("err") or "unknown").replace("\n", " ")[:200]
+                log(f"  connection {c['id']}/{ncon} {c['label']:<22} ..... FAILED — {c['error'][:90]} (retries {c['retries']})")
             if o["throttled"]:
                 throttled = True
         _save(state, state_path)
         if throttled:
-            log("throttled during connections — checkpointed; will resume on the next run")
+            log("usage cap could not clear before the deadline (connections) — checkpointed; resumes next run")
             return {"name": "research-loop", "executed": True, "ok": False, "throttled": True,
                     "topic": topic,
                     "connections_done": sum(1 for c in state["connections"] if c["status"] == "done"),
@@ -467,7 +629,7 @@ def run(topic: str, report_path: Path, *, claude_bin: str,
                     claude_bin, per_call_timeout, max_retries)
     calls += s["calls"]
     if s["throttled"]:
-        log("throttled at synthesis — checkpointed; will resume next run")
+        log("usage cap could not clear before the deadline (synthesis) — checkpointed; resumes next run")
         return {"name": "research-loop", "executed": True, "ok": False,
                 "throttled": True, "topic": topic, "done": len(done), "total": total}
     if not (s["ok"] and s["text"].strip()):
@@ -486,6 +648,13 @@ def run(topic: str, report_path: Path, *, claude_bin: str,
 
 
 def main():
+    # Stream logs LIVE even when stdout is a pipe (a backgrounded run, `| tee`, etc.). Without this
+    # Python block-buffers stdout to a non-TTY, so a long run looks dead until it exits — the trap
+    # that made the 2026-06-24 manual resume appear hung. Line-buffering flushes on every newline.
+    try:
+        sys.stdout.reconfigure(line_buffering=True)
+    except Exception:  # noqa: BLE001
+        pass
     ap = argparse.ArgumentParser(description="Sequential research loop (headless-reliable).")
     ap.add_argument("--topic", required=True)
     ap.add_argument("--dry-run", action="store_true", help="print the plan, run nothing")
@@ -493,14 +662,27 @@ def main():
     ap.add_argument("--max-concurrent", type=int, default=2)
     ap.add_argument("--pace-seconds", type=int, default=30)
     ap.add_argument("--no-verify", action="store_true", help="skip the per-angle verify pass")
+    ap.add_argument("--wait-through", action="store_true",
+                    help="ride through 5-hour usage caps (sleep until reset + continue), "
+                         "bounded by --deadline-hour")
+    ap.add_argument("--deadline-hour", type=float, default=6.0,
+                    help="hard wall-clock stop (local 24h, e.g. 6 = 06:00) for --wait-through")
     args = ap.parse_args()
     from shutil import which
-    import os
     claude_bin = os.environ.get("CLAUDE_BIN") or which("claude") or "claude"
     report_path = RESEARCH_SELF / f"{_stamp()}_{_slug(args.topic)}.md"
+    deadline = None
+    if args.wait_through:
+        now = _now()
+        hh = int(args.deadline_hour)
+        mm = int(round((args.deadline_hour - hh) * 60))
+        deadline = now.replace(hour=hh, minute=mm, second=0, microsecond=0)
+        if deadline <= now:  # already past today's deadline (e.g. a manual daytime run)
+            deadline = now + timedelta(hours=2)
     res = run(args.topic, report_path, claude_bin=claude_bin, max_agents=args.max_agents,
               max_concurrent=args.max_concurrent, pace_seconds=args.pace_seconds,
-              verify_each=not args.no_verify, dry_run=args.dry_run)
+              verify_each=not args.no_verify, wait_through=args.wait_through,
+              deadline=deadline, dry_run=args.dry_run)
     print(json.dumps(res, indent=2))
     sys.exit(0 if res.get("executed", False) is not False or args.dry_run else 1)
 

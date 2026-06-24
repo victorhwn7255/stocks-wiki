@@ -32,6 +32,24 @@ Running reference log of **refresh ingests** — re-ingests of an EXISTING vault
 
 ---
 
+## S171 — CRDO (Credo Technology) — 2026-06-24 — FY2026 (10-K, year ended May 2 2026) + Q4/FY2026 call
+
+- **Sources:** CRDO 10-K FY2026 (Tier 1, filed Jun 15 2026) + Q4/FY2026 earnings call (Tier 2, Jun 1 2026). No intervening 10-Q (Q4 lives in the 10-K). First refresh of the page.
+- **Prior baseline:** S27 (2026-04-28) — anchored at Q3 FY2026 (10-K FY2025 + 10-Q Q3 FY2026 + Q3 call).
+- **Headline:** Blow-out year (rev $1,335.1M / +206%; non-GAAP NI $662M) with the growth engine pivoting copper→optical and a +80% FY2027 guide leaning on a new ~$600M optical ramp.
+- **Key changes & new developments:**
+  - FY2026 GAAP NI $472.3M (accumulated deficit wiped); GAAP GM 68.0% / op margin 33.3%; R&D+SG&A 33.6%/22.6% → 20.9%/13.8% (operating leverage); cash $1.4B, no debt; capex $57.3M; inventory $250.8M.
+  - The ~$600M FY2027 optical ramp — 3 legs each >$100M (discrete DSPs / SiPho PICs / ZeroFlap, the largest). DustPhotonics (SiPho PIC, closed late-May 2026) → "direct path to CPO/NPO," initial revenue FY2028.
+  - Three acquisitions untangled: Hyperlume (MicroLED, Sept 2025) / CoMira (protocol-IP, Feb 2026) / DustPhotonics (SiPho, post-year-end) — corrected the old "Comira misID" note (CoMira is a real, separate deal).
+  - Customer concentration broadening: Customer A 67%→49% (AR 86%→53%); 2nd ≥10% customer (32%); Q4 end-customer 34/27/16/10 (four ≥10%); xAI named "fully deployed"; neoclouds → ~20%.
+  - Geographic de-concentration: Hong Kong revenue 56%→28%, assets 43%→2%; destination NA 58%/RoW 42%; new US-outbound-investment-in-China risk factor.
+- **Placement:** UNCHANGED — Layer 3 / photonics_tier 3. Optical/CPO revenue is FY2027-28 forward; honest-verdict trigger not met. Upgrade trigger pre-registered (realized optical + CPO/NPO + scale-up revenue).
+- **Cross-vault propagation:** [[optical-dsp-phy-supply]] + [[cpo-integration]] + [[CPO-platform-battle]] (CRDO now straddles CPO displacement + SiPho participation) + [[china-exposure]] (HK de-concentration; freshness obligation met). Light set (datacenter-photonics-supply-chain / chokepoint-investability-priorities / advanced-optical-packaging / nvidia-supply-chain-commitments) consciously deferred (context-bounded; no materially stale facts — a follow-up sweep).
+- **Forward watch:** does the ~$600M optical ramp land (re-concentration by product?); the +80% FY2027 bar; DustPhotonics CPO/NPO FY2028; scale-up FY2027→28; customer broadening vs re-concentration; TSMC 3nm supply.
+- **Key insight:** the thesis question flipped from "can it grow" to "does the optical pivot land + is the +80% bar too high" — customer-broadening's de-risking is partly offset by a new single-vector (optical) dependency.
+
+---
+
 ## S155 — PLAB (Photronics) — 2026-06-13 — Q2 FY2026 (quarter ended May 3, 2026)
 
 - **Sources:** Q2 FY2026 10-Q (Tier 1; quarter ended May 3 2026) + Q2 FY2026 earnings call (Tier 2; May 28 2026; Vic-staged, full transcript). October 31 fiscal year per Section 2.11 — Q2 FY2026 ≈ calendar Q1/Q2 2026.

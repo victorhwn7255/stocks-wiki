@@ -39,3 +39,11 @@
       connection 9/10 prior-research         ..... FAILED (retries 1)
       connection 10/10 coverage-gaps          ..... FAILED (retries 1)
     throttled during connections — checkpointed; will resume on the next run
+
+=== run 2026-06-23T194219 ===
+  hygiene: ok
+  calibration: ok
+  connections: ok
+  patterns: ok
+  actions: 1
+    - ⚠️ unresolved wikilinks: [[CMI]], [[Canonical]], [[QCOM]] — forward-link or typo (check).

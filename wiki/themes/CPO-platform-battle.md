@@ -1,7 +1,7 @@
 ---
 type: theme
 tickers: [NVDA, TSM, AVGO, MRVL, ALAB, CSCO, LITE, COHR, AEHR, ONTO, AAOI, COHU, AXTI, VECO, CRDO, ANET]
-last_updated: 2026-06-10
+last_updated: 2026-06-24
 ---
 
 # CPO Platform Battle
@@ -121,7 +121,7 @@ Specific falsifiable dated observations:
 | Layer 3 (designer) | [[CSCO]] | Tier 2 (call) | **Yes — acknowledged deferral** ("not imminent," technology readiness claimed, customer-choice framing) |
 | Layer 3 (designer) | [[CRDO]] | Tier 1 (10-K) | No (zero CPO mentions; SerDes/DSP/AEC product discussion only) |
 | Layer 3 (designer) | [[CRDO]] | Tier 1 (10-Q) | No (zero CPO mentions) |
-| Layer 3 (designer) | [[CRDO]] | Tier 2 (call) | **Indirect — CPO displacement positioning via OmniConnect** ("near package optics with MicroLED that will address the reliability, serviceability, and availability pitfalls of current CPO solutions" — direct CPO displacement framing rather than CPO adoption) |
+| Layer 3 (designer) | [[CRDO]] | Tier 2 (call) | **Indirect → hybrid (FY2026 refresh, S171):** displacement positioning via OmniConnect ("near package optics with MicroLED...") **AND now a direct CPO/NPO path** — the **DustPhotonics** SiPho-PIC acquisition gives "a direct path to CPO and NPO architectures" (Brennan, Q4 FY2026 call; initial revenue FY2028). CRDO now straddles displacement + participation rather than purely displacing |
 | Layer 5 (systems integrator) | [[ANET]] | Tier 1 (10-K) | No (zero CPO/co-package/coherent mentions across full 10-K text) |
 | Layer 5 (systems integrator) | [[ANET]] | Tier 2 (call) | No (zero CPO mentions in Q4 2025 call sample) |
 
@@ -338,6 +338,7 @@ MRVL's Q1 FY2027 call advances its scale-up CPO position: scale-up optics revenu
 
 ## Change log
 
+- **2026-06-24 (S171 — [[CRDO]] FY2026 refresh propagation):** Updated the CRDO Tier-2 tiered-silence row — the FY2026 Q4 call **hybridizes** CRDO's Layer-3 "displacement-claimant" profile: alongside OmniConnect/MicroLED displacement, the DustPhotonics SiPho-PIC acquisition adds a **direct CPO/NPO participation path** ("direct path to CPO and NPO architectures," initial revenue FY2028). The four Layer-3 variants now include a straddler. (44-data-point pattern count unchanged — same company, evolved stance.) last_updated 2026-06-10 → 2026-06-24.
 - **2026-06-13 (AVGO Q2 FY2026 refresh propagation — S151):** Pre-registered AVGO-refresh verification fired: Hock Tan's Q2 call claims CPO "de facto standard" status (1.6Tb DSPs + CW/EML lasers), retiring the scale-out half of the "bright, shiny objects" dismissal one quarter after making it. Scale-up stance unchanged (copper DAC + co-packaged copper) — the Murphy ↔ Hock Tan disagreement narrows to scale-up only. Tier-1 CPO silence persists at the Q2 10-Q; Davisson volume/customer quantification stays open.
 
 - **2026-06-10 (S150):** Added AVGO production-shipping update — Tomahawk 6-Davisson 3rd-gen CPO switch shipping since Oct 2025 per Broadcom investor PR (web-verified). Layer 1 framing refined: both platform definers now ship CPO; AVGO's dismissal re-scoped as scale-up-specific ("ships scale-out CPO while dismissing scale-up"). Surfaced via the 2026-05-08 video intel note; verified at company primary before page use. Evidence-table count unchanged; AVGO-refresh bilateral verification pre-registered.

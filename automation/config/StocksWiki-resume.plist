@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- Shows in System Settings → Login Items & Extensions → Allow in the Background. -->
+    <key>Label</key>
+    <string>Stocks Wiki Resume</string>
+
+    <!-- The 05:30 WATCHDOG (companion to the 03:30 "Stocks Wiki" job). It verifies that today's
+         deep-research report actually landed in raw/research/self-research/; if the 03:30 run was
+         interrupted (throttle-bail / crash / the Mac slept) — or never ran — it resumes the loop
+         and completes the report. No scan/digest; idempotent (no-op once today's report exists);
+         lock-guarded so it never collides with a 03:30 run that is still alive. Completion is the
+         priority: no early ceiling (only a generous noon runaway backstop). -->
+    <!-- Runs python3 run.py --resume-research --quiet directly (the 03:30 job's app-bundle launcher
+         has --auto baked in, so it can't be reused). The CLAUDE_BIN + HOME + PATH env below is what
+         lets the headless Max-authenticated `claude` CLI be found + read its stored credentials. -->
+    <key>ProgramArguments</key>
+    <array>
+        <string>/Library/Frameworks/Python.framework/Versions/3.13/bin/python3</string>
+        <string>/Users/victor_he/Projects/stocks-wiki/automation/scripts/run.py</string>
+        <string>--resume-research</string>
+        <string>--quiet</string>
+    </array>
+
+    <key>WorkingDirectory</key>
+    <string>/Users/victor_he/Projects/stocks-wiki</string>
+
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/Users/victor_he/.nvm/versions/node/v22.22.0/bin:/Library/Frameworks/Python.framework/Versions/3.13/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+        <key>CLAUDE_BIN</key>
+        <string>/Users/victor_he/.nvm/versions/node/v22.22.0/bin/claude</string>
+        <key>HOME</key>
+        <string>/Users/victor_he</string>
+    </dict>
+
+    <!-- Daily 05:30 local (Singapore, UTC+8). On a deep-research day (Tue-Sat) it completes the
+         report if the 03:30 run didn't; on Sun/Mon (no deep-research) it's a no-op.
+         NOTE: if the Mac is asleep at 05:30, launchd runs the job at the next wake. -->
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Hour</key><integer>5</integer>
+        <key>Minute</key><integer>30</integer>
+    </dict>
+
+    <key>StandardOutPath</key>
+    <string>/Users/victor_he/Projects/stocks-wiki/automation/logs/launchd-resume.out.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/victor_he/Projects/stocks-wiki/automation/logs/launchd-resume.err.log</string>
+
+    <!-- Wait for the scheduled time; do not fire on every login. -->
+    <key>RunAtLoad</key>
+    <false/>
+</dict>
+</plist>

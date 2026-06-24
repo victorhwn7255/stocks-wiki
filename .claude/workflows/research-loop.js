@@ -1,11 +1,11 @@
 export const meta = {
   name: 'research-loop',
-  description: 'Vault-aware deep research for the stocks-wiki vault: scope a topic into 15 angles, research+challenge+verify each, run 10 grounded vault-connection agents, then synthesize one cited Tier-3 report. The interactive sibling of automation/scripts/research_loop.py (uses the Workflow tool, not headless claude -p).',
+  description: 'Vault-aware deep research for the stocks-wiki vault: scope a topic into 15 angles, research (two-sided) + verify each, run 8 grounded vault-connection agents, then synthesize one cited Tier-3 report. The interactive sibling of automation/scripts/research_loop.py (which uses 10 angles — the interactive path runs 15 for breadth since it is attended; uses the Workflow tool, not headless claude -p).',
   whenToUse: 'When the user runs /research-loop <topic> — research a topic AND ground it in the existing vault (connections), interactively.',
   phases: [
     { title: 'Scope', detail: 'topic → 15 research angles' },
-    { title: 'Research', detail: 'each angle: research → challenge → verify (concurrent)' },
-    { title: 'Connect', detail: '10 grounded agents tie findings to the vault' },
+    { title: 'Research', detail: 'each angle: two-sided research → verify (concurrent)' },
+    { title: 'Connect', detail: '8 grounded agents tie findings to the vault' },
     { title: 'Synthesize', detail: 'one cited report with a Vault connections section' },
   ],
 }
@@ -30,11 +30,6 @@ const CONNECTION_SPECS = [
     lens: 'does any finding FIRE a falsifier/catalyst/tripwire (what-could-go-wrong, forward-edge-tracker) or touch hyperscaler-capex / china-exposure / a bilateral relationship?' },
   { label: 'thesis-frameworks', dir: 'wiki/_thesis*.md + raw/notes/frameworks*.md',
     lens: 'does this FIT / EXTEND / CHALLENGE the vault worldview — the thesis or the analytical scaffolding (value-capture layers, chokepoint-quality gradient, tier frameworks)?' },
-  { label: 'prior-research', dir: 'raw/research/ (Tier-3 anchors + raw/research/self-research/ + raw/research/interactive/)',
-    lens: 'do the findings OVERLAP / EXTEND / CONTRADICT any prior research already saved here?',
-    tag: 'Both sides are UNVERIFIED discovery material — tag EVERY link `discovery↔discovery (unverified)`; it is weaker than a connection to canon.' },
-  { label: 'coverage-gaps', dir: 'the whole vault catalog (index.md) and all of wiki/',
-    lens: 'the ABSENCE check — which MAJOR entities/claims/sub-sectors in the findings have NO vault page anywhere → candidate NEW pages (companies, chokepoints, or themes the vault is missing)?' },
 ]
 
 const ANGLES_SCHEMA = {
@@ -64,7 +59,10 @@ if (!angles.length) {
 }
 log(`scope: ${angles.length} angles`)
 
-// ─── ② RESEARCH → CHALLENGE → VERIFY (pipelined; angles run concurrently) ─────
+// ─── ② RESEARCH (two-sided) → VERIFY (pipelined; angles run concurrently) ─────
+// The old separate "challenge" stage was folded into the research prompt (it now researches
+// two-sided), freeing the per-angle budget to run 15 angles for breadth (vs the headless 10).
+// Verify stays 1:1 + independent — the hallucination catch we keep.
 phase('Research')
 const lbl = (a) => a.slice(0, 32)
 const researched = await pipeline(
@@ -73,20 +71,16 @@ const researched = await pipeline(
     `Research ONLY this angle of «${topic}»:\n«${a}»\n\n` +
     'Do focused web searches (5-8 reputable sources; prefer primary/company/industry over blogs). ' +
     'Tag each claim Tier 3 (independent analysis) or Tier 4 (news). Write 300-500 words of findings ' +
-    'with inline source links. Output ONLY the findings markdown — no preamble.',
+    'with inline source links. Be TWO-SIDED: for every load-bearing claim, also surface the strongest ' +
+    'DISCONFIRMING evidence or counter-case (do a counter-search; don\'t write a one-sided pitch); flag ' +
+    'any claim the counter-evidence weakens with [contested]. End with two lines: "Key number:" (the ' +
+    'single most load-bearing figure + its source + a confidence tag high/med/low) and "Falsifier:" ' +
+    '(the concrete evidence that would prove this angle\'s thesis WRONG). Output ONLY the findings ' +
+    'markdown — no preamble.',
     { label: `research:${lbl(a)}`, phase: 'Research' },
   ),
   (research, a) => agent(
-    `Findings on «${a}» (topic «${topic}»):\n\n${research}\n\n` +
-    'ADVERSARIAL pass (honest-verdict discipline): find the STRONGEST disconfirming evidence — what ' +
-    'would prove this angle\'s conclusion WRONG? Do a web search or two for the counter-case. Then ' +
-    'output the findings REWRITTEN to be two-sided: keep what holds up, add a short "Counter-case / ' +
-    'what would falsify this" note, and flag any claim the counter-evidence weakens with [contested]. ' +
-    'Markdown only.',
-    { label: `challenge:${lbl(a)}`, phase: 'Research' },
-  ),
-  (challenged, a) => agent(
-    `Findings on «${a}»:\n\n${challenged}\n\n` +
+    `Findings on «${a}»:\n\n${research}\n\n` +
     'Sanity-check each load-bearing claim: is it supported by the cited source, and is any ' +
     'number/share plausibly correct? Flag unsupported or Tier-5/rumor claims inline with ' +
     '[unverified]. Output the same findings, lightly corrected/annotated. Markdown only.',
@@ -97,7 +91,7 @@ const findingsMd = angles
   .map((a, i) => `## Angle ${i + 1}: ${a}\n\n${researched[i] || '(this angle failed)'}`)
   .join('\n\n')
 
-// ─── ③ CONNECTIONS — 10 grounded agents (barrier: all need the full findings) ─
+// ─── ③ CONNECTIONS — 8 grounded agents (barrier: all need the full findings) ─
 phase('Connect')
 const connections = (await parallel(CONNECTION_SPECS.map((s) => () =>
   agent(
@@ -125,13 +119,16 @@ const report = await agent(
   `Here are the accumulated per-angle findings AND the vault-connection notes:\n\n${findingsMd}\n\n${connectionsMd}\n\n` +
   'Synthesize into a single cited report in this format:\n' +
   '1. One-paragraph verdict (nuanced, CEO-brief style).\n' +
-  '2. The value chain (downstream → upstream).\n' +
-  '3. The analysis by angle (who owns what, where the durable value sits; surface the [contested] / [unverified] flags honestly).\n' +
-  '4. Vault connections — consolidate the `## Vault connection:` blocks into ONE section: which existing ' +
+  '2. Cross-angle insight — 2-3 SECOND-ORDER findings that only emerge when the angles are read TOGETHER ' +
+  '(a constraint in one angle that relieves/worsens another, a value shift one tier up/down), and explicitly ' +
+  'FLAG any CONTRADICTIONS between angles. This is the highest-value section — do not skip it or pad it with ' +
+  'single-angle restatements.\n' +
+  '3. The value chain (downstream → upstream).\n' +
+  '4. The analysis by angle (who owns what, where the durable value sits; surface the [contested] / [unverified] flags honestly).\n' +
+  '5. Vault connections — consolidate the `## Vault connection:` blocks into ONE section: which existing ' +
   'vault pages the findings CONFIRM / CHALLENGE / EXTEND (MERGE duplicates across lenses — one mention per ' +
-  'page, not three), candidate NEW pages (coverage gaps), and prior-research overlaps (keep the ' +
-  '`discovery↔discovery (unverified)` tag). Do not concatenate.\n' +
-  '5. "What to verify at primary sources" — concrete, numbered leads.\n' +
+  'page, not three), and any candidate NEW pages the findings imply the vault is missing. Do not concatenate.\n' +
+  '6. "What to verify at primary sources" — concrete, numbered leads.\n' +
   'Open with a one-line Tier-3 disclaimer (discovery-only, web-sourced, verify before treating as canon). ' +
   'Output ONLY the report markdown — no preamble, no "here is".',
   { label: 'synthesis', phase: 'Synthesize' },

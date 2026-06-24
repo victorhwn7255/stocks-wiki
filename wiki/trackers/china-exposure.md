@@ -1,7 +1,7 @@
 ---
 type: tracker
 tickers: [TSM, NVDA, AVGO, AMD, MRVL, ALAB, MU, ARM, INTC, AAOI, AXTI, LITE, COHR, CRDO, ONTO, COHU, VECO, PLAB, TSEM, MKSI, MPWR, NVTS, POWI, ON, SOI, SNDK, FN, GLW, FLEX, VICR, NOK, ENS, XFAB, AEHR, MOD, MP, TDY, AMPX, AVAV, LSCC, KTOS, MRCY, INOD, NOVT, VPG, OUST, SANHUA, TUOPU, SHUANGHUAN, ZHONGDA, SLING, ZHAOWEI, HENGLI]
-last_updated: 2026-06-17
+last_updated: 2026-06-24
 ---
 
 # China & Taiwan exposure — the vault's geopolitical-concentration map
@@ -44,7 +44,7 @@ A name can sit on several at once. The most important analytical move on this pa
 | [[VECO]] | A,B,C,H | **High** | China **BIS license $8M** Q1 headwind; Customer A 17% (Taiwanese, likely TSMC); Axcelis deal gated on **China antitrust** |
 | [[PLAB]] | B,C,F,H | **High** | Facilities in **Taiwan (3) + China (2)**; Shenzhen Newway/Qingyi competitors |
 | [[POWI]] | A, B, F | **High** | China-dominant geography; risk-factor "Chinese vendors to intensify…China's stated aim to develop domestic semis" |
-| [[CRDO]] | A, H | **Med** | **Hong Kong 56% revenue** + 43% assets (US-China-HK policy dynamics) |
+| [[CRDO]] | A, H | **Med** | **Hong Kong revenue 56%→28%, assets 43%→2%** (FY2026 10-K — sharp de-concentration as US-hyperscaler AEC revenue ramped; revenue now 58% North America by destination); + new US-outbound-investment-in-China risk factor |
 | [[ARM]] | A, H | **Med** | Arm China = largest customer **~16%** of FY2026 (declining), related-party |
 | [[LITE]] | A, D | **Med** | **Huawei lost** (export controls); China revenue growth is contract-manufacturer routing |
 | [[COHR]] | A, D | **Med** | Huawei shipments **stopped early 2025**; China ~12%; BIS/DOJ investigations |
@@ -96,7 +96,7 @@ A name can sit on several at once. The most important analytical move on this pa
 
 **(B/E) China critical-minerals & materials.** The multi-thesis cluster: rare-earth magnets (China ~85–90%; [[MP]] reshores, [[AVAV]]/[[TDY]] consume — see [[rare-earth-magnet-chokepoint]]), germanium/gallium ([[TDY]]), battery materials ([[AMPX]], [[ENS]]), InP substrates ([[AXTI]] 100% China-manufactured — see [[InP-supply]]), and **transformers** (China ~60% of global capacity; the AI `_thesis`'s Rank-2 *binding 2026 constraint* — see [[transformer-supply]]). This is where the AI and Defense theses physically share inputs.
 
-**(A) China revenue / market-access.** The "selling *into* China" exposure — two-edged if China weaponizes supply, and a tariff/de-rating risk: [[LSCC]] **64%**, [[AAOI]] ~50–60%, [[CRDO]] 56% HK, [[ON]] 28%, [[POWI]] China-dominant, [[ARM]] 16%, [[COHR]]/[[COHU]]/[[GLW]]. **Caveat (load-bearing):** several "China revenue" figures are **ship-to / billing-address routing, not end-market demand** ([[ALAB]] ~30%, [[LITE]]/[[COHR]] China growth = contract-manufacturer routing). The page distinguishes genuine China *end-demand* from supply-chain *routing artifacts* — they carry very different risk.
+**(A) China revenue / market-access.** The "selling *into* China" exposure — two-edged if China weaponizes supply, and a tariff/de-rating risk: [[LSCC]] **64%**, [[AAOI]] ~50–60%, [[CRDO]] 28% HK (down from 56%), [[ON]] 28%, [[POWI]] China-dominant, [[ARM]] 16%, [[COHR]]/[[COHU]]/[[GLW]]. **Caveat (load-bearing):** several "China revenue" figures are **ship-to / billing-address routing, not end-market demand** ([[ALAB]] ~30%, [[LITE]]/[[COHR]] China growth = contract-manufacturer routing). The page distinguishes genuine China *end-demand* from supply-chain *routing artifacts* — they carry very different risk.
 
 **(D) Outbound export controls (US→China).** A real, *quantified* P&L driver, not a tail risk: [[NVDA]] (China compute zeroed; multi-$B H20 write-downs), [[AMD]] (MI308 $440M net charge), [[ONTO]] (China revenue roughly halved), [[VECO]] (BIS license headwind), [[AXTI]] (InP added to China's *outbound* list — the inverse). The US-China tech-decoupling shows up directly in earnings.
 
@@ -144,6 +144,7 @@ Cross-cutting synthesis; no new primary source ingested at creation. The **corre
 
 ## Change log
 
+- **2026-06-24 (S171 — [[CRDO]] FY2026 refresh propagation):** Updated the [[CRDO]] row for the FY2026 10-K — **Hong Kong revenue 56%→28%, assets 43%→2%** (sharp de-concentration as US-hyperscaler AEC revenue ramped; revenue now 58% North America by destination) + the new US-outbound-investment-in-China risk factor; updated the axis-(A) list figure. Rating held **Med** (28% HK billing + the new outbound rule still meaningful). last_updated 2026-06-17 → 2026-06-24.
 - **2026-06-19 (S168 — [[IBIDEN]] now a vault page):** Resolved plain-text "Ibiden" → [[IBIDEN]] in the bifurcated-geography note and added that [[IBIDEN]] (TSE/NSE 4062, the FCBGA-substrate leader) is now a vault company page and directly reachable — the first durable Japanese material/substrate node held directly (still not US-listed). No matrix row (Japan-domiciled = the durable-node counter-pole, not a China-exposure axis entry). `last_updated` unchanged.
 - **2026-06-17 (S166 — added the PCB/interconnect-substrate cohort):** Added a Cross-cutting-payoff note for the new [[pcb-interconnect-substrate-chokepoint]] — the clean bifurcated-geography case (board fab = China-heavy: WUS Kunshan/Shennan/Victory Giant, reachable via HK proxies; durable materials = Japan-concentrated: Nittobo/Ajinomoto/Resonac/Ibiden), with opposite-direction export-control exposure and no US-listed pure-play for the Japanese material nodes (only enabler touchpoints [[MKSI]]/[[NOVT]]/[[ONTO]]). No new matrix rows (the board/material principals are non-vault; the vault-adjacent enablers were already in `tickers`). last_updated 2026-06-08 → 2026-06-17.
 - **2026-06-08 (S148 — added HENGLI; the vault's seventh China-domiciled operating company):** [[HENGLI]] (恒立液压, Shanghai main board A 601100) added as **High (domiciled)** (axes A+H) — the first humanoid name at the **roller-screw layer**, the credible precision-grinding entrant, but primarily a **hydraulics champion** carrying the broader China construction-machinery-cycle exposure (its real earnings driver; humanoid roller screws a sliver). Non-magnet precision-machining half → rare-earth squeeze N/A (axis B omitted). Shanghai main board (Stock-Connect-reachable, no H/ADR). The China humanoid cohort now spans **three value layers** (5 reducer/actuator + 1 dexterous-hand + 1 roller-screw). `tickers` +HENGLI.

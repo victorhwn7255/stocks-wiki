@@ -28,7 +28,7 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` Section 3
 | [COHR](wiki/companies/COHR.md) | COHR | 4 | 2 | — | — | — | — | — | 2026-05-27 |
 | [COHU](wiki/companies/COHU.md) | COHU | 3 | outside | — | — | — | — | — | 2026-05-11 |
 | [CORZ](wiki/companies/CORZ.md) | CORZ | outside | outside | outside | outside | outside | outside | — | 2026-06-15 |
-| [CRDO](wiki/companies/CRDO.md) | CRDO | 3 | 3 | — | — | — | — | — | 2026-04-28 |
+| [CRDO](wiki/companies/CRDO.md) | CRDO | 3 | 3 | — | — | — | — | — | 2026-06-24 |
 | [CRWV](wiki/companies/CRWV.md) | CRWV | outside | outside | outside | outside | outside | outside | — | 2026-06-03 |
 | [CSCO](wiki/companies/CSCO.md) | CSCO | 3 | 4 | — | — | — | — | — | 2026-05-29 |
 | [ENS](wiki/companies/ENS.md) | ENS | 4 | outside | — | 4 | outside | outside | — | 2026-05-29 |
@@ -158,6 +158,7 @@ Cross-vault status-bearing pages per CLAUDE.md Section 3.20 — updated by propa
 | [china-exposure](wiki/trackers/china-exposure.md) | TSM, NVDA, AVGO, AMD, MRVL, ALAB, MU, ARM, INTC, AAOI, AXTI, LITE, COHR, CRDO, ONTO, COHU, VECO, PLAB, TSEM, MKSI, MPWR, NVTS, POWI, ON, SOI, SNDK, FN, GLW, FLEX, VICR, NOK, ENS, XFAB, AEHR, MOD, MP, TDY, AMPX, AVAV, LSCC, KTOS, MRCY, INOD, NOVT, VPG, OUST, SANHUA, TUOPU, SHUANGHUAN, ZHONGDA, SLING, ZHAOWEI, HENGLI | 2026-06-08 |
 | [what-could-go-wrong](wiki/trackers/what-could-go-wrong.md) | MSFT, NVDA, AVGO | 2026-06-12 |
 | [AI-credit-spread-watch](wiki/trackers/AI-credit-spread-watch.md) | CRWV, ORCL, MSFT, AVGO, NVDA, NBIS, CORZ | 2026-06-21 |
+| [short-interest](wiki/trackers/short-interest.md) | — | 2026-06-19 |
 
 ## Relationships
 

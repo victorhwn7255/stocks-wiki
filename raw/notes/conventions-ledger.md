@@ -155,3 +155,49 @@ Pre-codification baseline: S45 ENS = 6 material falsifications. Post-codificatio
 **Drift caught in passing.** china-exposure frontmatter `last_updated` lagged at 2026-06-06 vs its documented S147/S148 updates (index said 2026-06-08) — frontmatter corrected to 2026-06-08. Also confirmed during this session's setup: MEMORY.md is current through S153 but only partially auto-loads at session start (577 lines / 383KB — a compaction candidate), and the S148 (HENGLI) row remains missing from log.md's session index — both flagged to Vic.
 
 **Seed state of the risk register.** Seeded 14, expanded same-session to 16 entries (9 AI / 4 Defense / 3 Humanoid) after a Vic-prompted comprehensiveness review (+financing-structure/credit shock — no thesis-file counterpart, flagged for the next thesis pass; +defense de-escalation) and a reconciliation pass mapping all 32 thesis-file falsifiers to entries or explicit exclusions (the coverage map lives on the page; exclusion classes: company/page-level, thesis-predicted, by-design, universe-composition, divergence). All NOT FIRED at creation; the consensus-aligned risk class (AI-capex cycle turn, Tier-3-named via the 2026-03 video-intel notes' telecom-bubble/circular-financing/efficiency-stack mechanisms) is the structural reason the register exists as forward-edge-tracker's sibling rather than an extension of it.
+
+---
+
+## A.15 — Mid-fiscal-year disclosure methodology shift precedent *(cross-ref Section 2.1)*
+
+*Moved here from CLAUDE.md Section 2.1 at the v10.x compression (forward-only growth discipline, Section 5.3) — the rule stays in CLAUDE.md; the 5-instance roster + venue-asymmetric FIRST INSTANCE detail live here.*
+
+**5-instance precedent (segment/division restructure or retrospective segment-data adjustment mid-fiscal-year):**
+
+| Instance | Session | Shift |
+|---|---|---|
+| [[NVT]] | S69 | Q1 2026 vertical disaggregation within continuing-segment scope |
+| [[MOD]] | S70 | Q3 FY2026 Climate Solutions product-group disaggregation |
+| [[NOK]] | S73 | Strategic reorganization OLD 5-segment → NEW 2-segment company-wide, effective January 1, 2026 |
+| [[AMD]] | S77 | Q1 FY2025 4-segment → 3-segment consolidation; "All prior period segment data were retrospectively adjusted" |
+| [[NVDA]] | S81 | Q1 FY2027 NEW Hyperscale + ACIE + Edge Computing framework at earnings-call-presentation + investor website with restated comparatives "for the past nine quarters"; SEC 10-Q preserves Compute & Networking + Graphics framework |
+
+**Venue-asymmetric sub-pattern (FIRST INSTANCE, codified Session 86).** A shift may appear at one venue (earnings-call-presentation + investor website) while another venue preserves the prior framework (SEC 10-Q segment reporting). NVDA S81 = FIRST INSTANCE (above). LLM application: document venue-asymmetry at Source audit notes; cross-reference Section 3.6 when the shift constitutes a cross-venue gap beyond mere reporting-venue lag.
+
+## A.16 — Cross-venue disclosure gap precedent *(cross-ref Section 3.6)*
+
+*Moved here from CLAUDE.md Section 3.6 at the v10.x compression — the rule + falsification condition stay in CLAUDE.md; the 5-reference roster lives here.*
+
+**5-reference precedent (codification threshold over-met):** [[NVDA]] S81 Open Question #3 (venue-specific CPO disclosure persistence verdict; GTC March 2026 carries advanced packaging detail + COUP; Q1 FY2027 earnings call zero CPO mentions across 16 pages) + [[NVDA-platform-integration]] S82 (asymmetric reciprocal naming observation) + [[cpo-integration]] S84 (venue-specific CPO disclosure verdict integrated) + [[CPO-platform-battle]] S84 (Jensen "silence ≠ retreat" framing canonical) + [[advanced-optical-packaging]] S85b (venue-specific pattern reinforcement at advanced packaging chokepoint scope).
+
+## A.17 — Pathway-2 canonical-from-first-creation chokepoint precedent *(cross-ref Section 3.15)*
+
+*Moved here from CLAUDE.md Section 3.15 at the v10.x compression — both pathways + the pathway-selection rule + canonicalization threshold stay in CLAUDE.md; the 5-instance roster + 4-canonical strengthening detail live here.*
+
+**5-instance Pathway 2 precedent post-S71 + 4 structural-type taxonomy:**
+
+| Instance | Session | Chokepoint | Structural type |
+|---|---|---|---|
+| 1 | S44 | [[HALEU-fuel-chokepoint]] | Sequential-dependency-chain |
+| 2 | S57 | [[BTM-grid-bypass-workaround]] | Competing-technology-base (1st) |
+| 3 | S63 | [[transformer-supply]] | Oligopoly + substrate-bound |
+| 4 | S64 | [[HBM-oligopoly]] | Upstream-oligopoly with vault-adjacent scope |
+| 5 | S71 | [[liquid-cooling]] | Competing-technology-base (2nd; structural-type durability validated) |
+
+**4-canonical sub-domain coverage strengthening (codified Session 86).** Pathway 2 application strengthens when a sub-domain accumulates 4+ canonical participants at a single theme/chokepoint scope. FIRST INSTANCE: [[AI-agentic-CPU-orchestration-reemergence]] theme — S80 creation at 3-canonical threshold (ARM + AMD + INTC); S83 expansion to 4-canonical (NVDA Vera CPU addition). 4-canonical scope does not displace the 3-canonical Pathway 2 threshold; it reinforces methodology applicability (document with confidence at 3-canonical; 4-canonical is reinforcement, not threshold-shift).
+
+## A.18 — Chokepoint refresh 1-stop/2-stop precedent *(cross-ref Section 4.1)*
+
+*Moved here from CLAUDE.md Section 4.1 at the v10.x compression — the 1-stop/2-stop applicability + escalation rules stay in CLAUDE.md; the 5-instance roster lives here.*
+
+**5-instance Pathway precedent:** S51 [[HALEU-fuel-chokepoint]] (FIRST 1-stop refresh; minor update scope) + S65 [[TSMC-CoWoS]] (SECOND; substantial-content-addition scope ~120 lines; protocol durability at substantial-content scope validated) + S66 [[datacenter-laser-supply]] + S67 [[cpo-integration]] + S68 [[advanced-optical-packaging]]. S65–S68 = 4-chokepoint paired-cluster refresh demonstrating cross-vault propagation cycle methodology at 1-stop refresh scope.

@@ -15,7 +15,6 @@ Modes:
   python3 automation/scripts/run.py --scan        # deterministic weekly scan (default, FREE)
   python3 automation/scripts/run.py --calibrate    # + agentic calibration scoring (PAID; needs --run-llm)
   python3 automation/scripts/run.py --brief        # + agentic ranked briefing  (PAID; needs --run-llm)
-  python3 automation/scripts/run.py --scan --with-freshness   # also hit SEC EDGAR (slow/network)
 
 The default --scan is what the weekly schedule runs: zero LLM, zero canon-risk.
 """
@@ -29,7 +28,7 @@ import re
 import shutil
 import subprocess
 import sys
-from datetime import datetime
+from datetime import datetime, timedelta
 from pathlib import Path
 
 AUTOMATION = Path(__file__).resolve().parent.parent
@@ -100,7 +99,7 @@ def _json_or_none(res: dict):
 # ---------------------------------------------------------------------------
 # Deterministic scans
 # ---------------------------------------------------------------------------
-def scan_deterministic(with_freshness: bool) -> dict:
+def scan_deterministic() -> dict:
     results = {}
     # hygiene (JSON)
     res = _run(["python3", "scripts/vault_hygiene.py", "--json"], timeout=120)
@@ -114,10 +113,8 @@ def scan_deterministic(with_freshness: bool) -> dict:
     # pattern accumulation (text)
     res = _run(["python3", "scripts/monitor_patterns.py"], timeout=120)
     results["patterns"] = {"meta": res, "text": res["out"] if res["ok"] else ""}
-    # freshness (network; opt-in)
-    if with_freshness:
-        res = _run(["python3", "scripts/fetch_filings.py", "--freshness"], timeout=300)
-        results["freshness"] = {"meta": res, "text": res["out"] if res["ok"] else ""}
+    # NOTE: the SEC EDGAR freshness check (fetch_filings.py --freshness) was removed from the
+    # nightly workflow (Vic, 2026-06-24). Run it on demand via the check-recent-earnings skill.
     return results
 
 
@@ -156,10 +153,6 @@ def compose_digest(results: dict, runid: str) -> tuple[str, list[str]]:
         if cal["counts"]["review_due"]:
             actions.append(f"⏳ {cal['counts']['review_due']} tracker entries review-due "
                            f"(>30d) — run --calibrate to score.")
-    fr = results.get("freshness", {}).get("text", "")
-    if fr and "New filings available" in fr:
-        actions.append("📥 new filings available to ingest — see Discovery › Freshness.")
-
     if not actions:
         actions.append("✅ Nothing actionable — vault clean, trackers fresh, no FIRED tripwires.")
 
@@ -210,9 +203,6 @@ def compose_digest(results: dict, runid: str) -> tuple[str, list[str]]:
 
     # Discovery
     out.append("## 🔭 Discovery (self-discovering)\n")
-    if fr:
-        out.append("### Freshness / new filings")
-        out.append("```\n" + _text_head(fr, 30) + "\n```")
     out.append("### Connection candidates (top of `find_connections.py`)")
     out.append("```\n" + _text_head(results["connections"]["text"], 24) + "\n```")
     out.append("### Pattern accumulation (`monitor_patterns.py`)")
@@ -289,6 +279,32 @@ def _slug(text: str, n: int = 7) -> str:
     return "-".join(words) or "topic"
 
 
+def _live_logger(header: str):
+    """Return (log_fn, loglines). log_fn appends each line to the day's run log IMMEDIATELY
+    (flushed via per-line open/close) AND keeps it in `loglines` for the result. This makes a long
+    research run — including a multi-hour wait-through sleep — tail-able LIVE, never an invisible
+    black box: `tail -f automation/logs/run-<date>.log` shows real-time progress. (Fixes the
+    2026-06-24 trap where the loop buffered all output until the very end.)"""
+    loglines: list[str] = []
+    logpath = LOGS / f"run-{_stamp()}.log"
+    try:
+        with logpath.open("a", encoding="utf-8") as f:
+            f.write(f"\n  {header}\n")
+    except Exception:  # noqa: BLE001
+        pass
+
+    def _log(m: object) -> None:
+        s = str(m)
+        loglines.append(s)
+        try:
+            with logpath.open("a", encoding="utf-8") as f:   # open/close per line == flushed immediately
+                f.write(f"    {s}\n")
+        except Exception:  # noqa: BLE001
+            pass
+
+    return _log, loglines
+
+
 def build_deepresearch_cmd(question: str, report_path: Path) -> list[str]:
     """A `claude -p` that runs the deep-research workflow and saves the report.
     Broad tools (deep-research needs web + workflow); only canon EDITS are hard-blocked."""
@@ -322,25 +338,77 @@ def deep_research_step(run_llm: bool) -> dict:
     # Local import so a research_loop issue can never break the (free) deterministic scan.
     import research_loop  # noqa: E402
 
-    loglines: list[str] = []
+    # Wait-through envelope (Vic, 2026-06-24): start ~03:30, ride through any 5-hour Max usage cap
+    # (sleep-until-reset + continue), but HARD-STOP by 06:00 so it can never run into the workday.
+    # If the cap hasn't cleared by 06:00 it checkpoints and the next run resumes (the only fallback).
+    now = _now()
+    deadline = now.replace(hour=6, minute=0, second=0, microsecond=0)
+    if deadline <= now:               # a manual/daytime run past 06:00 — give a bounded 2h envelope
+        deadline = now + timedelta(hours=2)
+
+    # Live logging: each line lands in run-<date>.log as it happens (tail-able), not buffered to the end.
+    log_fn, loglines = _live_logger("deep-research (loop):")
     result = research_loop.run(
         question, report_path, claude_bin=CLAUDE_BIN,
-        max_agents=60, max_concurrent=2, pace_seconds=30,
+        # max_agents is only a runaway backstop (real safety = max_concurrent=2). Raised 60→150 so
+        # wait-through retries through a usage cap can't inflate the call count into a premature bail.
+        max_agents=150, max_concurrent=2, pace_seconds=30,
         per_call_timeout=600, max_retries=3, verify_each=True,
-        log=lambda m: loglines.append(str(m)),
+        wait_through=True, deadline=deadline,
+        log=log_fn,
     )
-    # Observability — write the loop's per-step outcome into the day's run log so a failure
-    # (throttle, budget cap, synthesis miss) is VISIBLE in the morning, not buried in a JSONL.
-    try:
-        with (LOGS / f"run-{_stamp()}.log").open("a", encoding="utf-8") as f:
-            f.write("\n  deep-research (loop):\n")
-            for ln in loglines:
-                f.write(f"    {ln}\n")
-    except Exception:  # noqa: BLE001
-        pass
 
     saved = report_path.exists()
     if saved:  # mark the topic researched only if the report actually landed
+        _run(["python3", "scripts/research_agenda.py", "--mark-done", str(report_path)], timeout=30)
+    result["report_saved"] = saved
+    result["log"] = loglines
+    return result
+
+
+def resume_research_step() -> dict:
+    """The 05:30 WATCHDOG. Guarantee today's deep-research report actually landed; if the 03:30
+    run was interrupted (throttle-bail / crash / Mac slept) — or never ran — resume/run it to
+    completion. Idempotent (no-op once a report dated today exists) and LOCK-guarded so it never
+    collides with a 03:30 run that is still alive (sleeping in wait-through). Completion is the
+    priority: no early ceiling, only a generous NOON runaway backstop."""
+    wd = _now().weekday()
+    if not (1 <= wd <= 5):  # deep-research runs Tue–Sat only; nothing to complete otherwise
+        return {"name": "resume-research", "executed": False, "note": "not a deep-research day"}
+    todays = sorted(RESEARCH_SELF.glob(f"{_stamp()}_*.md")) if RESEARCH_SELF.exists() else []
+    if todays:
+        return {"name": "resume-research", "executed": False,
+                "note": f"today's report already present ({todays[0].name}) — nothing to do"}
+    res = _run(["python3", "scripts/research_agenda.py", "--pick"], timeout=30)
+    question = (res["out"] or "").strip()
+    if not question:
+        return {"name": "resume-research", "executed": False, "note": "no Pending topic to complete"}
+    import research_loop  # noqa: E402
+    run_dir = research_loop._run_dir(question)
+    if research_loop.is_locked(run_dir):
+        return {"name": "resume-research", "executed": False,
+                "note": "the 03:30 run is still active on this topic — leaving it to finish"}
+    state_exists = (run_dir / "state.json").exists()
+    action = "resuming the interrupted run" if state_exists else "starting (03:30 left no checkpoint)"
+    # No early ceiling — completion is the priority (Vic, 2026-06-24). The NOON backstop only guards
+    # a pathological runaway (e.g. a weekly limit that won't reset for hours/days anyway).
+    now = _now()
+    deadline = now.replace(hour=12, minute=0, second=0, microsecond=0)
+    if deadline <= now:
+        deadline = now + timedelta(hours=6)
+    RESEARCH_SELF.mkdir(parents=True, exist_ok=True)
+    report_path = RESEARCH_SELF / f"{_stamp()}_{_slug(question)}.md"
+    # Live logging — same as the 03:30 path: tail-able in run-<date>.log as it happens.
+    log_fn, loglines = _live_logger(f"resume-research (05:30 watchdog — {action}):")
+    result = research_loop.run(
+        question, report_path, claude_bin=CLAUDE_BIN,
+        max_agents=150, max_concurrent=2, pace_seconds=30,
+        per_call_timeout=600, max_retries=3, verify_each=True,
+        wait_through=True, deadline=deadline,
+        log=log_fn,
+    )
+    saved = report_path.exists()
+    if saved:
         _run(["python3", "scripts/research_agenda.py", "--mark-done", str(report_path)], timeout=30)
     result["report_saved"] = saved
     result["log"] = loglines
@@ -358,16 +426,26 @@ def main():
                     help="daily heartbeat: scan every day; deep-research Tue-Sat; full agentic review Mon")
     ap.add_argument("--deep-research", dest="deep_research", action="store_true",
                     help="run /deep-research on the top topics-list.md item -> raw/research/self-research/")
-    ap.add_argument("--with-freshness", action="store_true", help="also run SEC EDGAR freshness (network)")
     ap.add_argument("--run-llm", action="store_true", help="actually invoke claude -p (default: dry-run)")
+    ap.add_argument("--resume-research", dest="resume_research", action="store_true",
+                    help="05:30 watchdog: verify today's self-research report landed; resume/complete it if not")
     ap.add_argument("--quiet", action="store_true")
     args = ap.parse_args()
 
-    # --auto = the daily heartbeat. Free deterministic scan every day; the full agentic
-    # loop (calibration scoring + briefing, on the Max subscription) ONLY on Mondays —
-    # so Max usage stays ~1 run/week while hygiene/discovery/freshness run daily.
+    # --resume-research = the 05:30 WATCHDOG. It does NOT run the scan/digest; it just makes sure
+    # today's deep-research report actually landed and resumes the loop to completion if not.
+    if args.resume_research:
+        _ensure_dirs()
+        res = resume_research_step()
+        if not args.quiet:
+            print(f"resume-research: {res.get('note') or ('report_saved=' + str(res.get('report_saved')))}")
+        return
+
+    # --auto = the daily heartbeat (what the 3:30am launchd job runs). The free deterministic
+    # scan runs every day; the Max-subscription agentic work runs 6 nights/week — the weekly
+    # calibration + briefing review on Monday, and one deep-research topic Tue–Sat. Only Sunday
+    # is free-scan-only. (No SEC-freshness step — removed from the nightly workflow 2026-06-24.)
     if args.auto:
-        args.with_freshness = True
         wd = _now().weekday()       # Mon=0 ... Sun=6
         if wd == 0:                 # Monday → weekly agentic review (calibration + briefing)
             args.full = True
@@ -381,7 +459,7 @@ def main():
     runid = _runid()
 
     # Deterministic scan always runs (it's the filter the agentic steps ride on).
-    results = scan_deterministic(with_freshness=args.with_freshness)
+    results = scan_deterministic()
     digest, actions = compose_digest(results, runid)
     digest_path = DIGESTS / f"{_stamp()}_digest.md"
     digest_path.write_text(digest, encoding="utf-8")

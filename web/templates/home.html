@@ -16,7 +16,7 @@
 
   <div class="thesis-cards">
     {% for d in home.thesis_domains %}
-    <a class="th-card" href="{{ rel }}{{ 'companies/index.html' }}" data-domain="{{ d.key }}">
+    <a class="th-card" href="{{ rel }}structure.html" data-domain="{{ d.key }}">
       <span class="th-icon" style="background:{{ d.color }}1f;border-color:{{ d.color }}"><span class="sq" style="background:{{ d.color }}"></span></span>
       <div class="th-tag" style="color:{{ d.color }}">{{ d.tag }}</div>
       <div class="th-title">{{ d.title }}</div>
@@ -40,7 +40,7 @@
     </div>
 
     <div class="panel board">
-      <div class="p-hd">Top chokepoints <a class="more" href="{{ rel }}chokepoints/index.html">view all →</a></div>
+      <div class="p-hd">Top chokepoints <a class="more" href="{{ rel }}structure.html">view board →</a></div>
       {% for b in board %}
       {% if b.out %}<a class="board-row" href="{{ rel }}{{ b.out }}">{% else %}<div class="board-row">{% endif %}
         <span class="rk">{{ loop.index }}</span>

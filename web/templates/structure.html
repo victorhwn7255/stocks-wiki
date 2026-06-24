@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="structure">
+  <div class="eyebrow">VAULT STRUCTURE</div>
+  <h1 class="struct-h1">Make the hidden structure visible.</h1>
+  <p class="hero-lede">Three zoomed-out maps of the vault — the chokepoints ranked by how hard they are to replicate, the value-capture layer stack, and the wikilink graph. The big picture no single page can show.</p>
+
+  <div class="seg struct-tabs" id="struct-tabs">
+    <button class="on" data-v="board">Chokepoint board</button>
+    <button data-v="map">Value-chain map</button>
+    <button data-v="graph">Connection graph</button>
+  </div>
+
+  {# ── VIEW 1: chokepoint durability board ── #}
+  <div class="struct-view" data-view="board">
+    <div class="board-caption">Ranked by <b>durability</b> — how hard the moat is to replicate — not by size. Physics &gt; precision-manufacturing &gt; integration.</div>
+    <div class="dboard">
+      {% for b in board %}
+      {% if b.out %}<a class="dboard-row" href="{{ rel }}{{ b.out }}">{% else %}<div class="dboard-row">{% endif %}
+        <span class="rk">{{ loop.index }}</span>
+        <span class="gbar" style="background:{{ b.color }}"></span>
+        <span class="nm">{{ b.name }}</span>
+        <span class="grade" style="color:{{ b.color }}">{{ b.grade }}</span>
+        <span class="durtrack"><span class="durfill" style="width:{{ b.dur }}%;background:{{ b.color }}"></span></span>
+        <span class="durn">{{ b.dur }}</span>
+      {% if b.out %}</a>{% else %}</div>{% endif %}
+      {% endfor %}
+    </div>
+    <div class="grade-legend row">{% for k, g in grade_legend.items() %}<span class="gl"><span class="sw" style="background:{{ g.color }}"></span>{{ g.label }}</span>{% endfor %}</div>
+  </div>
+
+  {# ── VIEW 2: value-chain layer map ── #}
+  <div class="struct-view hide" data-view="map">
+    <div class="board-caption">Where value gets captured, cool→warm. <b>Layer 1</b> (platform definers) down to <b>Layer 6</b> (raw materials).</div>
+    {% for L in layer_map %}
+    <div class="lrow">
+      <span class="lbadge" style="background:{{ L.color }}1f;color:{{ L.color }};border-color:{{ L.color }}">L{{ L.n }}</span>
+      <div class="lbody">
+        <div class="ltitle">{{ L.title }} <span class="lct">{{ L.chips|length }}</span></div>
+        <div class="lchips">
+          {% for c in L.chips %}<a class="lchip" href="{{ rel }}{{ c.out }}"><span class="dot" style="background:{{ c.hex }}"></span>{{ c.tk }}</a>{% endfor %}
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
+  {# ── VIEW 3: connection graph (SVG drawn by app.js) ── #}
+  <div class="struct-view hide" data-view="graph">
+    <div class="board-caption">Every dot is a page; every line a <code>[[wikilink]]</code>. Centered on the most-linked page; dot size ∝ inbound links; color by domain/type. Click a dot to open it.</div>
+    <div class="graph-wrap"><svg id="cgraph" viewBox="0 0 900 560" preserveAspectRatio="xMidYMid meet"></svg></div>
+    <div class="graph-legend">
+      <span class="gl"><span class="sw" style="background:#2f9bff"></span>AI</span>
+      <span class="gl"><span class="sw" style="background:#f7a21b"></span>Defense</span>
+      <span class="gl"><span class="sw" style="background:#4defc4"></span>Humanoid</span>
+      <span class="gl"><span class="sw" style="background:#ff4d42"></span>Chokepoint</span>
+      <span class="gl"><span class="sw" style="background:#a98bf5"></span>Theme</span>
+      <span class="gl"><span class="sw" style="background:#ff8a3c"></span>Tracker</span>
+    </div>
+  </div>
+
+  <div class="disclaimer">Research tool — describes structure, not advice. No buy/sell calls, no price targets, no position sizing.</div>
+</div>
+<script id="graph-data" type="application/json">{{ graph | tojson | safe }}</script>
+{% endblock %}

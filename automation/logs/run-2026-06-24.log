@@ -1,0 +1,22 @@
+
+=== run 2026-06-24T033004 ===
+  hygiene: ok
+  calibration: ok
+  connections: ok
+  patterns: ok
+  freshness: ok
+  actions: 2
+    - ⚠️ unresolved wikilinks: [[CMI]], [[Canonical]], [[QCOM]] — forward-link or typo (check).
+    - 📥 new filings available to ingest — see Discovery › Freshness.
+
+  deep-research (loop):
+    scope ok (10 angles)
+      angle 1/10 Glass cloth chokepoint: Nittobo T-glass/ ..... ok
+      angle 2/10 HVLP copper foil node: Resonac vs Mitsui ..... ok
+      angle 3/10 ABF build-up film monopoly durability: A ..... ok
+      angle 4/10 EMC↔Doosan Rubin-CCL qualification: spec ..... ok
+      angle 5/10 CCL maker competitive map: EMC, Doosan,  ..... ok
+      angle 6/10 Demand sizing: AI accelerator/HBM unit g ..... ok
+      angle 7/10 Generational lockout test: do next-node  ..... FAILED (retries 1)
+      angle 8/10 Who-captures-value: margin/value-capture ..... ok
+    throttled — checkpointed; will resume on the next run
