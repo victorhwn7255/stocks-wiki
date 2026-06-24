@@ -4,6 +4,17 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{{ (page.title if page is defined and page else route_label) }} · Stocks Wiki</title>
+<meta name="description" content="{{ meta_description }}">
+<meta name="robots" content="index,follow">
+{% if canonical %}<link rel="canonical" href="{{ canonical }}">{% endif %}
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Stocks Wiki">
+<meta property="og:title" content="{{ (page.title if page is defined and page else route_label) }} · Stocks Wiki">
+<meta property="og:description" content="{{ meta_description }}">
+{% if canonical %}<meta property="og:url" content="{{ canonical }}">{% endif %}
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#0a0a0a">
+<link rel="icon" type="image/svg+xml" href="{{ rel }}assets/favicon.svg">
 <link rel="stylesheet" href="{{ rel }}assets/fonts.css">
 <link rel="stylesheet" href="{{ rel }}assets/style.css">
 </head>

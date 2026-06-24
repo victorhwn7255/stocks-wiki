@@ -11,7 +11,7 @@ Usage:
     python web/build.py              # build the whole site
     python web/build.py --only NVDA  # build one page (+ shell/nav/search) for review
 """
-import argparse, json, re, shutil, sys
+import argparse, json, os, re, shutil, sys
 from html import unescape
 from pathlib import Path
 import yaml  # noqa: E402  (present via vault tooling)
@@ -613,6 +613,54 @@ def tracker_hero(slug, body, slugmap, rel, stale_days, today):
     return fn(body, slugmap, rel, stale_days, today)
 
 
+def _meta_desc(r, fallback):
+    """A short plain-text <meta description> for a page: its subtitle if present, else a typed line."""
+    sub = (r.get("subtitle") or "").strip()
+    if sub:
+        txt = re.sub(r"\[\[([^\]|]+)(\|[^\]]+)?\]\]", r"\1", sub)   # [[wikilinks]] → text
+        txt = re.sub(r"[`*_#>]|\]\(.*?\)|\[|\]", " ", txt)         # strip light markdown
+        txt = re.sub(r"\s+", " ", txt).strip()
+        if txt:
+            return (txt[:152].rstrip() + "…") if len(txt) > 155 else txt
+    t = r.get("title") or r.get("slug") or "Page"
+    return f"{t} — {r.get('type', 'page')} in the Stocks Wiki research vault."[:200]
+
+
+def _write_seo(dist, base_url, lastmod):
+    """Generate the production SEO/static files into dist/: 404.html, sitemap.xml, robots.txt.
+    Public site → robots allows all crawlers + points at the sitemap. (favicon.svg is a source
+    asset under web/assets/, copied with the rest.) URLs are absolute when base_url is set (Vercel
+    sets SITE_BASE_URL), else root-relative for local/preview builds."""
+    # 404 — self-contained (absolute /asset paths so it renders from ANY not-found depth)
+    (dist / "404.html").write_text(
+        '<!doctype html><html lang="en" data-theme="dark" data-accent="amber"><head>\n'
+        '<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">\n'
+        '<title>404 · Stocks Wiki</title><meta name="robots" content="noindex">\n'
+        '<link rel="stylesheet" href="/assets/fonts.css"><link rel="stylesheet" href="/assets/style.css">\n'
+        '<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg"></head>\n'
+        '<body><main style="max-width:42rem;margin:16vh auto;padding:0 1.5rem;text-align:center">\n'
+        '<div style="font:600 3rem/1 var(--mono,monospace);color:var(--accent,#f7a21b)">404</div>\n'
+        '<h1 style="margin:.5rem 0">Page not found</h1>\n'
+        '<p style="color:#9aa3ad">That page isn\'t in the vault — it may have been renamed or removed.</p>\n'
+        '<p><a href="/" style="color:var(--accent,#f7a21b)">← Back to the vault home</a></p>\n'
+        '</main></body></html>\n')
+    # sitemap — every built .html except the 404
+    loc = (lambda f: f"{base_url}/{f}") if base_url else (lambda f: f"/{f}")
+    sm = ['<?xml version="1.0" encoding="UTF-8"?>',
+          '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
+    for f in sorted(str(p.relative_to(dist)).replace(os.sep, "/") for p in dist.rglob("*.html")):
+        if f == "404.html":
+            continue
+        sm.append(f"  <url><loc>{loc(f)}</loc><lastmod>{lastmod}</lastmod></url>")
+    sm.append("</urlset>")
+    (dist / "sitemap.xml").write_text("\n".join(sm) + "\n")
+    # robots — public: allow everything, point at the sitemap
+    robots = "User-agent: *\nAllow: /\n"
+    if base_url:
+        robots += f"Sitemap: {base_url}/sitemap.xml\n"
+    (dist / "robots.txt").write_text(robots)
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--only", help="build just one page by slug (e.g. NVDA)")
@@ -625,6 +673,12 @@ def main():
     dist = WEB / "dist"
     pages, slugmap, src = index_pages()
     SITE = load_site()
+    # Production base URL — Vercel sets SITE_BASE_URL (the real domain) at build; else site.yaml; else
+    # empty (local/preview → root-relative SEO). Used for canonical, OG, and sitemap absolute URLs.
+    base_url = (os.environ.get("SITE_BASE_URL") or SITE.get("base_url") or "").rstrip("/")
+    site_desc = (SITE.get("description")
+                 or "A research vault mapping the chokepoints across the AI-datacenter, "
+                    "defense & drones, and humanoid-robot supply chains.")
     from datetime import date as _date
     _t = _date.today()
     today_int = _t.year * 365 + _t.month * 30 + _t.day
@@ -667,7 +721,8 @@ def main():
     # ── render ──
     env = Environment(loader=FileSystemLoader(str(WEB / "templates")), autoescape=select_autoescape(["html"]))
     shared = {"nav_groups": nav_groups, "tape_items": tape, "total": len(pages),
-              "section_tabs": section_tabs}
+              "section_tabs": section_tabs, "base_url": base_url,
+              "meta_description": site_desc, "canonical": ""}
 
     def rel_for(out):                # ../ depth from a page to dist root
         return "../" * out.count("/")
@@ -704,7 +759,8 @@ def main():
             page["hero"] = tracker_hero(r["slug"], r["body"], slugmap, rel, stale_days, today_int)
         ctx = dict(shared, rel=rel, route_label=route_label, active_tab=r["group"],
                    route_kind={"company": "equity", "chokepoint": "chokepoint"}.get(r["type"], r["type"]),
-                   page=page)
+                   page=page, meta_description=_meta_desc(r, site_desc),
+                   canonical=(f"{base_url}/{r['out']}" if base_url else ""))
         tpl = {"company": "company.html", "theme": "theme.html", "relationship": "theme.html",
                "chokepoint": "theme.html", "thesis": "document.html", "framework": "document.html",
                "tracker": "tracker.html"}.get(r["type"], "company.html")
@@ -731,7 +787,8 @@ def main():
         html = env.get_template("home.html").render(
             **dict(shared, rel="", route_label="HOME", route_kind="vault", active_tab="home",
                    home=home, stat_total=len(pages), counts=counts, recent=recent,
-                   board=board, grade_legend=grade_legend))
+                   board=board, grade_legend=grade_legend,
+                   canonical=(f"{base_url}/" if base_url else ""), meta_description=site_desc))
         (dist / "index.html").write_text(html)
         for gkey, label, ptype in GROUP_ORDER:
             sitems = [{"slug": pages[p.stem]["slug"], "title": pages[p.stem]["title"], "out": pages[p.stem]["out"],
@@ -808,6 +865,9 @@ def main():
     for f in (WEB / "assets").glob("*.*"):
         shutil.copy(f, adst / f.name)
     (dist / "search-index.json").write_text(json.dumps(search))
+    if not args.only:                       # SEO files need the full page set
+        from datetime import date
+        _write_seo(dist, base_url, date.today().isoformat())
     print(f"✓ built {len(targets)} page(s) → web/dist/  ({len(pages)} indexed, {len(search)} in search)")
     if args.only:
         print(f"  open: file://{(dist / targets[0]['out']).resolve()}")
