@@ -1,0 +1,31 @@
+
+=== run 2026-06-25T033005 ===
+  hygiene: ok
+  calibration: ok
+  connections: ok
+  patterns: ok
+  actions: 1
+    - ⚠️ unresolved wikilinks: [[CMI]], [[Canonical]], [[QCOM]] — forward-link or typo (check).
+
+  deep-research (loop):
+    caffeinate: holding the Mac awake until process exit (deadline ~06:00)
+    scope ok (10 angles)
+      angle 1/10 Copper demand build-up: AI datacenter/gr ..... ok
+      angle 2/10 Supply-side geology constraints: declini ..... ok
+      angle 3/10 Structural vs. cyclical gap test: is the ..... ok
+      angle 4/10 Value-chain segmentation: miners vs. sme ..... ok
+      angle 5/10 Smelting & refining concentration: China ..... ok
+      angle 6/10 Where value accrues: pure-play miners vs ..... ok
+      angle 7/10 Recycling/secondary supply as the swing  ..... ok
+      angle 8/10 Substitution & demand destruction risk:  ..... ok
+      angle 9/10 Major producer landscape & moats: Freepo ..... ok
+      angle 10/10 Falsifiers & downside risks: China prope ..... ok
+      connection 1/8 companies-A            ..... ok
+      connection 2/8 companies-B            ..... ok
+      connection 3/8 themes-A               ..... ok
+      connection 4/8 themes-B               ..... ok
+      connection 5/8 chokepoints-confirm    ..... ok
+      connection 6/8 chokepoints-challenge  ..... ok
+      connection 7/8 trackers-relationships ..... ok
+      connection 8/8 thesis-frameworks      ..... ok
+    synthesis ok → raw/research/self-research/2026-06-25_copper-as-an-ai-electrification-chokepoint-is.md (10/10 angles, 30 calls)

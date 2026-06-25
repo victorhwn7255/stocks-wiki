@@ -30,3 +30,14 @@ automation/research-runs/
 
 # Generated website (build artifact — regenerate with `python web/build.py`)
 web/dist/
+
+# Proprietary third-party research PDFs (LSEG/Fundstrat — redistribution prohibited).
+# The extracted data (forward-earnings-raw-data.csv) IS tracked; the source PDFs are not.
+raw/data/forward-earnings/LSEG_reports/
+
+# Staged source captures (Vic-staged Twitter/X threads + third-party reports) — kept
+# local for the intel skills to read; the analysis lands in raw/notes/*-intel/, which IS tracked.
+raw/notes/twitter-notes/
+raw/notes/reports/
+
+TODO.md

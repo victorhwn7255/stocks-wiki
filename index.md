@@ -159,6 +159,7 @@ Cross-vault status-bearing pages per CLAUDE.md Section 3.20 — updated by propa
 | [what-could-go-wrong](wiki/trackers/what-could-go-wrong.md) | MSFT, NVDA, AVGO | 2026-06-12 |
 | [AI-credit-spread-watch](wiki/trackers/AI-credit-spread-watch.md) | CRWV, ORCL, MSFT, AVGO, NVDA, NBIS, CORZ | 2026-06-21 |
 | [short-interest](wiki/trackers/short-interest.md) | — | 2026-06-19 |
+| [forward-pe-watch](wiki/trackers/forward-pe-watch.md) | NVDA, MSFT, GOOGL, AMZN, META, AVGO | 2026-06-24 |
 
 ## Relationships
 

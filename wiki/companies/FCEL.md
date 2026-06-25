@@ -466,18 +466,17 @@ Most strategically substantive source for Session 47. Full Q&A verified per Insi
 **Analyst silence observations:** Detailed Q&A analysis pending Stop 2 deeper read.
 
 <!-- LATEST-ALPHA:START -->
-## ⚠️ Latest alpha — unverified, between-filings (as of 2026-06-13)
+## ⚠️ Latest alpha — unverified, between-filings (as of 2026-06-24)
 
-*Tier 3/4 discovery — NOT canonical. Recent 8-K / shelf / news, to verify at the next primary source. Full detail + sources: [discovery note](../../raw/notes/latest-alpha/2026-06-13_FCEL_recent-developments.md). Items graduate into canon (or are pruned) at the next 10-Q ingest.*
+*Tier 3/4 discovery — NOT canonical. Recent 8-K / shelf / news, to verify at the next primary source. Full detail + sources: [discovery note](../../raw/notes/latest-alpha/2026-06-24_FCEL_recent-developments.md). Items graduate into canon (or are pruned) at the next 10-Q ingest. **Fit Energy bullets upgraded to 8-K-primary detail (Item 1.01/3.02, filed Jun 24) on 2026-06-24** — replacing the prior PR-sourced read.*
 
-- **Fresh S-3ASR automatic shelf filed the SAME DAY as Q2 earnings** (SEC, Jun 8) — Tier 1 · the ATM dilution machinery renewed, not retired, while management pitched the 4 GW pipeline. `[verify: ATM activity + share count, Q3 FY2026 10-Q equity footnote]`
-- **The Street now trades the page's own dated test** (news, Jun 9) — Tier 4 · Canaccord upgrade thesis = a significant data-center contract before fiscal year-end (Oct 31) — the conversion event is consensus-anticipated, no longer a quiet watch item. `[verify: any contracted-backlog addition, Q3 call/8-K]`
-- **New director John Livingston** (8-K, May 19) — Tier 1 · cybersecurity entrepreneur + McKinsey veteran; enterprise-buyer-credibility read is inferable at most — 8-K states no arrangements. `[verify: committee roles, next proxy]`
-- **SDCL cross-venue asymmetry** (IR deck, May 8) — Tier 2 · the "up to 450 MW" data-center collaboration still lives in the corporate deck but went unmentioned at the Jun 8 call; silence ≠ retreat while the deck carries it. `[verify: SDCL status, Q3 call]`
-- **No order, contract, or named customer appeared anywhere in the ~90-day window** — the honest counterweight to the pipeline narrative (already in canon).
-- Related: [[BE]] (the converted comparable at the same BTM chokepoint) · [[BTM-grid-bypass-workaround]]
+- **Fit Energy CEPA — the first deposit-backed firm order** (8-K Item 1.01; event Jun 22 / filed Jun 24) — Tier 1 · a **Capital Equipment Purchase Agreement** with **Fit Energy USA LP** for **2.5 MW carbonate "Blocks," up to 380 MW across four phases**: **Phase 0 = 30 MW with payment obligations effective on signing** (the firm part), then Fit's options for **Phase 1 = 100 MW / Phase 2 = 125 MW / Phase 3 = 125 MW**, each gated on a milestone-based initial deposit at election; project-level **15–20-year LTSAs**. The first concrete pipeline→contracted-backlog conversion candidate (the Open Q#1 test). `[verify: does the 30 MW enter contracted backlog + deposit $ + rev-rec timing, Q3 FY2026 10-Q]`
+- **…but Fit Energy is a developer, NOT a hyperscaler** (PR Jun 23) — Tier 4 · "a developer of reliable power solutions… for AI," not a named data-center operator → **criterion 4 (named hyperscaler) stays falsified**; the 380 MW is an "up to," option-gated framework — not 380 MW of firm orders. `[verify: any named end-customer behind the phases, Q3 call/8-K]`
+- **Customer warrants — precise terms now in hand, and they read as alignment, not ATM-style dilution** (8-K Item 1.01/3.02, Jun 22) — Tier 1 · **12.0M warrants, $26.44 strike, three equal 4.0M tranches**, each **performance-vested on Fit's non-refundable deposits for phases 1/2/3** (tranche 1 vests on a deposit = 16% of the 100 MW order value); unvested tranches **expire 24 months** after issuance; company **mandatory-exercise right if VWAP > 150% of strike (~$39.66) for 30 consecutive trading days**; **19.99% ownership cap**. The **$26.44 strike sits well above the recent share price**, so — structurally — this is a **[[BE]]-Oracle-style customer-alignment warrant (dilutive only on a 2×+ move, and only if Fit funds the later phases)**, distinct from the immediate ATM dilution. A **Registration Rights Agreement** covers resale of the warrant shares (shelf to be filed within ~30 days of closing). `[verify: warrant fair-value charge + any tranche vesting, Q3 10-Q equity footnote]`
+- **Updates the prior "zero firm orders" counterweight** — there is now a deposit-backed 30 MW firm phase, but it is developer-led, small vs the 4 GW pipeline, and not the hyperscaler-scale win the narrative-outrunning-proof falsifier specifies → *nudged, not tripped.*
+- Related: [[BE]] (the converted comparable at the same BTM chokepoint; the customer-warrant parallel) · [[BTM-grid-bypass-workaround]]
 
-*Signal only (not weighted): shares +10% Jun 9 on the Canaccord Hold→Buy upgrade (price target $12→$30) — the tape is pricing the contract before it exists.*
+*Signal only (not weighted): shares +~16% Jun 23 on the Fit Energy news (after +10% Jun 9 on the Canaccord $12→$30 upgrade) — the tape is pricing the conversion fast.*
 <!-- LATEST-ALPHA:END -->
 
 ## Change log
