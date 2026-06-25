@@ -11,6 +11,8 @@ last_updated: 2026-05-29
 
 *See also: [[MLCC-oligopoly]] — the canonical chokepoint (promoted from a Tier-3-anchored theme at S170, once [[MURATA]] #1 + [[TAIYO]] #3 were both primary-ingested) testing whether high-end AI-server MLCC is the next memory-style component oligopoly; this page is its structural analog.*
 
+*See also: [[memory-wall]] — the dynamics theme one layer up. This page owns the HBM *supply structure* (who controls the bottleneck); [[memory-wall]] owns the *mechanism* (why memory binds — bandwidth, not compute), the value-migration thesis, and the cycle/super-cycle question.*
+
 ---
 
 ## Chokepoint scope + Pathway 2 threshold (with vault-adjacent-scope honest framing)

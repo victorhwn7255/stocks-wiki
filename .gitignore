@@ -30,6 +30,7 @@ automation/research-runs/
 
 # Generated website (build artifact — regenerate with `python web/build.py`)
 web/dist/
+raw/HTML/
 
 # Proprietary third-party research PDFs (LSEG/Fundstrat — redistribution prohibited).
 # The extracted data (forward-earnings-raw-data.csv) IS tracked; the source PDFs are not.

@@ -140,12 +140,14 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` Section 3
 | [humanoid-robot-value-chain](wiki/themes/humanoid-robot-value-chain.md) | MP, NVDA, INTC, INOD, NOVT, VPG, OUST, SANHUA, TUOPU, SHUANGHUAN, ZHONGDA, HARMONIC, SLING, ZHAOWEI, HENGLI | 2026-06-08 |
 | [memory-shortage-winners-losers](wiki/themes/memory-shortage-winners-losers.md) | MU, SNDK, PLAB, CSCO, NVDA, META, AVGO, MURATA, TAIYO | 2026-06-16 |
 | [CXL-memory-disaggregation](wiki/themes/CXL-memory-disaggregation.md) | ALAB, MRVL, MU, INTC, AMD | 2026-06-22 |
+| [memory-wall](wiki/themes/memory-wall.md) | MU, SNDK | 2026-06-25 |
 | [AI-buildout-who-holds-the-risk](wiki/themes/AI-buildout-who-holds-the-risk.md) | AVGO, NVDA, CRWV, NBIS, ORCL, AMZN, META, MSFT, GOOGL, BE, CSCO, CORZ | 2026-06-18 |
 | [AI-implementation-deployment-layer](wiki/themes/AI-implementation-deployment-layer.md) | ACN, IBM, EPAM, GLOB, CTSH, INFY, PLTR, CRM, MDB, DDOG, PANW, OKTA, CRWD, ZS | 2026-06-13 |
 | [physical-AI-value-chain](wiki/themes/physical-AI-value-chain.md) | NVDA, MP, HARMONIC, SANHUA, TUOPU, HENGLI, ZHAOWEI, SHUANGHUAN, ZHONGDA, SLING, NOVT, VPG, OUST, TDY, ARM | 2026-06-15 |
 | [training-to-inference-shift](wiki/themes/training-to-inference-shift.md) | NVDA, AMD, ARM, MU, AVGO, MRVL, TSM | 2026-06-16 |
 | [neocloud-moat-durability](wiki/themes/neocloud-moat-durability.md) | CRWV, NBIS, CORZ, NVDA, MSFT, AMZN, GOOGL, META | 2026-06-16 |
 | [commodity-supercycle-chokepoints](wiki/themes/commodity-supercycle-chokepoints.md) | MP, ETN, GEV, FLEX, LEU, BWXT, CCJ | 2026-06-16 |
+| [ai-frontier-systems](wiki/themes/ai-frontier-systems.md) | NVDA, AMD, TSM, ARM, INTC, AVGO, MRVL, ALAB, MU, SNDK, IBIDEN, GOOGL, AMZN, META, MSFT, ORCL, ANET, CRDO, LITE, COHR, AAOI, FN, GEV, ETN, VRT, CAT, BE, FCEL, CCJ, LEU, BWXT, CRWV, NBIS, CORZ | 2026-06-25 |
 
 ## Trackers
 

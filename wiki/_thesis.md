@@ -1,6 +1,6 @@
 # Thesis — AI Datacenter Supply Chain & Chokepoints
 
-**Last updated:** 2026-04-30
+**Last updated:** 2026-06-25
 **Owner:** Vic (human-maintained; never edited by the LLM except by explicit Vic-authorized rework session)
 
 ---
@@ -62,7 +62,7 @@ Framework 2.6 operates across all domains (not photonics-specific); applies to c
 
 ## Hyperscaler CAPEX flow analysis
 
-**The structural fact:** Hyperscaler AI infrastructure CAPEX is now the largest corporate investment cycle in history. Combined 2026 CAPEX guidance from Microsoft + Alphabet + Amazon + Meta is **~$640-720B**, roughly double 2025's $381B. The trajectory continues — Alphabet has explicitly guided 2027 CAPEX to "significantly increase" from 2026 levels.
+**The structural fact:** Hyperscaler AI infrastructure CAPEX is now the largest corporate investment cycle in history. Combined 2026 CAPEX guidance from Microsoft + Alphabet + Amazon + Meta is **~$640-720B**, roughly double 2025's $381B — a figure now **primary-sourced across all four payers** (it previously rested on NVDA's analyst-estimate framing). Including Oracle, the cohort extends toward **~$700-770B**; current analyst/web aggregation commonly cites ~$725B for the US hyperscalers, and TrendForce puts the top-nine *global* cloud providers at ~$830B in 2026 (+79% YoY) — both Tier-3 context, not vault-verified. The canonical primary-by-payer breakdown (per-quarter updates, Oracle's financing-envelope extension, the financing/global layers) lives in the `wiki/trackers/hyperscaler-capex.md` tracker. The trajectory continues — Alphabet has explicitly guided 2027 CAPEX to "significantly increase" from 2026 levels.
 
 **2026 hyperscaler CAPEX guidance:**
 
@@ -75,7 +75,7 @@ Framework 2.6 operates across all domains (not photonics-specific); applies to c
 | Oracle | ~$15B | Stargate $100B initial / $500B by 2029 | Multi-year commitment |
 | **Combined Big 4** | **~$381B** | **~$640-720B** | **~+70-90%** |
 
-*Status note (2026-06-04): the guidance figures in this section are the April-2026 snapshot from the thesis rework. The demand-side hyperscaler pages (MSFT / GOOGL / AMZN / META / ORCL) and the hyperscaler-capex theme now carry current primary-sourced CAPEX figures; refresh this section from those at the next thesis revision.*
+*Status note (refreshed 2026-06-25, Vic-authorized): the Big-4 per-company figures in the table below are the April-2026 guidance and remain consistent with the current primary-sourced figures on the demand-side hyperscaler pages (MSFT / GOOGL / AMZN / META / ORCL) and the `wiki/trackers/hyperscaler-capex.md` tracker — which is the canonical home for the live payer-by-payer breakdown. The aggregate paragraph above was refreshed (primary-sourced; Oracle extension; analyst/global context); the per-row table below is left at its April-2026 values as a dated snapshot. Read the tracker for the current per-quarter detail.*
 
 **Microsoft FY2026 trajectory:** Q1 FY2026 CAPEX $34.9B; Q2 $37.5B; Q3 $31.9B; full-year guidance raised to $190B+ as of April 2026 (originally $110-120B). Roughly two-thirds of Q3 spend on short-lived assets (GPUs/CPUs); one-third on long-lived assets (datacenters/land/power infrastructure for 15+ year lifespans). Azure backlog $80B; capacity constrained through 2026.
 
@@ -142,6 +142,20 @@ Framework 2.6 operates across all domains (not photonics-specific); applies to c
 - **Power constraint as binding ceiling on CAPEX deployment.** Money is not the bottleneck — $650B+ CAPEX commitments exceed deployable infrastructure. Transformer 4-year lead times mean compute CAPEX cannot deploy faster than power infrastructure expansion. This creates persistent constraint on Tier 1 (NVDA / AMD) revenue trajectory while power infrastructure suppliers (ETN / VRT / ABB / Schneider / HD Hyundai / Hyosung) capture pricing power.
 
 - **HBM cannibalization of commodity DRAM.** HBM3E to HBM4 transition increases dies-per-stack from 12 to 16 (33% more DRAM dies per AI accelerator); Samsung HBM4 ramp depleting commodity DDR5 capacity. AI compute scaling structurally tightens broader memory market — affects every server class, not just AI.
+
+## Demand-side metrics — how the buildout's output is judged
+
+The CAPEX flow analysis above is the **input** side (money in, by domain). This thesis is built almost entirely supply-side — where value accrues across the chain — but the supply-side map carries no object for **how the factory's output is measured**: whether a given gigawatt or dollar of capex is actually producing monetized intelligence. The Stanford CS153 "AI factory" lens supplies that demand-side / unit-economics metric set — a Tier-3 outside-view (the speakers are talking their books; the speaker-attributed detail and the agree/diverge cross-walk against vault canon live at `wiki/themes/ai-frontier-systems.md`). It is a measurement frame, not a vault fact — every figure on the source page is rendered soft and pre-registered for primary-source verification.
+
+The discriminating dials judge the buildout on output per scarce input, not on headline capex or announced megawatts:
+
+- **Value-per-gigawatt** (revenue-per-GW; daily-active-users-per-GW) — the cleanest cross-stack return measure. A poorly-balanced gigawatt delivers a fraction of a balanced one's output, so raw GW and raw spend are weak metrics. This is the same distinction between capex and return-on-invested-capital a public-market investor has to draw.
+- **Tokens-per-watt / energy-per-token** — the efficiency the buildout is judged on; with power the binding constraint, output-per-watt is the unit that matters.
+- **Tokens-per-dollar / cost-per-token** — the factory's unit cost (accelerator depreciation + HBM/package + power + networking + storage + financing, divided by tokens delivered at target quality/latency × utilization). Microsoft's Maia "~30% improved tokens per dollar" is the one place the supply-side map already touches this.
+- **Memory-bandwidth-per-flop / system balance** — the real gate is memory bandwidth, not flops (the infra-side statement of the memory-wall / HBM thesis already in this file); low measured utilization (MFU) is the symptom of an unbalanced system.
+- **The MW funnel** — requested → studied → contracted → permitted → under-construction → energized → utilized megawatts; only the last two are real capacity. The discipline-keeper behind the "announced ≠ energized / money is not the bottleneck" reframing already central to this thesis.
+
+Why it matters here: these dials adjudicate the **capex-vs-return** question the whole buildout rests on — the timing risk the hyperscalers all acknowledge (per the `wiki/trackers/hyperscaler-capex.md` tracker). If value-per-GW and cost-per-token keep improving and the revenue conversion shows up, the supply-side chokepoint thesis holds; if output-per-input stalls while capex keeps climbing, that is the bubble / cycle-turn case (the `wiki/themes/ai-frontier-systems.md` centerpiece + the `wiki/trackers/what-could-go-wrong.md` register).
 
 ## The portfolio positions
 
@@ -381,3 +395,5 @@ The most likely directions for thesis evolution:
 ---
 
 **Note on this rework (2026-04-30):** Comprehensive rework executed via collaborative chat drafting (Vic-directed; agent-scaffolded with research backing) per CLAUDE.md v8.1 _thesis.md ownership convention exception (one-time Vic-authorized rework session; resumed default for future sessions). Scope expanded from "AI compute supply chain — photonics primary" framing to "AI datacenter supply chain — compute, photonics, memory, energy, power, equipment, materials, and more." Hyperscaler CAPEX flow analysis section added with research-backed 2026 figures (Microsoft FY2026 $190B+; Alphabet 2026 $180-190B; Amazon 2026 ~$200B; Meta 2026 $125-145B). Multi-domain chokepoint expansion delivered (Energy/Power; Memory; Equipment; Materials; Compute) with full analytical positioning per chokepoint. Photonics chokepoint baseline preserved verbatim. Key structural observation: power infrastructure has displaced compute as the binding 2026 constraint (50% of planned 2026 US datacenter builds delayed/cancelled per Bloomberg/Sightline Climate; transformer lead times 120-210 weeks). Investment thesis reframed from photonics-thesis-anchored to dual-anchor (compute + power infrastructure) AI datacenter supply chain exposure with multi-domain diversification.
+
+**Note on the 2026-06-25 targeted edit (Vic-authorized, S175):** Two scoped changes — authorized by Vic, not a full rework; default human-ownership otherwise resumes. (1) **Added** the *Demand-side metrics — how the buildout's output is judged* section (value-per-GW / tokens-per-watt / tokens-per-dollar / memory-bandwidth-per-flop / the MW funnel) — the CS153 "AI factory" Tier-3 lens, the clearest demand/output-side gap in this otherwise supply-side thesis; speaker-attributed detail + cross-walk at `wiki/themes/ai-frontier-systems.md`. (2) **Refreshed** the 2026 hyperscaler-capex figure: the Big-4 ~$640-720B is unchanged but is now primary-sourced (was NVDA's analyst estimate), extends toward ~$700-770B with Oracle, reconciles with the ~$725B analyst/web aggregation and TrendForce's ~$830B top-nine global figure (Tier-3), and now points to the canonical `wiki/trackers/hyperscaler-capex.md` tracker; the per-row table is left as a dated April-2026 snapshot. No other content changed.
