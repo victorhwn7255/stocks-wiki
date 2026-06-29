@@ -1,7 +1,7 @@
 ---
 type: tracker
 tickers: [MSFT, GOOGL, AMZN, META, ORCL, CRWV, NBIS]
-last_updated: 2026-06-18
+last_updated: 2026-06-29
 ---
 
 # Hyperscaler AI-datacenter CAPEX — the payer/spender tracker
@@ -30,7 +30,7 @@ All figures trace to the company pages' primary sources (the big four: FY2025 10
 | [[GOOGL]] | $91.4B (+74%) | **$180–190B** (raised from $175-185B; +Intersect energy) | $35.7B (+107%) | precise range | TPU 8t/8i + Axion | Cloud backlog **$462.3B** | equity-securities gain $36.9B |
 | [[AMZN]] | $131.8B (+59%) | **qualitative only** (no $-guide; TTM $151B; ~$177B run-rate) | $43.2B cash (+~73%) | qualitative-only | Trainium (>$225B commitments) | AWS backlog **$364B** (+>$100B Anthropic) | Anthropic mark-up $15.6B |
 | [[META]] | $72.2B (incl. leases) | **$125–145B** (raised from $115-135B; memory-driven) | $19.8B (+~45%) | precise range | MTIA / Broadcom (>1GW) | — (ad-driven; no contract backlog) | tax benefit ~$5B |
-| [[ORCL]] | $21.2B (+209%; May FY) | **deferred** ($50B CY2026 debt+equity financing envelope; 9mo FY26 capex $39.2B / +223%; TTM ~$48.3B) | — (Q3 FY26 9mo $39.2B) | deferred / financing-envelope | **none** (merchant NVIDIA/AMD GPUs + Ampere CPUs) | RPO **$552.6B** (+325%; 2nd-largest, fastest-growing) | — (clean NI; caveat is *off-balance-sheet capex* + rising leverage) |
+| [[ORCL]] | **$55.7B FY2026 (+162%; May FY)** | **~$70B net FY2027 (~$90-95B reported)** + ~$40B financing (incl. $20B ATM) | Q4 FY26: rev $19.2B/+21%, OCI +93% | now-given (was deferred) | **none** (merchant NVIDIA/AMD GPUs + Ampere CPUs) | RPO **$638B** (+363%; long-dated) | **FCF −$23.7B** (clean NI; the build is debt/preferred/prepay-funded) |
 | [[CRWV]] *(rent-side neocloud)* | $10.3B | **$31–35B** (~**2.6-2.9× revenue**; component-pricing-driven) | $6.8B Q1 2026 | precise range | **none** (pure merchant NVIDIA) | backlog **$99.4B** | net **LOSS** $(740)M Q1; **debt-funded** ($25.1B debt; $1.23B FY25 interest) |
 | [[NBIS]] *(rent-side neocloud; foreign 20-F)* | ramping (FY25 rev $529.8M) | **$20–25B** (raised from $16-20B; ~**7-8× revenue** — most extreme) | ~$2.5B Q1 2026 | precise range | **none** (merchant NVIDIA) | Microsoft + Meta ($15B 5-yr option) | net **LOSS** $(113.5)M Q1; but **~$9.3B cash buffer** + core-cloud adj-EBITDA-positive |
 
@@ -133,6 +133,7 @@ The Tier-3 synthesis adds a useful aggregation rule: **any two of these together
 
 ## Change log
 
+- **2026-06-29 (S178 — [[ORCL]] FY2026 refresh):** Updated the ORCL row to FY2026 actuals — capex **$55.7B (+162%)**, **FCF −$23.7B**, RPO **$638B (+363%)**, the FY2027 **~$70B-net (~$90-95B reported)** capex guide + ~$40B financing (incl. $20B ATM); the "deferred" guidance style resolved to now-given. last_updated 2026-06-18 → 2026-06-29.
 - **2026-06-18 (S167 — GOOGL $80B equity raise):** Added the Alphabet **$80B equity raise** (GOOGL 8-K, June 1 2026) to dynamic #8 + the GOOGL row note — the financing ladder reaching the public-equity rung; 2026 capex $180-190B now exceeds $174B TTM OCF (company-specific confirmation of the cohort's ~94%-of-OCF figure), with the honest nuance that only ~$40B of the $80B funds the build (~$40B ATM = employee-tax). Between-filings 8-K, surfaced via a Maverick video-intel discovery; GOOGL.md refresh deferred to its next 10-Q+call. last_updated 2026-06-03 → 2026-06-18.
 - **2026-06-15 (S162 — CORZ cross-reference):** Added a host-layer-supply note under "Where the capex flows / Power" — [[CORZ]] (Core Scientific), the host/landlord tier upstream of the [[CRWV]]/[[NBIS]] rent side (from the CORZ first-canonical ingest). No frontmatter ticker add: CORZ is host-supply, not a payer.
 - **2026-06-03 (S122 — NBIS added; rent-side neocloud pair):** Added [[NBIS]] (Nebius) as the **7th payer / 2nd rent-side neocloud** — the most extreme capex-vs-revenue case in the program: FY2026 capex guidance **$20-25B (raised from $16-20B) against ~$3B revenue (~7-8×)**, ~$2.5B Q1, Microsoft + Meta ($15B 5-yr capacity option) anchored, NVIDIA $2B+warrant-funded; net loss $(113.5)M Q1 but a **~$9.3B cash buffer + adjusted-EBITDA-positive core cloud** (the honest distinction from debt-stretched CRWV). Added the NBIS row (foreign 20-F/IFRS filer); converted "Nebius"→[[NBIS]] (intro, next-tier, circularity #9); reframed the program as "6 core payers + a 2-neocloud rent-side pair"; updated dynamic #7 (build-vs-rent now a primary-sourced pair), #4 (ORCL+CRWV+NBIS = the three merchant-only payers), #1 (NBIS joins precise-range), #9 (NVIDIA→NBIS $2B+warrant primary-confirmed — the loop confirmed on two legs); disconfirming #5 (the neocloud-canary now spans the pair — CRWV the more debt-stretched, NBIS the more extreme spender but better-funded). Counts six→seven. +NBIS ticker; last_updated 2026-06-03.

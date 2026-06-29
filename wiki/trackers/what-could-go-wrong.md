@@ -63,8 +63,8 @@ The single place that tracks the factors that could make the three theses, the f
 - **Domain(s):** AI (all sub-domains); consensus-aligned.
 - **Canonical home:** [[AI-buildout-who-holds-the-risk]] (the structures→loss-bearers map + the BIS/IMF/FSB sizing); the financing-shift dynamic also tracked at [[hyperscaler-capex]].
 - **Tripwire:** a failed or pulled financing at a major datacenter developer or neocloud; spreads on AI-datacenter debt widening sharply (instrumented at [[AI-credit-spread-watch]]); an SPV impairment or lease default surfacing in primary disclosures; a hyperscaler citing cost of capital as a reason to slow builds.
-- **Status:** NOT FIRED. Financing markets remain open per the home page's baseline — the documented raises and structures are completing on schedule.
-- **Last checked:** 2026-06-12 (S154).
+- **Status:** NOT FIRED — and reaffirmed at [[ORCL]] FY2026 (S178): Oracle completed ~$34B of FY2026 financing ($28.8B notes + $5B preferred), guides ~$40B more for FY2027 (incl. a $20B ATM program), and held its investment-grade rating; no pulled/impaired structure. Honest counterweight: Oracle's **FCF went to −$23.7B** (capex $55.7B > OCF $32B), so the *FCF-below-capex* dynamic this entry watches is intensifying even as the financing keeps clearing.
+- **Last checked:** 2026-06-29 (S178 — ORCL FY2026).
 
 ### 7. Photonics as the first casualty of a capex turn
 - **Risk:** if Risk 1 fires, the optical layer takes the hardest hit — picks-and-shovels revenue is the capex line itself (the 2000–02 precedent: the optical suppliers, not the carriers, were ground zero).
@@ -209,6 +209,7 @@ Verified completeness check against the three human-owned theses' "what would pr
 
 ## Change log
 
+- **2026-06-29 (S178 — freshness):** Entry 6 (Financing-structure / credit shock) — tripwire NOT FIRED, reaffirmed at [[ORCL]] FY2026 (~$34B financing completed, ~$40B FY2027 plan incl. $20B ATM, IG held) but the FCF-below-capex dynamic intensified (Oracle FCF −$23.7B). Status + Last checked updated.
 - **2026-06-29 (S176 — freshness):** Entry 9 (HBM/memory cycle rollover) — tripwire confirmed **NOT FIRED** at [[MU]] Q3 FY2026 (sold-out posture *hardened*: supply-sets-shipments, take-or-pay SCAs with floor pricing, no oversupply/concession language); Status + Last checked updated. No new entries; last_updated 2026-06-12 → 2026-06-29.
 - **2026-06-13 (S157 — canonical-home re-point):** Entries 5 + 6 re-pointed to the new [[AI-buildout-who-holds-the-risk]] theme as canonical evidence home (the structures→loss-bearers map; IMF circularity quantification; BIS/IMF/FSB sizing); prior homes kept as secondary links. Tripwires, statuses (both NOT FIRED), and entry text unchanged.
 - **2026-06-12 (S154 — gap review + reconciliation pass, same session):** Added Entry 6 (financing-structure/credit shock) + Entry 11 (defense de-escalation); entries renumbered to 16 (9 AI / 4 Defense / 3 Humanoid). Reconciled all 32 thesis-file falsifiers against the register (coverage map added): 2 folds — order-vs-capacity into Entry 14's tripwire, precision-grinding capacity-scaling into Entry 16. All entries remain NOT FIRED.

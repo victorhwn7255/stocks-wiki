@@ -32,6 +32,21 @@ Running reference log of **refresh ingests** — re-ingests of an EXISTING vault
 
 ---
 
+## S178 — ORCL (Oracle Corporation) — 2026-06-29 — FY2026 (10-K, year ended May 31 2026) + Q4/FY2026 call
+
+- **Sources:** ORCL FY2026 10-K (Tier 1, filed June 22 2026) + Q4/FY2026 earnings call (Tier 2, June 10 2026; prepared remarks + Q&A).
+- **Prior baseline:** S119 (Q3 FY2026; the page's first refresh).
+- **Headline:** RPO exploded to $638B (+363%) while capex $55.7B drove FCF to −$23.7B — Oracle is the cohort's clearest funding-regime-flipped hyperscaler.
+- **Key changes:**
+  - **§2.1 revenue-presentation recast** (Cloud / Software / Hardware / Services; FY25/24 restated — new "Cloud" $33,989M ≠ old "Cloud services & license support" $44,029M).
+  - FY2026: rev $67.4B/+17%, net income $17.1B, GAAP EPS $5.83; **capex $55.7B/+162% → FCF −$23.7B**; RPO **$638B/+363%**.
+  - FY2027 guide: **~$70B net capex (~$90-95B reported)**, +34% rev, $8.05 EPS; 31%/28% CAGR to FY2030; ~$40B financing (incl. $20B ATM); IG reaffirmed; $75B BYOH/prepaid "uncoupling."
+  - **[[BE]] Bloom fuel cells** power the Doña Ana NM data center; NEW CFO Hilary Maxson; OpenAI/Stargate still zero (both venues).
+- **Placement:** UNCHANGED — `layer: outside` + all-`outside` (demand-side payer).
+- **Cross-vault propagation:** [[hyperscaler-capex]] (row + prose) + [[AI-demand-durability]] (ORCL subsection) + tracker freshness [[forward-edge-tracker]] (AI-financing entry) + [[what-could-go-wrong]] (#6). **[[BE]] Bloom back-reference DEFERRED** (light; context-bounded — captured on ORCL.md). Light set (hyperscaler-custom-ASIC / neocloud-moat-durability / agentic-CPU) skipped — no framing shift.
+- **Forward watch:** the −$23.7B FCF deficit vs ~$70B+ FY2027 capex + the ~$40B financing cadence; RPO counterparty (still unnamed); the §2.1 recast comparability.
+- **Key insight:** Oracle's AI-infra demand is now backed by a $638B contracted backlog, but FY2026 is the year its build visibly outran its cash flow — the cohort's cleanest live case of the "funding regime flipped" thesis.
+
 ## S176 — MU (Micron Technology) — 2026-06-29 — Q3 FY2026 (10-Q, quarter ended May 28 2026) + Q3 call
 
 - **Sources:** MU Q3 FY2026 10-Q (Tier 1, filed June 27 2026) + Q3 FY2026 earnings call (Tier 2, June 24 2026 — analyst Q&A).

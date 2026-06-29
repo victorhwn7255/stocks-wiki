@@ -68,7 +68,7 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` Section 3
 | [NVTS](wiki/companies/NVTS.md) | NVTS | 4 | outside | outside | 3 | outside | outside | — | 2026-05-28 |
 | [ON](wiki/companies/ON.md) | ON | 4 | outside | outside | 3 | outside | outside | — | 2026-05-25 |
 | [ONTO](wiki/companies/ONTO.md) | ONTO | 3-4 | 4 | — | — | — | — | — | 2026-05-11 |
-| [ORCL](wiki/companies/ORCL.md) | ORCL | outside | outside | outside | outside | outside | outside | — | 2026-06-03 |
+| [ORCL](wiki/companies/ORCL.md) | ORCL | outside | outside | outside | outside | outside | outside | — | 2026-06-29 |
 | [OUST](wiki/companies/OUST.md) | OUST | outside | outside | outside | outside | outside | outside | outside | 2026-06-06 |
 | [PLAB](wiki/companies/PLAB.md) | PLAB | 4 | outside | — | — | — | — | — | 2026-06-13 |
 | [PLTR](wiki/companies/PLTR.md) | PLTR | outside | outside | outside | outside | outside | outside | — | 2026-06-02 |
