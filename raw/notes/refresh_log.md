@@ -32,6 +32,21 @@ Running reference log of **refresh ingests** — re-ingests of an EXISTING vault
 
 ---
 
+## S176 — MU (Micron Technology) — 2026-06-29 — Q3 FY2026 (10-Q, quarter ended May 28 2026) + Q3 call
+
+- **Sources:** MU Q3 FY2026 10-Q (Tier 1, filed June 27 2026) + Q3 FY2026 earnings call (Tier 2, June 24 2026 — analyst Q&A).
+- **Prior baseline:** S87 (Q2 FY2026; the page's first refresh).
+- **Headline:** Record blow-out (rev $41,456M / +74% QoQ / +346% YoY; GAAP GM 84.6%; EPS $24.67 — ~24% above the $33.5B guide) — and the SCA "take-or-pay" durability machine moved to Tier 1.
+- **Key changes & new developments:**
+  - Q3 financials + 4-segment table (CMBU 33% / CDBU 28% / MCBU 28% / AEBU 11%; segment op margins 75-86%); debt $14.6B→$5.7B; 9-mo FCF ~$26.1B; FY2026 capex ~$27B.
+  - **SCAs scaled to 16 deals / $22B committed / ~$18B cash / ~½ revenue targeted**, non-cancelable take-or-pay with price floors; the 10-Q (Tier 1) expects floor-pricing GMs "well above our peak quarterly margins in any past cycle" → advances OQ#8's structural pole from Tier-3 to primary (~$422M recognized as contract liabilities so far — early in revenue).
+  - "Supply, not demand, determines bit-shipment growth"; demand visibility beyond 2028; HBM TAM $100B pulled to 2027.
+  - Monitoring: CEO Mehrotra ABSENT from the Q&A (CBO Sadana led); no combativeness (count 2); analyst-silence meta-signal (bear case un-probed); NVIDIA un-named in the Q&A (§3.6 not assessable from a Q&A-only source); 4-segment framework unchanged (no new §2.1 instance).
+- **Placement:** UNCHANGED — Layer 2 / memory_tier 2 HELD. memory_tier 1 evidence strengthened but it's a Vic-side Framework 6 decision (§1.1), escalated via OQ#2, not auto-applied.
+- **Cross-vault propagation:** [[HBM-oligopoly]] + [[memory-shortage-winners-losers]] + [[AI-demand-durability]] (the S87-deferred propagations, now done; +MU to AI-demand-durability tickers) + tracker freshness [[forward-edge-tracker]] (memory catalyst landed) + [[what-could-go-wrong]] (entry #9 NOT FIRED confirmed). Light set ([[NVDA-platform-integration]] / [[TSMC-CoWoS]] / [[SNDK]]) consciously skipped — no framing shift.
+- **Forward watch:** SCA-floor durability vs the cyclical-vs-structural re-rating (OQ#8); SCA counterparty identity (16 deals, still unnamed); HBM4E qual → volume; CXMT/YMTC; Tongluo/greenfield ramp cost; whether NVIDIA naming returns at the prepared-remarks venue.
+- **Key insight:** the quarter the memory-durability argument stopped being only a sell-side story — MU put **take-or-pay floor pricing above any past-cycle peak into a Tier-1 filing**. The open question shifts from "is the boom real" to "does the SCA model hold revenue-share and survive a normalization."
+
 ## S171 — CRDO (Credo Technology) — 2026-06-24 — FY2026 (10-K, year ended May 2 2026) + Q4/FY2026 call
 
 - **Sources:** CRDO 10-K FY2026 (Tier 1, filed Jun 15 2026) + Q4/FY2026 earnings call (Tier 2, Jun 1 2026). No intervening 10-Q (Q4 lives in the 10-K). First refresh of the page.

@@ -2,7 +2,7 @@
 type: chokepoint
 tickers: [ONTO, COHU, AEHR, TSM, MKSI, MU]
 related_themes: [AI-demand-durability, chokepoint-investability-priorities]
-last_updated: 2026-05-29
+last_updated: 2026-06-29
 ---
 
 # HBM oligopoly chokepoint
@@ -75,6 +75,8 @@ last_updated: 2026-05-29
 | **Micron Technology ([[MU]])** | 11-21% (capacity expansion ramp) | **Vault canonical per S87 first canonical creation** (memory_tier 2 per Framework 6 + Layer 2 per Caveat #7); **only US-listed direct HBM oligopoly participant** | Secondary supplier |
 
 **Capacity sold out through 2026 across all three suppliers** per `_thesis.md` Rank 1 Memory. HBM oligopoly pricing power durability through 2027 minimum per binding constraint persistence.
+
+**MU Q3 FY2026 primary substantiation (S176 refresh; the S87-deferred propagation).** The vault's one US-listed participant ([[MU]]) reported a record Q3 (revenue $41.5B, GAAP GM 84.6%) that hardens the oligopoly-durability read at primary: (1) **supply now sets shipment growth, not demand** — demand "far in excess of our ability to supply" across HBM3E/HBM4 booked through 2026 into **2027-2028** (CBO Sadana, Q3 call); (2) the **HBM TAM crossing $100B pulled forward to 2027** (from the $35B-2025→$100B-2028 Introl trajectory above; CFO Murphy: "market tightness to continue beyond 2027"); (3) **Strategic Customer Agreements** scaled to **16 deals / $22B committed / ~$18B cash**, non-cancelable take-or-pay with price *floors*, and the 10-Q (Tier 1) expects floor-pricing gross margins "well above our peak quarterly margins in any past cycle" — the oligopoly's pricing power now carries **multi-year contractual durability**, not just spot tightness. Stated goal: "HBM share consistent over time with our DRAM share." (Cross-ref [[MU]] Thesis role + SCA subsection; the cyclical-vs-structural counter-pole at [[memory-shortage-winners-losers]].)
 
 ### HBM3E → HBM4 generation transition dynamics
 
@@ -399,6 +401,7 @@ MKSI 10-K Item 1 Business explicit: VSD **"Plasma and Reactive Gas Products, whi
 
 ## Change log
 
+- **2026-06-29 (S176 — [[MU]] Q3 FY2026 refresh propagation):** Added the MU Q3 primary-substantiation note (supply-sets-shipments; HBM TAM $100B pulled to 2027; SCA take-or-pay $22B with the Tier-1 floor-margin-above-peak disclosure → contractual pricing-power durability). Resolves the S87-deferred refresh propagation. last_updated 2026-05-29 → 2026-06-29.
 - **2026-06-19 (S168 — [[IBIDEN]] first-canonical ingest; honest flag):** Resolved plain-text "Ibiden" → [[IBIDEN]] in the substrate-supply scope-boundary bullet, and **added an ⚠️ honest flag: [[IBIDEN]]'s primary disclosure is logic-substrate only — the HBM base-substrate "shared node" role is a Tier-3 claim NOT primary-confirmed** (zero HBM/memory mention in its FY2026 *Tanshin* + Q&A). The capacity-allocation tension is now framed as a hypothesis pending a primary HBM-substrate disclosure. Cross-reference + flag only; `last_updated` unchanged.
 - **2026-06-17 (cross-reference):** Added a scope-boundary note in the "NOT covered here" substrate-supply bullet pointing to the new [[pcb-interconnect-substrate-chokepoint]] (provisional) — Ibiden is the shared node (HBM base substrate vs ABF logic substrate); the memory-side HBM-substrate chokepoint stays a distinct future candidate. Cross-reference only; `last_updated` unchanged.
 - **2026-06-16 (in-place, per Vic instruction):** Added a one-line Tier-3 market-sizing pointer (BofA: memory the fastest semis segment to 2030 + a modeled 2028 air-pocket) to the [[memory-shortage-winners-losers]] table; no last_updated change (cross-reference pointer).

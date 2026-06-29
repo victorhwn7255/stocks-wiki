@@ -8,7 +8,7 @@ energy_power_tier: outside
 equipment_tier: outside
 materials_tier: outside
 foreign_issuer: false
-last_updated: 2026-05-24
+last_updated: 2026-06-29
 ---
 
 # MU — Micron Technology
@@ -16,6 +16,8 @@ last_updated: 2026-05-24
 ## Thesis role
 
 Micron is the **only US-listed direct HBM oligopoly participant** per `frameworks.md` v10.1 Framework 6 Tier 2 placement (line 772). 11-21% global HBM market share within three-supplier oligopoly (SK Hynix 50-62% leader; Samsung 17-35%; MU 11-21%). Memory exposure tier 2 designation per Section 1.1 ownership exception applies — primary HBM producer + structural oligopoly participant; differentiated from Tier 1 (SK Hynix + Samsung + [[TSM]] CoWoS integration + ASML EUV monopoly) by smaller share + secondary NVDA supplier scope.
+
+**The honest verdict (refreshed S176, Q3 FY2026): a blow-out quarter that moves the thesis question from "is the boom real" to "is it structural or cyclical" — and, for the first time, the structural pole has Tier-1 grounding.** Q3 revenue **$41,456M** (+74% QoQ, +346% YoY), GAAP gross margin **84.6%**, net income **$28,243M**, diluted EPS **$24.67** — a ~24% beat over the record guide. Management frames the shortage as so severe that **bit-shipment growth is now set by supply, not demand**, with demand visibility running beyond 2027 into 2028 and the HBM TAM crossing $100B pulled forward to 2027. The durability mechanism — the **Strategic Customer Agreements** (16 signed; $22B committed / ~$18B cash; ~½ of revenue targeted; non-cancelable take-or-pay with price floors) — now appears at **Tier 1**: the 10-Q states floor-pricing gross margins would run *"well above our peak quarterly margins in any past cycle."* Honest counterweights belong up front: the cyclical-vs-structural re-rating is **still unsettled** (the SCA model is young — only ~$422M recognized as contract liabilities so far); **analysts did not probe the bear case** this quarter; and **CEO Mehrotra was absent** from the Q3 call (CBO Sadana led). Placement HELD at memory_tier 2 (the Tier-1 upgrade is a Vic-side framework call — see Open question #2).
 
 Honest-verdict framing per Section 2.1: while CEO Sanjay Mehrotra characterizes MU as "the only U.S.-based manufacturer of advanced memory products" + "one of the semiconductor industry's biggest beneficiaries and enablers of AI" (Q2 FY2026 prepared remarks, March 18, 2026), Framework 6 Tier 1 upgrade question deferred to Vic-side framework refinement consideration per Section 1.1 ownership exception — not S87 scope. Flagged as Open question per Section 4.4 kickoff hypothesis falsification discipline (kickoff drafted "memory_tier 1 FIRST INSTANCE candidate"; Phase 0 verification against `frameworks.md` placed MU at Tier 2).
 
@@ -57,6 +59,33 @@ Honest-verdict framing per Section 2.1: while CEO Sanjay Mehrotra characterizes 
 
 CMBU growth: +257% FY2025 vs FY2024 ($3,792M → $13,524M); AI memory demand driver.
 
+### Q3 FY2026 quarterly (10-Q + earnings call, fiscal quarter ended May 28, 2026)
+
+**Period-parity annotation per Section 2.11 month+ scope.** Q3 FY2026 (ended May 28, 2026) ≈ calendar Q2 2026 − ~1 month; MU is the late-August §2.11 8th-instance filer (full instance roster at the Q2 section below). **A blow-out quarter that beat its own record guidance:** revenue $41,456M vs the $33,500M ± $750M guide — **~24% above the high end** (10-Q + Q3 call).
+
+| Metric | Q3 FY2026 | Q2 FY2026 | Q3 FY2025 | QoQ | YoY |
+|---|---|---|---|---|---|
+| Total revenue | **$41,456M** | $23,860M | $9,301M | **+74%** | **+346%** |
+| GAAP gross margin | **84.6%** | 74.4% | 37.7% | +10.2 ppt | +46.9 ppt |
+| Operating income (GAAP) | $33,318M | $16,500M | $2,169M | — | — |
+| GAAP operating margin | **80.4%** | 69.0% | 23.3% | +11.4 ppt | +57.1 ppt |
+| GAAP net income | **$28,243M** | $13,785M | $1,885M | — | — |
+| GAAP diluted EPS | **$24.67** | ~$12.09 | $1.68 | — | — |
+| Diluted shares | 1,145M | ~1,140M | 1,125M | — | — |
+| Effective tax rate | ~15.0% | — | ~11% | — | — |
+
+**Revenue + operating income by business unit (4-segment framework — UNCHANGED; no restructuring/restatement this quarter):**
+
+| Segment | Q3 FY2026 rev | % | Q2 FY2026 | Q3 FY2025 | Q3 op. income | Q3 op. margin |
+|---|---|---|---|---|---|---|
+| CMBU | **$13,769M** | 33% | $7,749M | $3,386M | $10,793M | 78% |
+| CDBU | **$11,524M** | 28% | $5,687M | $1,530M | $9,519M | 83% |
+| MCBU | **$11,521M** | 28% | $7,711M | $3,255M | $9,873M | 86% |
+| AEBU | $4,634M | 11% | $2,708M | $1,127M | $3,493M | 75% |
+| Total | $41,456M | 100% | $23,860M | $9,301M | $33,318M | 80% |
+
+Gross margin rose to 84.6% (from 74.4% in Q2) on higher DRAM + NAND ASPs ("increases in average selling prices and… favorable mix"; 10-Q MD&A). **The balance sheet de-levered hard:** total debt $14,577M (Aug 28 2025) → **$5,722M** (May 28 2026; −$8.9B in nine months); cash + ST investments **$26.0B** (+ $4.1B long-term marketable). **9-month operating cash flow $45,702M**, 9-month capex $19,602M → ~**$26.1B 9-mo free cash flow** (CFO Murphy: "record cash flow… as much as the company's history" over the last two quarters; Q3 call). **FY2026 capex raised to ~$27B** (10-Q), with a larger FY2027 step-up flagged (>½ construction). Dividend $0.15/share (the 30% raise announced Q2); capital return to step up after the **Dec 9 2026 CHIPS second anniversary** (Murphy). SCA-related cash deposits/commitments **$22B (~$18B cash)** signed to date (see SCA subsection).
+
 ### Q2 FY2026 quarterly (10-Q + earnings call, fiscal quarter ended February 26, 2026)
 
 **Period-parity annotation per Section 2.11 month+ scope (codified S79).** Q2 FY2026 = calendar Q1 2026 + ~2 month drift (Feb 26, 2026 vs calendar Q1 end Mar 31, 2026). MU = Section 2.11 8th instance precedent post-S79 codification (joins [[ENS]] Mar 31 + [[FCEL]] Oct 31 + [[VIAV]] late-June + [[FN]] late-June + [[FLNC]] Sep 30 + [[MOD]] Mar 31 + [[ARM]] Mar 31). 6 distinct fiscal calendars at vault month+ scope: Mar 31 + late-June + Sep 30 + Oct 31 + late-August (MU NEW); Dec 31 substantively-calendar baseline.
@@ -90,14 +119,9 @@ CMBU growth: +257% FY2025 vs FY2024 ($3,792M → $13,524M); AI memory demand dri
 
 All four segments achieved record quarterly revenue Q2 FY2026.
 
-**Q3 FY2026 guidance** (CFO Mark Murphy prepared remarks):
-- Revenue: $33,500M ± $750M (record — single quarter would exceed full year revenue for every year through fiscal 2024)
-- Gross margin: ~81.0%
-- Opex: ~$1,400M
-- EPS: $19.15 ± $0.40 (record)
-- Tax rate: ~15.1%
+*Q3 FY2026 was guided to $33,500M ± $750M revenue / ~81% GM / EPS $19.15 ± $0.40 (CFO Murphy, Q2 prepared remarks) — and **exceeded on all counts** (Q3 actuals above: $41,456M / 84.6% / $24.67).*
 
-**FY2026 capex guidance:** above $25,000M (raised from prior estimate). Construction-related capex driven by Tongluo (Taiwan) + Idaho fabs + New York fab + Singapore advanced packaging facility for HBM + Singapore NAND fab. **Fiscal 2027 construction capex +$10B YoY** for HBM + DRAM-related investments. Construction spend growth rate expected to outpace equipment spend growth in both fiscal 2026 and 2027.
+**FY2026 capex guidance (Q2-era; later raised to ~$27B at Q3):** above $25,000M (raised from prior estimate). Construction-related capex driven by Tongluo (Taiwan) + Idaho fabs + New York fab + Singapore advanced packaging facility for HBM + Singapore NAND fab. **Fiscal 2027 construction capex +$10B YoY** for HBM + DRAM-related investments. Construction spend growth rate expected to outpace equipment spend growth in both fiscal 2026 and 2027.
 
 **Dividend:** 30% increase to $0.15/share quarterly (announced Q2 FY2026). $350M share repurchase Q2 FY2026 per CHIPS agreement terms.
 
@@ -143,7 +167,7 @@ All four segments achieved record quarterly revenue Q2 FY2026.
 
 **Competitive landscape (10-K named competitors):** Samsung Electronics + SK hynix + Kioxia + Sandisk + ChangXin Memory Technologies (CXMT) + Yangtze Memory Technologies (YMTC). HBM oligopoly direct competitors: Samsung + SK hynix (per Framework 6 Tier 1). NAND competitors: Sandisk + Kioxia.
 
-**Strategic Customer Agreements (SCAs):** First 5-year SCA signed Q2 FY2026 per Mehrotra. SCAs differentiated from prior LTAs (long-term agreements) — multi-year commitments for improved visibility + stability; customer-specific commitments. Counterparties NOT named at Tier 2 disclosure (concentration-tier framing per Section 3.3 disclosed/inferable/unknown discipline).
+**Strategic Customer Agreements (SCAs) — the durability machine (Q3 FY2026 refresh).** What was a single 5-year SCA at Q2 is now **16 agreements aggregating $22B+ in committed cash + financial commitments (~$18B of it upfront cash deposits), targeting ~½ of company revenue** (up from ~20% of DRAM bits / ~⅓ of NAND bits today) (CBO Sumit Sadana, Q3 call). Structure (10-Q MD&A + call): **non-cancelable, take-or-pay, multi-year (5-year ex-automotive); pricing fixed or banded** — *"the largest agreements generally have a ceiling price for existing products that approximates the market price in the second calendar quarter of 2026, and a floor price through the term of the agreement"* (a minority carry no fixed price/bands). **The structurally load-bearing Tier-1 disclosure:** MU expects SCA gross margins, *"even at floor pricing levels, to yield gross margins well above our peak quarterly margins in any past cycle"* — i.e., the structural-durability argument (Open question #8) moved from Tier-3 sell-side assertion to **primary-source grounding** this quarter. As of May 28 2026 only ~**$422M** is recognized as contract liabilities (customer deposits) against ~**$5B** of remaining performance obligations — the model is real but **early in revenue terms**. Counterparties NOT named (an analyst floated Apple; not confirmed by management) — §3.3 disclosed/inferable/unknown.
 
 ## Forward commentary
 
@@ -154,6 +178,13 @@ All four segments achieved record quarterly revenue Q2 FY2026.
 - DRAM + NAND supply-demand tight beyond calendar 2026
 - "Agentic AI" demand driver alongside broad-based server refresh
 - Memory "fundamentally recast as defining strategic asset in AI era"
+
+**Supply/demand framing (Q3 FY2026 call, CBO Sadana + CFO Murphy):**
+- **Bit-shipment growth is now supply-determined, not demand-determined** — "the demand is so much above the industry's ability to supply… the supply growth will determine how the shipping growth occurs"; MU "can't really project" when supply will meet demand.
+- **HBM demand >> supply** across HBM3E/HBM4 (booked through 2026) into 2027–2028; HBM4E in qualification; stated goal "HBM share consistent over time with our DRAM share."
+- **HBM TAM crossing $100B pulled forward to 2027** (from a prior 2028 view; CFO Murphy) — "market tightness to continue beyond 2027."
+- **Agentic-AI CPU-server demand** driving non-HBM DRAM — LPDRAM in the **SOCAMM** form factor (Micron-pioneered, "market leadership"); on NAND, focused "single-mindedly" on data-center SSDs ("QLC leader," first to Gen6).
+- **Greenfield ramp cost:** Tongluo + Idaho One ramp first → +$100–200M/quarter cost effect in 2027 (greenfield is less efficient than node transitions); both trends DRAM-bit-cost-increasing near-term.
 
 **Manufacturing capacity expansion drivers:** Tongluo Taiwan acquisition + Idaho + New York + Singapore + Hiroshima + India multi-site expansion supporting HBM + DRAM + NAND demand. Fiscal 2027 capex step-up (construction-related capex +$10B YoY) signals binding supply constraint persistence per `_thesis.md` Rank 1 Memory framing.
 
@@ -176,33 +207,41 @@ Tier-3 projections in the report (**to verify, not facts**): memory content risi
 - HBM3E 12-stack shipping (vault baseline confirmed at FY2025 10-K)
 - HBM4 mass production ramp Q1 calendar 2026 (vault baseline + NEW Vera Rubin customer naming refinement)
 - "Commodity DRAM exit" framing NOT directly substantiated at FY2025 10-K (NEW 4-segment framework absorbs commodity DRAM into CMBU + CDBU + MCBU + AEBU; no explicit "commodity DRAM exit" framing at primary — Tier 3/marketing-tier framing per Vic-anchor `_thesis.md`)
-- Likely HBM-oligopoly 1-stop refresh propagation post-S87 deferred to S88+ separate session per Section 4.1 scope creep prevention per Vic Decision #6
+- HBM-oligopoly refresh propagation **completed at S176** (Q3 FY2026): SCA take-or-pay durability now at Tier 1 + HBM TAM $100B pulled to 2027 + demand>>supply through 2028
 
 **[[NVDA-platform-integration]] cross-reference (S82 expansion; 229 lines).** MU = Mode 1 partial reciprocal-confirmation REFERENCE at NVIDIA bilateral mode taxonomy 4-canonical scope (ARM + AMD + INTC + MU). Cross-reference scope; not independent home documentation.
 
 **[[TSMC-CoWoS]] adjacency (S3 baseline + S65 refresh).** HBM base die stacking via TSMC CoWoS — MU HBM stacking integration scope. Cross-reference; not standalone analytical product at S87.
 
-**[[AI-demand-durability]] adjacency (S83 refresh).** MU Q2 FY2026 records + Q3 FY2026 guidance + AI memory demand recasting framing — future propagation candidate to AI-demand-durability demand signals section. Defer to S88+ 1-stop refresh.
+**[[AI-demand-durability]] adjacency (S83 + S176).** Propagated at **S176** (Q3 FY2026): multi-year SCA demand visibility beyond 2028 + agentic-AI/CPU-server LPDRAM/SOCAMM demand + "supply determines shipments" as a durability signal.
 
 ## Open questions
 
-1. **NVIDIA bilateral mode upgrade candidate.** Does Mode 1 partial reciprocal-confirmation strengthen to Mode 3 strategic partnership co-development at future cycles? HBM4 36GB 12H "designed for NVIDIA Vera Rubin" scope (Q2 FY2026 disclosure) approaches strategic partnership co-development framing; verify at next MU refresh + next NVDA refresh.
+1. **NVIDIA bilateral mode upgrade candidate.** Does Mode 1 partial reciprocal-confirmation strengthen to Mode 3 strategic partnership co-development at future cycles? HBM4 36GB 12H "designed for NVIDIA Vera Rubin" scope (Q2 FY2026 disclosure) approaches strategic partnership co-development framing; verify at next MU refresh + next NVDA refresh. **Q3 update:** NVIDIA was NOT named in the Q3 call — but the staged transcript is the analyst **Q&A only**, not the prepared-remarks/earnings-deliverable venue where Q2's Vera Rubin naming occurred, so the §3.6 venue is **not assessable** from it; preserve venue-specific framing, do not read as retreat.
 
-2. **Framework 6 Tier 1 upgrade evidence candidate.** CEO Mehrotra "only U.S.-based manufacturer of advanced memory products" framing + HBM4 NVIDIA-designed customer-specific scope + first 5-year SCA + 1γ DRAM technology leadership claims may support Vic-side framework refinement consideration. Flag for Tranche 2C-iii observation candidate — not Claude-Code-side upgrade override per Section 1.1 ownership exception.
+2. **Framework 6 Tier 1 upgrade evidence candidate.** CEO Mehrotra "only U.S.-based manufacturer of advanced memory products" framing + HBM4 NVIDIA-designed customer-specific scope + first 5-year SCA + 1γ DRAM technology leadership claims may support Vic-side framework refinement consideration. Flag for Tranche 2C-iii observation candidate — not Claude-Code-side upgrade override per Section 1.1 ownership exception. **Q3 update:** the case strengthened materially (16 SCAs / $22B / the Tier-1 floor-margin-above-peak language + supply-determines-shipments framing) — still a **Vic-side Framework 6 decision**, escalated not auto-applied.
 
-3. **5-year SCA counterparty identity.** Tier 2 earnings deliverable discloses first 5-year SCA signed but counterparty NOT named. Inferable candidate per Section 3.3 disclosed/inferable/unknown discipline: likely NVDA given HBM4 Vera Rubin volume shipment alignment. Verify at future MU refresh if counterparty named or at NVDA-side reciprocal disclosure.
+3. **5-year SCA counterparty identity.** Tier 2 earnings deliverable discloses first 5-year SCA signed but counterparty NOT named. Inferable candidate per Section 3.3 disclosed/inferable/unknown discipline: likely NVDA given HBM4 Vera Rubin volume shipment alignment. Verify at future MU refresh if counterparty named or at NVDA-side reciprocal disclosure. **Q3 update:** scaled to **16 SCAs / $22B committed / ~½-revenue target**; counterparties still NOT named (an analyst floated Apple; unconfirmed).
 
 4. **HBM4E customer scope.** "Customization options offer us further differentiation opportunities and even deeper R&D engagement with customers" (Mehrotra Q2 FY2026). Customer-specific HBM4E customization scope candidate for Section 3.6 cross-venue gap monitoring at future cycles.
 
 5. **Tongluo Taiwan capacity contribution timing.** Acquisition closed Q2 FY2026; product shipments fiscal 2028 — verify capacity contribution scope at FY2026 10-K (August 2026) + FY2027 progress disclosures.
 
-6. **CXMT + YMTC competitive trajectory.** Chinese memory entrants named at FY2025 10-K — verify competitive impact at future cycles (HBM oligopoly potential 4th entrant CXMT HBM2/HBM3 production candidate; not currently in Framework 6).
+6. **CXMT + YMTC competitive trajectory.** Chinese memory entrants named at FY2025 10-K — verify competitive impact at future cycles (HBM oligopoly potential 4th entrant CXMT HBM2/HBM3 production candidate; not currently in Framework 6). **Q3 color (Sadana):** "most of their output… tends to be sold within China… we haven't really seen much by way of their product or competition from them outside of China."
 
 7. **Memory-domain Pathway 2 theme candidate.** Memory-domain canonical count = 1 post-S87 (MU). Pathway 2 4-canonical strengthening codified S86 + 3-canonical threshold codified S79 — memory-domain theme creation candidate at 3+ memory canonical accumulation. SNDK S88 projected addition (memory-domain canonical count = 2 post-S88); future memory canonical addition would trigger Pathway 2 consideration.
 
-8. **The cyclical-vs-structural re-rating (market-view question; Tier-3-sourced).** Does the market grant MU a *structural* P/E — re-rating memory off its historical *cyclical* price-to-book — or keep pricing it at a low/cyclical multiple? Structural-case evidence on this page: the **first 5-year SCA** + the "defining strategic asset" framing + the LTA/SCA-driven earnings-visibility argument. The **bull pole** is a Tier-3 sell-side note (Aletheia, $1,600, PBR→PER; see "Sell-side re-rating debate"); the **skeptic pole** is the market's prevailing low/single-digit multiple (Rasgon). Watch: whether SCA coverage of revenue expands, and whether the multiple re-rates. Cross-ref [[memory-shortage-winners-losers]].
+8. **The cyclical-vs-structural re-rating (market-view question; Tier-3-sourced).** Does the market grant MU a *structural* P/E — re-rating memory off its historical *cyclical* price-to-book — or keep pricing it at a low/cyclical multiple? Structural-case evidence on this page: the **first 5-year SCA** + the "defining strategic asset" framing + the LTA/SCA-driven earnings-visibility argument. The **bull pole** is a Tier-3 sell-side note (Aletheia, $1,600, PBR→PER; see "Sell-side re-rating debate"); the **skeptic pole** is the market's prevailing low/single-digit multiple (Rasgon). Watch: whether SCA coverage of revenue expands, and whether the multiple re-rates. Cross-ref [[memory-shortage-winners-losers]]. **Q3 ADVANCE:** the structural pole now has **Tier-1 grounding** — the 10-Q states SCA floor-pricing gross margins would run "well above our peak quarterly margins in any past cycle." Still open: the re-rating is unsettled and the SCA model is early in revenue (~$422M of contract liabilities against ~$5B of remaining performance obligations).
 
 ## Source audit notes
+
+### MU 10-Q Q3 FY2026 (Tier 1, fiscal quarter ended May 28, 2026; filed June 27, 2026)
+
+Blow-out quarter: revenue $41,456M (+74% QoQ / +346% YoY), GAAP GM 84.6%, operating margin 80.4%, net income $28,243M, diluted EPS $24.67 — ~24% above the $33.5B guide. 4-segment framework UNCHANGED (no restructuring/restatement → no new Section 2.1 instance). Balance sheet de-levered $14,577M → $5,722M debt; 9-mo OCF $45,702M; FY2026 capex ~$27B. **Material new Tier-1 disclosure — SCAs:** take-or-pay, price-banded (largest deals' ceiling ≈ Q2-cal-2026 market, floor through term), $22B committed / ~$18B cash to date, floor-pricing gross margins expected "well above our peak quarterly margins in any past cycle" (the Open-question-#8 structural-pole mover); only ~$422M recognized as contract liabilities so far. Customer concentration framing carried from FY2025 ("over half… top ten customers"; "approximately one-half… data center end market"). **NVIDIA: zero mentions at Tier 1** — cross-venue gap pattern (§3.6) preserved.
+
+### MU Q3 FY2026 earnings call (Tier 2, June 24, 2026; full analyst Q&A transcript)
+
+The post-earnings **analyst Q&A** — **CBO Sumit Sadana + CFO Mark Murphy + EVP-Ops Manish Bhatia + IR Satya Kumar; CEO Mehrotra ABSENT** (noted; likely MU's prepared-remarks/Q&A split — not over-read, but it means the Q2 "only U.S.-based advanced-memory manufacturer" CEO framing is not re-uttered this quarter). Source of the SCA scale-up (16 agreements / $22B / ~½-revenue target / non-cancelable take-or-pay), the "supply determines shipment growth, not demand" framing, demand visibility beyond 2028, and the HBM TAM $100B pulled to 2027. **No CEO/management combativeness** (CEO-combativeness count unchanged at 2); answers direct, analyst tone constructive. **Analyst-silence meta-signal (§2.2):** despite the extreme-shortage claims, no analyst probed pricing-floor durability, the cyclical-vs-structural question, channel/customer inventory, or the Samsung/SK Hynix HBM response — the bear case went un-tested. **NVIDIA / Vera Rubin NOT named in the Q&A** (generic "AI data center / XPU ASIC"); §3.6 falsification not assessable from a Q&A-only source.
 
 ### MU 10-K FY2025 (Tier 1, filed October 3, 2025; fiscal year ended August 28, 2025)
 
@@ -222,5 +261,6 @@ Tier-3 independent sell-side research (Warren Lau + Stefan Chang, Hong Kong): **
 
 ## Change log
 
+- **2026-06-29 (S176 — first refresh; Q3 FY2026 10-Q + Q3 call):** Refreshed Q2→Q3 FY2026. Added the Q3 financial snapshot (revenue $41,456M / +74% QoQ / +346% YoY; GAAP GM 84.6%; net income $28,243M; EPS $24.67 — ~24% above guide; Q3 4-segment table; §2.11 Q3 annotation) + the deleveraging ($14.6B→$5.7B debt) + 9-mo FCF ~$26.1B + FY2026 capex ~$27B. Rewrote the SCA subsection around the 16-agreement / $22B / take-or-pay / **Tier-1 floor-margin-above-peak** disclosure (advancing OQ#8's structural pole from Tier-3 to primary); added the Q3 supply-determines-shipments + HBM-TAM-$100B-to-2027 forward block. **Placement HELD** (Layer 2 / memory_tier 2) — the memory_tier 1 upgrade is a Vic-side Framework 6 decision, escalated via OQ#2, not auto-applied. Source-audit: CEO absent from the Q3 call; no combativeness (count 2); analyst-silence meta-signal; NVIDIA un-named in the Q&A (§3.6 not assessable from Q&A-only). 4-segment framework unchanged (no new Section 2.1 instance). **Propagation:** [[HBM-oligopoly]] + [[memory-shortage-winners-losers]] + [[AI-demand-durability]] + tracker freshness [[forward-edge-tracker]] + [[what-could-go-wrong]] (entry #9 confirmed NOT FIRED) + light [[NVDA-platform-integration]]. refresh_log entry added; no `mv` (sources already filed).
 - **2026-06-16 (Tier-3 sell-side annotation per Vic instruction; NOT a separate session — no primary source):** Added the "Sell-side re-rating debate" subsection + Open Question #8 (cyclical-vs-structural re-rating) + a Tier-3 source-audit entry, capturing the **Aletheia Capital "$1,600 / PBR→PER" thesis** (and the broader June-2026 Street re-rating wave) as a *market-view datapoint* on the cyclical-vs-structural question. Tier-3 **cited-not-fact**; describe-don't-recommend held (**NO vault price target adopted**); no primary source ingested → `last_updated` unchanged (2026-05-24), §4.6 streak untouched, no index/refresh_log change. Cross-ref [[memory-shortage-winners-losers]].
 - **2026-05-24 (Session 87 first canonical creation):** MU.md first canonical creation; first memory-domain canonical in vault. Frontmatter applied: Layer 2 per Caveat #7 + memory_tier 2 per Framework 6 (Section 1.1 ownership exception application) + photonics/energy_power/equipment/materials all outside per Section 3.10. 3-file ingest: FY2025 10-K + Q2 FY2026 10-Q + Q2 FY2026 prepared remarks PDF (acquired post-Phase 0 escape valve per Vic Decision A(a1)). Section 2.1 mid-fiscal-year disclosure methodology shift pattern 6th instance precedent (Q4 FY2025 segment reorganization). Section 3.6 cross-venue disclosure gap convention application: NVIDIA naming asymmetry at Tier 1 SEC filings vs Tier 2 earnings deliverable. Cross-canonical NVIDIA bilateral mode taxonomy: Mode 1 reference scope at 4th canonical (ARM + AMD + INTC + MU). Cross-vault adjacency: [[HBM-oligopoly]] cross-reference (refresh propagation deferred to S88+) + [[NVDA-platform-integration]] cross-reference + [[TSMC-CoWoS]] cross-reference. Two kickoff hypothesis falsifications resolved at Phase 0 escape valve per Vic Decisions A + B + #3 (memory_tier 1 → memory_tier 2; Section 2.11.1 week-scope → Section 2.11 month+ scope 8th instance precedent).

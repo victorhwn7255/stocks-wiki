@@ -58,7 +58,7 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` Section 3
 | [MRCY](wiki/companies/MRCY.md) | MRCY | — | — | — | — | — | — | 2 | 2026-06-05 |
 | [MRVL](wiki/companies/MRVL.md) | MRVL | 3 | 3 | — | — | — | — | — | 2026-05-29 |
 | [MSFT](wiki/companies/MSFT.md) | MSFT | outside | outside | outside | outside | outside | outside | — | 2026-06-02 |
-| [MU](wiki/companies/MU.md) | MU | 2 | outside | 2 | outside | outside | outside | — | 2026-05-24 |
+| [MU](wiki/companies/MU.md) | MU | 2 | outside | 2 | outside | outside | outside | — | 2026-06-29 |
 | [NBIS](wiki/companies/NBIS.md) | NBIS | outside | outside | outside | outside | outside | outside | — | 2026-06-03 |
 | [NOK](wiki/companies/NOK.md) | NOK | 4 | 2 | — | outside | outside | outside | — | 2026-05-19 |
 | [NOVT](wiki/companies/NOVT.md) | NOVT | 4 | outside | — | — | 4 | — | — | 2026-06-06 |
@@ -145,7 +145,7 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` Section 3
 | [AI-implementation-deployment-layer](wiki/themes/AI-implementation-deployment-layer.md) | ACN, IBM, EPAM, GLOB, CTSH, INFY, PLTR, CRM, MDB, DDOG, PANW, OKTA, CRWD, ZS | 2026-06-13 |
 | [physical-AI-value-chain](wiki/themes/physical-AI-value-chain.md) | NVDA, MP, HARMONIC, SANHUA, TUOPU, HENGLI, ZHAOWEI, SHUANGHUAN, ZHONGDA, SLING, NOVT, VPG, OUST, TDY, ARM | 2026-06-15 |
 | [training-to-inference-shift](wiki/themes/training-to-inference-shift.md) | NVDA, AMD, ARM, MU, AVGO, MRVL, TSM | 2026-06-16 |
-| [neocloud-moat-durability](wiki/themes/neocloud-moat-durability.md) | CRWV, NBIS, CORZ, NVDA, MSFT, AMZN, GOOGL, META | 2026-06-16 |
+| [neocloud-moat-durability](wiki/themes/neocloud-moat-durability.md) | CRWV, NBIS, CORZ, NVDA, MSFT, AMZN, GOOGL, META | 2026-06-29 |
 | [commodity-supercycle-chokepoints](wiki/themes/commodity-supercycle-chokepoints.md) | MP, ETN, GEV, FLEX, LEU, BWXT, CCJ | 2026-06-16 |
 | [ai-frontier-systems](wiki/themes/ai-frontier-systems.md) | NVDA, AMD, TSM, ARM, INTC, AVGO, MRVL, ALAB, MU, SNDK, IBIDEN, GOOGL, AMZN, META, MSFT, ORCL, ANET, CRDO, LITE, COHR, AAOI, FN, GEV, ETN, VRT, CAT, BE, FCEL, CCJ, LEU, BWXT, CRWV, NBIS, CORZ | 2026-06-25 |
 

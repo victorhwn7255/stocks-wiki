@@ -1,7 +1,7 @@
 ---
 type: tracker
 tickers: [MSFT, NVDA, AVGO]
-last_updated: 2026-06-12
+last_updated: 2026-06-29
 ---
 
 # What could go wrong — the vault-level risk register
@@ -87,8 +87,8 @@ The single place that tracks the factors that could make the three theses, the f
 - **Domain(s):** AI memory.
 - **Canonical home:** [[HBM-oligopoly]].
 - **Tripwire:** HBM supply language shifting from sold-out/prepaid to spot/oversupply at [[MU]] + peer primary disclosures; pricing concessions or capacity-ramp guidance outrunning demand commitments.
-- **Status:** NOT FIRED. Sold-out posture intact at the latest memory-domain refreshes.
-- **Last checked:** 2026-06-12 (S154).
+- **Status:** NOT FIRED — and the posture *hardened* at [[MU]] Q3 FY2026: supply now explicitly sets shipments (demand >> supply through 2028), SCAs are non-cancelable take-or-pay with price floors ($22B committed / ~$18B cash), and the 10-Q expects even floor-pricing gross margins "well above our peak quarterly margins in any past cycle." Zero oversupply/concession language; HBM TAM $100B pulled forward to 2027.
+- **Last checked:** 2026-06-29 (S176 — MU Q3 FY2026).
 
 ## Defense & Drones
 
@@ -209,6 +209,7 @@ Verified completeness check against the three human-owned theses' "what would pr
 
 ## Change log
 
+- **2026-06-29 (S176 — freshness):** Entry 9 (HBM/memory cycle rollover) — tripwire confirmed **NOT FIRED** at [[MU]] Q3 FY2026 (sold-out posture *hardened*: supply-sets-shipments, take-or-pay SCAs with floor pricing, no oversupply/concession language); Status + Last checked updated. No new entries; last_updated 2026-06-12 → 2026-06-29.
 - **2026-06-13 (S157 — canonical-home re-point):** Entries 5 + 6 re-pointed to the new [[AI-buildout-who-holds-the-risk]] theme as canonical evidence home (the structures→loss-bearers map; IMF circularity quantification; BIS/IMF/FSB sizing); prior homes kept as secondary links. Tripwires, statuses (both NOT FIRED), and entry text unchanged.
 - **2026-06-12 (S154 — gap review + reconciliation pass, same session):** Added Entry 6 (financing-structure/credit shock) + Entry 11 (defense de-escalation); entries renumbered to 16 (9 AI / 4 Defense / 3 Humanoid). Reconciled all 32 thesis-file falsifiers against the register (coverage map added): 2 folds — order-vs-capacity into Entry 14's tripwire, precision-grinding capacity-scaling into Entry 16. All entries remain NOT FIRED.
 - **2026-06-12 (S154 — creation):** Created as the vault-level risk register at the `wiki/trackers/` folder creation (CLAUDE.md v10.0, Section 3.20). 14 seed entries across the three domains, all NOT FIRED; dashboard-not-duplicate rule applied — every entry links its canonical home and adds only tripwire + status. Tier-3 bear mechanisms from the 2026-03 video-intel notes (capex-bubble/telecom analogy, utilization/efficiency stack, circular financing) recorded as named-not-fired.

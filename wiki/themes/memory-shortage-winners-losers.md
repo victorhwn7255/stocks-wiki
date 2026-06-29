@@ -1,7 +1,7 @@
 ---
 type: theme
 tickers: [MU, SNDK, PLAB, CSCO, NVDA, META, AVGO, MURATA, TAIYO]
-last_updated: 2026-06-16
+last_updated: 2026-06-29
 ---
 
 # Memory Shortage — Winners and Losers
@@ -49,7 +49,7 @@ AI/HBM demand
 
 ### The cause — supply reallocation (verified at primary)
 
-[[MU]] management named the constraint stack directly: cleanroom constraints + long construction lead times + a higher HBM trade ratio + declining bits-per-wafer from node migrations bound calendar-2026 industry DRAM bit growth to +low-20s% (Mehrotra, Q2 FY2026 prepared remarks, March 18, 2026) — against AI demand growing much faster. DRAM and NAND supply-demand is "tight beyond calendar 2026" (same source). All three HBM makers are sold out through 2026 ([[HBM-oligopoly]]). New capacity is coming but slowly: MU's fiscal-2027 construction capex rises ~$10B for HBM/DRAM, with meaningful new output landing 2027+ — the shortage is structural for at least the next 12-18 months.
+[[MU]] management named the constraint stack directly: cleanroom constraints + long construction lead times + a higher HBM trade ratio + declining bits-per-wafer from node migrations bound calendar-2026 industry DRAM bit growth to +low-20s% (Mehrotra, Q2 FY2026 prepared remarks, March 18, 2026) — against AI demand growing much faster. DRAM and NAND supply-demand is "tight beyond calendar 2026" (same source). All three HBM makers are sold out through 2026 ([[HBM-oligopoly]]). New capacity is coming but slowly: MU's fiscal-2027 construction capex rises ~$10B for HBM/DRAM, with meaningful new output landing 2027+ — the shortage is structural for at least the next 12-18 months. **Q3 FY2026 update (S176):** the constraint *tightened* — MU now says **supply, not demand, determines bit-shipment growth** ("the demand is so much above the industry's ability to supply"), with visibility beyond 2028 and the HBM TAM crossing $100B pulled into 2027; record revenue $41.5B at 84.6% GAAP GM. The maker-side shortage is, if anything, more structural than at Q2 — so the cyclical risk this page tracks stays the **downstream** half (consumer demand-destruction + contract-price rollover), not maker oversupply, which shows no sign yet.
 
 ### The price surge
 
@@ -76,7 +76,7 @@ The 2017-18 precedent: standard MLCC spot prices rose 5-10× into mid-2018; the 
 
 | Bucket | Names | Evidence |
 |---|---|---|
-| **Winners (sell memory)** | [[MU]] · [[SNDK]] · (SK Hynix, Samsung — not vault pages) | MU: pricing + first 5-year supply agreement (counterparty inferably NVDA); SNDK: +251% revenue, record EPS, NBM customer prepayments $511M |
+| **Winners (sell memory)** | [[MU]] · [[SNDK]] · (SK Hynix, Samsung — not vault pages) | MU: record Q3 FY2026 ($41.5B / 84.6% GM); SCAs scaled to **16 take-or-pay deals / $22B** with Tier-1 floor-margins-above-peak (S176); SNDK: +251% revenue, record EPS, NBM customer prepayments $511M |
 | **Winners (sell the panic)** | MLCC top-bin makers ([[MURATA]] #1 + [[TAIYO]] #3 — both now primary, S169-S170) | Server-capacitor sales **+85-90% CONFIRMED** ([[MURATA]]); the limited-qualified-supplier oligopoly structure + pricing restraint **double-confirmed at the #3** ([[TAIYO]] full-year A7 / Q3 A12); double-booking **quarantined to consumer-grade** (AI top bin runs supply-short) — see [[MLCC-oligopoly]] (now a canonical chokepoint) |
 | **Losers (pay more, sell less)** | [[CSCO]] (−260 bps GM) · [[PLAB]] (design-release suppression) · [[NVDA]] consumer/gaming edge · low-end consumer electronics broadly | All at primary except the broad consumer read (Tier 3) |
 | **Losers (capex inflation)** | [[META]] — and by mechanism every hyperscaler buying standard server DRAM | Capex raise explicitly memory-priced; server-life extension |
@@ -107,6 +107,7 @@ Created from evidence already in vault canon (per-source provenance lives on the
 
 ## Change log
 
+- **2026-06-29 (S176 — [[MU]] Q3 FY2026 refresh propagation):** Updated the constraint-stack paragraph + the Winners row with MU Q3 (supply-sets-shipments; HBM TAM $100B→2027; SCA take-or-pay scaled to 16/$22B with the Tier-1 floor-margin-above-peak disclosure). Maker-side shortage hardened; the page's cycle-clock thesis (downstream demand-destruction + contract rollover) unchanged. last_updated 2026-06-16 → 2026-06-29.
 - **2026-06-19 (S170 — [[TAIYO]] second-maker ingest):** Added [[TAIYO]] (#3) to the "sell the panic" Winners row alongside [[MURATA]] (#1) — the limited-qualified-supplier oligopoly + pricing restraint now **double-confirmed** at a 2nd primary maker; added a 3rd honest caveat (the **DDR5-inductor lull** — DDR4 replacement noise in the parts feeding memory modules; Taiyo Q2 Q&A). Noted [[MLCC-oligopoly]] is now a canonical chokepoint (promoted S170). +MURATA, TAIYO to `tickers`. Cross-reference; `last_updated` unchanged.
 - **2026-06-19 (S169 — [[MURATA]] first-canonical ingest):** Resolved Murata→[[MURATA]] in the Winners row + upgraded to primary (server-capacitor +85-90% confirmed); noted the double-booking is **quarantined to consumer-grade** (the AI top bin runs supply-short, not hoarded). Open Q#2 (Murata actuals) landed. Cross-reference + primary-upgrade; `last_updated` unchanged.
 - **2026-06-16 (in-place Tier-3 chart addition per Vic instruction; not counted as a separate session):** Added "The magnitude — a Tier-3 market-sizing frame (BofA)" subsection — the BofA semis/memory forecast table (`raw/research/charts/semis-memory-projection-2026-2030.jpg`), read against the page's two halves: the +168% 2026E memory boom AND the modeled +3.3% 2028E air-pocket (the cyclicality caveat). Tier-3 forecast, cite-don't-treat-as-fact. last_updated 2026-06-13 → 2026-06-16.
