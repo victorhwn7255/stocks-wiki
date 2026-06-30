@@ -65,7 +65,7 @@ This is no longer just a narrative. **IMF staff attribute ~7 of the ~12 percenta
 ## Honest gaps — stated plainly
 
 - **The frontier-lab funding-gap math (OpenAI/Anthropic committed vs raised) did NOT survive adversarial verification.** The circulating commitment headlines are largely unverifiable at primary. What the vault can say at Tier 1: Amazon's $38B Anthropic stack and AVGO's Anthropic-linked backstop exist; the labs' ability to fund the rest is an open question, not a documented fact in either direction.
-- **The telecom-2000 comparison stays a named analogy, not verified history.** The Lucent/Nortel magnitudes and timeline produced no surviving claims; the analogy lives at Tier 3 (the 2026-03-24 video-intel note) until separately researched. Do not cite it as precedent-proven.
+- **The telecom-2000 comparison is now separately researched — but still Tier 3.** The dedicated treatment lives at [[telecom-bust-analog]] (three independent research rounds: the buildout→bust history, the dimension-by-dimension comparison, and a vault-aware `/research-loop`). It supplies the mechanism map, the two disanalogies (funding source / asset recoverability), the forced-seller kill-mechanism, and the Lucent/JDSU magnitudes — but the load-bearing figures remain Tier-3, `[verify:]`-flagged. Do not cite it as precedent-proven until cross-checked against primary 10-Ks/8-Ks.
 - **The reported Blue Owl walk-away from a $10B Oracle financing is unverified** (Tier 4) — kept as a watch item, not a fact.
 - **Nothing has broken.** No drawn backstop, no impairment, no failed financing as of June 2026 — the benign reading's best evidence, recorded here with the same weight as the warnings.
 

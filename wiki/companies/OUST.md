@@ -110,6 +110,21 @@ NOVT and VPG are AI-datacenter equipment-component names with humanoid optionali
 - **OUST Q1 2026 10-Q (filed 2026-05-05) — Tier 1.** Confirms the +49% revenue, 43% gross margin, **GAAP net loss $(17.5)M / $(0.28)** (narrowing), ~$174M liquidity with no debt, and the one-customer ~31% concentration. Stereolabs (~7 weeks) included.
 - **OUST Q1 2026 earnings call (2026-05-05; CEO Angus Pacala + CFO Ken Gianella) — Tier 2.** The richest source on the Physical-AI repositioning (Stereolabs + Rev 8 + NVIDIA Jetson), the adopter list, and the verticals. **Promotional-framing caution (per Section 3.3):** the "Physical AI platform / paradigm shift / world's first native color LiDAR / world models" narrative is heavily management-framed and is attributed, not adopted; the factual core is product-revenue momentum against persistent losses. **CEO-combativeness: no increment** — Pacala/Gianella were measured (promotional but not defensive).
 
+<!-- LATEST-ALPHA:START -->
+## ⚠️ Latest alpha — unverified, between-filings (as of 2026-07-01)
+
+*Tier 3/4 discovery — NOT canonical. Recent 8-K / press / news, to verify at the next primary source. Full detail + sources: [discovery note](../../raw/notes/latest-alpha/2026-07-01_OUST_recent-developments.md). Items graduate into canon (or are pruned) at the next 10-Q/10-K ingest.*
+
+- **Commercial-momentum cluster — but all non-binding MOUs** (PR/news, Jun 2026) — Tier 4 · AIM Intelligent Machines (Rev8 retrofits heavy machines — mining/construction/defense), ARGUS counter-drone (A1-Falke interceptor), BlueCity traffic (40+ MetLife sites; Stamford CT) — **no disclosed $ / units / binding orders**; the likely ~+10.9% catalyst. `[verify: any as booked revenue at Q2 2026 10-Q]`
+- **Benchmark Electronics — Rev8 capacity >100k units/yr, 10-yr horizon** (PR, Jun 15) — Tier 4 · the most structural item; *expands the existing Benchmark mfg relationship already in canon* (Thailand). `[verify: purchase commitments / inventory build / revenue ramp]`
+- **Authorized shares doubled 100M → 200M** (8-K, Jun 18 annual meeting) — Tier 1 · dilution *headroom* for an equity-funded loss-maker — not yet a raise. `[verify: any later 424B5 / ATM / S-3 takedown that uses it]`
+- **Use cases are industrial / infrastructure / defense, NOT humanoid** — Tier 4 · confirms humanoid stays "named-but-unsized"; real traction is heavy-machine autonomy + traffic + counter-drone. `[verify: humanoid/robotics revenue split — OQ5 trigger]`
+- **Rev8 native-color digital lidar** (IR/product) — Tier 2 · platform underpinning the deals (2× range/res, functional safety); mild positive datapoint on the vision-vs-LiDAR route question (OQ1), in industrial not autos.
+- Related: [[NOVT]] [[VPG]] (US sensor-layer cohort) · [[humanoid-robot-value-chain]] [[physical-AI-value-chain]] (theme anchors)
+
+*Signal only (not weighted): stock reportedly ~+10.9% on the AIM pact; sentiment/PT chatter around the Rev8 scale-up — narrative, not bookings.*
+<!-- LATEST-ALPHA:END -->
+
 ## Change log
 
 - **2026-06-06 (S140 — first-canonical creation):** Created from OUST FY2025 10-K + Q1 2026 10-Q + Q1 2026 call. Placement **outside the AI-datacenter frameworks** (`layer: outside` + all five AI `*_tier: outside`; the [[INOD]] precedent) + `defense_tier outside` (real but diffuse govt/defense + drone-payload LiDAR; weak focused unmanned fit) + theme-anchored humanoid (no `humanoid_tier`) — a deliberate departure from the [[NOVT]]/[[VPG]] `equipment_tier 4` pattern because OUST has zero AI-datacenter exposure (it's a Physical-AI/robotics LiDAR+camera platform). Honest-verdict lead: loss-making ($(60.4)M FY2025; $(17.5)M Q1 2026 — losses stated plainly, narrowing), well-capitalized (~$174M, no debt), higher-beta camera/LiDAR name (GS-12 commoditizing layer; vision-vs-LiDAR route risk); humanoid named but unsized. Section 2.11 N/A (clean calendar FY); Section 2.1 N/A (single segment; Stereolabs in-segment, comparability noted). Delaware-incorporated → `foreign_issuer false`. 3-way NOVT/VPG/OUST sensor-layer comparison added.
