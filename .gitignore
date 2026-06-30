@@ -32,9 +32,10 @@ automation/research-runs/
 web/dist/
 raw/HTML/
 
-# Proprietary third-party research PDFs (LSEG/Fundstrat — redistribution prohibited).
+# Proprietary third-party research PDFs (LSEG/Fundstrat/JPM — redistribution prohibited).
 # The extracted data (forward-earnings-raw-data.csv) IS tracked; the source PDFs are not.
 raw/data/forward-earnings/LSEG_reports/
+raw/reports/
 
 # Staged source captures (Vic-staged Twitter/X threads + third-party reports) — kept
 # local for the intel skills to read; the analysis lands in raw/notes/*-intel/, which IS tracked.
