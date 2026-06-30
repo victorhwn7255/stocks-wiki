@@ -163,6 +163,14 @@ Cross-vault status-bearing pages per CLAUDE.md Section 3.20 — updated by propa
 | [short-interest](wiki/trackers/short-interest.md) | — | 2026-06-19 |
 | [forward-pe-watch](wiki/trackers/forward-pe-watch.md) | NVDA, MSFT, GOOGL, AMZN, META, AVGO | 2026-06-24 |
 
+## Insights
+
+Macro / "smart money" synthesis layer per CLAUDE.md Section 3.21 (`wiki/insights/`) — canon-grade vault-voice reads *across* the per-source institutional logs in `raw/notes/insights/` (Tier 3/4, attributed, describe-don't-recommend, no targets-as-claims; links to the dials rather than restating them). The per-source logs themselves are discovery material, not in this catalog.
+
+| Page | Related Tickers | Last Updated |
+|------|-----------------|--------------|
+| [macro-regime](wiki/insights/macro-regime.md) | NVDA, MU, BE, GEV, VST, CEG, KTOS, AVAV, NOC | 2026-06-30 |
+
 ## Relationships
 
 | Page | Related Tickers | Last Updated |

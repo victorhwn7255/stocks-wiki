@@ -30,14 +30,15 @@ LAYER_TITLES = ["Platform definers", "Foundry / fabrication", "Components / IP",
 GRAPH_HEX = {"ai": "#2f9bff", "def": "#f7a21b", "hum": "#4defc4", "mat": "#ff8a3c",
              "choke": "#ff4d42", "theme": "#a98bf5", "tracker": "#ff8a3c", "none": "#646c75"}
 GROUP_ORDER = [("companies", "Companies", "company"), ("chokepoints", "Chokepoints", "chokepoint"),
-               ("themes", "Themes", "theme"), ("trackers", "Trackers", "tracker"),
+               ("themes", "Themes", "theme"), ("insights", "Insights", "insight"),
+               ("trackers", "Trackers", "tracker"),
                ("relationships", "Relationships", "relationship"), ("thesis", "Thesis", "thesis"),
                ("frameworks", "Frameworks", "framework")]
 
 # content sources: (group_key, list-of-md-paths)
 def sources():
     s = {}
-    for sub in ("companies", "chokepoints", "themes", "trackers", "relationships"):
+    for sub in ("companies", "chokepoints", "themes", "trackers", "relationships", "insights"):
         s[sub] = sorted((ROOT / "wiki" / sub).glob("*.md"))
     s["thesis"] = sorted((ROOT / "wiki").glob("_thesis*.md"))
     s["frameworks"] = sorted((ROOT / "raw" / "notes").glob("frameworks*.md"))
@@ -331,10 +332,10 @@ def audit(ticker, as_json=False):
 # ── site presentation data + tracker parsers ──────────────────────────────
 SECTION_COLOR = {"companies": "#2f9bff", "chokepoints": "#ff4d42", "themes": "#a98bf5",
                  "trackers": "#ff8a3c", "thesis": "#4defc4", "frameworks": "#7d8aa0",
-                 "relationships": "#f7a21b", "home": "#f7a21b"}
+                 "relationships": "#f7a21b", "insights": "#f25fb0", "home": "#f7a21b"}
 # the top-bar section tabs (label, group-key) — HOME first, then the content sections
 SECTION_TABS = [("HOME", "home"), ("COMPANIES", "companies"), ("CHOKEPOINTS", "chokepoints"),
-                ("THEMES", "themes"), ("TRACKERS", "trackers"), ("THESIS", "thesis"),
+                ("THEMES", "themes"), ("INSIGHTS", "insights"), ("TRACKERS", "trackers"), ("THESIS", "thesis"),
                 ("FRAMEWORKS", "frameworks")]
 DATE_RE = re.compile(r"(20\d\d)-(\d\d)-(\d\d)")
 MONTHS = {m: i + 1 for i, m in enumerate(
@@ -763,7 +764,7 @@ def main():
                    canonical=(f"{base_url}/{r['out']}" if base_url else ""))
         tpl = {"company": "company.html", "theme": "theme.html", "relationship": "theme.html",
                "chokepoint": "theme.html", "thesis": "document.html", "framework": "document.html",
-               "tracker": "tracker.html"}.get(r["type"], "company.html")
+               "tracker": "tracker.html", "insight": "document.html"}.get(r["type"], "company.html")
         html = env.get_template(tpl).render(**ctx)
         op = dist / r["out"]; op.parent.mkdir(parents=True, exist_ok=True); op.write_text(html)
 
