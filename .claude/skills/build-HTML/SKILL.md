@@ -1,6 +1,6 @@
 ---
 name: build-HTML
-description: "Turn ONE dense vault analysis page (a theme / chokepoint / thesis / framework / insight markdown page) into a plain-English, outsider-friendly HTML explainer in the Slock house theme, saved to raw/HTML/. It rewrites the analysis for a general audience who does NOT know the vault's terms (Tier, Layer, chokepoint, neocloud, capex…), builds a self-contained styled page, adds a KEY TAKEAWAYS section, and runs a deterministic QA check plus an independent fidelity-audit subagent before opening it. Use whenever the user wants to build / generate / render an easy-to-read HTML explainer, reading-layer, or 'plain-English version' of a vault theme/chokepoint/thesis/framework/insight page — e.g. '/build-HTML telecom-bust-analog', 'build an HTML explainer for the HBM-oligopoly page', 'make a readable HTML version of ai-frontier-systems', 'turn wiki/themes/<x>.md into a webpage'. This skill is for ANALYSIS pages only — it is NOT for company pages (those use build-company-html) and it never edits canon; it only writes the gitignored artifact under raw/HTML/. Trigger on any request to produce a plain-language / easy-to-understand HTML page from a vault analysis markdown file; do NOT trigger for company pages, whole-site builds, or editing the source analysis."
+description: "Turn ONE dense vault analysis page (a theme / chokepoint / thesis / framework / insight markdown page) into a plain-English, outsider-friendly HTML explainer in the Slock house theme, saved to raw/HTML/. It rewrites the analysis for a general audience who does NOT know the vault's terms (Tier, Layer, chokepoint, neocloud, capex…), builds a self-contained styled page, adds a KEY TAKEAWAYS section, and runs a deterministic QA check plus an independent fidelity-audit subagent before opening it. Use whenever the user wants to build / generate / render an easy-to-read HTML explainer, reading-layer, or 'plain-English version' of a vault theme/chokepoint/thesis/framework/insight page — e.g. '/build-HTML telecom-bust-analog.md', 'build an HTML explainer for HBM-oligopoly.md', 'make a readable HTML version of ai-frontier-systems.md', 'turn wiki/themes/<x>.md into a webpage'. The user passes the page as a `.md` filename (e.g. `transformer-supply.md`) or a full path; a bare slug also resolves. This skill is for ANALYSIS pages only — it is NOT for company pages (those use build-company-html) and it never edits canon; it only writes the gitignored artifact under raw/HTML/. Trigger on any request to produce a plain-language / easy-to-understand HTML page from a vault analysis markdown file; do NOT trigger for company pages, whole-site builds, or editing the source analysis."
 ---
 
 # build-HTML — a plain-English HTML explainer of one analysis page
@@ -20,20 +20,21 @@ The source Markdown is **read-only** here — the skill only ever *reads* it, so
 
 ## When to use
 
-- The user invokes `/build-HTML <page>` or asks to build / generate / render a plain-English, easy-to-read, or "explainer" HTML page from a vault **analysis** page (theme / chokepoint / thesis / framework / insight).
+- The user invokes `/build-HTML <page>.md` or asks to build / generate / render a plain-English, easy-to-read, or "explainer" HTML page from a vault **analysis** page (theme / chokepoint / thesis / framework / insight). The user's convention is to pass the source as a `.md` filename (e.g. `transformer-supply.md`).
 - After an analysis page is written/updated and the user wants a shareable, outsider-friendly version.
 
 Do **not** use this for: a **company** page (use `build-company-html`), the whole public site (`python web/build.py`), or any request to change the source analysis (human-gated ingest).
 
 ## Inputs
 
-One page reference — a slug (`telecom-bust-analog`), a filename, or a path. Case-insensitive; resolve it to the actual source file in Step 1.
+One page reference. **The user's standing convention is to pass a `.md` filename** (e.g. `transformer-supply.md`, `HBM-oligopoly.md`) — the primary, expected form. A full path (`wiki/chokepoints/transformer-supply.md`) or a bare slug (`transformer-supply`) also resolve. Case-insensitive. **Derive the output name from the file stem** (strip `.md`) → `raw/HTML/<stem>.html`; never produce `<name>.md.html`. Resolve to the actual source file in Step 1.
 
 ## Step 1 — Resolve the source (and reject company pages)
 
 - Resolve `python3`.
-- Find the source file by slug across the analysis locations, in order: `wiki/themes/`, `wiki/chokepoints/`, `wiki/insights/`, `wiki/_thesis*.md`, `raw/notes/frameworks*.md`. If it resolves to `wiki/companies/<TICKER>.md` (or looks like a ticker), **STOP** and tell the user this skill is for analysis pages — company pages use `build-company-html`.
+- The input is normally a **`.md` filename** (the user's convention, e.g. `transformer-supply.md`). Take the file stem (strip a trailing `.md`) and find the source across the analysis locations, in order: `wiki/themes/`, `wiki/chokepoints/`, `wiki/insights/`, `wiki/_thesis*.md`, `raw/notes/frameworks*.md`. A full path resolves directly; a bare slug also resolves. If it resolves to `wiki/companies/<TICKER>.md` (or looks like a ticker), **STOP** and tell the user this skill is for analysis pages — company pages use `build-company-html`.
 - If nothing matches, STOP and list near-matches. **Never create the source** (that's a canon action).
+- The output filename is `raw/HTML/<stem>.html` (the source's `.md` stem) — do not double-append (`<name>.md.html` is wrong).
 - Read the source with the existing parser — reuse, don't re-implement:
   ```python
   # scripts/vault_parsers.py already exposes read_page(path) -> (frontmatter, body)
