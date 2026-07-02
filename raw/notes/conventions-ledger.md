@@ -201,3 +201,36 @@ Pre-codification baseline: S45 ENS = 6 material falsifications. Post-codificatio
 *Moved here from CLAUDE.md Section 4.1 at the v10.x compression — the 1-stop/2-stop applicability + escalation rules stay in CLAUDE.md; the 5-instance roster lives here.*
 
 **5-instance Pathway precedent:** S51 [[HALEU-fuel-chokepoint]] (FIRST 1-stop refresh; minor update scope) + S65 [[TSMC-CoWoS]] (SECOND; substantial-content-addition scope ~120 lines; protocol durability at substantial-content scope validated) + S66 [[datacenter-laser-supply]] + S67 [[cpo-integration]] + S68 [[advanced-optical-packaging]]. S65–S68 = 4-chokepoint paired-cluster refresh demonstrating cross-vault propagation cycle methodology at 1-stop refresh scope.
+
+## A.19 — Codification-history map *(moved from CLAUDE.md inline tags at v10.2, 2026-07-02)*
+
+*At v10.2 the "(codified Session X; refined Session Y)" tags were stripped from CLAUDE.md headings and rule lead-ins — knowing when a rule was codified almost never changes how it is applied. This table preserves the full map. Load-bearing prospective-from cutoffs (S46 descriptive-language, S38 brevity, S86 Section 3.16 application, the Section 1.1 rework dates) remain in CLAUDE.md because the date IS part of those rules.*
+
+**Version history:** v10.2 (2026-07-02, structural simplification + the Section 5.3 third-instance codification bar) ← v10.1 (2026-06-23, compression refactor: rosters → A.15–A.18) ← v10.0 (S154, 2026-06-12, tracker page type + layer page-type retirement; see A.14) ← v9.6–v9.9 (see A.13–A.14 + git).
+
+| CLAUDE.md section | Codified | Refined |
+|---|---|---|
+| 2.1 honest-verdict trigger discipline | S61 | — |
+| 2.1 mid-fiscal-year disclosure shift | S79 | S86 |
+| 2.1 venue-asymmetric sub-pattern | S86 (FIRST INSTANCE: NVDA S81) | — |
+| 2.11 non-calendar filer protocol | S61 | S79 |
+| 2.11.1 substantive-offset threshold | S79 (3-instance week-scope) | — |
+| 2.11.2 EXACT-period-parity | S79 (FIRST INSTANCE: AMD S77 + INTC S78) | — |
+| 3.2 frontmatter reinforcement | S46 | — |
+| 3.2 defense_tier (Option A) | S123 | — |
+| 3.4 sub-pattern enumeration | formalized S61 | — |
+| 3.6 cross-venue gap (A4-bis) | S86 | — |
+| 3.8 brevity discipline | S38 | enforcement + telemetry relocation v9.9 (2026-06-13) |
+| 3.15 Pathway 2 | S46 | 5-instance S79; 4-canonical strengthening S86 |
+| 3.16 "substantive" word discipline | S86 | — |
+| 3.17 latest-alpha digest block | v9.9 (2026-06-13; reserved at v9.8) | — |
+| 3.18 forward-edge tracker | 2026-06-09 (post-S148) | — |
+| 3.19 page lifecycle | v9.9 (2026-06-13) | — |
+| 3.20 tracker pages | v10.0 (2026-06-12) | — |
+| 4.1 chokepoint 1-stop/2-stop | S79 (5-instance precedent) | — |
+| 4.2 MJDS Canadian source-set | S46 | — |
+| 4.5 (g)/(g') sub-categorization | S46 | discipline boundary S61 |
+| 4.6 application discipline + ROI | S61 | — |
+| 4.7 refresh log | S104 | — |
+| 5.3 forward-only growth discipline | S129 | — |
+| 5.3 third-instance codification bar | v10.2 (2026-07-02) | — |
