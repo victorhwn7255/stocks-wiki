@@ -5,6 +5,8 @@ description: Ingest ONE Stanford CS153 "Frontier Systems" course lecture (a YouT
 
 # CS153 — build the Stanford CS153 "Frontier Systems" course corpus
 
+**Status (as of 2026-07-03): dormant.** The Spring 2026 course has ended and the corpus (12 transcripts + `notes.md`) already fed the S175 `ai-frontier-systems` theme-page build. Use this skill only if Vic stages a new/missed CS153 lecture — the routing rule below still applies to any such lecture.
+
 This skill turns the **Stanford CS153 Frontier Systems** course (Spring 2026, taught by leading AI-industry figures) into a single, vault-aware research corpus. The user feeds the course's YouTube lectures **one at a time**; each run saves that lecture's transcript and folds its investment-relevant insights into one consolidated, stack-structured `notes.md`. When the course is complete, the corpus (all transcripts + `notes.md`) becomes the source material for a human-gated **`ai-frontier-systems`** theme page.
 
 ## Why this exists separately from `/youtube-intel`

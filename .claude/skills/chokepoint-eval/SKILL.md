@@ -53,7 +53,7 @@ Scoring per cell: **pass / weak / fail** (or **split** when a page contains two 
    - **conditional-on-demand** — ownership maximal, adoption unresolved (the CPO verdict)
 3. **"What would change the score"** — 2–3 pre-registered triggers (dated where possible) that would upgrade or downgrade the verdict.
 4. **Contradiction flag (if any):** if the verdict conflicts with the page's current framing or tier placement, state the tension plainly and recommend a human-gated page update — do not edit.
-5. The one-line methodology status note (agent-side rubric, pending frameworks codification).
+5. The one-line status note: rubric = **Framework 12** (`frameworks.md` v10.2, codified canonical doctrine, Vic-authorized 2026-06-10); verdict cited "per Framework 12."
 
 On explicit request only, save the full scorecard as `raw/notes/chokepoint-eval/<RUN_DATE>_<name>.md`.
 
@@ -94,4 +94,4 @@ From the 2026-06-10 derivation runs:
 - Not a page writer or editor — read-only; contradictions get flagged, not fixed.
 - Not a replacement for the chokepoint-quality gradient or the theses — it complements them (Q6 cross-checks the gradient explicitly).
 - Not a buy/sell or sizing tool.
-- Not canonical doctrine until Vic codifies the rubric into `frameworks.md`.
+- Not where the rubric lives — Framework 12 in `frameworks.md` is the authoritative text (human-owned post-codification); this skill is the operational runner, and a run that trips a Framework 12 revision trigger flags it for Vic rather than revising the framework.

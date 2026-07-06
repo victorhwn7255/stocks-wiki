@@ -16,7 +16,7 @@ It is architecturally the same plumbing as `/priced-in` (an orchestrator that in
 This skill is **discovery-only**. It MUST NOT:
 - edit `wiki/_thesis.md`, `wiki/_thesis-defense-drones.md`, `wiki/_thesis-humanoid-robot.md` (human-owned),
 - edit any `raw/notes/frameworks*.md` (human-owned),
-- edit, create, or delete any page under `wiki/` (company / chokepoint / theme / relationship / layer / tracker) — including `what-could-go-wrong`, `forward-edge-tracker`, and any `Latest alpha` block,
+- edit, create, or delete any page under `wiki/` (company / chokepoint / theme / tracker / relationship / insight) — including `what-could-go-wrong`, `forward-edge-tracker`, and any `Latest alpha` block,
 - touch `index.md`, `log.md`, `refresh_log.md`, or `conventions-ledger.md`.
 
 It produces exactly two artifacts: (1) the **discovery report** under `raw/notes/bear-case/`, and (2) a scannable chat summary. Anything that should reach a vault page (e.g. a new *system-level* risk that belongs in the `what-could-go-wrong` register) is a **separate, human-gated** action the user asks for — this skill only **flags** the candidate. Same boundary as `/priced-in` and `/latest-alpha`.

@@ -51,12 +51,12 @@ Optional flags:
 The script's source-of-truth hierarchy:
 1. **`log.md` "Convention counts" blocks** — authoritative Vic-curated counts (per Phase 4 reflection convention codified Session 38). Most recent session entry wins (descending-order log convention).
 2. **Wiki page annotation scan** — supplementary; surfaces page mentions for verification. Used when log.md does not provide an explicit count for a pattern.
-3. **`MEMORY.md` "Key framework facts" section** — drift baseline; often stale relative to vault state.
+3. **`MEMORY.md` monitoring counts** — drift baseline; often stale relative to vault state. (The script greps a "Key framework facts" section if one exists, then falls back to the full MEMORY.md text — the current MEMORY.md format no longer carries that section, so the full-text fallback is the live path. Per CLAUDE.md v10.2 Section 5.3, MEMORY.md is the single live home for instance counts; the drift check below is exactly the live-home-vs-vault reconciliation.)
 
 ### 3. Apply vault context to output
 
 The script output is deterministic signal. Before surfacing to Vic:
-- Verify threshold-crossing patterns against current vault context. A pattern showing at threshold may already have been informally codified or addressed in a recent session — apply honest-verdict discipline.
+- Verify threshold-crossing patterns against current vault context. A pattern showing at threshold may already have been informally codified or addressed in a recent session — apply honest-verdict discipline. (Threshold semantics are now codified: the CLAUDE.md v10.2 Section 5.3 third-instance bar — a pattern becomes a rule at its third observed instance; first and second instances stay conventions-ledger watch items.)
 - Drift annotations indicate MEMORY.md staleness; the agent decides whether MEMORY.md update is warranted (the skill does NOT auto-update MEMORY.md).
 - For page-scan counts (where log.md doesn't provide an explicit count): treat as approximate — pages may *discuss* a pattern without representing a new instance. Verify by inspecting sample text.
 

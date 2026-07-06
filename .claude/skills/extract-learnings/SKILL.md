@@ -21,7 +21,7 @@ Any ask about recent learnings, codification readiness, drafting convention prop
    ```bash
    python3 scripts/monitor_patterns.py
    ```
-   Note patterns AT threshold (codification candidates) and MEMORY.md drift.
+   Note patterns AT threshold (codification candidates per the CLAUDE.md v10.2 Section 5.3 third-instance bar — codify at the third observed instance; first/second stay conventions-ledger watch items) and MEMORY.md drift.
 
 2. **Mine the traces** for what changed and what was learned:
    - `log.md` tail (recent sessions' Phase-4 reflections + backlog items),

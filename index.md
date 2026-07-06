@@ -171,7 +171,7 @@ Macro / "smart money" synthesis layer per CLAUDE.md Section 3.21 (`wiki/insights
 
 | Page | Related Tickers | Last Updated |
 |------|-----------------|--------------|
-| [macro-regime](wiki/insights/macro-regime.md) | NVDA, MU, BE, GEV, VST, CEG, KTOS, AVAV, NOC | 2026-06-30 |
+| [macro-regime](wiki/insights/macro-regime.md) | NVDA, MU, BE, GEV, VST, CEG, KTOS, AVAV, NOC | 2026-07-03 |
 
 ## Relationships
 

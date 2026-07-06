@@ -38,9 +38,20 @@ const ANGLES_SCHEMA = {
   required: ['angles'],
 }
 
-const topic = (args && args.topic) ? String(args.topic) : ''
+// Robust topic resolution — the named-workflow args quirk (hit S177 + S182): args may arrive
+// as an object ({topic}), a JSON-encoded string, or a bare topic string. Accept all three.
+let topic = ''
+if (args && typeof args === 'object' && args.topic) {
+  topic = String(args.topic).trim()
+} else if (typeof args === 'string' && args.trim()) {
+  let parsed = null
+  try { parsed = JSON.parse(args) } catch (e) { parsed = null }
+  topic = (parsed && typeof parsed === 'object' && parsed.topic)
+    ? String(parsed.topic).trim()
+    : args.trim()
+}
 if (!topic) {
-  return { error: 'no topic — invoke as Workflow({ name: "research-loop", args: { topic: "..." } })' }
+  return { error: 'no topic — invoke as Workflow({ scriptPath: ".claude/workflows/research-loop.js", args: { topic: "..." } }); a bare-string args also works' }
 }
 
 // ─── ① SCOPE ─────────────────────────────────────────────────────────────────

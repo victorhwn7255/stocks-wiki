@@ -20,7 +20,7 @@ This is an honest **proxy, not a measurement** — the skill can know "what's in
 This skill is therefore **discovery-only**. It MUST NOT:
 - edit `wiki/_thesis.md`, `wiki/_thesis-defense-drones.md`, `wiki/_thesis-humanoid-robot.md` (human-owned),
 - edit any `raw/notes/frameworks*.md` (human-owned),
-- edit, create, or delete any page under `wiki/` (company / chokepoint / theme / relationship / layer) — including the `forward-edge-tracker` and any `Latest alpha` block,
+- edit, create, or delete any page under `wiki/` (company / chokepoint / theme / tracker / relationship / insight) — including the `forward-edge-tracker` and any `Latest alpha` block,
 - touch `index.md`, `log.md`, `refresh_log.md`, or `conventions-ledger.md`.
 
 It produces exactly two artifacts: (1) the **discovery report** under `raw/notes/priced-in/`, and (2) a short two-bucket chat summary. Anything that should reach a vault page (a canon update, or a `forward-edge-tracker` entry) is a **separate, human-gated** action the user asks for — this skill only *flags* candidates. Same boundary as `/latest-alpha` and `/youtube-intel`.

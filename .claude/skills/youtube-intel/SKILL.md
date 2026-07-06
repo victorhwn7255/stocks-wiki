@@ -17,7 +17,7 @@ Therefore this skill is **discovery-only**. It MUST NOT, under any circumstances
 - edit, create, or delete any page under `wiki/` — `companies/`, `chokepoints/`, `themes/`, **`trackers/`**, or `relationships/`,
 - touch `index.md`, `log.md`, `refresh_log.md`, or `conventions-ledger.md`.
 
-**Tracker note (v10.0).** The `wiki/trackers/` folder — `forward-edge-tracker`, `what-could-go-wrong`, `hyperscaler-capex`, `china-exposure`, `AI-credit-spread-watch` — is **status-bearing canon** (CLAUDE.md Section 3.20). This skill **reads and flags** trackers (the Tracker-signals block below is the highest-value output); it **never edits** them — a status change goes through a human-gated propagation, not here. The `layer` page type was **retired at v10.0** (no `wiki/layers/` exists).
+**Tracker note (v10.0).** The `wiki/trackers/` folder — currently seven: `forward-edge-tracker`, `what-could-go-wrong`, `hyperscaler-capex`, `china-exposure`, `AI-credit-spread-watch`, `short-interest`, `forward-pe-watch` (verify against the folder — it grows) — is **status-bearing canon** (CLAUDE.md Section 3.20). This skill **reads and flags** trackers (the Tracker-signals block below is the highest-value output); it **never edits** them — a status change goes through a human-gated propagation, not here. The `layer` page type was **retired at v10.0** (no `wiki/layers/` exists).
 
 It produces exactly two write artifacts: (1) the **intel note** under `raw/notes/video-intel/`, and (2) a one-line append to the **`raw/notes/video-intel/_index.md`** registry (Step 6). Plus a short chat summary. Anything that should actually reach a vault page goes through the **normal primary-source-verified ingest**, human-gated (the two-stop protocol), in a *separate* action the user explicitly asks for. The skill's job is to tell the user *what to go verify*, not to verify it or write it down as fact.
 
@@ -157,11 +157,12 @@ headline: "one-line core finding in plain language"
 
 **8. Vault cross-reference** *(always — a 5-type checklist so no page-type is skipped)* — walk: **company → chokepoint → theme → tracker → relationship**. For each touched page, tag **confirms / challenges / adds**, name it with `[[wikilinks]]` only when it exists. (Trackers get only a pointer here — their detail lives in block 9.)
 
-**9. Tracker signals** *(required — consider all 5 trackers; output the ones touched, one line "No tracker signals" if none)* — discovery-only flags, never edits:
+**9. Tracker signals** *(required — consider EVERY tracker in `wiki/trackers/` [seven at last count]; output the ones touched, one line "No tracker signals" if none)* — discovery-only flags, never edits:
   - **[[forward-edge-tracker]]** — what **consensus narrative** does this video represent (a YouTube video *is* the Tier-3/4 consensus), and where does the vault's primary-grounded view **diverge**? That is exactly a forward-edge "Consensus vs Vault view" pair.
   - **[[what-could-go-wrong]]** — any **tripwire event** ("Meta cut capex" = a fired tripwire) or a new **tripwire candidate** (e.g. the Burry depreciation short)? A fired tripwire is a calibration event (block 13 footer).
   - **[[hyperscaler-capex]]** — the watch numbers (e.g. GOOGL $180B / AMZN $220B / META $135B), each tagged "verify vs guidance."
   - **[[china-exposure]]** / **[[AI-credit-spread-watch]]** — any signal that moves these.
+  - **[[short-interest]]** / **[[forward-pe-watch]]** — crowd-positioning claims about a vault name, or index-level valuation/EPS-revision claims (a "market is at X× forward earnings" line is a dial cross-check, never a fact).
 
 **10. Framework & chokepoint placement** *(when a chokepoint / new-name candidate surfaces)* — place any new chokepoint candidate on the **chokepoint-quality gradient** (geology/physics > precision-mfg > policy) and flag it for `/chokepoint-eval`. State the thesis verdict: **strengthens / challenges / refines** which of the three theses, or off-thesis.
 

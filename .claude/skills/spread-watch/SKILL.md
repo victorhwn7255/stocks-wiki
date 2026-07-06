@@ -1,3 +1,8 @@
+---
+name: spread-watch
+description: Refresh the AI credit spread tracker (wiki/trackers/AI-credit-spread-watch.md) — the dial for whether AI-related borrowers pay more than comparable ordinary borrowers, the earliest observable signal of a financing-led AI capex cycle turn. Pulls FRED HY/IG controls via scripts/spread_watch.py, checks the manual AI-instrument dials, applies the binding reading rule, and updates that ONE tracker page (flag — never edit — any other page). Use on /spread-watch or asks like "check the spreads", "how's AI credit", "has the credit market blinked", "update the spread watch"; optional pasted yields, e.g. "/spread-watch crwv 11.2 orcl 5.6 msft 4.9".
+---
+
 # spread-watch — refresh the AI credit spread tracker
 
 This skill refreshes `wiki/trackers/AI-credit-spread-watch.md` — the vault's instrument for the gap between what AI-related borrowers pay and what ordinary, comparable borrowers pay, the earliest observable signal of the AI capex cycle's financing-led ending. It runs the data pull, applies the reading rule, updates the readings table with dated entries, and cross-checks the five-dial cycle-turn dashboard.

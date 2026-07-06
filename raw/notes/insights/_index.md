@@ -7,7 +7,7 @@ The vault's own read **across** these sources (consensus, divergence, decision r
 | Source | File | Type | Latest entry |
 |---|---|---|---|
 | Fundstrat / FSInsight (Tom Lee) | [fundstrat.md](fundstrat.md) | Macro + strategy + quant core list | 2026-06-25 |
-| Goldman Sachs | [goldman-sachs.md](goldman-sachs.md) | (TBD) | — (no entries yet) |
-| DataTrek Research | [datatrek.md](datatrek.md) | (TBD) | — (no entries yet) |
+| Goldman Sachs | [goldman-sachs.md](goldman-sachs.md) | Research (economics/strategy) + trading desks (sales-trading/macro) | 2026-07-02 |
+| DataTrek Research | [datatrek.md](datatrek.md) | Macro + strategy (Morning Briefing / Story Time Thursday) | 2026-07-02 |
 
 _Add a row per source as logs are created. No imposed template — each source's format differs; structure each log to fit its reports._

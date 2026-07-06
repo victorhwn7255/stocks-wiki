@@ -31,7 +31,7 @@ Any question about vault health, broken/unresolved wikilinks, stale pages or tra
    - **count-drift** — actual dir counts vs `index.md` section row counts vs the `~N` hints in the `agent-onboarding` skill (the exact drift class we hand-fix).
    - **frontmatter** — company pages have `type` / `tickers` / a valid `YYYY-MM-DD` `last_updated`; tier values are sane.
    - **staleness** — pages older than per-type thresholds (companies 90d / trackers 30d / else 120d).
-   - **tracker-freshness** — the 5 trackers vs a 30-day threshold (called out from staleness).
+   - **tracker-freshness** — every `wiki/trackers/*.md` page vs a 30-day threshold (the script globs the folder — 7 trackers at last count; called out from staleness).
 
 3. **Interpret + flag (honest-verdict).** Lead with anything actionable: a `❌ FAIL` (real defect) first, then `⚠️ WARN`s worth a human look (typo-looking unresolved links, stale trackers). Self-links are a known, low-severity, pervasive WARN — note the count, don't alarm. For each genuine defect, name the file and the fix, and say plainly it's a human-gated change.
 

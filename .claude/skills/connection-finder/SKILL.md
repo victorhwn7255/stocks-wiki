@@ -5,13 +5,13 @@ description: Scan the stocks-wiki vault and surface candidate cross-page connect
 
 # Connection finder — stocks-wiki cross-vault pattern surfacing
 
-This skill returns a 3-section ranked list of candidate cross-page connections not yet captured by existing chokepoint, theme, or relationship pages. It exists because the vault has 31+ company pages plus 9 chokepoints + 8 themes + 1 relationship page, and new analytical synthesis opportunities (like the S57 BTM-grid-bypass-workaround.md chokepoint that connected BE+FCEL+GEV+CAT) only become visible when co-mention density is measured systematically across the full graph.
+This skill returns a 3-section ranked list of candidate cross-page connections not yet captured by existing chokepoint, theme, or relationship pages. It exists because the vault has 80+ company pages plus 15 chokepoints, 28 themes, 7 trackers, and a relationship page (verify against `index.md` — the catalog grows every session), and new analytical synthesis opportunities (like the S57 BTM-grid-bypass-workaround.md chokepoint that connected BE+FCEL+GEV+CAT) only become visible when co-mention density is measured systematically across the full graph.
 
-The deterministic boundary is critical: this skill SURFACES candidates with evidence. It does NOT write chokepoint, theme, or relationship pages. Page synthesis is agent reasoning work that follows the skill's output, validated against CLAUDE.md v9 Sections 3.12 (theme types) + 3.14 (paired ingests) + 3.15 (Pathway 1/2 chokepoint creation) page-type rules.
+The deterministic boundary is critical: this skill SURFACES candidates with evidence. It does NOT write chokepoint, theme, or relationship pages. Page synthesis is agent reasoning work that follows the skill's output, validated against CLAUDE.md Sections 3.12 (theme types) + 3.14 (paired ingests) + 3.15 (Pathway 1/2 chokepoint creation) page-type rules.
 
 ## When to invoke
 
-Invoke this skill when the user asks any question about uncaptured analytical patterns or cross-page connection candidates. The skill is the right tool whenever the question would otherwise require manually scanning all 31+ company pages for co-mention patterns.
+Invoke this skill when the user asks any question about uncaptured analytical patterns or cross-page connection candidates. The skill is the right tool whenever the question would otherwise require manually scanning all 80+ company pages for co-mention patterns.
 
 Examples of questions that should trigger this skill:
 - "Find connections across the vault"
@@ -52,17 +52,17 @@ Dismissed-candidate memory (kills recurring noise):
 - `--list-dismissed` — show the curated skip-list.
 - `--undismiss AVGO,NVT` — restore a cluster so it can surface again.
 
-The skip-list lives in `scripts/find_connections_dismissed.json` (git-tracked, Vic-curated, fully reversible). A dismissed ticker-set is silently excluded from HIGH SIGNAL — so the same low-value cluster doesn't re-appear run after run, and (because the automation's `research_agenda.py --propose` mines this script) it also stops polluting the nightly "Proposed" queue. **When Vic says "dismiss that one" about a surfaced cluster, run `--dismiss` with his reason; never hand-edit the JSON by guessing.**
+The skip-list lives in `scripts/find_connections_dismissed.json` (created on first `--dismiss`; git-tracked, Vic-curated, fully reversible). A dismissed ticker-set is silently excluded from HIGH SIGNAL — so the same low-value cluster doesn't re-appear run after run, and (because the automation's `research_agenda.py --propose` mines this script) it also stops polluting the nightly "Proposed" queue. **When Vic says "dismiss that one" about a surfaced cluster, run `--dismiss` with his reason; never hand-edit the JSON by guessing.**
 
 The script:
-1. Loads all wiki pages (companies + chokepoints + themes + relationships)
+1. Loads all wiki pages (companies + chokepoints + themes + trackers + relationships)
 2. Builds co-mention matrix across all pages (weighted: +2 for reciprocal company-page wikilinks, +1 for shared non-company-page mentions, +1 for plaintext on company pages)
 3. Identifies already-captured pairs from non-company page frontmatter + body wikilinks
 4. Scores remaining pairs by raw_score × recency_factor (30d=1.0 / 90d=0.85 / 180d=0.70 / older=0.55)
 5. **HIGH SIGNAL** — Density-constrained clustering of uncaptured pairs: each pair seeds a cluster; extension requires the new ticker to have qualifying-score edges to at least 2 existing cluster members (triangle requirement); max cluster size 5
 6. **MEDIUM SIGNAL** — Per-page refresh candidates: for each chokepoint/theme/relationship page, finds external tickers (not in frontmatter) with high affinity (sum of co-mention scores) to existing page members
 7. **LOW SIGNAL** — Count only: pairs already captured by an existing page
-8. Suggests page type per HIGH SIGNAL cluster per CLAUDE.md v9 page-type rules
+8. Suggests page type per HIGH SIGNAL cluster per CLAUDE.md page-type rules
 
 ### 3. Apply vault context to output
 
@@ -136,7 +136,7 @@ This skill requires SKILL.md updates if:
 - Output format conventions change at chat-side or via codification session
 - Workhorse script location changes from `scripts/find_connections.py`
 - Scoring formula or clustering algorithm changes substantively
-- New page types are introduced (currently: companies / chokepoints / themes / relationships / layers)
+- New page types are introduced (currently: companies / chokepoints / themes / trackers / relationships, plus the pending-codification insights type; the layer page type was retired at CLAUDE.md v10.0)
 
 The workhorse script (`scripts/find_connections.py`) is where co-mention weights, score thresholds, cluster algorithm parameters, and recency factors live. Updates to those operational parameters happen in the script, not in SKILL.md.
 

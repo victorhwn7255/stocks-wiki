@@ -28,10 +28,11 @@ Not for: a quick web-only question (use `/deep-research`), surfacing connections
 
 1. **Preconditions.** `mkdir -p raw/research/interactive/`. Take the topic from the user (any ad-hoc topic — it need not be on `topics-list.md`).
 
-2. **Run the workflow.** Invoke the saved Workflow (the skill invocation IS the multi-agent opt-in):
+2. **Run the workflow.** Invoke the workflow script directly by path (the skill invocation IS the multi-agent opt-in):
    ```
-   Workflow({ name: "research-loop", args: { topic: "<the user's topic>" } })
+   Workflow({ scriptPath: ".claude/workflows/research-loop.js", args: { topic: "<the user's topic>" } })
    ```
+   Pass `args` as a real JSON object, NOT a JSON-encoded string. The script's topic parsing is hardened against the named-workflow args quirk (it also accepts a bare-string or JSON-string `args` — the failure that bit S177 + S182). If a run still returns `{ error: "no topic …" }`, the last-resort fallback is the known workaround: copy the script, hardcode the topic into the `topic` constant, and re-run via `scriptPath`.
    It runs four phases — **Scope** (15 angles) → **Research** (each angle: two-sided research → verify, concurrent) → **Connect** (8 grounded vault-connection agents) → **Synthesize** (one report). It runs in the background; the user can watch the phases live with **`/workflows`**. The workflow returns `{ topic, report, angles, connections }`.
 
 3. **Save the report.** Take the returned `report` markdown and **Write** it to:
