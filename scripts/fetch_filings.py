@@ -34,6 +34,8 @@ USER_AGENT = "Victor victorhwn725@gmail.com"
 # TSM files 20-F annually instead of 10-K (foreign private issuer).
 COMPANIES = {
     "NVDA": {"cik": "0001045810", "forms": ["10-K", "10-Q"]},
+    "AAPL": {"cik": "0000320193", "forms": ["10-K", "10-Q"]},  # Apple — candidate (demand-side / TSMC leading-edge anchor customer; likely outside-framework counterpoint per §3.10); Sept-FY filer
+    "QCOM": {"cik": "0000804328", "forms": ["10-K", "10-Q"]},  # Qualcomm — candidate (edge-inference silicon / robot-compute; vault pre-scoped as weak-fit counterpoint per training-to-inference-shift, INOD/PLAB pattern); Sept-FY filer
     "CORZ": {"cik": "0001839341", "forms": ["10-K", "10-Q"]},  # Core Scientific — AI-datacenter host / neocloud infrastructure (CoreWeave's landlord); calendar FY; note FY2025 restatement (10-K/A 2026-03-18)
     "TSM":  {"cik": "0001046179", "forms": ["20-F"]},
     "AEHR": {"cik": "0001040470", "forms": ["10-K", "10-Q"]},

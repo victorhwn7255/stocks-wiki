@@ -1,7 +1,7 @@
 ---
 type: theme
-tickers: [MU, SNDK, PLAB, CSCO, NVDA, META, AVGO, MURATA, TAIYO]
-last_updated: 2026-06-29
+tickers: [MU, SNDK, PLAB, CSCO, NVDA, META, AVGO, MURATA, TAIYO, AAPL]
+last_updated: 2026-07-08
 ---
 
 # Memory Shortage — Winners and Losers
@@ -58,7 +58,7 @@ Vault primary: [[SNDK]] revenue +251% YoY in Q3 FY2026 with "higher pricing" cre
 ### Channel A — device makers (the demand tax)
 
 - **Forecast at scale (Tier 3):** IDC projects 2026 smartphone shipments **−12.9%** (~160M fewer units; worst drop in over a decade) and PC shipments **−11.3%**; phone ASPs +14% to a record ~$523; the sub-$100 phone becomes "effectively uneconomical." Gartner agrees directionally (both February 2026).
-- **Observed at primary (vault):** [[NVDA]] — "consumer demand fell modestly due to higher memory and system prices" (Q1 FY2027 call). [[META]] — the FY2026 capex raise to $125-145B was "due to higher component costs, particularly memory pricing" (Zuckerberg, Q1 2026 call), and Meta is extending server lifespans; even a hyperscaler driving the shortage pays its tax. Chinese OEMs are delaying launches and cutting SKUs; Dell/HP are killing entry-level models (Tier 4 reporting).
+- **Observed at primary (vault):** [[NVDA]] — "consumer demand fell modestly due to higher memory and system prices" (Q1 FY2027 call). [[META]] — the FY2026 capex raise to $125-145B was "due to higher component costs, particularly memory pricing" (Zuckerberg, Q1 2026 call), and Meta is extending server lifespans; even a hyperscaler driving the shortage pays its tax. Chinese OEMs are delaying launches and cutting SKUs; Dell/HP are killing entry-level models (Tier 4 reporting). [[AAPL]] — flagged **"significantly higher memory costs"** in the June quarter with an "increasing impact" beyond, and cut Q3 FY2026 gross-margin guidance to 47.5–48.5% (from 49.3%) largely on memory (Q2 FY2026 call, Apr 30 2026); the world's highest-margin device maker paying the tax at the *margin line* rather than fully passing it through.
 
 ### Channel B — chip-design suppression (the PLAB channel)
 
@@ -78,12 +78,12 @@ The 2017-18 precedent: standard MLCC spot prices rose 5-10× into mid-2018; the 
 |---|---|---|
 | **Winners (sell memory)** | [[MU]] · [[SNDK]] · (SK Hynix, Samsung — not vault pages) | MU: record Q3 FY2026 ($41.5B / 84.6% GM); SCAs scaled to **16 take-or-pay deals / $22B** with Tier-1 floor-margins-above-peak (S176); SNDK: +251% revenue, record EPS, NBM customer prepayments $511M |
 | **Winners (sell the panic)** | MLCC top-bin makers ([[MURATA]] #1 + [[TAIYO]] #3 — both now primary, S169-S170) | Server-capacitor sales **+85-90% CONFIRMED** ([[MURATA]]); the limited-qualified-supplier oligopoly structure + pricing restraint **double-confirmed at the #3** ([[TAIYO]] full-year A7 / Q3 A12); double-booking **quarantined to consumer-grade** (AI top bin runs supply-short) — see [[MLCC-oligopoly]] (now a canonical chokepoint) |
-| **Losers (pay more, sell less)** | [[CSCO]] (−260 bps GM) · [[PLAB]] (design-release suppression) · [[NVDA]] consumer/gaming edge · low-end consumer electronics broadly | All at primary except the broad consumer read (Tier 3) |
+| **Losers (pay more, sell less)** | [[CSCO]] (−260 bps GM) · [[PLAB]] (design-release suppression) · [[NVDA]] consumer/gaming edge · [[AAPL]] (Q3 FY2026 GM guide cut to 47.5–48.5% on memory) · low-end consumer electronics broadly | All at primary except the broad consumer read (Tier 3) |
 | **Losers (capex inflation)** | [[META]] — and by mechanism every hyperscaler buying standard server DRAM | Capex raise explicitly memory-priced; server-life extension |
 | **Protected (locked supply)** | [[AVGO]] ("fully secured... 2026 through 2028" incl. HBM — Hock Tan) · [[NVDA]] for HBM (SK Hynix concentration per [[HBM-oligopoly]]) | Protection is for *AI* inputs; their consumer-facing segments still feel Channel A |
 | **The thermometer** | MLCC channel inventory · CSCO-style purchase commitments · spot-vs-contract spread | Not investments — the page's measuring instruments |
 
-Three honest caveats. First, the damage is uneven: [[PLAB]]'s Q2 call notes high-end Western consumer electronics (flagship phones, watches) were NOT hit — the tax falls on the low end, where there is no margin to absorb it. Second, "winner" here means pricing power this cycle, not durability: the [[MLCC-oligopoly]] verdict (quality-but-cyclical) applies to the standard-memory windfall too — it is exactly the kind of earnings spike that mean-reverts when Channel D fires. Third, even the parts feeding *into* memory modules aren't a clean monotonic bet: [[TAIYO]] reported a temporary **DDR5-inductor lull** as DDR4 replacement demand strengthened (Q2 Q&A, Nov 2025) — total memory demand kept rising, but the DDR4→DDR5 mix shift created near-term noise in the inductors that go into memory modules.
+Three honest caveats. First, the damage is uneven: [[PLAB]]'s Q2 call notes high-end Western consumer electronics (flagship phones, watches) were NOT hit — the tax falls on the low end, where there is no margin to absorb it. *(Wrinkle, S-current: [[AAPL]] — the definitive high-end flagship maker — nonetheless guided its gross margin down on memory. The read isn't that the high end lost pricing power, but that the tax now reaches even it, absorbed at the margin line; watch whether it deepens.)* Second, "winner" here means pricing power this cycle, not durability: the [[MLCC-oligopoly]] verdict (quality-but-cyclical) applies to the standard-memory windfall too — it is exactly the kind of earnings spike that mean-reverts when Channel D fires. Third, even the parts feeding *into* memory modules aren't a clean monotonic bet: [[TAIYO]] reported a temporary **DDR5-inductor lull** as DDR4 replacement demand strengthened (Q2 Q&A, Nov 2025) — total memory demand kept rising, but the DDR4→DDR5 mix shift created near-term noise in the inductors that go into memory modules.
 
 ## What would prove this framing wrong
 
@@ -107,6 +107,7 @@ Created from evidence already in vault canon (per-source provenance lives on the
 
 ## Change log
 
+- **2026-07-08 ([[AAPL]] first-canonical ingest propagation):** Added Apple to Channel A (the demand tax) + the "pay more" Losers row — the "significantly higher memory costs" warning + Q3 FY2026 GM-guide cut to 47.5–48.5% (Q2 FY2026 call). Added a wrinkle to caveat #1: the definitive high-end flagship maker guided margin down on memory, so the tax now reaches even the high end (absorbed at the margin line). +AAPL to `tickers`. last_updated 2026-06-29 → 2026-07-08.
 - **2026-06-29 (S176 — [[MU]] Q3 FY2026 refresh propagation):** Updated the constraint-stack paragraph + the Winners row with MU Q3 (supply-sets-shipments; HBM TAM $100B→2027; SCA take-or-pay scaled to 16/$22B with the Tier-1 floor-margin-above-peak disclosure). Maker-side shortage hardened; the page's cycle-clock thesis (downstream demand-destruction + contract rollover) unchanged. last_updated 2026-06-16 → 2026-06-29.
 - **2026-06-19 (S170 — [[TAIYO]] second-maker ingest):** Added [[TAIYO]] (#3) to the "sell the panic" Winners row alongside [[MURATA]] (#1) — the limited-qualified-supplier oligopoly + pricing restraint now **double-confirmed** at a 2nd primary maker; added a 3rd honest caveat (the **DDR5-inductor lull** — DDR4 replacement noise in the parts feeding memory modules; Taiyo Q2 Q&A). Noted [[MLCC-oligopoly]] is now a canonical chokepoint (promoted S170). +MURATA, TAIYO to `tickers`. Cross-reference; `last_updated` unchanged.
 - **2026-06-19 (S169 — [[MURATA]] first-canonical ingest):** Resolved Murata→[[MURATA]] in the Winners row + upgraded to primary (server-capacitor +85-90% confirmed); noted the double-booking is **quarantined to consumer-grade** (the AI top bin runs supply-short, not hoarded). Open Q#2 (Murata actuals) landed. Cross-reference + primary-upgrade; `last_updated` unchanged.

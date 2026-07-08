@@ -87,7 +87,7 @@ Customer A surpassed Customer B in FY2025 to become TSMC's single largest custom
 
 The 20-F does not name any customer. Any specific attribution is interpretation, not disclosure.
 
-Customer A's trajectory — below the 10% disclosure threshold in 2023, rising to 12% in 2024 and 19% in 2025, with revenue more than doubling in a single year — is consistent with a company undergoing rapid AI-era scaling. The growth pattern resembles that of a major AI platform customer whose demand for leading-edge logic and advanced packaging has expanded dramatically during the 2023-2025 period. Customer B's gradual decline (25% → 22% → 17%) despite absolute revenue growth (NT$547B → NT$645B) is consistent with a maturing consumer electronics customer whose share declines as AI-driven HPC demand grows faster.
+Customer A's trajectory — below the 10% disclosure threshold in 2023, rising to 12% in 2024 and 19% in 2025, with revenue more than doubling in a single year — is consistent with a company undergoing rapid AI-era scaling. The growth pattern resembles that of a major AI platform customer (profile consistent with [[NVDA]]) whose demand for leading-edge logic and advanced packaging has expanded dramatically during the 2023-2025 period. Customer B's gradual decline (25% → 22% → 17%) despite absolute revenue growth (NT$547B → NT$645B) is consistent with a maturing consumer-electronics customer (profile consistent with [[AAPL]] — TSMC's leading-edge anchor / first-node adopter) whose share declines as AI-driven HPC demand grows faster. Both attributions are inferable, not disclosed.
 
 These patterns match publicly known TSMC customer profiles, but the filing provides no confirmation of identity.
 
@@ -393,6 +393,7 @@ An analyst referenced ASML's strong quarterly results and asked about EUV supply
 
 ## Change log
 
+- **2026-07-08 ([[AAPL]] first-canonical ingest — cross-ref):** Resolved the "Inferable but not disclosed" customer profiles to hedged wikilinks now that both are vault pages — Customer A profile consistent with [[NVDA]] (the doubling AI-platform customer), Customer B with [[AAPL]] (the maturing consumer-electronics anchor); both remain inferable, not disclosed (§3.3). No primary-source change; `last_updated` unchanged (cross-ref enrichment, TSM is due its own Q2 refresh).
 - **2026-06-04 (Session 133 — cross-ref):** Added to the new vault-wide [[china-exposure]] theme as the **apex Taiwan-fab node** — the single largest correlated-concentration risk in the vault (every fabless AI name routes through TSMC). No content change.
 
 - **2026-04-19:** Created from TSM Q1 2026 earnings call (Tier 2). Covers Q1 results, Q2 guidance, full-year outlook, technology roadmap (N3/N2/A14), advanced packaging (CoWoS, CoPoS), capacity constraints, capex, margin profile, demand mix, competition, geopolitical risks, and key relationships.

@@ -12,6 +12,8 @@ last_updated: 2026-06-02
 
 **Sibling page (verdict-ownership rule).** [[AI-implementation-deployment-layer]] asks the adjacent question — *who gets paid to move AI from models into production* (the six-link deployment value chain) — and owns chain-link monetization verdicts; this page owns moat-durability verdicts. A name appearing on both carries one verdict of each kind, never two of the same kind. That page also flags an observation bearing on this page's falsifier (iii): MCP's donation to the Linux Foundation (Dec 2025) commoditizes the connector layer, narrowing the context moat to *governance* — to be weighed at this page's next refresh.
 
+**Sibling page (consumer / frontier layer).** This page is **enterprise-SaaS-centric**; the **consumer / frontier** application layer — the frontier labs' own products, app-native unit economics (gross margin under the inference token tax + retention), and the device-distribution battle among Apple/Google/Microsoft/Meta/Amazon — lives on [[frontier-app-layer-value-capture]]. It owns the app-native *margin level* (this page owns the seat-vs-consumption *pricing* discriminator) and the [[AAPL]] "owns-the-pipes-rents-the-intelligence" read.
+
 ## Thesis relevance
 
 The vault's supply-chain thesis rests on AI demand being durable enough to justify the ~$725B of 2026 hyperscaler capex (anchor report, citing an FT compilation Apr 30 2026; consistent with the ~$700B the vault records from the NVDA Q4 FY2026 call). This theme examines the **other end of that capex chain** — whether deployed AI infrastructure is actually monetized at the software layer, and which companies capture that value versus cede it.

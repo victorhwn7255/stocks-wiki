@@ -10,6 +10,7 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` Section 3
 |---|---|---|---|---|---|---|---|---|---|
 | [AAOI](wiki/companies/AAOI.md) | AAOI | 5 | 5 | — | — | — | — | — | 2026-05-10 |
 | [AAON](wiki/companies/AAON.md) | AAON | 4 | outside | — | 3 | outside | outside | — | 2026-05-26 |
+| [AAPL](wiki/companies/AAPL.md) | AAPL | outside | outside | outside | outside | outside | outside | — | 2026-07-08 |
 | [AEHR](wiki/companies/AEHR.md) | AEHR | 3-4 | 4 | — | — | — | — | — | 2026-04-20 |
 | [ALAB](wiki/companies/ALAB.md) | ALAB | 3 | 4 | — | — | — | — | — | 2026-05-11 |
 | [AMD](wiki/companies/AMD.md) | AMD | 1 | outside | — | outside | outside | outside | — | 2026-05-23 |
@@ -53,12 +54,12 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` Section 3
 | [MKSI](wiki/companies/MKSI.md) | MKSI | 4 | 3 | — | outside | 2 | 3 | — | 2026-05-21 |
 | [MOD](wiki/companies/MOD.md) | MOD | 4 | outside | — | 3 | outside | outside | — | 2026-05-29 |
 | [MP](wiki/companies/MP.md) | MP | 4-6 | outside | outside | outside | outside | 1 | 4 | 2026-06-05 |
-| [MURATA](wiki/companies/MURATA.md) | MURATA | 4 | — | — | — | — | outside | — | 2026-06-19 |
 | [MPWR](wiki/companies/MPWR.md) | MPWR | 4 | outside | outside | 3 | outside | outside | — | 2026-05-25 |
 | [MRCY](wiki/companies/MRCY.md) | MRCY | — | — | — | — | — | — | 2 | 2026-06-05 |
 | [MRVL](wiki/companies/MRVL.md) | MRVL | 3 | 3 | — | — | — | — | — | 2026-05-29 |
 | [MSFT](wiki/companies/MSFT.md) | MSFT | outside | outside | outside | outside | outside | outside | — | 2026-06-02 |
 | [MU](wiki/companies/MU.md) | MU | 2 | outside | 2 | outside | outside | outside | — | 2026-06-29 |
+| [MURATA](wiki/companies/MURATA.md) | MURATA | 4 | — | — | — | — | outside | — | 2026-06-19 |
 | [NBIS](wiki/companies/NBIS.md) | NBIS | outside | outside | outside | outside | outside | outside | — | 2026-06-03 |
 | [NOK](wiki/companies/NOK.md) | NOK | 4 | 2 | — | outside | outside | outside | — | 2026-05-19 |
 | [NOVT](wiki/companies/NOVT.md) | NOVT | 4 | outside | — | — | 4 | — | — | 2026-06-06 |
@@ -73,6 +74,7 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` Section 3
 | [PLAB](wiki/companies/PLAB.md) | PLAB | 4 | outside | — | — | — | — | — | 2026-06-13 |
 | [PLTR](wiki/companies/PLTR.md) | PLTR | outside | outside | outside | outside | outside | outside | — | 2026-06-02 |
 | [POWI](wiki/companies/POWI.md) | POWI | 4 | outside | outside | 3 | outside | outside | — | 2026-05-25 |
+| [QCOM](wiki/companies/QCOM.md) | QCOM | outside | outside | outside | outside | outside | outside | — | 2026-07-08 |
 | [SANHUA](wiki/companies/SANHUA.md) | SANHUA | outside | — | — | outside | — | — | — | 2026-06-06 |
 | [SHUANGHUAN](wiki/companies/SHUANGHUAN.md) | SHUANGHUAN | outside | — | — | — | — | — | — | 2026-06-06 |
 | [SIVE](wiki/companies/SIVE.md) | SIVE | 4 | 4 | — | — | — | — | — | 2026-05-28 |
@@ -92,6 +94,8 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` Section 3
 | [XFAB](wiki/companies/XFAB.md) | XFAB | 2 | 4 | — | 4 | outside | outside | — | 2026-05-28 |
 | [ZHAOWEI](wiki/companies/ZHAOWEI.md) | ZHAOWEI | outside | — | — | — | — | — | — | 2026-06-08 |
 | [ZHONGDA](wiki/companies/ZHONGDA.md) | ZHONGDA | outside | — | — | — | — | — | — | 2026-06-06 |
+
+
 
 
 
@@ -150,6 +154,7 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` Section 3
 | [commodity-supercycle-chokepoints](wiki/themes/commodity-supercycle-chokepoints.md) | MP, ETN, GEV, FLEX, LEU, BWXT, CCJ | 2026-06-16 |
 | [ai-frontier-systems](wiki/themes/ai-frontier-systems.md) | NVDA, AMD, TSM, ARM, INTC, AVGO, MRVL, ALAB, MU, SNDK, IBIDEN, GOOGL, AMZN, META, MSFT, ORCL, ANET, CRDO, LITE, COHR, AAOI, FN, GEV, ETN, VRT, CAT, BE, FCEL, CCJ, LEU, BWXT, CRWV, NBIS, CORZ | 2026-06-25 |
 | [telecom-bust-analog](wiki/themes/telecom-bust-analog.md) | NVDA, MU, TSM, ORCL, CRWV, NBIS, MSFT, GOOGL, AMZN, META, GLW, CSCO | 2026-07-01 |
+| [frontier-app-layer-value-capture](wiki/themes/frontier-app-layer-value-capture.md) | AAPL, GOOGL, MSFT, META, AMZN, NVDA | 2026-07-08 |
 
 ## Trackers
 

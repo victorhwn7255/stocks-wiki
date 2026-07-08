@@ -284,7 +284,7 @@ Companies with structural relevance but lower chokepoint criticality or where ex
 17. **Foxconn / FIT Hon Teng (6088.HK)** — CPO sockets, ELS cages, 102.4T CPO external-laser platform validation. NVDA ecosystem partner.
 18. **Sumitomo Electric (5802.T)** — InP substrates, multicore fiber, EML.
 19. **Synopsys (SNPS) / Cadence (CDNS)** — 224G PHY IP for switch ASICs and optical modules. Already vault-tangential via [[MRVL]] custom ASIC platform.
-20. **Alphawave Semi** — 224G SerDes IP for hyperscale (Qualcomm acquisition pending).
+20. **Alphawave Semi** — 224G SerDes IP for hyperscale (**acquired by [[QCOM]]**; integration underway per QCOM Q2 FY2026 call — the connectivity/SerDes foundation for Qualcomm's datacenter custom-silicon re-entry).
 21. **Schneider Electric (SU.PA)** — Datacenter power/cooling, 800V DC architecture.
 22. **MACOM (MTSI)** — 200G/lane PMDs, CW lasers, 448G drivers.
 23. **Semtech (SMTC)** — 224G TIA + driver families for LPO/LRO.
