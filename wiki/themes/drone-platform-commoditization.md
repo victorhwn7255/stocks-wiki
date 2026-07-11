@@ -1,7 +1,7 @@
 ---
 type: theme
 tickers: [AVAV, KTOS]
-last_updated: 2026-06-04
+last_updated: 2026-07-11
 ---
 
 # Drone platform commoditization — the deliberately weak layer
@@ -23,7 +23,7 @@ The thesis predicts that **platforms commoditize and margin migrates upstream** 
 
 ## The two vault primes — both playing affordable-mass
 
-- **[[AVAV]]** (AeroVironment) — Red Dragon (positioned to "define the next category" of OWA) and the smaller Switchblade variants sit squarely in the commoditizing OWA layer pressed toward the ~$2,000 ceiling. AVAV's broader portfolio (Puma, JUMP 20, Titan counter-UAS) spans higher layers, but its OWA/small-loitering economics are exposed to the squeeze.
+- **[[AVAV]]** (AeroVironment) — Red Dragon (positioned to "define the next category" of OWA; a $17M production contract in Q4 FY2026, sales more than doubled) and the smaller Switchblade variants sit squarely in the commoditizing OWA layer pressed toward the ~$2,000 ceiling. AVAV's broader portfolio (Puma, JUMP 20, Titan counter-UAS) spans higher layers, but its OWA/small-loitering economics are exposed to the squeeze.
 - **[[KTOS]]** (Kratos) — frames its drone/missile portfolio explicitly as the **"Family of Affordable Mass"** (management's term: 30,000+ low-cost missiles over the next several years; Q1 FY2026 call), plus the Tactical Firejet. Same affordable-mass race, played as a scale jet-aircraft manufacturer.
 
 Both names qualified for Gauntlet 2 — i.e., both are competing directly inside the program that is engineering the price floor.
@@ -44,7 +44,7 @@ Neither is a pure commoditizing-airframe play; both are *managing* the squeeze �
 ## The honest test (thesis falsifier) + early primary evidence
 
 The thesis's own falsifier is explicit: *if airframes become disposable commodities, value accrues only to chokepoint owners and software, and even AVAV/KTOS earn thin, cyclical platform margins.* The early, primary-sourced evidence already shows margin pressure at the platform layer:
-- **[[AVAV]]:** post-BlueHalo gross margin compressed from ~38% to ~24% (Q3 FY2026 10-Q) — driven by mix + purchase accounting, but a live data point on platform-layer economics.
+- **[[AVAV]]:** post-BlueHalo gross margin compressed from ~38% to ~24% (Q3 FY2026 10-Q), then **partially recovered to ~30% adjusted for FY2026 / 34% in Q4 (44% product margin)** (FY2026 10-K + Q4/FY2026 call) — still below the legacy ~40%. **Honest caveat:** this is a *blended-portfolio* figure (Autonomous Systems runs a 21% adjusted-EBITDA margin, lifted by the higher-value Titan counter-UAS and Switchblade lines) — it is *not* evidence the OWA-specific squeeze eased; the airframe/OWA line's own economics are not separately disclosed.
 - **[[KTOS]]:** the Unmanned Systems segment runs a ~17% gross margin (FY2025 10-K), well below the company's other franchises, and Q1 FY2026 consolidated operating margin was just ~1.3%.
 
 These are not yet a verdict — both have demand tailwinds and other layers — but they are consistent with the thesis's prediction that the airframe line is the thin one.
@@ -52,15 +52,17 @@ These are not yet a verdict — both have demand tailwinds and other layers — 
 ## Open questions
 
 1. **Does the ~$2,000 ceiling hold, and by when?** Gauntlet phases are tightening toward it; track whether the Phase IV target is met and whether it compresses the primes' OWA economics.
-2. **Do platform-segment margins compress or hold?** Watch [[AVAV]]'s gross-margin recovery (or not) and [[KTOS]]'s Unmanned Systems segment margin across cycles.
+2. **Do platform-segment margins compress or hold?** [[AVAV]]'s blended gross margin *partially recovered* in FY2026 (~24% → ~30% adjusted / 34% Q4), but at the *portfolio* level (Titan + Switchblade mix), not proven at the OWA line — watch whether the recovery reaches the legacy ~40% and whether the OWA economics are ever disclosed; likewise [[KTOS]]'s Unmanned Systems segment margin across cycles.
 3. **Does vertical integration actually defend margin?** Does [[KTOS]]'s build-the-upstream strategy produce a margin advantage over [[AVAV]]'s consume-and-scale, or just heavier capital intensity and negative free cash flow?
 4. **Does EW-resilience become the new moat?** Gauntlet 2's GPS-denial / jamming emphasis suggests value may shift to autonomy / EW-resilience — another *upstream* layer (see [[defense-drone-supply-chain]]) — rather than to the airframe.
 
 ## Source audit notes
 
-Dynamics theme; no new primary source ingested at creation. The market-design framing (the deliberate ~$2,000 ceiling; the Drone Dominance Program / Gauntlet I–II structure and vendor counts) is Tier-3 (the anchor report + `_thesis-defense-drones.md`), attributed — to verify against primaries (CRS / DoD program documents) at future ingest. The affordable-mass framings (AVAV Red Dragon; KTOS "Family of Affordable Mass") and the margin figures (AVAV ~38%→~24%; KTOS Unmanned Systems ~17% / Q1 op margin 1.3%) are primary, cross-referenced to the [[AVAV]] and [[KTOS]] pages.
+Dynamics theme; no new primary source ingested at creation. The market-design framing (the deliberate ~$2,000 ceiling; the Drone Dominance Program / Gauntlet I–II structure and vendor counts) is Tier-3 (the anchor report + `_thesis-defense-drones.md`), attributed — to verify against primaries (CRS / DoD program documents) at future ingest. The affordable-mass framings (AVAV Red Dragon; KTOS "Family of Affordable Mass") and the margin figures (AVAV ~38%→~24%→~30% adjusted FY2026; KTOS Unmanned Systems ~17% / Q1 op margin 1.3%) are primary, cross-referenced to the [[AVAV]] and [[KTOS]] pages.
 
 ## Change log
+
+- **2026-07-11 (Session 186 — [[AVAV]] FY2026 refresh propagation):** Updated the platform-margin evidence — AVAV's post-BlueHalo gross margin *partially recovered* to ~30% adjusted FY2026 / 34% Q4 (from the ~24% Q3 low), but at the blended-portfolio level (AxS 21% adj EBITDA, lifted by Titan + Switchblade), **not** at the OWA line — added the honest caveat that this is not evidence the OWA-specific squeeze eased. Sharpened Open Q#2 accordingly; added Red Dragon's $17M Q4 production contract to the AVAV entry. Core dynamic (deliberate commoditization) unchanged.
 
 - **2026-06-04 (Session 132 — cross-ref):** Added [[AMPX]] (Amprius) as a *second* enabler on the value-migrates-*to* side (the battery/energy-density layer, alongside the [[TDY]] sensor counter-example) — a picks-and-shovels cell supplier to all drone makers, competing inside Gauntlet II on endurance. Light cross-ref; no change to the core dynamic.
 

@@ -1,7 +1,7 @@
 ---
 type: tracker
-tickers: [MSFT, NVDA, AVGO]
-last_updated: 2026-06-29
+tickers: [MSFT, NVDA, AVGO, AVAV]
+last_updated: 2026-07-11
 ---
 
 # What could go wrong — the vault-level risk register
@@ -97,8 +97,8 @@ The single place that tracks the factors that could make the three theses, the f
 - **Domain(s):** Defense.
 - **Canonical home:** `wiki/_thesis-defense-drones.md` (the enacted-vs-requested discipline).
 - **Tripwire:** FY2027 DAWG request materially cut in appropriations; continuing resolutions freezing new drone line items; program-of-record cancellations at primary venues.
-- **Status:** NOT FIRED. FY2025 reconciliation funding is enacted law; FY2027 remains a request — the thesis already weights only the former.
-- **Last checked:** 2026-06-12 (S154).
+- **Status:** NOT FIRED — but two AVAV FY2026 datapoints touch the tripwire clauses without firing it. (1) **CR-timing:** [[AVAV]]'s FY2027 guidance (+10%) explicitly *assumes a continuing resolution*, no full defense budget until "December or January," cash to the services "until March" — the CR-freeze *mechanism* is live, but AVAV reports no line-item freeze and still guides growth off a $2.7B backlog, so the systemic budget-gap risk has not fired. (2) **Program cancellation:** the Space Force's termination-for-convenience of AVAV's SCAR program is a single-program cancellation at a primary venue — a discrete instance of the "program-of-record cancellations" clause, but program-specific (BADGER/SCAR), not evidence the FY2027 request is failing to become law.
+- **Last checked:** 2026-07-11 (S186 — [[AVAV]] FY2026).
 
 ### 11. De-escalation — the defense demand engine fades
 - **Risk:** the Defense & Drones domain's demand engine is sustained geopolitical tension; a durable Ukraine settlement plus Middle East calm cuts drone-procurement urgency and European rearmament momentum (partly offset by restocking of depleted inventories, per the thesis's own caveat).
@@ -209,6 +209,7 @@ Verified completeness check against the three human-owned theses' "what would pr
 
 ## Change log
 
+- **2026-07-11 (S186 — freshness):** Entry 10 (enacted-vs-requested budget gap) — reaffirmed **NOT FIRED** at [[AVAV]] FY2026, but two datapoints logged against the tripwire clauses: AVAV's FY2027 guide *assumes a CR* (the CR-freeze mechanism is live, yet AVAV still guides growth off a $2.7B backlog → no systemic freeze) and the SCAR termination-for-convenience is a single-program cancellation (program-specific, not a budget-gap failure). Status + Last checked updated; `tickers` +AVAV; last_updated 2026-06-29 → 2026-07-11.
 - **2026-06-29 (S178 — freshness):** Entry 6 (Financing-structure / credit shock) — tripwire NOT FIRED, reaffirmed at [[ORCL]] FY2026 (~$34B financing completed, ~$40B FY2027 plan incl. $20B ATM, IG held) but the FCF-below-capex dynamic intensified (Oracle FCF −$23.7B). Status + Last checked updated.
 - **2026-06-29 (S176 — freshness):** Entry 9 (HBM/memory cycle rollover) — tripwire confirmed **NOT FIRED** at [[MU]] Q3 FY2026 (sold-out posture *hardened*: supply-sets-shipments, take-or-pay SCAs with floor pricing, no oversupply/concession language); Status + Last checked updated. No new entries; last_updated 2026-06-12 → 2026-06-29.
 - **2026-06-13 (S157 — canonical-home re-point):** Entries 5 + 6 re-pointed to the new [[AI-buildout-who-holds-the-risk]] theme as canonical evidence home (the structures→loss-bearers map; IMF circularity quantification; BIS/IMF/FSB sizing); prior homes kept as secondary links. Tripwires, statuses (both NOT FIRED), and entry text unchanged.

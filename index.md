@@ -18,7 +18,7 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` Section 3
 | [AMZN](wiki/companies/AMZN.md) | AMZN | outside | outside | outside | outside | outside | outside | — | 2026-06-03 |
 | [ANET](wiki/companies/ANET.md) | ANET | 5 | 5 | — | — | — | — | — | 2026-05-26 |
 | [ARM](wiki/companies/ARM.md) | ARM | 1 | outside | — | outside | outside | outside | — | 2026-05-29 |
-| [AVAV](wiki/companies/AVAV.md) | AVAV | — | — | — | — | — | — | 1 | 2026-06-03 |
+| [AVAV](wiki/companies/AVAV.md) | AVAV | — | — | — | — | — | — | 1 | 2026-07-11 |
 | [AVGO](wiki/companies/AVGO.md) | AVGO | 1 | 3 | — | — | — | — | — | 2026-06-13 |
 | [AXTI](wiki/companies/AXTI.md) | AXTI | 6 | 3 | — | — | — | 2 | — | 2026-05-29 |
 | [BE](wiki/companies/BE.md) | BE | 4 | outside | — | 2 | outside | — | — | 2026-05-02 |
@@ -94,6 +94,7 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` Section 3
 | [XFAB](wiki/companies/XFAB.md) | XFAB | 2 | 4 | — | 4 | outside | outside | — | 2026-05-28 |
 | [ZHAOWEI](wiki/companies/ZHAOWEI.md) | ZHAOWEI | outside | — | — | — | — | — | — | 2026-06-08 |
 | [ZHONGDA](wiki/companies/ZHONGDA.md) | ZHONGDA | outside | — | — | — | — | — | — | 2026-06-06 |
+
 
 
 

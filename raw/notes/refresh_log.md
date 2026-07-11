@@ -32,6 +32,24 @@ Running reference log of **refresh ingests** — re-ingests of an EXISTING vault
 
 ---
 
+## S186 — AVAV (AeroVironment) — 2026-07-11 — FY2026 (10-K, year ended Apr 30 2026) + Q4/FY2026 call
+
+- **Sources:** AVAV FY2026 10-K (Tier 1) + Q4 & FY2026 year-end call (Tier 2, Jun 29 2026; prepared remarks + Q&A). Annual refresh — no separate Q4 10-Q.
+- **Prior baseline:** S124 (first-canonical, Q3 FY2026; the page's first refresh).
+- **Headline:** Demand validated (record Q4 $642M/+31% organic; FY26 ~$2.0B/+30% organic; $2.7B backlog), but the BlueHalo deal's execution/acquisition-quality flags worsened — a $240.7M full-year Space-unit goodwill impairment (SCAR terminated for convenience), a Q3-FY2026 restatement, three material weaknesses (disclosure controls *not effective*), a securities class action, and a CFO change.
+- **Key changes & new developments:**
+  - **The GAAP↔adjusted split is the story:** GAAP net loss $(265.1)M / EPS $(5.40) (impairment + purchase-accounting amortization) vs positive adj EBITDA $286M (14%, beat) / adj EPS $3.31. Adj gross margin recovered to ~30% FY26 / 34% Q4 (from ~24% low) — still below legacy ~40%.
+  - **★ Governance cluster (new):** restatement of Q3 FY2026 (10-Q/A, Jun 22 2026) from a goodwill-impairment control weakness; **three** material weaknesses (BlueHalo IT GCs, goodwill-reconciliation control, BlueHalo close process); *Norrell v. AeroVironment* (E.D. Va.) re: SCAR statements; CFO McDonnell → Sean Woodward.
+  - **SCAR fully terminated** (was "intended" in Q3); ~$291M Space goodwill remains; ~$30M Q1 FY27 hole; BADGER/WASP pivoting to a commercial product.
+  - Segments: **AxS $1,358.1M (21% adj EBITDA)** executing well; **SCDE $618.8M still ~$(3)M adj-EBITDA** loss. US-Gov concentration rose to ~85% (DoD 63%); international 52%→28%; Ukraine not separately disclosed.
+  - **FY2027 guide $2.125–2.225B (+10%) = deliberate CR/budget-timing conservatism**, not demand softness (assumes CR; full budget Dec/Jan; cash ~March); deep FY26 award slate (P550 $117M, laser-comms ~$240M, FE-1 $96M, Red Dragon $17M, LOCUST $43M).
+- **Placement:** **unchanged** — `defense_tier 1`; no AI `*_tier` / no `layer`; `foreign_issuer false`. Write-off/restatement/suit are Framework D6 acquisition-quality flags, not a tier-defining structural break; §2.1 no-directional-trigger on the strong-revenue momentum either.
+- **Cross-vault propagation:** [[drone-platform-commoditization]] (margin partial-recovery datapoint + honest portfolio-level caveat + Red Dragon $17M; OQ#2 sharpened) · [[forward-edge-tracker]] (both Defense entries' Last moved — margin counter-datapoint that doesn't trip the falsifier + FY27-guide corroboration of request-not-law) · [[what-could-go-wrong]] Entry 10 (freshness: CR-assumption + SCAR cancellation touch the tripwire clauses but don't fire it). No-op (unchanged China/supply language): [[rare-earth-magnet-chokepoint]] / [[defense-drone-supply-chain]] / [[china-exposure]].
+- **Forward watch:** OQ triggers — SCDE profitability + residual $291M Space-goodwill risk; gross-margin path to legacy; BADGER/WASP commercial-pivot award; FY2027 reconciliation/CR outcome + IDIQ-ceiling conversion; Red Dragon OWA unit economics vs the $2,000 ceiling; **material-weakness remediation + *Norrell* docket**.
+- **Key insight:** A transformational acquisition (BlueHalo, closed May 1 2025) delivered the demand it promised *and* a first-year acquisition-quality bill — $240.7M goodwill write-off, restatement, three control weaknesses, a securities suit — while the legacy core (AxS, 21% adj EBITDA) executed cleanly. The tension moved from "is the demand real" to "was the deal well-run."
+
+---
+
 ## S178 — ORCL (Oracle Corporation) — 2026-06-29 — FY2026 (10-K, year ended May 31 2026) + Q4/FY2026 call
 
 - **Sources:** ORCL FY2026 10-K (Tier 1, filed June 22 2026) + Q4/FY2026 earnings call (Tier 2, June 10 2026; prepared remarks + Q&A).

@@ -1,7 +1,7 @@
 ---
 type: tracker
 tickers: [ETN, VRT, GEV, TSM, NVDA, AVGO, MRVL, ALAB, AAOI, FCEL, MU, SNDK, CSCO, PLAB, CRWV, NBIS, ORCL, AMZN, MP, LSCC, TDY, AVAV, KTOS, HARMONIC, SANHUA, TUOPU, NOVT, VPG]
-last_updated: 2026-06-29
+last_updated: 2026-07-11
 ---
 
 # Forward-Edge Tracker — Consensus vs. Vault View
@@ -135,7 +135,7 @@ Layer 2 *feeds* the catalysts here; Layer 1 *verifies or falsifies* an entry (a 
 - **Vault view:** value concentrates at the structural chokepoints the supply chain can't route around — magnets, secure chips, seekers, autonomy, compliant supply chains — and **not** at the platform layer, which the Pentagon is *deliberately* commoditizing toward a ~$2,000 one-way-attack-drone ceiling with maintained multi-vendor competition. The supply-side framing is the higher-conviction expression of the thesis. (per `_thesis-defense-drones.md` + [[rare-earth-magnet-chokepoint]] + [[drone-platform-commoditization]] + [[defense-drone-supply-chain]])
 - **Catalyst / re-rate triggers:** program-of-record awards naming chokepoint suppliers; magnet/seeker sole-source disclosures; the drone unit-cost trajectory toward the $2k ceiling. *(latest-alpha + refresh)*
 - **Falsifier:** airframe makers retain pricing power or vertically integrate the chokepoints (platforms *don't* commoditize), OR the best capability keeps flowing to private players (Anduril / Shield AI / Neros) so the public chokepoint names never capture the economics. (per `_thesis-defense-drones.md` "what would prove this wrong" #2 / #8)
-- **Last moved:** 2026-06-09 (created).
+- **Last moved:** 2026-07-11 ([[AVAV]] FY2026 refresh) — a *partial* counter-datapoint on the falsifier: AVAV's blended gross margin recovered to ~30% adjusted / 34% Q4 (from ~24%). Honest read — the recovery is *portfolio-level* (AxS 21% adj EBITDA, lifted by Titan counter-UAS + Switchblade), **not** at the commoditizing OWA line, whose economics stay undisclosed. The vault view stands; the falsifier is *not* tripped (see [[drone-platform-commoditization]] Open Q#2). Prior: 2026-06-09 (created).
 
 ### FY2027 budget surge is a request, not enacted law
 **Subjects:** the defense-drone universe — [[AVAV]] · [[KTOS]] · [[MP]] · [[LSCC]] · [[TDY]] et al. — **Durability:** policy (contingent — by construction the lowest-durability claim here)
@@ -144,7 +144,7 @@ Layer 2 *feeds* the catalysts here; Layer 1 *verifies or falsifies* an entry (a 
 - **Vault view:** only the FY2025 reconciliation package (~$156.2B mandatory) is *enacted law*; the FY2027 surge (~$54.6B DAWG, ~98% reconciliation-funded) is a *request*, contingent on the November 2026 midterms and a future reconciliation. The *direction* of spending is structural and well-supported; the *magnitude* of the headline figures is a political bet, not a fact — the two must be treated differently everywhere in the vault. (per `_thesis-defense-drones.md`)
 - **Catalyst / re-rate triggers:** the November 2026 midterm outcome; FY2027 reconciliation passage or failure; enacted-vs-requested line-item conversion.
 - **Falsifier:** a clean FY2027 reconciliation passage converts the request into law (the caution resolves; consensus was right on magnitude) — OR, the risk this entry flags, a divided chamber blocks the surge (per `_thesis-defense-drones.md` "what would prove this wrong" #1, the single biggest falsifier).
-- **Last moved:** 2026-06-09 (created).
+- **Last moved:** 2026-07-11 ([[AVAV]] FY2026 refresh) — fresh corroboration of the vault view from a prime's *own* guidance: AVAV set FY2027 revenue (+10%) explicitly assuming a continuing resolution, no full defense budget until "December or January," and cash to the services "until March" — i.e., management itself treats the FY2027 surge as timing-contingent, not banked. Neither falsifier branch has resolved (midterms + reconciliation pending). Prior: 2026-06-09 (created).
 
 ---
 
@@ -153,6 +153,8 @@ Layer 2 *feeds* the catalysts here; Layer 1 *verifies or falsifies* an entry (a 
 Forward-edge entries are the vault's own variant views, seeded 2026-06-09 from the three human-owned theses' "what would prove this thesis wrong" sections and the chokepoint-quality gradient — not from any single new primary source. The "Consensus" lines are Tier 3/4 characterizations of the prevailing market narrative (described structurally, not via price); the "Vault view" and "Falsifier" lines are primary-grounded and cite the relevant thesis / chokepoint / company pages. No price, valuation, or position data appears by design.
 
 ## Change log
+
+- **2026-07-11 (S186 — [[AVAV]] FY2026 refresh; freshness):** Both Defense entries' **Last moved** updated. *Chokepoints > platforms* — AVAV's FY2026 blended gross-margin partial recovery (~24%→~30% adj) logged as a *portfolio-level* counter-datapoint that does **not** trip the falsifier (the OWA line stays undisclosed). *FY2027 request-not-law* — AVAV's own FY2027 guide (+10%, CR-assumed, cash "until March") is fresh corroboration that a prime treats the surge as timing-contingent. No entries added; no thesis files touched; no price data. last_updated 2026-06-29 → 2026-07-11.
 
 - **2026-07-01 (Tier-3 datapoint; last_updated + index unchanged):** "Custom silicon redirects capex" entry — Last moved updated with SemiAnalysis/Dylan Patel's **moat-relocation** framing (CUDA-moat-disentangling on one axis; ecosystem-gravity + ASIC-local-minimum on the other) from the 2026-06-30 Sequoia video-intel note. Bidirectional — sharpens the mechanism, no directional move. Tier-3, NOT a primary ingest; no entry added.
 - **2026-06-29 (S178 update):** AI-financing entry — [[ORCL]] FY2026 is now a primary example of the funding-regime flip (FCF −$23.7B; FY2027 ~$70B capex + ~$40B financing incl. $20B ATM; IG held, nothing broke). Last moved updated; no new entries.
