@@ -29,6 +29,7 @@ Do **not** use for: thesis/framework/tracker/relationship pages (no account kind
 |---|---|
 | `handle` | Company: `@TICKER`. Chokepoint/theme: `@kebab-slug` shortened sensibly (`@HALEU-fuel`, `@who-holds-the-risk`). Must match `^@[A-Za-z0-9-]+$`. |
 | `kind` | `company` / `chokepoint` / `theme` from the page's vault type. |
+| `vault_page` | **REQUIRED.** The vault page's filename stem, verbatim (e.g. `HALEU-fuel-chokepoint`, `training-to-inference-shift`, `AVAV`) — NOT the shortened handle. This is the mechanical join key for kicker's `/check-accounts` coverage checker; the merge script errors if it is missing or the file does not exist under `wiki/<kind-plural>/`. |
 | `display_name` | Company legal-short name; chokepoint/theme: plain-English name. |
 | `domain` | `"AI datacenter"`, `"Defense"`, `"Robotics"`, or `"Materials"` — from the page's thesis domain. |
 | `avatar` | Company: the ticker. Chokepoint: 3–4 letter code (pattern: TRF, HBM). Theme: omit (renders nodes glyph). |
@@ -82,7 +83,7 @@ The merge script enforces the mechanical subset of these with regex checks and r
    `{"accounts": [ {…} ], "sources": [ {…}, … ]}` — shapes exactly per the mappings above.
 3. **Dry-run the merge:** `python3 .claude/skills/publish-ticker/scripts/publish_ticker.py /tmp/publish-ticker-<page>.json --dry-run` — review the scrub report and ADD/UPDATE summary.
 4. **Merge:** same command without `--dry-run`. The script upserts into kicker's two content files (never touches other entries) and pretty-prints consistently.
-5. **Report to the user:** what was exported (account + N sources, tiers used), the scrub/attribution notes, and the kicker-side next steps — review `git diff content/` in kicker-app, then `pnpm validate-content && pnpm engine:audit-sources && pnpm db:seed` (or hand those to the kicker agent). Remind once: git on both repos stays the user's.
+5. **Report to the user:** what was exported (account + N sources, tiers used), the scrub/attribution notes, and the kicker-side next steps — review `git diff content/` in kicker-app, then `pnpm validate-content && pnpm engine:audit-sources && pnpm db:seed` (or hand those to the kicker agent). For a **new company** account, also remind: (a) run `/ceo-persona <TICKER>` for the voice card, and (b) add the logo at kicker's `public/avatars/<TICKER>.png` (square PNG, ≥400×400, exact-case filename) — the feed shows a monogram tile until it exists; kicker's `/check-accounts` reports it as LOGO MISSING. Remind once: git on both repos stays the user's.
 
 ## Disciplines
 

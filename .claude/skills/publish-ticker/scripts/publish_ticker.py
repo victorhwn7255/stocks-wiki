@@ -43,8 +43,15 @@ SCRUB_WARNINGS = [
     (re.compile(r"\bchokepoint\b", re.IGNORECASE), "vault term 'chokepoint' in outsider text (bio/desc ok if explained; consider 'bottleneck')"),
 ]
 
-REQ_ACCOUNT = ["handle", "kind", "desc", "bio", "persona_card"]
+REQ_ACCOUNT = ["handle", "kind", "vault_page", "desc", "bio", "persona_card"]
 REQ_SOURCE = ["id", "account", "section_title", "body_text", "tier"]
+
+# vault_page is the join key for kicker's /check-accounts coverage checker: the
+# originating wiki page's filename stem. Validate it points at a real page so a
+# typo can never break the vault<->account linkage. The vault root is derived
+# from this script's own location (.claude/skills/publish-ticker/scripts/).
+VAULT_ROOT = Path(__file__).resolve().parents[4]
+KIND_DIRS = {"company": "companies", "chokepoint": "chokepoints", "theme": "themes"}
 
 
 def text_fields(obj, prefix=""):
@@ -61,9 +68,10 @@ def text_fields(obj, prefix=""):
 
 def scrub(entry, label, errors, warnings):
     for path, s in text_fields(entry):
-        # Exemptions: enum values are not prose; the standard persona constraints
-        # legitimately QUOTE the banned advice words in order to ban them.
-        if path == "kind" or path.endswith(".kind") or path == "tier" or path.endswith(".tier"):
+        # Exemptions: enum values and the vault_page join key are not prose; the
+        # standard persona constraints legitimately QUOTE the banned advice words
+        # in order to ban them.
+        if path in ("kind", "tier", "vault_page") or path.endswith((".kind", ".tier", ".vault_page")):
             continue
         in_constraints = "persona_card.constraints" in path
         for rx, why in SCRUB_ERRORS:
@@ -98,6 +106,9 @@ def validate(staging, existing_handles):
         pc = a.get("persona_card") or {}
         if not pc.get("voice") or not isinstance(pc.get("constraints"), list) or len(pc.get("constraints", [])) < 4:
             errors.append(f"{label}: persona_card needs voice + the 4 standard constraints")
+        vp, kind_dir = a.get("vault_page"), KIND_DIRS.get(a.get("kind", ""))
+        if vp and kind_dir and not (VAULT_ROOT / "wiki" / kind_dir / f"{vp}.md").is_file():
+            errors.append(f"{label}: vault_page '{vp}' not found at wiki/{kind_dir}/{vp}.md (typo, or wrong kind?)")
         for i, k in enumerate(a.get("knows", []) or []):
             if k.get("tier") not in TIERS or not k.get("claim"):
                 errors.append(f"{label}: knows[{i}] needs claim + valid tier")

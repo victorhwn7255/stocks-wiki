@@ -1,3 +1,5 @@
+![stocks-wiki — a source-grounded, agent-maintained research vault](design/stocks-wiki-banner.png)
+
 # stocks-wiki
 
 **A source-grounded, agent-maintained research vault for long-horizon investment analysis — and a working reference design for how to build durable, human-in-the-loop AI knowledge systems.**

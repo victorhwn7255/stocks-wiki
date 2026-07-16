@@ -26,6 +26,7 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` Section 3
 | [CAT](wiki/companies/CAT.md) | CAT | 4 | outside | — | 4 | outside | outside | — | 2026-05-12 |
 | [CCJ](wiki/companies/CCJ.md) | CCJ | 4 | outside | — | outside | outside | 2 | — | 2026-05-29 |
 | [CEG](wiki/companies/CEG.md) | CEG | 2 | outside | — | outside | outside | outside | — | 2026-05-29 |
+| [CEPL](wiki/companies/CEPL.md) | CEPL | 4 | — | — | 4 | — | — | — | 2026-07-15 |
 | [COHR](wiki/companies/COHR.md) | COHR | 4 | 2 | — | — | — | — | — | 2026-05-27 |
 | [COHU](wiki/companies/COHU.md) | COHU | 3 | outside | — | — | — | — | — | 2026-05-11 |
 | [CORZ](wiki/companies/CORZ.md) | CORZ | outside | outside | outside | outside | outside | outside | — | 2026-06-15 |
@@ -94,6 +95,7 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` Section 3
 | [XFAB](wiki/companies/XFAB.md) | XFAB | 2 | 4 | — | 4 | outside | outside | — | 2026-05-28 |
 | [ZHAOWEI](wiki/companies/ZHAOWEI.md) | ZHAOWEI | outside | — | — | — | — | — | — | 2026-06-08 |
 | [ZHONGDA](wiki/companies/ZHONGDA.md) | ZHONGDA | outside | — | — | — | — | — | — | 2026-06-06 |
+
 
 
 

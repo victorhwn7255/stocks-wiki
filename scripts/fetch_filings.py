@@ -67,6 +67,7 @@ COMPANIES = {
     "ETN":  {"cik": "0001551182", "forms": ["10-K", "10-Q"]},
     "GEV":  {"cik": "0001996810", "forms": ["10-K", "10-Q"]},
     "BE":   {"cik": "0001664703", "forms": ["10-K", "10-Q"]},
+    "CEPL": {"cik": "0001009759", "forms": ["10-K", "10-Q"]},  # Capstone Energy+ (fka Capstone Green Energy/Turbine) — behind-the-meter microturbines for AI/datacenter on-site power ([[BTM-grid-bypass-workaround]]; Bloom [[BE]] peer); post-Ch11 micro-cap, honest-verdict/financial-quality name; FY ends ~Mar 31 (Section 2.11)
     "CEG":  {"cik": "0001868275", "forms": ["10-K", "10-Q"]},
     "CAT":  {"cik": "0000018230", "forms": ["10-K", "10-Q"]},
     "BWXT": {"cik": "0001486957", "forms": ["10-K", "10-Q"]},

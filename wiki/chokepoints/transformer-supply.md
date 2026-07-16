@@ -2,7 +2,7 @@
 type: chokepoint
 tickers: [ETN, GEV, NVDA, FLEX]
 related_themes: [AI-demand-durability, chokepoint-investability-priorities]
-last_updated: 2026-06-24
+last_updated: 2026-07-15
 ---
 
 # Transformer + GOES steel chokepoint
@@ -228,7 +228,7 @@ Transformer chokepoint (constraint-source)
 | Chokepoint | Structural role | Vault canonical participants |
 |---|---|---|
 | Transformer + GOES steel (S63 NEW) | Constraint-source (distribution-side primary 2026 bottleneck) | [[ETN]] + [[GEV]] |
-| [[BTM-grid-bypass-workaround]] (S57) | Constraint-workaround (generation-side hyperscaler bypass) | [[BE]] + [[FCEL]] + [[GEV]] + [[CAT]] |
+| [[BTM-grid-bypass-workaround]] (S57) | Constraint-workaround (generation-side hyperscaler bypass) | [[BE]] + [[FCEL]] + [[GEV]] + [[CAT]] + [[CEPL]] (5th; microturbine, S187) |
 
 **GEV cross-membership at both chokepoints** — sole vault canonical with positioning at constraint-source (Prolec GE transformer manufacturing) AND constraint-workaround (utility-scale gas turbine generation per BTM Modality 3). Cross-vault analytical product candidate at next GEV refresh.
 
@@ -346,6 +346,7 @@ Per `CLAUDE.md` v9 Section 3.3 citation discipline + Section 3.15 spirit (Pathwa
 
 ## Change log
 
+- **2026-07-15 (S187 — [[CEPL]] cross-ref):** Added [[CEPL]] (Capstone Energy+; microturbine) to the BTM grid-bypass-workaround participant list in the Energy/Power chokepoint-pair table — the 5th constraint-workaround technology base (from its first-canonical ingest). CEPL pitches its microturbines explicitly as relief for overloaded field-deployed distribution transformers (EV-charging / datacenter load) — the constraint-source ↔ constraint-workaround pairing this section documents. In-body list update only; `last_updated` → 2026-07-15.
 - **2026-06-24 (S172 — 1-stop Tier-3 refresh; `/research-loop` propagation):** Folded in the 2026-06-24 transformer-supply + SST research-loop report (analytical only; no new primary ingest). Added a new **Solid-state transformer (SST) shift** section resolving Open Q#9 toward **EXTEND-the-moat** (additive sockets, 5–10× cost, GOES-neutral nanocrystalline/ferrite cores, incumbents-own-both-but-startups-contest, MV-SiC as the rate-limiter). **Sharpened the pricing-power falsifier to a TIERED rollover** (distribution easing ~26–40 wks vs large-power/GSU 128/144 wks still rising; falsifier = maker book-to-bill <1.0, NOT developer deferrals; the deferral stat reflects the power shortage, not demand destruction). Added a **Section 4.3 contradiction flag** on the GEV "Fall 2026 hyperscaler SST" line (DOE FASST artifact = an unnamed-utility demo; Tier-2 call stays primary; reconcile at GEV refresh). Sharpened Open Q#11 (tiered shortfall) + added Open Q#13 (dedicated SST-page candidate). Source attribution + audit-notes entry added; `last_updated` → 2026-06-24. **Out of scope (deferred):** new ETN/GEV order/margin numbers (→ ETN/GEV primary refreshes), CLF/POWL/SST-page creation (Vic-gated), the `_thesis.md`/`frameworks.md` SST node (human-owned — flagged for Vic). Heavy `[unverified]`/`[contested]` web figures folded as analysis, not asserted. 3 files (this page + index + log).
 - **2026-06-16 (S165 cross-reference):** Added a cross-vault placement note — this chokepoint is the electrification/grid leg of the new [[commodity-supercycle-chokepoints]] umbrella theme (durable value in the equipment, not the metal); flagged the in-flight grid deep-dig (`wf_d9786bfa-398`) resolving the survives-the-glut question. In-body cross-ref only; last_updated unchanged.
 - **2026-06-16 (S163 cross-reference):** Added an inference-era-reinforcement note (denser inference racks ~370 kW + power-per-token deepen this distribution-tier bottleneck) pointing to the new [[training-to-inference-shift]] theme.
