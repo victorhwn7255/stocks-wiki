@@ -1,7 +1,7 @@
 ---
 type: tracker
-tickers: [MSFT, NVDA, AVGO, AVAV]
-last_updated: 2026-07-11
+tickers: [MSFT, NVDA, AVGO, AVAV, DDOG]
+last_updated: 2026-07-18
 ---
 
 # What could go wrong — the vault-level risk register
@@ -31,8 +31,8 @@ The single place that tracks the factors that could make the three theses, the f
 - **Domain(s):** AI; consensus-aligned.
 - **Canonical home:** [[AI-demand-durability]] (disconfirming-signal framework); the application-layer test lives at [[software-AI-moat-durability]] (validated consumption leg vs unproven productivity-seat leg).
 - **Tripwire:** consumption-metered AI revenue lines (cloud, data, observability, security) decelerating together; the productivity-seat leg failing at 2025-cohort renewals; clean separate AI revenue lines still absent while capex compounds.
-- **Status:** NOT FIRED. The consumption leg is growing at primary (Azure +40%, Snowflake +34%, Datadog +28% per the theme page's anchor); the seat leg remains unproven — that split is the page's live verdict, not a tripwire event. Gap-shape mechanisms (Bain ~$800B shortfall; model commoditization / token-price deflation from DeepSeek-class local models) named at Tier 3.
-- **Last checked:** 2026-06-12 (S154).
+- **Status:** NOT FIRED. The consumption leg is growing at primary — **[[DDOG|Datadog]] FY2025 +28% is now primary-confirmed (S188) and Q1 2026 *accelerating*** (the strongest sequential existing-customer usage growth since Q1 2022; the ex-AI-native base re-accelerating to mid-20s%), alongside Azure +40% / Snowflake +34%; the seat leg remains unproven — that split is the page's live verdict, not a tripwire event. Gap-shape mechanisms (Bain ~$800B shortfall; model commoditization / token-price deflation from DeepSeek-class local models) named at Tier 3.
+- **Last checked:** 2026-07-18 (S188 — [[DDOG]] consumption leg primary-confirmed).
 
 ### 3. Inference/compute efficiency compresses demand
 - **Risk:** the same AI workloads run on far less hardware; "more demand" stops meaning "more chips, optics, and power."
@@ -209,6 +209,7 @@ Verified completeness check against the three human-owned theses' "what would pr
 
 ## Change log
 
+- **2026-07-18 (S188 — freshness):** Entry 2 (AI demand proves non-durable) — reaffirmed **NOT FIRED**; the consumption leg is now **primary-confirmed** at [[DDOG]] FY2025/Q1 2026 (was Tier-3 "per the theme page's anchor") — Q1 2026 was the strongest existing-customer usage growth since Q1 2022 with the base broadening (ex-AI-native mid-20s%), so the consumption half of the split strengthened; the productivity-seat half stays the unproven leg. Status + Last checked updated; `tickers` +DDOG; last_updated 2026-07-11 → 2026-07-18.
 - **2026-07-11 (S186 — freshness):** Entry 10 (enacted-vs-requested budget gap) — reaffirmed **NOT FIRED** at [[AVAV]] FY2026, but two datapoints logged against the tripwire clauses: AVAV's FY2027 guide *assumes a CR* (the CR-freeze mechanism is live, yet AVAV still guides growth off a $2.7B backlog → no systemic freeze) and the SCAR termination-for-convenience is a single-program cancellation (program-specific, not a budget-gap failure). Status + Last checked updated; `tickers` +AVAV; last_updated 2026-06-29 → 2026-07-11.
 - **2026-06-29 (S178 — freshness):** Entry 6 (Financing-structure / credit shock) — tripwire NOT FIRED, reaffirmed at [[ORCL]] FY2026 (~$34B financing completed, ~$40B FY2027 plan incl. $20B ATM, IG held) but the FCF-below-capex dynamic intensified (Oracle FCF −$23.7B). Status + Last checked updated.
 - **2026-06-29 (S176 — freshness):** Entry 9 (HBM/memory cycle rollover) — tripwire confirmed **NOT FIRED** at [[MU]] Q3 FY2026 (sold-out posture *hardened*: supply-sets-shipments, take-or-pay SCAs with floor pricing, no oversupply/concession language); Status + Last checked updated. No new entries; last_updated 2026-06-12 → 2026-06-29.

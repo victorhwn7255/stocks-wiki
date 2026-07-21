@@ -95,6 +95,7 @@ COMPANIES = {
     "MPWR": {"cik": "0001280452", "forms": ["10-K", "10-Q"]},
     "MSFT": {"cik": "0000789019", "forms": ["10-K", "10-Q"]},
     "NOW":  {"cik": "0001373715", "forms": ["10-K", "10-Q"]},
+    "DDOG": {"cik": "0001561550", "forms": ["10-K", "10-Q"]},  # Datadog — app-layer observability; the vault's best consumption-side demand dial (usage-based billing) + AI-native cohort concentration; already a Tier-3 cohort member (software-AI-moat-durability + AI-implementation-deployment-layer); NOW-pattern outside-framework; Dec-31 filer
     "PLTR": {"cik": "0001321655", "forms": ["10-K", "10-Q"]},
     "GOOGL": {"cik": "0001652044", "forms": ["10-K", "10-Q"]},
     "AMZN": {"cik": "0001018724", "forms": ["10-K", "10-Q"]},

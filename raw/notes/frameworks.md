@@ -1,6 +1,6 @@
 # Frameworks — AI Datacenter Supply Chain & Chokepoint Analysis
 
-> **Status (v10.2):** v10.2 adds Framework 12 (six-question chokepoint-durability test) + Theme 11.12 (stacked-bottleneck migration) — both derived from the 2026-06-10 MLCC-vs-HBM comparison work and 8 calibration runs across vault chokepoints. **Edited under explicit Vic authorization declared 2026-06-10 (per CLAUDE.md Section 1.1 ownership-exception mechanism); default human-ownership convention resumes for all subsequent sessions.** Prior: v10.1 full structural alignment with _thesis.md (3 critical fixes + 4 significant gaps + 3 lesser refinements per Option C alignment).
+> **Status (v10.3):** v10.3 adds **Framework 10.1 (demand-side / application-layer placement)** — the positive analytical home for the ~13 demand-side names (hyperscaler capex-payers, neocloud / host operators, app-layer consumers) previously placed `layer: outside` with no framework home; resolves the app-layer-gap flagged since MSFT S112 → NOW S113 → PLTR S114 → DDOG S188, paired with the new CLAUDE.md Section 3.21 placement rule. **Edited under explicit Vic authorization declared 2026-07-19 (per CLAUDE.md Section 1.1 ownership-exception mechanism); default human-ownership convention resumes for all subsequent sessions.** Prior — v10.2: adds Framework 12 (six-question chokepoint-durability test) + Theme 11.12 (stacked-bottleneck migration), both from the 2026-06-10 MLCC-vs-HBM comparison work + 8 calibration runs (Vic-authorized 2026-06-10). v10.1: full structural alignment with _thesis.md (3 critical fixes + 4 significant gaps + 3 lesser refinements per Option C alignment).
 > **Purpose:** Calibrate the LLM's initial categorization of companies before primary sources refine the specifics.
 > **Epistemic note:** The frameworks here are *interpretive scaffolding*, not facts extractable from filings. They represent how I think about this space. Primary sources should *enrich* these frameworks, not override them. Specific company placements may shift as evidence accumulates — the frameworks themselves are the stable part.
 
@@ -1049,6 +1049,17 @@ The largest single CAPEX flow category. Recipients:
 **Pattern E — HBM cannibalization of commodity DRAM.** HBM3E to HBM4 transition increases dies-per-stack from 12 to 16 (33% more DRAM dies per AI accelerator); Samsung HBM4 ramp depleting commodity DDR5 capacity. AI compute scaling structurally tightens broader memory market — affects every server class, not just AI.
 
 **LLM application:** When primary sources mention hyperscaler CAPEX commentary, calibrate against this allocation framework. Specific company exposure can be cross-referenced via category recipient lists. Material divergences from this allocation pattern (e.g., a primary source claims hyperscaler power infrastructure CAPEX is much smaller than ~10-15%) should surface as falsification candidates per Framework 11.
+
+### 10.1 Demand-side placement — the source (and sink) of the CAPEX flow *(added v10.3)*
+
+Framework 10 above describes how hyperscaler CAPEX flows **into** the supply chain (Frameworks 1–9). The names on the **source** side of that flow — and the app-layer names that ultimately **consume** the deployed compute — are the thesis's **demand side**. They own no supply-chain chokepoint, so they are **not** Framework-2 value-capture participants: they carry `layer: outside` + all `*_tier: outside` and are **theme-anchored, not framework-placed** (operational placement rule: CLAUDE.md Section 3.21).
+
+**Three demand-side sub-roles:**
+- **Capex-payer** — hyperscalers (MSFT / GOOGL / AMZN / META / ORCL): the *source* of the CAPEX flow this framework allocates; their capex guidance is the demand input the whole supply chain is calibrated against ([[hyperscaler-capex]]).
+- **Infra-operator** — neocloud / host landlords (CRWV / NBIS / CORZ): buy GPUs (demand on Layer 1), deploy + rent compute; the leverage/durability question lives at [[neocloud-moat-durability]].
+- **App-layer consumer** — software (NOW / PLTR / DDOG): monetize / consume the compute; the billed-unit / moat-durability test lives at [[software-AI-moat-durability]].
+
+**Why the demand side matters to a supply-chain thesis.** It is the thesis's **ROI check**: the supply chain's value capture is durable only if the CAPEX is **funded** (payers), **deployed** (operators), and **monetized** (consumers) at a rate that justifies it. When the demand side's signals turn — a consumption dial decelerating (e.g. DDOG), a hyperscaler capex guide cut, a neocloud financing strain — that is the earliest read on demand durability (see [[AI-demand-durability]] + [[what-could-go-wrong]] Entry 2). Demand-side **counterpoints** (AAPL capex-light; QCOM edge) are the honest-verdict variant — included to test the thesis, not confirm it. *Inclusion bound + roster: CLAUDE.md Section 3.21 + conventions-ledger A.20.*
 
 ---
 

@@ -18,7 +18,7 @@ Palantir is an AI-native data/analytics platform company (Gotham, Foundry, AIP) 
 
 **Placement framing.** `layer: outside` + `outside` on all five per-domain tiers, following the demand-side / application-layer precedent set by [[MSFT]] and [[NOW]]. PLTR captures no supply-side chokepoint rent; its vault role is the research goal plus one genuine cross-vault touchpoint (see Vault touchpoint below). Per honest-verdict discipline (Section 2.1), its fit to the broader supply-chain thesis is weak by design.
 
-**`frameworks.md` gap flag (for a future codification session; not edited).** `frameworks.md` v10.1 has no application-layer / data-analytics positioning category — the same gap the [[MSFT]] and [[NOW]] pages raised. Raised here per Section 1.1; `frameworks.md` and `_thesis.md` were not edited.
+**`frameworks.md` demand-side placement — RESOLVED (codified S189, 2026-07-19).** The application-layer placement gap is codified — **CLAUDE.md Section 3.21 + frameworks.md Framework 10.1** (PLTR = the **app-layer-consumer** sub-role, the third of the four flag instances). `_thesis.md` unchanged.
 
 **Research-goal verdict (validated at primary; see [[software-AI-moat-durability]]):** **Durable / amplified (execution-dependent)** — held. The "amplified" leg is strongly supported by Q1 2026 (85% revenue growth, Rule of 40 of 145, NDR 150%); the "execution-dependent" caveat is real (government concentration, high-expectations valuation, heavy SBC, FDE-led GTM that is hard to scale).
 

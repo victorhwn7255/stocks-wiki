@@ -206,7 +206,7 @@ Pre-codification baseline: S45 ENS = 6 material falsifications. Post-codificatio
 
 *At v10.2 the "(codified Session X; refined Session Y)" tags were stripped from CLAUDE.md headings and rule lead-ins — knowing when a rule was codified almost never changes how it is applied. This table preserves the full map. Load-bearing prospective-from cutoffs (S46 descriptive-language, S38 brevity, S86 Section 3.16 application, the Section 1.1 rework dates) remain in CLAUDE.md because the date IS part of those rules.*
 
-**Version history:** v10.2 (2026-07-02, structural simplification + the Section 5.3 third-instance codification bar) ← v10.1 (2026-06-23, compression refactor: rosters → A.15–A.18) ← v10.0 (S154, 2026-06-12, tracker page type + layer page-type retirement; see A.14) ← v9.6–v9.9 (see A.13–A.14 + git).
+**Version history:** v10.3 (2026-07-19, Section 3.21 demand-side / application-layer placement + frameworks.md Framework 10.1; Vic-authorized per Section 1.1; see A.20) ← v10.2 (2026-07-02, structural simplification + the Section 5.3 third-instance codification bar) ← v10.1 (2026-06-23, compression refactor: rosters → A.15–A.18) ← v10.0 (S154, 2026-06-12, tracker page type + layer page-type retirement; see A.14) ← v9.6–v9.9 (see A.13–A.14 + git).
 
 | CLAUDE.md section | Codified | Refined |
 |---|---|---|
@@ -227,6 +227,7 @@ Pre-codification baseline: S45 ENS = 6 material falsifications. Post-codificatio
 | 3.18 forward-edge tracker | 2026-06-09 (post-S148) | — |
 | 3.19 page lifecycle | v9.9 (2026-06-13) | — |
 | 3.20 tracker pages | v10.0 (2026-06-12) | — |
+| 3.21 demand-side / app-layer placement | v10.3 (2026-07-19; 4-instance MSFT S112 → DDOG S188) | — |
 | 4.1 chokepoint 1-stop/2-stop | S79 (5-instance precedent) | — |
 | 4.2 MJDS Canadian source-set | S46 | — |
 | 4.5 (g)/(g') sub-categorization | S46 | discipline boundary S61 |
@@ -234,3 +235,20 @@ Pre-codification baseline: S45 ENS = 6 material falsifications. Post-codificatio
 | 4.7 refresh log | S104 | — |
 | 5.3 forward-only growth discipline | S129 | — |
 | 5.3 third-instance codification bar | v10.2 (2026-07-02) | — |
+| 3.21 → also frameworks.md Framework 10.1 | v10.3 (2026-07-19) | — |
+
+---
+
+## A.20 — Demand-side / application-layer placement (CLAUDE.md §3.21 + frameworks.md Framework 10.1; v10.3, 2026-07-19)
+
+*Codifies the placement of AI-datacenter **demand-side** names (capex-payers, infra-operators, app-layer consumers) that own no supply-chain chokepoint — resolving the frameworks app-layer-gap flagged from the first hyperscaler / app-layer ingests. Vic-authorized rework per Section 1.1. **Vic chose the looser inclusion bound** (any material AI-datacenter demand-side participant — not only pre-registered research-goal / demand-signal names) over the tighter option proposed.*
+
+**4-instance flag roster (the codification trigger; well past the Section 5.3 third-instance bar):**
+- **[[MSFT]] S112 (2026-06-02)** — first hyperscaler / demand-side page; flagged "the framework has no dedicated demand-side / hyperscaler / CAPEX-deployer placement, and `layer: outside` extends the field beyond its documented 1–6 range." Mirrors the [[CEG]] first-generator "Adjacent — Power Generation" handling (`energy_power_tier outside`, S107).
+- **[[NOW]] S113 (2026-06-02)** — first pure app-layer / SaaS page; re-flagged + raised the bounding question ("how to bound it so the vault does not drift into general software coverage") — which Vic resolved at this codification with the looser bound.
+- **[[PLTR]] S114** — third scorecard name (AI-native data fusion); reinforced.
+- **[[DDOG]] S188 (2026-07-18)** — fourth scorecard name (first pure-consumption archetype); flagged the gap as a multi-instance codification candidate → this session.
+
+**The full `layer: outside` cohort at codification (two rationales):** **demand-side (§3.21)** — AAPL, AMZN, CORZ, CRWV, DDOG, GOOGL, META, MSFT, NBIS, NOW, ORCL, PLTR, QCOM (~13); **cross-domain theme-anchor (humanoid / defense, no domain tier)** — HENGLI, SANHUA, SHUANGHUAN, SLING, ZHAOWEI, ZHONGDA, OUST, INOD (~8). The codification clarifies `layer: outside` spans these two documented rationales.
+
+**Related context.** Extends the demand-side concept latent in Framework 10 (CAPEX flow) into an explicit placement category (Framework 10.1). The [[software-AI-moat-durability]] research goal reached **4 primary validations** (MSFT / NOW / PLTR / DDOG, all verdicts held) by the codification date — the accumulation that made the placement worth codifying. Gap-flags on the MSFT / NOW / DDOG pages resolved to point at §3.21.

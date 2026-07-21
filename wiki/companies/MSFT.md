@@ -18,7 +18,7 @@ Microsoft is the vault's **first hyperscaler / demand-side company page**, inges
 
 **Placement framing (honest-verdict, Section 2.1).** A hyperscaler sits *above* Layer 1 in `frameworks.md` v10.1 — it is the **demand source** (Framework 3 dependency map, which already lists "MSFT FY26 $190B+") and the **CAPEX deployer** (Framework 10 allocation starting point), not a position within the six supply-side value-capture layers. The framework's layers and per-domain tiers describe value capture *to* the hyperscaler, not the hyperscaler's own supply-side position. MSFT therefore carries `layer: outside` and `outside` on all five per-domain tiers — it captures no supply-side chokepoint rent; it *funds* the chokepoints. This mirrors [[CEG]]'s first-generator handling (off-framework "Adjacent" placement rather than a forced supply-side tier).
 
-**`frameworks.md` gap flag (for a future codification session; human-owned, not edited).** MSFT is the first demand-side / hyperscaler page. The framework has no dedicated "demand-side / hyperscaler / CAPEX-deployer" placement, and `layer: outside` extends the `layer` field beyond its documented 1–6 range. Whether to add an explicit hyperscaler positioning category (and how to treat the custom-silicon-commissioner role) is raised here per Section 1.1 — `frameworks.md` and `_thesis.md` were not edited.
+**`frameworks.md` demand-side placement — RESOLVED (codified S189, 2026-07-19).** MSFT was the first demand-side / hyperscaler page and the origin of the app-layer-gap flag. The demand-side placement is now codified — **CLAUDE.md Section 3.21 + frameworks.md Framework 10.1**: `layer: outside` + all-`*_tier: outside` is a *documented* value (MSFT = the **capex-payer** sub-role, the source of the Framework 10 CAPEX flow), theme-anchored not framework-placed. `_thesis.md` unchanged.
 
 **Research-goal verdict (validated at primary; see [[software-AI-moat-durability]]).** MSFT's own structure is the cleanest illustration of the theme's **billed-unit discriminator**: its **consumption-metered** leg (Azure) is *amplified* by AI (agents consume more compute), while its **seat-metered** leg (M365 Copilot, ~$30/user add-on) is *contested* (seat monetization undercut by agents, low penetration). The Tier-3 scorecard verdict — **Durable (infra/Azure) + Contested (Copilot seat monetization)** — holds at primary.
 
@@ -92,7 +92,7 @@ MSFT disclosed (mostly on the Q3 FY2026 call, Tier 2) a **restructured OpenAI ar
 
 ## Open questions
 
-1. **Placement codification.** Does the vault add an explicit hyperscaler / demand-side framework category (and resolve the `layer: outside` extension)? Pre-registered for a future codification session.
+1. **Placement codification — RESOLVED (S189).** The vault added the demand-side placement category (CLAUDE.md §3.21 + frameworks.md Framework 10.1); MSFT is the **capex-payer** sub-role. The `layer: outside` extension is now a documented value.
 2. **AI revenue disclosure.** Does a clean Tier-1 AI revenue line ever appear, or does AI remain embedded in Azure/M365 with ARR a call-only non-GAAP construct? (A clean consumption line would strengthen the Durable verdict; continued embedding sustains the disclosure-quality caveat.)
 3. **OpenAI RPO quantification.** Will MSFT quantify the OpenAI share of RPO, validating or refuting the unverified Tier-3 "45%" figure?
 4. **Copilot seat economics.** Does per-seat Copilot monetization hold as agents mature, or does seat-count deflation appear (the theme's central contested-leg test)?

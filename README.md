@@ -1,6 +1,6 @@
 ![stocks-wiki — a source-grounded, agent-maintained research vault](design/stocks-wiki-banner.png)
 
-# stocks-wiki
+<h1><strong>Agentic Equity Research</strong> <span style="font-size: 0.72em; font-weight: 400;">(in collaboration with NTU Singapore)</span></h1>
 
 **A source-grounded, agent-maintained research vault for long-horizon investment analysis — and a working reference design for how to build durable, human-in-the-loop AI knowledge systems.**
 

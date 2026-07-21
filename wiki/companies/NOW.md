@@ -18,7 +18,7 @@ ServiceNow is the vault's **first pure application-layer / SaaS company page** �
 
 **Placement framing.** NOW carries `layer: outside` + `outside` on all five per-domain tiers, following the demand-side placement precedent set by [[MSFT]] (the vault's first hyperscaler). NOW sits even further off the supply-side value-capture ladder than MSFT: a hyperscaler at least deploys the CAPEX and commissions custom silicon that the vault tracks downstream; NOW is an application-layer SaaS that merely *rents* that infrastructure. It captures no supply-side chokepoint rent.
 
-**`frameworks.md` gap flag (for a future codification session; human-owned, not edited).** `frameworks.md` v10.1 has no application-layer / SaaS / software positioning category — the same gap family the [[MSFT]] hyperscaler page raised. Whether to add an explicit demand-side / application-layer placement (and how to bound it so the vault does not drift into general software coverage) is raised here per Section 1.1; `frameworks.md` and `_thesis.md` were not edited.
+**`frameworks.md` demand-side placement — RESOLVED (codified S189, 2026-07-19).** The application-layer placement gap NOW raised is codified — **CLAUDE.md Section 3.21 + frameworks.md Framework 10.1** (NOW = the **app-layer-consumer** sub-role). NOW's bounding question ("how to bound it so the vault does not drift into general software coverage") was resolved by Vic with the *looser* bound: inclusion requires being a material AI-datacenter demand-side participant, not general software coverage. `_thesis.md` unchanged.
 
 **Research-goal verdict (validated at primary; see [[software-AI-moat-durability]]):** **CONTESTED, leaning durable** — held. Durability metrics are strong and NOW is *actively converting* its billed unit from seat to consumption; the contested side is real (AI-revenue disclosure is call-only/bookings-based, and the market is skeptical of organic AI attribution).
 
@@ -83,7 +83,7 @@ NOW's AI build-out is heavily inorganic, which is the root of the analyst-attrib
 2. **Seat deflation at portfolio scale.** Does the Robinhood-style 70% deflection generalize into a measurable fulfiller-seat reduction across the base — and does the consumption overlay offset it (the central contested-leg test)?
 3. **Organic vs inorganic AI uplift.** Can NOW show organic AI revisions, or does the AI growth remain attributable to Moveworks/Veza/Armis (the analyst skepticism)?
 4. **Core-module cannibalization.** Do customers negotiate down the seat-priced core to fund AI, compressing the foundation?
-5. **Placement codification.** Resolution of the application-layer / SaaS placement gap (with [[MSFT]]).
+5. **Placement codification — RESOLVED (S189).** The application-layer / SaaS placement gap is codified (CLAUDE.md §3.21 + frameworks.md Framework 10.1; app-layer-consumer sub-role); the bounding question resolved with Vic's looser bound.
 
 ## Source audit notes
 

@@ -33,6 +33,7 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` Section 3
 | [CRDO](wiki/companies/CRDO.md) | CRDO | 3 | 3 | — | — | — | — | — | 2026-06-24 |
 | [CRWV](wiki/companies/CRWV.md) | CRWV | outside | outside | outside | outside | outside | outside | — | 2026-06-03 |
 | [CSCO](wiki/companies/CSCO.md) | CSCO | 3 | 4 | — | — | — | — | — | 2026-05-29 |
+| [DDOG](wiki/companies/DDOG.md) | DDOG | outside | outside | outside | outside | outside | outside | — | 2026-07-18 |
 | [ENS](wiki/companies/ENS.md) | ENS | 4 | outside | — | 4 | outside | outside | — | 2026-05-29 |
 | [ETN](wiki/companies/ETN.md) | ETN | 4 | outside | — | 1 | outside | — | — | 2026-05-26 |
 | [FCEL](wiki/companies/FCEL.md) | FCEL | 4 | outside | — | 4 | outside | outside | — | 2026-06-13 |
@@ -95,6 +96,7 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` Section 3
 | [XFAB](wiki/companies/XFAB.md) | XFAB | 2 | 4 | — | 4 | outside | outside | — | 2026-05-28 |
 | [ZHAOWEI](wiki/companies/ZHAOWEI.md) | ZHAOWEI | outside | — | — | — | — | — | — | 2026-06-08 |
 | [ZHONGDA](wiki/companies/ZHONGDA.md) | ZHONGDA | outside | — | — | — | — | — | — | 2026-06-06 |
+
 
 
 
