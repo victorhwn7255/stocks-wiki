@@ -33,7 +33,7 @@ SCRUB_ERRORS = [
     (re.compile(r"\bTier [1-5]\b"), "vault tier jargon (map to kicker tier instead)"),
     # buy/sell advice language; allow "sell-side" (a noun) and "sell-off".
     (re.compile(r"\b(buy|sell(?!-side|-off))\b(?! signal)", re.IGNORECASE), "buy/sell language"),
-    (re.compile(r"\bprice target\b", re.IGNORECASE), "price-target language"),
+    (re.compile(r"\bprice[- ]?target\b", re.IGNORECASE), "price-target language"),
     (re.compile(r"\b(bullish|bearish|overweight|underweight)\b", re.IGNORECASE), "sentiment/advice language"),
 ]
 # Scrub: WARN patterns - print loudly, do not block (human judges).
@@ -68,10 +68,15 @@ def text_fields(obj, prefix=""):
 
 def scrub(entry, label, errors, warnings):
     for path, s in text_fields(entry):
-        # Exemptions: enum values and the vault_page join key are not prose; the
-        # standard persona constraints legitimately QUOTE the banned advice words
-        # in order to ban them.
-        if path in ("kind", "tier", "vault_page") or path.endswith((".kind", ".tier", ".vault_page")):
+        # Exemptions: enum values, the vault_page join key, the source_date, and a
+        # video_links URL are structured data, not prose (a youtube.com URL would
+        # otherwise trip the internal-path pattern). The standard persona constraints
+        # legitimately QUOTE the banned advice words in order to ban them.
+        if (
+            path in ("kind", "tier", "vault_page", "source_date")
+            or path.endswith((".kind", ".tier", ".vault_page"))
+            or (path.startswith("video_links[") and path.endswith(".url"))
+        ):
             continue
         in_constraints = "persona_card.constraints" in path
         for rx, why in SCRUB_ERRORS:
@@ -134,6 +139,20 @@ def validate(staging, existing_handles):
         body = s.get("body_text", "")
         if body and not (120 <= len(body) <= 1200):
             warnings.append(f"{label}: body_text length {len(body)} outside the comfortable 120-1200 range")
+        # Optional fields used by time-bound / commentary accounts (e.g. @youtube-buzz):
+        # source_date drives the engine's freshness window; video_links are the "watch
+        # the footage" receipts the feed renders in place of a tier pill.
+        sd = s.get("source_date")
+        if sd is not None and not re.match(r"^\d{4}-\d{2}-\d{2}$", str(sd)):
+            errors.append(f"{label}: source_date '{sd}' must be YYYY-MM-DD")
+        vl = s.get("video_links")
+        if vl is not None:
+            if not isinstance(vl, list) or not vl:
+                errors.append(f"{label}: video_links must be a non-empty list when present")
+            else:
+                for i, v in enumerate(vl):
+                    if not isinstance(v, dict) or not v.get("channel") or not v.get("url"):
+                        errors.append(f"{label}: video_links[{i}] needs both channel and url")
         scrub(s, label, errors, warnings)
 
     return errors, warnings
