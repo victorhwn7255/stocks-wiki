@@ -3,7 +3,7 @@ type: company
 tickers: [AEHR]
 layer: 3-4
 photonics_tier: 4
-last_updated: 2026-04-20
+last_updated: 2026-07-29
 ---
 
 # AEHR — Aehr Test Systems
@@ -12,156 +12,155 @@ last_updated: 2026-04-20
 
 AEHR occupies Layer 3-4 (advanced packaging test equipment) in the value capture framework and Photonics Tier 4 (real but indirect exposure). AEHR's core value proposition is producing Known-Good Die (KGD) through wafer-level and package-level burn-in — the test/reliability step that screens out devices before they enter expensive multi-die packages like [[TSMC-CoWoS]]. Erickson: "it screens out devices that would otherwise fail after they are packaged into multi-die modules where the yield impact could be 10 times or even 100 times as costly" (AEHR 10-K FY2025).
 
+**Honest verdict (FY2026 refresh — two-sided).** The AI/advanced-packaging transition the wiki flagged as the central open question has now **materialized at the inflection point**. Q4 FY2026 turned decisively — revenue $18.8M (+34% YoY), AI processor + silicon-photonics burn-in >80% of quarterly revenue, non-GAAP gross margin recovered to 45% (+1,000bps), and non-GAAP net income swung positive to $3.6M ($0.11/share) (AEHR Q4 FY2026 call). The forward setup is genuinely strong: a record $80.6M year-end backlog (from $15.2M), a $130-150M FY2027 revenue guide (+160-200%), a record $41M April hyperscale purchase order, and a balance sheet fortified to $116.5M cash via a ~$97M ATM raise (AEHR 10-K FY2026; Q4 FY2026 call). **But the counterweights are real and must be held plainly:** FY2026 *full year* was still a GAAP net loss of $(7.1)M ($(0.23)/share) on revenue down 15% to $50.0M — the GAAP operating loss actually widened to $(14.1)M (AEHR 10-K FY2026); the $130-150M guide is a 2.6-3x step-up carrying real lumpiness and execution risk (Erickson: "it's always going to be lumpy"; on SiC recovery "I'll believe it when I see the orders"); memory/HBM is explicitly *not* in the guide (pure optionality, revenue FY2028 at earliest); and all customers remain anonymous. The inflection is a Q4 event plus a guide — not yet a delivered year.
+
 `_thesis.md` tracks: design wins, customer concentration, revenue visibility, differentiation vs broader semi test. The disconfirming signal: "The advanced packaging test/metrology opportunity is smaller than expected. If CoWoS yields improve faster than predicted, AEHR's positioning is less leveraged."
 
-**Photonics_tier 4 with tension.** AEHR explicitly discusses silicon photonics burn-in as a growth market and claims market leadership in wafer-level burn-in for silicon photonics transceivers (AEHR Q3 FY2026 call). The 10-K names "silicon photonics integrated circuits for use in optical chip-to-chip communication" and "co-packaged photonics integrated circuits" as target applications (AEHR 10-K FY2025). This is more direct photonics engagement than the "real but indirect" framing in frameworks.md suggests — but AEHR tests photonic devices upstream of integration, rather than making or packaging them. The tension is noted; Tier 4 is maintained pending further evidence.
+**Photonics_tier 4 with tension (strengthening, not resolved).** AEHR calls itself "the market leader in wafer-level burn-in for silicon photonics transceivers" and now has **two** silicon-photonics customers ramping (see Silicon photonics exposure); management guides silicon photonics to 15-20% of the FY2027 revenue mix (AEHR Q4 FY2026 call). This is more direct photonics engagement than the "real but indirect" framing in frameworks.md suggests — but AEHR *tests* photonic devices upstream of integration rather than making or packaging them, so Tier 4 is maintained. The tension is now stronger; there is no pre-registered upgrade trigger, so honest-verdict-trigger discipline keeps Tier 4 in place pending a structural (not momentum) change.
 
-**Scale context.** AEHR is a small company: $59M annual revenue, 136 employees, $37M cash. Its thesis fit at Layer 3-4 is backed by a $50.9M effective backlog and a revenue pivot still in progress — not by established, scaled revenue in advanced packaging. Compare with [[ONTO]] ($1B revenue, 1,615 employees, $640M cash). The wiki states this honestly.
+**Placement held.** `layer 3-4` + `photonics_tier 4` unchanged — the Q4 inflection, the $130-150M guide, and the $116.5M war chest do not trip an upgrade (honest-verdict-trigger discipline: AEHR still tests-not-makes photonics and is still a ~$50M-FY2026 small-cap). *(Note: the page carries `photonics_tier` but no `equipment_tier` despite anchoring the vault's equipment coverage — a possible frontmatter gap left to a codification decision, not changed in a refresh.)*
+
+**Scale context.** AEHR is a small company: $50.0M FY2026 revenue, ~250 direct + ~150 own employees (Erickson: "150 employees… another 250 people in direct contract manufacturers"), $116.5M cash. Its thesis fit at Layer 3-4 is now backed by a record $80.6M backlog (~$100.6M effective) and a fortified balance sheet — but the revenue base is still small and the pivot's revenue proof is a FY2027 story. Compare with [[ONTO]] ($1B+ revenue). The wiki states this honestly.
+
+**Fiscal-calendar notes (§2.11 + a year-end change).** AEHR is a non-calendar filer; FY2026 ended May 29, 2026 (the 52/53-week year ending on the Friday nearest May 31), ≈ calendar June 2025 – May 2026 — apply calendar-quarter equivalence at cross-vault comparison. **The fiscal year-end is changing:** beginning FY2027 the year moves to the Friday nearest June 30 — FY2027 runs June 27, 2026 → June 25, 2027, orphaning a ~4-week transition period (May 30 – June 26, 2026) that belongs to neither fiscal year (AEHR 10-K FY2026). ~$20M of bookings landed in that stub plus the first two weeks of FY2027 (AEHR Q4 FY2026 call). Cross-period comparisons across the FY2026/FY2027 boundary carry this stub complexity.
 
 ## Financial snapshot
 
-### FY2025 annual results (AEHR 10-K FY2025, fiscal year ended May 30, 2025)
+### FY2026 annual results (AEHR 10-K FY2026, fiscal year ended May 29, 2026; 3-year comparative)
 
-| Metric | FY2025 | FY2024 | FY2023 |
+| Metric | FY2026 | FY2025 | FY2024 |
 |--------|--------|--------|--------|
-| Revenue | $59.0M | $66.2M | $65.0M |
-| Gross margin | 40.6% | 49.1% | 50.4% |
-| Operating income (loss) | ($5.7M) | $10.1M | $13.4M |
-| Net income (loss) | ($3.9M) | $33.2M* | $14.6M |
-| R&D (% of revenue) | $10.5M (17.7%) | $8.7M (13.2%) | $7.1M (11.0%) |
-| Cash | $24.5M | $49.2M | — |
-| Backlog | $15.2M | $7.3M | — |
-| Employees | 136 | — | — |
+| Revenue | $50.0M | $59.0M | $66.2M |
+| Gross margin (GAAP) | 35.3% | 40.6% | 49.1% |
+| Gross margin (non-GAAP) | 38.5% | 44% | — |
+| R&D | $12.6M (25.3%) | $10.5M (17.7%) | $8.7M (13.2%) |
+| SG&A | $19.2M | $18.3M | $13.7M |
+| Operating income (loss) | ($14.1M) | ($5.7M) | $10.1M |
+| Net income (loss) — GAAP | ($7.1M) | ($3.9M) | $33.2M* |
+| EPS (GAAP, diluted) | ($0.23) | ($0.13) | $1.12 |
+| Net income (loss) — non-GAAP | $0.9M | $4.6M | — |
+| EPS (non-GAAP, diluted) | $0.03 | $0.15 | — |
+| Cash + equiv + restricted | $116.5M | $26.5M | — |
+| Capex | $2.1M | — | — |
+| Backlog (year-end) | $80.6M | $15.2M | $7.3M |
 
-*FY2024 net income includes $20.7M one-time valuation allowance release (AEHR 10-K FY2025).
+*FY2024 GAAP net income includes a $20.7M one-time deferred-tax valuation-allowance release (AEHR 10-K FY2025).
 
-**Revenue by product line:** FOX wafer-level products $39.2M (66%), packaged part products (Sonoma/Tahoe/Echo from Incal acquisition) $19.8M (34%). The Incal products contributed $18.6M in revenue and $3.8M in net income from the July 31, 2024 acquisition date through fiscal year-end (AEHR 10-K FY2025).
+**GAAP-to-non-GAAP bridge.** The ~$8M gap between the GAAP net loss of $(7.1)M and non-GAAP net income of $0.9M is ordinary stock-based compensation (~$6.8M FY2026) plus Incal intangible amortization — **not** a mark-to-market non-cash artifact (in contrast to the earnout/derivative marks seen at [[NVTS]], [[INTC]], [[GEV]]). The GAAP *operating* loss widened to $(14.1)M — driven by R&D +21% to $12.6M (25.3% of revenue) and SG&A +5% on lower gross profit — and is only partly offset below the line by $1.4M interest income and a $4.6M income-tax benefit (AEHR 10-K FY2026).
 
-**Revenue by end market:** EV/power semiconductor 41% of FY2025 (down from 92% in FY2024, 85% in FY2023). AI market share not separately disclosed but implied by U.S. revenue surge (AEHR 10-K FY2025).
+**Revenue by product line (AEHR 10-K FY2026):** full-wafer-contact products (FOX systems, WaferPak Contactors, services) $31.5M (63%), down from $39.2M; package-level products (Sonoma/Tahoe/Echo from the Incal acquisition) ~$18.5M (37%), up on the Incal ramp. Product revenue fell $8.9M on lower contactor + FOX-P systems revenue, partly offset by package-level growth and higher services revenue.
+
+**Revenue by geography (AEHR 10-K FY2026):** Asia $22.8M (46%, −38.5%), United States $20.6M (41%, +16.8%), Europe & Middle East $6.5M (13%). The U.S. share has climbed 5% (FY2024) → 30% (FY2025) → 41% (FY2026) as AI customers — primarily U.S.-based — displaced the declining Asian SiC/EV base.
+
+### Q4 FY2026 results (AEHR Q4 FY2026 call, quarter ended May 29, 2026)
+
+| Metric | Q4 FY2026 | Q4 FY2025 | Change |
+|--------|-----------|-----------|--------|
+| Revenue | $18.8M | $14.1M | +34% |
+| Gross margin (non-GAAP) | 45% | 35% | +1,000bps |
+| Net income (non-GAAP) | $3.6M | ($0.2M) | swung positive |
+| EPS (non-GAAP, diluted) | $0.11 | ($0.01) | — |
+| Bookings | $60.7M | $11.1M | +>500% |
+| AI + silicon photonics % of revenue | >80% | 56% | — |
+| Contracted (consumable) revenue | $5.8M (31%) | (30%) | — |
+
+Three customers each represented >10% of Q4 revenue (two AI, one data-center optical transceiver). Non-GAAP operating expenses were $7.5M (from $5.4M) on higher R&D headcount and record-bookings commissions (AEHR Q4 FY2026 call).
 
 ### Q3 FY2026 results (AEHR Q3 FY2026 call, quarter ended February 27, 2026)
 
 | Metric | Q3 FY2026 | Q3 FY2025 | Change |
 |--------|-----------|-----------|--------|
 | Revenue | $10.3M | $18.3M | -44% |
-| Gross margin (GAAP) | 32.7% | 39.2% | -6.5pp |
 | Gross margin (non-GAAP) | 36.5% | 42.7% | -6.2pp |
 | Net loss (non-GAAP) | ($1.5M) | — | — |
 | Bookings | $37.2M | — | 6x QoQ |
-| Effective backlog | $50.9M | — | Record |
-| Cash | $37.1M | — | — |
+| Effective backlog | $50.9M | — | Record (then) |
 
-**FY2026 guidance:** Revenue at high side of $45-50M range, implying $14-19M in Q4 (AEHR Q3 FY2026 call). Fiscal year changing from last Friday of May to last Friday of June.
+**Backlog progression:** $15.2M (FY2025 year-end) → $50.9M effective (Q3 FY2026) → $80.6M year-end + ~$100.6M effective (Q4 FY2026, incl. ~$20M of transition-stub/early-FY2027 bookings) (AEHR 10-K FY2026; Q4 FY2026 call). The 10-K discloses year-end backlog ($80.6M); the bookings ($60.7M Q4) and "effective backlog" (~$100.6M) figures are from the call only.
 
-**9-month FY2026 revenue composition:** Systems $17.5M (56%), contactors $9.1M (29%), services $4.6M (15%). Contactor revenue collapsed 66% YTD from $26.6M to $9.1M due to SiC/EV softness. Systems revenue increased YTD ($17.5M vs $14.2M) reflecting AI mix shift (AEHR 10-Q Q3 FY2026).
+**FY2027 guidance (fiscal year ending June 25, 2027):** revenue $130-150M (+160-200%, ~2.6-3x); pretax non-GAAP net income 18-22% of revenue; product mix ≈ ~70% AI, 15-20% silicon photonics, remainder power-semiconductor + miscellaneous. Memory/HBM is explicitly excluded from the guide (upside only) (AEHR Q4 FY2026 call).
 
-## Market transition: SiC to AI
+## Market transition: SiC to AI — now materialized at the inflection
 
-AEHR is undergoing a structural market rotation — the defining story of the company's current period. The SiC/EV wafer-level burn-in business that drove 92% of FY2024 revenue has contracted sharply, while AI and advanced packaging demand is ramping but has not yet compensated in revenue terms.
+The SiC/EV-to-AI rotation that defined AEHR's prior period has now shown up in the numbers. AI processor + silicon-photonics burn-in reached >80% of Q4 FY2026 revenue (vs 56% a year earlier), non-GAAP gross margin recovered to 45%, and the company posted positive non-GAAP net income (AEHR Q4 FY2026 call). The full year still carried the trough — revenue −15%, a GAAP loss — but the exit rate and the order book inflected hard.
 
-**Revenue rotation evidence:**
-- EV/power semiconductor: 92% of FY2024 → 41% of FY2025 → declining further in FY2026 (AEHR 10-K FY2025)
-- Customer A (10-K): 78.8% (FY2023) → 67.3% (FY2024) → 38.6% (FY2025) — probable SiC customer declining (AEHR 10-K FY2025)
-- Customer E (10-Q): 45.3% of 9mo FY2025 → <10% of 9mo FY2026 — collapse in SiC demand (AEHR 10-Q Q3 FY2026)
-- Customer A (10-Q): <10% in prior year → 42.1% of Q3 FY2026 — new AI-dominant customer emerged (AEHR 10-Q Q3 FY2026)
+**Demand evidence (AEHR Q4 FY2026 call):**
+- **Lead AI wafer-level customer significantly ramping** — doubled systems, ordered fully-automated WaferPak Aligners, and moved *all* production burn-in and screening to wafer-level (no longer performing any system-level screening). "Sees Aehr as a critical supplier."
+- **Benchmark win with a major AI accelerator/CPU/network-processor supplier** — results "exceeded their expectations" and beat what they can achieve at package-level; the supplier is moving to pilot production test validation at its Taiwan contract manufacturer, pulling in the current high-volume device and evaluating a second device in parallel.
+- **Package-level (Sonoma) momentum** — record follow-on production orders from the lead hyperscale customer (a "premier large-scale data center provider"), now forecasting a substantial expansion for a second device at ~2x the power. An enhanced high-power Sonoma (≥2,000W/device, continuous-flow, hands-free) was introduced for next-gen CPUs/GPUs/network processors. A record $41M Sonoma purchase order landed in April.
+- **Power-semi recovery signs** — >a dozen GaN WaferPak designs sampling; the "world's first 300mm GaN wafer-level burn-in" (high-temperature reverse-bias screening for GaN MOSFET defects); a first FOX sale for a silicon-MOSFET application; a first SiC customer in Taiwan (chose Aehr over SEMI/NEXUSTEST); ~$8M of new SiC WaferPak orders in the prior month.
 
-**Geographic rotation:**
-- Asia: 87.7% (FY2024) → 62.9% (FY2025) — SiC customers primarily Asian (AEHR 10-K FY2025)
-- United States: 5.3% (FY2024) → 30.0% (FY2025) — AI customers primarily U.S.-based, +400% YoY (AEHR 10-K FY2025)
-- Europe: 5.5% (9mo FY2025) → 19.4% (9mo FY2026) — memory market driving growth (AEHR 10-Q Q3 FY2026)
-
-**Bookings inflection.** Q3 FY2026 bookings of $37.2M represent 6x QoQ growth. The effective backlog of $50.9M is a company record. This includes a $14M follow-on order from the lead AI accelerator customer for FOX-XP wafer-level burn-in systems and a new hyperscaler customer win on the Sonoma package-level platform (AEHR Q3 FY2026 call). The disconnect between bookings ($37.2M) and revenue ($10.3M) — book-to-bill >3.5x — is characteristic of lumpy equipment companies entering an order cycle.
-
-**Margin compression is structural, not just cyclical.** Package-level burn-in products (Sonoma line) carry inherently lower gross margins than wafer-level products (FOX line). As the revenue mix shifts from SiC wafer-level to AI package-level, margins compress even if volumes recover. Additional factors: lower overhead absorption from reduced manufacturing production, higher assembly and warranty costs, increased freight expenses, and higher tariffs on imported parts (AEHR 10-Q Q3 FY2026). Non-GAAP gross margin at 36.5% is below the Layer 4 range (40-60%) in frameworks.md — a fact the wiki surfaces honestly.
+**Customer concentration eased.** The top customer fell to 26.3% of FY2026 revenue (from 67% two years earlier); see Customer concentration.
 
 ## Product portfolio and technology
 
-**Wafer-level systems (FOX family):**
-- **FOX-XP:** Full wafer contact test and burn-in, up to 18 wafers simultaneously. Hours-to-days burn-in time. Primary system for SiC, silicon photonics, and AI wafer-level KGD qualification (AEHR 10-K FY2025).
-- **FOX-NP:** Low-cost entry-level, up to 2 slots. 100% compatible with FOX-XP. For NPI and qualification (AEHR 10-K FY2025).
-- **FOX-CP:** Single-wafer compact test for logic, memory, and photonic devices. Integrated prober with optics for pattern recognition. Specifically positioned for photonic device testing (AEHR 10-K FY2025).
-- **WaferPak Contactor:** Patented full-wafer single-touchdown probe card. Custom designed per device type, 2-7 year lifetime, up to 300mm (AEHR 10-K FY2025). Consumable with recurring revenue characteristics.
-- **DiePak Carrier:** Patented carrier for singulated bare die and modules, up to 1,024 devices in parallel (AEHR 10-K FY2025).
+**Wafer-level systems (FOX family):** FOX-XP (full-wafer contact test + burn-in, up to 18 wafers), FOX-NP (low-cost entry, NPI/qualification), FOX-CP (single-wafer compact, logic/memory/photonic, integrated prober). Consumables: WaferPak Contactor (patented full-wafer single-touchdown probe card, custom per device, recurring-revenue characteristics) and DiePak Carrier (singulated die/modules, up to 1,024 in parallel). Automation now extends to fully-automated WaferPak Aligners and AutoAligner/autoloaders enabling hands-free high-volume production burn-in (AEHR 10-K FY2026; Q4 FY2026 call).
 
-**Package-level systems (Incal acquisition, July 31, 2024):**
-- **Sonoma:** Ultra-high-power burn-in, up to 2000W per device. Specifically designed for AI accelerators, GPUs, HPC processors. Up to 88 devices per chamber (AEHR 10-K FY2025). Contract manufacturer adding 20+ systems/month capacity (AEHR Q3 FY2026 call).
-- **Tahoe:** Medium-power reliability burn-in for logic, SoC, mixed-signal (AEHR 10-K FY2025).
-- **Echo:** Low-power, high parallelism testing (AEHR 10-K FY2025).
+**Package-level systems (Incal acquisition, July 31, 2024):** Sonoma (ultra-high-power, now ≥2,000W/device, up to 88 devices/chamber, continuous-flow — for AI accelerators, GPUs, HPC and high-performance network processors), Tahoe (medium-power logic/SoC/mixed-signal), Echo (low-power, high parallelism). A Southeast-Asia contract manufacturer adds capacity for 20+ Sonoma systems/month (AEHR Q4 FY2026 call).
 
-**KGD value proposition for advanced packaging.** "Wafer-level burn-in and test enables lower cost production of KGD for multi-chip modules, 3-D stacked packages and systems-in-a-package" (AEHR 10-K FY2025). Only ~5-20% of ASICs are burned in today; ~50% of AI accelerators (AEHR Q3 FY2026 call). If burn-in penetration increases with packaging complexity, AEHR's TAM expands structurally. Erickson estimates "multi-hundreds of millions" for package-level TAM, "even higher" for wafer-level (AEHR Q3 FY2026 call).
+**KGD value proposition for advanced packaging.** "Wafer-level burn-in and test enables lower cost production of KGD for multi-chip modules, 3-D stacked packages and systems-in-a-package" (AEHR 10-K FY2025). The lead AI customer's shift to all-wafer-level screening is the clearest evidence yet that as packaging complexity rises, screening migrates upstream — expanding AEHR's structural TAM at the KGD step ahead of [[TSMC-CoWoS]]-class integration.
+
+**Capacity discipline (an honest-verdict signal from management).** Erickson framed the capacity strategy as deliberately *not* building permanent infrastructure: capacity is "measured in hundreds of millions," achieved largely through contract manufacturers, "because the business is cyclical… we don't want to have built up into an enormous business, and if there's a softer year… we start losing money" (AEHR Q4 FY2026 call). Management naming the down-cycle risk unprompted is the opposite of promotional framing.
 
 ## Silicon photonics exposure
 
-AEHR explicitly discusses silicon photonics as a growth market, making it one of the few non-Layer-4-component companies to break the CPO tiered silence pattern (see [[CPO-platform-battle]]).
+AEHR explicitly discusses silicon photonics as a growth market, one of the few non-Layer-4-component companies to break the CPO tiered-silence pattern (see [[CPO-platform-battle]]). The FY2026 development is **breadth**: the exposure broadened from one customer to two.
 
-Erickson: "significant interest in doing wafer level burn-in for devices that are expected to put in advanced packages, such as TSMC's CoWoS-based packages that include other dies such as HBM, DRAM stacks, other compute AI processors, and photonic or electrical-based transceiver chipsets" (AEHR Q3 FY2026 call). The 10-K describes "silicon photonics integrated circuits for use in optical chip-to-chip communication" and explicitly mentions "co-packaged photonics integrated circuits with microprocessors, graphics processors, chip sets for computing as well as artificial intelligence applications" (AEHR 10-K FY2025).
+- **Lead silicon-photonics customer ramping** — follow-on orders this fiscal year for fully-automated wafer-level burn-in systems (integrated with automated wafer handling and automatic guided vehicles for hands-free high-volume production) powering AI optical I/O and data-center interconnects (AEHR Q4 FY2026 call).
+- **New major silicon-photonics customer** — "a global leader in networking products and solutions," ramping capacity for next-generation hyperscale data-center deployments; first engaged November 2025 and has already ordered two nine-wafer FOX test cells and two FOX-NPs. Management: the sales cycle is shortening as wafer-level burn-in "becomes more pervasive," and calls silicon photonics / optical test "a meaningful long-term growth driver" (AEHR Q4 FY2026 call).
 
-**Major new customer win:** A "significant" new silicon photonics customer for hyperscale datacenter optical interconnect, with AEHR characterizing itself as "the market leader in wafer level burn-in for silicon photonics transceivers" and noting a "multi-year expansion of silicon photonics production" (AEHR Q3 FY2026 call).
+Silicon photonics is guided to 15-20% of the FY2027 revenue mix (AEHR Q4 FY2026 call). AEHR's involvement maps to the CPO package-integration / optical-test layer of the decomposed chokepoint in [[datacenter-laser-supply]] and anchors [[wafer-level-siph-test]]: wafer-level burn-in stabilizes photonic devices before they enter the packaging chain. AEHR does not make photonic devices; it tests them upstream of module integration — the reason Photonics Tier 4 ("real but indirect") holds even as the evidence strengthens.
 
-AEHR's silicon photonics involvement maps to Layer 4 of the decomposed chokepoint in [[datacenter-laser-supply]]: CPO package integration and optical test. Wafer-level burn-in stabilizes photonic devices before they enter the packaging chain — a test step that the silicon photonics primer identifies as an emerging constraint at the integration layer (per /raw/research/silicon-photonics-primer.md, citing Semiconductor Engineering June 2025 and OIF Co-Packaging Framework). AEHR does not make photonic devices; it tests them upstream of module integration.
+## HBM / memory opportunity
 
-## HBM opportunity
-
-AEHR describes HBM burn-in as an early-stage opportunity. Erickson: "in discussions with key memory suppliers... We expect to start to receive orders in fiscal 2027 and begin to ramp in fiscal 2028" (AEHR Q3 FY2026 call). The 10-K does not mention HBM by name (AEHR 10-K FY2025). Europe/Middle East revenue surge (+145% YTD in 9mo FY2026) is attributed to "the memory market" (AEHR 10-Q Q3 FY2026).
+Memory remains an early-stage, forward-looking opportunity — refined at Q4 but still not in the guide. AEHR completed a wafer-level burn-in benchmark with a global NAND-flash leader and is in discussions on next-generation (high-bandwidth) flash that could lead to a development agreement for a new memory-optimized blade for the FOX-XP/FOX-MP platform (AEHR Q4 FY2026 call). On HBM (a DRAM), Erickson noted new standards with embedded BIST "which means the testability changes dramatically, and we think could be in our favor," giving "some additional optimism… to maybe do HBM sooner than we were thinking" — while cautioning "I would be hesitant for you to build models with a lot of revenue in that yet, certainly not next year." Management hopes for memory orders in FY2027 with revenue ramping FY2028; **no memory revenue is assumed in the $130-150M FY2027 guide** (AEHR Q4 FY2026 call). This keeps the pre-registered HBM-order verification trigger at [[HBM-oligopoly]] (Open Question #10) **not yet fired**.
 
 ## Customer concentration
 
-AEHR has extremely high customer concentration — the highest in the vault:
+Customer concentration remains high but **eased materially** in FY2026 as the customer base broadened (AEHR 10-K FY2026). Unlike the prior year's cross-filing label mismatch, the FY2026 10-K uses a consistent A–E labeling across all three reported years:
 
-**Revenue concentration (AEHR 10-K FY2025):**
-
-| | FY2025 | FY2024 | FY2023 |
+| Customer (>10% of revenue) | FY2026 | FY2025 | FY2024 |
 |---|---|---|---|
-| Customer A | 38.6% | 67.3% | 78.8% |
-| Customer B | 15.1% | <10% | <10% |
-| Top 5 | 77% | 93% | 97% |
+| Customer A | 26.3% | * | * |
+| Customer B | 14.2% | * | * |
+| Customer C | 10.9% | 15.1% | * |
+| Customer D | * | 38.6% | 67.3% |
+| Customer E | * | * | 16.7% |
 
-**10-Q quarterly view (AEHR 10-Q Q3 FY2026):**
+*Less than 10% of revenue.
 
-| | Q3 FY2026 | 9mo FY2026 |
-|---|---|---|
-| Customer A | 42.1% | 32.7% |
-| Customer D | <10% | 15.9% |
+Three customers exceeded 10% in FY2026, summing to ~51% (vs a top-two ~84% in FY2024) — the declining SiC/EV customer (Customer D, 67% → 39% → <10%) has been replaced by a more diversified AI-driven base led by Customer A at 26.3%. Three customers also each exceeded 10% of Q4 revenue (two AI, one data-center optical transceiver) (AEHR Q4 FY2026 call). All customers are anonymous in filings. The call names [[TSM]] (CoWoS/Taiwan-CM context), [[NVDA]], Intel, and AMD as market references, not customer confirmations.
 
-Note: The customer letter labels are NOT consistent between the 10-K and 10-Q disclosure tables — AEHR uses separate anonymous labeling in each filing period. Customer A in the 10-K (declining SiC customer) is likely a different entity than Customer A in the 10-Q (surging AI customer).
+## Capital position
 
-All customers are anonymous in filings. The Q3 FY2026 call names [[TSM]] (CoWoS context), [[NVDA]] (AI accelerator roadmap), Intel (Incal relationship context), and AMD by name — unusually specific for a small-cap equipment company, but these are market references, not customer confirmations (AEHR Q3 FY2026 call).
+AEHR is now well-capitalized relative to its growth plan. During FY2026 it raised ~$100M (management figure; $97.2M net financing inflow in the cash-flow statement) primarily through the ATM under its $40M prospectus supplement / $100M shelf (authorized October 15, 2024), taking cash + equivalents + restricted cash to $116.5M at May 29, 2026 (from $26.5M) with no debt (AEHR 10-K FY2026). Capital intensity is low — FY2026 capex was only $2.1M. Working capital remains inventory-heavy: inventories of $41.4M sit on $50.0M of revenue, a build to support the ramp (AEHR 10-K FY2026).
 
-## Capital position and equity dilution
-
-AEHR is cash-constrained relative to its growth ambitions. Cash of $37.1M at Q3 FY2026, with the $40M ATM program fully utilized:
-- November 2025: 384,380 shares at $25.89/share (~$10.0M)
-- February 2026: 269,439 shares at $39.20/share (~$10.5M)
-- March 2026 (subsequent): 476,649 shares at $40.88/share (~$19.5M)
-
-Total ~$40M raised while operating at a loss (AEHR 10-Q Q3 FY2026). The $100M shelf registration remains available. No debt. Inventory of $41M on ~$41M annualized revenue is a significant working capital burden. A $21.9M deferred tax asset is at risk of valuation allowance if pretax losses continue (AEHR 10-Q Q3 FY2026).
+**Deferred-tax asset retained (prior risk did not fire).** Despite the FY2026 pretax loss, management concluded it remains more likely than not that the U.S. deferred tax assets will be realized and took *no* valuation allowance, recognizing a $4.6M income-tax benefit for the year (AEHR 10-K FY2026). The $21.9M valuation-allowance reversal risk flagged at the prior ingest did not materialize.
 
 ## Open questions
 
-1. **Will AI burn-in revenue compensate for SiC decline?** Bookings ($37.2M) and backlog ($50.9M) suggest yes, but the conversion to revenue has not yet happened. Q4 FY2026 guidance ($14-19M implied) would be the first major revenue test.
-2. **Can margins recover with the AI product mix?** Package-level products carry lower margins than wafer-level. Even at full AI volume, the 40-50% gross margins of the SiC era may not return. What is the steady-state margin for an AI-dominant product mix?
-3. **HBM timeline credibility.** Orders FY2027, ramp FY2028 — management projections. Memory suppliers have not confirmed publicly.
-4. **Silicon photonics customer expansion.** One major new customer win disclosed. Is this a single-customer story or broadly based demand? The market leader claim in wafer-level burn-in for silicon photonics transceivers is unverified.
-5. **Semight IP litigation.** First-instance judgment in December 2025 dismissed AEHR's claims for "insufficient evidence to establish infringement." AEHR appealed January 2026 (AEHR 10-Q Q3 FY2026). Validates market demand for AEHR's technology while demonstrating IP vulnerability in China.
-6. **Deferred tax asset risk.** Sustained pretax losses since FY2025. Reversal of $21.9M DTA would be a material non-cash charge.
+1. **Does the $130-150M FY2027 guide convert?** The AI transition materialized at the Q4 inflection (revenue +34%, margins 45%, positive non-GAAP income) and the backlog is a record $80.6M (~$100.6M effective), but the guide is a 2.6-3x step-up and management stresses lumpiness. FY2027 quarterly cadence is the real test. *(Prior OQ1, largely resolved at the inflection; live remainder = full-year conversion.)*
+2. **What is the steady-state margin at an AI-dominant mix?** Q4 non-GAAP gross margin recovered to 45%, but the full year was 38.5% and package-level Sonoma carries structurally lower margins than wafer-level FOX. Is 45% sustainable at FY2027 volume/mix? *(Prior OQ2, partially resolved.)*
+3. **Does a memory/HBM order actually land in FY2027?** Benchmark with a NAND-flash leader completed and HBM optimism rose, but memory is explicitly excluded from the FY2027 guide; orders hoped FY2027, revenue FY2028. Ties to [[HBM-oligopoly]] OQ#10. *(Prior OQ3, refined.)*
+4. **Does silicon-photonics demand broaden beyond two customers?** Now two SiPh customers ramping (up from one) and guided to 15-20% of FY2027 mix; is it becoming the "meaningful long-term growth driver" claimed, or still concentrated? The "market leader in wafer-level burn-in for silicon photonics transceivers" claim is still unverified. *(Prior OQ4, partially resolved.)*
+5. **SEMI/NEXUSTEST IP litigation outcome.** The Beijing patent office upheld two of AEHR's Chinese patents (a positive step) and AEHR won a Taiwan SiC customer over SEMI; the case is ongoing with continuing legal expense (AEHR Q4 FY2026 call). Validates demand for AEHR's technology while exposing IP-defense cost and China risk. *(Prior OQ5, updated.)*
+
+*Resolved this refresh: prior OQ6 (deferred-tax-asset valuation-allowance risk) — did not fire; the DTA was retained with a $4.6M tax benefit despite the pretax loss (AEHR 10-K FY2026).*
 
 ## Source audit notes
 
-### AEHR Q3 FY2026 call (Tier 2, April 7, 2026)
+### AEHR Q4 FY2026 call (Tier 2, July 14, 2026)
 
-Most recent earnings call in the vault. Erickson names TSMC, NVIDIA, Intel, and AMD by name — unusually specific for a small-cap equipment company. Silicon photonics discussion is substantive, not incidental — named as a market with a major new customer win and market leadership claim. Bookings/backlog emphasis is classic trough narrative — directing attention to forward indicators rather than current revenue. Analysts are focused on the AI transition story; SiC questions are mostly backward-looking. Four analysts participated (William Blair, Craig-Hallum, Lake Street, Chlebina Capital) — a smaller coverage universe than ONTO's seven analysts, reflecting the company's size. SemiAnalysis cited by name as a third-party TAM reference — unusual for an earnings call to name a specific research firm.
+First full-year/Q4 call in the vault. CFO Chris Siu and CEO Gayn Erickson; four-analyst coverage (Craig-Hallum, William Blair, and others) — a small universe befitting the company's size. **Tier 1/Tier 2 framing gap (partial):** the call is emphatically forward — the $130-150M FY2027 guide (+160-200%), record bookings ($60.7M Q4), effective backlog (~$100.6M), and benchmark wins — while the 10-K carries the trough (GAAP loss, −15% revenue). Note this is a *narrower* gap than a pure absence: the 10-K *does* disclose year-end backlog ($80.6M); only the bookings and "effective backlog" figures are call-only. A recurring AEHR (b)-type pattern (commercial forward-detail richer on the call than in the filing), not codification-meeting on its own. **CEO tone:** Erickson is promotional but visibly hedged — "it's always going to be lumpy," "I'll believe it when I see the orders," "hesitant… to build models with a lot of [HBM] revenue" — and assertive toward the SEMI/NEXUSTEST *litigant*, not toward analysts. CEO-combativeness count unchanged. Notably specific for a small-cap: names TSMC/NVDA/Intel/AMD as market references and describes customer *types* precisely while keeping identities anonymous.
 
-### AEHR 10-Q Q3 FY2026 (Tier 1, filed ~March 2026)
+### AEHR 10-K FY2026 (Tier 1, fiscal year ended May 29, 2026)
 
-No backlog disclosure — a notable absence for an equipment company. The bookings and effective backlog figures ($37.2M and $50.9M) are from the call only, not the filing. Customer concentration table shows dramatic rotation year-over-year but uses different anonymous labels than the 10-K, making cross-period customer tracking difficult. ATM issuance subsequent event ($19.5M raised in March) confirms aggressive equity capital raise. Silicon photonics mentioned generically in MD&A overview but without the specificity of the call — consistent with the tiered silence pattern (Tier 2 more informative than Tier 1 on forward-looking technology).
-
-### AEHR 10-K FY2025 (Tier 1, filed ~August 2025)
-
-Silicon photonics mentioned as a target market with explicit reference to "co-packaged photonics integrated circuits" — making the 10-K more informative on photonics than typical Tier 1 filings in the vault. However, no named customers, competitors (except Semight in litigation context), or vault companies. SiC revenue share decline from 92% to 41% is the fastest structural market shift in any vault company filing. Revenue disaggregation by product line (FOX 66%, packaged parts 34%) and by end market (EV/power 41%) provides the clearest picture of the market transition. Semight IP litigation is the only named third-party relationship. Goodwill $10.7M and intangible assets $10.8M are entirely from the Incal acquisition.
+The full year is a GAAP loss ($(7.1)M net, $(14.1)M operating) on revenue −15% to $50.0M, with the non-GAAP/GAAP gap driven by ordinary SBC (~$6.8M) + Incal amortization — not a mark-to-market artifact. Customer concentration eased and, unlike FY2025, uses consistent A–E labels across three years, making the SiC→AI customer rotation legible (Customer D 67%→<10%; Customer A now 26.3%). Geographic disclosure shows the U.S. at 41% of revenue (from 5% two years ago). **Fiscal year-end change disclosed:** moving from the Friday nearest May 31 to the Friday nearest June 30 beginning FY2027 (June 27, 2026 – June 25, 2027), creating a ~4-week orphan transition period — a §2.1-adjacent calendar shift to carry at cross-period comparison. The DTA was retained despite the loss (no valuation allowance). Silicon photonics again appears as a named target market; no vault companies named except SEMI/NEXUSTEST in litigation context.
 
 ## Change log
 
-- **2026-05-26 (in-place cross-vault adjacency note per Vic instruction; not counted as separate session):** Tier 3 `raw/research/800VHDC-power-semis-for-AIDC.md` flagged AEHR as cross-vault touch — *"Aehr Test Systems (key burn-in equipment supplier) reports growing AI/data center test orders, indicating supplier ramps are happening on schedule"* — substantiation signal for power-semi sub-domain supplier-ramp readiness at 800VDC architecture transition substrate scope. Validates AEHR Open Question trajectory at AI data center test orders dimension. Cross-vault adjacency to [[power-semis]] theme scope only; no content edits beyond cross-reference.
-- **2026-05-15 (Session 64 cross-reference update — HBM oligopoly chokepoint canonical creation):** Added [[HBM-oligopoly]] cross-reference per Session 64 fourth canonical-from-first-creation chokepoint page synthesis (4th chokepoint structural type — "upstream oligopoly with vault-adjacent-scope substantiation"). AEHR positioned as **secondary equipment-tier substantiating source with forward-looking framing** at HBM chokepoint synthesis (Erickson Q3 FY2026 call: "in discussions with key memory suppliers... orders fiscal 2027 and begin to ramp in fiscal 2028"; 10-K does NOT mention HBM by name; Europe/Middle East +145% YTD attributed to "the memory market"; CoWoS-based packaging context including HBM stacks). Forward-looking framing preserved per honest-verdict discipline at chokepoint synthesis — first-instance HBM order verification trigger pre-registered at AEHR FY2027 reporting cycle per HBM-oligopoly Open Question #10. No content edits beyond cross-reference resolution per scope discipline.
-- **2026-04-20:** Created from three sources: AEHR 10-K FY2025 (Tier 1), AEHR 10-Q Q3 FY2026 (Tier 1), AEHR Q3 FY2026 earnings call (Tier 2). First Manufacturing Equipment tier company page in the wiki. Template-setting for equipment-tier coverage. Session 6 paired ingest with [[ONTO]].
-- **2026-04-27 (Session 25):** Cross-referenced from new theme page [[chokepoint-investability-priorities]] Chokepoint 8 (Wafer-level SiPh reliability test) and new chokepoint page [[wafer-level-siph-test]] (provisional, single-company-exposure disclaimer per Option A). AEHR is the primary vault company anchor for wafer-level SiPh reliability test chokepoint. No content edits.
+- **2026-07-29 (Session 195 — FY2026 first true primary refresh):** Re-ingested from AEHR 10-K FY2026 (Tier 1, FY ended May 29, 2026) + AEHR Q4 FY2026 call (Tier 2, July 14, 2026); baseline S6 (FY2025 + Q3 FY2026). Headline: the AI transition materialized at the Q4 inflection (revenue +34%, non-GAAP GM 45%, positive non-GAAP income) with a strong forward setup ($80.6M record backlog, $130-150M FY2027 guide, $41M April PO, $116.5M cash) — but FY2026 was still a GAAP loss $(7.1)M/$(14.1)M-operating on −15% revenue, and the guide is a 2.6-3x step-up with lumpiness + HBM-optionality caveats. Applied §3.19 rolling window (FY2026 annual 3-yr + Q4 + Q3 tables; no third-refresh compaction — 1st true refresh). Placement HELD (`layer 3-4` + `photonics_tier 4`) — inflection + war chest do not trip an upgrade (honest-verdict-trigger discipline). Documented the fiscal year-end change (Friday-nearest-June-30 from FY2027; transition stub) + §2.11 calendar equivalence. **OQ dispositions:** OQ1 largely resolved at the inflection (live remainder = FY2027 conversion); OQ2 partial (Q4 GM 45% vs FY 38.5%); OQ3 refined (HBM not in guide); OQ4 partial (two SiPh customers now); OQ5 updated (2 Chinese patents upheld); **OQ6 resolved — DTA retained, no valuation allowance despite the loss**; renumbered to 5. Corrected two prior assumptions: the 10-K *does* disclose backlog, and customer concentration *eased* (top customer 26.3% vs 67%). Cross-vault propagation: [[wafer-level-siph-test]] (two-SiPh-customer broadening), light [[HBM-oligopoly]] / [[TSMC-CoWoS]] / [[AI-demand-durability]].
+- **2026-05-26 (in-place cross-vault adjacency note per Vic instruction; not a separate session):** Tier 3 `raw/research/800VHDC-power-semis-for-AIDC.md` flagged AEHR as a supplier-ramp substantiation signal for [[power-semis]]; cross-reference only.
+- **2026-05-15 (Session 64):** Added [[HBM-oligopoly]] cross-reference; AEHR positioned as a secondary equipment-tier forward-looking source (FY2027 HBM-order trigger pre-registered at HBM-oligopoly OQ#10). Cross-reference only.
+- **2026-04-20 (Session 6):** Created from AEHR 10-K FY2025, 10-Q Q3 FY2026, and Q3 FY2026 call. First Manufacturing Equipment tier company page; paired ingest with [[ONTO]].
+- **2026-04-27 (Session 25):** Cross-referenced from [[chokepoint-investability-priorities]] and the new [[wafer-level-siph-test]] chokepoint page (AEHR is the primary vault anchor). Cross-reference only.

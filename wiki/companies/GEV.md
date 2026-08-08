@@ -5,7 +5,7 @@ layer: 4
 photonics_tier: outside
 energy_power_tier: 3
 equipment_tier: outside
-last_updated: 2026-05-29
+last_updated: 2026-07-28
 ---
 
 # GEV — GE Vernova Inc.
@@ -16,13 +16,15 @@ GEV occupies Layer 4 (differentiated components / specialized designers) in the 
 
 This page is the **second canonical AI-datacenter-scope ingest** post-rework arc paired with [[ETN]] Session 37 (first vault cross-tier paired ingest variant — Tier 1 + Tier 3 within Framework 7). GEV establishes the **Layer 4 generation + transmission equipment positioning** at canonical Tier 3 — structurally distinct from [[ETN]] Tier 1 distribution-side and complementary to vault Energy/Power tier coverage ([[VRT]] Layer 5 / Tier 1 + [[FLEX]] Layer 6 / Tier 5). Spun off from GE Company in April 2024; FY2025 first full-year post-separation.
 
+**★ Q2 2026 refresh — research verdict (two-sided, honest per Section 2.1).** A genuinely strong, thesis-central quarter — **the power-infrastructure durability the vault tracks got STRONGER.** Revenue $11.1B (+22%); **adjusted EBITDA $1.2B (+71%), margin 11.3%**; **orders +88% YoY to ~$24.2B**; **backlog $176.3B** (path to $200B by 2027); **FY2026 guidance RAISED — revenue to $45.5–46.5B (+$1B), FCF to $11.5–12.5B (+$5B)**. Gas contracted GW 100→116 (≥125 year-end), SRAs 63 GW, 2031 slots >50% sold; capacity roadmap 20→24 (2028)→30 GW (2030); equipment pricing +20% vs Q4 2025. Electrification (+68% revenue, 18.4% margin) is the breakout, powered by the **Prolec transformer platform** ($900M Q2 revenue; $800M H1 US transformer orders now fulfillable — a first). **Honest counterweights:** (1) **Wind still loss-making** ($(275)M Q2 EBITDA, ~$400M FY loss — the drag); (2) the huge **6M net income $5.4B / FCF $9.9B is flattered/driven by one-timers** — a **~$4.0B non-cash Prolec step-acquisition remeasurement gain** (Q1) + a $210M China-XD-Grid disposal gain (Q2), and FCF is heavily **customer-down-payment-driven** ($6.4B working-capital benefit from SRA prepayments), not pure earnings; (3) **data-center exposure is heavy in ORDERS/backlog (~36% of H1 orders) but not yet in disclosed REVENUE, and there is still NO named hyperscaler customer.** **Verdict: the power-constraint thesis strengthened; the Tier-2 promotion question is materially closer but honestly does NOT fire yet (orders ≠ revenue; no named hyperscaler).** Placement HELD (`layer 4` + `energy_power_tier 3`) — the strengthened Tier-2 trigger is flagged for Vic (Framework 7 human-owned). Full Q2 detail below.
+
 **Key thesis-relevant findings:**
 
-1. **Framework 7 Tier 3 substantiated; Tier 2 promotion NOT warranted.** Per Section 3.10 promotion mechanism: NEITHER criterion met. Zero named hyperscaler customers (criterion 1 fails); estimated FY2026 datacenter-attributable revenue ~9-13% of total ($4-6B / $44.5-45.5B), below 15% threshold (criterion 2 fails). Tier 3 baseline preserved per honest-verdict discipline.
+1. **Framework 7 Tier 3 substantiated; Tier 2 promotion STRONGER but NOT fired (Q2 2026).** Per Section 3.10 promotion mechanism, neither criterion cleanly met: **still zero named hyperscaler customers** (the SST prototype goes to "a hyperscaler," unnamed); data-center is now **~36% of H1 2026 *orders*** (>$5B Electrification DC orders + ~$5B Gas DC orders of ~$27.5B company-wide) but **not disclosed as >15% of current *revenue*** (orders convert over years). Per honest-verdict-trigger discipline (§2.1: fire on met criteria, not directional momentum), **Tier 3 held** — the strengthened trigger is escalated to Vic as a Framework-7 (human-owned) call, à la the [[MU]] memory_tier-1 precedent.
 2. **Generation-side primary 2026 constraint location partial falsification (cross-company paired analytical product with [[ETN]]).** GEV gas turbines NOT framed as supply-binding (CEO Strazik: *"the gas turbines are really not the gating item"* — EPC/permitting/fuel is). Distribution-side / transformer + electrical equipment layer (per [[ETN]]) is the primary 2026 power constraint location, NOT generation-side. Framework 7 + Framework 11.5 refinement candidate for Vic-side curation.
 3. **On-site generation as grid-bypass thesis partial falsification.** GEV primary sources do NOT substantiate aggressive on-site generation framing. Gas turbine 20% datacenter attribution ambiguous between on-site co-located and utility-scale grid-feed; primary-source evidence leans toward grid-feed dominance. No "grid bypass" framing; no named hyperscaler nuclear/SMR partnerships (contrast Microsoft-[[CEG]] (Constellation), AWS-Talen, Meta nuclear PPAs which GEV does not participate in — [[CEG]] is the nuclear-fleet operator in those deals, now a vault canonical per S107). Documented per `CLAUDE.md` v9 Section 4.4 with epistemic humility framing (absence of detailed disclosure ≠ definitive absence).
 4. **Layer 4-5 straddling tension flagged but Layer 4 maintained.** "String of pearls" datacenter strategy (EMS in Q1 2026 first orders; Stability Block + MV UPS H2 2026 expected; SST Fall 2026 first delivery to "a hyperscaler" unnamed; orders H1 2027) is forward-looking Layer 5 trajectory; equipment-heavy revenue base (gas turbines, transformers, wind turbines) supports Layer 4 anchor placement. Future tier-revisit triggers pre-registered.
-5. **Q1 2026 raised guidance materially:** $44.5-45.5B revenue (+$500M); 12-14% adj EBITDA margin (+100 bps); $6.5-7.5B FCF (+$1.5-2.0B from prior $5.0-5.5B). $18.3B Q1 2026 orders (+71% organic); $163B total backlog; $200B target accelerated to 2027 from prior 2028.
+5. **Q2 2026 raised guidance AGAIN:** revenue → **$45.5–46.5B** (+$1B); FCF → **$11.5–12.5B** (+$5B — the big raise, largely SRA down-payment timing); adj-EBITDA margin **12–14% maintained**. Orders +88% YoY to ~$24.2B; **backlog $176.3B** (equipment $87.8B / services $88.5B); $200B target reaffirmed for 2027. *(Prior baseline — Q1 2026: $44.5-45.5B rev / 12-14% / $6.5-7.5B FCF; $163B backlog.)*
 
 ## Layer placement reasoning (Layer 4)
 
@@ -104,6 +106,8 @@ Estimated FY2026 datacenter-attributable revenue:
 
 Tier 3 placement maintained per honest-verdict discipline. Tier 2 promotion warranted upon trigger of either criterion (named hyperscaler customer disclosure OR >15% datacenter-attributable revenue).
 
+**★ Q2 2026 update — the trigger got materially STRONGER but still does NOT cleanly fire.** Data-center is now heavy in the *order book*: **~$5B H1 Electrification data-center orders + ~$5B H1 Gas Power data-center orders ≈ ~$10B of ~$27.5B company-wide H1 orders (~36%)**; ~20% of the 116 GW gas contract book (~23 GW) is data centers; and behind-the-meter/islanded-power framing strengthened (CEO: customers deploying gas turbines for "on-site, islanded power" with "real economic value"). **BUT both pre-registered criteria remain unmet on the letter:** (1) **still zero named hyperscaler customers** (the SST prototype goes to "a hyperscaler," unnamed; ~100 customers, 80/20 traditional/DC); (2) data-center is heavy in *orders/backlog*, not disclosed as **>15% of current *revenue*** (orders convert over multi-year cycles). Per honest-verdict-trigger discipline (§2.1) — fire on met criteria, not directional momentum — **Tier 3 is HELD**, and the strengthened trigger is **flagged for Vic as a Framework-7 (human-owned) escalation** (the [[MU]] memory_tier-1 escalation precedent: materially stronger evidence, but the tier call is Vic's, not auto-applied).
+
 ## Financial snapshot
 
 Per `CLAUDE.md` v9 Section 4.1 Multi-source ingests convention, separate tables per period. Period offset note: paired with [[ETN]] Session 37 — ETN baselined Q3/Q4 2025; GEV baselined Q1 2026; 1-quarter offset documented in Source audit notes.
@@ -165,6 +169,50 @@ Per `CLAUDE.md` v9 Section 4.1 Multi-source ingests convention, separate tables 
 (GEV Q1 2026 earnings call)
 
 **$200B total backlog target accelerated to 2027** from prior 2028 expectation — backlog visibility extending into 2029-2030 per CEO commentary ("we'll learn more about where this market takes us as we sell out of 2029 and 2030").
+
+### Q2 2026 quarterly (10-Q + earnings call, period ended June 30, 2026)
+
+Calendar filer → **Section 2.11 N/A**. §3.19a rolling window: FY2025 annual + Q1 + Q2 2026 kept in full. **GEV comments/guides on an ORGANIC basis (ex Prolec GE); figures below are reported unless noted.**
+
+**Consolidated (Q2 2026):**
+
+| Metric | Q2 2026 | Q2 2025 | YoY |
+|---|---|---|---|
+| Total revenue | $11,104M | $9,111M | +22% |
+| — Equipment | $6,459M | $4,894M | +32% |
+| — Services | $4,645M | $4,217M | +10% |
+| GAAP operating income | $653M | $378M | +73% |
+| **Adjusted EBITDA** | **$1,200M** | $700M | +71% |
+| **Adj EBITDA margin** | **11.3%** | 7.7% | +2.8 pts (per 10-Q) |
+| Net income attributable to GEV | $668M | $514M | +30% |
+| Diluted EPS | $2.47 | $1.86 | — |
+| **Orders (per call)** | **~$24.2B** | — | **+88%** |
+| **Total backlog / RPO** | **$176,342M** | — | equipment $87.8B / services $88.5B |
+| Cash + equivalents (call) | ~$13B | — | +$3B seq |
+| Total debt | $2.6B | ~$0.1B (Dec 31 2025) | post-Prolec Feb-4 issuance |
+
+**★ The huge YTD net income + FCF are one-timer-driven — read adjusted/segment EBITDA instead.** 6M net income attributable to GEV was **$5,413M** (EPS $19.96) — but that is dominated by a **~$3,992M non-cash pre-tax gain from remeasuring GEV's previously-held 50% Prolec interest to fair value** on the step acquisition (Q1; Other income), plus a **$330M pre-tax / $210M after-tax China XD Grid disposal gain** in Q2. Q2's cleaner operating reads are **GAAP operating income $653M and adjusted EBITDA $1.2B**. **6M free cash flow $9.9B** (OCF $10,680M − capex/IUS $783M, vs $1.2B a year ago) is **heavily working-capital-driven** — a ~$6.4B benefit from customer down payments on rising orders + SRAs, not pure earnings conversion. Capital return: **$7B of a $10B buyback program returned YTD (buyback + dividend)**; China XD Grid stake disposed (~$600M pre-tax proceeds); small Robotech Automation acquisition (early July); ~$500M voluntary pension contribution.
+
+**Per-segment (Q2 2026):**
+
+| Segment | Revenue | YoY | Segment EBITDA | EBITDA margin | Q2 orders note |
+|---|---|---|---|---|---|
+| **Power** | $5,477M | +14% | $1,031M | **18.8%** | gas-turbine orders 113 units / **12.1 GW (+137%)**; Nuclear +26% |
+| **Electrification** | $3,637M | **+68%** | $671M | **18.4% (+390bps)** | equip backlog **$41B (+69% YoY)**; Prolec ~$900M Q2 rev |
+| **Wind** | $2,026M | −10% | **$(275)M** | (13.6)% | orders ~−40% (onshore soft); ~$400M FY loss expected |
+
+**Gas Power contract book (call):** contracted GW **100 → 116** (≥125 year-end target); **SRAs 63 GW**; **>50% of 2031 production slots sold by year-end**; equipment orders priced **+20%** vs Q4 2025; capacity roadmap **20 GW run-rate → 24 GW (2028) → 30 GW (2030)** (capital-light, existing footprint). **Electrification (call):** $800M H1 US transformer orders (Prolec-enabled, a first); switchgear ~$5B backlog (9,000→10,500 units); **>$5B H1 data-center orders**.
+
+### FY2026 guidance — RAISED again (Tier 2 — Q2 2026 call, July 22, 2026)
+
+| Metric | Q1-issued | Q2 RAISED | Driver |
+|---|---|---|---|
+| Revenue | $44.5-45.5B | **$45.5-46.5B (+$1B)** | Power + Electrification demand |
+| Free cash flow | $6.5-7.5B | **$11.5-12.5B (+$5B)** | SRA down-payment timing + higher EBITDA |
+| Adj EBITDA margin | 12-14% | 12-14% (maintained) | — |
+| Power | 16-18% rev / 17-19% margin | 18-20% rev / 17-19% margin | gas volume + price |
+| Electrification | $14.0-14.5B | +$500M (margin expansion) | data-center + Prolec |
+| Wind | down low-double-digits | ~$400M EBITDA loss | onshore soft (permitting/tariffs) |
 
 ## Segment structure
 
@@ -244,9 +292,11 @@ Electrification segment realigned into 4 business units per Q1 2026 reporting:
 - CEO repeated emphasis: "Just to repeat that, our Q1 Electrification orders to the data centers were more than full-year 2025 results"
 
 **"String of pearls" datacenter product roadmap** (forward-looking, NOT yet materialized as Layer 5 revenue mix):
-1. **EMS** (Energy Management Systems) — Q1 2026 first orders; April 2026 second order
-2. **Stability Block / MV UPS** — H2 2026 expected incremental orders
+1. **EMS** (Energy Management Systems) — Q1 2026 first orders; software/controls linking the data center and power-generation equipment
+2. **Stability Block / MV-UPS** — in development to improve data-center electrical efficiency + resilience
 3. **SST** (Solid-State Transformer) — Fall 2026 first delivery to "a hyperscaler" unnamed; 6-month customer testing → orders H1 2027
+
+**★ Q2 2026 SST update (resolves the [[transformer-supply]] §4.3 contradiction flag).** The **5 MW SST prototype (indoor) build is complete** (week of Jul 15 2026), with **delivery to the "first hyperscaler" planned in H2 2026**; a **6 MW (outdoor) version is in parallel development**; **commercial orders are a 2027 story** (technology validation in 2026, commercial discussions 2027) and are **NOT yet in the $5B H1 data-center order base**. The directional integrated-solutions scope is ~$300M per GW (SST + MV-UPS + EMS), ~2-3× the current per-GW scope. **This reaffirms — from GEV's own primary sources — that the SST-to-hyperscaler track is real and DISTINCT from the DOE-funded FASST utility demonstrator** (the two are separate SST tracks, resolving the transformer-supply page's pre-registered contradiction flag). Still no *named* hyperscaler and no SST *orders* yet — Layer 5 trigger unmet.
 
 ## Datacenter exposure framing — substantiated; on-site generation framing partially falsified
 
@@ -331,7 +381,7 @@ Search anchors verified across FY2025 10-K + Q1 2026 10-Q + Q1 2026 earnings cal
 |---|---|---|---|
 | Tier 1 (binding constraint) | [[ETN]] | 4 | Transformer + switchgear + distribution + integrated solutions trajectory |
 | Tier 1 (binding constraint) | [[VRT]] | 5 | UPS + thermal + OneCore integrated solutions; NVIDIA reciprocal-confirmation |
-| Tier 3 (cross-domain bridge) | [[GEV]] | 4 | Gas turbines (20% datacenter) + Electrification "string of pearls" |
+| Tier 3 (cross-domain bridge) | GEV (this page) | 4 | Gas turbines (20% datacenter) + Electrification "string of pearls" |
 | Tier 5 (cross-domain participant) | [[FLEX]] | 6 | Crown switchgear/MV (within EMS) + JetCool liquid cooling + Anord Mardix critical power |
 
 **Post-Session 40 cross-vault Energy/Power tier map update:** [[BE]] (Layer 4 / energy_power_tier 2) is canonical first F7 Tier 2 placement — BTM grid-bypass workaround thesis. Cleanest BTM bifurcation contrast with GEV utility-scale generation: GEV CEO Strazik framed gas turbines as "really not the gating item — EPC/permitting/fuel is" (Q1 2026 call); BE CEO Sridhar framed grid interconnection + permitting as bottleneck driving BTM grid-bypass adoption (BE Q1 2026 call). Both confirm grid/EPC/permitting as gating constraint; sit on opposite sides of workaround (GEV utility-scale generation provides power INTO grid + interconnection challenges; BE bypasses grid entirely with islanded microgrid). Mutual non-naming pattern across BE / GEV / ETN despite structural relationship through power infrastructure value chain. Confirms BTM bifurcation discipline at primary-source level — F7 Tier 2 BTM bifurcation candidate (Caveat #6 refinement OR new Caveat #10) flagged for next codification session.
@@ -385,18 +435,22 @@ GEV gas turbines NOT framed as supply-binding constraint:
 
 ## Open questions
 
-1. **On-site generation as grid-bypass framing evolution.** GEV primary sources do NOT substantiate aggressive on-site generation framing at Session 37 baseline. Does future filing or call surface explicit on-site vs grid-feed datacenter gas turbine split? Industry context (Microsoft-Constellation, AWS-Talen, Meta nuclear PPAs) involves other utility/SMR providers GEV does not participate in. Future verification trigger.
-2. **Named hyperscaler customer disclosure (Tier 2 promotion trigger #1).** SST first delivery to "a hyperscaler" Fall 2026 — does customer name surface in subsequent filing? EMS / Stability Block deployments at Q1 2026 + April 2026 + H2 2026 — named customers? Tier 2 promotion warranted at 2+ named hyperscaler customers per Section 3.10.
-3. **>15% datacenter-attributable revenue (Tier 2 promotion trigger #2).** Current estimate ~9-13% of FY2026 revenue datacenter-attributable. Does Electrification "string of pearls" growth + Power gas turbine datacenter share evolution push above 15% threshold by FY2027? Tier 2 promotion warranted.
-4. **SST commercial viability + scale.** Fall 2026 first delivery; 6-month customer testing → orders H1 2027. Does SST commercial-scale orders materialize? At what revenue magnitude? Layer 5 upgrade trigger candidate.
+1. **On-site generation as grid-bypass framing evolution.** *Q2 2026 update — partially revised toward on-site:* the S37 "leans grid-feed-dominant" read is softened — Strazik now explicitly frames customers deploying gas turbines for "on-site, islanded power" with "real economic value," a more direct BTM/islanded articulation than Q1. **But the clean on-site-vs-grid-feed revenue split is still not quantified** (~20% of 116 GW is "data centers," mode still blended). Live remainder: a disclosed on-site vs grid-feed split.
+2. **Named hyperscaler customer disclosure (Tier 2 promotion trigger #1).** *Q2 2026: still UNNAMED.* The SST prototype goes to "a hyperscaler" (unnamed, H2 2026 delivery); ~100 customers / 80-20 traditional-DC; even the (Tier-4) Project Kilby order was not named at primary. Trigger unmet. Tier 2 warranted at 2+ named hyperscaler customers per §3.10.
+3. **>15% datacenter-attributable revenue (Tier 2 promotion trigger #2).** *Q2 2026: STRONGER but not fired.* Data-center is now ~36% of H1 *orders* (>$5B Electrification + ~$5B Gas of ~$27.5B), ~20% of the 116 GW contract book — heavy in orders/backlog but **not disclosed as >15% of current *revenue*** (orders convert over years). Escalated to Vic as a Framework-7 call (see the Energy/Power tier section). Watch whether the order mix converts into a disclosed >15% revenue share.
+4. **SST commercial viability + scale.** *Q2 2026: prototype built, commercial 2027.* 5 MW indoor prototype build complete (Jul 2026); H2-2026 hyperscaler delivery; 6 MW outdoor in parallel; commercial orders 2027 (NOT yet in the $5B H1 DC orders). **Reconciled the [[transformer-supply]] §4.3 flag** — the DC-SST-to-hyperscaler track is distinct from the DOE FASST utility demo. Live remainder: first SST *orders* + magnitude (Layer 5 trigger).
 5. **Long-term gas turbine demand sustainability beyond 2030.** CEO: "we'll learn more about where this market takes us as we sell out of 2029 and 2030." Does sell-through 2031+ materialize? Multi-decade demand visibility.
 6. **Wind segment H2 2026 recovery execution.** "70% of 2025 wind equipment orders came later in year" → H2 2026 shipments expected to increase. Does H2 2026 recovery deliver per guidance? FY2026 EBITDA loss ~$400M baseline.
-7. **Prolec GE full-year integration trajectory.** Q1 2026 contribution ~$500M revenue / 20%+ EBITDA margin; FY2026 expected ~$3B revenue. Lean optimization signals strong (70% transformer tank rework reduction; 40% output improvement). Full-year delivery on schedule?
+7. **Prolec GE full-year integration trajectory.** *Q2 2026: on track / ahead.* Prolec contributed **~$900M Q2 revenue** (from ~$500M Q1), is now the largest portion of Electrification equipment backlog, and enabled **$800M H1 US transformer orders** fulfillable via global factories (a first). The ~$4.0B non-cash step-acquisition remeasurement gain (Q1) is the accounting mirror of the deal (see Financial snapshot). Live remainder: FY2026 revenue run-rate + tariff (Section 232) drag on Prolec margins.
 8. **SMR datacenter-direct framing evolution.** SMR currently framed as government/utility infrastructure (Darlington + Clinch River + $40B U.S./Japan funding). Does future ingest surface SMR-datacenter on-site framing? Hyperscaler nuclear PPA participation at GEV?
 9. **ETN paired-refresh matched-period comparison.** ETN Q1 2026 release (May 5, 2026 — post-Session 37). Future paired-refresh ingest enables apples-to-apples Q1 2026 comparison with GEV Q1 2026 baseline (period offset eliminated).
 10. **AVGO / NVDA platform integration overlap.** GEV Electrification "string of pearls" datacenter strategy overlaps conceptually with AVGO custom ASIC datacenter ecosystem + NVIDIA platform integration. Does future GEV refresh surface AVGO or NVDA partnership specificity?
 
 ## Source audit notes
+
+### GEV Q2 2026 10-Q + Q2 2026 call (Tier 1 + Tier 2; quarter ended June 30, 2026; call July 22, 2026; CEO Scott Strazik + CFO Ken Parks + VP-IR Michael Lapides)
+
+Strong beat + guidance raised again (rev → $45.5-46.5B; FCF → $11.5-12.5B). Power-infrastructure durability strengthened (backlog $176.3B → $200B by 2027; SRAs 63 GW / 2031 slots >50% sold; pricing +20%; capacity 20→30 GW). Electrification the breakout (+68% rev, 18.4% margin) on Prolec ($900M Q2). **Two honest-verdict flags:** (1) the **6M net income $5.4B is dominated by a ~$3,992M non-cash Prolec step-acquisition remeasurement gain** (Q1, Other income) + a $210M after-tax China-XD-Grid disposal gain (Q2) — Q2 operating income $653M / adj EBITDA $1.2B are the clean reads; **6M FCF $9.9B is heavily customer-down-payment-driven** (~$6.4B WC benefit), not pure earnings. (2) **Wind still loss-making** ($(275)M Q2 / ~$400M FY). **§3.4 Tier-1/Tier-2 framing gap:** the data-center precision (~$5B DC orders, ~20% of contracted GW), the SST-to-hyperscaler timeline, and the 2027 targets are **call-only**; the 10-Q is silent on them — a (b)-type "call discloses commercial detail the filing omits" pattern, consistent with Q1, **not codification-meeting**. **§4.3 SST contradiction flag RECONCILED** — the DC-SST-to-hyperscaler prototype track is distinct from the DOE FASST utility demo. **CEO-combativeness UNCHANGED (count 2):** Strazik confident/measured; the Kaplowitz data-center-entitlement exchange was defensive-but-data-backed (walked SST expectations to 2027, no hiding), not combative. Still **zero named hyperscaler**; the Project-Kilby order not named at primary. No leadership change; buyback $7B of $10B YTD (+dividend); China XD Grid exited (~$600M); small Robotech acq.
 
 ### GEV 10-K FY2025 (Tier 1, period ended December 31, 2025)
 
@@ -459,18 +513,19 @@ Pattern: analyst silence on AI, SMR technical progress, and long-term demand sug
 **Cross-venue disclosure gap monitoring.** Q1 2026 disclosure consistent across 10-Q + earnings call. **NO cross-venue disclosure gap instance from GEV sources.** Convention count remains at 2 observations.
 
 <!-- LATEST-ALPHA:START -->
-## ⚠️ Latest alpha — unverified, between-filings (as of 2026-06-22)
+## ⚠️ Latest alpha — unverified, between-filings (as of 2026-06-22; dispositioned at the S192 Q2 2026 ingest)
 
-*Tier 3/4 discovery — NOT canonical. Recent news, to verify at the next primary source. Full detail + sources: [discovery note](../../raw/notes/twitter-intel/2026-06-22_wsj-bbg-gs_msft-cheaper-models-chevron-power.md). Items graduate into canon (or are pruned) at the next 10-Q/10-K/call ingest.*
+*Tier 3/4 discovery — NOT canonical. Full detail + sources: [discovery note](../../raw/notes/twitter-intel/2026-06-22_wsj-bbg-gs_msft-cheaper-models-chevron-power.md).*
 
-- **GEV named lead turbine supplier for "Project Kilby" — Chevron + Engine No. 1 gas plant powering a ~2.67 GW Microsoft West Texas data center** (news, 2026-06-22) — Tier 4 · *a majority of the power from GE Vernova turbines; seven 7HA units ordered; CAT supplies supplementary turbines.* Builds on the Jan-2025 Chevron / Engine No. 1 / GE Vernova "power foundries" partnership (up to 4 GW on 7HA turbines). First power 2028; Chevron FID by end-2026. `[verify: the seven-7HA order surfacing in GEV's datacenter backlog / named on the next earnings call (~late July Q2 2026)]`
-- **Honest nuance — still an *indirect* hyperscaler link** (Tier 4) · GEV's direct customer is Chevron/Engine No. 1, with Microsoft as end-customer — so this does **not** by itself trip GEV's Tier-2 promotion trigger (named hyperscaler customer). `[verify: whether GEV names the end-customer/project at primary]`
+- **Partially GRADUATED at Q2 2026:** the *general* behind-the-meter / on-site-islanded-power demand this item flagged **did** show up at primary — the Q2 2026 call framed customers deploying gas turbines for "on-site, islanded power" with "real economic value" (now in canon above, data-center/BTM section).
+- **NOT confirmed at Q2 (stays a forward watch):** the **specific "Project Kilby" order** (Chevron + Engine No. 1 gas plant → ~2.67 GW Microsoft West Texas data center; reportedly seven 7HA units) was **NOT named** on the Q2 2026 call or in the 10-Q — GEV kept its standard customer/project non-disclosure. So it does **not** trip the Tier-2 named-hyperscaler trigger (GEV's direct customer would be Chevron/Engine No. 1, Microsoft the end-customer anyway). `[verify: the seven-7HA order / Kilby project surfacing at a future primary source; Chevron FID by end-2026, first power 2028]`
 - Related: [[BTM-grid-bypass-workaround]] (GEV Modality 3 — co-located/utility-scale gas generation) · [[MSFT]] · Chevron / Engine No. 1 / Project Kilby (off-vault)
 
 <!-- LATEST-ALPHA:END -->
 
 ## Change log
 
+- **2026-07-28 (Session 193 — Q2 2026 FIRST refresh):** Refreshed from the S37 FY2025 + Q1 2026 baseline with the Q2 2026 10-Q + call (Jul 22 2026). **Headline: strong beat + guidance RAISED again (rev → $45.5-46.5B; FCF → $11.5-12.5B); orders +88% to ~$24.2B; backlog $176.3B → $200B by 2027; power-infrastructure durability STRENGTHENED (SRAs to 2031, pricing +20%, capacity 20→30 GW). Electrification the breakout (+68%, 18.4% margin) on Prolec ($900M Q2).** Added Q2 financial + segment tables (FY2025+Q1+Q2 full per §3.19a; no compaction — 1st refresh) + raised-guidance table; Q2 verdict in Thesis role. **Honest-verdict flags:** 6M net income $5.4B / FCF $9.9B are one-timer/down-payment-driven (~$4.0B non-cash Prolec remeasurement gain + $210M XD-Grid gain; $6.4B WC benefit) — read adj/segment EBITDA; Wind still loss-making ($(275)M Q2 / ~$400M FY); data-center heavy in ORDERS (~36% of H1) but not disclosed revenue, still no named hyperscaler. **Placement HELD** (`layer 4` + `energy_power_tier 3`) — the Tier-2 promotion trigger is materially STRONGER but does NOT cleanly fire (orders≠revenue; no named hyperscaler) → **escalated to Vic as a Framework-7 human-owned call** ([[MU]] memory_tier-1 precedent). §2.11 N/A (calendar). OQ lifecycle: OQ1 (on-site framing softened toward islanded), OQ2 (still unnamed), OQ3 (strengthened-not-fired), OQ4 (SST prototype built / 2027 commercial), OQ7 (Prolec $900M on track). **★ SST update reconciles the [[transformer-supply]] §4.3 flag** (DC-SST-to-hyperscaler track distinct from DOE FASST utility demo). Latest-alpha block dispositioned (BTM/islanded demand partially graduated; Project Kilby not named at Q2 → stays a forward watch). CEO-combativeness UNCHANGED (count 2). **Propagation:** substantive [[transformer-supply]] (Prolec scaling + §4.3 SST reconciliation) + [[BTM-grid-bypass-workaround]] (Modality 3 islanded-power strengthened); light [[what-could-go-wrong]] Entry 4 (power-constraint NOT resolving) + [[forward-edge-tracker]] + [[commodity-supercycle-chokepoints]]. No-op: [[hyperscaler-capex]] (supply-side), [[ETN]]/[[CEG]]/[[VRT]] (mutual non-naming preserved), [[HALEU-fuel-chokepoint]] (BWRX-300 barbell only). `refresh_log` S193; 10-Q `mv`→`raw/filings/GEV/`. NOT touched: `_thesis*`/`frameworks*`/`CLAUDE.md`.
 - **2026-05-26 (in-place cross-vault adjacency note per Vic instruction; not counted as separate session):** 4-Tier-3-report power-semi sub-domain substantiation reinforces GEV utility-scale generation + Prolec GE transformer positioning at Tier 3 binding-constraint ranking per `raw/research/800VHDC-power-semis-for-AIDC.md` 8-bottleneck framework (#1 grid + #2 transformers + #5 on-site generation/gas turbines/SMRs binding scope; gas turbine backlogs through 2028+; SMR pipeline 25 GW → 45 GW conditional offtake April 2026). GEV cross-vault positioning at sub-domain commercial-inflection cycle UPSTREAM constraint-source preserved at Section 12 [[power-semis]] theme framing. S37 baseline ~70-session staleness flagged in Tier 3 refresh planning at S99+ priority decision. Cross-vault adjacency only; no content edits.
 - **2026-05-15 (Session 63 cross-reference update — transformer chokepoint canonical creation):** Added [[transformer-supply]] cross-reference per Session 63 third canonical-from-first-creation chokepoint page synthesis (oligopoly + substrate-bound supply structural type post-[[HALEU-fuel-chokepoint]] S44 + [[BTM-grid-bypass-workaround]] S57 precedents). GEV positioned as **Power Transmission segment + Prolec GE primary substantiating source** at transformer chokepoint synthesis (Prolec GE $5.3B acquisition February 2026; ~$10B Prolec transformer backlog; 70% tank rework reduction + 40% output improvement; SST Fall 2026). **GEV cross-membership at both Energy/Power chokepoints documented** (transformer constraint-source via Prolec + BTM constraint-workaround via utility-scale gas turbine per [[BTM-grid-bypass-workaround]] Modality 3). S37 baseline 26-session staleness flagged as HIGHEST priority refresh propagation candidate per transformer-supply.md Open Question #7. CEO Strazik "gas turbines really not the gating item — EPC/permitting/fuel is" framing REINFORCES transformer chokepoint thesis at constraint-source-distribution-side scope. No content edits beyond cross-reference resolution per scope discipline.
 - **2026-05-02 (Session 42 cross-reference update):** Added [[BWXT]] cross-reference in Cross-vault Energy/Power positioning section per Session 42 substantive paired ingest first canonical Framework 9 Materials Tier 1 placement. BWRX-300 component supplier asymmetric disclosure mode documented (first vault-detected case of partnership disclosed at one company-side / ambiguously framed at other side). A1 framework refinement candidate flagged for Phase 4 reflection. Future GEV refresh ingest verification candidate for BWRX-300 Darlington steam generator partnership scope clarification. No content edits beyond cross-reference addition per scope discipline.

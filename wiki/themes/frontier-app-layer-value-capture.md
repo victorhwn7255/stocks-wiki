@@ -1,7 +1,7 @@
 ---
 type: theme
 tickers: [AAPL, GOOGL, MSFT, META, AMZN, NVDA]
-last_updated: 2026-07-08
+last_updated: 2026-08-07
 ---
 
 # Frontier AI application layer — where value capture is (and isn't) migrating
@@ -21,7 +21,7 @@ last_updated: 2026-07-08
 **What this page does NOT own** (cross-referenced, never restated — dashboard-not-duplicate):
 - the **value-migrates-up base rate** + the vertical-integration reconciliation → [[telecom-bust-analog]];
 - the **compute→revenue arbitrage** + "is it a bubble" cyclical frame → [[ai-frontier-systems]];
-- the **billed-unit** (seat / consumption / outcome) moat discriminator + the enterprise-SaaS scorecard → [[software-AI-moat-durability]];
+- the **billed-unit** (seat / consumption / outcome) moat discriminator + the enterprise-SaaS scorecard → [[software-AI-moat-durability]]. *Cross-reference (S202): the sharpest primary-source statement of the app-layer-captures-value argument now sits on the enterprise side of that boundary — [[PLTR]]'s Q2 2026 call ("the models are commodities"; "the market has created far more intelligence than it has converted into value"; a reported head-to-head win over "a frontier lab and its deployment team"), plus model portability shipped as product to defeat frontier-lab lock-in. Enterprise-scoped, so it stays on the moat page — but it is the same contest this page tracks on the consumer side, argued from the other end.*
 - the enterprise deployment-chain **"who gets paid" null result** → [[AI-implementation-deployment-layer]];
 - the top-level **demand-durability** test → [[AI-demand-durability]].
 
@@ -113,4 +113,5 @@ Pre-registered per the Tier-3-anchored convention (§3.13) — the primary-sourc
 
 ## Change log
 
+- **2026-08-07 (S202 — [[PLTR]] Q2 2026 refresh; light cross-reference only):** Added a one-paragraph cross-reference under "What this page does NOT own" pointing to the enterprise-side statement of the same app-layer-captures-value contest — PLTR's Q2 2026 "models are commodities" / "far more intelligence than converted into value" / frontier-lab bake-off win, plus model portability as an anti-lock-in product. **Scope deliberately unchanged** (Vic's call): the page stays consumer/frontier mega-cap-scoped, PLTR is not added to `tickers` and gets no scorecard row; the analysis lives at [[software-AI-moat-durability]] + [[PLTR]]. No verdict, dial, or open-question change. last_updated 2026-07-08 → 2026-08-07.
 - **2026-07-08 (S184 — creation):** Created as a Tier-3-anchored dynamics theme (§3.13) on two convergent Vic-curated research rounds (`frontier-AI application-layer-apple-distribution-edge.md` + `frontier-AI-application-layer-value-migration-timing-analysis.md`), each first evaluated by a parallel analyst agent. Tightly scoped to the **consumer / frontier app layer** the two existing enterprise-SaaS app-layer pages leave uncovered; OWNS the four-zone map, the app-native unit-economics dials (margin + retention), the distribution-vs-model-quality battle, and the incumbent scorecard with [[AAPL]] as the "owns-the-pipes-rents-the-intelligence" centerpiece. Dashboard-not-duplicate cross-refs (not restated) to [[telecom-bust-analog]] (value-migration base rate), [[ai-frontier-systems]] (compute→revenue / bubble frame), [[software-AI-moat-durability]] (billed-unit discriminator), [[AI-implementation-deployment-layer]] (deployment null result), [[AI-demand-durability]] (demand test). Honest verdict: bifurcated, "watch-the-margin-and-retention-dials," falsifier currently closer to firing than confirmer; Apple conditional (Google better-positioned). All figures Tier-3/4 `[verify:]`-flagged; the decisive signal (frontier-lab gross margins) noted as structurally un-checkable at primary. No price targets. 6 OQ verification triggers pre-registered. Inbound links from [[software-AI-moat-durability]] + [[AI-demand-durability]]. CREATION (no `refresh_log`; §4.6 streak untouched). Not touched: `_thesis*` / `frameworks*` / `CLAUDE.md`. The Apple app-layer/distribution lens is flagged to EXTEND the supply-side-scoped [[AAPL]] page at its next refresh (or via a `/latest-alpha` block for the recent Gemini-Siri news), not owned there.

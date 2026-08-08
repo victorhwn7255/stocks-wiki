@@ -5,7 +5,7 @@ layer: 4
 photonics_tier: outside
 energy_power_tier: 2
 equipment_tier: outside
-last_updated: 2026-05-02
+last_updated: 2026-08-04
 ---
 
 # BE — Bloom Energy Corporation
@@ -15,6 +15,12 @@ last_updated: 2026-05-02
 BE occupies Layer 4 (differentiated components / specialized designers) in the value capture framework and is the **canonical first vault Framework 7 Tier 2 ingest** under the binding-2026-power-constraint workaround thesis per `_thesis.md` rework + `frameworks.md` v10.1. Bloom Energy manufactures and deploys solid-oxide fuel cell Energy Server systems — natural-gas-fired BTM (behind-the-meter) generation enabling islanded microgrid architectures that bypass grid interconnection queues. BE is the **canonical BTM grid-bypass workaround chokepoint participant** at the AI datacenter power infrastructure value chain — structurally distinct from utility-scale generation ([[GEV]] Tier 3) and distribution-side chokepoint ([[ETN]] Tier 1).
 
 This page is the **first canonical Framework 7 Tier 2 placement** post-Session 39 raw/research/ Energy/Power source-add. Closes the empty middle of the F7 tier structure (vault now covers T1 [[ETN]] + [[VRT]] / T2 BE / T3 [[GEV]] / T5 [[FLEX]]; Tier 4 remains unpopulated). Establishes precedent for subsequent Tier 2 ingests (HD Hyundai / Hyosung / ABB / Schneider Korean and European transformer Tier 2 candidates) and BTM-tier ingests (CAT / CMI / GNRC future canonical tests of BTM bifurcation discipline).
+
+### Q2 2026 refresh headline (S198, first true primary refresh) — thesis MATERIALIZED at scale, honest counterweights hold
+
+**The BTM grid-bypass workaround thesis (Session 40 ~85% substantiated) has now materialized at scale.** BE reported a **record, first-ever >$1B quarter** (Q2 2026 revenue $1,065.4M, +166% YoY) that is **GAAP-profitable and operating-driven** — GAAP operating income $182.2M (from a $(3.5)M loss a year earlier), GAAP net income $198.9M, GAAP diluted EPS $0.62. The profit is *operating*-driven, not a non-cash equity-mark artifact — a cleaner profit quality than the mark-flattered mega-caps ([[AMZN]] / [[MSFT]] / [[INTC]] / [[GEV]]) whose GAAP was lifted by investment revaluations this cycle. Management raised FY2026 guidance **twice** off the year-start (revenue → $3.9–4.2B, ~100% growth at midpoint; non-GAAP operating income → $800–900M from $425–450M; non-GAAP diluted EPS → $2.55–2.85), and the customer base **broadened from Oracle-only to "all major US hyperscalers + a dozen-plus US neoclouds, AI labs, and colocation operators"** validating BE for AI-factory power (BE Q2 2026 call, Jul 28 2026).
+
+**Honest counterweights (Section 2.1 discipline) hold in the same breath:** (1) the **free-cash-flow guide was withdrawn** (BE aligned its supplemental deck to formal-guidance items; directional CFOA comfort $375M+ given, but the FCF line-item visibility was removed as capex/working-capital scale); (2) **customer concentration stays elevated and is now financier-intermediated + delivery-lumpy** — Q2 top-2 customers = 44% + 21% of revenue, and the CFO explicitly noted the named "customer" in concentration disclosures may be a *financier* (Brookfield/IDF) rather than the end hyperscaler; (3) the **exercised Oracle warrant is a contra-revenue headwind** (recognized as a reduction of revenue as Oracle Energy Servers are delivered); (4) a **~$37.4M IEEPA import-tariff recovery** ($5.0M refunded through Jun 30) partly flatters product margin. **Placement HELD** (`layer 4` + `energy_power_tier 2`): a record quarter reinforces the F7 Tier 2 BTM placement — per honest-verdict-trigger discipline (Section 2.1), a strong quarter is not itself a reframing trigger.
 
 **Key thesis-relevant findings:**
 
@@ -151,14 +157,56 @@ Per `CLAUDE.md` v9 Section 4.1 Multi-source ingests convention, separate tables 
 
 CFO Simon Edwards (Q1 2026 call, 0:22:54): *"Revenue for the quarter was $751.1 million, up 130.4% year-over-year. This is the first quarter of greater than 100% year-over-year growth in Bloom's history as a public company."*
 
-### FY2026 raised guidance (Q1 2026 call, April 28, 2026)
+### Q2 2026 quarterly (10-Q + earnings call, period ended June 30, 2026) — RECORD, first >$1B quarter
 
-| Metric | Prior range | Raised range | Growth |
+**Revenue composition (Q2 2026):**
+
+| Revenue category | Q2 2026 | % of total | YoY growth |
 |---|---|---|---|
-| Total revenue | $3.1B-$3.3B | $3.4B-$3.8B | +80% YoY at midpoint (raised from +60%) |
-| Non-GAAP gross margin | (FY2025 baseline 30%) | ~34% | +400 bps vs FY2025 |
+| Product | $935.4M | 87.8% | +215.4% (Q2 2025 $296.6M) |
+| Installation | $51.0M | 4.8% | +36.4% |
+| Service | $69.0M | 6.5% | +26.8% |
+| Electricity | $10.0M | 0.9% | −22.3% (from $12.8M) |
+| **Total** | **$1,065.4M** | 100% | **+166%** (Q2 2025 $401.2M) |
 
-KR Sridhar (Q1 2026 call, 0:16:41): *"We are raising 2026 revenue guidance of $3.1 billion-$3.3 billion to $3.4 billion-$3.8 billion. At the midpoint, that takes growth from 60% year-over-year to 80%."*
+(BE 10-Q Q2 2026; H1 2026 total revenue $1,816.4M, +150% vs H1 2025 $727.3M)
+
+**Operating metrics (Q2 2026):**
+
+| Metric | Q2 2026 | YoY / note |
+|---|---|---|
+| GAAP gross margin | 33.4% | gross profit $355.6M |
+| Non-GAAP gross margin | 34.3% | +604 bps YoY |
+| Product gross margin | 37.2% | +291 bps YoY / +193 bps QoQ |
+| Service margin | 22% | +977 bps YoY; 5th straight double-digit quarter |
+| GAAP operating income | $182.2M | from $(3.5)M loss Q2 2025 |
+| Non-GAAP operating income | $240M | +737% YoY; op margin 22.5% (+1,536 bps) |
+| Adjusted EBITDA | $253M | ~24% of revenue |
+| GAAP net income | $198.9M | vs $(42.2)M loss Q2 2025 |
+| GAAP diluted EPS | $0.62 | vs $(0.18); basic $0.68 |
+| Non-GAAP diluted EPS | $0.78 | — |
+| Cash flow from operations | $226M | +$439.5M YoY |
+| Free cash flow | $175M | — |
+| Cash | $2.7B | H1 capex only $77.8M ("factory ROI a few months") |
+
+(BE 10-Q Q2 2026; BE Q2 2026 earnings call July 28, 2026)
+
+CFO Simon Edwards (Q2 2026 call): *"Revenue was $1.065 billion, up 166% year-over-year and 42% sequentially. This was a record quarter for Bloom, and the first time we exceeded $1 billion in quarterly revenue... The increase in profitability reflects both higher volume and substantial operating leverage as the business scales."* Operating leverage framed as structural, not a one-quarter effect: *"Revenue grew 166%, while operating expenses grew just 48%."*
+
+**Profit-quality note (Section 2.1 honest framing).** BE's Q2 profitability is **operating-driven** — GAAP operating income $182.2M carries GAAP net income $198.9M with only modest net interest (interest income $20.9M / expense $8.9M). This is a materially cleaner profit than the vault's mark-flattered mega-caps this cycle ([[AMZN]] Q2 GAAP lifted ~$53B by an Anthropic-stake mark; [[MSFT]] FY2026 GAAP +$5.0B from an OpenAI-investment gain; [[INTC]] / [[GEV]] non-cash marks) — BE's earnings are the sold-hardware kind, not a revaluation artifact.
+
+### FY2026 raised guidance (Q2 2026 call, July 28, 2026 — raised twice off year-start)
+
+| Metric | Year-start | Q1 raise (Apr 28) | Q2 raise (Jul 28) | Growth |
+|---|---|---|---|---|
+| Total revenue | $3.1B-$3.3B | $3.4B-$3.8B | **$3.9B-$4.2B** | ~100% YoY at midpoint (over ~$2B 2025) |
+| Non-GAAP gross margin | 30% (FY2025) | ~34% | ~34% (held) | +400 bps vs FY2025 |
+| Non-GAAP operating income | $425M-$450M | — | **$800M-$900M** | ~21% op margin at midpoint |
+| Non-GAAP diluted EPS | — | — | **$2.55-$2.85** | — |
+
+CFO Simon Edwards (Q2 2026 call): *"On the strength of our year-to-date performance... we are raising our full-year revenue outlook to $3.9 billion-$4.2 billion. At the midpoint, that represents 100% growth over 2025 revenue of just over $2 billion."* On operating income: *"That is a material step-up from the $425 million-$450 million operating income guide at the beginning of the year, which represented a 14% margin at the midpoint. This is the operating leverage I described earlier, flowing directly through the model."*
+
+**★ Free-cash-flow guide WITHDRAWN (honest counterweight).** Responding to analyst Nick Amicucci (Evercore ISI), the CFO confirmed BE **pulled its formal FCF guide**, aligning the supplemental presentation to formal-guidance items only. Directional comfort was given — op income guide midpoint raised from $450M (with $200M CFOA) at year-start to ~$850M now, "100% of that [~$175M raise] dropping down to CFOA... think about $375M+ as being our new baseline [for CFOA]" — but the FCF line-item visibility was removed as capex/working-capital scale. BE holds $2.7B cash.
 
 ## Energy Server segment + revenue composition
 
@@ -233,6 +281,8 @@ This frames BE positioning as full grid-bypass (not transitional bridge-to-grid)
 
 Warrant terms: 6-month issuance window from agreement; customary anti-dilution; transfer restrictions; no voting rights / dividends. Notional value at strike: ~$400M (3,531,073 × $113.28).
 
+**★ Warrant now ISSUED + EXERCISED (Q2 2026 10-Q update).** Per the Q2 2026 10-Q, the Warrant was **issued April 9, 2026** (fully vested, immediately exercisable, classified as equity) and **exercised May 1, 2026** — a cashless exercise resulting in the **issuance of 1,905,433 shares** of common stock (Oracle elected a net-vs-gross settlement 1.4 million shares below gross). Critically, the warrant's fixed fair value is **accounted for as consideration payable to a customer's customer, recognized as a REDUCTION of revenue as the underlying Energy Server systems sold under the Oracle arrangement are delivered** — i.e., a **contra-revenue headwind** against reported Oracle-arrangement revenue, the real economic cost of the anchor hyperscaler relationship. The 10-K/10-Q section heading itself was reframed from "Oracle Warrant" to *"Commitment to Issue Share-Based Consideration Payable to Customer's Customer."*
+
 **Cross-vault Amazon warrant pattern check:** BE has **0 Amazon warrant disclosure** at primary sources. The Oracle warrant is structurally analogous (hyperscaler equity-aligned customer commitment) but does NOT extend the Amazon warrant pattern (count remains 4 — ALAB / AAOI / FN / FLEX). Worth observing as **emerging hyperscaler-warrant cross-vault pattern**: Amazon warrant pattern + Oracle warrant (BE) = potential broader hyperscaler-warrant codification candidate post-additional ingests.
 
 ## Customer concentration disclosure (HONEST-VERDICT CORRECTION)
@@ -252,6 +302,15 @@ Warrant terms: 6-month issuance window from agreement; customary anti-dilution; 
 | #3 | 12% | Unnamed | Generic large customer |
 | Oracle | **<12%** (absent from top-3) | Named hyperscaler customer | Emerging exposure (not concentration risk) |
 
+**Q2 2026 evolution (the FY2025 honest-verdict correction EVOLVES, does not overturn).** The Q2 2026 10-Q discloses **two customers = 44% and 21% of total revenue, the second of which is the related party** (SK ecoplant). So the concentration mix shifted materially vs FY2025: the related party fell from **#1 at 43% (FY2025) to #2 at 21% (Q2 2026)**, and a **new non-related-party customer emerged at #1 (44%)**. Accounts-receivable concentration eased in parallel: 36% / 34% / 17% at Jun 30 2026 (third is related party) vs 41% / 17% / 15% at Dec 31 2025.
+
+| Period | #1 | #2 | #3 | Related-party rank |
+|---|---|---|---|---|
+| FY2025 (revenue) | 43% (related) | 13% | 12% | #1 |
+| Q2 2026 (revenue) | **44% (non-related)** | **21% (related)** | — | #2 |
+
+**Two honest-verdict qualifiers on the Q2 read (CFO Simon Edwards, Q2 2026 call):** (1) **The named "customer" may be a financier, not the end user.** BE deals typically route through a financier (Brookfield / IDF) that buys the systems from Bloom, owns them, and delivers to the end customer — so *"when you see the word customer in our filings, it can mean either party, the financier that buys from us and appears in our revenue and concentration disclosures, or the end customer whose demand created the deal."* The 44% #1 is therefore attribution-ambiguous (financier vs hyperscaler). (2) **Single-quarter concentration is delivery-timing lumpiness, not backlog composition** — *"large campus deliveries are lumpy. One or two customers could lead our revenue in any given quarter... That concentration reflects delivery timing, not the composition of our backlog. The backlog spans multiple hyperscalers, neoclouds, colocation providers, and commercial and industrial operators."* Net: related-party concentration eased and the base diversified (all major US hyperscalers now validated), but concentration stays elevated (top-2 = 65%) and is now harder to attribute cleanly.
+
 **Honest-verdict reframing:**
 
 Oracle is **emerging hyperscaler customer with major recent commitment** (Project Jupiter MSA April 27, 2026; warrant Oct 2025) — NOT concentration risk per Tier 3 framing. Oracle exposure is **diversification away from related-party concentration** toward AI datacenter base.
@@ -269,6 +328,12 @@ This implies data center backlog is **already diversified beyond Oracle** at the
 **Open question:** Does FY2026 disclosure show SK ecoplant concentration declining as Oracle / other hyperscalers ramp? Tracking SK ecoplant share trajectory is the operational signal for whether BE diversifies the related-party concentration. Pre-registered for future BE refresh ingest.
 
 ## Brookfield AI infrastructure fund framework
+
+### Q2 2026 update — financing shelf exploded (Brookfield 5× to $25B; NEW IDF $2.6B) + the financier-intermediated deal model
+
+**★ Brookfield expanded its commitment fivefold, $5B → $25B** (June 2026), and BE added a **second major financing channel: Industrial Development Funding (IDF), partnered with Oaktree, MUFG Bank, and Morgan Stanley, cumulatively ~$2.6B** (BE Q2 2026 call). KR Sridhar: *"We formed the partnership last fall at $5 billion. Nine months later, in June, Brookfield expanded its commitment fivefold to $25 billion... Gigawatt demand needs gigadollars of capital. We arranged that in advance."* The IDF partnership *"was a meaningful contributor to the quarter"* — mechanically the standard structure, with **[[NBIS]] (Nebius) signing the offtake and IDF purchasing the energy service on cash terms** against identified sites and delivery schedules.
+
+**The financier-intermediated deal model (CFO Simon Edwards, Q2 2026 call — connects to [[AI-buildout-who-holds-the-risk]]).** Every Bloom deal starts with a contract with the *end* customer (the party using the power), in one of two forms: (a) the customer **buys the equipment outright** (a CapEx sale), or (b) the customer **contracts for power/capacity without owning the equipment** (a PPA priced per kWh, a capacity agreement, or an equipment lease). Because most customers choose to pay over time, BE brings in a **financier (Brookfield / IDF) that purchases the energy service from Bloom, owns the systems, and delivers to the end customer** under BE's originated contract. Consequently the financier — not always the end hyperscaler — is who *"appears in our revenue and concentration disclosures,"* and on a project delay *"ultimately, the financier is on the hook to take delivery of the equipment from Bloom."* This shifts deployment/counterparty risk onto the financier and makes BE's growth partly a function of the pace of third-party capital deployment (*"the shelf is now available. The pace at which it will get used up is going to depend on the uptake of those funds"*).
 
 **Strategic partnership announced August 2025** (BE 10-K FY2025 Item 1):
 
@@ -326,6 +391,10 @@ Translates to ~400-500 MW/quarter incremental additions → ~1.6-2 GW/year incre
 
 **Capex guidance NOT disclosed** at extracted primary-source level. CFO Simon Edwards (Q1 2026 call, 0:25:46) references inventory/working capital investments but does not quantify FY2026 capex. **Open question for future BE refresh ingest.**
 
+**★ Q2 2026 update — capex-light manufacturing confirmed.** H1 2026 purchases of property, plant & equipment were only **$77.8M** (vs $21.5M H1 2025) against $1.8B H1 revenue — a strikingly asset-light ramp. KR Sridhar framed the factory economics as *"the return on investment is a few months... This is not your industrial-age power company. We are relying on the technologies that made consumer electronics and semiconductor devices... From our perspective, for us to expand capacity, the return on investment is going to be a few months, and we'll keep adding capacity as long as the demand is there."* Continuous copy-exact capacity addition continues; capacity is explicitly *not* the constraint.
+
+**★ Scandium supply — "not dependent on China" (Q2 2026 call + 8-K).** Responding to David Arcaro (Morgan Stanley) on scandium (a solid-oxide fuel-cell input), Sridhar pointed to a filed 8-K + blog and three takeaways: *"There is enough scandium on the planet that can be recovered economically viably to power the planet... We have visibility currently based on what we are working for 25 GW of deployments. We are not dependent on China."* Broader supply-chain framing: *"No single supplier and no single country determines our destiny, and every part of our supply chain is prepared to scale with our growth."* → [[china-exposure]] datapoint (materials de-risking; a watch item, not yet independently verified).
+
 ## Natural gas feedstock economics
 
 Solid-oxide fuel cell technology is natural-gas-fired (with hydrogen capability under electrolyzer business). Natural gas feedstock economics are **NOT directly addressed** in extracted primary-source content beyond cost-competitiveness claim.
@@ -357,6 +426,8 @@ This is canonical "100% Bloom islanded microgrid" architecture — BE positions 
 
 The market shift from "BTM-as-bridge-to-grid" to "BTM-as-primary-architecture" framing is the **BTM bifurcation discipline** signal at primary-source level — informs Caveat #6 refinement OR new Caveat #10 codification candidate (see BTM bifurcation framework decision section above).
 
+**★ Q2 2026 — Modality-migration evidence at a named customer + dominant DC market share.** BE reported that customers **cancel combustion-turbine and reciprocating-engine orders to choose Bloom**, naming **[[NBIS]] (Nebius) as doing exactly that this quarter** (KR Sridhar, Q2 2026 call): *"Customers who had ordered combustion turbines and reciprocating engines cancel those orders and choose Bloom. Nebius did it this quarter."* This is the strongest primary substantiation to date of the [[BTM-grid-bypass-workaround]] lead-time-asymmetry framework — a **Modality 4 ([[CAT]] reciprocating engine / aero-derivative gas turbine) → Modality 1 (BE solid-oxide fuel cell) migration at a named vault neocloud**, converting the "value migrates to the fastest BTM technology base" prediction into a named datapoint. On share, Sridhar put BE *"in the very high 90s in terms of our market share"* within the data-center fuel-cell space, and reframed the choice away from LCOE toward *"total cost to token"* (in-city inference power where *"you cannot put a gas turbine in the middle of Manhattan"*; 800V DC native). He welcomed competition rather than dismissing it (*"competition makes us hungrier... I welcome competition from anybody and everybody"*) — founder-evangelistic, not combative (CEO-combativeness count unchanged).
+
 **Cross-vault competitive positioning context:**
 
 | Vault entity | Layer | F7 Tier | Sub-domain | Competitive positioning vs BE |
@@ -371,7 +442,7 @@ The market shift from "BTM-as-bridge-to-grid" to "BTM-as-primary-architecture" f
 
 **Post-Session 47 cross-vault BTM grid-bypass workaround chokepoint terrain:** [[FCEL]] (Layer 4 / energy_power_tier 4; second canonical Tier 4 placement post-ENS S45) is the MCFC alternative at BTM grid-bypass workaround chokepoint terrain — distinct molten carbonate technology stack vs BE solid oxide fuel cell technology; substantial commercial scale gap (BE Q1 2026 $751M vs FCEL Q1 FY2026 $30.5M ≈ 1:25 ratio); BE Aschenbrenner thesis substantiated vs FCEL Aschenbrenner thesis pending per primer S39 narrative-outrunning-proof framing. **Bilateral mutual non-naming pattern persists** — BE primary sources do NOT name FCEL as competitor; verification at FCEL-side per [[FCEL]] Session 47 canonical confirms structural co-positioning at BTM grid-bypass workaround chokepoint terrain without explicit competitive naming.
 
-**Post-Session 56 cross-vault BTM grid-bypass workaround thesis 4-participant pattern at canonical scope:** [[BE]] (S40; solid oxide fuel cell BTM; energy_power_tier 2) + [[FCEL]] (S47; molten carbonate fuel cell BTM; energy_power_tier 4) + [[GEV]] (S37; utility-scale gas turbine generation; energy_power_tier 3) + [[CAT]] (S56; reciprocating engine + Solar Turbines aero-derivative gas turbine BTM; energy_power_tier 4) = **4-participant cross-vault BTM grid-bypass workaround thesis pattern at canonical scope**. Section 3.15 Pathway 2 canonical-from-first-creation threshold met per [[HALEU-fuel-chokepoint]] S44 precedent at 4-substantiating-sources threshold. Future `BTM-grid-bypass-workaround.md` chokepoint page synthesis priority S57+ candidate; CAT Aschenbrenner thesis substantively corroborated at primary per ProPower 2.1 GW agreement + 6 ≥1 GW prime power agreements + reciprocating engine capacity expansion 2x → ~3x 2024 levels.
+**Post-Session 56 cross-vault BTM grid-bypass workaround thesis 4-participant pattern at canonical scope:** BE (S40; solid oxide fuel cell BTM; energy_power_tier 2) + [[FCEL]] (S47; molten carbonate fuel cell BTM; energy_power_tier 4) + [[GEV]] (S37; utility-scale gas turbine generation; energy_power_tier 3) + [[CAT]] (S56; reciprocating engine + Solar Turbines aero-derivative gas turbine BTM; energy_power_tier 4) = **4-participant cross-vault BTM grid-bypass workaround thesis pattern at canonical scope**. Section 3.15 Pathway 2 canonical-from-first-creation threshold met per [[HALEU-fuel-chokepoint]] S44 precedent at 4-substantiating-sources threshold. Future `BTM-grid-bypass-workaround.md` chokepoint page synthesis priority S57+ candidate; CAT Aschenbrenner thesis substantively corroborated at primary per ProPower 2.1 GW agreement + 6 ≥1 GW prime power agreements + reciprocating engine capacity expansion 2x → ~3x 2024 levels.
 
 **Post-Session 57 BTM chokepoint canonical synthesis ([[BTM-grid-bypass-workaround]]):** 4-participant cross-vault BTM grid-bypass workaround thesis pattern formalized at canonical analytical product scope via competing-technology-base chokepoint page synthesis (Pathway 2 canonical-from-first-creation pathway per CLAUDE.md v9 Section 3.15; first competing-technology-base chokepoint scope post-[[HALEU-fuel-chokepoint]] S44 sequential-dependency-chain precedent). BE positioned as solid oxide fuel cell BTM Modality 1 within 4-modality framework (BE SOFC + [[FCEL]] MCFC + [[GEV]] utility-scale gas turbine + [[CAT]] reciprocating engine + Solar Turbines aero-derivative gas turbine BTM). BE ~90-day deployment lead time per Tier 3 source positions as fastest BTM technology base — wins at immediate <1 year deployment urgency tier per chokepoint page modality framework synthesis. BE refresh propagation candidate per chokepoint page Open question #2.
 
@@ -484,20 +555,30 @@ Kickoff hypothesis: **KR Sridhar (founder-CEO) is candidate for third combativen
 
 ## Open questions
 
-1. **SK ecoplant FY2026 trajectory.** Does 43% related-party concentration decline as Oracle / other hyperscalers ramp? Forward-looking concentration trajectory at next BE refresh.
-2. **Project Jupiter delivery timeline.** Revenue recognition cadence (2026 / 2027 / 2028+); milestone-based vs lump-sum recognition; "up to 2.45 GW" contracted vs optional capacity segmentation.
-3. **Oracle MSA "1.2 GW already contracted vs 1.6 GW MSA expansion" segmentation** (Tier 3 framing; not substantiated at primary). Does future disclosure surface segmentation?
-4. **Brookfield framework deployment trajectory.** Total capital commitment to Fund JVs; expected project count / GW pipeline; revenue contribution timing per fiscal year; exclusivity provisions impact on go-to-market.
-5. **AEP 1 GW phase-2+ timeline.** Initial 100 MW order delivery; expansion phase commitments and timing.
-6. **Hyperscaler diversification beyond Oracle.** "Other hyperscalers, neoclouds, co-location providers" referenced generically — which specific named customers (Microsoft / Amazon / Meta / Google) develop direct exposure? Future BE refresh verification target.
-7. **Manufacturing capex guidance.** FY2026 capex specification (not disclosed at primary); 5 GW/year target capex requirement; copy-exact model unit economics.
-8. **Natural gas pass-through mechanisms.** MSA / supply agreement gas-price escalators; hyperscaler willingness-to-pay under sustained gas price spike; gas-tied vs grid-tied LCOE durability.
-9. **Geographic concentration of backlog.** ERCOT / California / MISO regional concentration of grid-constrained customer base; geographic diversification trajectory.
-10. **Backlog quality / aggregate backlog disclosure.** Future ingest may surface aggregate backlog $ figure; primary-source approach (KR de-emphasis) vs investor-community demand for visibility metric.
-11. **Service revenue trajectory.** Layer 5 upgrade-trigger candidate — does service revenue scale to >30% of total or grow >50% YoY in coming quarters?
-12. **NVDA / cross-vault hyperscaler partnerships.** Future NVDA refresh ingest may surface BE-NVDA cross-references not present at Session 40 primary sources.
+*(S198 §3.19b lifecycle: OQ1 SK-ecoplant-trajectory RESOLVED [related party fell #1/43% → #2/21%], OQ4 Brookfield-trajectory largely resolved [$5B→$25B, 5×; +IDF $2.6B], and OQ6 hyperscaler-diversification RESOLVED [all major US hyperscalers + a dozen-plus neoclouds validated; Nebius named] — dispositions in the S198 change-log entry. Remainder renumbered; two NEW questions added.)*
+
+1. **Project Jupiter / Oracle delivery cadence.** Warrant exercised May 1 2026 + first deployment in 55 days confirm the relationship is live, but revenue-recognition cadence across 2026/2027/2028 remains undisclosed; large-campus deliveries are explicitly lumpy. Trigger: a milestone/GW-delivered disclosure at a future refresh.
+2. **Oracle MSA capacity segmentation** ("2.45 GW contracted vs optional" — Tier 3 "1.2 vs 1.6 GW" framing still not substantiated at primary). Does future disclosure surface segmentation?
+3. **Brookfield / IDF deployment PACE + per-project economics.** The shelves are now sized ($25B Brookfield + ~$2.6B IDF), but revenue timing depends on uptake (*"the pace... depends on the uptake of those funds"*); the two-tier AI Fund economics (passive equity, put rights, exclusivity) remain opaque. Trigger: capital-deployed / project-count disclosure.
+4. **AEP 1 GW phase-2+ timeline.** Initial 100 MW order delivery; expansion-phase commitments and timing (not addressed at Q2).
+5. **Manufacturing capex.** H1 2026 capex was $77.8M with "ROI a few months" framing, but no formal FY2026 capex number is guided. Trigger: an explicit capex guide or a 5 GW/year build-out cost.
+6. **Natural gas pass-through mechanisms.** MSA / supply-agreement gas-price escalators; willingness-to-pay under sustained gas spikes; gas-tied vs grid-tied LCOE durability (not addressed at Q2).
+7. **Geographic concentration of backlog.** ERCOT / California / MISO regional concentration of the grid-constrained customer base; diversification trajectory.
+8. **Aggregate backlog disclosure.** Q2 confirms backlog now grows *faster* than revenue (longer-term orders), but BE still discloses no aggregate backlog $ figure (KR de-emphasis). Does future disclosure surface a visibility metric?
+9. **Service-revenue Layer-5 trigger (per Caveat #9).** Service margin reached 22% (5th straight double-digit quarter), but service *revenue share* is still ~6.5% (<< the 30% upgrade trigger) and electricity revenue FELL to 0.9% — Layer 4 firmly held; the PPA economics sit on the financier's books, not BE's. Does service revenue ever scale to >30% or grow >50% YoY?
+10. **NEW — FCF-guide reinstatement + trajectory.** BE withdrew its formal FCF guide at Q2 (directional CFOA $375M+ baseline given). Does BE reinstate FCF guidance, and how does free cash flow track as capex/working-capital scale against the $3.9–4.2B revenue ramp? (Amicucci flagged it; $2.7B cash cushions.)
+11. **NEW — financier-vs-end-customer concentration attribution.** The named "customer" in concentration disclosures may be a *financier* (Brookfield/IDF) rather than the end hyperscaler (CFO-flagged). Does future disclosure disentangle financier-intermediated vs end-customer concentration, and how much of the 44% Q2 #1 is a financing counterparty?
+12. **NVDA / cross-vault hyperscaler partnerships.** BTM chokepoint documents the NVIDIA-partnership-pattern absence; a future NVDA refresh may surface BE-NVDA cross-references not present through Q2 2026.
 
 ## Source audit notes
+
+### BE Q2 2026 call (Tier 2, July 28, 2026) — S198 refresh
+
+Most strategically substantive S198 source (CEO K.R. Sridhar Founder/Chairman/CEO + CFO Simon Edwards, second call as CFO). Key S198 disclosures: record >$1B quarter (rev $1,065.4M/+166%); guidance raised twice (rev $3.9–4.2B / non-GAAP OI $800–900M / EPS $2.55–2.85); **FCF guide WITHDRAWN** (aligned to formal-guidance items; CFOA $375M+ baseline given); Brookfield $5B→$25B + new IDF/Oaktree/MUFG/Morgan Stanley $2.6B; the financier-intermediated deal model (financier owns systems, appears in concentration disclosures); **Nebius cancels turbine/reciprocating-engine orders for Bloom**; "all major US hyperscalers validated"; scandium "not dependent on China" (8-K); "very high 90s" DC market share. **CEO/CFO structure UNCHANGED** (no leadership change — NVTS lesson applied, not re-flagged). **CEO-combativeness UNCHANGED at 2** — Sridhar founder-evangelistic, welcomes competition, mildly dismissive of LCOE framing but not defensive toward analysts. §3.4 framing-gap pattern recurs (call-only non-GAAP/guidance/market-share detail vs the 10-Q) — already at codification trigger; recurrence noted in log/ledger, not re-tallied here (§3.8 telemetry-relocation).
+
+### BE 10-Q Q2 2026 (Tier 1, period ended June 30, 2026) — S198 refresh
+
+Quarterly filing. Record Q2 revenue $1,065.4M (+166% YoY); GAAP operating income $182.2M (from $(3.5)M loss); GAAP net income $198.9M / GAAP diluted EPS $0.62 — **operating-driven profit, no equity-mark artifact** (clean vs the AMZN/MSFT mark pattern). Concentration flipped: Q2 two customers 44% (non-related) + 21% (related party, down from #1/43% at FY2025). **Oracle warrant issued Apr 9 / exercised May 1 → 1,905,433 shares, recognized as contra-revenue** ("consideration payable to a customer's customer"). H1 OCF $300M; H1 capex $77.8M. **IEEPA import-tariff recovery** — $37.4M recoverable, $5.0M refunded through Jun 30 (margin tailwind; TDY-S196 tariff-refund parallel). Still no aggregate backlog $ disclosed.
 
 ### BE 10-K FY2025 (Tier 1, fiscal year ended December 31, 2025)
 
@@ -560,6 +641,7 @@ Most strategically substantive source for Session 40. Full Q&A engagement with m
 
 ## Change log
 
+- **2026-08-04 (Session 198 — FIRST TRUE PRIMARY REFRESH):** Refreshed FY2025 + Q1 2026 baseline → **Q2 2026** (10-Q period ended Jun 30 2026 + Jul 28 2026 call). Added Q2 financial-snapshot table + twice-raised FY2026 guidance ($3.9–4.2B / non-GAAP OI $800–900M / EPS $2.55–2.85); §3.19 window = FY2025 + Q1 + Q2 kept full, no third-refresh compaction (1st true refresh). Honest verdict: BTM thesis MATERIALIZED at scale (record first >$1B quarter, GAAP-profitable + operating-driven, all major US hyperscalers validated, Brookfield 5×→$25B + new IDF $2.6B, Nebius cancels turbines for Bloom) vs counterweights (FCF guide pulled; concentration flipped to 44%+21% and financier-intermediated; Oracle warrant exercised → contra-revenue; ~$37M IEEPA tariff recovery). **Placement HELD** (`layer 4` + `energy_power_tier 2`; electricity revenue fell to 0.9% → Layer 4 reinforced). **OQ dispositions:** OQ1 SK-ecoplant-trajectory RESOLVED (related party #1/43% → #2/21%); OQ4 Brookfield-trajectory largely resolved ($25B/5× + IDF $2.6B); OQ6 hyperscaler-diversification RESOLVED (all major validated + Nebius named); remainder renumbered, +2 NEW (FCF-guide reinstatement; financier-vs-end-customer attribution). CEO/CFO unchanged (Sridhar/Edwards); combativeness unchanged (2). Propagation: substantive [[BTM-grid-bypass-workaround]] (Modality 1 + Nebius migration; OQ#2 resolved); light [[forward-edge-tracker]] + [[what-could-go-wrong]] Entry 4 + [[china-exposure]]; no-op [[ORCL]]/[[NBIS]]/peers (refresh doesn't edit peers). `refresh_log` S198; 10-Q `mv`→raw/filings/BE/.
 - **2026-05-26 (in-place cross-vault adjacency note per Vic instruction; not counted as separate session):** 4-Tier-3-report power-semi sub-domain substantiation (`raw/research/power-semis-investment-research.md` + `pure-play-power-semis.md` + `800VHDC-power-semis-for-AIDC.md` + `power-semi-for-800v-AIDC.md`) flagged "energy storage integrated directly into 800VDC path" as catalyst per Tier 3 Report 4 best-catalysts-to-monitor framing. BE BTM grid-bypass workaround SOFC fuel-cell technology stack carries DC-native energy generation profile structurally adjacent to 800VDC architecture transition substrate per [[power-semis]] theme Section 12.4 upstream hyperscaler-capex-concentration framing. No content edits beyond cross-reference addition per scope discipline; cross-vault adjacency to [[power-semis]] theme scope strengthening only.
 - **2026-05-10 (Session 47 cross-reference update):** Added [[FCEL]] cross-reference in Competitive positioning section per Session 47 second canonical Energy/Power Tier 4 placement (FuelCell Energy MCFC technology stack; BTM grid-bypass workaround chokepoint terrain). Light cross-reference per Vic Stop 1 Option A — FCEL as MCFC alternative competitor at BTM workaround chokepoint terrain; bilateral mutual non-naming pattern documented (BE primary sources do not name FCEL; FCEL primary sources do not name BE per S47 canonical placement). Substantial commercial scale gap (1:25 ratio favoring BE); BE Aschenbrenner thesis substantiated vs FCEL Aschenbrenner thesis pending per primer S39 narrative-outrunning-proof framing. No content edits beyond cross-reference addition per scope discipline. Comprehensive BE refresh deferred to Session 48+.
 - **2026-05-02 (Session 44 cross-reference update):** Added [[HALEU-fuel-chokepoint]] cross-reference in BTM grid-bypass thesis substantiation section per Session 44 first canonical-from-first-creation chokepoint page creation (`CLAUDE.md` v9 Section 3.15 multi-source threshold satisfied at first-creation; provisional stage skipped). [[HALEU-fuel-chokepoint]] anchors the HALEU fuel chain workaround variant of Aschenbrenner thesis; BE BTM grid-bypass workaround is parallel domain variant (not co-located). Three-domain Aschenbrenner thesis cross-vault substantiation table at [[HALEU-fuel-chokepoint]] surfaces BE as canonical BTM workaround representative. No content edits beyond cross-reference addition per scope discipline.

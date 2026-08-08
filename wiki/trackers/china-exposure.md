@@ -1,7 +1,7 @@
 ---
 type: tracker
 tickers: [TSM, NVDA, AVGO, AMD, MRVL, ALAB, MU, ARM, INTC, AAOI, AXTI, LITE, COHR, CRDO, ONTO, COHU, VECO, PLAB, TSEM, MKSI, MPWR, NVTS, POWI, ON, QCOM, SOI, SNDK, FN, GLW, FLEX, VICR, NOK, ENS, XFAB, AEHR, MOD, MP, TDY, AMPX, AVAV, LSCC, KTOS, MRCY, INOD, NOVT, VPG, OUST, SANHUA, TUOPU, SHUANGHUAN, ZHONGDA, SLING, ZHAOWEI, HENGLI]
-last_updated: 2026-07-08
+last_updated: 2026-08-04
 ---
 
 # China & Taiwan exposure — the vault's geopolitical-concentration map
@@ -57,13 +57,13 @@ A name can sit on several at once. The most important analytical move on this pa
 | [[NOK]] | B, H | **Low-Med** | Greater China ~7,200 of ~50,200 employees |
 | [[COHU]] | A | **Low** | China ~11%; handler equipment likely below control thresholds |
 | [[MPWR]] | C | **Low** | Fabless on TSMC + UMC |
-| [[NVTS]] | B, C | **Low** | GaN for Taiwan customers; China-competition risk-factor |
+| [[NVTS]] | B, C | **Low** | Fabless, foundry base diversifying OFF Taiwan (Q2 2026): GaN GlobalFoundries US 8-inch + SiC X-Fab (US/EU) + **new Magnachip S-Korea 2nd SiC source**; no China revenue; China-competition risk-factor only |
 | [[FN]] | C, H | **Low** | Raytec (Taiwan) 14% stake; Thailand expansion |
 | [[GLW]] | A, H | **Low** | China fiber manufacturing; ~60% non-US revenue |
 | [[FLEX]] | A, B | **Low** | China ~17% (geography/sourcing, not end-demand) |
 | [[VICR]] | A | **Low** | China revenue *declining* 17.7%→11.9% (incl. Hong Kong) |
 | [[ENS]] | B, D | **Low** | "~99% of LFP constituent materials in/owned by China"; Asian supply chains; tariff mitigation |
-| [[AEHR]] | C | **Low** | TSMC CoWoS test/burn-in dependency |
+| [[AEHR]] | C | **Low** | Taiwan-CM test/burn-in dependency (deepening — new Hsinchu office; top-tier AI customer piloting at its Taiwan CM); US now 41% of FY2026 revenue (Asia 46%); offensive China IP litigation vs SEMI/NEXUSTEST (2 Chinese patents upheld Q4 FY2026) |
 | [[MOD]] | B, C | **Low** | Section 232 aluminum tariffs |
 | [[XFAB]] | H | **Low** | European-sovereignty SiPh (Ligentec / photonixFAB) — the *anti-China* hedge inside the photonics cluster |
 | [[NOVT]] | A, B | **Low** | China **9.5%** of FY2025 revenue — a *growth* region for NOVT (semiconductor + industrial apps) + a Suzhou manufacturing site (1 of 20+); diversified precision-tech, the AI-datacenter-equipment name |
@@ -82,7 +82,7 @@ A name can sit on several at once. The most important analytical move on this pa
 | Name | Axes | Mag | Evidence (see company page) |
 |---|---|---|---|
 | [[MP]] | A,B,E,F,H | **High** | Only scaled US rare-earth producer; China ~85–90% magnets / ~91% refining / ~100% equipment (Tier-3); **ceased China sales July 2025**; JL MAG ≈ all non-China output. *Reshoring inverse-exposure — escalation helps it.* |
-| [[TDY]] | A,B,E,F,G,H | **High** | China rare-earth + permanent-magnet + **germanium + gallium** restrictions "have in the past delayed" Digital Imaging + A&D; the chokepoint-consumer paradox (owns EO/IR, squeezed upstream) |
+| [[TDY]] | A,B,E,F,G,H | **High** | China rare-earth + permanent-magnet + **germanium + gallium** restrictions "have in the past delayed" Digital Imaging + A&D; the chokepoint-consumer paradox (owns EO/IR, squeezed upstream). **Q2 FY2026: not biting** (record quarter); a ~$10M tariff-**refund** was a Q2 margin benefit (trade running Teledyne's way) |
 | [[LSCC]] | A,C,D,E | **High** | **64% Greater China revenue** (a "trusted-defense" name that is majority-China-revenue); fabless on TSMC/Samsung/UMC; June-2027 additional Section 301 tariff |
 | [[MRCY]] | (none-direct) | **Low** | The **trusted-domestic inverse of LSCC** at the secure-microelectronics node — DMEA-certified onshore trusted manufacturing; no disclosed TSMC/China dependence (tariff risk only); a *reshoring beneficiary*, not an exposure |
 | [[AMPX]] | A,B,E,H | **High** | Battery materials "**sourced primarily from China**"; silicon-anode IP from **Berzelius (Nanjing)**; China lithium-battery export controls suspended to **Nov 2026**; China subsidiary + $21M China order |
@@ -124,7 +124,7 @@ A name can sit on several at once. The most important analytical move on this pa
 
 Honest-verdict: **not everything is China-exposed**, and naming what *isn't* is itself a finding — these are the natural hedge against the correlated cluster above. With no material China/Taiwan revenue, sourcing, fab, or export-control exposure at primary sources:
 - **Software / cloud / demand-side:** [[MSFT]], [[NOW]], [[PLTR]], [[GOOGL]], [[META]], [[ORCL]], [[NBIS]], [[CRWV]] (and the broader software-moat names CRM / SNOW / WDAY / DDOG / PANW etc. per [[software-AI-moat-durability]]).
-- **Domestic energy / nuclear:** [[BE]], [[CCJ]], [[CEG]], [[FCEL]], [[LEU]], [[FLNC]].
+- **Domestic energy / nuclear:** [[BE]], [[CCJ]], [[CEG]], [[FCEL]], [[LEU]], [[FLNC]]. *([[BE]] gained a specific primary confirmation at Q2 2026 (S198): responding to a scandium-supply question, management filed an 8-K + blog stating scandium is "not dependent on China" — enough recoverable economically for "25 GW of deployments" — with broader framing that "no single supplier and no single country determines our destiny." A materials-input de-risking datapoint, not yet independently verified.)*
 - **Diversified / US-centric industrials & optics:** [[VRT]], [[VIAV]].
 - **Generic-tariff-only (not China-specific):** [[AAON]], [[ANET]], [[BWXT]], [[CAT]], [[ETN]], [[GEV]] disclose tariff risk but no China-specific revenue/sourcing/fab dependence; [[CSCO]] names Huawei as a competitor only.
 - **AI-data services (offshore-but-not-China):** [[INOD]] — global delivery is principally India / Sri Lanka / Philippines (12,200 professionals across 70+ countries); the Hong Kong subsidiary is treasury, not operations; no China revenue, sourcing, fab, or export-control exposure (the AI-data-supplier name, see [[AI-data-supply-chain]]). A reminder that "offshore" ≠ "China."
@@ -145,6 +145,10 @@ Cross-cutting synthesis; no new primary source ingested at creation. The **corre
 
 ## Change log
 
+- **2026-08-04 (S198 — [[BE]] Q2 2026 refresh propagation; light):** Added a specific primary confirmation to [[BE]] in the minimal-exposure set (Domestic energy / nuclear) — management filed an 8-K + blog stating scandium supply is "not dependent on China" (enough recoverable for "25 GW of deployments"; "no single supplier and no single country determines our destiny"). A materials-input de-risking datapoint (unverified). Prose note only; BE stays prose-only (not added to `tickers`, consistent with the other minimal-exposure hedge names). last_updated 2026-07-29 → 2026-08-04.
+- **2026-07-29 (S196 — [[TDY]] Q2 FY2026 refresh propagation; light):** Refreshed the [[TDY]] row note (rating **High** held) — the China rare-earth squeeze **did not bite Q2** (record quarter); a ~$10M tariff-**refund** was a Q2 margin benefit (trade running Teledyne's way). Row-note update only; last_updated already 2026-07-29.
+- **2026-07-29 (S195 — [[AEHR]] FY2026 refresh propagation; light):** Refreshed the [[AEHR]] row note (rating **Low** held) — Taiwan-CM test/burn-in dependency deepening (new Hsinchu office; top-tier AI customer piloting at its Taiwan CM); US now 41% of FY2026 revenue (Asia 46%); offensive China IP litigation vs SEMI/NEXUSTEST (2 Chinese patents upheld Q4 FY2026). Row-note update only; last_updated already 2026-07-29.
+- **2026-07-29 (S194 — [[NVTS]] Q2 2026 refresh propagation; light):** Refreshed the [[NVTS]] row evidence — the fabless foundry base is diversifying *off* Taiwan (GaN GlobalFoundries US 8-inch + SiC X-Fab US/EU + **new Magnachip S-Korea 2nd SiC source**, a related-party deal); rating **held Low** (no China revenue; China-competition is risk-factor language only). Row-note update only; `last_updated` 2026-07-08 → 2026-07-29.
 - **2026-06-24 (S171 — [[CRDO]] FY2026 refresh propagation):** Updated the [[CRDO]] row for the FY2026 10-K — **Hong Kong revenue 56%→28%, assets 43%→2%** (sharp de-concentration as US-hyperscaler AEC revenue ramped; revenue now 58% North America by destination) + the new US-outbound-investment-in-China risk factor; updated the axis-(A) list figure. Rating held **Med** (28% HK billing + the new outbound rule still meaningful). last_updated 2026-06-17 → 2026-06-24.
 - **2026-06-19 (S168 — [[IBIDEN]] now a vault page):** Resolved plain-text "Ibiden" → [[IBIDEN]] in the bifurcated-geography note and added that [[IBIDEN]] (TSE/NSE 4062, the FCBGA-substrate leader) is now a vault company page and directly reachable — the first durable Japanese material/substrate node held directly (still not US-listed). No matrix row (Japan-domiciled = the durable-node counter-pole, not a China-exposure axis entry). `last_updated` unchanged.
 - **2026-06-17 (S166 — added the PCB/interconnect-substrate cohort):** Added a Cross-cutting-payoff note for the new [[pcb-interconnect-substrate-chokepoint]] — the clean bifurcated-geography case (board fab = China-heavy: WUS Kunshan/Shennan/Victory Giant, reachable via HK proxies; durable materials = Japan-concentrated: Nittobo/Ajinomoto/Resonac/Ibiden), with opposite-direction export-control exposure and no US-listed pure-play for the Japanese material nodes (only enabler touchpoints [[MKSI]]/[[NOVT]]/[[ONTO]]). No new matrix rows (the board/material principals are non-vault; the vault-adjacent enablers were already in `tickers`). last_updated 2026-06-08 → 2026-06-17.

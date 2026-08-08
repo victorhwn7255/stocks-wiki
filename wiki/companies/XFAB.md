@@ -7,7 +7,7 @@ energy_power_tier: 4
 equipment_tier: outside
 materials_tier: outside
 foreign_issuer: true
-last_updated: 2026-05-28
+last_updated: 2026-07-28
 ---
 
 # XFAB — X-FAB Silicon Foundries SE
@@ -79,6 +79,8 @@ This sits in tension with the Layer 2 incumbency framing in Thesis role and shou
 
 **Navitas named customer — A1 reciprocal-confirmation (Section 3.5).** Damien Macq named Navitas as a publicly known SiC customer of XFAB on the Q1 2026 call. This is **reciprocally confirmed** in [[NVTS]] primary sources: the Navitas FY2025 10-K Item 1 names "X-Fab (SiC; US-based with Texas operations)" as its SiC foundry partner (per S92 NVTS canonical). Annotated per Section 3.5: named in XFAB Q1 2026 earnings call (counterparty); reciprocally confirmed in [[NVTS]] 10-K Item 1 fabless-foundry partner disclosure. First reciprocal-confirmation A1 instance at a first-ingest baseline.
 
+**★ Update from the [[NVTS]] Q2 2026 refresh (S194) — demand-positive but now dual-sourced.** Two developments cut in opposite directions for XFAB's SiC book: **(+)** Navitas's SiC business is *accelerating* ("particular acceleration in SiC" in Q2 2026; the AI-infrastructure pivot is the driver) — a demand tailwind for its X-FAB SiC wafer starts; **(−)** Navitas has **added Magnachip (South-Korea fab) as a SECOND SiC foundry source** (GeneSiC Gen4/Gen5 licensed there; a Navitas subsequent-event, related-party deal) — so X-FAB is **no longer Navitas's sole SiC foundry**, and future Navitas SiC volume splits across two suppliers. Net: the A1 reciprocal-confirmation still holds (X-FAB remains a named Navitas SiC partner), but the relationship is now one-of-two on the SiC side — track whether Navitas's second-sourcing dilutes X-FAB's share of that ramp against the ~10K-wafer/month capacity headroom below.
+
 **GaN-on-Si (Q1 2026 press release + call):** XFAB delivered a first 1,200V GaN prototype on a customized 200mm engineered substrate and started a next-generation vertical GaN customer project; GaN is positioned for datacenter power supply units. GaN remains primarily in the prototyping/development stage.
 
 **Atomic clock timing chips for GPU rack synchronization (Q1 2026 call; NEW disclosure).** Damien Macq: data center growth is also driving "other technologies like... timing clock to synchronize GPU in racks. The idea is to reach really atomic clock precisions with the technology, and this is driven from a chip that was built out of X-FAB technology." Also flagged: design wins for higher-voltage ICs to drive power transistors. This GPU-rack-timing use case is novel and not yet captured in [[NVDA-platform-integration]] or [[AI-agentic-CPU-orchestration-reemergence]]; customer identity undisclosed (Open question).
@@ -149,4 +151,5 @@ Comprehensive FY2025 baseline. Risk Factors disclose Melexis 43% / top-3 53% / t
 
 ## Change log
 
+- **2026-07-28 (S194 — [[NVTS]] Q2 2026 refresh propagation; light):** Added a Q2 2026 update to the "Navitas named customer" A1 note: Navitas's SiC business is *accelerating* (a wafer-demand tailwind), but Navitas has **added Magnachip as a SECOND SiC foundry source** (a related-party deal), so X-FAB is no longer Navitas's sole SiC foundry — the A1 reciprocal-confirmation holds, but the SiC relationship is now one-of-two; track share against the ~10K-wafer/month capacity headroom. Note only; no placement/tickers change. last_updated 2026-05-28 → 2026-07-28.
 - **2026-05-28 (Session 99):** Initial canonical creation per Vic Session 99 ingest. Sources: Annual Report FY2025 (Tier 1, audited) + Q1 2026 press release (Tier 1) + Q1 2026 earnings call April 30, 2026 (Tier 2). Placements: Layer 2 + photonics_tier 4 (pre-revenue framing) + energy_power_tier 4 + equipment_tier outside + materials_tier outside; foreign_issuer: true (Belgian SE on Euronext Paris; FIRST INSTANCE Euronext-listed non-US-ADR canonical). Navitas A1 reciprocal-confirmation at first ingest. Section 3.4 customer-concentration framing gap candidate (2nd instance). Cross-references added at [[power-semis]] + [[foundry-competition]] + [[datacenter-photonics-supply-chain]] + [[NVTS]]. Same-day review refinement: reconciled the Layer 2 incumbency framing against the "customers can switch" risk-factor disclosure (moat operates at product/requalification level, not contractually; Layer 2-vs-4 flagged for Vic) + added low-base caveat to the SiC +152%/+195% growth (FY2025 SiC was -34%).

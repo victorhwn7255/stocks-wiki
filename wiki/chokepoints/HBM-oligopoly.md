@@ -2,7 +2,7 @@
 type: chokepoint
 tickers: [ONTO, COHU, AEHR, TSM, MKSI, MU]
 related_themes: [AI-demand-durability, chokepoint-investability-priorities]
-last_updated: 2026-06-29
+last_updated: 2026-07-29
 ---
 
 # HBM oligopoly chokepoint
@@ -25,7 +25,7 @@ last_updated: 2026-06-29
 |---|---|---|---|
 | [[ONTO]] | Equipment-tier enabler (advanced packaging metrology) | **$240M+ HBM Volume Purchase Agreement** + >$60M 3D bump inspection systems through 2027; Atlas G6 OCD metrology for HBM DRAM; Dragonfly G5 commercial ramp at HBM 2D+3D metrology wins; TSMC + Samsung + SK Hynix all named customers via XBRL | S6 + S54 refresh |
 | [[COHU]] | Equipment-tier enabler (HBM inspection — aspirational framing) | Tignis $34.9M acquisition (Jan 2025) for AI process control software (DI-Core platform); "high-growth opportunities in HBM inspection" per 10-K; revenue immaterial per S54 baseline | S8 + S54 refresh |
-| [[AEHR]] | Equipment-tier enabler (wafer-level burn-in — forward-looking) | "in discussions with key memory suppliers... orders fiscal 2027 and begin to ramp in fiscal 2028" per Erickson; 10-K does NOT mention HBM by name; Europe/Middle East +145% YTD attributed to "the memory market" | S6 + S26 refresh |
+| [[AEHR]] | Equipment-tier enabler (wafer-level burn-in — forward-looking) | "in discussions with key memory suppliers... orders fiscal 2027 and begin to ramp in fiscal 2028" per Erickson; NAND-flash-leader benchmark completed (Q4 FY2026); **memory NOT in the $130-150M FY2027 guide** — trigger not yet fired | S6 + S26 + S195 refresh |
 | [[TSM]] | Foundry-tier integration ([[TSMC-CoWoS]] HBM base die stacking) | CoWoS "primary packaging technology for AI accelerators" enabling HBM base die stacking; AVGO 95% TSMC wafer + HBM dependency; MRVL Taiwan surge for HBM advanced packaging proxy | S3 baseline |
 | `_thesis.md` Rank 1 Memory | Vic-anchor framing per Section 1.1 ownership exception | SK Hynix 50-62% / Samsung 17-35% / Micron 11-21% market share quantification; HBM TAM trajectory; "3-to-1 rule"; HBM3E ~$300/stack → HBM4 ~$500/stack pricing; NVDA-SK Hynix ~90% concentration | 2026-04-30 rework |
 
@@ -152,6 +152,8 @@ Advanced packaging + HBM metrology revenue **+30% YoY** per Q4 FY2025 call. FY20
 ### [[AEHR]] HBM burn-in (forward-looking content honestly framed)
 
 **Wafer-level burn-in for HBM stacks — forward-looking opportunity.** Per AEHR Q3 FY2026 call: Erickson: *"in discussions with key memory suppliers... We expect to start to receive orders in fiscal 2027 and begin to ramp in fiscal 2028."* 10-K does NOT mention HBM by name (AEHR 10-K FY2025). Europe/Middle East revenue surge (+145% YTD in 9mo FY2026) is attributed to *"the memory market"* (AEHR 10-Q Q3 FY2026).
+
+**FY2026 refresh (S195, AEHR Q4 FY2026 call).** The forward framing is refined but the order has not landed. AEHR completed a wafer-level burn-in benchmark with a global NAND-flash leader and sees new HBM / high-bandwidth-flash standards carrying embedded BIST as something that "could be in our favor" ("maybe do HBM sooner… but not next year" on revenue). Crucially, **memory is explicitly excluded from AEHR's $130-150M FY2027 revenue guide** — orders are hoped for FY2027 with a FY2028 ramp. The Open Question #10 verification trigger is therefore **not yet fired**.
 
 **Honest-verdict framing per Section 4.4 kickoff hypothesis discipline applied at chokepoint synthesis scope.** AEHR HBM substantiation is forward-looking (FY2027 orders / FY2028 ramp) rather than current commercial. First-instance verification at AEHR FY2027 reporting cycle pre-registered in Open questions. CoWoS-based packaging context per Erickson: *"significant interest in doing wafer level burn-in for devices that are expected to put in advanced packages, such as TSMC's CoWoS-based packages that include other dies such as HBM, DRAM stacks, other compute AI processors, and photonic or electrical-based transceiver chipsets"* — explicit HBM at CoWoS integration tier substantiation.
 
@@ -300,7 +302,7 @@ Equipment-tier enabler customer pools structurally diversified across HBM oligop
 
 9. **[[ONTO]] HBM VPA evolution + new VPAs.** $240M+ baseline; verify at ONTO Q2 2026+ refresh. Cross-vault refresh propagation candidate.
 
-10. **[[AEHR]] HBM order materialization.** FY2027 forward-looking → primary verification at AEHR FY2027 reporting cycle. First-instance verification trigger candidate.
+10. **[[AEHR]] HBM order materialization.** FY2027 forward-looking → primary verification at AEHR FY2027 reporting cycle. First-instance verification trigger candidate. **S195 update (AEHR FY2026 refresh): NOT yet fired** — memory explicitly excluded from the $130-150M FY2027 guide; a NAND-flash-leader benchmark is completed and HBM optimism is up (embedded-BIST tailwind), but orders are hoped FY2027 with a FY2028 ramp. Next check: AEHR FY2027 reporting.
 
 11. **Geographic concentration risk archetype monitoring.** Korea memory concentration parallel to Taiwan TSM + China rare earths + transformer dependencies. Cross-vault Section 3.4 geographic-concentration sub-pattern strengthening candidate post-S62 + S63 codification — HBM Korean memory concentration as third instance candidate (TSEM Israeli first; transformer Mexico/China/Thailand second; HBM Korea third). Codification monitoring per 3-instance threshold per Section 3.4 sub-pattern formalization discipline.
 
@@ -401,6 +403,7 @@ MKSI 10-K Item 1 Business explicit: VSD **"Plasma and Reactive Gas Products, whi
 
 ## Change log
 
+- **2026-07-29 (S195 — [[AEHR]] FY2026 refresh propagation; light):** Updated the AEHR HBM subsection + summary rows + Open Question #10 — the FY2027-cycle verification trigger is **NOT yet fired**: memory is explicitly excluded from AEHR's $130-150M FY2027 guide; a NAND-flash-leader benchmark is completed and HBM optimism is up (embedded-BIST tailwind), but orders are hoped FY2027 with a FY2028 ramp. Source tag S6+S26 → +S195. last_updated 2026-06-29 → 2026-07-29.
 - **2026-06-29 (S176 — [[MU]] Q3 FY2026 refresh propagation):** Added the MU Q3 primary-substantiation note (supply-sets-shipments; HBM TAM $100B pulled to 2027; SCA take-or-pay $22B with the Tier-1 floor-margin-above-peak disclosure → contractual pricing-power durability). Resolves the S87-deferred refresh propagation. last_updated 2026-05-29 → 2026-06-29.
 - **2026-06-19 (S168 — [[IBIDEN]] first-canonical ingest; honest flag):** Resolved plain-text "Ibiden" → [[IBIDEN]] in the substrate-supply scope-boundary bullet, and **added an ⚠️ honest flag: [[IBIDEN]]'s primary disclosure is logic-substrate only — the HBM base-substrate "shared node" role is a Tier-3 claim NOT primary-confirmed** (zero HBM/memory mention in its FY2026 *Tanshin* + Q&A). The capacity-allocation tension is now framed as a hypothesis pending a primary HBM-substrate disclosure. Cross-reference + flag only; `last_updated` unchanged.
 - **2026-06-17 (cross-reference):** Added a scope-boundary note in the "NOT covered here" substrate-supply bullet pointing to the new [[pcb-interconnect-substrate-chokepoint]] (provisional) — Ibiden is the shared node (HBM base substrate vs ABF logic substrate); the memory-side HBM-substrate chokepoint stays a distinct future candidate. Cross-reference only; `last_updated` unchanged.

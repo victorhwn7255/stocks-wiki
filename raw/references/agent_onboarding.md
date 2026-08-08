@@ -4,7 +4,9 @@
 
 **Maintenance.** Updated when session-type taxonomy expands or stop-protocol triggers are revised. Not a state-tracking document; current vault state lives in `MEMORY.md` and `log.md` tail.
 
-**Last updated.** 2026-05-02 (post-Session-37 sync).
+**Last updated.** 2026-05-02 (post-Session-37 sync) — see the staleness note below.
+
+> **⚠️ Staleness + redirect (flagged 2026-08-07).** This taxonomy is a **2026-05 / Session-37 snapshot**, written when the vault was **AI-datacenter-only** — it predates the **Defense & Drones** (S123) and **Humanoid Robots** (S136) domains, the **1-stop refresh protocol**, the §3.19 page-lifecycle rules, the `wiki/trackers/` layer, and everything since (the vault is now ~S201). **For the current end-to-end ingest / refresh _procedure_, do NOT rely on this file — use:** the standing kickoff templates in `prompts/templates/` (`refresh_kickoff_template.md` / `single_ingest_kickoff_template.md` / `paired_refresh_kickoff_template.md`, kept current) **+** `CLAUDE.md` §3–4 (page + ingest conventions) **+** §4.7 (refresh-log close-out). Still useful below: the **session-type vocabulary** and the **stop-protocol calibration** (two-stop default / three-stop / single-stop / mid-Stop-1 escape valve) — directionally valid, with one update: a **routine refresh now defaults to 1-stop** per the refresh template (escalate to 2-stop on its 5 standard triggers). The "codification candidate → Session 38" framing below is historical.
 
 ---
 

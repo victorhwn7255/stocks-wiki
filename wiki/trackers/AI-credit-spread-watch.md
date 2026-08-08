@@ -1,7 +1,7 @@
 ---
 type: tracker
 tickers: [CRWV, ORCL, MSFT, AVGO, NVDA, NBIS, CORZ]
-last_updated: 2026-06-21
+last_updated: 2026-07-28
 ---
 
 # AI Credit Spread Watch — the cycle's fuel gauge
@@ -40,7 +40,7 @@ These move with the whole credit market. They are the *control group*: AI-specif
 | **ORCL vs MSFT bonds** (matched maturity) | The investment-grade "AI-leverage premium": debt-funded builder vs cash-rich payer. MSFT is the control, not a signal — subtracting it cancels general market conditions | FINRA/brokerage |
 | **CORZ host-layer instruments** — the $3.3B 7.75% CoreWeave *project bond* (secured/lockbox vs the lease cash flows) + the 0%/3% public convertibles | Whether the *host/landlord* layer (not just compute) reprices — but the converts blend credit + equity-option value, so a noisier signal than CRWV's straight unsecured | FINRA/TRACE; 8-K issue pricing |
 
-**Instrument-selection logic (why three probes, not all seven payers):** credit stress breaks the weakest link first — neocloud (CRWV, pure AI credit) → leveraged hyperscaler (ORCL, the marginal IG name) → fortress names last. The AA/AAA payers (MSFT/GOOGL/AMZN/META) carry almost no AI-specific spread signal while calm; watching them adds noise, not information (the BIS QR March 2026 CDS finding — differentiation "especially for hyperscalers with lower credit ratings" — confirms the weakest-link ordering). **Pre-registered expansion trigger:** if dial 4 (ORCL-vs-MSFT) turns 🟡, the next run ADDS META-vs-MSFT and AMZN-vs-MSFT pairs to test whether the repricing is Oracle-specific or spreading across the group. NBIS is covered via dial 6 rating actions + the Layer-3 deal sweep (foreign filer; bond data too thin for a clean dial).
+**Instrument-selection logic (why three probes, not all seven payers):** credit stress breaks the weakest link first — neocloud (CRWV, pure AI credit) → leveraged hyperscaler (ORCL, the marginal IG name) → fortress names last. The AA/AAA payers (MSFT/GOOGL/AMZN/META) carry almost no AI-specific spread signal while calm; watching them adds noise, not information (the BIS QR March 2026 CDS finding — differentiation "especially for hyperscalers with lower credit ratings" — confirms the weakest-link ordering). *(Backdrop datapoint, not a dial: [[GOOGL]] Q2 2026 expanded debt ~$16B→~$100B over 12 months with Q2 FCF −$5.9B — a fortress name joining the debt-funded build reinforces the funding-regime-flip thesis this page instruments, even as GOOGL stays excluded from the probes by design; see [[hyperscaler-capex]] dynamic #8 + [[what-could-go-wrong]] Entry 6.)* **Pre-registered expansion trigger:** if dial 4 (ORCL-vs-MSFT) turns 🟡, the next run ADDS META-vs-MSFT and AMZN-vs-MSFT pairs to test whether the repricing is Oracle-specific or spreading across the group. NBIS is covered via dial 6 rating actions + the Layer-3 deal sweep (foreign filer; bond data too thin for a clean dial).
 
 ### Layer 3 — Deal-by-deal new-issue pricing + PRIMARY-MARKET BEHAVIOR (caught by normal vault ingests)
 
@@ -86,6 +86,7 @@ The vault's full early-warning system for the AI capex cycle, one row per ending
 
 ## Change log
 
+- **2026-07-28 (S190 — [[GOOGL]] Q2 2026 refresh; backdrop only):** Added a one-line backdrop datapoint to the instrument-selection logic — GOOGL's debt $16B→$100B TTM + Q2 FCF −$5.9B reinforces the funding-regime-flip thesis, but GOOGL stays a fortress name excluded from the dials by design (no dial/status change). last_updated 2026-06-21 → 2026-07-28.
 - **2026-06-21 (S167 — rate-side twin / discount-rate backdrop):** Added a Tier-3 macro-backdrop subsection — the long-end Treasury yield as the equity-side twin of the credit spread (the discount rate on long-duration AI), from the GS macro-desk video-intel (2026-06-18 + 2026-06-19): a credibly-hawkish Fed anchors the long end and *supports* AI valuations; the equity-side tripwire is a politicized-Fed long-end spike (firing alongside a credit-spread blowout = the cost-of-capital turn from both sides). Context, not a new dial; no data/frontmatter change beyond last_updated. last_updated 2026-06-15 → 2026-06-21.
 - **2026-06-15 (S162 — CORZ added):** Added [[CORZ]] (Core Scientific) as a new **host-layer** credit name — the $3.3B 7.75% CoreWeave project bond (secured/lockbox) + the 0%/3% public convertibles — as a Layer-2 instrument row + dial 8 (⚪ unread). From the CORZ first-canonical ingest per the §3.20 freshness obligation; no yield invented here — the actual TRACE reading is a `/spread-watch` follow-up. +CORZ ticker.
 - **2026-06-13 (run #2 addendum):** Dial 7 added — primary-market behavior (new-issue concessions / failed takedowns), the historically-earliest crack, named with a 12-18-month clock + 2027 squeeze point by a GS rates-desk co-head (video-intel 2026-06-12, Tier 3); the "~Q1 2026 private-credit repricing" precursor logged as an unverified lead. Instrument-selection logic + ORCL-🟡 expansion trigger also documented (Vic question).

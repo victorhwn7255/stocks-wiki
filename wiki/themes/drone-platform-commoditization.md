@@ -1,7 +1,7 @@
 ---
 type: theme
 tickers: [AVAV, KTOS]
-last_updated: 2026-07-11
+last_updated: 2026-07-29
 ---
 
 # Drone platform commoditization — the deliberately weak layer
@@ -37,7 +37,7 @@ The interesting analytical content is that the two primes respond to the *same* 
 
 Neither is a pure commoditizing-airframe play; both are *managing* the squeeze — one by building the upstream, the other by scaling and climbing the layers.
 
-**The counter-example — [[TDY]] (the layer value migrates *to*).** Teledyne (now a vault page, S131) is the live confirmation of the thesis's prediction. It owns the EO/IR sensor/seeker chokepoint and supplies infrared detectors "to everyone else across the world that's making drones" (Mehrabian, Q1 FY2026 call) — so as airframes are driven to the ~$2,000 floor, Teledyne captures value **regardless of which airframe wins**. It is the *inverse* exposure to [[AVAV]]/[[KTOS]]: the chokepoint layer margin migrates **to**, not the platform layer it migrates **from**. The honest caveat: drones are a slice of Teledyne's ~30–35% defense revenue, and the sensor layer (while defensible against cheap airframes) still faces ASP discipline on high-volume cheap counter-UAS demand.
+**The counter-example — [[TDY]] (the layer value migrates *to*).** Teledyne (a vault page, S131; refreshed Q2 FY2026, S196) is the live confirmation of the thesis's prediction. It owns the EO/IR sensor/seeker chokepoint and supplies infrared detectors "to everyone else across the world that's making drones" (Mehrabian) — so as airframes are driven to the ~$2,000 floor, Teledyne captures value **regardless of which airframe wins**. It is the *inverse* exposure to [[AVAV]]/[[KTOS]]: the chokepoint layer margin migrates **to**, not the platform layer it migrates **from**. **Q2 FY2026 put numbers on it:** Teledyne's unmanned business is ~$575M in 2026e (+12% YoY; air+ground+underwater), Black Hornet 4 is now selling ("very successful"), and the Digital Imaging non-GAAP margin reached **25% (+353bps)** on a record beat-and-raise quarter — the value showing up at the sensor layer (Teledyne Q2 FY2026 call). The honest caveat: drones are a slice of Teledyne's ~30–35% defense revenue, and the sensor layer (while defensible against cheap airframes) still faces ASP discipline on high-volume cheap counter-UAS demand — which management again did not address.
 
 **A second enabler on the value-migrates-*to* side — [[AMPX]] (the battery layer).** Amprius (a vault page, S132) is the energy-density analog: it supplies silicon-anode cells to *many* drone makers (incl. [[AVAV]] and [[TDY]]'s FLIR Black Hornet), so it too captures value regardless of which airframe wins — and it competes *inside* the same **Gauntlet II** program the primes do, but on **endurance** ("longer loitering time"), positioning at the layer the buyer's price ceiling pushes value *toward*. The honest caveat differs from Teledyne's: Amprius is loss-making and cash-burning (Framework D6), and its edge is a *policy*-plus-capability chokepoint (the NDAA-compliant-battery mandate) rather than a geology one — see [[AMPX]].
 
@@ -62,6 +62,7 @@ Dynamics theme; no new primary source ingested at creation. The market-design fr
 
 ## Change log
 
+- **2026-07-29 (Session 196 — [[TDY]] Q2 FY2026 refresh propagation; substantive):** Updated the [[TDY]] counter-example with Q2 primary evidence — Teledyne's unmanned business ~$575M/+12% (2026e), Black Hornet 4 selling, and Digital Imaging non-GAAP margin 25% (+353bps) on a record beat-and-raise = the "value migrates *to* the sensor chokepoint" prediction quantified. Core dynamic (deliberate airframe commoditization) unchanged; the ASP-durability caveat retained. last_updated 2026-07-11 → 2026-07-29.
 - **2026-07-11 (Session 186 — [[AVAV]] FY2026 refresh propagation):** Updated the platform-margin evidence — AVAV's post-BlueHalo gross margin *partially recovered* to ~30% adjusted FY2026 / 34% Q4 (from the ~24% Q3 low), but at the blended-portfolio level (AxS 21% adj EBITDA, lifted by Titan + Switchblade), **not** at the OWA line — added the honest caveat that this is not evidence the OWA-specific squeeze eased. Sharpened Open Q#2 accordingly; added Red Dragon's $17M Q4 production contract to the AVAV entry. Core dynamic (deliberate commoditization) unchanged.
 
 - **2026-06-04 (Session 132 — cross-ref):** Added [[AMPX]] (Amprius) as a *second* enabler on the value-migrates-*to* side (the battery/energy-density layer, alongside the [[TDY]] sensor counter-example) — a picks-and-shovels cell supplier to all drone makers, competing inside Gauntlet II on endurance. Light cross-ref; no change to the core dynamic.

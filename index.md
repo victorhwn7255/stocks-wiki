@@ -11,17 +11,17 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` Section 3
 | [AAOI](wiki/companies/AAOI.md) | AAOI | 5 | 5 | — | — | — | — | — | 2026-05-10 |
 | [AAON](wiki/companies/AAON.md) | AAON | 4 | outside | — | 3 | outside | outside | — | 2026-05-26 |
 | [AAPL](wiki/companies/AAPL.md) | AAPL | outside | outside | outside | outside | outside | outside | — | 2026-07-08 |
-| [AEHR](wiki/companies/AEHR.md) | AEHR | 3-4 | 4 | — | — | — | — | — | 2026-04-20 |
+| [AEHR](wiki/companies/AEHR.md) | AEHR | 3-4 | 4 | — | — | — | — | — | 2026-07-29 |
 | [ALAB](wiki/companies/ALAB.md) | ALAB | 3 | 4 | — | — | — | — | — | 2026-05-11 |
 | [AMD](wiki/companies/AMD.md) | AMD | 1 | outside | — | outside | outside | outside | — | 2026-05-23 |
 | [AMPX](wiki/companies/AMPX.md) | AMPX | — | — | — | — | — | — | 4 | 2026-06-04 |
-| [AMZN](wiki/companies/AMZN.md) | AMZN | outside | outside | outside | outside | outside | outside | — | 2026-06-03 |
+| [AMZN](wiki/companies/AMZN.md) | AMZN | outside | outside | outside | outside | outside | outside | — | 2026-08-04 |
 | [ANET](wiki/companies/ANET.md) | ANET | 5 | 5 | — | — | — | — | — | 2026-05-26 |
 | [ARM](wiki/companies/ARM.md) | ARM | 1 | outside | — | outside | outside | outside | — | 2026-05-29 |
 | [AVAV](wiki/companies/AVAV.md) | AVAV | — | — | — | — | — | — | 1 | 2026-07-11 |
 | [AVGO](wiki/companies/AVGO.md) | AVGO | 1 | 3 | — | — | — | — | — | 2026-06-13 |
 | [AXTI](wiki/companies/AXTI.md) | AXTI | 6 | 3 | — | — | — | 2 | — | 2026-05-29 |
-| [BE](wiki/companies/BE.md) | BE | 4 | outside | — | 2 | outside | — | — | 2026-05-02 |
+| [BE](wiki/companies/BE.md) | BE | 4 | outside | — | 2 | outside | — | — | 2026-08-04 |
 | [BWXT](wiki/companies/BWXT.md) | BWXT | 4 | outside | — | outside | outside | 1 | — | 2026-05-10 |
 | [CAT](wiki/companies/CAT.md) | CAT | 4 | outside | — | 4 | outside | outside | — | 2026-05-12 |
 | [CCJ](wiki/companies/CCJ.md) | CCJ | 4 | outside | — | outside | outside | 2 | — | 2026-05-29 |
@@ -40,41 +40,41 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` Section 3
 | [FLEX](wiki/companies/FLEX.md) | FLEX | 6 | outside | — | 3 | outside | — | — | 2026-05-29 |
 | [FLNC](wiki/companies/FLNC.md) | FLNC | 4 | outside | — | 3 | outside | outside | — | 2026-05-13 |
 | [FN](wiki/companies/FN.md) | FN | 6 | 4 | — | — | — | — | — | 2026-05-27 |
-| [GEV](wiki/companies/GEV.md) | GEV | 4 | outside | — | 3 | outside | — | — | 2026-05-29 |
+| [GEV](wiki/companies/GEV.md) | GEV | 4 | outside | — | 3 | outside | — | — | 2026-07-28 |
 | [GLW](wiki/companies/GLW.md) | GLW | 4 | 3 | — | — | — | — | — | 2026-05-12 |
-| [GOOGL](wiki/companies/GOOGL.md) | GOOGL | outside | outside | outside | outside | outside | outside | — | 2026-06-02 |
+| [GOOGL](wiki/companies/GOOGL.md) | GOOGL | outside | outside | outside | outside | outside | outside | — | 2026-07-28 |
 | [HARMONIC](wiki/companies/HARMONIC.md) | HARMONIC | 4 | — | — | — | 4 | — | 4 | 2026-06-07 |
 | [HENGLI](wiki/companies/HENGLI.md) | HENGLI | outside | — | — | — | — | — | — | 2026-06-08 |
 | [IBIDEN](wiki/companies/IBIDEN.md) | IBIDEN | 4 | — | — | — | — | 2 | — | 2026-06-19 |
 | [INOD](wiki/companies/INOD.md) | INOD | outside | outside | outside | outside | outside | outside | — | 2026-06-05 |
-| [INTC](wiki/companies/INTC.md) | INTC | 1, 2 | outside | — | outside | outside | outside | — | 2026-05-25 |
+| [INTC](wiki/companies/INTC.md) | INTC | 1, 2 | outside | — | outside | outside | outside | — | 2026-07-28 |
 | [KTOS](wiki/companies/KTOS.md) | KTOS | — | — | — | — | — | — | 1 | 2026-06-04 |
 | [LEU](wiki/companies/LEU.md) | LEU | 4 | outside | — | outside | outside | 1 | — | 2026-06-14 |
 | [LITE](wiki/companies/LITE.md) | LITE | 4 | 3 | — | — | — | — | — | 2026-05-10 |
 | [LSCC](wiki/companies/LSCC.md) | LSCC | 3 | — | — | — | — | — | 4 | 2026-06-03 |
-| [META](wiki/companies/META.md) | META | outside | outside | outside | outside | outside | outside | — | 2026-06-02 |
+| [META](wiki/companies/META.md) | META | outside | outside | outside | outside | outside | outside | — | 2026-08-04 |
 | [MKSI](wiki/companies/MKSI.md) | MKSI | 4 | 3 | — | outside | 2 | 3 | — | 2026-05-21 |
 | [MOD](wiki/companies/MOD.md) | MOD | 4 | outside | — | 3 | outside | outside | — | 2026-05-29 |
 | [MP](wiki/companies/MP.md) | MP | 4-6 | outside | outside | outside | outside | 1 | 4 | 2026-06-05 |
 | [MPWR](wiki/companies/MPWR.md) | MPWR | 4 | outside | outside | 3 | outside | outside | — | 2026-05-25 |
 | [MRCY](wiki/companies/MRCY.md) | MRCY | — | — | — | — | — | — | 2 | 2026-06-05 |
 | [MRVL](wiki/companies/MRVL.md) | MRVL | 3 | 3 | — | — | — | — | — | 2026-05-29 |
-| [MSFT](wiki/companies/MSFT.md) | MSFT | outside | outside | outside | outside | outside | outside | — | 2026-06-02 |
+| [MSFT](wiki/companies/MSFT.md) | MSFT | outside | outside | outside | outside | outside | outside | — | 2026-08-04 |
 | [MU](wiki/companies/MU.md) | MU | 2 | outside | 2 | outside | outside | outside | — | 2026-06-29 |
 | [MURATA](wiki/companies/MURATA.md) | MURATA | 4 | — | — | — | — | outside | — | 2026-06-19 |
 | [NBIS](wiki/companies/NBIS.md) | NBIS | outside | outside | outside | outside | outside | outside | — | 2026-06-03 |
 | [NOK](wiki/companies/NOK.md) | NOK | 4 | 2 | — | outside | outside | outside | — | 2026-05-19 |
 | [NOVT](wiki/companies/NOVT.md) | NOVT | 4 | outside | — | — | 4 | — | — | 2026-06-06 |
-| [NOW](wiki/companies/NOW.md) | NOW | outside | outside | outside | outside | outside | outside | — | 2026-06-02 |
+| [NOW](wiki/companies/NOW.md) | NOW | outside | outside | outside | outside | outside | outside | — | 2026-07-28 |
 | [NVDA](wiki/companies/NVDA.md) | NVDA | 1 | 1 | — | — | — | — | — | 2026-05-24 |
 | [NVT](wiki/companies/NVT.md) | NVT | 4 | outside | — | 3 | outside | outside | — | 2026-05-26 |
-| [NVTS](wiki/companies/NVTS.md) | NVTS | 4 | outside | outside | 3 | outside | outside | — | 2026-05-28 |
+| [NVTS](wiki/companies/NVTS.md) | NVTS | 4 | outside | outside | 3 | outside | outside | — | 2026-07-29 |
 | [ON](wiki/companies/ON.md) | ON | 4 | outside | outside | 3 | outside | outside | — | 2026-05-25 |
 | [ONTO](wiki/companies/ONTO.md) | ONTO | 3-4 | 4 | — | — | — | — | — | 2026-05-11 |
 | [ORCL](wiki/companies/ORCL.md) | ORCL | outside | outside | outside | outside | outside | outside | — | 2026-06-29 |
 | [OUST](wiki/companies/OUST.md) | OUST | outside | outside | outside | outside | outside | outside | outside | 2026-06-06 |
 | [PLAB](wiki/companies/PLAB.md) | PLAB | 4 | outside | — | — | — | — | — | 2026-06-13 |
-| [PLTR](wiki/companies/PLTR.md) | PLTR | outside | outside | outside | outside | outside | outside | — | 2026-06-02 |
+| [PLTR](wiki/companies/PLTR.md) | PLTR | outside | outside | outside | outside | outside | outside | 2 | 2026-08-07 |
 | [POWI](wiki/companies/POWI.md) | POWI | 4 | outside | outside | 3 | outside | outside | — | 2026-05-25 |
 | [QCOM](wiki/companies/QCOM.md) | QCOM | outside | outside | outside | outside | outside | outside | — | 2026-07-08 |
 | [SANHUA](wiki/companies/SANHUA.md) | SANHUA | outside | — | — | outside | — | — | — | 2026-06-06 |
@@ -84,7 +84,7 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` Section 3
 | [SNDK](wiki/companies/SNDK.md) | SNDK | 4 | outside | 4 | outside | outside | outside | — | 2026-05-24 |
 | [SOI](wiki/companies/SOI.md) | SOI | 6 | 3 | — | — | — | 2 | — | 2026-05-29 |
 | [TAIYO](wiki/companies/TAIYO.md) | TAIYO | 4 | — | — | — | — | outside | — | 2026-06-19 |
-| [TDY](wiki/companies/TDY.md) | TDY | — | — | — | — | — | — | 4 | 2026-06-04 |
+| [TDY](wiki/companies/TDY.md) | TDY | — | — | — | — | — | — | 4 | 2026-07-29 |
 | [TSEM](wiki/companies/TSEM.md) | TSEM | 2 | 2 | — | — | outside | outside | — | 2026-06-13 |
 | [TSM](wiki/companies/TSM.md) | TSM | 2 | 1 | — | — | — | — | — | 2026-04-26 |
 | [TUOPU](wiki/companies/TUOPU.md) | TUOPU | 4 | — | — | 4 | — | — | — | 2026-06-06 |
@@ -93,9 +93,20 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` Section 3
 | [VICR](wiki/companies/VICR.md) | VICR | 4 | outside | outside | 3 | outside | outside | — | 2026-05-25 |
 | [VPG](wiki/companies/VPG.md) | VPG | 4 | — | — | — | 4 | — | outside | 2026-06-06 |
 | [VRT](wiki/companies/VRT.md) | VRT | 5 | 4 | — | — | — | — | — | 2026-05-26 |
-| [XFAB](wiki/companies/XFAB.md) | XFAB | 2 | 4 | — | 4 | outside | outside | — | 2026-05-28 |
+| [XFAB](wiki/companies/XFAB.md) | XFAB | 2 | 4 | — | 4 | outside | outside | — | 2026-07-28 |
 | [ZHAOWEI](wiki/companies/ZHAOWEI.md) | ZHAOWEI | outside | — | — | — | — | — | — | 2026-06-08 |
 | [ZHONGDA](wiki/companies/ZHONGDA.md) | ZHONGDA | outside | — | — | — | — | — | — | 2026-06-06 |
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -142,7 +153,7 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` Section 3
 | [AIDC-cooling-architecture-transition](wiki/themes/AIDC-cooling-architecture-transition.md) | VRT, ETN, NVT, MOD, FLEX, COHR, ANET, AAON | 2026-05-29 |
 | [AI-agentic-CPU-orchestration-reemergence](wiki/themes/AI-agentic-CPU-orchestration-reemergence.md) | ARM, AMD, INTC, NVDA, GOOGL, AMZN, META, ORCL | 2026-06-03 |
 | [power-semis](wiki/themes/power-semis.md) | NVTS, POWI, VICR, ON, MPWR | 2026-05-29 |
-| [software-AI-moat-durability](wiki/themes/software-AI-moat-durability.md) | MSFT, NOW, CRM, WDAY, SNOW, DDOG, PLTR, CRWD, ZS, PANW, ADBE, INTU, TEAM, SAP | 2026-06-01 |
+| [software-AI-moat-durability](wiki/themes/software-AI-moat-durability.md) | MSFT, NOW, CRM, WDAY, SNOW, DDOG, PLTR, CRWD, ZS, PANW, ADBE, INTU, TEAM, SAP | 2026-08-07 |
 | [defense-drone-supply-chain](wiki/themes/defense-drone-supply-chain.md) | MP, LSCC, AVAV, KTOS, AMPX | 2026-06-04 |
 | [drone-platform-commoditization](wiki/themes/drone-platform-commoditization.md) | AVAV, KTOS | 2026-06-04 |
 | [AI-data-supply-chain](wiki/themes/AI-data-supply-chain.md) | INOD | 2026-06-05 |
@@ -152,14 +163,15 @@ Per-domain tier columns reflect frontmatter as-written per `CLAUDE.md` Section 3
 | [memory-wall](wiki/themes/memory-wall.md) | MU, SNDK | 2026-06-25 |
 | [kv-cache-inference-bottleneck](wiki/themes/kv-cache-inference-bottleneck.md) | NVDA, AMD, MU, SNDK, MRVL, ALAB, CRWV, NBIS | 2026-06-30 |
 | [AI-buildout-who-holds-the-risk](wiki/themes/AI-buildout-who-holds-the-risk.md) | AVGO, NVDA, CRWV, NBIS, ORCL, AMZN, META, MSFT, GOOGL, BE, CSCO, CORZ | 2026-06-18 |
-| [AI-implementation-deployment-layer](wiki/themes/AI-implementation-deployment-layer.md) | ACN, IBM, EPAM, GLOB, CTSH, INFY, PLTR, CRM, MDB, DDOG, PANW, OKTA, CRWD, ZS | 2026-06-13 |
+| [AI-implementation-deployment-layer](wiki/themes/AI-implementation-deployment-layer.md) | ACN, IBM, EPAM, GLOB, CTSH, INFY, PLTR, CRM, MDB, DDOG, PANW, OKTA, CRWD, ZS | 2026-08-07 |
 | [physical-AI-value-chain](wiki/themes/physical-AI-value-chain.md) | NVDA, MP, HARMONIC, SANHUA, TUOPU, HENGLI, ZHAOWEI, SHUANGHUAN, ZHONGDA, SLING, NOVT, VPG, OUST, TDY, ARM | 2026-06-15 |
 | [training-to-inference-shift](wiki/themes/training-to-inference-shift.md) | NVDA, AMD, ARM, MU, AVGO, MRVL, TSM | 2026-06-16 |
 | [neocloud-moat-durability](wiki/themes/neocloud-moat-durability.md) | CRWV, NBIS, CORZ, NVDA, MSFT, AMZN, GOOGL, META | 2026-06-29 |
 | [commodity-supercycle-chokepoints](wiki/themes/commodity-supercycle-chokepoints.md) | MP, ETN, GEV, FLEX, LEU, BWXT, CCJ | 2026-06-16 |
 | [ai-frontier-systems](wiki/themes/ai-frontier-systems.md) | NVDA, AMD, TSM, ARM, INTC, AVGO, MRVL, ALAB, MU, SNDK, IBIDEN, GOOGL, AMZN, META, MSFT, ORCL, ANET, CRDO, LITE, COHR, AAOI, FN, GEV, ETN, VRT, CAT, BE, FCEL, CCJ, LEU, BWXT, CRWV, NBIS, CORZ | 2026-06-25 |
 | [telecom-bust-analog](wiki/themes/telecom-bust-analog.md) | NVDA, MU, TSM, ORCL, CRWV, NBIS, MSFT, GOOGL, AMZN, META, GLW, CSCO | 2026-07-01 |
-| [frontier-app-layer-value-capture](wiki/themes/frontier-app-layer-value-capture.md) | AAPL, GOOGL, MSFT, META, AMZN, NVDA | 2026-07-08 |
+| [frontier-app-layer-value-capture](wiki/themes/frontier-app-layer-value-capture.md) | AAPL, GOOGL, MSFT, META, AMZN, NVDA | 2026-08-07 |
+| [AI-earnings-quality-noncash-marks](wiki/themes/AI-earnings-quality-noncash-marks.md) | INTC, GEV, NVTS, MSFT, BE, AEHR, AMZN, META, PLTR | 2026-08-07 |
 
 ## Trackers
 
@@ -170,7 +182,7 @@ Cross-vault status-bearing pages per CLAUDE.md Section 3.20 — updated by propa
 | [forward-edge-tracker](wiki/trackers/forward-edge-tracker.md) | ETN, VRT, GEV, TSM, NVDA, AVGO, MRVL, ALAB, AAOI, FCEL, MU, SNDK, CSCO, PLAB, CRWV, NBIS, ORCL, AMZN, MP, LSCC, TDY, AVAV, KTOS, HARMONIC, SANHUA, TUOPU, NOVT, VPG | 2026-06-16 |
 | [hyperscaler-capex](wiki/trackers/hyperscaler-capex.md) | MSFT, GOOGL, AMZN, META, ORCL, CRWV, NBIS | 2026-06-18 |
 | [china-exposure](wiki/trackers/china-exposure.md) | TSM, NVDA, AVGO, AMD, MRVL, ALAB, MU, ARM, INTC, AAOI, AXTI, LITE, COHR, CRDO, ONTO, COHU, VECO, PLAB, TSEM, MKSI, MPWR, NVTS, POWI, ON, SOI, SNDK, FN, GLW, FLEX, VICR, NOK, ENS, XFAB, AEHR, MOD, MP, TDY, AMPX, AVAV, LSCC, KTOS, MRCY, INOD, NOVT, VPG, OUST, SANHUA, TUOPU, SHUANGHUAN, ZHONGDA, SLING, ZHAOWEI, HENGLI | 2026-06-08 |
-| [what-could-go-wrong](wiki/trackers/what-could-go-wrong.md) | MSFT, NVDA, AVGO | 2026-06-12 |
+| [what-could-go-wrong](wiki/trackers/what-could-go-wrong.md) | MSFT, NVDA, AVGO, AVAV, DDOG, GOOGL, INTC, GEV, BE, META, AMZN, PLTR | 2026-08-07 |
 | [AI-credit-spread-watch](wiki/trackers/AI-credit-spread-watch.md) | CRWV, ORCL, MSFT, AVGO, NVDA, NBIS, CORZ | 2026-06-21 |
 | [short-interest](wiki/trackers/short-interest.md) | — | 2026-06-19 |
 | [forward-pe-watch](wiki/trackers/forward-pe-watch.md) | NVDA, MSFT, GOOGL, AMZN, META, AVGO | 2026-06-24 |
@@ -187,4 +199,4 @@ Macro / "smart money" synthesis layer per CLAUDE.md Section 3.21 (`wiki/insights
 
 | Page | Related Tickers | Last Updated |
 |------|-----------------|--------------|
-| [nvidia-supply-chain-commitments](wiki/relationships/nvidia-supply-chain-commitments.md) | NVDA, LITE, COHR, ETN, VRT, AVGO, ALAB, CSCO, ANET, FN, TSM, MRVL, CRWV, NBIS | 2026-06-03 |
+| [nvidia-supply-chain-commitments](wiki/relationships/nvidia-supply-chain-commitments.md) | NVDA, LITE, COHR, ETN, VRT, AVGO, ALAB, CSCO, ANET, FN, TSM, MRVL, CRWV, NBIS, PLTR | 2026-08-07 |
